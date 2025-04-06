@@ -61,6 +61,21 @@ def dumpExecutableFiles(data):
     for file in files:
         print(f"{file.name}: {file.data}")
 
+def dumpBrokenFiles(data):
+    files = []
+    for dir in data:
+        path = dir['breadcrumbs'][-1]['url']
+        for file in dir['files']:
+            fname = f"{path}/{file['fileName']}"
+            if ' ' in fname:
+                files.append(FileTuple(fname, None))
+
+    files = sorted(files, key=lambda file: file.name)
+
+    print(f"Found files with whitespace:")
+    for file in files:
+        print(f"'{file.name}'")
+
 
 # clean the existing output
 out_dir = "./uesc.io/"
@@ -78,3 +93,4 @@ with open('raw.json') as json_file:
 dumpFilesystem(out_dir, data)
 dumpFilesFlat(out_dir, data)
 dumpExecutableFiles(data)
+dumpBrokenFiles(data)
