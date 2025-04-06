@@ -5,6 +5,8 @@ import os
 import shutil
 import collections
 
+FileTuple = collections.namedtuple('FileTuple', ['name', 'data'])
+
 def dumpFilesystem(out_dir, data):
     # dump the filesystem path, ish. there's two directories where the breadcrumbs don't match the labels.
     print(f"Dumping filesystem to {out_dir}")
@@ -25,18 +27,17 @@ def dumpFilesystem(out_dir, data):
 
 
 def dumpFilesFlat(out_dir, data):
-    FileType = collections.namedtuple('FileType', ['name', 'data'])
     files = []
     for dir in data:
         path = dir['breadcrumbs'][-1]['url']
         for file in dir['files']:
             fname = f"{path}/{file['fileName']}"
             if file['data']:
-                files.append(FileType(fname, file['data']))
+                files.append(FileTuple(fname, file['data']))
             elif file['executableType']:
-                files.append(FileType(fname, "<executable>"))
+                files.append(FileTuple(fname, "<executable>"))
             else:
-                files.append(FileType(fname, "<empty>"))
+                files.append(FileTuple(fname, "<empty>"))
 
     files = sorted(files, key=lambda file: file.name)
 
@@ -44,6 +45,21 @@ def dumpFilesFlat(out_dir, data):
     with open(out_dir + "flat.txt", "w") as out_file:
         for file in files:
             out_file.write(f"{file.name}:\n\n{file.data}\n\n")
+
+def dumpExecutableFiles(data):
+    files = []
+    for dir in data:
+        path = dir['breadcrumbs'][-1]['url']
+        for file in dir['files']:
+            fname = f"{path}/{file['fileName']}"
+            if file['executableType']:
+                files.append(FileTuple(fname, file['executableType']))
+
+    files = sorted(files, key=lambda file: file.name)
+
+    print(f"Found executables:")
+    for file in files:
+        print(f"{file.name}: {file.data}")
 
 
 # clean the existing output
@@ -61,3 +77,4 @@ with open('raw.json') as json_file:
 
 dumpFilesystem(out_dir, data)
 dumpFilesFlat(out_dir, data)
+dumpExecutableFiles(data)
