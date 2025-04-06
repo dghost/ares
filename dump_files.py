@@ -7,6 +7,7 @@ import collections
 
 def dumpFilesystem(out_dir, data):
     # dump the filesystem path, ish. there's two directories where the breadcrumbs don't match the labels.
+    print(f"Dumping filesystem to {out_dir}")
     for dir in data:
         path = dir['breadcrumbs'][-1]['url']
         ldir = out_dir + path + "/"
@@ -16,7 +17,6 @@ def dumpFilesystem(out_dir, data):
             pass
         for file in dir['files']:
             fname = ldir + file['fileName']
-            print(fname)
             with open(fname, "w") as out_file:
                 if file['data']:
                     out_file.write(file['data'])
@@ -40,6 +40,7 @@ def dumpFilesFlat(out_dir, data):
 
     files = sorted(files, key=lambda file: file.name)
 
+    print(f"Dumping file contents to {out_dir + "flat.txt"}")
     with open(out_dir + "flat.txt", "w") as out_file:
         for file in files:
             out_file.write(f"{file.name}:\n\n{file.data}\n\n")
