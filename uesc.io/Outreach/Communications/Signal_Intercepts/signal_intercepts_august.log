@@ -1,0 +1,37 @@
++------------+-------+-------------+---------------------+----------------+-----------+-----------------+
+| Signal ID   | Source Location     | Signal Type    | Status    | Decryption Level|
++------------+-------+-------------+---------------------+----------------+-----------+-----------------+
+| SIG-0801-001| Unknown Quadrant    | Encrypted Burst| Analyzed  | High |
+| SIG-0801-002| Research Outpost | Data Stream    | Decoded   | Medium |
+| SIG-0802-003| Deep Space Relay    | Distress Signal| Pending   | Low             |
+| SIG-0802-004| UESC Command        | Priority Alert | Decoded   | High            |
+| SIG-0803-005| Unknown Origin      | Static Noise   | Analyzed  | None            |
+| SIG-0804-006| Research Outpost    | Data Packet    | Decoded   | Medium          |
+| SIG-0805-007| Asteroid Belt       | Encrypted Burst| Analyzed  | High            |
+| SIG-0806-008| Colony Ship         | Status Update  | Decoded   | Low             |
+| SIG-0807-009| Unknown Quadrant    | Encrypted Burst| Pending   | High            |
+| SIG-0808-010| Research Outpost | Data Stream    | Decoded   | Medium          |
+| SIG-0809-011| Deep Space Relay    | Distress Signal| Analyzed  | Low             |
+| SIG-0810-012| UESC Command        | Priority Alert | Decoded   | High            |
+| SIG-0811-013| Unknown Origin      | Static Noise   | Analyzed  | None            |
+| SIG-0812-014| Research Outpost    | Data Packet    | Decoded   | Medium | 
+| SIG-0813-015| Asteroid Belt       | Encrypted Burst| Analyzed  | High |
+| SIG-0814-016| Colony Ship         | Status Update  | Decoded   | Low |
+| SIG-0815-017| Unknown Quadrant    | Encrypted Burst| Pending   | High |        
+| SIG-0816-018| Research Outpost | Data Stream    | Decoded   | Medium |         |
+| SIG-0817-019| Deep Space Relay    | Distress Signal| Analyzed  | Low             |
+| SIG-0818-020| UESC Command        | Priority Alert | Decoded   | High            |
+| SIG-0819-021| Unknown Origin      | Static Noise   | Analyzed  | None            |
+| SIG-0820-022| Research Outpost    | Data Packet    | Decoded   | Medium          |
+| SIG-0821-023| Asteroid Belt       | Encrypted Burst| Analyzed  | High            |
+| SIG-0822-024| Colony Ship         | Status Update  | Decoded   | Low             |
+| SIG-0823-025| Unknown Quadrant    | Encrypted Burst| Pending   | High            |
+| SIG-0824-026| Research Outpost | Data Stream    | Decoded   | Medium          |
+| SIG-0825-027| Deep Space Relay    | Distress Signal| Analyzed  | Low             |
+| SIG-0826-028| UESC Command        | Priority Alert | Decoded   | High            |
+| SIG-0827-029| Unknown Origin      | Static Noise   | Analyzed  | None            |
+| SIG-0828-030| Research Outpost    | Data Packet    | Decoded   | Medium          |
+| SIG-0829-031| Asteroid Belt       | Encrypted Burst| Analyzed  | High            |
+| SIG-0830-032| Colony Ship         | Status Update  | Decoded   | Low             |
+| SIG-0831-033| Unknown Quadrant    | Encrypted Burst| Pending   | High            |
++------------+-------+-------------+---------------------+----------------+-----------+-----------------+

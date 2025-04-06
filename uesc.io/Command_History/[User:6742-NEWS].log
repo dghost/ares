@@ -1,0 +1,13 @@
+Date: [REDACTED]
+Location: Meridiani Station, Mars
+
+> login 6742-NEWS
+Access level: Media Correspondent.
+> broadcast_update CH-99
+Streaming live update on Channel 99...
+> edit_script --latest_findings
+Editing script to include latest findings...
+> schedule_interview --set
+Arranging interview with Recruiter. 
+> logout
+Session terminated.

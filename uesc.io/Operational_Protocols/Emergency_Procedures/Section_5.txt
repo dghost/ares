@@ -1,0 +1,5 @@
+Section 5: Facility Security and Maintenance
+Subsection 5.1: Lockdown Procedures
+Methods for implementing a facility-wide lockdown, securing access points, and reinforcing perimeter defenses.
+Subsection 5.2: Regular Maintenance Schedules
+A log of routine maintenance checks and requirements to ensure all security systems are fully operational.

@@ -1,0 +1,5 @@
+Incident 007: Fire Drill Disruption
+* Location: Entire Building
+* Description: A scheduled fire drill was disrupted by an unexpected alarm malfunction, causing confusion among staff. The alarm was triggered by a sensor error.
+* Resolution: Alarm system reset, and sensor recalibrated. Drill rescheduled for next month.
+* Comments: Review alarm system maintenance procedures to ensure reliability.

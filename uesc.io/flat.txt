@@ -1,0 +1,2348 @@
+/.farsight7/sound.bin:
+
+<executable>
+
+/Colonization/Operational_Protocols/emergency_procedures.log:
+
+Title: Emergency Procedures Manual: Earth Command HQ
+Purpose: This manual outlines the emergency procedures designed to protect personnel, infrastructure, and critical data at Earth Command HQ in the event of a crisis. The procedures are intended to ensure a swift and organized response to safeguard the facility's operations and integrity.
+
+Section 1: Emergency Response Team (ERT) Activation
+Subsection 1.1: ERT Composition
+Details on team roles, responsibilities, and immediate contact information for key personnel.
+Subsection 1.2: Activation Protocols
+Steps for rapid ERT mobilization, including criteria for activation and initial response actions.
+
+Section 2: Evacuation Procedures
+Subsection 2.1: Evacuation Routes
+Designated escape routes clearly marked within HQ, maps provided for quick reference.
+Subsection 2.2: Roll Call and Accountability
+Checkpoints and procedures for ensuring all personnel are accounted for during evacuation.
+
+Section 3: Communication Protocols
+Subsection 3.1: Crisis Communication Channels
+Secure communication lines established for internal coordination, priority communication with external partners.
+Subsection 3.2: Public Communication and Media Handling
+Guidelines for managing media inquiries, public statements, and maintaining operational confidentiality.
+
+Section 4: Data Security and Backup
+Subsection 4.1: Critical Data Backup
+Protocols for ensuring data backup and redundancy, details on secure off-site storage locations.
+Subsection 4.2: Digital Threat Countermeasures
+Preemptive actions to detect, isolate, and neutralize digital security threats during an emergency.
+
+Section 5: Facility Security and Maintenance
+Subsection 5.1: Lockdown Procedures
+Methods for implementing a facility-wide lockdown, securing access points, and reinforcing perimeter defenses.
+Subsection 5.2: Regular Maintenance Schedules
+A log of routine maintenance checks and requirements to ensure all security systems are fully operational.
+
+Section 6: Post-Emergency Review and Recovery
+Subsection 6.1: Incident Investigation
+Steps for conducting a thorough review post-crisis to identify causes, assess response effectiveness, and implement improvements.
+Subsection 6.2: Recovery and Resumption
+Guidelines for restoring normal operations, focusing on prioritizing critical functions and services.
+
+
+/Command_History/[Automated_Task].log:
+
+Date: [REDACTED]
+Location: Meridiani Station, Mars
+
+[Automated Task]
+> /system_maintenance --routine
+Performing scheduled system maintenance...
+> /cache_cleanup
+Cleaning cache directories...
+> /update_software_libraries
+Applying software library updates…
+
+
+/Command_History/[Automated_Task].log:
+
+Date: [REDACTED]
+Location: Meridiani Station, Mars
+
+[Automated Task]
+> /backup_initiate --priority
+Starting priority data backup protocol...
+> /schedule_shutdown --pending
+Scheduling system shutdown for maintenance...
+> /performance_report --generate
+Generating monthly performance report...
+
+
+/Command_History/[Automated_Task].log:
+
+Date: [REDACTED]
+Location: Meridiani Station, Mars
+
+> /update_firewall --version8.3
+Updating firewall to version 8.3...
+> /scan_virus --routine
+Conducting routine virus scan...
+> /network_optimization --priority
+Commencing priority network optimization...
+
+
+/Command_History/[Automated_Task].log:
+
+Date: [REDACTED]
+Location: Meridiani Station, Mars
+
+[Automated Task]
+> /generate_operational_report
+Generating operational report for current cycle...
+> /test_emergency_broadcast
+Testing emergency broadcast system...
+> /logout_all_sessions
+Logging out all inactive sessions...
+
+
+/Command_History/[END_COMMAND_HISTORY].log:
+
+Date: [REDACTED]
+Location: Meridiani Station, Mars
+
+[END COMMAND HISTORY]
+
+
+/Command_History/[User:0928-MTRX].log:
+
+Date: [REDACTED]
+Location: Meridiani Station, Mars
+
+[User: 0928-MTRX]
+> login 0928-MTRX
+Access level verified. Welcome.
+> exec_mineral_analysis report_1
+Initiating mineral scan data analysis...
+> update_credentials 0928-MTRX --security_clearance +1
+Security clearance update successful.
+> schedule_trans mission Traxus_Command_01
+Preparing external transmission to Traxus Command Center...
+> logout
+Session terminated.
+
+
+/Command_History/[User:2023-MAINT].log:
+
+Date: [REDACTED]
+Location: Meridiani Station, Mars
+
+[User: 2023-MAINT]
+> login 2023-MAINT
+Access level: Maintenance Specialist.
+> inspect_hardware_component
+Inspecting hardware components status...
+> initiate_recalibration --sensors
+Initiating recalibration for all sensor arrays...
+> verify_system_restoration
+Verifying system restoration completion...
+> logout
+Session terminated.
+
+
+/Command_History/[User:2147-CYST].log:
+
+Date: [REDACTED]
+Location: Meridiani Station, Mars
+
+> login 2147-CUST
+Access level: Custodian.
+> check_environmental_sensors
+Reviewing environmental sensor data...
+> optimize_airflow --station5
+Optimizing airflow in Station 5...
+> report_issue HVAC-12
+Logging maintenance request for HVAC system...
+> logout
+Session terminated.
+
+
+/Command_History/[User:3092-SKCH].log:
+
+Date: [REDACTED]
+Location: Meridiani Station, Mars
+
+[User: 3092-SKCH]
+> login 3092-SKCH
+Access level: Systems Engineer.
+> monitor_satellite_feed --live
+Activating live satellite feed monitoring...
+> adjust_parameters --alignment +3.5
+Adjusting satellite parameters by 3.5 degrees...
+> check_integrity SAT-NET
+Performing integrity check on satellite network...
+> initiate_communication --secure Channel_22
+Initiating secure communication over Channel 22...
+> logout
+Session terminated.
+
+
+/Command_History/[User:4285-ANLY].log:
+
+Date: [REDACTED]
+Location: Meridiani Station, Mars
+
+[User: 4285-ANLY]
+> login 4285-ANLY
+Access level: Data Analyst.
+> analyze_energy_consumption
+Analyzing energy consumption metrics...
+> detect_spike --last12h
+Detecting spikes in energy usage over the last 12 hours...
+> compile_visualization --chart
+Compiling data visualization chart...
+> logout
+Session terminated.
+
+
+/Command_History/[User:4567-CRMC].log:
+
+Date: [REDACTED]
+Location: Meridiani Station, Mars
+
+[User: 4567-CRMC]
+> login 4567-CRMC
+Access level: Maintenance Technician.
+> initiate_diagnostics --full
+Running full system diagnostics...
+> view_system_logs -last24h
+Displaying system logs for the last 24 hours...
+> reboot_subroutine NET-04
+Rebooting network subroutine...
+> logout
+Session terminated.
+
+
+/Command_History/[User:5839-HLOG].log:
+
+Date: [REDACTED]
+Location: Meridiani Station, Mars
+[
+User: 5839-HLOG]
+> login 5839-HLOG
+Access level: Logistics Coordinator.
+> track_shipment ID-223A
+Tracking shipment for ID-223A...
+> confirm_delivery Location-14
+Confirming delivery at Location 14...
+> adjust_inventory --received
+Adjusting inventory based on received commodities...
+> logout
+Session terminated.
+
+
+/Command_History/[User:6742-NEWS].log:
+
+Date: [REDACTED]
+Location: Meridiani Station, Mars
+
+> login 6742-NEWS
+Access level: Media Correspondent.
+> broadcast_update CH-99
+Streaming live update on Channel 99...
+> edit_script --latest_findings
+Editing script to include latest findings...
+> schedule_interview --set
+Arranging interview with Recruiter. 
+> logout
+Session terminated.
+
+
+/Command_History/[User:8117-CAPT].log:
+
+Date: [REDACTED]
+Location: Meridiani Station, Mars
+
+[User: 8117-CAPT]
+> login 8117-CAPT
+Access level: Capsuleer.
+> prepare_docking_procedure --sterlingbase
+Preparing docking procedure for Sterling Base...
+> calculate_trajectory --nextsector
+Calculating trajectory for next sector exploration...
+> confirm_launch Window-3
+Confirming launch during Window 3...
+> logout
+Session terminated.
+
+
+/Command_History/[User:8921-SKVG].log:
+
+Date: [REDACTED]
+Location: Meridiani Station, Mars
+
+[User: 8921-SKVG]
+> login 8921-SKVG
+Access level: Research Analyst.
+> extract_data MINERA-ClusterA
+Extracting data from Mineral Cluster A...
+> compare_data --historical
+Comparing extracted data with historical records...
+> send_report Research_Team
+Dispatching report to Research Team...
+> update_daily_log
+Updating daily activity log...
+> logout
+Session terminated.
+
+
+/Command_History/[User:9537-PROJ].log:
+
+Date: [REDACTED]
+Location: Meridiani Station, Mars
+
+[User: 9537-PROJ]
+> login 9537-PROJ
+Access level: Project Manager.
+> update_project_milestone --Q3
+Updating project milestones for Quarter 3...
+> allocate_resource /team-alpha
+Allocating additional resources to Team Alpha...
+> report_progress --execboard
+Submitting progress report to Executive Board...
+> logout
+Session terminated.
+
+
+/Command_History/[User:9902-EXPL].log:
+
+Date: [REDACTED]
+Location: Meridiani Station, Mars
+
+[User: 9902-EXPL]
+> login 9902-EXPL
+Access level: Exploration Team Leader.
+> deploy_probe Zone-3
+Deploying exploratory probe in Zone 3...
+> log_abstraction --coords mapped
+Logging atypical activity near mapped coordinates...
+> retrieve_data Zone 3
+Retrieving data from Zone 3
+> logout
+Session terminated.
+
+
+/Diagnostics_reports/[Communication_Systems_Analysis].txt:
+
+Overview: Routine check of communication hardware and protocols.
+Uplink Stability: 98%
+Downlink Integrity: 95%
+Packet Loss: 2% (Minimal interference detected)
+Actions Required: Replace failing uplink transceiver unit; implement redundant pathways to enhance stability.
+
+
+/Diagnostics_reports/[DIAGNOSTIC_REPORT].txt:
+
+Status: Cycling
+Terminal ID: CyAc-47B9
+Location: UESC Command HQ Substation KL74-9
+
+
+/Diagnostics_reports/[Environmental_Monitoring].txt:
+
+Overview: Assessments of habitat environmental controls and safety systems.
+Air Filtration Efficiency: 91%
+Humidity Regulation: Optimal
+Temperature Fluctuations: ±2°C (Within limits)
+Actions Required: Clean filters in Block_04; recalibrate humidity sensor array.
+
+
+/Diagnostics_reports/[Infrastructure_Integrity_Assessment].txt:
+
+Overview: Structural evaluation of all base facilities to ensure integrity and safety.
+Structural Soundness: 95% (Occasional micro-fissures identified)
+Ventilation System Efficiency: Optimal
+Supply Routes: Clear and operational
+Actions Required: Initiate minor repairs in Block 06; monitor stress points in high-usage areas.
+
+
+/Diagnostics_reports/[Pathogen_Control_Status].txt:
+
+Overview: Verification of base pathogen control measures and biohazard protocols.
+Bio-Screening Success Rate: 99.8%
+Containment Field Effectiveness: 100%
+Recent Incidents: None recorded
+Actions Required: Regularly review pathogen control protocols; perform drill to reinforce response readiness.
+
+
+
+/Diagnostics_reports/[Power_Systems_Diagnostic].txt:
+
+Overview: Evaluation of power generation and distribution systems.
+Solar Array Efficiency: 87%
+Backup Generator Status: Functional (3 out of 4 units operational)
+Power Distribution Variance: None detected
+Actions Required: Schedule generator maintenance cycle; replace aging solar panels by Q4.
+
+
+/Diagnostics_reports/[Resource_Consumption_Audit].txt:
+
+Overview: Review of resource usage and distribution efficiency.
+Water Usage: 15,000 liters/day (Sustainable)
+Energy Consumption: 24,500 kWh/day (Expected load)
+Material Waste Output: 90kg/day (Minimized)
+Actions Required: Optimize energy usage plan for power-hungry equipment; initiate resource conservation campaign.
+
+
+/Diagnostics_reports/[SI_Systems_Status].txt:
+
+Overview: Performance check on SI cognitive functions and response accuracy.
+Processing Speed: 1,200 GFLOPS (Optimal)
+Decision Matrix: Online (Error-free logical operations)
+Quantum Core Temp: Nominal
+Actions Required: Conduct quarterly AI feedback assessments.
+
+
+/Diagnostics_reports/[Satellite_Maintenance_Check].txt:
+
+Overview: Routine examination of satellite functionalities and telemetry data.
+Active Satellites: 22
+Signal Transmission Frequency: Stable
+Orbital Adjustments: Minimal deviations corrected
+System Uptime: 99.9%
+Actions Required: Schedule recalibration of Satellite 8's positioning array; analyze debris trajectory for potential risks.
+
+
+/Diagnostics_reports/[Security_Systems_Evaluation].txt:
+
+Overview: Assessment of digital and physical security measures.
+Firewall Integrity: 100% (Secure)
+Unauthorized Access Attempts: 3 (Repeated IP: 192.168.12.59)
+On-Site Security Breaches: None
+Actions Required: Update access credentials for personnel; enhance threat detection algorithms.
+
+
+
+/Diagnostics_reports/[System_Health_Check].txt:
+
+Overview: Comprehensive system evaluation conducted to ensure optimal performance across all modules.
+CPU Load: 45% (Stable)
+Memory Usage: 65% (Nominal)
+Disk Space Utilization: 72% (Nominal)
+Network Latency: 50ms (Within acceptable range)
+Actions Required: Monitor CPU spikes during peak hours; recommend additional memory resource allocation.
+
+
+/Interplanetary/Exploration/Colonization/Onboarding/Archive/Welcome_to_Marathon_draft003a.txt:
+
+***DRAFT*** 
+
+A New Dawn for Humanity
+
+Welcome to [the Marathon Mission]E1 Project: Marathon, a [bold and]E2 visionary endeavor that marks [a new]E3 the next chapter in humanity's journey [among]E4 to the stars. As you embark on this extraordinary adventure, we invite you to explore the rich history and purpose of the Marathon, a mission that embodies the spirit of exploration [, innovation, and hope]E5 and innovation that fuels our ambitions.
+
+The Genesis of the Marathon:
+Initiated by the Unified Earth Space Council (UESC), [the Marathon Mission]E1 Project: Marathon was conceived as a response to [conditions on Earth and Mars]E6 the challenges and opportunities of a rapidly changing world. With [both Earth and Mars]E7 Earth facing environmental and resource constraints, the UESC envisioned a future where humanity could thrive beyond the confines of our [solar system]E7 home planet[, leading to the commissioning of Project: Marathon]E8. Thus, Project: Marathon was born—a vessel of dreams, designed to carry the torch of human ambition to the distant shores of the Tau Ceti [IV]E9 solar system.
+
+A Unified Endeavor:
+[The Marathon Mission]E1 Project: Marathon is powered by the collective strength of our partners. Traxus OffWorld Industries, CyberAcme Systems, NuCaloric Agricultural, and more join forces to provide technology, adaptability, and sustainability for our journey. At the helm, Project Mission, Colony, Security, and Science Commands [are prepared to guide every segment of this grand endeavor with confidence and pride]E10 are decorated leaders in their fields and have prepared to deliver coordinated support for all contingencies, aided by the UESC Marathon and colony’s dedicated families of [artificial]E11 support intelligences.
+
+A New Beginning:
+[The Marathon Mission]E1 Project: Marathon is more than a journey to a distant star; it is a new beginning for humanity. As we establish a foothold on Tau Ceti IV, we carry with us the hopes and dreams of generations past, and the promise of a brighter future for those yet to come. Together, we will build a thriving [community]E12 community that will grow into a brand new society guided by the principles of cooperation, [sustainability]E13 adaptability, and exploration.
+
+Your Role in the Mission:
+As a [new]E14 colonist, you are an integral part of this historic endeavor. Your experience, training, passions, and determination will help shape the future of our colony and ensure the success of [the Marathon Mission]E1 Project: Marathon. We are excited to have you join us on this incredible journey, as we reach for the stars and embrace the limitless possibilities that await.
+
+[Welcome [aboard]E15 to the UESC Marathon.]E16 Together, we will forge a new path for humanity, and create a legacy that will endure for generations to come.
+
+With hope and determination,
+
+[The Marathon Mission Team]E16
+
+***DRAFT*** 
+
+=======================================================================
+
+EDIT 1 - Use official project name. Let them feel the weight of it. Also, “mission” is too military. Need to soften language when we can to maintain intended messaging. “Mission” is something given–a task, a chore. “Mission” may imply violence and subservience. “Project” is constructive, collaborative–”we are in this together,” “what I achieve, we achieve.”
+
+EDIT 2 - Redundant. Simplify language. 
+
+EDIT 3 - “A new” feels like it is replacing the “chapter” that came before, and it is, but emotionally replacing the past creates tension between the audience and their view of the past and present. We are advancing our story, moving forward. Momentum matters, let’s create some. 
+
+EDIT 4 - “Among” is too passive. “To” is active–more the momentum to propel us forward. It’s a small thing, but language matters. The audience may not register how words affect them, but they do. It is our job to ensure we craft the intended effects to drive toward intended outcomes, and avoid the mundane as it has the habit of feeding apathy, or worse, discontent.
+
+EDIT 5 - “Hope” will have its place, but it is too nebulous here. “Hope” is fleeting. “Ambition” is driving–a challenge to a person’s will and ego. The word alone makes them consider their efforts and end games compared to others. It creates a sense of pride and competition–no one wants to be left behind because they lack ambition.
+
+EDIT 6 - “Conditions on Earth and Mars” can be viewed as shifting blame to the reader. In the grand scheme the conditions are the fault of everyone but let’s avoid phrasing that puts colonists on the defensive, no matter how unintentional. There will be enough emotions around this undertaking. It is our job as Public Relations liaisons to manage and guide our charges toward positive thought and action. “Conditions” is a word typically used in conjunction with problems (weather conditions, medical conditions, terms and conditions–all troubles inflicted upon a person with little recourse but wishing you could have avoided them), which can make the audience feel as though they are fleeing a situation or avoiding responsibility. Not an outlook we want to seed, ever and more so at this early stage.
+
+“Challenges and opportunities,” on the other hand, empowers one to step up in the face of obstacles while offering the promise of new, forward-facing outcomes. People, especially pioneers, embrace challenge. People, especially optimists and futurists, embrace opportunity. We are providing both.
+
+EDIT 7 - From management: “Paragraph 2, Line 3. Mention only Earth. We want to remind people–the colonists and any public eyes who may find this messaging–that our true home is Earth, not Mars. This is both a point of pride and a point of contention some in MilComm want to test. Tensions on Mars in the lead-up to the Marathon’s completion and launch are beyond acceptable rates. MilComm wants to find points of ‘gentle’ nudging to see if the scales can be tipped and pressure can be increased if/when local trouble decides to escalate.”
+
+I’ve included the note as provided, with no further comment.
+
+EDIT 8 - Let’s start to introduce some of the more flavorful wording here. Don’t over do it, but here is where we should consider pushing our phrasing to have a bit more flow/poetry/color. Again, careful with how far we push it, but let’s start to play with emotions like hope, wonder, dreams, etc. Not too overtly, just enough. I suggest reviewing draft files for Strauss’s portion of the launch day ceremony. It’s still in the works, but the man and his team know human nature and how to deliver a message. Avoid 1:1s, but similarities at the right cadence will have value.
+
+EDIT 9 - Excellent update here overall, but let’s up the scale to stick the landing of the dreams, flame and ambition you set forth. There are many shores across Tau Ceti and while our target is Tau Ceti IV the image we want to paint is of an entire solar system we plan to conquer. While none of our initial colonists will ever see worlds beyond TCIV, their ancestors will.
+
+EDIT 10 - Jump back to clear, hard fact here. “Confidence” and “pride” are suggested in the scale of this Project and its goals–both stated and implied. Doesn’t need to be cold. Instill “confidence” without including the word.
+
+EDIT 11 - Of course, “artificial intelligence” remains the popular nomenclature for our support intelligences, but I feel this term is heading toward obsolescence and it is in our best interest to use language that suggests service over the baggage of the common usage. SciComm may not approve–they love their toys, so make the change for now and we can revert if needed.
+
+EDIT 12 - Expanded beyond “community.” A community is your neighborhood. Project: Marathon is claiming a new planet. Maybe something simple that expands community to society. 
+
+EDIT 13 - “Sustainability” was used in previous paragraph. Suggest: “adaptability.”
+
+EDIT 14 - Cut.
+
+EDIT 15 - Yes, technically it is a ship, but more so it is a place–a moon and their home for ~300 years. Soften a bit.
+
+EDIT 16 - Replace sign-off with first sentence of final line. Remove period from line so the sentence becomes a sign-off.
+
+
+/Interplanetary/Terraforming/IV/Quantum_Experiments/Quantum_Experiments.log:
+
+
+[REDACTED] 
+
+/Interplanetary/Terraforming/IV/TC_Lifeforms/Analysis_TC_Lifeforms.txt:
+
+[REDACTED]
+
+/Legislation/Security/Counter-Intelligence/Internal_Affairs/Abara.C.file:
+
+[CLEARANCE REQUIRED]
+
+
+/Legislation/Security/Counter-Intelligence/Internal_Affairs/Astralis. N.file:
+
+[CLEARANCE REQUIRED]
+
+/Legislation/Security/Counter-Intelligence/Internal_Affairs/Bailuys.R.S.file:
+
+UESC EMPLOYEE PROFILE
+CONFIDENTIAL - INTERNAL USE ONLY
+PERSONNEL FILE: BAILUYS, RANDY S.
+
+BASIC INFORMATION:
+Employee ID: UESC-47291-RSB
+Position: Systems Analyst, Sec-Lev II
+Department: Information Technology Support Division (ITSD)
+Security Level: [CLEARANCE REQUIRED]
+Status: Active
+PROFESSIONAL QUALIFICATIONS:
+Master of Science, Quantum Computing, Mars University (details)
+Bachelor of Science, Network Security, Earth Institute of Technology (details)
+UESC Certified Systems Administrator (details)
+Advanced Neural Network Programming Certification (details)
+PERFORMANCE SUMMARY:
+Q2 REV STAT: Meets Expectations
+Q3 REV STAT: Meets Expectations
+Security Protocol Compliance: 72.7% (flag)
+Incident Response Rating: B-
+ASSIGNMENT HISTORY:
+Information Technology Support Division (details)
+UESC Internship Program (details)
+MEDICAL INFORMATION:
+Last Physical Examination: Pass (records)
+Fitness Assessment: Standard (records)
+Allergies: (records)
+FAMILY INFORMATION:
+Marital Status: Single (flag)
+Emergency Contact: Bailuys, Amara E. (Sibling)
+Parents: Bailuys, Safin D.  (Father, Deceased), Bailuys, Nikita L. (Mother)
+Mother's Maiden Name: Anderson, Nikita L.
+Dependents: None
+SECURITY NOTES:
+Minor security infraction: Unauthorized terminal access (details)
+Resolution: Verbal warning issued. Additional security protocol training completed. 
+Minor security infraction: Repeated Access Key retrieval. 
+Resolution: Written warning issued. Flagged for Internal Affairs review. Incident cleared.
+ADDITIONAL REMARKS:
+Demonstrates exceptional problem-solving skills
+Tendency to work extended hours without logging overtime
+Demonstrates exceptional social skills
+Participates in UESC Volunteer Initiative Program
+DOCUMENT CONTROL:
+Classification: Confidential
+Status: Current
+Authorized Access: Beta-4 and above
+
+
+/Legislation/Security/Counter-Intelligence/Internal_Affairs/Chen.D.file:
+
+[CLEARANCE REQUIRED]
+
+/Legislation/Security/Counter-Intelligence/Internal_Affairs/Choi.O.file:
+
+[CLEARANCE REQUIRED]
+
+/Legislation/Security/Counter-Intelligence/Internal_Affairs/Chromov.Y.file:
+
+[CLEARANCE REQUIRED]
+
+/Legislation/Security/Counter-Intelligence/Internal_Affairs/Cortez.E.file:
+
+[CLEARANCE REQUIRED]
+
+/Legislation/Security/Counter-Intelligence/Internal_Affairs/Dubois.V.file :
+
+[CLEARANCE REQUIRED]
+
+/Legislation/Security/Counter-Intelligence/Internal_Affairs/Garcia.A.file:
+
+[CLEARANCE REQUIRED]
+
+/Legislation/Security/Counter-Intelligence/Internal_Affairs/Gupta.C.file:
+
+[CLEARANCE REQUIRED]
+
+/Legislation/Security/Counter-Intelligence/Internal_Affairs/Ibrahim.O.file :
+
+[CLEARANCE REQUIRED]
+
+/Legislation/Security/Counter-Intelligence/Internal_Affairs/Ivanova.T.file:
+
+[CLEARANCE REQUIRED]
+
+/Legislation/Security/Counter-Intelligence/Internal_Affairs/Johnson.E.file:
+
+[CLEARANCE REQUIRED]
+
+/Legislation/Security/Counter-Intelligence/Internal_Affairs/Khalid.I.file:
+
+[CLEARANCE REQUIRED]
+
+/Legislation/Security/Counter-Intelligence/Internal_Affairs/Kim.C.file:
+
+[CLEARANCE REQUIRED]
+
+/Legislation/Security/Counter-Intelligence/Internal_Affairs/Kowalski.S.file:
+
+[CLEARANCE REQUIRED]
+
+/Legislation/Security/Counter-Intelligence/Internal_Affairs/Martínez.A.file:
+
+[CLEARANCE REQUIRED]
+
+/Legislation/Security/Counter-Intelligence/Internal_Affairs/Mbeki.R.file:
+
+[CLEARANCE REQUIRED]
+
+/Legislation/Security/Counter-Intelligence/Internal_Affairs/Müller.T.file:
+
+[CLEARANCE REQUIRED]
+
+/Legislation/Security/Counter-Intelligence/Internal_Affairs/Nakamura.A.file:
+
+[CLEARANCE REQUIRED]
+
+/Legislation/Security/Counter-Intelligence/Internal_Affairs/Nebula.X.file:
+
+[CLEARANCE REQUIRED]
+
+/Legislation/Security/Counter-Intelligence/Internal_Affairs/Neostar.R.file:
+
+[CLEARANCE REQUIRED]
+
+/Legislation/Security/Counter-Intelligence/Internal_Affairs/Nguyen.O.file:
+
+[CLEARANCE REQUIRED]
+
+/Legislation/Security/Counter-Intelligence/Internal_Affairs/Novak.K.file:
+
+[CLEARANCE REQUIRED]
+
+/Legislation/Security/Counter-Intelligence/Internal_Affairs/O'Neill.P.file:
+
+[CLEARANCE REQUIRED]
+
+/Legislation/Security/Counter-Intelligence/Internal_Affairs/Okafor.R.file:
+
+[CLEARANCE REQUIRED]
+
+/Legislation/Security/Counter-Intelligence/Internal_Affairs/Orbitson.K.file:
+
+[CLEARANCE REQUIRED]
+
+/Legislation/Security/Counter-Intelligence/Internal_Affairs/Patel.W.file:
+
+[CLEARANCE REQUIRED]
+
+/Legislation/Security/Counter-Intelligence/Internal_Affairs/Pulsar.Q.file:
+
+[CLEARANCE REQUIRED]
+
+/Legislation/Security/Counter-Intelligence/Internal_Affairs/Quan.A.file:
+
+[CLEARANCE REQUIRED]
+
+/Legislation/Security/Counter-Intelligence/Internal_Affairs/Quantrill.W.file:
+
+[CLEARANCE REQUIRED]
+
+/Legislation/Security/Counter-Intelligence/Internal_Affairs/Rodriguez.R.file:
+
+[CLEARANCE REQUIRED]
+
+/Legislation/Security/Counter-Intelligence/Internal_Affairs/Singh.P.file:
+
+[CLEARANCE REQUIRED]
+
+/Legislation/Security/Counter-Intelligence/Internal_Affairs/Solaris.A.file:
+
+[CLEARANCE REQUIRED]
+
+/Legislation/Security/Counter-Intelligence/Internal_Affairs/Starr.P.file:
+
+[CLEARANCE REQUIRED]
+
+/Legislation/Security/Counter-Intelligence/Internal_Affairs/Stellaris.V.file:
+
+[CLEARANCE REQUIRED]
+
+/Legislation/Security/Counter-Intelligence/Internal_Affairs/Strauss.B.file:
+
+[CLEARANCE REQUIRED]
+
+/Legislation/Security/Counter-Intelligence/Internal_Affairs/Takahashi.R.file:
+
+[CLEARANCE REQUIRED]
+
+/Legislation/Security/Counter-Intelligence/Internal_Affairs/Volkov.L.file:
+
+[CLEARANCE REQUIRED]
+
+/Legislation/Security/Counter-Intelligence/Internal_Affairs/Vortex.D.file:
+
+[CLEARANCE REQUIRED]
+
+/Legislation/Security/Counter-Intelligence/Internal_Affairs/Williams.A.file:
+
+[CLEARANCE REQUIRED]
+
+/Legislation/Security/Counter-Intelligence/Internal_Affairs/Yoshito.T.file:
+
+<empty>
+
+/Legislation/Security/Counter-Intelligence/Internal_Affairs/Zeroth.E.file:
+
+[CLEARANCE REQUIRED]
+
+/Legislation/Security/Counter-Intelligence/Internal_Affairs/Zhao.Z.file:
+
+[CLEARANCE REQUIRED]
+
+/Legislation/Security/Counter-Intelligence/Internal_Affairs/_GLAM.file:
+
+[CLEARANCE REQUIRED]
+
+/Legislation/Security/Counter-Intelligence/Internal_Affairs/_VESSEL.file:
+
+[CLEARANCE REQUIRED]
+
+/Legislation/Security/Counter-Intelligence/Internal_Affairs/_YAVA.file:
+
+[CLEARANCE REQUIRED]
+
+/Legislation/Security/Cybersecurity/Threat_Assessment/ASTERISK_TATTOO/ASTERISK_TATTOO.log:
+
+[CLEARANCE NEEDED]
+
+/Legislation/Security/Cybersecurity/Threat_Assessment/BIG_DAY_OUT/BIG_DAY_OUT.log:
+
+[CLEARANCE NEEDED]
+
+/Legislation/Security/Cybersecurity/Threat_Assessment/EXIT_LANE/EXIT_LANE.log:
+
+[CLEARANCE NEEDED]
+
+/Legislation/Security/Cybersecurity/Threat_Assessment/FINAL_EXAM/FINAL_EXAM.log:
+
+[CLEARANCE NEEDED]
+
+/Legislation/Security/Cybersecurity/Threat_Assessment/FROG_BLAST/FROG_BLAST.log:
+
+[CLEARANCE NEEDED]
+
+/Legislation/Security/Cybersecurity/Threat_Assessment/GONE_FISHIN/GONE_FISHIN:
+
+[CLEARANCE NEEDED]
+
+/Legislation/Security/Cybersecurity/Threat_Assessment/HIGH_ROAD_VELOCITY/HIGH_ROAD_VELOCITY.log:
+
+[CLEARANCE NEEDED]
+
+/Legislation/Security/Cybersecurity/Threat_Assessment/LOW_HORIZON/LOW_HORIZON.log:
+
+[CLEARANCE NEEDED]
+
+/Legislation/Security/Cybersecurity/Threat_Assessment/PALADIN_MATRIX/PALADIN_MATRIX.log:
+
+[CLEARANCE NEEDED]
+
+/Legislation/Security/Cybersecurity/Threat_Assessment/ROUNDABOUT/ROUNDABOUT.log:
+
+[CLEARANCE NEEDED]
+
+/Legislation/Security/Cybersecurity/Threat_Assessment/ROUNDTABLE/ROUNDTABLE.log:
+
+[CLEARANCE NEEDED]
+
+/Legislation/Security/Cybersecurity/Threat_Assessment/SHIPPING_AND_HANDLING/SHIPPING_AND_HANDLING.log:
+
+[CLEARANCE NEEDED]
+
+/Legislation/Security/Cybersecurity/Threat_Assessment/SLIP_DISC/SLIP_DISC.log:
+
+[CLEARANCE NEEDED]
+
+/Legislation/Security/Cybersecurity/Threat_Assessment/TETHERBALL/TETHERBALL.log:
+
+[CLEARANCE NEEDED]
+
+/Legislation/Security/Cybersecurity/Threat_Assessment/TIN_CAN_WITH_STRINGS/TIN_CAN_WITH_STRINGS.log:
+
+[CLEARANCE NEEDED]
+
+/Legislation/Security/Cybersecurity/Threat_Assessment/UNICORN/UNICORN.log:
+
+[CLEARANCE NEEDED]
+
+/Legislation/Security/Cybersecurity/Threat_Assessment/ZERO_ZERO/ZERO_ZERO.log:
+
+[CLEARANCE NEEDED]
+
+/Legislation/Security/Cybersecurity/Threat_Assessment/starting_line/starting_line.txt:
+
+UE-INTELLIGENCE DIVISION
+CLASSIFIED REPORT: [CLEARANCE REQUIRED]
+CODENAME: STARTING LINE
+ 
+CASE FILE: [SECURITY CLASSIFIED]
+TYPE: Multi-target Threat Assessment
+STATUS: [SECURITY CLASSIFIED]
+CLASSIFICATION: [SECURITY CLASSIFIED] 
+EVIDENCE LOGS: [SECURITY CLASSIFIED]
+ 
+SUMMARY:
+External infosec breach compromised vital intelligence related to system-wide security.
+Highly-classified details specific to PRO:GO and its target were discovered by non-UESC operatives with intent to disseminate for currently undefined purposes including, but not limited to, anti-UESC activities, recruitment of public, private, and governmental parties into the ranks of known and suspected anti-UESC groups, including, but not limited to MIDA, Traxus OffWorld Industries, and Sekiguchi Genetics.
+The extent of any party’s role remains an active consideration.
+Brute force nature of system disruptions makes full accounting of offending parties difficult to define. 
+UESC netspace security was compromised.
+Initial disruption points to MIDA instigation.
+Involvement of entities with direct connect and/or operational relations with UESC and UESC sub-branches requires thorough consideration and varied clearance approvals.
+All approvals granted.
+Investigation underway and unimpeded.
+ 
+NOTES:
+-       Incident response to secure systems breach via cross-party manipulation by third party operative(s).
+-       Parties:
+-       MIDA, primary 
+-       [SECURITY CLASSIFIED]
+-       Traxus OffWorld Industries, secondary
+-       [SECURITY CLASSIFIED]
+-       Sekiguchi Genetics, secondary
+-       [SECURITY CLASSIFIED]
+-       Evidence of MIDA-run data incursion compromising PRO:GO and related POR.
+-       Cross-party integration remains undefined, but proven connections suggest collaboration between one or more parties of interest.
+-       Intent or infiltration remains to be defined
+-       Subject of targeted intel escalated response to all-points, UE-ID scramble protocols triggered to ensure protections for [SECURITY CLASSIFIED].
+-       Tracking of multiple individuals of interest 
+ 
+INCIDENT REPORTS [Page 09 / 33]:
+-       ueid.casefile1613e_trx_bod_chat001.rpt
+-       ueid.casefile115-c_oxpal_b01_ir.rpt
+-       [SECURITY CLASSIFIED]
+-       [SECURITY CLASSIFIED]
+-       [SECURITY CLASSIFIED]
+-       ueid.casefile614-4_sekgen_comm_ir.rpt
+-       ueid.casefile448-a_biomata_PO_discrep.rpt
+-       ueid.casefile5cf-0_yoshito_t_invst.rpt
+-       [SECURITY CLASSIFIED]
+-       [SECURITY CLASSIFIED]
+-       ueid.casefilee1d1_runner_activ_trkr_E.init
+-       ueid.casefilee633_runner_activ_trkr_EO.init
+-       ueid.casefile80b_runner_activ_trkr_M.init
+-       [SECURITY CLASSIFIED]
+-       [SECURITY CLASSIFIED]
+-       [SECURITY CLASSIFIED]
+
+
+/Legislation/Security/Tactical_Operations/Security_Logistics/Confiscations/Weapons/BRRT_SMG.pdf2:
+
+BRRT SMG
+Signal_Data.tx _Manufacturer: xxx _Magazine Capacity: xx CPU usage: 6.80% user, 9.30% sys, idle SharedLibs: 475M, 82.20% Data tracker: 90M datapoints MemRegions: 141900 total, Resident: 5140M Memory: Private: 1430M Shared: PhysMem: 17.2G used (2970M wired), 40M unused. Swapins: 14345678 CO) Swapouts Networks: packets: 15456789(0) Reg: 74123456/56.4G- In, 1556789
+
+
+   ++..+++.                                                             
+   ++++++=.  ....+++...........                                         
+   +=++++==++=#===============+++++=.........................           
+   +==++++=++##=#==================#=======...........+========+.++.    
+   ======++++===##======+==========#=======............============+    
+  .+=======######@##====##==#=+++++=++................++===========+    
+  +==========####+.===+====#.                           +==========+    
+   .+============.  +. +=++==+                           +=========+    
+   .+===+     ++++... ..++..===.                         .=========.    
+  .+====                 ++  ==#.                         .=========    
+ .+===#                  .++  ==#                          +=======.    
+ .+==#.                   .++.==+.                          +===+       
+ ..+==                     ...                               ....       
+
+
+/Legislation/Security/Tactical_Operations/Security_Logistics/Confiscations/Weapons/Bully_SMG.pdf2:
+
+Bully SMG 
+Signal_Data.tx _Manufacturer: xxx _Magazine Capacity: xx CPU usage: 7.15% user, 9.85% sys, idle SharedLibs: 500M, 83.40% Data tracker: 96M datapoints MemRegions: 149800 total, Resident: 5350M Memory: Private: 1500M Shared: PhysMem: 17.9G used (3090M wired), 43M unused. Swapins: 14789012 CO) Swapouts Networks: packets: 15901234(0) Reg: 76901234/58.5G- In, 1601234
+
+
+                  .+..                                                  
+             .+++++===+++                                               
+   ==========+++==++===+=.........................   ==#                
+   ====#==#=====##========+++++##================++=+==#                
+   =##======+===###=#======####@@##===#==========+=====#                
+...=====+====###########+++++++.++============##=====#=#                
++==+====+====#==+ .=+====.         .===========+ .=..#=#                
+..  .===.....====  . +====.         ==========#========#                
+    +====    +==#=    +====#       +==========.     .==#                
+    +===#    +==@=+   .====#      =========...       ...                
+    +==##    +=#@==+++=====#    .========+                              
+    .....    ..++...........   .========+                               
+                              .========.                                
+                               .+=====.                                 
+                                  ..+.                                  
+
+
+/Legislation/Security/Tactical_Operations/Security_Logistics/Confiscations/Weapons/CE_Tactical_Sidearm.pdf2:
+
+CE Tactical Sidearm
+Signal_Data.tx _Manufacturer: xxx _Magazine Capacity: xx CPU usage: 6.30% user, 8.70% sys, idle SharedLibs: 435M, 80.70% Data tracker: 78M datapoints MemRegions: 128100 total, Resident: 4880M Memory: Private: 1350M Shared: PhysMem: 15.9G used (2760M wired), 31M unused. Swapins: 13456789 CO) Swapouts Networks: packets: 14567890(0) Reg: 69012345/53.9G- In, 1467890
+
+
+  ....                                                                  
+.+++++++++                                                              
+.++==++++=....+++++=+++++++++++++.                                      
+.+.++++++=+++++++++#++++++=++=++++                                      
+.+.+.++++=+++++++++#++==++=++=++=+                                      
+.++++++++=+++++++++#++=++==+==++=+                                      
+.=########=========#==########=++.                                      
+.+++...=#===+++++++==##...                                              
+.+++   .+.+++++++++==##                                                 
+.+++      .++++++++++===.                                               
+.+++      .+ .++++++++++==+                                             
+.+++.     .. .+.++++++++++=#.                                           
+.+++++++++... +.+++++++++==#@                                           
+ .......      .+++++++++====@=                                          
+               ++++++++++===#@                                          
+                +++++++++===#@=                                         
+                 +++++++++===#@                                         
+                  ++++++++===##.                                        
+                  .+++++++...                                           
+                   ....                                                 
+
+
+/Legislation/Security/Tactical_Operations/Security_Logistics/Confiscations/Weapons/Conquest_LMG.pdf2:
+
+Conquest LMG
+Signal_Data.tx _Manufacturer: xxx _Magazine Capacity: xxx CPU usage: 8.20% user, 11.40% sys, idle SharedLibs: 535M, 85.60% Data tracker: 115M datapoints MemRegions: 160200 total, Resident: 5680M Memory: Private: 1610M Shared: PhysMem: 19.1G used (3280M wired), 50M unused. Swapins: 16012345 CO) Swapouts Networks: packets: 17234567(0) Reg: 80123456/60.5G- In, 1723456
+
+
+                                   .......                              
+                    ...................+..++..                          
+..................+.+.......=++...+...++...+.+++++++++++++.+++..........
+ .................+...+...+#@#=+++=...+......+.+===+++++++..+...+.+.+++ 
+                    ...  .++=#+..=++..+=... ... #====.  .     ... ++=+. 
+                    ..   .+.       ....+.....   ...+++.        .  +=+++ 
+                         +=.      ...........      +++=.    ......+++++ 
+                                  ...=....+++      .++.+++++++++++++... 
+                                  .++@+...++=     .++++++.....          
+                                  .@@@###@@@#      ++..                 
+
+
+/Legislation/Security/Tactical_Operations/Security_Logistics/Confiscations/Weapons/Hardline_PR.pdf2:
+
+Hardline PR
+Signal_Data.tx _Manufacturer: xxx _Magazine Capacity: xx CPU usage: 6.75% user, 9.25% sys, idle SharedLibs: 465M, 81.90% Data tracker: 88M datapoints MemRegions: 138500 total, Resident: 5080M Memory: Private: 1410M Shared: PhysMem: 16.9G used (2920M wired), 37M unused. Swapins: 14123456 CO) Swapouts Networks: packets: 15234567(0) Reg: 73456789/55.8G- In, 1534567
+
+
+.===                              ...                                   
+.++=.=....++++++++++.......+++++.==#=++=##..........===####+==          
++++#+====================================##=#===========++++#=====++++++
++#@@@@===================#@@#####=#####=+. .#=#=+ .......=+=#+..=======+
+.=#####.                 ...===== .+====.   +.====+.     ...    ===#=== 
+  .....                              +=.=+     +====++.        .===#==+ 
+                                      .====.    .=====#+      +====#==+ 
+                                       =====+.++++=+##.      .=========.
+                                        =========+           .=========+
+                                         +=====+.                   ... 
+                                          +==.                          
+
+
+/Legislation/Security/Tactical_Operations/Security_Logistics/Confiscations/Weapons/Longshot.pdf2:
+
+Longshot 
+Signal_Data.tx _Manufacturer: xxx _Magazine Capacity: xx CPU usage: 6.90% user, 9.50% sys, idle SharedLibs: 485M, 82.50% Data tracker: 93M datapoints MemRegions: 144500 total, Resident: 5220M Memory: Private: 1460M Shared: PhysMem: 17.6G used (3040M wired), 41M unused. Swapins: 14456789 CO) Swapouts Networks: packets: 15567890(0) Reg: 75012345/57.3G- In, 1567890
+
+
+                                       ...                              
+                                      .=+++++++==.+=++...               
+                                      .========@#=#@====+               
+....+........................++++++...+++=++....+=++...++++..........=+=
+...+++++++++++++++++++.+=+=#==========###====++=#@###=##=====###+++#==+=
+                       +==##@=++++++++++==#####=######=+..=======+=#==+=
+                       ......           +======+. .+==+   +=#===  .===+=
+                                        .........   +===  ......  .....+
+                                                     ==+                
+
+
+
+/Legislation/Security/Tactical_Operations/Security_Logistics/Confiscations/Weapons/M77_Assault_Rifle.pdf2:
+
+M77 Assault Rifle
+Signal_Data.tx _Manufacturer: xxx _Magazine Capacity: xx CPU usage: 6.85% user, 9.32% sys, idle SharedLibs: 512M, 84.20% Data tracker: 87M datapoints MemRegions: 152300 total, Resident: 5420M Memory: Private: 1520M Shared: PhysMem: 18.2G used (3120M wired), 45M unused. Swapins: 15234567 CO) Swapouts Networks: packets: 16789012(0) Reg: 78901234/58.3G- In, 1678901
+
+
+       ...                                .++                           
+     .++++.  ................+.... .......+++...........................
+......+++.+...+.........+.=++#++...=@#=#=+.+..===++++.+====#=+++++=+++=#
+.=..++=#++++++++++++++++++#+++++++++#@###=+++=#=++++++======+=#====+++=#
+ .....=====++++++++++.+.+.+==######==#@#####@#=+++++++===++++=....+.=+=#
+                            .+++=+     .+.++=.      +========#=.  ..++=#
+                           .+.+=+       ..++++=     .+++++++= .....+++=#
+                          .= .++          .+++==    .+++++++=  .+.++++=#
+                         .++.+=            .++==+   .+++++++=  ...++++=#
+                         ++++=.             .++++=   ......++   ......+=
+                         .++=+++...     ...++===+.                      
+                            ..++=+++..+++===+.                          
+                                 .++===++                               
+
+
+
+/Legislation/Security/Tactical_Operations/Security_Logistics/Confiscations/Weapons/Magnum_MC.pdf2:
+
+Magnum MC
+Signal_Data.tx _Manufacturer: xxx _Magazine Capacity: xx CPU usage: 6.40% user, 8.80% sys, idle SharedLibs: 440M, 80.90% Data tracker: 80M datapoints MemRegions: 130000 total, Resident: 4920M Memory: Private: 1360M Shared: PhysMem: 16.1G used (2790M wired), 32M unused. Swapins: 13567890 CO) Swapouts Networks: packets: 14678901(0) Reg: 70123456/54.2G- In, 1478901
+
+
+++++++++++++++++++++++                                                  
++=====================....................                              
++++.====================+=++++++++++++===#=.+                           
++=++=================================##@##...                           
++===##=================================##=                              
++====++=====##=++. .+=+==..+++===#++......                              
+          .=.       .=  ++ .+==+==+                                     
+          .+=.......+=+....+=======.                                    
+           .++.......+===+...++=+++=.....++++.                          
+                     .+==     .++=++=+++++===+                          
+                     .+==.     +++==========+                           
+                     .++==.    ++++=+=====+.                            
+                     .+++++++++++++====++.                              
+
+
+/Legislation/Security/Tactical_Operations/Security_Logistics/Confiscations/Weapons/Overrun_AR.pdf2:
+
+Overrun AR
+Signal_Data.tx _Manufacturer: xxx _Magazine Capacity: xx CPU usage: 7.45% user, 10.15% sys, idle SharedLibs: 490M, 81.75% Data tracker: 102M datapoints MemRegions: 145600 total, Resident: 5310M Memory: Private: 1480M Shared: PhysMem: 17.5G used (3050M wired), 42M unused. Swapins: 14789023 CO) Swapouts Networks: packets: 15678901(0) Reg: 75678901/57.2G- In, 1589012
+
+
+ ...                                    ..++                            
+...............................+.+..+...+++..........................+..
+ ++.++.+++#++..............++==++=+++=#===+....===++++.+=====#+++++++++.
+.=####=###@=+..++++++++++++++++++...+=###========++++++++++++++++++++++.
+...=========+++++++++++++++++++=====..+=+++++=.......++++++.+++=+++=+++.
+                           .++++++..+.  ...++++.      +=========+   .++.
+                            ........+=.    .++++.     .+++++++.     .++.
+                            +========..     .++++.    .+++++++.     ... 
+                             .....+++        .==+.    .....+++.         
+
+
+/Legislation/Security/Tactical_Operations/Security_Logistics/Confiscations/Weapons/Repeater_HPR.pdf2:
+
+Repeater HPR 
+Signal_Data.tx _Manufacturer: xxx _Magazine Capacity: xx CPU usage: 6.60% user, 9.10% sys, idle SharedLibs: 455M, 81.50% Data tracker: 85M datapoints MemRegions: 135200 total, Resident: 5020M Memory: Private: 1390M Shared: PhysMem: 16.6G used (2870M wired), 35M unused. Swapins: 13901234 CO) Swapouts Networks: packets: 15012345(0) Reg: 72345678/55.2G- In, 1512345
+
+
+           ..                                  ...+                     
+          .===.. ............   ......   ......=#=+...................+.
+ ...       .+++++==+++++++++++########++.=####=++++=====++====#=======#=
+.+==++++++.+#####@#+======================@@##=====@============#@#===@=
+         .+========+              =##==##==######@=+...+=====+==#+++=+#=
+         .========.               ++++====.  +.===+     +=======#=  .=#=
+                                      +++++    +====     ....+++     =#+
+                                                +====                   
+                                                .===.                   
+
+
+/Legislation/Security/Tactical_Operations/Security_Logistics/Confiscations/Weapons/Twin_Tap_HBR.pdf2:
+
+Twin Tap HBR
+Signal_Data.tx _Manufacturer: xxx _Magazine Capacity: xx CPU usage: 7.10% user, 9.80% sys, idle SharedLibs: 495M, 83.10% Data tracker: 95M datapoints MemRegions: 148900 total, Resident: 5250M Memory: Private: 1470M Shared: PhysMem: 17.8G used (3080M wired), 43M unused. Swapins: 14567890 CO) Swapouts Networks: packets: 15901234(0) Reg: 76789012/57.8G- In, 1601234
+
+
+             ...                          ....+                         
+            ..+++....... ......      .....+==+..........................
+ ....        ...+........+++++==++...+=====+++.+==+++++.+++++==+++++=+++
+.===========+..++++++++++==++++++++++=####=++++=#=++++++=====#==#====+++
+             +=############========##+#@#########+++++++===++++=+....+++
+                                   ++. ...++++=      .=========#+   ++++
+                                   .+.   . .+++=.     .+++++++= ..  .+++
+                                   .++++.   ++++=.    .====+++=     .+++
+                                   .+++++    ++++=.        ....     ....
+                                   .++++++   .+=+..                     
+                                   .+++++++++..                         
+
+
+/Legislation/Security/Tactical_Operations/Security_Logistics/Confiscations/Weapons/V00_ZEUS_RG.pdf2:
+
+V00 ZEUS RG
+Signal_Data.tx _Manufacturer: Unknown (Modified Mining Equipment) _Magazine Capacity: xx CPU usage: 8.50% user, 11.70% sys, idle SharedLibs: 550M, 86.20% Data tracker: 120M datapoints MemRegions: 165000 total, Resident: 5780M Memory: Private: 1640M Shared: PhysMem: 19.5G used (3350M wired), 52M unused. Swapins: 16234567 CO) Swapouts Networks: packets: 17456789(0) Reg: c1172313-dd5f-4d4d-bee5-6020d16870ee
+
+Note: This appears to be a prototype (zero-series) volt-actuated, rail-drive projectile system illegally modified using proprietary mining tech to increase payload delivery. Possibly the result of unlicensed kit-bashing, but worth investigating potential links between mining outfits and weapons manufactures. Note Reg to track any necessary follow up.
+
+
+                                  ......++.                             
+                                  +========+                            
+.===+...................         .+=========............................
++====+++====+==============++++++++==##########=============+=====++++==
++====+++===+=======+##==@##=============#######=============+======+++=+
+.++++.+++++++++++=#=====##==++++++++=====++++++++==========#======++++=+
+               .+#=====#==++++======#=+++.....+  .===.    .======+++++=.
+               +=#===================++===+...=   .+=+     .=====++..   
+               ++#===================++===+        +========++==+       
+                                                  .+++++++++++++.       
+
+/Legislation/Security/Tactical_Operations/Security_Logistics/Confiscations/Weapons/V11_Punch.pdf2:
+
+V11 Punch
+Signal_Data.tx _Manufacturer: xxx _Magazine Capacity: xx CPU usage: 6.50% user, 8.90% sys, idle SharedLibs: 445M, 81.10% Data tracker: 82M datapoints MemRegions: 131900 total, Resident: 4960M Memory: Private: 1370M Shared: PhysMem: 16.3G used (2820M wired), 33M unused. Swapins: 13678901 CO) Swapouts Networks: packets: 14789012(0) Reg: 71234567/54.5G- In, 1489012
+
+
+ ++++++++++++++                                                         
+ +============+                                                         
+ +============+              ..                                         
+ +=====+++++++++++ ++=+++++++=====+..                                   
+ +===+============+==================.                                  
+  ..+=============@==============#=...                                  
+   +=##===========@=============#@                                      
+  .===============.===+  .#.+====#=                                     
+ +================.===+   =..======#                                    
+ +================.===+  .. .=======#                                   
+ +===============#====+       +======#.                                 
+ +===============##====+      .+======#.                                
+ +===============##======.     .+===++.                                 
+ +===============##=======.     .+.                                     
+ +===============#@========                                             
+ ================#.+++++...                                             
+.================#                                                      
++=================                                                      
+
+
+/Legislation/Security/Tactical_Operations/Security_Logistics/Confiscations/Weapons/V22_Volt_Thrower.pdf2:
+
+V22 Volt Thrower 
+Signal_Data.tx _Manufacturer: xxx _Magazine Capacity: xx CPU usage: 7.30% user, 10.00% sys, idle SharedLibs: 505M, 83.70% Data tracker: 98M datapoints MemRegions: 151200 total, Resident: 5390M Memory: Private: 1510M Shared: PhysMem: 18.0G used (3100M wired), 44M unused. Swapins: 14901234 CO) Swapouts Networks: packets: 16012345(0) Reg: 77890123/58.9G- In, 1612345
+
+
+                   .++.                                                 
+                   .==                                                  
+                   +==++++++                                            
+ ............+++++++...===++++++++===++++++++++++.                      
+  =====@#===+===============#====================#===                   
+ .=#####=+++========+=======#====================#.==.                  
+ .============++======+==##########==###=========##==                   
+ .============++========#@#==#======##+..+=======#.                     
+ .==+......==++==========+   #.+====#     .+======.                     
+ .==       .+++==========.   == .===#+    .+====##=                     
+ .==      .+++============   .. +======+++======#.                      
+ .==      .+++============.      .+=============#.                      
+ .==      +++==============       +=============#                       
+ +==     .+++==============.      .+============#                       
+ ===     +++================       .+=====......+                       
+.====+++=+++=================++++++++=====                              
+.========++===============================                              
+ ........===##=#======#===================                              
+        .++=#=+=+++++==+++==+++++++++++++.                              
+
+
+/Legislation/Security/Tactical_Operations/Security_Logistics/Confiscations/Weapons/V95_Lookout.pdf2:
+
+V95 Lookout
+Signal_Data.tx _Manufacturer: xxx _Magazine Capacity: xx CPU usage: 6.95% user, 9.55% sys, idle SharedLibs: 480M, 82.30% Data tracker: 91M datapoints MemRegions: 142800 total, Resident: 5150M Memory: Private: 1430M Shared: PhysMem: 17.3G used (2990M wired), 40M unused. Swapins: 14345678 CO) Swapouts Networks: packets: 15456789(0) Reg: 74567890/56.5G- In, 1556789
+
+
+                                         +++.                           
+                                      .+=++#=.                          
+.+++++++==#+++++++++++++++++++++=======+++++#=++=++++++++......+++++++++
+.========+++=========================++++++###============++++++++++=+++
+            +++++===========+=++++++.+++++##=#=+=#=++++=++++++========++
+            +++++#           .++++++.++++++  =.+==    +=++++=++++==#==++
+            +++++#           .+++++.++++++=.   .+=....+=++++#  .+==#==++
+            ++++++++....    .+++++.+++++++==    .++++++=++++=++++=====++
+            ++++++++++++++++++++++.+++++++=#+    .+++..++++++++.+=====++
+            +++++=====+++++++++++.+==++++==#==+++++++  +++++++========++
+                    .++==========++@=#++==+=++++++++.  .........+++.....
+
+/Legislation/Security/Tactical_Operations/Security_Logistics/Confiscations/Weapons/WSTR_Combat_Shotgun.pdf2:
+
+WSTR Combat Shotgun
+Signal_Data.tx _Manufacturer: Westfeld Security Technologies _Magazine Capacity: xx CPU usage: 6.70% user, 9.20% sys, idle SharedLibs: 470M, 82.10% Data tracker: 89M datapoints MemRegions: 140700 total, Resident: 5110M Memory: Private: 1420M Shared: PhysMem: 17.1G used (2950M wired), 39M unused. Swapins: 14234567 CO) Swapouts Networks: packets: 15345678(0) Reg: 73789012/56.1G- In, 1545678
+
+
+                              ...................++....                 
+.==============================+++========#======#@=...                 
+.=========================================#=====#@.                     
+ ......@@@@@@#####################========###@@@@###+                   
+      .===================================##++#####===+.                
+       .++++ +=++++++++++++++++++.....=##==#  =+.+=======+.             
+                                     .=.+++=  ..  .++======+.           
+                                     .=++==+        .+======#=+.        
+                                     .======           .+======+.       
+                                      .+=====+.        .====..+         
+                                         .+++===+.....+======.          
+                                             .++=======+.....           
+                                                .++===.                 
+                                                   ..                   
+
+
+
+/Operational_Protocols/Emergency_Procedures/Emergency_Procedures-Manual.txt:
+
+Title: Emergency Procedures Manual: Earth Command Headquarters
+Purpose:
+This manual outlines the emergency procedures designed to protect personnel, infrastructure, and critical data at Earth Command HQ in the event of a crisis. The procedures are intended to ensure a swift and organized response to safeguard the facility's operations and integrity.
+
+
+/Operational_Protocols/Emergency_Procedures/Section_1.txt:
+
+Section 1: Emergency Response Team (ERT) Activation
+Subsection 1.1: ERT Composition
+Details on team roles, responsibilities, and immediate contact information for key personnel.
+Subsection 1.2: Activation Protocols
+Steps for rapid ERT mobilization, including criteria for activation and initial response actions.
+
+
+/Operational_Protocols/Emergency_Procedures/Section_2.txt:
+
+Section 2: Evacuation Procedures
+Subsection 2.1: Evacuation Routes
+Designated escape routes clearly marked within HQ, maps provided for quick reference.
+Subsection 2.2: Roll Call and Accountability
+Checkpoints and procedures for ensuring all personnel are accounted for during evacuation.
+
+
+
+/Operational_Protocols/Emergency_Procedures/Section_3.txt:
+
+Section 3: Communication Protocols
+Subsection 3.1: Crisis Communication Channels
+Secure communication lines established for internal coordination, priority communication with external partners.
+Subsection 3.2: Public Communication and Media Handling
+Guidelines for managing media inquiries, public statements, and maintaining operational confidentiality.
+
+
+/Operational_Protocols/Emergency_Procedures/Section_4.txt:
+
+Section 4: Data Security and Backup
+Subsection 4.1: Critical Data Backup
+Protocols for ensuring data backup and redundancy, details on secure off-site storage locations.
+Subsection 4.2: Digital Threat Countermeasures
+Preemptive actions to detect, isolate, and neutralize digital security threats during an emergency.
+
+
+/Operational_Protocols/Emergency_Procedures/Section_5.txt:
+
+Section 5: Facility Security and Maintenance
+Subsection 5.1: Lockdown Procedures
+Methods for implementing a facility-wide lockdown, securing access points, and reinforcing perimeter defenses.
+Subsection 5.2: Regular Maintenance Schedules
+A log of routine maintenance checks and requirements to ensure all security systems are fully operational.
+
+
+/Operational_Protocols/Emergency_Procedures/Section_6.txt:
+
+Section 6: Post-Emergency Review and Recovery
+Subsection 6.1: Incident Investigation
+Steps for conducting a thorough review post-crisis to identify causes, assess response effectiveness, and implement improvements.
+Subsection 6.2: Recovery and Resumption
+Guidelines for restoring normal operations, focusing on prioritizing critical functions and services.
+
+
+/Outreach/Communications/External_Transmissions_Logs/TX-0802-0900.log:
+
+Transmission 017: File #TX-0802-0900
+* Timestamp: 0900Z
+* Destination Code: CMD-001
+* Content ID: ST-REP-001
+* Medium Code: QL-SEC
+* Signal Code: S-OPT
+* Notes: ENC-VER
+
+
+/Outreach/Communications/External_Transmissions_Logs/TX-0803-1010.log:
+
+Transmission 015: File #TX-0803-1010
+* Timestamp: 1010Z
+* Destination Code: CMD-007
+* Content ID: UPD-007
+* Medium Code: QL-SEC
+* Signal Code: S-OPT
+* Notes: ENC-VER, NO-ISS
+
+
+/Outreach/Communications/External_Transmissions_Logs/TX-0804-1020.log:
+
+Transmission 018: File #TX-0804-1020
+* Timestamp: 1020Z
+* Destination Code: CMD-013
+* Content ID: UPD-013
+* Medium Code: QL-SEC
+* Signal Code: S-OPT
+* Notes: ENC-VER, NO-ISS
+
+
+/Outreach/Communications/External_Transmissions_Logs/TX-0805-1430.log:
+
+Transmission 004: File #TX-0805-1430
+* Timestamp: 1430Z
+* Destination Code: RES-002
+* Content ID: DA-PKT-002
+* Medium Code: HB-DS
+* Signal Code: S-STR
+* Notes: LAT-OBS, DI-CONF
+
+/Outreach/Communications/External_Transmissions_Logs/TX-0806-1500.log:
+
+Transmission 002: File #TX-0806-1500
+* Timestamp: 1500Z
+* Destination Code: RES-008
+* Content ID: DA-PKT-008
+* Medium Code: HB-DS
+* Signal Code: S-STR
+* Notes: LAT-OBS, DI-CONF
+
+
+/Outreach/Communications/External_Transmissions_Logs/TX-0807-1515.log:
+
+Transmission 001: File #TX-0807-1515
+* Timestamp: 1515Z
+* Destination Code: RES-014
+* Content ID: DA-PKT-014
+* Medium Code: HB-DS
+* Signal Code: S-STR
+* Notes: LAT-OBS, DI-CONF
+
+
+/Outreach/Communications/External_Transmissions_Logs/TX-0810-0345.log:
+
+Transmission 029: File #TX-0810-0345
+* Timestamp: 0345Z
+* Destination Code: EMR-003
+* Content ID: AL-ERT-003
+* Medium Code: PR-CH
+* Signal Code: S-OPT
+* Notes: ACK-5MIN, FOL-SCH
+
+
+/Outreach/Communications/External_Transmissions_Logs/TX-0811-0400.log:
+
+Transmission 021: File #TX-0811-0400
+* Timestamp: 0400Z
+* Destination Code: EMR-009
+* Content ID: AL-ERT-009
+* Medium Code: PR-CH
+* Signal Code: S-OPT
+* Notes: ACK-5MIN, FOL-SCH
+
+
+/Outreach/Communications/External_Transmissions_Logs/TX-0812-0415.log:
+
+Transmission 030: File #TX-0812-0415
+* Timestamp: 0415Z
+* Destination Code: EMR-015
+* Content ID: AL-ERT-015
+* Medium Code: PR-CH
+* Signal Code: S-OPT
+* Notes: ACK-5MIN, FOL-SCH
+
+
+/Outreach/Communications/External_Transmissions_Logs/TX-0815-1120.log:
+
+Transmission 012: File #TX-0815-1120
+* Timestamp: 1120Z
+* Destination Code: LOG-004
+* Content ID: SUP-REQ-004
+* Medium Code: ST-COM
+* Signal Code: S-MOD
+* Notes: DISR-SF, RES-SUC
+
+
+/Outreach/Communications/External_Transmissions_Logs/TX-0816-1130.log:
+
+Transmission 010: File #TX-0816-1130
+* Timestamp: 1130Z
+* Destination Code: LOG-010
+* Content ID: SUP-REQ-010
+* Medium Code: ST-COM
+* Signal Code: S-MOD
+* Notes: DISR-SF, RES-SUC
+
+
+/Outreach/Communications/External_Transmissions_Logs/TX-0817-1145.log:
+
+Transmission 009: File #TX-0817-1145
+* Timestamp: 1145Z
+* Destination Code: LOG-016
+* Content ID: SUP-REQ-016
+* Medium Code: ST-COM
+* Signal Code: S-MOD
+* Notes: DISR-SF, RES-SUC
+
+
+/Outreach/Communications/External_Transmissions_Logs/TX-0818-1600.log:
+
+Transmission 023: File #TX-0818-1600
+* Timestamp: 1600Z
+* Destination Code: DIP-005
+* Content ID: CORR-005
+* Medium Code: ENC-DIP
+* Signal Code: S-STR
+* Notes: ENC-VER, RESP-AWT
+
+
+/Outreach/Communications/External_Transmissions_Logs/TX-0819-1630.log:
+
+Transmission 027: File #TX-0819-1630
+* Timestamp: 1630Z
+* Destination Code: DIP-011
+* Content ID: CORR-011
+* Medium Code: ENC-DIP
+* Signal Code: S-STR
+* Notes: ENC-VER, RESP-AWT
+
+
+/Outreach/Communications/External_Transmissions_Logs/TX-0820-1645.log:
+
+Transmission 024: File #TX-0820-1645
+* Timestamp: 1645Z
+* Destination Code: DIP-017
+* Content ID: CORR-017
+* Medium Code: ENC-DIP
+* Signal Code: S-STR
+* Notes: ENC-VER, RESP-AWT
+
+
+/Outreach/Communications/External_Transmissions_Logs/TX-0822-0815.log:
+
+Transmission 008: File #TX-0822-0815
+* Timestamp: 0815Z
+* Destination Code: TEC-006
+* Content ID: INQ-006
+* Medium Code: SEC-TEC
+* Signal Code: S-OPT
+* Notes: LOG-ATT, DIAG-AWT
+
+
+/Outreach/Communications/External_Transmissions_Logs/TX-0823-0830.log:
+
+Transmission 005: File #TX-0823-0830
+* Timestamp: 0830Z
+* Destination Code: TEC-012
+* Content ID: INQ-012
+* Medium Code: SEC-TEC
+* Signal Code: S-OPT
+* Notes: LOG-ATT, DIAG-AWT
+
+
+/Outreach/Communications/External_Transmissions_Logs/TX-0824-0845.log:
+
+Transmission 007: File #TX-0824-0845
+* Timestamp: 0845Z
+* Destination Code: TEC-018
+* Content ID: INQ-018
+* Medium Code: SEC-TEC
+* Signal Code: S-OPT
+* Notes: LOG-ATT, DIAG-AWT
+
+
+/Outreach/Communications/Signal_Intercepts/signal_intercepts_august.log:
+
++------------+-------+-------------+---------------------+----------------+-----------+-----------------+
+| Signal ID   | Source Location     | Signal Type    | Status    | Decryption Level|
++------------+-------+-------------+---------------------+----------------+-----------+-----------------+
+| SIG-0801-001| Unknown Quadrant    | Encrypted Burst| Analyzed  | High |
+| SIG-0801-002| Research Outpost | Data Stream    | Decoded   | Medium |
+| SIG-0802-003| Deep Space Relay    | Distress Signal| Pending   | Low             |
+| SIG-0802-004| UESC Command        | Priority Alert | Decoded   | High            |
+| SIG-0803-005| Unknown Origin      | Static Noise   | Analyzed  | None            |
+| SIG-0804-006| Research Outpost    | Data Packet    | Decoded   | Medium          |
+| SIG-0805-007| Asteroid Belt       | Encrypted Burst| Analyzed  | High            |
+| SIG-0806-008| Colony Ship         | Status Update  | Decoded   | Low             |
+| SIG-0807-009| Unknown Quadrant    | Encrypted Burst| Pending   | High            |
+| SIG-0808-010| Research Outpost | Data Stream    | Decoded   | Medium          |
+| SIG-0809-011| Deep Space Relay    | Distress Signal| Analyzed  | Low             |
+| SIG-0810-012| UESC Command        | Priority Alert | Decoded   | High            |
+| SIG-0811-013| Unknown Origin      | Static Noise   | Analyzed  | None            |
+| SIG-0812-014| Research Outpost    | Data Packet    | Decoded   | Medium | 
+| SIG-0813-015| Asteroid Belt       | Encrypted Burst| Analyzed  | High |
+| SIG-0814-016| Colony Ship         | Status Update  | Decoded   | Low |
+| SIG-0815-017| Unknown Quadrant    | Encrypted Burst| Pending   | High |        
+| SIG-0816-018| Research Outpost | Data Stream    | Decoded   | Medium |         |
+| SIG-0817-019| Deep Space Relay    | Distress Signal| Analyzed  | Low             |
+| SIG-0818-020| UESC Command        | Priority Alert | Decoded   | High            |
+| SIG-0819-021| Unknown Origin      | Static Noise   | Analyzed  | None            |
+| SIG-0820-022| Research Outpost    | Data Packet    | Decoded   | Medium          |
+| SIG-0821-023| Asteroid Belt       | Encrypted Burst| Analyzed  | High            |
+| SIG-0822-024| Colony Ship         | Status Update  | Decoded   | Low             |
+| SIG-0823-025| Unknown Quadrant    | Encrypted Burst| Pending   | High            |
+| SIG-0824-026| Research Outpost | Data Stream    | Decoded   | Medium          |
+| SIG-0825-027| Deep Space Relay    | Distress Signal| Analyzed  | Low             |
+| SIG-0826-028| UESC Command        | Priority Alert | Decoded   | High            |
+| SIG-0827-029| Unknown Origin      | Static Noise   | Analyzed  | None            |
+| SIG-0828-030| Research Outpost    | Data Packet    | Decoded   | Medium          |
+| SIG-0829-031| Asteroid Belt       | Encrypted Burst| Analyzed  | High            |
+| SIG-0830-032| Colony Ship         | Status Update  | Decoded   | Low             |
+| SIG-0831-033| Unknown Quadrant    | Encrypted Burst| Pending   | High            |
++------------+-------+-------------+---------------------+----------------+-----------+-----------------+
+
+/Resources/HQ/Cafeteria_Menu/Cafeteria_Menu.txt:
+
+Cafeteria Menu: UESC Headquarters
+Prepared by: NuCaloric Culinary Catering, UESC HQ
+
+Breakfast Options:
+Morning Harvest Omelette
+Omega-enriched eggs and artisan grated cheese. Precision-vapored greens. Served with a fresh side of NuCaloric 98.
+
+NuCaloric 12
+With whole grain toast and nutrient misted berries.
+
+Flapjack Delight
+Carbonated batter pancakes with maple syrup. Choice of lab-grown bacon or sausage.
+
+NuCaloric 27
+Fruit salad with enzyme enhancement and probiotic yogurt (multiple favours).
+
+Sunrise Wrap
+Scrambled eggs, cheese, and zesty salsa. Flash-frozen martian spinach.
+
+Lunch Options:
+
+Grilled Classic Sandwich
+Crisp lettuce, ripe tomato, and convection-crisped sweet potato fries.
+
+NuCaloric 42
+With vacuumed apple slices and vertical garden salad.
+
+Block 04 Modern Stir-Fry
+Ultrasonic wok vegetables over rice or noodles.
+
+NuCaloric 58
+With magnetic induction soup and whole grain roll.
+
+Traditional Cheeseburger
+Cheddar cheese, lettuce, tomato, and air-fried fries.
+
+Dinner Options:
+
+Baked Ocean Catch
+Sous-vide fish with lemon dill. Steamed vegetables.
+
+NuCaloric 73
+Vacuum oven potatoes and Caesar salad.
+
+Penne Arabiatta
+Pressure-cooked tomato sauce over pasta.
+
+NuCaloric 89
+Served with infrared-baked garlic bread and mixed greens.
+
+Vegetable Curry
+Pressure-infused spices with basmati rice.
+
+Dessert Options:
+
+Chocolate Indulgence Cake
+Thermal conduction-baked molten center.
+
+NuCaloric 95
+With liquid nitrogen vanilla ice cream.
+
+Fruit Tart
+Flash-glazed custard and fresh fruit.
+
+NuCaloric 101
+Freeze-dried sorbet scoop.
+
+Cheesecake
+Cold-set gelation w. creamy consistency. No cheese. 
+
+Beverages:
+
+Coffee and Tea
+Precision-brewed for optimal flavor.
+
+NuCaloric 110
+Citrus-infused with ultrasonic touch.
+
+Fruit Smoothies
+Vortex-blended for silky texture.
+
+NuCaloric 123
+Molecular mint infusion.
+
+Soft Drinks
+Naturally sweetened carbonation.
+
+
+/Resources/HQ/Maintenance/Incident_Reports/Incident_Reports_007.txt:
+
+Incident 007: Fire Drill Disruption
+* Location: Entire Building
+* Description: A scheduled fire drill was disrupted by an unexpected alarm malfunction, causing confusion among staff. The alarm was triggered by a sensor error.
+* Resolution: Alarm system reset, and sensor recalibrated. Drill rescheduled for next month.
+* Comments: Review alarm system maintenance procedures to ensure reliability.
+
+
+/Resources/HQ/Maintenance/Incident_Reports/Incident_Reports_198.txt:
+
+Incident 198: Unauthorized Access Attempt
+* Location: Secure Archives, Level 7
+* Description: An unauthorized access attempt was detected at the Secure Archives. Security protocols were activated, and the area was secured. No data breach occurred.
+* Resolution: Access logs reviewed, and security measures reinforced. Investigation ongoing to identify the source.
+* Comments: Increase surveillance and conduct a security audit to prevent future attempts.
+
+
+/Resources/HQ/Maintenance/Incident_Reports/Incident_Reports_267.txt:
+
+Location: BRF 404, Level 4, Bayside Quandrant
+Description: A minor water leak was reported in the Level 4 bio-relief facility, caused by a faulty pipe joint. The leak was contained, and repairs initiated, but delays in part acquisition followed by unexpected damage to supply line link assemblage caused delays resulting in prolonged shut down of the facility. 
+Resolution: Pipe joint replaced, supply line reinforced and assemblage replaced, water damage assessed. Area cleaned and restored.
+Comments: Schedule regular plumbing inspections to identify potential issues early. Update parts inventory and acquisition planning to avoid future delays in maintenance facilitation. 
+
+
+/Resources/HQ/Maintenance/Incident_Reports/Incident_Reports_598.txt:
+
+Incident 598: Elevator Stoppage
+* Location: Elevator 3, Main Building
+* Description: Elevator 3 halted between floors due to a temporary power fluctuation. Two employees were briefly trapped but were safely evacuated within 15 minutes.
+* Resolution: Power restored, and elevator reset. Electrical systems checked for stability.
+* Comments: Recommend installing backup power systems to prevent future incidents.
+
+
+/Resources/HQ/Maintenance/Incident_Reports/Incident_Reports_736.txt:
+
+Incident 736: Coffee Machine Malfunction
+* Location: Break Room, Level 2
+* Description: The coffee machine on Level 2 experienced a malfunction, resulting in a temporary shutdown. The issue was traced to a clogged filter, which was promptly cleaned and replaced.
+* Resolution: Machine restored to full functionality. Regular maintenance scheduled to prevent recurrence.
+* Comments: This is the third occurrence this month; consider upgrading to a more reliable model. 
+
+
+/Resources/HQ/Maintenance/Incident_Reports/Incident_Reports_834.txt:
+
+Incident 834: Data Network Outage
+* Location: IT Department, Level 5
+* Description: A network outage affected data access across multiple departments for approximately 45 minutes. The cause was identified as a server overload due to simultaneous software updates.
+* Resolution: Server load balanced, and updates rescheduled to off-peak hours.
+* Comments: Implement staggered update schedules to avoid future overloads.
+
+
+/Resources/HQ/Maintenance/Incident_Reports/Incident_Reports_974.txt:
+
+Incident 974: Recurring HVAC Issue
+* Location: Conference Room A, Level 3
+* Description: The HVAC system in Conference Room A continues to malfunction, resulting in inconsistent temperature control. Despite multiple repair attempts, the issue persists.
+* Resolution: Temporary adjustments made to maintain comfort. Further investigation required.
+* Comments: This issue has been ongoing for several months. Consider a comprehensive system overhaul or replacement.
+
+
+/Resources/HQ/Maintenance/Logs/log-entry-0630.txt:
+
+[Log Entry: 06:30]
+Automated Maintenance Routine Started.
+Cleaning cache directories...
+Updating software libraries...
+STATUS: Maintenance complete.
+
+
+/Resources/HQ/Maintenance/Logs/log-entry-0720.txt:
+
+[Log Entry: 07:20]
+User Authentication Verified.
+User ID: 1735-TRXl7
+Access Level: Level 2 Clearance
+Action: Reviewed security protocols.
+
+
+/Resources/HQ/Maintenance/Logs/log-entry-0745.txt:
+
+[Log Entry: 07:45]
+System Boot-Up Initiated.
+Initializing core protocols...
+Verifying hardware integrity...
+STATUS: All systems operational.
+
+
+/Resources/HQ/Maintenance/Logs/log-entry-0800.txt:
+
+[Log Entry: 08:00]
+Network Module Connected.
+Establishing uplink to UESC mainframe...
+Routing through secure channels...
+STATYS: Connection established.
+
+
+/Resources/HQ/Maintenance/Logs/log-entry-0815.txt:
+
+[Log Entry: 08:15]
+User Access Granted.
+User ID: 0928-MTRX
+Access Level: Level 3 Clearance
+Action: Accessed communication logs.
+
+
+/Resources/HQ/Maintenance/Logs/log-entry-0900.txt:
+
+[Log Entry: 09:00]
+Diagnostic Check Performed.
+CPU Load: 32%
+Memory Usage: 67%
+System Temperature: Normal
+STATUS: No variance detected.
+
+
+/Resources/HQ/Maintenance/Logs/log-entry-0915.txt:
+
+[Log Entry: 09:15]
+Hostile Network Activity Detected.
+Suspicious packet flow from external source.
+Action: Initiating countermeasures, isolating threat.
+
+
+/Resources/HQ/Maintenance/Logs/log-entry-1000.txt:
+
+[Log Entry: 10:00]
+Data Analysis Request Received.
+Analyzing mineral scan data...
+Generating report summary...
+STATUS: Report completed, ready for review.
+
+
+
+/Resources/HQ/Maintenance/Logs/log-entry-1030.txt:
+
+[Log Entry: 10:30]
+Encrypted Message Received.
+Attempting decryption...
+Result: Decryption incomplete, key mismatch.
+
+
+/Resources/HQ/Maintenance/Logs/log-entry-1130.txt:
+
+[Log Entry: 11:30]
+SI Communication Log Accessed.
+SI Security Level: Non-Crit
+Note: Overlap in SI algorithmic patterning requires maintenance
+
+
+/Resources/HQ/Maintenance/Logs/log-entry-1145.txt:
+
+[Log Entry: 11:45]
+Security Alert Triggered.
+Unauthorized login attempt detected.
+User ID: UNKNOWN
+Action: User access denied, logging IP.
+
+
+/Resources/HQ/Maintenance/Logs/log-entry-1200.txt:
+
+[Log Entry: 12:00]
+Data Package Transmitted.
+Destination: Global Climate Command 
+Contents: Resource Survey, Orbital Geo-Recon Platform SHA 
+STATUS: Transmission successful.
+
+
+/Resources/HQ/Maintenance/Logs/log-entry-1245.txt:
+
+[Log Entry: 12:45]
+Emergency Power Fluctuation Recorded.
+Investigating source of instability...
+Switching to backup generator...
+STATUS: Power stabilized.
+
+
+/Resources/HQ/Maintenance/Logs/log-entry-1300.txt:
+
+[Log Entry: 13:00]
+Personnel File Update.
+User ID: 0928-MTRX
+Action: Updated mission credentials, security clearance upgraded.
+
+
+
+/Resources/HQ/Maintenance/Logs/log-entry-1330.txt:
+
+[Log Entry: 13:30]
+System Update Scheduled.
+Scheduled Time: 02:00
+Affected Modules: Network Security, Data Management
+Note: Ensure backup prior to update.
+
+
+/Resources/HQ/Maintenance/Logs/log-entry-1415.txt:
+
+[Log Entry: 14:15]
+Auxiliary Systems Check.
+Communication Relays: Functional
+Power Supply: Stable
+STATUS: Auxiliary systems online.
+
+
+/Resources/HQ/Maintenance/Logs/log-entry-1435.txt:
+
+[Log Entry: 14:35]
+External Transmission Scheduled.
+Target: Traxus Command Center
+Contents: Projected resource yield reports
+STATUS: Transmission pending.
+
+
+/Resources/HQ/Maintenance/Logs/log-entry-1545.txt:
+
+[Log Entry: 15:45]
+Session Terminated.
+User ID: 0928-MTRX
+Duration: 6 hours, 30 minutes
+Action: User logged out, data purged.
+
+
+
+/Resources/HQ/Maintenance/Logs/log-entry-1610.txt:
+
+[Log Entry: 16:10]
+Incident Report Filed.
+Incident ID: INC-2075
+Summary: Unscheduled drone launch detected
+Action: Logged for further investigation.
+
+
+/Resources/HQ/Maintenance/Logs/log-entry-1725.txt:
+
+[Log Entry: 17:25]
+System Shutdown Initiated.
+Preparing for scheduled maintenance...
+Saving all active sessions...
+STATUS: Shutdown complete, all systems inactive.
+
+
+/Resources/HQ/Maintenance/Maintenance.log:
+
+<empty>
+
+/Resources/Human_Resources_&_Personnel/Vacation_Planning/vacation_schedule_summer.csv:
+
++------------+--------------------+----------+-------------------+----------+
+| Employee ID| Position           | Available| Vacation Period    | Status   |
+|            |                    | Days     |                   |          |
++------------+--------------------+----------+-------------------+----------+
+| HR-001     | HR Manager         | 15       | 7/1-7/14          | Approved |
++------------+--------------------+----------+-------------------+----------+
+| HR-002     | Recruitment Officer| 20       | 8/15-8/28         | Approved |
++------------+--------------------+----------+-------------------+----------+
+| HR-003     | Benefits           | 10       | 6/20-7/3          | Approved |
+|            | Coordinator        |          |                   |          |
++------------+--------------------+----------+-------------------+----------+
+| HR-004     | Training Specialist| 18       | 7/15-7/28         | Approved |
++------------+--------------------+----------+-------------------+----------+
+| HR-005     | HR Assistant       | 12       | 8/1-8/14          | Denied   |
++------------+--------------------+----------+-------------------+----------+
+| HR-006     | Payroll Specialist | 15       | 7/5-7/18          | Denied   |
++------------+--------------------+----------+-------------------+----------+
+| HR-007     | Employee Relations | 20       | 6/25-7/8          | Approved |
++------------+--------------------+----------+-------------------+----------+
+| HR-008     | HR Generalist      | 15       | 8/10-8/23         | Denied   |
++------------+--------------------+----------+-------------------+----------+
+| HR-009     | Compliance Officer | 10       | 7/20-8/2          | Approved |
++------------+--------------------+----------+-------------------+----------+
+| HR-010     | Talent Acquisition | 18       | 6/15-6/28         | Denied   |
++------------+--------------------+----------+-------------------+----------+
+| HR-011     | HR Coordinator     | 14       | 7/10-7/24         | Denied   |
++------------+--------------------+----------+-------------------+----------+
+| HR-012     | Diversity Officer  | 16       | 8/5-8/19          | Approved |
++------------+--------------------+----------+-------------------+----------+
+| HR-013     | Compensation       | 12       | 7/1-7/14          | Denied   |
+|            | Analyst            |          |                   |          |
++------------+--------------------+----------+-------------------+----------+
+| HR-014     | HR Specialist      | 20       | 7/15-7/29         | Denied   |
++------------+--------------------+----------+-------------------+----------+
+| HR-015     | Onboarding Manager | 10       | 8/1-8/15          | Approved |
++------------+--------------------+----------+-------------------+----------+
+| HR-016     | HR Analyst         | 15       | 7/5-7/19          | Denied   |
++------------+--------------------+----------+-------------------+----------+
+| HR-017     | Labor Relations    | 18       | 6/20-7/4          | Approved |
+|            | Leader             |          |                   |          |
++------------+--------------------+----------+-------------------+----------+
+| HR-018     | HR Consultant      | 14       | 8/10-8/24         | Denied   |
++------------+--------------------+----------+-------------------+----------+
+| HR-019     | Benefits Analyst   | 12       | 7/25-8/8          | Denied   |
++------------+--------------------+----------+-------------------+----------+
+| HR-020     | HR Administrator   | 20       | 6/15-6/29         | Approved |
++------------+--------------------+----------+-------------------+----------+
+| HR-021     | HR Technician      | 15       | 7/10-7/24         | Denied   |
++------------+--------------------+----------+-------------------+----------+
+| HR-022     | HR Strategist      | 18       | 8/5-8/19          | Approved |
++------------+--------------------+----------+-------------------+----------+
+| HR-023     | HR Planner         | 10       | 7/1-7/15          | Denied   |
++------------+--------------------+----------+-------------------+----------+
+| HR-024     | HR Executive       | 16       | 7/20-8/3          | Approved |
++------------+--------------------+----------+-------------------+----------+
+| HR-025     | HR Director        | 14       | 8/1-8/15          | Approved |
++------------+--------------------+----------+-------------------+----------+
+| HR-026     | HR Supervisor      | 12       | 7/5-7/19          | Denied   |
++------------+--------------------+----------+-------------------+----------+
+| HR-027     | HR Officer         | 20       | 6/20-7/4          | Approved |
++------------+--------------------+----------+-------------------+----------+
+| HR-028     | HR Consultant      | 15       | 8/10-8/24         | Denied   |
++------------+--------------------+----------+-------------------+----------+
+| HR-029     | HR Analyst         | 18       | 7/25-8/8          | Denied   |
++------------+--------------------+----------+-------------------+----------+
+| HR-030     | HR Coordinator     | 14       | 6/15-6/29         | Pending  |
++------------+--------------------+----------+-------------------+----------+
+
+/Security/Cybersecurity/decrypt.sh:
+
+<executable>
+
+/Security/Security_Surveillance/Archive:
+
+BATCH FILE DIRECTORY   [009]  [  +  ]  [  -  ] 
+BATCH FILE START           [6370] [  +  ]  [  -  ] 
+BATCH FILE END               [6405] [  +  ]  [  -  ] 
+===================================
+
+
+/Security/Security_Surveillance/Surveillance_Footage_Archive0096370:
+
+[CLEARANCE REQUIRED]
+
+/Security/Security_Surveillance/Surveillance_Footage_Archive0096371:
+
+[CLEARANCE REQUIRED]
+
+/Security/Security_Surveillance/Surveillance_Footage_Archive0096372:
+
+[CLEARANCE REQUIRED]
+
+/Security/Security_Surveillance/Surveillance_Footage_Archive0096373:
+
+[CLEARANCE REQUIRED]
+
+/Security/Security_Surveillance/Surveillance_Footage_Archive0096374:
+
+[CLEARANCE REQUIRED]
+
+/Security/Security_Surveillance/Surveillance_Footage_Archive0096375:
+
+[CLEARANCE REQUIRED]
+
+/Security/Security_Surveillance/Surveillance_Footage_Archive0096376:
+
+[CLEARANCE REQUIRED]
+
+/Security/Security_Surveillance/Surveillance_Footage_Archive0096377:
+
+[CLEARANCE REQUIRED]
+
+/Security/Security_Surveillance/Surveillance_Footage_Archive0096378:
+
+[CLEARANCE REQUIRED]
+
+/Security/Security_Surveillance/Surveillance_Footage_Archive0096379:
+
+[CLEARANCE REQUIRED]
+
+/Security/Security_Surveillance/Surveillance_Footage_Archive0096380:
+
+[CLEARANCE REQUIRED]
+
+/Security/Security_Surveillance/Surveillance_Footage_Archive0096381:
+
+[CLEARANCE REQUIRED]
+
+/Security/Security_Surveillance/Surveillance_Footage_Archive0096382:
+
+[CLEARANCE REQUIRED]
+
+/Security/Security_Surveillance/Surveillance_Footage_Archive0096383:
+
+[CLEARANCE REQUIRED]
+
+/Security/Security_Surveillance/Surveillance_Footage_Archive0096384:
+
+[CLEARANCE REQUIRED]
+
+/Security/Security_Surveillance/Surveillance_Footage_Archive0096385:
+
+[CLEARANCE REQUIRED]
+
+/Security/Security_Surveillance/Surveillance_Footage_Archive0096386:
+
+[CLEARANCE REQUIRED]
+
+/Security/Security_Surveillance/Surveillance_Footage_Archive0096387:
+
+[CLEARANCE REQUIRED]
+
+/Security/Security_Surveillance/Surveillance_Footage_Archive0096388:
+
+[CLEARANCE REQUIRED]
+
+/Security/Security_Surveillance/Surveillance_Footage_Archive0096389:
+
+[CLEARANCE REQUIRED]
+
+/Security/Security_Surveillance/Surveillance_Footage_Archive0096390:
+
+[CLEARANCE REQUIRED]
+
+/Security/Security_Surveillance/Surveillance_Footage_Archive0096391:
+
+[CLEARANCE REQUIRED]
+
+/Security/Security_Surveillance/Surveillance_Footage_Archive0096392:
+
+[CLEARANCE REQUIRED]
+
+/Security/Security_Surveillance/Surveillance_Footage_Archive0096393:
+
+[CLEARANCE REQUIRED]
+
+/Security/Security_Surveillance/Surveillance_Footage_Archive0096394:
+
+[CLEARANCE REQUIRED]
+
+/Security/Security_Surveillance/Surveillance_Footage_Archive0096395:
+
+[CLEARANCE REQUIRED]
+
+/Security/Security_Surveillance/Surveillance_Footage_Archive0096396:
+
+[CLEARANCE REQUIRED]
+
+/Security/Security_Surveillance/Surveillance_Footage_Archive0096397:
+
+[CLEARANCE REQUIRED]
+
+/Security/Security_Surveillance/Surveillance_Footage_Archive0096398:
+
+[CLEARANCE REQUIRED]
+
+/Security/Security_Surveillance/Surveillance_Footage_Archive0096399:
+
+[CLEARANCE REQUIRED]
+
+/Security/Security_Surveillance/Surveillance_Footage_Archive0096400:
+
+[CLEARANCE REQUIRED]
+
+/Security/Security_Surveillance/Surveillance_Footage_Archive0096401:
+
+[CLEARANCE REQUIRED]
+
+/Security/Security_Surveillance/Surveillance_Footage_Archive0096401:
+
+[CLEARANCE REQUIRED]
+
+/Security/Security_Surveillance/Surveillance_Footage_Archive0096403:
+
+[CLEARANCE REQUIRED]
+
+/Security/Security_Surveillance/Surveillance_Footage_Archive0096404:
+
+[CLEARANCE REQUIRED]
+
+/Security/Security_Surveillance/Surveillance_Footage_Archive0096405:
+
+[CLEARANCE REQUIRED]
+
+/System_Configurations/Network_Settings/Network_Settings.cfg:
+
+Prepared by: IT Infrastructure Team, UESC HQ
+
+[CLEARANCE REQUIRED]
+
+/System_Configurations/Network_Settings/WiFi.cfg:
+
+Password: Log in with your usual UESC credentials. 
+GUEST PASSWORD:  CLEARANCE REQUIRED
+For troubleshooting reach out to local SI assisted Help Desk
+
+
+/Terraforming/IV/Astromining/R&D-Project_NEO/Project_Neo_Titanium.txt:
+
+Executive Summary:
+Project Neo Titanium explores the potential for advanced material synthesis. This document explores the methods of resource collection and refinement, highlights applications in infrastructure development, and presents preliminary test results confirming feasibility for post-industrial use. This study was conducted in partnership with Traxus Mining. Ref. 09544-O. 
+Current status: [Clearance Required]
+
+Title: Project Neo Titanium: Advanced Material Synthesis of Intrasolar Mineral Resources
+Introduction: The goal of Project Titanium is to assess the potential for the molecular recombination of varied mineral resources for use in the development of new-gen, patentable materials. These materials aim to advance the high-performance demands of modern planetary and post-planetary infrastructural design and engineering needs across all known and any new, emerging sectors.
+
+Section 1: Resource Identification and Collection
+Subsection 1.1: Mineral Identification.
+Catalog of key mineral types found in targeted extractions.
+Subsection 1.2: Collection Techniques.
+Description of cutting-edge, eco-friendly mineral gathering methods.
+
+Section 2: Refinement Processes
+Subsection 2.1: Initial Testing
+Detailed examination of initial refinement processes used to isolate and purify mineral elements.
+Subsection 2.2: Process Optimization
+Techniques implemented to improve efficiency and yield in the refinement process.
+
+Section 3: Material Synthesis
+Subsection 3.1: Synthesis Techniques
+Exploration of synthesis methods converting refined materials into high-strength composites.
+Subsection 3.2: Properties and Applications
+Study of mechanical, thermal, and chemical properties of synthesized materials.
+
+Section 4: Preliminary Results and Analysis
+Subsection 4.1: Test Outcomes
+Summary of material performance under stress tests and durability evaluations.
+Subsection 4.2: Feasibility Study
+Assessment of long-term viability and projected supply chain requirements.
+
+Conclusion:
+Preliminary findings demonstrate significant promise in utilizing new sciences and engineering techniques to manipulate mineral deposits in groundbreaking explorations into material synthesis. Further research is recommended to fully realize potential applications and integrate these materials into production pipelines.
+
+
+/Terraforming/IV/Exoatmospherics/Environmental_Data/biodome_soil_analysis.log:
+
+[REDACTED]
+
+/Terraforming/IV/Exoatmospherics/Environmental_Data/habitat_climate_stats.log:
+
+[REDACTED]
+
+/UESC_Departments/Colonial_Affairs.file:
+
+- Post-Earth/Mars Colony establishment and management
+- Colonial relations and governance
+
+
+/UESC_Departments/Command_&_Operations.file:
+
+- Executive leadership and mission control
+- Strategic planning and operational oversight
+
+
+/UESC_Departments/Communications_&_Data.file:
+
+- Planetary communication networks
+- Interplanetary communication networks
+- Post-planetary communications
+- Communications data management
+- Communications archive networks 
+- [CLEARANCE REQYIRED]
+
+
+/UESC_Departments/Diplomatic_Corps.file:
+
+- Interplanetary relations
+- Treaty negotiations and conflict resolution
+
+
+/UESC_Departments/Engineering_&_Infrastructure.file:
+
+- Project assessment and development
+- Site development, construction and maintenance
+- [CLEARANCE REQUIRED]
+- [CLEARANCE REQUIRED]
+
+
+/UESC_Departments/Finance_&_Economics.file:
+
+- Budget management and funding allocation
+- Economic planning for colonies
+- [CLEARANCE REQUIRED]
+
+
+/UESC_Departments/Human Resources_&_Personnel.file:
+
+- Recruitment and training
+- Psychological support and welfare
+- [CLEARANCE REQUIRED]
+
+
+/UESC_Departments/Intrasolar_Exploration_Division.file:
+
+- Planetary and satellite operations
+- Celestial object tracking
+- Deep system exploration and mapping
+- [CLEARANCE REQUIRED]
+
+
+/UESC_Departments/Legal_&_Compliance.file:
+
+- Planetary laws and regulations - Earth
+- Planetary laws and regulations - Mars
+- Satellite laws and regulations - Natural
+- Satellite laws and regulations - Artificial
+- Post-orbit laws and regulations
+- Near-solar laws and regulations
+- Ethical oversight and compliance
+- [CLEARANCE REQUIRED]
+
+
+/UESC_Departments/Logistics_&_Supply.file:
+
+- Supply chain management
+- Transportation and distribution
+
+
+/UESC_Departments/Medical_&_Biosciences.file:
+
+- Healthcare and medical research
+- Biological adaptation study and implementation
+-- Planetary environs
+--- Habitable
+--- Inhabitable
+--- Undefined
+-- Orbital environs
+-- Post-orbit environs
+
+
+/UESC_Departments/Public_Relations_&_Information.file:
+
+- Public communications and media relations
+- Information control and dissemination
+
+
+/UESC_Departments/Research_&_Development:
+
+- Scientific research and technological innovation
+- Geologic study, action, and support innovation
+- Societal balance analysis
+- Peace maintenance protocols and considerations
+- Xenobiologic research and considerations
+- [CLEARANCE REQUIRED]
+
+
+/UESC_Departments/Resource_Management.file:
+
+- Resource extraction and allocation
+- Sustainability planning and environmental impact
+
+
+/UESC_Departments/Security_&_Defense.file:
+
+- Military operations and defense systems
+- Intelligence gathering and threat assessment
+- [CLEARANCE REQUIRED]
+
+
+/User_Notes_Batch/Notes_Batch_01.txt:
+
+"Check the static in the relay. We've been getting irregularities."
+
+"Reminder: Systems protocols require frequent monitoring."
+
+"Had to recalibrate solar collectors today."
+
+"Reports of movement in Zone 12B? Investigate further."
+
+"Supplies running low in the cafeteria, request resupply."
+
+
+/User_Notes_Batch/Notes_Batch_02.txt:
+
+"Found strange readings near the northeastern ridge."
+
+"Next maintenance cycle will be postponed until all current channels are cleared."
+
+"Need to patch the comms relay - dropping signals."
+
+"Block 08 lights flickering again. Possible wiring issue?"
+
+"Leave extra pairs of gloves in the data lab."
+
+"Noticed increased power draw from the mainframe."
+
+"Data coming in slower than expected."
+
+"Request for new thermal suits approved."
+
+"Curious symbols found in the data logs. Investigate."
+
+
+/User_Notes_Batch/Notes_Batch_03.txt:
+
+"Keep a backup copy of all external transmissions."
+
+"Ground stability checks needed due to recent tremors."
+
+"The system's jokes are becoming oddly philosophical."
+
+"Ensure all personnel logbook entries are up-to-date."
+
+"Remember to turn off lights when leaving the lab."
+
+"Email credentials reset for user 8921-LLPT."
+
+"Reminder: Cycles can disrupt signal timing."
+
+"Air filtration system needs a scheduled cleanout."
+
+"Sequence for reactivating external sensors: 4-3-2-1."
+
+"Map updates frequently; check for terrain shifts."
+
+
+/User_Notes_Batch/Notes_Batch_04.txt:
+
+"Found an unauthorized drone in storage chamber B."
+
+"Pause calibration until further investigation."
+
+"Discuss the energy-saving protocol at the next meeting."
+
+"Report any sightings of abnormalities in local conditions to SiteComm rep."
+
+"Watch for unexpected spikes in data stream velocity."
+
+"Security lockdown drill planned for next quarter."
+
+"Block 06’s air valves should be replaced by Q4."
+
+"Schedule a meeting with Traxus contact on resource sharing."
+
+"Unknown script running in Terminal deepcoding. Isolate it."
+
+"The east compound door has been sticking—needs maintenance."
+
+"Breadcrumb trails suggest alternate routes."
+
+"Ensure cartographic overlays are shared with the surveillance units."
+
+
+/User_Notes_Batch/Notes_Batch_05.txt:
+
+"New guidelines as per protocol dictate updated logs."
+
+"Compile minerals data for upcoming report presentation."
+
+"Adjusted the scanner frequencies for better readings."
+
+"The system composed yet another poetry anthology."
+
+"Rechecked regional temperature variances last night."
+
+"Note: Satellite retrace will be offline for calibration."
+
+"Scanner malfunctions should be reported to IT immediately."
+
+"Unauthorized logout detected and logged with system security admin."
+
+"Approved requests for alpha clearance pending final review."
+
+"Notify crew if any equipment begins overheating."
+
+"Settings for the artificial growhouse corrected today."
+
+"Coordination meeting scheduled post-shift. Attendance mandatory."
+
+

@@ -1,0 +1,5 @@
+[Log Entry: 12:00]
+Data Package Transmitted.
+Destination: Global Climate Command 
+Contents: Resource Survey, Orbital Geo-Recon Platform SHA 
+STATUS: Transmission successful.

@@ -1,0 +1,5 @@
+Incident 598: Elevator Stoppage
+* Location: Elevator 3, Main Building
+* Description: Elevator 3 halted between floors due to a temporary power fluctuation. Two employees were briefly trapped but were safely evacuated within 15 minutes.
+* Resolution: Power restored, and elevator reset. Electrical systems checked for stability.
+* Comments: Recommend installing backup power systems to prevent future incidents.

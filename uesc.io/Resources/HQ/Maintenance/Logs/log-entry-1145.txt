@@ -1,0 +1,5 @@
+[Log Entry: 11:45]
+Security Alert Triggered.
+Unauthorized login attempt detected.
+User ID: UNKNOWN
+Action: User access denied, logging IP.

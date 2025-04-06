@@ -1,0 +1,14 @@
+Date: [REDACTED]
+Location: Meridiani Station, Mars
+
+[User: 9902-EXPL]
+> login 9902-EXPL
+Access level: Exploration Team Leader.
+> deploy_probe Zone-3
+Deploying exploratory probe in Zone 3...
+> log_abstraction --coords mapped
+Logging atypical activity near mapped coordinates...
+> retrieve_data Zone 3
+Retrieving data from Zone 3
+> logout
+Session terminated.

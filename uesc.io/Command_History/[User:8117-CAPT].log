@@ -1,0 +1,14 @@
+Date: [REDACTED]
+Location: Meridiani Station, Mars
+
+[User: 8117-CAPT]
+> login 8117-CAPT
+Access level: Capsuleer.
+> prepare_docking_procedure --sterlingbase
+Preparing docking procedure for Sterling Base...
+> calculate_trajectory --nextsector
+Calculating trajectory for next sector exploration...
+> confirm_launch Window-3
+Confirming launch during Window 3...
+> logout
+Session terminated.
