@@ -8,8 +8,8 @@ import util
 
 BASE_URL = "https://goliath-assets-700331821540.us-east4.run.app"
 API_ENDPOINT = "/api/media"
-OUT_DIR = "./traxus.global/"
-MEDIA_JSON = "json/media.json"
+OUT_DIR = "./goliath/"
+MEDIA_JSON = "json/goliath-media.json"
 
 def scrapeAssets(blob, out_dir):
     for asset in blob:

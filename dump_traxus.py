@@ -10,11 +10,17 @@ BASE_URL = "https://traxus.global"
 ASSET_URL = "https://goliath-assets-700331821540.us-east4.run.app"
 API_ENDPOINT = "/api/media/file/"
 OUT_DIR = "./traxus.global/"
-NAV_JSON = "json/nav.json"
-CONFIG_JSON = "json/config.json"
+NAV_JSON = "json/traxus-nav.json"
+CONFIG_JSON = "json/traxus-config.json"
 
 
-def fetchAssets(navData, configData, out_dir):
+def scrapeAssets(navData, configData, out_dir):
+    try:
+        shutil.rmtree(out_dir)
+    except:
+        pass
+    os.mkdir(out_dir)
+
     drills = []
     if configData['drillUserManual']:
         drills.append(configData['drillUserManual'])
@@ -56,15 +62,9 @@ def fetchAssets(navData, configData, out_dir):
     # print(navData)
     # print(configData)
 
-util.buildJson(NAV_JSON, BASE_URL, "/api/nav")
-util.buildJson(CONFIG_JSON, BASE_URL, "/api/config")
+# util.buildJson(NAV_JSON, BASE_URL, "/api/nav")
+# util.buildJson(CONFIG_JSON, BASE_URL, "/api/config")
 nav = util.openJson(NAV_JSON)
 config = util.openJson(CONFIG_JSON)
 
-try:
-    shutil.rmtree(OUT_DIR)
-except:
-    pass
-os.mkdir(OUT_DIR)
-
-fetchAssets(nav, config, OUT_DIR)
+# scrapeAssets(nav, config, OUT_DIR)

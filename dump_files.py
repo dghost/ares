@@ -10,7 +10,7 @@ FileTuple = collections.namedtuple('FileTuple', ['name', 'data'])
 BASE_URL = "https://uesc.io"
 API_ENDPOINT = "/api/folders"
 OUT_DIR = "./uesc.io/"
-FOLDERS_JSON = "json/folders.json"
+FOLDERS_JSON = "json/uesc-folders.json"
 
 def dumpFilesystem(out_dir, data):
     # dump the filesystem path, ish. there's two directories where the breadcrumbs don't match the labels.
