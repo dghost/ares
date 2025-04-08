@@ -1,5 +1,5 @@
-[
-    {
+{
+    "1": {
         "docs": [
             {
                 "id": 214,
@@ -162,7 +162,7 @@
         "totalDocs": 66,
         "totalPages": 7
     },
-    {
+    "2": {
         "docs": [
             {
                 "id": 204,
@@ -325,7 +325,7 @@
         "totalDocs": 66,
         "totalPages": 7
     },
-    {
+    "3": {
         "docs": [
             {
                 "id": 194,
@@ -488,7 +488,7 @@
         "totalDocs": 66,
         "totalPages": 7
     },
-    {
+    "4": {
         "docs": [
             {
                 "id": 184,
@@ -651,7 +651,7 @@
         "totalDocs": 66,
         "totalPages": 7
     },
-    {
+    "5": {
         "docs": [
             {
                 "id": 93,
@@ -814,7 +814,7 @@
         "totalDocs": 66,
         "totalPages": 7
     },
-    {
+    "6": {
         "docs": [
             {
                 "id": 83,
@@ -977,7 +977,7 @@
         "totalDocs": 66,
         "totalPages": 7
     },
-    {
+    "7": {
         "docs": [
             {
                 "id": 69,
@@ -1080,4 +1080,4 @@
         "totalDocs": 66,
         "totalPages": 7
     }
-]
+}
