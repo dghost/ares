@@ -1,32 +1,36 @@
-Notes:
+## Notes
 
-Only executables: 
-  /.farsight7/sound.bin: SOUND_PUZZLE
-  /Security/Cybersecurity/decrypt.sh: DECRYPT
+### Filesystem
+Only executables:
 
-These are the only two executable types listed in the source code
+| File                                  | Type            |
+|---                                    |---              |
+| `/.farsight7/sound.bin`               | `SOUND_PUZZLE`  |
+| `/Security/Cybersecurity/decrypt.sh:` | `DECRYPT`       |
+ 
+SOUND_PUZZLE and DECRYPT are the only two executable types mentioned in source code, so seems unlikely there are additional hidden binaries at this time.
 
-Filenames with whitespace in them (can't interact with):
-  '/Legislation/Security/Counter-Intelligence/Internal_Affairs/Astralis. N.file'
-  '/Legislation/Security/Counter-Intelligence/Internal_Affairs/Dubois.V.file '
-  '/Legislation/Security/Counter-Intelligence/Internal_Affairs/Ibrahim.O.file '
-  '/UESC_Departments/Human Resources_&_Personnel.file'
+Filenames with whitespace in them that can't be interacted w/ through terminal:
+```
+'/Legislation/Security/Counter-Intelligence/Internal_Affairs/Astralis. N.file'
+'/Legislation/Security/Counter-Intelligence/Internal_Affairs/Dubois.V.file '
+'/Legislation/Security/Counter-Intelligence/Internal_Affairs/Ibrahim.O.file '
+'/UESC_Departments/Human Resources_&_Personnel.file'
+```
+Note: client CLI doesn't parse these because it splits on whitespace. So either this is deliberate (for effect) or a bug.
 
-
-
-
+### SSH
 Both ssh and decrypt call to server side API endpoints for validation:
-ssh => uesc.io/api/ssh
-- Actual commands appear to go through /api/ssh/cli
-decrypt => /api/decrypt
+* `ssh` => `uesc.io/api/ssh`
+  - Actual commands appear to go through `/api/ssh/cli`
+* `decrypt` => `uesc.io/api/decrypt`
 
+Can't easily reverse engineer these from client source.
 
-
-
-
+### Breadcrumbs?
 "Breadcrumb trails suggest alternate routes."
 - Breadcrumbs in schema are somewhat unreliable
-- Could have just been a means to find .farsight7 folder. 
+- Could have just been an alternate means to find .farsight7 folder. 
     - 'ls' explicitly hides files/folders with names beginning with '.'
     ```
         d = [
