@@ -41,3 +41,15 @@ Can't easily reverse engineer these from client source.
 - At least two folders have breadcrumbs whose names don't match
 - Traversal doesn't appear to actually involve breadcrumbs at all. instead uses names, id's, and parent ids?
 - there are theoretical cycles in the graph. need to prove this.
+
+### API Endpoints
+
+| Endpoint                | Desc                                    |
+|---                      |---                                      |
+| `/api/media`            | Static content like images              |
+| `/api/ssh`              | SSH command                             |
+| `/api/ssh/cli`          | SSH command trampoline                  |
+| `/api/decrypt`          | Decrypt command                         |
+| `/api/terminal-config`  | Background scroll while in the terminal | 
+| `/api/folders`          | All files and folders in the terminal   |
+ 
