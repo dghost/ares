@@ -4,8 +4,14 @@ import json
 import os
 import shutil
 import collections
+import util
 
 FileTuple = collections.namedtuple('FileTuple', ['name', 'data'])
+
+BASE_URL = "https://uesc.io"
+API_ENDPOINT = "/api/folders"
+OUT_DIR = "./uesc.io/"
+FOLDERS_JSON = "folders.json"
 
 def dumpFilesystem(out_dir, data):
     # dump the filesystem path, ish. there's two directories where the breadcrumbs don't match the labels.
@@ -77,21 +83,32 @@ def dumpBrokenFiles(data):
     for file in files:
         print(f"'{file.name}'")
 
+def dumpHiddenFiles(data):
+    files = []
+    for dir in data:
+        path = dir['breadcrumbs'][-1]['url']
+        for file in dir['files']:
+            fname = os.path.join(path,file['fileName'])
+            if '.' in fname:
+                files.append(FileTuple(fname, None))
+
+    files = sorted(files, key=lambda file: file.name)
+    print(f"Found hidden files:")
+    for file in files:
+        print(f"{file.name}")
 
 # clean the existing output
-OUT_DIR = "./uesc.io/"
 try:
     shutil.rmtree(OUT_DIR)
 except:
     pass
 os.mkdir(OUT_DIR)
 
-# load the raw json
-data = []
-with open('raw.json') as json_file:
-    data = json.load(json_file)
+util.buildJson(FOLDERS_JSON, BASE_URL, API_ENDPOINT)
+data = util.flattenJson(FOLDERS_JSON)
 
 dumpFilesystem(OUT_DIR, data)
 dumpFilesFlat(OUT_DIR, data)
 dumpExecutableFiles(data)
 dumpBrokenFiles(data)
+# dumpHiddenFiles(data)
