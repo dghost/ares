@@ -28,6 +28,6 @@ except:
     pass
 os.mkdir(OUT_DIR)
 
-util.buildJson(MEDIA_JSON, BASE_URL, API_ENDPOINT)
+util.buildJsonMultipage(MEDIA_JSON, BASE_URL, API_ENDPOINT)
 flattened = util.flattenJson(MEDIA_JSON)
 scrapeAssets(flattened, OUT_DIR)

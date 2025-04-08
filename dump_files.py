@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 
-import json
 import os
 import shutil
 import collections
@@ -104,7 +103,7 @@ except:
     pass
 os.mkdir(OUT_DIR)
 
-util.buildJson(FOLDERS_JSON, BASE_URL, API_ENDPOINT)
+# util.buildJsonMultipage(FOLDERS_JSON, BASE_URL, API_ENDPOINT)
 data = util.flattenJson(FOLDERS_JSON)
 
 dumpFilesystem(OUT_DIR, data)

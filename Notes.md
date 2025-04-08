@@ -32,24 +32,24 @@ Can't easily reverse engineer these from client source.
 - Breadcrumbs in schema are somewhat unreliable
 - Could have just been an alternate means to find .farsight7 folder. 
     - 'ls' explicitly hides files/folders with names beginning with '.'
-    ```
-        d = [
-          ...M.map(e => e.name.startsWith('.') ? null : e.name).filter(Boolean),
-          ...u.map(e => e.startsWith('.') ? null : e).filter(Boolean)
-        ].filter(Boolean).sort((e, t) => e.localeCompare(t));
-    ```
 - At least two folders have breadcrumbs whose names don't match
 - Traversal doesn't appear to actually involve breadcrumbs at all. instead uses names, id's, and parent ids?
 - there are theoretical cycles in the graph. need to prove this.
 
 ### API Endpoints
 
+For https://uesc.io:
 | Endpoint                | Desc                                    |
 |---                      |---                                      |
-| `/api/media`            | Static content like images              |
 | `/api/ssh`              | SSH command                             |
 | `/api/ssh/cli`          | SSH command trampoline                  |
 | `/api/decrypt`          | Decrypt command                         |
 | `/api/terminal-config`  | Background scroll while in the terminal | 
 | `/api/folders`          | All files and folders in the terminal   |
  
+
+For https://traxus.global:
+| Endpoint                | Desc                                    |
+|---                      |---                                      |
+| `/api/nav`              | Contents of big spinning wheel          |
+| `/api/config`           | Landing page + other stuff              |

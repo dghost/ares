@@ -3,7 +3,7 @@
 import json
 import urllib.request
 
-def buildJson(filename, base_url, api_endpoint):
+def buildJsonMultipage(filename, base_url, api_endpoint):
     print(f"Fetching API root from: {base_url}{api_endpoint}")
     with urllib.request.urlopen(f"{base_url}{api_endpoint}") as response:
         html = response.read()
@@ -24,6 +24,14 @@ def buildJson(filename, base_url, api_endpoint):
     with open(filename, "w") as out_file:
         out_file.write(json.dumps(pages, indent=4))
 
+def buildJson(filename, base_url, api_endpoint):
+    print(f"Fetching API root from: {base_url}{api_endpoint}")
+    with urllib.request.urlopen(f"{base_url}{api_endpoint}") as response:
+        html = response.read()
+        root = json.loads(html)         
+        with open(filename, "w") as out_file:
+            out_file.write(json.dumps(root, indent=4))
+
 def flattenJson(filename):
     docs = []
     with open(filename) as in_file:
@@ -31,3 +39,7 @@ def flattenJson(filename):
         for page in pages.values():
             docs += page['docs']
     return docs
+
+def openJson(filename):
+    with open(filename) as in_file:
+        return json.load(in_file)
