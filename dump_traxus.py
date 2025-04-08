@@ -10,8 +10,8 @@ BASE_URL = "https://traxus.global"
 ASSET_URL = "https://goliath-assets-700331821540.us-east4.run.app"
 API_ENDPOINT = "/api/media/file/"
 OUT_DIR = "./traxus.global/"
-NAV_JSON = "nav.json"
-CONFIG_JSON = "config.json"
+NAV_JSON = "json/nav.json"
+CONFIG_JSON = "json/config.json"
 
 
 def fetchAssets(navData, configData, out_dir):
