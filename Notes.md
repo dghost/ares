@@ -6,7 +6,7 @@ Only executables:
 | File                                  | Type            |
 |---                                    |---              |
 | `/.farsight7/sound.bin`               | `SOUND_PUZZLE`  |
-| `/Security/Cybersecurity/decrypt.sh:` | `DECRYPT`       |
+| `/Security/Cybersecurity/decrypt.sh`  | `DECRYPT`       |
  
 SOUND_PUZZLE and DECRYPT are the only two executable types mentioned in source code, so seems unlikely there are additional hidden binaries at this time.
 
