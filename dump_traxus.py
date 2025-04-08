@@ -39,7 +39,7 @@ def fetchAssets(navData, configData, out_dir):
             filename = None
             if popup['image']:
                 url = f"{ASSET_URL}{popup['image']['url']}"
-                filename = popup['image']['url'].removeprefix(API_ENDPOINT)
+                filename = popup['image']['filename']
             elif popup['videoURL']:
                 url = popup['videoURL']
                 filename = url.removeprefix("https://goliath.b-cdn.net/ads/")
