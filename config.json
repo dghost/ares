@@ -1,0 +1,568 @@
+{
+    "id": 1,
+    "drillUserManual": {
+        "id": 150,
+        "alt": "manual",
+        "updatedAt": "2025-03-31T17:45:20.943Z",
+        "createdAt": "2025-03-31T17:45:20.943Z",
+        "url": "/api/media/file/Traxus(D)CaveCrawlerV2_2-12.pdf",
+        "thumbnailURL": null,
+        "filename": "Traxus(D)CaveCrawlerV2_2-12.pdf",
+        "mimeType": "application/pdf",
+        "filesize": 3165755,
+        "width": null,
+        "height": null,
+        "focalX": null,
+        "focalY": null
+    },
+    "hiddenDrillUserManual": null,
+    "loadingContent": [
+        {
+            "id": "67826a88ae711d737c8231cb",
+            "text": "payload Loading Text 850",
+            "duration": 850
+        },
+        {
+            "id": "67826a9aae711d737c8231cc",
+            "text": "payload Loading Text 550",
+            "duration": 550
+        }
+    ],
+    "mainText": {
+        "title": "payload Main Title",
+        "text": "payload Main Content Text",
+        "email": "payload Contact Email "
+    },
+    "chatHistory": [
+        {
+            "id": "67d9552a90c09ea60cfa2139",
+            "title": "SYSTEM",
+            "from": "LOG#69420",
+            "message": "// START OF MESSAGE //",
+            "timestamp": "2669-10-05T06:45:12.000Z",
+            "type": "message"
+        },
+        {
+            "id": "67d42e78eb267add47153145",
+            "title": "LOGJ-1023",
+            "from": "LOG#69420",
+            "message": "@OPSL-2045 Morning, team. Supply chain disruptions are escalating. Need clarity for the next phase. Execs are pressing for an ETA.",
+            "timestamp": "2669-10-05T06:45:12.000Z",
+            "type": "message"
+        },
+        {
+            "id": "67d42ec7eb267add47153146",
+            "title": "OPSL-2045",
+            "from": "LOG#69420",
+            "message": "@LOGJ-1023 Morning. We're rerouting shipments via secondary logistics hub. Resolution expected by EOD, barring unforeseen network latency.",
+            "timestamp": "2669-10-05T06:45:19.000Z",
+            "type": "message"
+        },
+        {
+            "id": "67d42ef1eb267add47153147",
+            "title": "LOGJ-1023",
+            "from": "LOG#69420",
+            "message": "@OPSL-2045 Understood. What's our confidence level? Are we looking at a 90% probability, or should I prepare for contingencies?",
+            "timestamp": "2669-10-05T06:45:25.000Z",
+            "type": "message"
+        },
+        {
+            "id": "67d42f28eb267add47153148",
+            "title": "OPSL-2045",
+            "from": "LOG#69420",
+            "message": "@LOGJ-1023 Confidence is high. Backup plans in motion, including alternative transport protocols and priority clearance for critical assets.",
+            "timestamp": "2669-10-05T06:45:32.000Z",
+            "type": "message"
+        },
+        {
+            "id": "67d42f49eb267add47153149",
+            "title": "LOGJ-1023",
+            "from": "LOG#69420",
+            "message": "@OPSL-2045 Perfect. Keep me posted if anything changes. Higher-ups are not known for their patience.",
+            "timestamp": "2669-10-05T06:45:40.000Z",
+            "type": "message"
+        },
+        {
+            "id": "67d42f5aeb267add4715314a",
+            "title": "OPSL-2045",
+            "from": "LOG#69420",
+            "message": "@LOGJ-1023 Will do. Thanks for checking in. And hey, don't let the pressure get to you. We're all in this together.",
+            "timestamp": "2669-10-05T06:45:47.000Z",
+            "type": "message"
+        },
+        {
+            "id": "67d42f84eb267add4715314b",
+            "title": "LOGJ-1023",
+            "from": "LOG#69420",
+            "message": "@OPSL-2045 Appreciate it. Just another day in the logistics labyrinth, right? Let's hope today doesn't throw us any curveballs",
+            "timestamp": "2669-10-05T06:45:55.000Z",
+            "type": "message"
+        },
+        {
+            "id": "67d42fffeb267add4715314c",
+            "title": "OPSL-2045",
+            "from": "LOG#69420",
+            "message": "@LOGJ-1023 Agreed. But if it does, we'll handle it. We've got a solid team.",
+            "timestamp": "2669-10-05T06:46:02.000Z",
+            "type": "message"
+        },
+        {
+            "id": "67d94f2a90c09ea60cfa2122",
+            "title": "LOGJ-1023",
+            "from": "LOG#69420",
+            "message": "@OPSL-2045 True. Thanks for the support. Let's keep things moving.",
+            "timestamp": "2669-10-05T06:46:10.000Z",
+            "type": "message"
+        },
+        {
+            "id": "67d9558c90c09ea60cfa213a",
+            "title": "SYSTEM",
+            "from": "LOG#69420",
+            "message": "// END OF MESSAGE //",
+            "timestamp": "2669-10-05T06:46:10.000Z",
+            "type": "message"
+        },
+        {
+            "id": "67d955c590c09ea60cfa213b",
+            "title": "SYSTEM",
+            "from": "LOG#11734",
+            "message": "// START OF MESSAGE //",
+            "timestamp": "2671-07-12T07:30:07.000Z",
+            "type": "message"
+        },
+        {
+            "id": "67d94f7790c09ea60cfa2123",
+            "title": "ITAD-6784",
+            "from": "LOG#11734",
+            "message": "@SYSE-3344 Morning. Has the server maintenance wrapped up? Need confirmation for the report.",
+            "timestamp": "2671-07-12T07:30:07.000Z",
+            "type": "message"
+        },
+        {
+            "id": "67d94f9290c09ea60cfa2124",
+            "title": "SYSE-3344",
+            "from": "LOG#11734",
+            "message": "@ITAD-6784 Morning. Yes, all systems are operational. Final checks completed.",
+            "timestamp": "2671-07-12T07:30:14.000Z",
+            "type": "message"
+        },
+        {
+            "id": "67d94f9590c09ea60cfa2125",
+            "title": "ITAD-6784",
+            "from": "LOG#11734",
+            "message": "@SYSE-3344 Excellent. Any issues during the process? Anything that might need a follow-up?",
+            "timestamp": "2671-07-12T07:30:21.000Z",
+            "type": "message"
+        },
+        {
+            "id": "67d94f9790c09ea60cfa2126",
+            "title": "SYSE-3344",
+            "from": "LOG#11734",
+            "message": "@ITAD-6784 Just a minor delay due to a hardware check. Resolved without impact.",
+            "timestamp": "2671-07-12T07:30:28.000Z",
+            "type": "message"
+        },
+        {
+            "id": "67d94f9a90c09ea60cfa2127",
+            "title": "ITAD-6784",
+            "from": "LOG#11734",
+            "message": "@SYSE-3344 Good work. Keep an eye out for any irregularities. We can't afford surprises.",
+            "timestamp": "2671-07-12T07:30:35.000Z",
+            "type": "message"
+        },
+        {
+            "id": "67d94f9c90c09ea60cfa2128",
+            "title": "SYSE-3344",
+            "from": "LOG#11734",
+            "message": "@ITAD-6784 Understood. Monitoring is ongoing. Thanks for the support.",
+            "timestamp": "2671-07-12T07:30:42.000Z",
+            "type": "message"
+        },
+        {
+            "id": "67d94f9f90c09ea60cfa2129",
+            "title": "ITAD-6784",
+            "from": "LOG#11734",
+            "message": "@SYSE-3344 Anytime. By the way, did you hear about the CyAc reboot on the Traxus backend?",
+            "timestamp": "2671-07-12T07:30:49.000Z",
+            "type": "message"
+        },
+        {
+            "id": "67d94fa190c09ea60cfa212a",
+            "title": "SYSE-3344",
+            "from": "LOG#11734",
+            "message": "@ITAD-6784 Yeah, I caught wind of it. They missed a critical step in the sequencing.",
+            "timestamp": "2671-07-12T07:30:56.000Z",
+            "type": "message"
+        },
+        {
+            "id": "67d94fa490c09ea60cfa212b",
+            "title": "ITAD-6784",
+            "from": "LOG#11734",
+            "message": "@SYSE-3344 Typical. Did it affect our systems?",
+            "timestamp": "2671-07-12T07:31:03.000Z",
+            "type": "message"
+        },
+        {
+            "id": "67d94fa690c09ea60cfa212c",
+            "title": "SYSE-3344",
+            "from": "LOG#11734",
+            "message": "@ITAD-6784 Not directly, but it caused a temporary desync with the data streams. Had to manually realign.",
+            "timestamp": "2671-07-12T07:31:10.000Z",
+            "type": "message"
+        },
+        {
+            "id": "67d94fa990c09ea60cfa212d",
+            "title": "ITAD-6784",
+            "from": "LOG#11734",
+            "message": "@SYSE-3344 Good catch. Let's document this and notify rep @CyAc. They need to tighten their protocols.",
+            "timestamp": "2671-07-12T07:31:17.000Z",
+            "type": "message"
+        },
+        {
+            "id": "67d94fac90c09ea60cfa212e",
+            "title": "SYSE-3344",
+            "from": "LOG#11734",
+            "message": "@ITAD-6784 Agreed. I'll draft a report and loop in management. We can't have these oversights.",
+            "timestamp": "2671-07-12T07:31:24.000Z",
+            "type": "message"
+        },
+        {
+            "id": "67d94faf90c09ea60cfa212f",
+            "title": "ITAD-6784",
+            "from": "LOG#11734",
+            "message": "@SYSE-3344 Thanks. Let's keep everything running smoothly.",
+            "timestamp": "2671-07-12T07:31:31.000Z",
+            "type": "message"
+        },
+        {
+            "id": "67d94fb190c09ea60cfa2130",
+            "title": "SYSE-3344",
+            "from": "LOG#11734",
+            "message": "@ITAD-6784 Will do. Appreciate the backup.",
+            "timestamp": "2671-07-12T07:31:38.000Z",
+            "type": "message"
+        },
+        {
+            "id": "67d955f290c09ea60cfa213c",
+            "title": "SYSTEM",
+            "from": "LOG#11734",
+            "message": "// END OF MESSAGE // ",
+            "timestamp": "2671-07-12T07:31:38.000Z",
+            "type": "message"
+        },
+        {
+            "id": "67d9561390c09ea60cfa213d",
+            "title": "SYSTEM",
+            "from": "LOG#25792",
+            "message": "// START OF MESSAGE //",
+            "timestamp": "2692-11-11T10:00:30.000Z",
+            "type": "message"
+        },
+        {
+            "id": "67d9524090c09ea60cfa2131",
+            "title": "ITSC-3345",
+            "from": "LOG#25792",
+            "message": "@DEV-1122 Hey, I saw a breach attempt logged overnight. What's the status on that?",
+            "timestamp": "2692-11-11T10:00:30.000Z",
+            "type": "message"
+        },
+        {
+            "id": "67d9526b90c09ea60cfa2132",
+            "title": "DEV-1122",
+            "from": "LOG#25792",
+            "message": "@ITSC-3345 Morning. We've contained it. No data was compromised.",
+            "timestamp": "2692-11-11T10:00:37.000Z",
+            "type": "message"
+        },
+        {
+            "id": "67d9526f90c09ea60cfa2133",
+            "title": "ITSC-3345",
+            "from": "LOG#25792",
+            "message": "@DEV-1122 That's a relief. Have we identified the source yet?",
+            "timestamp": "2692-11-11T10:00:44.000Z",
+            "type": "message"
+        },
+        {
+            "id": "67d9527290c09ea60cfa2134",
+            "title": "DEV-1122",
+            "from": "LOG#25792",
+            "message": "@ITSC-3345 We're tracing it back to an external IP. Further analysis is underway. Interestingly, the breach attempt coincided with a CyAc terminal access request.",
+            "timestamp": "2692-11-11T10:00:51.000Z",
+            "type": "message"
+        },
+        {
+            "id": "67d9527490c09ea60cfa2135",
+            "title": "ITSC-3345",
+            "from": "LOG#25792",
+            "message": "@DEV-1122 Keep me updated on any developments. Also, remind me, terminal access\u2014was it the hold key sequence during boot to enter?",
+            "timestamp": "2692-11-11T10:00:58.000Z",
+            "type": "message"
+        },
+        {
+            "id": "67d9527890c09ea60cfa2136",
+            "title": "DEV-1122",
+            "from": "LOG#25792",
+            "message": "@ITSC-3345 Will do. And yes, hold key sequence, per usual, for CyAc booting, then navigate to the system core. Just ensure the firmware is up to date to avoid any hiccups.",
+            "timestamp": "2692-11-11T10:01:05.000Z",
+            "type": "message"
+        },
+        {
+            "id": "67d9527a90c09ea60cfa2137",
+            "title": "ITSC-3345",
+            "from": "LOG#25792",
+            "message": "@DEV-1122 Got it. Thanks for the heads-up. Let's stay vigilant.",
+            "timestamp": "2692-11-11T10:01:12.000Z",
+            "type": "message"
+        },
+        {
+            "id": "67d9527c90c09ea60cfa2138",
+            "title": "DEV-1122",
+            "from": "LOG#25792",
+            "message": "@ITSC-3345 Absolutely. I'll keep you posted on the trace results.",
+            "timestamp": "2692-11-11T10:01:19.000Z",
+            "type": "message"
+        },
+        {
+            "id": "67d9564e90c09ea60cfa213e",
+            "title": "SYSTEM",
+            "from": "LOG#25792",
+            "message": "// END OF MESSAGE //",
+            "timestamp": "2692-11-11T10:01:19.000Z",
+            "type": "message"
+        },
+        {
+            "id": "67d95db890c09ea60cfa213f",
+            "title": "SYSTEM",
+            "from": "LOG#00987",
+            "message": "// MESSAGE START // ",
+            "timestamp": "2697-01-20T11:20:15.000Z",
+            "type": "message"
+        },
+        {
+            "id": "67d95dc290c09ea60cfa2140",
+            "title": "LOGM-5567",
+            "from": "LOG#00987",
+            "message": "@SUPP-7789 Hey, I need a detailed update on the new supply routes. Specifically, any issues with the Sekiguchi Gen cargo\u2014Manifest ID SG-4521. We can't afford another oversight.",
+            "timestamp": "2697-01-20T11:20:15.000Z",
+            "type": "message"
+        },
+        {
+            "id": "67d95dc490c09ea60cfa2141",
+            "title": "SUPP-7789",
+            "from": "LOG#00987",
+            "message": "@LOGM-5567 Hi! The initial routes are mapped, pending final approvals. About SG-4521, there was a hiccup in the tracking system. I'm still piecing together the details.",
+            "timestamp": "2697-01-20T11:20:22.000Z",
+            "type": "message"
+        },
+        {
+            "id": "67d95dc690c09ea60cfa2142",
+            "title": "LOGM-5567",
+            "from": "LOG#00987",
+            "message": "@SUPP-7789 A hiccup? We need precision here. That cargo is critical. What's the current status on the tracking logs?",
+            "timestamp": "2697-01-20T11:20:29.000Z",
+            "type": "message"
+        },
+        {
+            "id": "67d95dc890c09ea60cfa2143",
+            "title": "SUPP-7789",
+            "from": "LOG#00987",
+            "message": "@LOGM-5567 The logs show a temporary desync with the GPS module. It seems to have lost signal during transit. I'm coordinating with the transport team to re-establish contact.",
+            "timestamp": "2697-01-20T11:20:36.000Z",
+            "type": "message"
+        },
+        {
+            "id": "67d95dc990c09ea60cfa2144",
+            "title": "LOGM-5567",
+            "from": "LOG#00987",
+            "message": "@SUPP-7789 Alright, let's prioritize this. I want a full diagnostic on the GPS system and a contingency plan if we can't re-establish the signal.",
+            "timestamp": "2697-01-20T11:20:42.000Z",
+            "type": "message"
+        },
+        {
+            "id": "67d95dcb90c09ea60cfa2145",
+            "title": "SUPP-7789",
+            "from": "LOG#00987",
+            "message": "@LOGM-5567 Understood. I'll initiate a system check and loop in the tech team for support. We'll have a plan ready by EOD.",
+            "timestamp": "2697-01-20T11:20:50.000Z",
+            "type": "message"
+        },
+        {
+            "id": "67d95dcc90c09ea60cfa2146",
+            "title": "LOGM-5567",
+            "from": "LOG#00987",
+            "message": "@SUPP-7789 Good. Also, prepare a report on any potential delays this might cause. We need to keep Sekiguchi in the loop without causing alarm.",
+            "timestamp": "2697-01-20T11:20:57.000Z",
+            "type": "message"
+        },
+        {
+            "id": "67d95dce90c09ea60cfa2147",
+            "title": "SUPP-7789",
+            "from": "LOG#00987",
+            "message": "@LOGM-5567 Absolutely. I'll draft the report and ensure all data is accurate.",
+            "timestamp": "2697-01-20T11:21:04.000Z",
+            "type": "message"
+        },
+        {
+            "id": "67d95dcf90c09ea60cfa2148",
+            "title": "LOGM-5567",
+            "from": "LOG#00987",
+            "message": "@SUPP-7789 Thanks. Let's aim for a logistics review next week. I want everything squared away by then.",
+            "timestamp": "2697-01-20T11:21:11.000Z",
+            "type": "message"
+        },
+        {
+            "id": "67d95e9190c09ea60cfa2149",
+            "title": "SUPP-7789",
+            "from": "LOG#00987",
+            "message": "@LOGM-5567 Will do. I'll make sure we're ready and keep you in the loop.",
+            "timestamp": "2697-01-20T11:21:18.000Z",
+            "type": "message"
+        },
+        {
+            "id": "67d95e9690c09ea60cfa214a",
+            "title": "SYSTEM",
+            "from": "LOG#00987",
+            "message": "// END OF MESSAGE // ",
+            "timestamp": "2697-01-20T11:21:18.000Z",
+            "type": "message"
+        },
+        {
+            "id": "67d96f1790c09ea60cfa2157",
+            "title": "SYSTEM",
+            "from": "LOG#99781",
+            "message": "// START OF MESSAGE// ",
+            "timestamp": "2700-12-12T14:30:12.000Z",
+            "type": "message"
+        },
+        {
+            "id": "67d96f1a90c09ea60cfa2158",
+            "title": "ITSC-4782",
+            "from": "LOG#99781",
+            "message": "@NETOPS-2341 Need to access ssh root@166.177.23.12 for the quarterly security audit. Are the credentials still in the secure vault?\n",
+            "timestamp": "2700-12-12T14:30:12.000Z",
+            "type": "message"
+        },
+        {
+            "id": "67d96f3b90c09ea60cfa2159",
+            "title": "NETOPS-2341",
+            "from": "LOG#99781",
+            "message": "@ITSC-4782 That server's been migrated to the new security protocol. Standard vault credentials won't work anymore.",
+            "timestamp": "2700-12-12T14:30:19.000Z",
+            "type": "message"
+        },
+        {
+            "id": "67d96f3d90c09ea60cfa215a",
+            "title": "ITSC-4782",
+            "from": "LOG#99781",
+            "message": "@NETOPS-2341 When did this happen? Wasn't in the change log.",
+            "timestamp": "2700-12-12T14:30:26.000Z",
+            "type": "message"
+        },
+        {
+            "id": "67d96f3e90c09ea60cfa215b",
+            "title": "NETOPS-2341",
+            "from": "LOG#99781",
+            "message": "@ITSC-4782 Last week. Emergency migration after that incident with the eastern cluster. Should've been in the priority bulletin.",
+            "timestamp": "2700-12-12T14:30:33.000Z",
+            "type": "message"
+        },
+        {
+            "id": "67d96f4090c09ea60cfa215c",
+            "title": "ITSC-4782",
+            "from": "LOG#99781",
+            "message": "@NETOPS-2341 Must have missed it. What's the new protocol for access?",
+            "timestamp": "2700-12-12T14:30:40.000Z",
+            "type": "message"
+        },
+        {
+            "id": "67d96f4290c09ea60cfa215d",
+            "title": "NETOPS-2341",
+            "from": "LOG#99781",
+            "message": "@ITSC-4782 You'll need to generate a temporary key through the NEXUS system. Auth level 3 required. Expires after 4 hours.",
+            "timestamp": "2700-12-12T14:30:47.000Z",
+            "type": "message"
+        },
+        {
+            "id": "67d96f4390c09ea60cfa215e",
+            "title": "ITSC-4782",
+            "from": "LOG#99781",
+            "message": "@NETOPS-2341 Got it. Any other changes I should know about for the audit?",
+            "timestamp": "2700-12-12T14:30:54.000Z",
+            "type": "message"
+        },
+        {
+            "id": "67d96f4590c09ea60cfa215f",
+            "title": "NETOPS-2341",
+            "from": "LOG#99781",
+            "message": "@ITSC-4782 They've implemented new firewall rules. Port scanning will trigger automatic lockdown, so use the approved diagnostic tools only.",
+            "timestamp": "2700-12-12T14:31:01.000Z",
+            "type": "message"
+        },
+        {
+            "id": "67d96f4790c09ea60cfa2160",
+            "title": "ITSC-4782",
+            "from": "LOG#99781",
+            "message": "@NETOPS-2341 Understood. I'll coordinate with the security team to ensure we're using the right approach.",
+            "timestamp": "2700-12-12T14:31:08.000Z",
+            "type": "message"
+        },
+        {
+            "id": "67d96f4890c09ea60cfa2161",
+            "title": "NETOPS-2341",
+            "from": "LOG#99781",
+            "message": "@ITSC-4782 Good. Also, that server hosts some of the CyAc terminal backend. Be careful not to disrupt any active sessions.",
+            "timestamp": "2700-12-12T14:31:15.000Z",
+            "type": "message"
+        },
+        {
+            "id": "67d96f4a90c09ea60cfa2162",
+            "title": "ITSC-4782",
+            "from": "LOG#99781",
+            "message": "@NETOPS-2341 Noted. We'll proceed with caution. Thanks for the heads-up.",
+            "timestamp": "2700-12-12T14:31:22.000Z",
+            "type": "message"
+        },
+        {
+            "id": "67d96f4e90c09ea60cfa2163",
+            "title": "NETOPS-2341",
+            "from": "LOG#99781",
+            "message": "@ITSC-4782 No problem. Let me know if you encounter any issues. I'll be monitoring from my end.",
+            "timestamp": "2700-12-12T14:31:29.000Z",
+            "type": "message"
+        },
+        {
+            "id": "67d96f5090c09ea60cfa2164",
+            "title": "ITSC-4782",
+            "from": "LOG#99781",
+            "message": "@NETOPS-2341 Will do. Starting the audit at 16:00. Should be complete by 18:30.",
+            "timestamp": "2700-12-12T14:31:36.000Z",
+            "type": "message"
+        },
+        {
+            "id": "67d9702d90c09ea60cfa2165",
+            "title": "@NETOPS-2341",
+            "from": "LOG#99781",
+            "message": "@ITSC-4782 Logged. I'll make sure the system admins are aware of the maintenance window.",
+            "timestamp": "2700-12-12T14:31:44.000Z",
+            "type": "message"
+        },
+        {
+            "id": "67d9712990c09ea60cfa2166",
+            "title": "SYSTEM",
+            "from": "LOG#99781",
+            "message": "// END OF MESSAGE //",
+            "timestamp": "2700-12-12T14:31:44.000Z",
+            "type": "message"
+        }
+    ],
+    "blackout": {
+        "chat": "payload Chat Content During Blackout",
+        "press_release_top": "payload Press Release Top Text",
+        "press_release_title": "payload Press Release Title",
+        "press_release_text": "payload Press Release Text",
+        "press_release_info": "payload Press Release Info"
+    },
+    "updatedAt": "2025-03-31T17:45:54.790Z",
+    "createdAt": null,
+    "globalType": "traxus_config"
+}

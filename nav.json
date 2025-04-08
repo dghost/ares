@@ -1,0 +1,1635 @@
+[
+    {
+        "id": 249,
+        "text": "TRAX-SAT MANAGEMENT CONSOLE",
+        "page": "satmap",
+        "active": true,
+        "dots": 2,
+        "popup": null,
+        "updatedAt": "2025-04-03T17:07:01.484Z",
+        "createdAt": "2025-03-27T12:16:37.742Z"
+    },
+    {
+        "id": 248,
+        "text": "CB-3463 DRILL",
+        "page": "drillInfo",
+        "active": true,
+        "dots": 2,
+        "popup": null,
+        "updatedAt": "2025-03-30T01:41:59.403Z",
+        "createdAt": "2025-03-27T12:16:08.897Z"
+    },
+    {
+        "text": "Advanced Robotics Platform",
+        "active": false,
+        "dots": 0
+    },
+    {
+        "text": "Augmented Reality Interface",
+        "active": false,
+        "dots": 2
+    },
+    {
+        "id": 244,
+        "text": "Virtual Reality Training Suite",
+        "page": null,
+        "active": true,
+        "dots": 0,
+        "popup": {
+            "id": 77,
+            "title": "TRX_S7_45679",
+            "image": null,
+            "videoURL": "https://goliath.b-cdn.net/ads/TRX_S7_45679.mp4",
+            "width": 400,
+            "barcodePosition": "right",
+            "updatedAt": "2025-04-06T15:23:33.593Z",
+            "createdAt": "2025-04-06T11:52:11.286Z",
+            "hasBarcode": true
+        },
+        "updatedAt": "2025-04-06T15:11:16.418Z",
+        "createdAt": "2025-03-14T13:31:59.458Z"
+    },
+    {
+        "id": 243,
+        "text": "Smart Sensor Network",
+        "page": null,
+        "active": true,
+        "dots": 0,
+        "popup": {
+            "id": 76,
+            "title": "CYAC_B4_78341",
+            "image": null,
+            "videoURL": "https://goliath.b-cdn.net/ads/CYAC_B4_78341.mp4",
+            "width": 400,
+            "barcodePosition": "left",
+            "updatedAt": "2025-04-06T11:50:40.860Z",
+            "createdAt": "2025-04-06T11:50:40.860Z",
+            "hasBarcode": true
+        },
+        "updatedAt": "2025-04-06T15:11:16.421Z",
+        "createdAt": "2025-03-14T13:31:52.177Z"
+    },
+    {
+        "text": "Energy Harvesting Unit",
+        "active": false,
+        "dots": 2
+    },
+    {
+        "id": 241,
+        "text": "Predictive Maintenance System",
+        "page": null,
+        "active": true,
+        "dots": 0,
+        "popup": {
+            "id": 75,
+            "title": "USC_PT_56789",
+            "image": {
+                "id": 214,
+                "alt": "UESC PEACE",
+                "updatedAt": "2025-04-05T20:43:02.245Z",
+                "createdAt": "2025-04-05T20:43:02.245Z",
+                "url": "/api/media/file/USC_PT_56789.png",
+                "thumbnailURL": null,
+                "filename": "USC_PT_56789.png",
+                "mimeType": "image/png",
+                "filesize": 48597,
+                "width": 1080,
+                "height": 1080,
+                "focalX": 50,
+                "focalY": 50
+            },
+            "videoURL": null,
+            "width": 400,
+            "barcodePosition": "right",
+            "updatedAt": "2025-04-05T21:32:28.460Z",
+            "createdAt": "2025-04-05T20:43:06.820Z",
+            "hasBarcode": true
+        },
+        "updatedAt": "2025-04-06T15:11:16.424Z",
+        "createdAt": "2025-03-14T13:31:34.249Z"
+    },
+    {
+        "id": 240,
+        "text": "Quantum Computing Module",
+        "page": null,
+        "active": true,
+        "dots": 0,
+        "popup": {
+            "id": 74,
+            "title": "USC_M8_89014",
+            "image": {
+                "id": 213,
+                "alt": "UESC JUSTICE",
+                "updatedAt": "2025-04-05T20:42:32.736Z",
+                "createdAt": "2025-04-05T20:42:32.736Z",
+                "url": "/api/media/file/USC_M8_89014.png",
+                "thumbnailURL": null,
+                "filename": "USC_M8_89014.png",
+                "mimeType": "image/png",
+                "filesize": 41536,
+                "width": 1080,
+                "height": 1080,
+                "focalX": 50,
+                "focalY": 50
+            },
+            "videoURL": null,
+            "width": 400,
+            "barcodePosition": "left",
+            "updatedAt": "2025-04-06T06:31:55.289Z",
+            "createdAt": "2025-04-05T20:42:37.983Z",
+            "hasBarcode": true
+        },
+        "updatedAt": "2025-04-06T15:11:16.426Z",
+        "createdAt": "2025-03-14T13:31:27.445Z"
+    },
+    {
+        "id": 239,
+        "text": "AI-Driven Site Management Systems",
+        "page": null,
+        "active": true,
+        "dots": 0,
+        "popup": {
+            "id": 73,
+            "title": "USC_M8_89013",
+            "image": {
+                "id": 212,
+                "alt": "UESC SUPPORT",
+                "updatedAt": "2025-04-05T20:41:59.845Z",
+                "createdAt": "2025-04-05T20:41:59.845Z",
+                "url": "/api/media/file/USC_M8_89013.png",
+                "thumbnailURL": null,
+                "filename": "USC_M8_89013.png",
+                "mimeType": "image/png",
+                "filesize": 43787,
+                "width": 1080,
+                "height": 1080,
+                "focalX": 50,
+                "focalY": 50
+            },
+            "videoURL": null,
+            "width": 400,
+            "barcodePosition": "left",
+            "updatedAt": "2025-04-06T06:35:06.284Z",
+            "createdAt": "2025-04-05T20:42:07.130Z",
+            "hasBarcode": true
+        },
+        "updatedAt": "2025-04-06T15:11:16.429Z",
+        "createdAt": "2025-03-14T13:31:19.164Z"
+    },
+    {
+        "text": "Autonomous Mining Drones",
+        "active": false,
+        "dots": 1
+    },
+    {
+        "id": 237,
+        "text": "Advanced Technologies",
+        "page": null,
+        "active": true,
+        "dots": 0,
+        "popup": {
+            "id": 72,
+            "title": "USC_M8_89012",
+            "image": {
+                "id": 211,
+                "alt": "UESC FUTURE SETTLEMENTS",
+                "updatedAt": "2025-04-05T20:41:33.974Z",
+                "createdAt": "2025-04-05T20:41:33.974Z",
+                "url": "/api/media/file/USC_M8_89012.png",
+                "thumbnailURL": null,
+                "filename": "USC_M8_89012.png",
+                "mimeType": "image/png",
+                "filesize": 47945,
+                "width": 1080,
+                "height": 1080,
+                "focalX": 50,
+                "focalY": 50
+            },
+            "videoURL": null,
+            "width": 400,
+            "barcodePosition": "left",
+            "updatedAt": "2025-04-06T06:32:14.761Z",
+            "createdAt": "2025-04-05T20:41:40.249Z",
+            "hasBarcode": true
+        },
+        "updatedAt": "2025-04-06T15:11:16.433Z",
+        "createdAt": "2025-03-14T13:31:01.716Z"
+    },
+    {
+        "id": 236,
+        "text": "Innovative Solutions",
+        "page": null,
+        "active": true,
+        "dots": 0,
+        "popup": {
+            "id": 71,
+            "title": "USC_H3_23456",
+            "image": {
+                "id": 210,
+                "alt": "UESC ALLIANCES",
+                "updatedAt": "2025-04-05T20:40:45.777Z",
+                "createdAt": "2025-04-05T20:40:45.777Z",
+                "url": "/api/media/file/USC_H3_23456.png",
+                "thumbnailURL": null,
+                "filename": "USC_H3_23456.png",
+                "mimeType": "image/png",
+                "filesize": 50237,
+                "width": 1080,
+                "height": 1080,
+                "focalX": 50,
+                "focalY": 50
+            },
+            "videoURL": null,
+            "width": 400,
+            "barcodePosition": "left",
+            "updatedAt": "2025-04-06T06:34:31.834Z",
+            "createdAt": "2025-04-05T20:40:50.952Z",
+            "hasBarcode": true
+        },
+        "updatedAt": "2025-04-06T15:11:16.436Z",
+        "createdAt": "2025-03-14T13:30:53.452Z"
+    },
+    {
+        "id": 235,
+        "text": "Space Elevator Module",
+        "page": null,
+        "active": true,
+        "dots": 0,
+        "popup": {
+            "id": 70,
+            "title": "TRX_S7_45678",
+            "image": {
+                "id": 209,
+                "alt": "TRAXUS DOMINATE ANY TERRAIN",
+                "updatedAt": "2025-04-05T20:40:14.886Z",
+                "createdAt": "2025-04-05T20:40:14.886Z",
+                "url": "/api/media/file/TRX_S7_45678.png",
+                "thumbnailURL": null,
+                "filename": "TRX_S7_45678.png",
+                "mimeType": "image/png",
+                "filesize": 888372,
+                "width": 1920,
+                "height": 1080,
+                "focalX": 50,
+                "focalY": 50
+            },
+            "videoURL": null,
+            "width": 400,
+            "barcodePosition": "left",
+            "updatedAt": "2025-04-06T06:32:24.398Z",
+            "createdAt": "2025-04-05T20:40:19.780Z",
+            "hasBarcode": true
+        },
+        "updatedAt": "2025-04-06T15:11:16.439Z",
+        "createdAt": "2025-03-14T13:30:44.438Z"
+    },
+    {
+        "text": "Orbital Transfer Vehicle",
+        "active": false,
+        "dots": 0
+    },
+    {
+        "id": 233,
+        "text": "High-Speed Cargo Pod",
+        "page": null,
+        "active": true,
+        "dots": 0,
+        "popup": {
+            "id": 69,
+            "title": "TRX_S7_45678-1",
+            "image": {
+                "id": 208,
+                "alt": "TRAXUS MOVE MOUNTAINS",
+                "updatedAt": "2025-04-05T20:39:47.620Z",
+                "createdAt": "2025-04-05T20:39:47.620Z",
+                "url": "/api/media/file/TRX_S7_45678-1.png",
+                "thumbnailURL": null,
+                "filename": "TRX_S7_45678-1.png",
+                "mimeType": "image/png",
+                "filesize": 57001,
+                "width": 1920,
+                "height": 1080,
+                "focalX": 50,
+                "focalY": 50
+            },
+            "videoURL": null,
+            "width": 400,
+            "barcodePosition": "left",
+            "updatedAt": "2025-04-06T06:34:20.880Z",
+            "createdAt": "2025-04-05T20:39:51.491Z",
+            "hasBarcode": true
+        },
+        "updatedAt": "2025-04-06T15:11:16.441Z",
+        "createdAt": "2025-03-14T13:30:27.607Z"
+    },
+    {
+        "text": "Modular Transport Unit",
+        "active": false,
+        "dots": 3
+    },
+    {
+        "text": "Autonomous Transport Drone",
+        "active": false,
+        "dots": 0
+    },
+    {
+        "id": 230,
+        "text": "Space Cargo Shuttle",
+        "page": null,
+        "active": true,
+        "dots": 0,
+        "popup": {
+            "id": 68,
+            "title": "USC_V4_23459",
+            "image": {
+                "id": 207,
+                "alt": "UESC THROUGH SECURE CHANNEL",
+                "updatedAt": "2025-04-05T20:39:18.851Z",
+                "createdAt": "2025-04-05T20:39:18.851Z",
+                "url": "/api/media/file/USC_V4_23459.png",
+                "thumbnailURL": null,
+                "filename": "USC_V4_23459.png",
+                "mimeType": "image/png",
+                "filesize": 97779,
+                "width": 1920,
+                "height": 1350,
+                "focalX": 50,
+                "focalY": 50
+            },
+            "videoURL": null,
+            "width": 400,
+            "barcodePosition": "left",
+            "updatedAt": "2025-04-06T06:32:34.354Z",
+            "createdAt": "2025-04-05T20:39:26.526Z",
+            "hasBarcode": true
+        },
+        "updatedAt": "2025-04-06T15:11:16.443Z",
+        "createdAt": "2025-03-14T13:29:58.454Z"
+    },
+    {
+        "id": 229,
+        "text": "Interplanetary Freight System",
+        "page": "",
+        "active": true,
+        "dots": 2,
+        "popup": {
+            "id": 67,
+            "title": "TRX_A0_78945",
+            "image": {
+                "id": 206,
+                "alt": "TRAXUS NAVIGATE OUR WORLDS",
+                "updatedAt": "2025-04-05T20:38:44.859Z",
+                "createdAt": "2025-04-05T20:38:44.859Z",
+                "url": "/api/media/file/TRX_A0_78945.png",
+                "thumbnailURL": null,
+                "filename": "TRX_A0_78945.png",
+                "mimeType": "image/png",
+                "filesize": 90370,
+                "width": 1306,
+                "height": 1920,
+                "focalX": 50,
+                "focalY": 50
+            },
+            "videoURL": null,
+            "width": 400,
+            "barcodePosition": "left",
+            "updatedAt": "2025-04-06T06:39:32.938Z",
+            "createdAt": "2025-04-05T20:38:50.874Z",
+            "hasBarcode": true
+        },
+        "updatedAt": "2025-04-06T15:11:16.446Z",
+        "createdAt": "2025-03-14T13:29:50.753Z"
+    },
+    {
+        "id": 228,
+        "text": "Off-World Cargo Carriers",
+        "page": null,
+        "active": true,
+        "dots": 0,
+        "popup": {
+            "id": 66,
+            "title": "SKGN_X6_34521",
+            "image": {
+                "id": 205,
+                "alt": "SEKIGUCHI AD VERSATILITY UNLEASHED SERIES C BIOMATA",
+                "updatedAt": "2025-04-05T20:38:02.805Z",
+                "createdAt": "2025-04-05T20:38:02.805Z",
+                "url": "/api/media/file/SKGN_X6_34521.png",
+                "thumbnailURL": null,
+                "filename": "SKGN_X6_34521.png",
+                "mimeType": "image/png",
+                "filesize": 2148670,
+                "width": 1306,
+                "height": 1894,
+                "focalX": 50,
+                "focalY": 50
+            },
+            "videoURL": null,
+            "width": 400,
+            "barcodePosition": "left",
+            "updatedAt": "2025-04-06T06:32:46.398Z",
+            "createdAt": "2025-04-05T20:38:08.859Z",
+            "hasBarcode": true
+        },
+        "updatedAt": "2025-04-06T15:11:16.448Z",
+        "createdAt": "2025-03-14T13:29:42.252Z"
+    },
+    {
+        "id": 227,
+        "text": "High-Capacity Transport Modules",
+        "page": null,
+        "active": true,
+        "dots": 0,
+        "popup": {
+            "id": 65,
+            "title": "SKGN_R9_56712",
+            "image": {
+                "id": 204,
+                "alt": "SEKIGUCHI AD PAUSE TODAY. BUILD TOMORROW.",
+                "updatedAt": "2025-04-05T20:37:20.440Z",
+                "createdAt": "2025-04-05T20:37:20.440Z",
+                "url": "/api/media/file/SKGN_R9_56712.png",
+                "thumbnailURL": null,
+                "filename": "SKGN_R9_56712.png",
+                "mimeType": "image/png",
+                "filesize": 1731106,
+                "width": 1080,
+                "height": 1350,
+                "focalX": 50,
+                "focalY": 50
+            },
+            "videoURL": null,
+            "width": 400,
+            "barcodePosition": "left",
+            "updatedAt": "2025-04-06T06:34:54.504Z",
+            "createdAt": "2025-04-05T20:37:28.007Z",
+            "hasBarcode": true
+        },
+        "updatedAt": "2025-04-06T15:11:16.451Z",
+        "createdAt": "2025-03-14T13:29:33.479Z"
+    },
+    {
+        "text": "Transport and Logistics",
+        "active": false,
+        "dots": 0
+    },
+    {
+        "id": 225,
+        "text": "Planetary Core Drill",
+        "page": null,
+        "active": true,
+        "dots": 0,
+        "popup": {
+            "id": 64,
+            "title": "SKGN_M4_90876",
+            "image": {
+                "id": 203,
+                "alt": "SEKIGUCHI AD WAKE UP CENTURIES REFRESHED",
+                "updatedAt": "2025-04-05T20:36:39.592Z",
+                "createdAt": "2025-04-05T20:36:39.592Z",
+                "url": "/api/media/file/SKGN_M4_90876.png",
+                "thumbnailURL": null,
+                "filename": "SKGN_M4_90876.png",
+                "mimeType": "image/png",
+                "filesize": 1474882,
+                "width": 1080,
+                "height": 1350,
+                "focalX": 50,
+                "focalY": 50
+            },
+            "videoURL": null,
+            "width": 400,
+            "barcodePosition": "left",
+            "updatedAt": "2025-04-06T11:48:22.141Z",
+            "createdAt": "2025-04-05T20:36:44.989Z",
+            "hasBarcode": true
+        },
+        "updatedAt": "2025-04-06T15:11:16.454Z",
+        "createdAt": "2025-03-14T13:29:07.920Z"
+    },
+    {
+        "text": "Zero-G Excavator",
+        "active": false,
+        "dots": 0
+    },
+    {
+        "id": 223,
+        "text": "Space Debris Harvester",
+        "page": null,
+        "active": true,
+        "dots": 0,
+        "popup": {
+            "id": 63,
+            "title": "SKGN_L1_67890",
+            "image": {
+                "id": 202,
+                "alt": "SEKIGUCHI AD VERSATILITY UNLEASHED",
+                "updatedAt": "2025-04-05T20:35:43.117Z",
+                "createdAt": "2025-04-05T20:35:43.117Z",
+                "url": "/api/media/file/SKGN_L1_67890.png",
+                "thumbnailURL": null,
+                "filename": "SKGN_L1_67890.png",
+                "mimeType": "image/png",
+                "filesize": 1963460,
+                "width": 1920,
+                "height": 1350,
+                "focalX": 50,
+                "focalY": 50
+            },
+            "videoURL": null,
+            "width": 400,
+            "barcodePosition": "left",
+            "updatedAt": "2025-04-06T06:40:24.621Z",
+            "createdAt": "2025-04-05T20:35:48.982Z",
+            "hasBarcode": true
+        },
+        "updatedAt": "2025-04-06T15:11:16.455Z",
+        "createdAt": "2025-03-14T13:28:46.375Z"
+    },
+    {
+        "text": "Regolith Collector",
+        "active": false,
+        "dots": 0
+    },
+    {
+        "id": 221,
+        "text": "Asteroid Mining Rig",
+        "page": null,
+        "active": true,
+        "dots": 0,
+        "popup": {
+            "id": 62,
+            "title": "SKGN_K0_71234",
+            "image": {
+                "id": 201,
+                "alt": "SEKIGUCHI AD YOUR FUTURE AWAITS",
+                "updatedAt": "2025-04-05T20:34:40.273Z",
+                "createdAt": "2025-04-05T20:34:40.273Z",
+                "url": "/api/media/file/SKGN_K0_71234.png",
+                "thumbnailURL": null,
+                "filename": "SKGN_K0_71234.png",
+                "mimeType": "image/png",
+                "filesize": 1481440,
+                "width": 1920,
+                "height": 1350,
+                "focalX": 50,
+                "focalY": 50
+            },
+            "videoURL": null,
+            "width": 400,
+            "barcodePosition": "right",
+            "updatedAt": "2025-04-05T21:33:24.552Z",
+            "createdAt": "2025-04-05T20:34:45.374Z",
+            "hasBarcode": true
+        },
+        "updatedAt": "2025-04-06T15:11:16.458Z",
+        "createdAt": "2025-03-14T13:28:19.967Z"
+    },
+    {
+        "text": "Martian Digger",
+        "active": false,
+        "dots": 0
+    },
+    {
+        "id": 219,
+        "text": "Lunar Excavator",
+        "page": null,
+        "active": true,
+        "dots": 0,
+        "popup": {
+            "id": 61,
+            "title": "SKGN_K0_71234-1",
+            "image": {
+                "id": 200,
+                "alt": "SEKIGUCHI AD YOUR FUTURE AWAITS",
+                "updatedAt": "2025-04-05T20:34:05.336Z",
+                "createdAt": "2025-04-05T20:34:05.336Z",
+                "url": "/api/media/file/SKGN_K0_71234-1.png",
+                "thumbnailURL": null,
+                "filename": "SKGN_K0_71234-1.png",
+                "mimeType": "image/png",
+                "filesize": 1112245,
+                "width": 1080,
+                "height": 1350,
+                "focalX": 50,
+                "focalY": 50
+            },
+            "videoURL": null,
+            "width": 400,
+            "barcodePosition": "left",
+            "updatedAt": "2025-04-06T06:33:06.084Z",
+            "createdAt": "2025-04-05T20:34:10.855Z",
+            "hasBarcode": true
+        },
+        "updatedAt": "2025-04-06T15:11:16.461Z",
+        "createdAt": "2025-03-14T13:28:02.346Z"
+    },
+    {
+        "id": 218,
+        "text": "Advanced Excavation Units",
+        "page": null,
+        "active": true,
+        "dots": 0,
+        "popup": {
+            "id": 60,
+            "title": "SKGN_G3_87632",
+            "image": {
+                "id": 199,
+                "alt": "SEKIGUCHI AD WAKE UP HARMONIZED",
+                "updatedAt": "2025-04-05T20:33:36.762Z",
+                "createdAt": "2025-04-05T20:33:36.762Z",
+                "url": "/api/media/file/SKGN_G3_87632.png",
+                "thumbnailURL": null,
+                "filename": "SKGN_G3_87632.png",
+                "mimeType": "image/png",
+                "filesize": 378233,
+                "width": 1080,
+                "height": 1080,
+                "focalX": 50,
+                "focalY": 50
+            },
+            "videoURL": null,
+            "width": 400,
+            "barcodePosition": "left",
+            "updatedAt": "2025-04-06T06:36:16.383Z",
+            "createdAt": "2025-04-05T20:33:41.804Z",
+            "hasBarcode": true
+        },
+        "updatedAt": "2025-04-06T15:11:16.463Z",
+        "createdAt": "2025-03-14T13:27:52.685Z"
+    },
+    {
+        "text": "Rotary Drills",
+        "active": false,
+        "dots": 0
+    },
+    {
+        "id": 216,
+        "text": "Site Excavation",
+        "page": null,
+        "active": true,
+        "dots": 0,
+        "popup": {
+            "id": 59,
+            "title": "SKGN_D2_23980",
+            "image": {
+                "id": 198,
+                "alt": "SEKIGUCHI AD F.I.D.O. UNLOCK TIMELESS COMPANIONSHIP",
+                "updatedAt": "2025-04-05T20:32:58.521Z",
+                "createdAt": "2025-04-05T20:32:58.521Z",
+                "url": "/api/media/file/SKGN_D2_23980.png",
+                "thumbnailURL": null,
+                "filename": "SKGN_D2_23980.png",
+                "mimeType": "image/png",
+                "filesize": 1581717,
+                "width": 1350,
+                "height": 1080,
+                "focalX": 50,
+                "focalY": 50
+            },
+            "videoURL": null,
+            "width": 400,
+            "barcodePosition": "left",
+            "updatedAt": "2025-04-06T06:33:15.486Z",
+            "createdAt": "2025-04-05T20:33:03.876Z",
+            "hasBarcode": true
+        },
+        "updatedAt": "2025-04-06T15:11:16.465Z",
+        "createdAt": "2025-03-14T13:27:32.756Z"
+    },
+    {
+        "id": 215,
+        "text": "Space Exploration and Off-World Operations",
+        "page": null,
+        "active": true,
+        "dots": 0,
+        "popup": {
+            "id": 58,
+            "title": "SKGN_D2_23980-1",
+            "image": {
+                "id": 197,
+                "alt": "SEKIGUCHI AD F.I.D.O. UNLOCK TIMELESS COMPANIONSHIP",
+                "updatedAt": "2025-04-05T20:32:21.630Z",
+                "createdAt": "2025-04-05T20:32:21.630Z",
+                "url": "/api/media/file/SKGN_D2_23980-1.png",
+                "thumbnailURL": null,
+                "filename": "SKGN_D2_23980-1.png",
+                "mimeType": "image/png",
+                "filesize": 1891008,
+                "width": 1920,
+                "height": 1080,
+                "focalX": 50,
+                "focalY": 50
+            },
+            "videoURL": null,
+            "width": 400,
+            "barcodePosition": "left",
+            "updatedAt": "2025-04-06T06:39:42.659Z",
+            "createdAt": "2025-04-05T20:32:29.017Z",
+            "hasBarcode": true
+        },
+        "updatedAt": "2025-04-06T15:11:16.468Z",
+        "createdAt": "2025-03-14T13:27:21.701Z"
+    },
+    {
+        "text": "Automated Refinement Unit",
+        "active": false,
+        "dots": 0
+    },
+    {
+        "text": "Centrifugal Separator",
+        "active": false,
+        "dots": 0
+    },
+    {
+        "text": "Vibrating Screen",
+        "active": false,
+        "dots": 0
+    },
+    {
+        "text": "Cyclone Separator",
+        "active": false,
+        "dots": 0
+    },
+    {
+        "text": "Magnetic Separator",
+        "active": false,
+        "dots": 1
+    },
+    {
+        "id": 209,
+        "text": "Ultra-Fine Grinder",
+        "page": null,
+        "active": true,
+        "dots": 0,
+        "popup": {
+            "id": 57,
+            "title": "SKGN_B8_12345",
+            "image": {
+                "id": 196,
+                "alt": "SEKIGUCHI AD Precision and Power",
+                "updatedAt": "2025-04-05T20:31:45.330Z",
+                "createdAt": "2025-04-05T20:31:45.330Z",
+                "url": "/api/media/file/SKGN_B8_12345.png",
+                "thumbnailURL": null,
+                "filename": "SKGN_B8_12345.png",
+                "mimeType": "image/png",
+                "filesize": 1154005,
+                "width": 1920,
+                "height": 1350,
+                "focalX": 50,
+                "focalY": 50
+            },
+            "videoURL": null,
+            "width": 400,
+            "barcodePosition": "left",
+            "updatedAt": "2025-04-06T06:33:25.519Z",
+            "createdAt": "2025-04-05T20:31:51.616Z",
+            "hasBarcode": true
+        },
+        "updatedAt": "2025-04-06T15:11:16.471Z",
+        "createdAt": "2025-03-14T13:26:22.132Z"
+    },
+    {
+        "text": "Nano Mill",
+        "active": false,
+        "dots": 0
+    },
+    {
+        "text": "High-Efficiency Mill",
+        "active": false,
+        "dots": 0
+    },
+    {
+        "text": "Ball Mill",
+        "active": false,
+        "dots": 0
+    },
+    {
+        "text": "Material Processing",
+        "active": false,
+        "dots": 0
+    },
+    {
+        "text": "Processing and Refinement",
+        "active": false,
+        "dots": 0
+    },
+    {
+        "id": 203,
+        "text": "Hydraulic Flow Controller",
+        "page": null,
+        "active": true,
+        "dots": 0,
+        "popup": {
+            "id": 56,
+            "title": "SKGN_B8_12345-1",
+            "image": {
+                "id": 195,
+                "alt": "SEKIGUCHI AD Crafting Tomorrow, Today",
+                "updatedAt": "2025-04-05T20:31:06.072Z",
+                "createdAt": "2025-04-05T20:31:06.072Z",
+                "url": "/api/media/file/SKGN_B8_12345-1.png",
+                "thumbnailURL": null,
+                "filename": "SKGN_B8_12345-1.png",
+                "mimeType": "image/png",
+                "filesize": 87679,
+                "width": 1920,
+                "height": 1350,
+                "focalX": 50,
+                "focalY": 50
+            },
+            "videoURL": null,
+            "width": 400,
+            "barcodePosition": "right",
+            "updatedAt": "2025-04-06T06:31:05.120Z",
+            "createdAt": "2025-04-05T20:31:09.839Z",
+            "hasBarcode": true
+        },
+        "updatedAt": "2025-04-06T15:11:16.473Z",
+        "createdAt": "2025-03-14T13:25:19.537Z"
+    },
+    {
+        "text": "Hydraulic Pressure Regulator",
+        "active": false,
+        "dots": 0
+    },
+    {
+        "text": "Hydraulic Control Module",
+        "active": false,
+        "dots": 0
+    },
+    {
+        "text": "Hydraulic Power Unit",
+        "active": false,
+        "dots": 0
+    },
+    {
+        "text": "Hydraulic Stabilizer",
+        "active": false,
+        "dots": 0
+    },
+    {
+        "id": 198,
+        "text": "Hydraulic Lift System",
+        "page": null,
+        "active": true,
+        "dots": 0,
+        "popup": {
+            "id": 55,
+            "title": "SKGN_A7_78341",
+            "image": {
+                "id": 194,
+                "alt": "SEKIGUCHI AD DONT SAY GOOD BY SAY FUR-EVER",
+                "updatedAt": "2025-04-05T20:30:22.837Z",
+                "createdAt": "2025-04-05T20:30:22.837Z",
+                "url": "/api/media/file/SKGN_A7_78341.png",
+                "thumbnailURL": null,
+                "filename": "SKGN_A7_78341.png",
+                "mimeType": "image/png",
+                "filesize": 1991086,
+                "width": 1350,
+                "height": 1080,
+                "focalX": 50,
+                "focalY": 50
+            },
+            "videoURL": null,
+            "width": 400,
+            "barcodePosition": "left",
+            "updatedAt": "2025-04-06T06:38:01.199Z",
+            "createdAt": "2025-04-05T20:30:29.966Z",
+            "hasBarcode": true
+        },
+        "updatedAt": "2025-04-06T15:11:16.510Z",
+        "createdAt": "2025-03-14T13:24:23.209Z"
+    },
+    {
+        "text": "Hydraulic Torque Wrench",
+        "active": false,
+        "dots": 0
+    },
+    {
+        "text": "Hydraulic Tensioner",
+        "active": false,
+        "dots": null
+    },
+    {
+        "text": "Hydraulic Cylinders",
+        "active": false,
+        "dots": 0
+    },
+    {
+        "id": 194,
+        "text": "Hydraulic Systems",
+        "page": null,
+        "active": true,
+        "dots": 0,
+        "popup": {
+            "id": 54,
+            "title": "NUCL_Y8_12345",
+            "image": {
+                "id": 193,
+                "alt": "NuCaloric You Eat They Grow",
+                "updatedAt": "2025-04-05T20:28:58.156Z",
+                "createdAt": "2025-04-05T20:28:58.156Z",
+                "url": "/api/media/file/NUCL_Y8_12345.png",
+                "thumbnailURL": null,
+                "filename": "NUCL_Y8_12345.png",
+                "mimeType": "image/png",
+                "filesize": 761058,
+                "width": 1809,
+                "height": 1350,
+                "focalX": 50,
+                "focalY": 50
+            },
+            "videoURL": null,
+            "width": 400,
+            "barcodePosition": "right",
+            "updatedAt": "2025-04-06T06:30:43.631Z",
+            "createdAt": "2025-04-05T20:29:05.162Z",
+            "hasBarcode": true
+        },
+        "updatedAt": "2025-04-06T15:11:16.513Z",
+        "createdAt": "2025-03-14T13:20:50.522Z"
+    },
+    {
+        "text": "Autonomous Grader",
+        "active": false,
+        "dots": 0
+    },
+    {
+        "text": "Terrain-Leveling Machine",
+        "active": false,
+        "dots": 0
+    },
+    {
+        "text": "Multi-Function Grader",
+        "active": false,
+        "dots": 0
+    },
+    {
+        "id": 190,
+        "text": "Hybrid Bulldozer",
+        "page": null,
+        "active": true,
+        "dots": 0,
+        "popup": {
+            "id": 53,
+            "title": "NUCL_W6_23456",
+            "image": {
+                "id": 192,
+                "alt": "NuCaloric Discovery with Detours",
+                "updatedAt": "2025-04-05T20:28:27.332Z",
+                "createdAt": "2025-04-05T20:28:27.332Z",
+                "url": "/api/media/file/NUCL_W6_23456.png",
+                "thumbnailURL": null,
+                "filename": "NUCL_W6_23456.png",
+                "mimeType": "image/png",
+                "filesize": 58278,
+                "width": 1080,
+                "height": 1080,
+                "focalX": 50,
+                "focalY": 50
+            },
+            "videoURL": null,
+            "width": 400,
+            "barcodePosition": "left",
+            "updatedAt": "2025-04-06T06:33:48.382Z",
+            "createdAt": "2025-04-05T20:28:32.300Z",
+            "hasBarcode": true
+        },
+        "updatedAt": "2025-04-06T15:11:16.516Z",
+        "createdAt": "2025-03-14T13:16:15.655Z"
+    },
+    {
+        "text": "Compact Grader",
+        "active": false,
+        "dots": 0
+    },
+    {
+        "text": "All-Terrain Loader",
+        "active": false,
+        "dots": 2
+    },
+    {
+        "text": "T6ST-XW (Advanced Terrain Vehicle)",
+        "active": false,
+        "dots": 0
+    },
+    {
+        "id": 186,
+        "text": "Motor Graders",
+        "page": null,
+        "active": true,
+        "dots": 0,
+        "popup": {
+            "id": 52,
+            "title": "NUCL_T2_89012",
+            "image": {
+                "id": 191,
+                "alt": "NuCaloric Corn",
+                "updatedAt": "2025-04-05T20:27:58.390Z",
+                "createdAt": "2025-04-05T20:27:58.390Z",
+                "url": "/api/media/file/NUCL_T2_89012.png",
+                "thumbnailURL": null,
+                "filename": "NUCL_T2_89012.png",
+                "mimeType": "image/png",
+                "filesize": 581723,
+                "width": 1080,
+                "height": 1350,
+                "focalX": 50,
+                "focalY": 50
+            },
+            "videoURL": null,
+            "width": 400,
+            "barcodePosition": "left",
+            "updatedAt": "2025-04-06T06:31:18.003Z",
+            "createdAt": "2025-04-05T20:28:04.915Z",
+            "hasBarcode": true
+        },
+        "updatedAt": "2025-04-06T15:11:16.519Z",
+        "createdAt": "2025-03-14T13:15:18.867Z"
+    },
+    {
+        "text": "Bulldozer",
+        "active": false,
+        "dots": 0
+    },
+    {
+        "text": "Heavy Machinery",
+        "active": false,
+        "dots": 0
+    },
+    {
+        "id": 183,
+        "text": "Construction and Earthmoving",
+        "page": null,
+        "active": true,
+        "dots": 0,
+        "popup": {
+            "id": 51,
+            "title": "NUCL_S0_45670",
+            "image": {
+                "id": 190,
+                "alt": "NuCaloric Care Streamlined",
+                "updatedAt": "2025-04-05T20:27:31.627Z",
+                "createdAt": "2025-04-05T20:27:31.627Z",
+                "url": "/api/media/file/NUCL_S0_45670.png",
+                "thumbnailURL": null,
+                "filename": "NUCL_S0_45670.png",
+                "mimeType": "image/png",
+                "filesize": 57602,
+                "width": 1080,
+                "height": 1080,
+                "focalX": 50,
+                "focalY": 50
+            },
+            "videoURL": null,
+            "width": 400,
+            "barcodePosition": "right",
+            "updatedAt": "2025-04-06T06:19:40.255Z",
+            "createdAt": "2025-04-05T20:27:38.382Z",
+            "hasBarcode": true
+        },
+        "updatedAt": "2025-04-06T15:11:16.522Z",
+        "createdAt": "2025-03-14T13:14:31.135Z"
+    },
+    {
+        "text": "Telescopic Support Arm",
+        "active": false,
+        "dots": 0
+    },
+    {
+        "text": "Hydraulic Support System",
+        "active": false,
+        "dots": 0
+    },
+    {
+        "text": "Remote-Controlled Support",
+        "active": false,
+        "dots": 0
+    },
+    {
+        "id": 179,
+        "text": "Mobile Support Unit",
+        "page": null,
+        "active": true,
+        "dots": 0,
+        "popup": {
+            "id": 50,
+            "title": "NUCL_S0_45669",
+            "image": {
+                "id": 189,
+                "alt": "NuCaloric Cultivating",
+                "updatedAt": "2025-04-05T20:27:00.642Z",
+                "createdAt": "2025-04-05T20:27:00.642Z",
+                "url": "/api/media/file/NUCL_S0_45669.png",
+                "thumbnailURL": null,
+                "filename": "NUCL_S0_45669.png",
+                "mimeType": "image/png",
+                "filesize": 66825,
+                "width": 1080,
+                "height": 1080,
+                "focalX": 50,
+                "focalY": 50
+            },
+            "videoURL": null,
+            "width": 400,
+            "barcodePosition": "left",
+            "updatedAt": "2025-04-06T06:39:02.765Z",
+            "createdAt": "2025-04-05T20:27:06.218Z",
+            "hasBarcode": true
+        },
+        "updatedAt": "2025-04-06T15:11:16.524Z",
+        "createdAt": "2025-03-14T13:12:47.461Z"
+    },
+    {
+        "id": 178,
+        "text": "Stabilizing Jacks",
+        "page": null,
+        "active": true,
+        "dots": 0,
+        "popup": {
+            "id": 49,
+            "title": "NUCL_P4_90123",
+            "image": {
+                "id": 188,
+                "alt": "NuCaloric Can",
+                "updatedAt": "2025-04-05T20:26:25.419Z",
+                "createdAt": "2025-04-05T20:26:25.419Z",
+                "url": "/api/media/file/NUCL_P4_90123.png",
+                "thumbnailURL": null,
+                "filename": "NUCL_P4_90123.png",
+                "mimeType": "image/png",
+                "filesize": 796947,
+                "width": 1920,
+                "height": 1350,
+                "focalX": 50,
+                "focalY": 50
+            },
+            "videoURL": null,
+            "width": 400,
+            "barcodePosition": "left",
+            "updatedAt": "2025-04-06T06:33:56.266Z",
+            "createdAt": "2025-04-05T20:26:32.895Z",
+            "hasBarcode": true
+        },
+        "updatedAt": "2025-04-06T15:11:16.527Z",
+        "createdAt": "2025-03-14T13:12:35.937Z"
+    },
+    {
+        "text": "Portable Lifting",
+        "active": false,
+        "dots": 0
+    },
+    {
+        "id": 176,
+        "text": "Electric Rope",
+        "page": null,
+        "active": true,
+        "dots": 0,
+        "popup": {
+            "id": 48,
+            "title": "NUCL_J5_78901",
+            "image": {
+                "id": 187,
+                "alt": "NuCaloric Infrastructure",
+                "updatedAt": "2025-04-05T20:26:06.563Z",
+                "createdAt": "2025-04-05T20:26:06.563Z",
+                "url": "/api/media/file/NUCL_J5_78901.png",
+                "thumbnailURL": null,
+                "filename": "NUCL_J5_78901.png",
+                "mimeType": "image/png",
+                "filesize": 54422,
+                "width": 1080,
+                "height": 1080,
+                "focalX": 50,
+                "focalY": 50
+            },
+            "videoURL": null,
+            "width": 400,
+            "barcodePosition": "right",
+            "updatedAt": "2025-04-06T06:30:28.464Z",
+            "createdAt": "2025-04-05T20:26:10.519Z",
+            "hasBarcode": true
+        },
+        "updatedAt": "2025-04-06T15:11:16.529Z",
+        "createdAt": "2025-03-14T13:12:03.533Z"
+    },
+    {
+        "text": "Drifter",
+        "active": false,
+        "dots": 0
+    },
+    {
+        "text": "Jackleg",
+        "active": false,
+        "dots": 0
+    },
+    {
+        "id": 173,
+        "text": "Support Equipment",
+        "page": null,
+        "active": true,
+        "dots": 0,
+        "popup": {
+            "id": 47,
+            "title": "NUCL_G7_45678",
+            "image": {
+                "id": 186,
+                "alt": "NuCaloric Tea",
+                "updatedAt": "2025-04-05T20:25:34.139Z",
+                "createdAt": "2025-04-05T20:25:34.139Z",
+                "url": "/api/media/file/NUCL_G7_45678.png",
+                "thumbnailURL": null,
+                "filename": "NUCL_G7_45678.png",
+                "mimeType": "image/png",
+                "filesize": 1071726,
+                "width": 1306,
+                "height": 1920,
+                "focalX": 50,
+                "focalY": 50
+            },
+            "videoURL": null,
+            "width": 400,
+            "barcodePosition": "left",
+            "updatedAt": "2025-04-06T06:38:11.029Z",
+            "createdAt": "2025-04-05T20:25:42.038Z",
+            "hasBarcode": true
+        },
+        "updatedAt": "2025-04-06T15:11:16.532Z",
+        "createdAt": "2025-03-14T13:11:33.514Z"
+    },
+    {
+        "id": 172,
+        "text": "Gravity Conveyor",
+        "page": null,
+        "active": true,
+        "dots": 3,
+        "popup": {
+            "id": 46,
+            "title": "NUCL_F9_34567",
+            "image": {
+                "id": 185,
+                "alt": "NuCaloric Meat",
+                "updatedAt": "2025-04-05T20:24:43.453Z",
+                "createdAt": "2025-04-05T20:24:43.453Z",
+                "url": "/api/media/file/NUCL_F9_34567.png",
+                "thumbnailURL": null,
+                "filename": "NUCL_F9_34567.png",
+                "mimeType": "image/png",
+                "filesize": 507380,
+                "width": 1080,
+                "height": 1350,
+                "focalX": 50,
+                "focalY": 50
+            },
+            "videoURL": null,
+            "width": 400,
+            "barcodePosition": "left",
+            "updatedAt": "2025-04-06T06:38:37.389Z",
+            "createdAt": "2025-04-05T20:25:00.581Z",
+            "hasBarcode": true
+        },
+        "updatedAt": "2025-04-06T15:11:16.534Z",
+        "createdAt": "2025-03-14T13:11:07.947Z"
+    },
+    {
+        "text": "Modular Conveyor",
+        "active": false,
+        "dots": 0
+    },
+    {
+        "id": 170,
+        "text": "High-Speed Conveyor",
+        "page": null,
+        "active": true,
+        "dots": 0,
+        "popup": {
+            "id": 45,
+            "title": "NUCL_F9_34567",
+            "image": {
+                "id": 185,
+                "alt": "NuCaloric Meat",
+                "updatedAt": "2025-04-05T20:24:43.453Z",
+                "createdAt": "2025-04-05T20:24:43.453Z",
+                "url": "/api/media/file/NUCL_F9_34567.png",
+                "thumbnailURL": null,
+                "filename": "NUCL_F9_34567.png",
+                "mimeType": "image/png",
+                "filesize": 507380,
+                "width": 1080,
+                "height": 1350,
+                "focalX": 50,
+                "focalY": 50
+            },
+            "videoURL": null,
+            "width": 400,
+            "barcodePosition": "right",
+            "updatedAt": "2025-04-05T21:32:56.092Z",
+            "createdAt": "2025-04-05T20:24:51.871Z",
+            "hasBarcode": true
+        },
+        "updatedAt": "2025-04-06T15:11:16.537Z",
+        "createdAt": "2025-03-14T13:10:37.463Z"
+    },
+    {
+        "text": "Smart Conveyor",
+        "active": false,
+        "dots": 0
+    },
+    {
+        "text": "Automated Conveyor System",
+        "active": false,
+        "dots": 0
+    },
+    {
+        "id": 167,
+        "text": "Face Feeder",
+        "page": null,
+        "active": true,
+        "dots": 0,
+        "popup": {
+            "id": 44,
+            "title": "NUCL_C1_56789",
+            "image": {
+                "id": 184,
+                "alt": "NuCaloric Can",
+                "updatedAt": "2025-04-05T20:24:08.336Z",
+                "createdAt": "2025-04-05T20:24:08.336Z",
+                "url": "/api/media/file/NUCL_C1_56789.png",
+                "thumbnailURL": null,
+                "filename": "NUCL_C1_56789.png",
+                "mimeType": "image/png",
+                "filesize": 445736,
+                "width": 1080,
+                "height": 1080,
+                "focalX": 50,
+                "focalY": 50
+            },
+            "videoURL": null,
+            "width": 400,
+            "barcodePosition": "left",
+            "updatedAt": "2025-04-06T06:38:28.814Z",
+            "createdAt": "2025-04-05T20:24:15.767Z",
+            "hasBarcode": true
+        },
+        "updatedAt": "2025-04-06T15:11:16.540Z",
+        "createdAt": "2025-03-14T13:09:37.992Z"
+    },
+    {
+        "text": "Belt Boom",
+        "active": false,
+        "dots": 0
+    },
+    {
+        "text": "Chain Conveyor",
+        "active": false,
+        "dots": 0
+    },
+    {
+        "id": 164,
+        "text": "Conveyor",
+        "page": null,
+        "active": true,
+        "dots": 0,
+        "popup": {
+            "id": 43,
+            "title": "TRX_S7_45678",
+            "image": null,
+            "videoURL": "https://goliath.b-cdn.net/ads/TRX_S7_45678.mp4",
+            "width": 400,
+            "barcodePosition": "right",
+            "updatedAt": "2025-04-06T16:54:10.417Z",
+            "createdAt": "2025-04-05T20:23:20.320Z",
+            "hasBarcode": true
+        },
+        "updatedAt": "2025-04-06T15:11:16.542Z",
+        "createdAt": "2025-03-14T13:09:04.062Z"
+    },
+    {
+        "text": "Material Handling:",
+        "active": false,
+        "dots": 0
+    },
+    {
+        "text": "Compact Excavator",
+        "active": false,
+        "dots": 0
+    },
+    {
+        "id": 161,
+        "text": "Multi-Arm Excavator",
+        "page": null,
+        "active": true,
+        "dots": 0,
+        "popup": {
+            "id": 42,
+            "title": "NUCL_L3_67890",
+            "image": null,
+            "videoURL": "https://goliath.b-cdn.net/ads/NUCL_L3_67890.mp4",
+            "width": 400,
+            "barcodePosition": "left",
+            "updatedAt": "2025-04-06T16:54:21.572Z",
+            "createdAt": "2025-04-05T20:22:59.078Z",
+            "hasBarcode": true
+        },
+        "updatedAt": "2025-04-06T15:11:16.545Z",
+        "createdAt": "2025-03-14T13:07:37.941Z"
+    },
+    {
+        "id": 160,
+        "text": "Terrain-Adaptive Excavator",
+        "page": null,
+        "active": true,
+        "dots": 0,
+        "popup": {
+            "id": 41,
+            "title": "CYAC_Z3_12908",
+            "image": null,
+            "videoURL": "https://goliath.b-cdn.net/ads/CYAC_Z3_12908.mp4",
+            "width": 400,
+            "barcodePosition": "left",
+            "updatedAt": "2025-04-06T16:55:37.031Z",
+            "createdAt": "2025-04-05T20:22:38.723Z",
+            "hasBarcode": true
+        },
+        "updatedAt": "2025-04-06T15:11:16.547Z",
+        "createdAt": "2025-03-14T13:05:20.224Z"
+    },
+    {
+        "text": "Autonomous Excavator",
+        "active": false,
+        "dots": 0
+    },
+    {
+        "text": "Micro Excavator",
+        "active": false,
+        "dots": 0
+    },
+    {
+        "text": "Large Wheel Loader",
+        "active": false,
+        "dots": 0
+    },
+    {
+        "text": "Highwall Miner Bridge Carrier",
+        "active": false,
+        "dots": 0
+    },
+    {
+        "id": 155,
+        "text": "Excavator Shovels",
+        "page": null,
+        "active": true,
+        "dots": 0,
+        "popup": {
+            "id": 40,
+            "title": "CYAC_Q8_67234",
+            "image": null,
+            "videoURL": "https://goliath.b-cdn.net/ads/CYAC_Q8_67234.mp4",
+            "width": 400,
+            "barcodePosition": "left",
+            "updatedAt": "2025-04-06T16:55:26.960Z",
+            "createdAt": "2025-04-05T20:22:16.975Z",
+            "hasBarcode": true
+        },
+        "updatedAt": "2025-04-06T15:11:16.549Z",
+        "createdAt": "2025-03-14T13:03:55.662Z"
+    },
+    {
+        "text": "Bucket Chain Excavator",
+        "active": false,
+        "dots": 0
+    },
+    {
+        "text": "Bucket-Wheel Excavator",
+        "active": false,
+        "dots": 0
+    },
+    {
+        "text": "Excavation Machinery:",
+        "active": false,
+        "dots": 0
+    },
+    {
+        "id": 151,
+        "text": "Nano Drill",
+        "page": null,
+        "active": true,
+        "dots": 0,
+        "popup": {
+            "id": 39,
+            "title": "CYAC_P2_23417",
+            "image": null,
+            "videoURL": "https://goliath.b-cdn.net/ads/CYAC_P2_23417.mp4",
+            "width": 400,
+            "barcodePosition": "right",
+            "updatedAt": "2025-04-06T16:55:12.494Z",
+            "createdAt": "2025-04-05T20:21:51.330Z",
+            "hasBarcode": true
+        },
+        "updatedAt": "2025-04-06T15:11:16.551Z",
+        "createdAt": "2025-03-14T13:03:13.883Z"
+    },
+    {
+        "text": "Laser-Assisted Drill",
+        "active": false,
+        "dots": 0
+    },
+    {
+        "id": 149,
+        "text": "Sonic Drill",
+        "page": null,
+        "active": true,
+        "dots": 0,
+        "popup": {
+            "id": 38,
+            "title": "CYAC_M0_10293",
+            "image": null,
+            "videoURL": "https://goliath.b-cdn.net/ads/CYAC_M0_10293.mp4",
+            "width": 400,
+            "barcodePosition": "left",
+            "updatedAt": "2025-04-06T16:55:03.540Z",
+            "createdAt": "2025-04-05T20:21:28.219Z",
+            "hasBarcode": true
+        },
+        "updatedAt": "2025-04-06T15:11:16.554Z",
+        "createdAt": "2025-03-14T13:02:44.086Z"
+    },
+    {
+        "text": "Plasma Drill",
+        "active": false,
+        "dots": 0
+    },
+    {
+        "text": "Auger Miner",
+        "active": false,
+        "dots": 0
+    },
+    {
+        "text": "Churn Drill Hoppers",
+        "active": false,
+        "dots": 0
+    },
+    {
+        "text": "Percussion Drill",
+        "active": false,
+        "dots": 0
+    },
+    {
+        "text": "Rotary Drill Rigs",
+        "active": false,
+        "dots": 0
+    },
+    {
+        "text": "Rock Drills",
+        "active": false,
+        "dots": 0
+    },
+    {
+        "id": 142,
+        "text": "Diamond Drill",
+        "page": null,
+        "active": true,
+        "dots": 0,
+        "popup": {
+            "id": 37,
+            "title": "CYAC_L9_87654",
+            "image": null,
+            "videoURL": "https://goliath.b-cdn.net/ads/CYAC_L9_87654.mp4",
+            "width": 400,
+            "barcodePosition": "right",
+            "updatedAt": "2025-04-06T16:54:53.829Z",
+            "createdAt": "2025-04-05T20:20:33.115Z",
+            "hasBarcode": true
+        },
+        "updatedAt": "2025-04-06T15:11:16.557Z",
+        "createdAt": "2025-03-14T13:00:35.054Z"
+    },
+    {
+        "text": "Drilling Systems",
+        "active": false,
+        "dots": 0
+    },
+    {
+        "id": 140,
+        "text": "Mining Equipment",
+        "page": "",
+        "active": true,
+        "dots": 3,
+        "popup": {
+            "id": 36,
+            "title": "CYAC_D6_45672",
+            "image": null,
+            "videoURL": "https://goliath.b-cdn.net/ads/CYAC_D6_45672.mp4",
+            "width": 400,
+            "barcodePosition": "left",
+            "updatedAt": "2025-04-06T16:54:41.649Z",
+            "createdAt": "2025-04-05T20:20:00.031Z",
+            "hasBarcode": true
+        },
+        "updatedAt": "2025-04-06T15:11:16.559Z",
+        "createdAt": "2025-03-14T12:58:29.503Z"
+    }
+]
