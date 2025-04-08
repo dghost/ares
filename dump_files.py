@@ -12,13 +12,13 @@ def dumpFilesystem(out_dir, data):
     print(f"Dumping filesystem to {out_dir}")
     for dir in data:
         path = dir['breadcrumbs'][-1]['url']
-        ldir = out_dir + path + "/"
+        ldir = os.path.relpath(f"{out_dir}.{path}") # Dumb path computation, will break on windows
         try:
             os.makedirs(ldir)
         except:
             pass
         for file in dir['files']:
-            fname = ldir + file['fileName']
+            fname = os.path.join(ldir, file['fileName'])
             with open(fname, "w") as out_file:
                 if file['data']:
                     out_file.write(file['data'])
@@ -41,8 +41,9 @@ def dumpFilesFlat(out_dir, data):
 
     files = sorted(files, key=lambda file: file.name)
 
-    print(f"Dumping file contents to {out_dir + "flat.txt"}")
-    with open(out_dir + "flat.txt", "w") as out_file:
+    fname = os.path.join(out_dir, "flat.txt")
+    print(f"Dumping file contents to {fname}")
+    with open(fname, "w") as out_file:
         for file in files:
             out_file.write(f"{file.name}:\n\n{file.data}\n\n")
 
@@ -51,7 +52,7 @@ def dumpExecutableFiles(data):
     for dir in data:
         path = dir['breadcrumbs'][-1]['url']
         for file in dir['files']:
-            fname = f"{path}/{file['fileName']}"
+            fname = os.path.join(path,file['fileName'])
             if file['executableType']:
                 files.append(FileTuple(fname, file['executableType']))
 
@@ -66,7 +67,7 @@ def dumpBrokenFiles(data):
     for dir in data:
         path = dir['breadcrumbs'][-1]['url']
         for file in dir['files']:
-            fname = f"{path}/{file['fileName']}"
+            fname = os.path.join(path,file['fileName'])
             if ' ' in fname:
                 files.append(FileTuple(fname, None))
 
@@ -78,19 +79,19 @@ def dumpBrokenFiles(data):
 
 
 # clean the existing output
-out_dir = "./uesc.io/"
+OUT_DIR = "./uesc.io/"
 try:
-    shutil.rmtree(out_dir)
+    shutil.rmtree(OUT_DIR)
 except:
     pass
-os.mkdir(out_dir)
+os.mkdir(OUT_DIR)
 
 # load the raw json
 data = []
 with open('raw.json') as json_file:
     data = json.load(json_file)
 
-dumpFilesystem(out_dir, data)
-dumpFilesFlat(out_dir, data)
+dumpFilesystem(OUT_DIR, data)
+dumpFilesFlat(OUT_DIR, data)
 dumpExecutableFiles(data)
 dumpBrokenFiles(data)
