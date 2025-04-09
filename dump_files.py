@@ -17,7 +17,7 @@ def dumpFilesystem(out_dir, data):
     print(f"Dumping filesystem to {out_dir}")
     for dir in data:
         path = dir['breadcrumbs'][-1]['url']
-        ldir = os.path.relpath(f"{out_dir}.{path}") # Dumb path computation, will break on windows
+        ldir = os.path.join(os.path.normpath(out_dir), os.path.normpath(f"./{path}"))
         try:
             os.makedirs(ldir)
         except:
@@ -46,7 +46,7 @@ def dumpFilesFlat(out_dir, data):
 
     files = sorted(files, key=lambda file: file.name)
 
-    fname = os.path.join(out_dir, "flat.txt")
+    fname = os.path.join(os.path.normpath(out_dir), "flat.txt")
     print(f"Dumping file contents to {fname}")
     with open(fname, "w") as out_file:
         for file in files:
@@ -82,20 +82,6 @@ def dumpBrokenFiles(data):
     for file in files:
         print(f"'{file.name}'")
 
-def dumpHiddenFiles(data):
-    files = []
-    for dir in data:
-        path = dir['breadcrumbs'][-1]['url']
-        for file in dir['files']:
-            fname = os.path.join(path,file['fileName'])
-            if '.' in fname:
-                files.append(FileTuple(fname, None))
-
-    files = sorted(files, key=lambda file: file.name)
-    print(f"Found hidden files:")
-    for file in files:
-        print(f"{file.name}")
-
 # clean the existing output
 try:
     shutil.rmtree(OUT_DIR)
@@ -110,4 +96,3 @@ dumpFilesystem(OUT_DIR, data)
 dumpFilesFlat(OUT_DIR, data)
 dumpExecutableFiles(data)
 dumpBrokenFiles(data)
-# dumpHiddenFiles(data)
