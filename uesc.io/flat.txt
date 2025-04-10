@@ -2,48 +2,6 @@
 
 <executable>
 
-/Colonization/Operational_Protocols/emergency_procedures.log:
-
-Title: Emergency Procedures Manual: Earth Command HQ
-Purpose: This manual outlines the emergency procedures designed to protect personnel, infrastructure, and critical data at Earth Command HQ in the event of a crisis. The procedures are intended to ensure a swift and organized response to safeguard the facility's operations and integrity.
-
-Section 1: Emergency Response Team (ERT) Activation
-Subsection 1.1: ERT Composition
-Details on team roles, responsibilities, and immediate contact information for key personnel.
-Subsection 1.2: Activation Protocols
-Steps for rapid ERT mobilization, including criteria for activation and initial response actions.
-
-Section 2: Evacuation Procedures
-Subsection 2.1: Evacuation Routes
-Designated escape routes clearly marked within HQ, maps provided for quick reference.
-Subsection 2.2: Roll Call and Accountability
-Checkpoints and procedures for ensuring all personnel are accounted for during evacuation.
-
-Section 3: Communication Protocols
-Subsection 3.1: Crisis Communication Channels
-Secure communication lines established for internal coordination, priority communication with external partners.
-Subsection 3.2: Public Communication and Media Handling
-Guidelines for managing media inquiries, public statements, and maintaining operational confidentiality.
-
-Section 4: Data Security and Backup
-Subsection 4.1: Critical Data Backup
-Protocols for ensuring data backup and redundancy, details on secure off-site storage locations.
-Subsection 4.2: Digital Threat Countermeasures
-Preemptive actions to detect, isolate, and neutralize digital security threats during an emergency.
-
-Section 5: Facility Security and Maintenance
-Subsection 5.1: Lockdown Procedures
-Methods for implementing a facility-wide lockdown, securing access points, and reinforcing perimeter defenses.
-Subsection 5.2: Regular Maintenance Schedules
-A log of routine maintenance checks and requirements to ensure all security systems are fully operational.
-
-Section 6: Post-Emergency Review and Recovery
-Subsection 6.1: Incident Investigation
-Steps for conducting a thorough review post-crisis to identify causes, assess response effectiveness, and implement improvements.
-Subsection 6.2: Recovery and Resumption
-Guidelines for restoring normal operations, focusing on prioritizing critical functions and services.
-
-
 /Command_History/[Automated_Task].log:
 
 Date: [REDACTED]
@@ -325,7 +283,413 @@ Retrieving data from Zone 3
 Session terminated.
 
 
-/Diagnostics_reports/[Communication_Systems_Analysis].txt:
+/Commerce/Resources/HQ/Cafeteria/Cafeteria_Menu.txt:
+
+Cafeteria Menu: UESC Headquarters
+Prepared by: NuCaloric Culinary Catering, UESC HQ
+
+Breakfast Options:
+Morning Harvest Omelette
+Omega-enriched eggs and artisan grated cheese. Precision-vapored greens. Served with a fresh side of NuCaloric 98.
+
+NuCaloric 12
+With whole grain toast and nutrient misted berries.
+
+Flapjack Delight
+Carbonated batter pancakes with maple syrup. Choice of lab-grown bacon or sausage.
+
+NuCaloric 27
+Fruit salad with enzyme enhancement and probiotic yogurt (multiple favours).
+
+Sunrise Wrap
+Scrambled eggs, cheese, and zesty salsa. Flash-frozen martian spinach.
+
+Lunch Options:
+
+Grilled Classic Sandwich
+Crisp lettuce, ripe tomato, and convection-crisped sweet potato fries.
+
+NuCaloric 42
+With vacuumed apple slices and vertical garden salad.
+
+Block 04 Modern Stir-Fry
+Ultrasonic wok vegetables over rice or noodles.
+
+NuCaloric 58
+With magnetic induction soup and whole grain roll.
+
+Traditional Cheeseburger
+Cheddar cheese, lettuce, tomato, and air-fried fries.
+
+Dinner Options:
+
+Baked Ocean Catch
+Sous-vide fish with lemon dill. Steamed vegetables.
+
+NuCaloric 73
+Vacuum oven potatoes and Caesar salad.
+
+Penne Arabiatta
+Pressure-cooked tomato sauce over pasta.
+
+NuCaloric 89
+Served with infrared-baked garlic bread and mixed greens.
+
+Vegetable Curry
+Pressure-infused spices with basmati rice.
+
+Dessert Options:
+
+Chocolate Indulgence Cake
+Thermal conduction-baked molten center.
+
+NuCaloric 95
+With liquid nitrogen vanilla ice cream.
+
+Fruit Tart
+Flash-glazed custard and fresh fruit.
+
+NuCaloric 101
+Freeze-dried sorbet scoop.
+
+Cheesecake
+Cold-set gelation w. creamy consistency. No cheese. 
+
+Beverages:
+
+Coffee and Tea
+Precision-brewed for optimal flavor.
+
+NuCaloric 110
+Citrus-infused with ultrasonic touch.
+
+Fruit Smoothies
+Vortex-blended for silky texture.
+
+NuCaloric 123
+Molecular mint infusion.
+
+Soft Drinks
+Naturally sweetened carbonation.
+
+
+/Commerce/Resources/HQ/Maintenance/Maintenance.log:
+
+<empty>
+
+/Commerce/Resources/HQ/Maintenance/Incident_Reports/Incident_Reports_007.txt:
+
+Incident 007: Fire Drill Disruption
+* Location: Entire Building
+* Description: A scheduled fire drill was disrupted by an unexpected alarm malfunction, causing confusion among staff. The alarm was triggered by a sensor error.
+* Resolution: Alarm system reset, and sensor recalibrated. Drill rescheduled for next month.
+* Comments: Review alarm system maintenance procedures to ensure reliability.
+
+
+/Commerce/Resources/HQ/Maintenance/Incident_Reports/Incident_Reports_198.txt:
+
+Incident 198: Unauthorized Access Attempt
+* Location: Secure Archives, Level 7
+* Description: An unauthorized access attempt was detected at the Secure Archives. Security protocols were activated, and the area was secured. No data breach occurred.
+* Resolution: Access logs reviewed, and security measures reinforced. Investigation ongoing to identify the source.
+* Comments: Increase surveillance and conduct a security audit to prevent future attempts.
+
+
+/Commerce/Resources/HQ/Maintenance/Incident_Reports/Incident_Reports_267.txt:
+
+Location: BRF 404, Level 4, Bayside Quandrant
+Description: A minor water leak was reported in the Level 4 bio-relief facility, caused by a faulty pipe joint. The leak was contained, and repairs initiated, but delays in part acquisition followed by unexpected damage to supply line link assemblage caused delays resulting in prolonged shut down of the facility. 
+Resolution: Pipe joint replaced, supply line reinforced and assemblage replaced, water damage assessed. Area cleaned and restored.
+Comments: Schedule regular plumbing inspections to identify potential issues early. Update parts inventory and acquisition planning to avoid future delays in maintenance facilitation. 
+
+
+/Commerce/Resources/HQ/Maintenance/Incident_Reports/Incident_Reports_598.txt:
+
+Incident 598: Elevator Stoppage
+* Location: Elevator 3, Main Building
+* Description: Elevator 3 halted between floors due to a temporary power fluctuation. Two employees were briefly trapped but were safely evacuated within 15 minutes.
+* Resolution: Power restored, and elevator reset. Electrical systems checked for stability.
+* Comments: Recommend installing backup power systems to prevent future incidents.
+
+
+/Commerce/Resources/HQ/Maintenance/Incident_Reports/Incident_Reports_736.txt:
+
+Incident 736: Coffee Machine Malfunction
+* Location: Break Room, Level 2
+* Description: The coffee machine on Level 2 experienced a malfunction, resulting in a temporary shutdown. The issue was traced to a clogged filter, which was promptly cleaned and replaced.
+* Resolution: Machine restored to full functionality. Regular maintenance scheduled to prevent recurrence.
+* Comments: This is the third occurrence this month; consider upgrading to a more reliable model. 
+
+
+/Commerce/Resources/HQ/Maintenance/Incident_Reports/Incident_Reports_834.txt:
+
+Incident 834: Data Network Outage
+* Location: IT Department, Level 5
+* Description: A network outage affected data access across multiple departments for approximately 45 minutes. The cause was identified as a server overload due to simultaneous software updates.
+* Resolution: Server load balanced, and updates rescheduled to off-peak hours.
+* Comments: Implement staggered update schedules to avoid future overloads.
+
+
+/Commerce/Resources/HQ/Maintenance/Incident_Reports/Incident_Reports_974.txt:
+
+Incident 974: Recurring HVAC Issue
+* Location: Conference Room A, Level 3
+* Description: The HVAC system in Conference Room A continues to malfunction, resulting in inconsistent temperature control. Despite multiple repair attempts, the issue persists.
+* Resolution: Temporary adjustments made to maintain comfort. Further investigation required.
+* Comments: This issue has been ongoing for several months. Consider a comprehensive system overhaul or replacement.
+
+
+/Commerce/Resources/HQ/Maintenance/Logs/log-entry-0630.txt:
+
+[Log Entry: 06:30]
+Automated Maintenance Routine Started.
+Cleaning cache directories...
+Updating software libraries...
+STATUS: Maintenance complete.
+
+
+/Commerce/Resources/HQ/Maintenance/Logs/log-entry-0720.txt:
+
+[Log Entry: 07:20]
+User Authentication Verified.
+User ID: 1735-TRXl7
+Access Level: Level 2 Clearance
+Action: Reviewed security protocols.
+
+
+/Commerce/Resources/HQ/Maintenance/Logs/log-entry-0745.txt:
+
+[Log Entry: 07:45]
+System Boot-Up Initiated.
+Initializing core protocols...
+Verifying hardware integrity...
+STATUS: All systems operational.
+
+
+/Commerce/Resources/HQ/Maintenance/Logs/log-entry-0800.txt:
+
+[Log Entry: 08:00]
+Network Module Connected.
+Establishing uplink to UESC mainframe...
+Routing through secure channels...
+STATYS: Connection established.
+
+
+/Commerce/Resources/HQ/Maintenance/Logs/log-entry-0815.txt:
+
+[Log Entry: 08:15]
+User Access Granted.
+User ID: 0928-MTRX
+Access Level: Level 3 Clearance
+Action: Accessed communication logs.
+
+
+/Commerce/Resources/HQ/Maintenance/Logs/log-entry-0900.txt:
+
+[Log Entry: 09:00]
+Diagnostic Check Performed.
+CPU Load: 32%
+Memory Usage: 67%
+System Temperature: Normal
+STATUS: No variance detected.
+
+
+/Commerce/Resources/HQ/Maintenance/Logs/log-entry-0915.txt:
+
+[Log Entry: 09:15]
+Hostile Network Activity Detected.
+Suspicious packet flow from external source.
+Action: Initiating countermeasures, isolating threat.
+
+
+/Commerce/Resources/HQ/Maintenance/Logs/log-entry-1000.txt:
+
+[Log Entry: 10:00]
+Data Analysis Request Received.
+Analyzing mineral scan data...
+Generating report summary...
+STATUS: Report completed, ready for review.
+
+
+
+/Commerce/Resources/HQ/Maintenance/Logs/log-entry-1030.txt:
+
+[Log Entry: 10:30]
+Encrypted Message Received.
+Attempting decryption...
+Result: Decryption incomplete, key mismatch.
+
+
+/Commerce/Resources/HQ/Maintenance/Logs/log-entry-1130.txt:
+
+[Log Entry: 11:30]
+SI Communication Log Accessed.
+SI Security Level: Non-Crit
+Note: Overlap in SI algorithmic patterning requires maintenance
+
+
+/Commerce/Resources/HQ/Maintenance/Logs/log-entry-1145.txt:
+
+[Log Entry: 11:45]
+Security Alert Triggered.
+Unauthorized login attempt detected.
+User ID: UNKNOWN
+Action: User access denied, logging IP.
+
+
+/Commerce/Resources/HQ/Maintenance/Logs/log-entry-1200.txt:
+
+[Log Entry: 12:00]
+Data Package Transmitted.
+Destination: Global Climate Command 
+Contents: Resource Survey, Orbital Geo-Recon Platform SHA 
+STATUS: Transmission successful.
+
+
+/Commerce/Resources/HQ/Maintenance/Logs/log-entry-1245.txt:
+
+[Log Entry: 12:45]
+Emergency Power Fluctuation Recorded.
+Investigating source of instability...
+Switching to backup generator...
+STATUS: Power stabilized.
+
+
+/Commerce/Resources/HQ/Maintenance/Logs/log-entry-1300.txt:
+
+[Log Entry: 13:00]
+Personnel File Update.
+User ID: 0928-MTRX
+Action: Updated mission credentials, security clearance upgraded.
+
+
+
+/Commerce/Resources/HQ/Maintenance/Logs/log-entry-1330.txt:
+
+[Log Entry: 13:30]
+System Update Scheduled.
+Scheduled Time: 02:00
+Affected Modules: Network Security, Data Management
+Note: Ensure backup prior to update.
+
+
+/Commerce/Resources/HQ/Maintenance/Logs/log-entry-1415.txt:
+
+[Log Entry: 14:15]
+Auxiliary Systems Check.
+Communication Relays: Functional
+Power Supply: Stable
+STATUS: Auxiliary systems online.
+
+
+/Commerce/Resources/HQ/Maintenance/Logs/log-entry-1435.txt:
+
+[Log Entry: 14:35]
+External Transmission Scheduled.
+Target: Traxus Command Center
+Contents: Projected resource yield reports
+STATUS: Transmission pending.
+
+
+/Commerce/Resources/HQ/Maintenance/Logs/log-entry-1545.txt:
+
+[Log Entry: 15:45]
+Session Terminated.
+User ID: 0928-MTRX
+Duration: 6 hours, 30 minutes
+Action: User logged out, data purged.
+
+
+
+/Commerce/Resources/HQ/Maintenance/Logs/log-entry-1610.txt:
+
+[Log Entry: 16:10]
+Incident Report Filed.
+Incident ID: INC-2075
+Summary: Unscheduled drone launch detected
+Action: Logged for further investigation.
+
+
+/Commerce/Resources/HQ/Maintenance/Logs/log-entry-1725.txt:
+
+[Log Entry: 17:25]
+System Shutdown Initiated.
+Preparing for scheduled maintenance...
+Saving all active sessions...
+STATUS: Shutdown complete, all systems inactive.
+
+
+/Commerce/Resources/Human_Resources_&_Personnel/Vacation_Planning/vacation_schedule_summer.csv:
+
++------------+--------------------+----------+-------------------+----------+
+| Employee ID| Position           | Available| Vacation Period    | Status   |
+|            |                    | Days     |                   |          |
++------------+--------------------+----------+-------------------+----------+
+| HR-001     | HR Manager         | 15       | 7/1-7/14          | Approved |
++------------+--------------------+----------+-------------------+----------+
+| HR-002     | Recruitment Officer| 20       | 8/15-8/28         | Approved |
++------------+--------------------+----------+-------------------+----------+
+| HR-003     | Benefits           | 10       | 6/20-7/3          | Approved |
+|            | Coordinator        |          |                   |          |
++------------+--------------------+----------+-------------------+----------+
+| HR-004     | Training Specialist| 18       | 7/15-7/28         | Approved |
++------------+--------------------+----------+-------------------+----------+
+| HR-005     | HR Assistant       | 12       | 8/1-8/14          | Denied   |
++------------+--------------------+----------+-------------------+----------+
+| HR-006     | Payroll Specialist | 15       | 7/5-7/18          | Denied   |
++------------+--------------------+----------+-------------------+----------+
+| HR-007     | Employee Relations | 20       | 6/25-7/8          | Approved |
++------------+--------------------+----------+-------------------+----------+
+| HR-008     | HR Generalist      | 15       | 8/10-8/23         | Denied   |
++------------+--------------------+----------+-------------------+----------+
+| HR-009     | Compliance Officer | 10       | 7/20-8/2          | Approved |
++------------+--------------------+----------+-------------------+----------+
+| HR-010     | Talent Acquisition | 18       | 6/15-6/28         | Denied   |
++------------+--------------------+----------+-------------------+----------+
+| HR-011     | HR Coordinator     | 14       | 7/10-7/24         | Denied   |
++------------+--------------------+----------+-------------------+----------+
+| HR-012     | Diversity Officer  | 16       | 8/5-8/19          | Approved |
++------------+--------------------+----------+-------------------+----------+
+| HR-013     | Compensation       | 12       | 7/1-7/14          | Denied   |
+|            | Analyst            |          |                   |          |
++------------+--------------------+----------+-------------------+----------+
+| HR-014     | HR Specialist      | 20       | 7/15-7/29         | Denied   |
++------------+--------------------+----------+-------------------+----------+
+| HR-015     | Onboarding Manager | 10       | 8/1-8/15          | Approved |
++------------+--------------------+----------+-------------------+----------+
+| HR-016     | HR Analyst         | 15       | 7/5-7/19          | Denied   |
++------------+--------------------+----------+-------------------+----------+
+| HR-017     | Labor Relations    | 18       | 6/20-7/4          | Approved |
+|            | Leader             |          |                   |          |
++------------+--------------------+----------+-------------------+----------+
+| HR-018     | HR Consultant      | 14       | 8/10-8/24         | Denied   |
++------------+--------------------+----------+-------------------+----------+
+| HR-019     | Benefits Analyst   | 12       | 7/25-8/8          | Denied   |
++------------+--------------------+----------+-------------------+----------+
+| HR-020     | HR Administrator   | 20       | 6/15-6/29         | Approved |
++------------+--------------------+----------+-------------------+----------+
+| HR-021     | HR Technician      | 15       | 7/10-7/24         | Denied   |
++------------+--------------------+----------+-------------------+----------+
+| HR-022     | HR Strategist      | 18       | 8/5-8/19          | Approved |
++------------+--------------------+----------+-------------------+----------+
+| HR-023     | HR Planner         | 10       | 7/1-7/15          | Denied   |
++------------+--------------------+----------+-------------------+----------+
+| HR-024     | HR Executive       | 16       | 7/20-8/3          | Approved |
++------------+--------------------+----------+-------------------+----------+
+| HR-025     | HR Director        | 14       | 8/1-8/15          | Approved |
++------------+--------------------+----------+-------------------+----------+
+| HR-026     | HR Supervisor      | 12       | 7/5-7/19          | Denied   |
++------------+--------------------+----------+-------------------+----------+
+| HR-027     | HR Officer         | 20       | 6/20-7/4          | Approved |
++------------+--------------------+----------+-------------------+----------+
+| HR-028     | HR Consultant      | 15       | 8/10-8/24         | Denied   |
++------------+--------------------+----------+-------------------+----------+
+| HR-029     | HR Analyst         | 18       | 7/25-8/8          | Denied   |
++------------+--------------------+----------+-------------------+----------+
+| HR-030     | HR Coordinator     | 14       | 6/15-6/29         | Pending  |
++------------+--------------------+----------+-------------------+----------+
+
+/Diagnostics/[Communication_Systems_Analysis].txt:
 
 Overview: Routine check of communication hardware and protocols.
 Uplink Stability: 98%
@@ -334,14 +698,14 @@ Packet Loss: 2% (Minimal interference detected)
 Actions Required: Replace failing uplink transceiver unit; implement redundant pathways to enhance stability.
 
 
-/Diagnostics_reports/[DIAGNOSTIC_REPORT].txt:
+/Diagnostics/[DIAGNOSTIC_REPORT].txt:
 
 Status: Cycling
 Terminal ID: CyAc-47B9
 Location: UESC Command HQ Substation KL74-9
 
 
-/Diagnostics_reports/[Environmental_Monitoring].txt:
+/Diagnostics/[Environmental_Monitoring].txt:
 
 Overview: Assessments of habitat environmental controls and safety systems.
 Air Filtration Efficiency: 91%
@@ -350,7 +714,7 @@ Temperature Fluctuations: ±2°C (Within limits)
 Actions Required: Clean filters in Block_04; recalibrate humidity sensor array.
 
 
-/Diagnostics_reports/[Infrastructure_Integrity_Assessment].txt:
+/Diagnostics/[Infrastructure_Integrity_Assessment].txt:
 
 Overview: Structural evaluation of all base facilities to ensure integrity and safety.
 Structural Soundness: 95% (Occasional micro-fissures identified)
@@ -359,7 +723,7 @@ Supply Routes: Clear and operational
 Actions Required: Initiate minor repairs in Block 06; monitor stress points in high-usage areas.
 
 
-/Diagnostics_reports/[Pathogen_Control_Status].txt:
+/Diagnostics/[Pathogen_Control_Status].txt:
 
 Overview: Verification of base pathogen control measures and biohazard protocols.
 Bio-Screening Success Rate: 99.8%
@@ -369,7 +733,7 @@ Actions Required: Regularly review pathogen control protocols; perform drill to 
 
 
 
-/Diagnostics_reports/[Power_Systems_Diagnostic].txt:
+/Diagnostics/[Power_Systems_Diagnostic].txt:
 
 Overview: Evaluation of power generation and distribution systems.
 Solar Array Efficiency: 87%
@@ -378,7 +742,7 @@ Power Distribution Variance: None detected
 Actions Required: Schedule generator maintenance cycle; replace aging solar panels by Q4.
 
 
-/Diagnostics_reports/[Resource_Consumption_Audit].txt:
+/Diagnostics/[Resource_Consumption_Audit].txt:
 
 Overview: Review of resource usage and distribution efficiency.
 Water Usage: 15,000 liters/day (Sustainable)
@@ -387,7 +751,7 @@ Material Waste Output: 90kg/day (Minimized)
 Actions Required: Optimize energy usage plan for power-hungry equipment; initiate resource conservation campaign.
 
 
-/Diagnostics_reports/[SI_Systems_Status].txt:
+/Diagnostics/[SI_Systems_Status].txt:
 
 Overview: Performance check on SI cognitive functions and response accuracy.
 Processing Speed: 1,200 GFLOPS (Optimal)
@@ -396,7 +760,7 @@ Quantum Core Temp: Nominal
 Actions Required: Conduct quarterly AI feedback assessments.
 
 
-/Diagnostics_reports/[Satellite_Maintenance_Check].txt:
+/Diagnostics/[Satellite_Maintenance_Check].txt:
 
 Overview: Routine examination of satellite functionalities and telemetry data.
 Active Satellites: 22
@@ -406,7 +770,7 @@ System Uptime: 99.9%
 Actions Required: Schedule recalibration of Satellite 8's positioning array; analyze debris trajectory for potential risks.
 
 
-/Diagnostics_reports/[Security_Systems_Evaluation].txt:
+/Diagnostics/[Security_Systems_Evaluation].txt:
 
 Overview: Assessment of digital and physical security measures.
 Firewall Integrity: 100% (Secure)
@@ -416,7 +780,7 @@ Actions Required: Update access credentials for personnel; enhance threat detect
 
 
 
-/Diagnostics_reports/[System_Health_Check].txt:
+/Diagnostics/[System_Health_Check].txt:
 
 Overview: Comprehensive system evaluation conducted to ensure optimal performance across all modules.
 CPU Load: 45% (Stable)
@@ -492,6 +856,93 @@ EDIT 15 - Yes, technically it is a ship, but more so it is a place–a moon and 
 
 EDIT 16 - Replace sign-off with first sentence of final line. Remove period from line so the sentence becomes a sign-off.
 
+
+/Interplanetary/Exploration/Colonization/Operational_Protocols/emergency_procedures.log:
+
+Title: Emergency Procedures Manual: Earth Command HQ
+Purpose: This manual outlines the emergency procedures designed to protect personnel, infrastructure, and critical data at Earth Command HQ in the event of a crisis. The procedures are intended to ensure a swift and organized response to safeguard the facility's operations and integrity.
+
+Section 1: Emergency Response Team (ERT) Activation
+Subsection 1.1: ERT Composition
+Details on team roles, responsibilities, and immediate contact information for key personnel.
+Subsection 1.2: Activation Protocols
+Steps for rapid ERT mobilization, including criteria for activation and initial response actions.
+
+Section 2: Evacuation Procedures
+Subsection 2.1: Evacuation Routes
+Designated escape routes clearly marked within HQ, maps provided for quick reference.
+Subsection 2.2: Roll Call and Accountability
+Checkpoints and procedures for ensuring all personnel are accounted for during evacuation.
+
+Section 3: Communication Protocols
+Subsection 3.1: Crisis Communication Channels
+Secure communication lines established for internal coordination, priority communication with external partners.
+Subsection 3.2: Public Communication and Media Handling
+Guidelines for managing media inquiries, public statements, and maintaining operational confidentiality.
+
+Section 4: Data Security and Backup
+Subsection 4.1: Critical Data Backup
+Protocols for ensuring data backup and redundancy, details on secure off-site storage locations.
+Subsection 4.2: Digital Threat Countermeasures
+Preemptive actions to detect, isolate, and neutralize digital security threats during an emergency.
+
+Section 5: Facility Security and Maintenance
+Subsection 5.1: Lockdown Procedures
+Methods for implementing a facility-wide lockdown, securing access points, and reinforcing perimeter defenses.
+Subsection 5.2: Regular Maintenance Schedules
+A log of routine maintenance checks and requirements to ensure all security systems are fully operational.
+
+Section 6: Post-Emergency Review and Recovery
+Subsection 6.1: Incident Investigation
+Steps for conducting a thorough review post-crisis to identify causes, assess response effectiveness, and implement improvements.
+Subsection 6.2: Recovery and Resumption
+Guidelines for restoring normal operations, focusing on prioritizing critical functions and services.
+
+
+/Interplanetary/Terraforming/Astromining/R&D-Project_NEO/Project_Neo_Titanium.txt:
+
+Executive Summary:
+Project Neo Titanium explores the potential for advanced material synthesis. This document explores the methods of resource collection and refinement, highlights applications in infrastructure development, and presents preliminary test results confirming feasibility for post-industrial use. This study was conducted in partnership with Traxus Mining. Ref. 09544-O. 
+Current status: [Clearance Required]
+
+Title: Project Neo Titanium: Advanced Material Synthesis of Intrasolar Mineral Resources
+Introduction: The goal of Project Titanium is to assess the potential for the molecular recombination of varied mineral resources for use in the development of new-gen, patentable materials. These materials aim to advance the high-performance demands of modern planetary and post-planetary infrastructural design and engineering needs across all known and any new, emerging sectors.
+
+Section 1: Resource Identification and Collection
+Subsection 1.1: Mineral Identification.
+Catalog of key mineral types found in targeted extractions.
+Subsection 1.2: Collection Techniques.
+Description of cutting-edge, eco-friendly mineral gathering methods.
+
+Section 2: Refinement Processes
+Subsection 2.1: Initial Testing
+Detailed examination of initial refinement processes used to isolate and purify mineral elements.
+Subsection 2.2: Process Optimization
+Techniques implemented to improve efficiency and yield in the refinement process.
+
+Section 3: Material Synthesis
+Subsection 3.1: Synthesis Techniques
+Exploration of synthesis methods converting refined materials into high-strength composites.
+Subsection 3.2: Properties and Applications
+Study of mechanical, thermal, and chemical properties of synthesized materials.
+
+Section 4: Preliminary Results and Analysis
+Subsection 4.1: Test Outcomes
+Summary of material performance under stress tests and durability evaluations.
+Subsection 4.2: Feasibility Study
+Assessment of long-term viability and projected supply chain requirements.
+
+Conclusion:
+Preliminary findings demonstrate significant promise in utilizing new sciences and engineering techniques to manipulate mineral deposits in groundbreaking explorations into material synthesis. Further research is recommended to fully realize potential applications and integrate these materials into production pipelines.
+
+
+/Interplanetary/Terraforming/Exoatmospherics/Environmental_Data/biodome_soil_analysis.log:
+
+[REDACTED]
+
+/Interplanetary/Terraforming/Exoatmospherics/Environmental_Data/habitat_climate_stats.log:
+
+[REDACTED]
 
 /Interplanetary/Terraforming/IV/Quantum_Experiments/Quantum_Experiments.log:
 
@@ -738,6 +1189,10 @@ Authorized Access: Beta-4 and above
 
 [CLEARANCE REQUIRED]
 
+/Legislation/Security/Cybersecurity/decrypt.sh:
+
+<executable>
+
 /Legislation/Security/Cybersecurity/Threat_Assessment/ASTERISK_TATTOO/ASTERISK_TATTOO.log:
 
 [CLEARANCE NEEDED]
@@ -790,23 +1245,7 @@ Authorized Access: Beta-4 and above
 
 [CLEARANCE NEEDED]
 
-/Legislation/Security/Cybersecurity/Threat_Assessment/TETHERBALL/TETHERBALL.log:
-
-[CLEARANCE NEEDED]
-
-/Legislation/Security/Cybersecurity/Threat_Assessment/TIN_CAN_WITH_STRINGS/TIN_CAN_WITH_STRINGS.log:
-
-[CLEARANCE NEEDED]
-
-/Legislation/Security/Cybersecurity/Threat_Assessment/UNICORN/UNICORN.log:
-
-[CLEARANCE NEEDED]
-
-/Legislation/Security/Cybersecurity/Threat_Assessment/ZERO_ZERO/ZERO_ZERO.log:
-
-[CLEARANCE NEEDED]
-
-/Legislation/Security/Cybersecurity/Threat_Assessment/starting_line/starting_line.txt:
+/Legislation/Security/Cybersecurity/Threat_Assessment/STARTING_LINE/starting_line.txt:
 
 UE-INTELLIGENCE DIVISION
 CLASSIFIED REPORT: [CLEARANCE REQUIRED]
@@ -862,6 +1301,174 @@ INCIDENT REPORTS [Page 09 / 33]:
 -       [SECURITY CLASSIFIED]
 -       [SECURITY CLASSIFIED]
 
+
+/Legislation/Security/Cybersecurity/Threat_Assessment/TETHERBALL/TETHERBALL.log:
+
+[CLEARANCE NEEDED]
+
+/Legislation/Security/Cybersecurity/Threat_Assessment/TIN_CAN_WITH_STRINGS/TIN_CAN_WITH_STRINGS.log:
+
+[CLEARANCE NEEDED]
+
+/Legislation/Security/Cybersecurity/Threat_Assessment/UNICORN/UNICORN.log:
+
+[CLEARANCE NEEDED]
+
+/Legislation/Security/Cybersecurity/Threat_Assessment/ZERO_ZERO/ZERO_ZERO.log:
+
+[CLEARANCE NEEDED]
+
+/Legislation/Security/Surveillance/Archive:
+
+BATCH FILE DIRECTORY   [009]  [  +  ]  [  -  ] 
+BATCH FILE START           [6370] [  +  ]  [  -  ] 
+BATCH FILE END               [6405] [  +  ]  [  -  ] 
+===================================
+
+
+/Legislation/Security/Surveillance/Surveillance_Footage_Archive0096370:
+
+[CLEARANCE REQUIRED]
+
+/Legislation/Security/Surveillance/Surveillance_Footage_Archive0096371:
+
+[CLEARANCE REQUIRED]
+
+/Legislation/Security/Surveillance/Surveillance_Footage_Archive0096372:
+
+[CLEARANCE REQUIRED]
+
+/Legislation/Security/Surveillance/Surveillance_Footage_Archive0096373:
+
+[CLEARANCE REQUIRED]
+
+/Legislation/Security/Surveillance/Surveillance_Footage_Archive0096374:
+
+[CLEARANCE REQUIRED]
+
+/Legislation/Security/Surveillance/Surveillance_Footage_Archive0096375:
+
+[CLEARANCE REQUIRED]
+
+/Legislation/Security/Surveillance/Surveillance_Footage_Archive0096376:
+
+[CLEARANCE REQUIRED]
+
+/Legislation/Security/Surveillance/Surveillance_Footage_Archive0096377:
+
+[CLEARANCE REQUIRED]
+
+/Legislation/Security/Surveillance/Surveillance_Footage_Archive0096378:
+
+[CLEARANCE REQUIRED]
+
+/Legislation/Security/Surveillance/Surveillance_Footage_Archive0096379:
+
+[CLEARANCE REQUIRED]
+
+/Legislation/Security/Surveillance/Surveillance_Footage_Archive0096380:
+
+[CLEARANCE REQUIRED]
+
+/Legislation/Security/Surveillance/Surveillance_Footage_Archive0096381:
+
+[CLEARANCE REQUIRED]
+
+/Legislation/Security/Surveillance/Surveillance_Footage_Archive0096382:
+
+[CLEARANCE REQUIRED]
+
+/Legislation/Security/Surveillance/Surveillance_Footage_Archive0096383:
+
+[CLEARANCE REQUIRED]
+
+/Legislation/Security/Surveillance/Surveillance_Footage_Archive0096384:
+
+[CLEARANCE REQUIRED]
+
+/Legislation/Security/Surveillance/Surveillance_Footage_Archive0096385:
+
+[CLEARANCE REQUIRED]
+
+/Legislation/Security/Surveillance/Surveillance_Footage_Archive0096386:
+
+[CLEARANCE REQUIRED]
+
+/Legislation/Security/Surveillance/Surveillance_Footage_Archive0096387:
+
+[CLEARANCE REQUIRED]
+
+/Legislation/Security/Surveillance/Surveillance_Footage_Archive0096388:
+
+[CLEARANCE REQUIRED]
+
+/Legislation/Security/Surveillance/Surveillance_Footage_Archive0096389:
+
+[CLEARANCE REQUIRED]
+
+/Legislation/Security/Surveillance/Surveillance_Footage_Archive0096390:
+
+[CLEARANCE REQUIRED]
+
+/Legislation/Security/Surveillance/Surveillance_Footage_Archive0096391:
+
+[CLEARANCE REQUIRED]
+
+/Legislation/Security/Surveillance/Surveillance_Footage_Archive0096392:
+
+[CLEARANCE REQUIRED]
+
+/Legislation/Security/Surveillance/Surveillance_Footage_Archive0096393:
+
+[CLEARANCE REQUIRED]
+
+/Legislation/Security/Surveillance/Surveillance_Footage_Archive0096394:
+
+[CLEARANCE REQUIRED]
+
+/Legislation/Security/Surveillance/Surveillance_Footage_Archive0096395:
+
+[CLEARANCE REQUIRED]
+
+/Legislation/Security/Surveillance/Surveillance_Footage_Archive0096396:
+
+[CLEARANCE REQUIRED]
+
+/Legislation/Security/Surveillance/Surveillance_Footage_Archive0096397:
+
+[CLEARANCE REQUIRED]
+
+/Legislation/Security/Surveillance/Surveillance_Footage_Archive0096398:
+
+[CLEARANCE REQUIRED]
+
+/Legislation/Security/Surveillance/Surveillance_Footage_Archive0096399:
+
+[CLEARANCE REQUIRED]
+
+/Legislation/Security/Surveillance/Surveillance_Footage_Archive0096400:
+
+[CLEARANCE REQUIRED]
+
+/Legislation/Security/Surveillance/Surveillance_Footage_Archive0096401:
+
+[CLEARANCE REQUIRED]
+
+/Legislation/Security/Surveillance/Surveillance_Footage_Archive0096401:
+
+[CLEARANCE REQUIRED]
+
+/Legislation/Security/Surveillance/Surveillance_Footage_Archive0096403:
+
+[CLEARANCE REQUIRED]
+
+/Legislation/Security/Surveillance/Surveillance_Footage_Archive0096404:
+
+[CLEARANCE REQUIRED]
+
+/Legislation/Security/Surveillance/Surveillance_Footage_Archive0096405:
+
+[CLEARANCE REQUIRED]
 
 /Legislation/Security/Tactical_Operations/Security_Logistics/Confiscations/Weapons/BRRT_SMG.pdf2:
 
@@ -1498,568 +2105,6 @@ Transmission 007: File #TX-0824-0845
 | SIG-0831-033| Unknown Quadrant    | Encrypted Burst| Pending   | High            |
 +------------+-------+-------------+---------------------+----------------+-----------+-----------------+
 
-/Resources/HQ/Cafeteria_Menu/Cafeteria_Menu.txt:
-
-Cafeteria Menu: UESC Headquarters
-Prepared by: NuCaloric Culinary Catering, UESC HQ
-
-Breakfast Options:
-Morning Harvest Omelette
-Omega-enriched eggs and artisan grated cheese. Precision-vapored greens. Served with a fresh side of NuCaloric 98.
-
-NuCaloric 12
-With whole grain toast and nutrient misted berries.
-
-Flapjack Delight
-Carbonated batter pancakes with maple syrup. Choice of lab-grown bacon or sausage.
-
-NuCaloric 27
-Fruit salad with enzyme enhancement and probiotic yogurt (multiple favours).
-
-Sunrise Wrap
-Scrambled eggs, cheese, and zesty salsa. Flash-frozen martian spinach.
-
-Lunch Options:
-
-Grilled Classic Sandwich
-Crisp lettuce, ripe tomato, and convection-crisped sweet potato fries.
-
-NuCaloric 42
-With vacuumed apple slices and vertical garden salad.
-
-Block 04 Modern Stir-Fry
-Ultrasonic wok vegetables over rice or noodles.
-
-NuCaloric 58
-With magnetic induction soup and whole grain roll.
-
-Traditional Cheeseburger
-Cheddar cheese, lettuce, tomato, and air-fried fries.
-
-Dinner Options:
-
-Baked Ocean Catch
-Sous-vide fish with lemon dill. Steamed vegetables.
-
-NuCaloric 73
-Vacuum oven potatoes and Caesar salad.
-
-Penne Arabiatta
-Pressure-cooked tomato sauce over pasta.
-
-NuCaloric 89
-Served with infrared-baked garlic bread and mixed greens.
-
-Vegetable Curry
-Pressure-infused spices with basmati rice.
-
-Dessert Options:
-
-Chocolate Indulgence Cake
-Thermal conduction-baked molten center.
-
-NuCaloric 95
-With liquid nitrogen vanilla ice cream.
-
-Fruit Tart
-Flash-glazed custard and fresh fruit.
-
-NuCaloric 101
-Freeze-dried sorbet scoop.
-
-Cheesecake
-Cold-set gelation w. creamy consistency. No cheese. 
-
-Beverages:
-
-Coffee and Tea
-Precision-brewed for optimal flavor.
-
-NuCaloric 110
-Citrus-infused with ultrasonic touch.
-
-Fruit Smoothies
-Vortex-blended for silky texture.
-
-NuCaloric 123
-Molecular mint infusion.
-
-Soft Drinks
-Naturally sweetened carbonation.
-
-
-/Resources/HQ/Maintenance/Incident_Reports/Incident_Reports_007.txt:
-
-Incident 007: Fire Drill Disruption
-* Location: Entire Building
-* Description: A scheduled fire drill was disrupted by an unexpected alarm malfunction, causing confusion among staff. The alarm was triggered by a sensor error.
-* Resolution: Alarm system reset, and sensor recalibrated. Drill rescheduled for next month.
-* Comments: Review alarm system maintenance procedures to ensure reliability.
-
-
-/Resources/HQ/Maintenance/Incident_Reports/Incident_Reports_198.txt:
-
-Incident 198: Unauthorized Access Attempt
-* Location: Secure Archives, Level 7
-* Description: An unauthorized access attempt was detected at the Secure Archives. Security protocols were activated, and the area was secured. No data breach occurred.
-* Resolution: Access logs reviewed, and security measures reinforced. Investigation ongoing to identify the source.
-* Comments: Increase surveillance and conduct a security audit to prevent future attempts.
-
-
-/Resources/HQ/Maintenance/Incident_Reports/Incident_Reports_267.txt:
-
-Location: BRF 404, Level 4, Bayside Quandrant
-Description: A minor water leak was reported in the Level 4 bio-relief facility, caused by a faulty pipe joint. The leak was contained, and repairs initiated, but delays in part acquisition followed by unexpected damage to supply line link assemblage caused delays resulting in prolonged shut down of the facility. 
-Resolution: Pipe joint replaced, supply line reinforced and assemblage replaced, water damage assessed. Area cleaned and restored.
-Comments: Schedule regular plumbing inspections to identify potential issues early. Update parts inventory and acquisition planning to avoid future delays in maintenance facilitation. 
-
-
-/Resources/HQ/Maintenance/Incident_Reports/Incident_Reports_598.txt:
-
-Incident 598: Elevator Stoppage
-* Location: Elevator 3, Main Building
-* Description: Elevator 3 halted between floors due to a temporary power fluctuation. Two employees were briefly trapped but were safely evacuated within 15 minutes.
-* Resolution: Power restored, and elevator reset. Electrical systems checked for stability.
-* Comments: Recommend installing backup power systems to prevent future incidents.
-
-
-/Resources/HQ/Maintenance/Incident_Reports/Incident_Reports_736.txt:
-
-Incident 736: Coffee Machine Malfunction
-* Location: Break Room, Level 2
-* Description: The coffee machine on Level 2 experienced a malfunction, resulting in a temporary shutdown. The issue was traced to a clogged filter, which was promptly cleaned and replaced.
-* Resolution: Machine restored to full functionality. Regular maintenance scheduled to prevent recurrence.
-* Comments: This is the third occurrence this month; consider upgrading to a more reliable model. 
-
-
-/Resources/HQ/Maintenance/Incident_Reports/Incident_Reports_834.txt:
-
-Incident 834: Data Network Outage
-* Location: IT Department, Level 5
-* Description: A network outage affected data access across multiple departments for approximately 45 minutes. The cause was identified as a server overload due to simultaneous software updates.
-* Resolution: Server load balanced, and updates rescheduled to off-peak hours.
-* Comments: Implement staggered update schedules to avoid future overloads.
-
-
-/Resources/HQ/Maintenance/Incident_Reports/Incident_Reports_974.txt:
-
-Incident 974: Recurring HVAC Issue
-* Location: Conference Room A, Level 3
-* Description: The HVAC system in Conference Room A continues to malfunction, resulting in inconsistent temperature control. Despite multiple repair attempts, the issue persists.
-* Resolution: Temporary adjustments made to maintain comfort. Further investigation required.
-* Comments: This issue has been ongoing for several months. Consider a comprehensive system overhaul or replacement.
-
-
-/Resources/HQ/Maintenance/Logs/log-entry-0630.txt:
-
-[Log Entry: 06:30]
-Automated Maintenance Routine Started.
-Cleaning cache directories...
-Updating software libraries...
-STATUS: Maintenance complete.
-
-
-/Resources/HQ/Maintenance/Logs/log-entry-0720.txt:
-
-[Log Entry: 07:20]
-User Authentication Verified.
-User ID: 1735-TRXl7
-Access Level: Level 2 Clearance
-Action: Reviewed security protocols.
-
-
-/Resources/HQ/Maintenance/Logs/log-entry-0745.txt:
-
-[Log Entry: 07:45]
-System Boot-Up Initiated.
-Initializing core protocols...
-Verifying hardware integrity...
-STATUS: All systems operational.
-
-
-/Resources/HQ/Maintenance/Logs/log-entry-0800.txt:
-
-[Log Entry: 08:00]
-Network Module Connected.
-Establishing uplink to UESC mainframe...
-Routing through secure channels...
-STATYS: Connection established.
-
-
-/Resources/HQ/Maintenance/Logs/log-entry-0815.txt:
-
-[Log Entry: 08:15]
-User Access Granted.
-User ID: 0928-MTRX
-Access Level: Level 3 Clearance
-Action: Accessed communication logs.
-
-
-/Resources/HQ/Maintenance/Logs/log-entry-0900.txt:
-
-[Log Entry: 09:00]
-Diagnostic Check Performed.
-CPU Load: 32%
-Memory Usage: 67%
-System Temperature: Normal
-STATUS: No variance detected.
-
-
-/Resources/HQ/Maintenance/Logs/log-entry-0915.txt:
-
-[Log Entry: 09:15]
-Hostile Network Activity Detected.
-Suspicious packet flow from external source.
-Action: Initiating countermeasures, isolating threat.
-
-
-/Resources/HQ/Maintenance/Logs/log-entry-1000.txt:
-
-[Log Entry: 10:00]
-Data Analysis Request Received.
-Analyzing mineral scan data...
-Generating report summary...
-STATUS: Report completed, ready for review.
-
-
-
-/Resources/HQ/Maintenance/Logs/log-entry-1030.txt:
-
-[Log Entry: 10:30]
-Encrypted Message Received.
-Attempting decryption...
-Result: Decryption incomplete, key mismatch.
-
-
-/Resources/HQ/Maintenance/Logs/log-entry-1130.txt:
-
-[Log Entry: 11:30]
-SI Communication Log Accessed.
-SI Security Level: Non-Crit
-Note: Overlap in SI algorithmic patterning requires maintenance
-
-
-/Resources/HQ/Maintenance/Logs/log-entry-1145.txt:
-
-[Log Entry: 11:45]
-Security Alert Triggered.
-Unauthorized login attempt detected.
-User ID: UNKNOWN
-Action: User access denied, logging IP.
-
-
-/Resources/HQ/Maintenance/Logs/log-entry-1200.txt:
-
-[Log Entry: 12:00]
-Data Package Transmitted.
-Destination: Global Climate Command 
-Contents: Resource Survey, Orbital Geo-Recon Platform SHA 
-STATUS: Transmission successful.
-
-
-/Resources/HQ/Maintenance/Logs/log-entry-1245.txt:
-
-[Log Entry: 12:45]
-Emergency Power Fluctuation Recorded.
-Investigating source of instability...
-Switching to backup generator...
-STATUS: Power stabilized.
-
-
-/Resources/HQ/Maintenance/Logs/log-entry-1300.txt:
-
-[Log Entry: 13:00]
-Personnel File Update.
-User ID: 0928-MTRX
-Action: Updated mission credentials, security clearance upgraded.
-
-
-
-/Resources/HQ/Maintenance/Logs/log-entry-1330.txt:
-
-[Log Entry: 13:30]
-System Update Scheduled.
-Scheduled Time: 02:00
-Affected Modules: Network Security, Data Management
-Note: Ensure backup prior to update.
-
-
-/Resources/HQ/Maintenance/Logs/log-entry-1415.txt:
-
-[Log Entry: 14:15]
-Auxiliary Systems Check.
-Communication Relays: Functional
-Power Supply: Stable
-STATUS: Auxiliary systems online.
-
-
-/Resources/HQ/Maintenance/Logs/log-entry-1435.txt:
-
-[Log Entry: 14:35]
-External Transmission Scheduled.
-Target: Traxus Command Center
-Contents: Projected resource yield reports
-STATUS: Transmission pending.
-
-
-/Resources/HQ/Maintenance/Logs/log-entry-1545.txt:
-
-[Log Entry: 15:45]
-Session Terminated.
-User ID: 0928-MTRX
-Duration: 6 hours, 30 minutes
-Action: User logged out, data purged.
-
-
-
-/Resources/HQ/Maintenance/Logs/log-entry-1610.txt:
-
-[Log Entry: 16:10]
-Incident Report Filed.
-Incident ID: INC-2075
-Summary: Unscheduled drone launch detected
-Action: Logged for further investigation.
-
-
-/Resources/HQ/Maintenance/Logs/log-entry-1725.txt:
-
-[Log Entry: 17:25]
-System Shutdown Initiated.
-Preparing for scheduled maintenance...
-Saving all active sessions...
-STATUS: Shutdown complete, all systems inactive.
-
-
-/Resources/HQ/Maintenance/Maintenance.log:
-
-<empty>
-
-/Resources/Human_Resources_&_Personnel/Vacation_Planning/vacation_schedule_summer.csv:
-
-+------------+--------------------+----------+-------------------+----------+
-| Employee ID| Position           | Available| Vacation Period    | Status   |
-|            |                    | Days     |                   |          |
-+------------+--------------------+----------+-------------------+----------+
-| HR-001     | HR Manager         | 15       | 7/1-7/14          | Approved |
-+------------+--------------------+----------+-------------------+----------+
-| HR-002     | Recruitment Officer| 20       | 8/15-8/28         | Approved |
-+------------+--------------------+----------+-------------------+----------+
-| HR-003     | Benefits           | 10       | 6/20-7/3          | Approved |
-|            | Coordinator        |          |                   |          |
-+------------+--------------------+----------+-------------------+----------+
-| HR-004     | Training Specialist| 18       | 7/15-7/28         | Approved |
-+------------+--------------------+----------+-------------------+----------+
-| HR-005     | HR Assistant       | 12       | 8/1-8/14          | Denied   |
-+------------+--------------------+----------+-------------------+----------+
-| HR-006     | Payroll Specialist | 15       | 7/5-7/18          | Denied   |
-+------------+--------------------+----------+-------------------+----------+
-| HR-007     | Employee Relations | 20       | 6/25-7/8          | Approved |
-+------------+--------------------+----------+-------------------+----------+
-| HR-008     | HR Generalist      | 15       | 8/10-8/23         | Denied   |
-+------------+--------------------+----------+-------------------+----------+
-| HR-009     | Compliance Officer | 10       | 7/20-8/2          | Approved |
-+------------+--------------------+----------+-------------------+----------+
-| HR-010     | Talent Acquisition | 18       | 6/15-6/28         | Denied   |
-+------------+--------------------+----------+-------------------+----------+
-| HR-011     | HR Coordinator     | 14       | 7/10-7/24         | Denied   |
-+------------+--------------------+----------+-------------------+----------+
-| HR-012     | Diversity Officer  | 16       | 8/5-8/19          | Approved |
-+------------+--------------------+----------+-------------------+----------+
-| HR-013     | Compensation       | 12       | 7/1-7/14          | Denied   |
-|            | Analyst            |          |                   |          |
-+------------+--------------------+----------+-------------------+----------+
-| HR-014     | HR Specialist      | 20       | 7/15-7/29         | Denied   |
-+------------+--------------------+----------+-------------------+----------+
-| HR-015     | Onboarding Manager | 10       | 8/1-8/15          | Approved |
-+------------+--------------------+----------+-------------------+----------+
-| HR-016     | HR Analyst         | 15       | 7/5-7/19          | Denied   |
-+------------+--------------------+----------+-------------------+----------+
-| HR-017     | Labor Relations    | 18       | 6/20-7/4          | Approved |
-|            | Leader             |          |                   |          |
-+------------+--------------------+----------+-------------------+----------+
-| HR-018     | HR Consultant      | 14       | 8/10-8/24         | Denied   |
-+------------+--------------------+----------+-------------------+----------+
-| HR-019     | Benefits Analyst   | 12       | 7/25-8/8          | Denied   |
-+------------+--------------------+----------+-------------------+----------+
-| HR-020     | HR Administrator   | 20       | 6/15-6/29         | Approved |
-+------------+--------------------+----------+-------------------+----------+
-| HR-021     | HR Technician      | 15       | 7/10-7/24         | Denied   |
-+------------+--------------------+----------+-------------------+----------+
-| HR-022     | HR Strategist      | 18       | 8/5-8/19          | Approved |
-+------------+--------------------+----------+-------------------+----------+
-| HR-023     | HR Planner         | 10       | 7/1-7/15          | Denied   |
-+------------+--------------------+----------+-------------------+----------+
-| HR-024     | HR Executive       | 16       | 7/20-8/3          | Approved |
-+------------+--------------------+----------+-------------------+----------+
-| HR-025     | HR Director        | 14       | 8/1-8/15          | Approved |
-+------------+--------------------+----------+-------------------+----------+
-| HR-026     | HR Supervisor      | 12       | 7/5-7/19          | Denied   |
-+------------+--------------------+----------+-------------------+----------+
-| HR-027     | HR Officer         | 20       | 6/20-7/4          | Approved |
-+------------+--------------------+----------+-------------------+----------+
-| HR-028     | HR Consultant      | 15       | 8/10-8/24         | Denied   |
-+------------+--------------------+----------+-------------------+----------+
-| HR-029     | HR Analyst         | 18       | 7/25-8/8          | Denied   |
-+------------+--------------------+----------+-------------------+----------+
-| HR-030     | HR Coordinator     | 14       | 6/15-6/29         | Pending  |
-+------------+--------------------+----------+-------------------+----------+
-
-/Security/Cybersecurity/decrypt.sh:
-
-<executable>
-
-/Security/Security_Surveillance/Archive:
-
-BATCH FILE DIRECTORY   [009]  [  +  ]  [  -  ] 
-BATCH FILE START           [6370] [  +  ]  [  -  ] 
-BATCH FILE END               [6405] [  +  ]  [  -  ] 
-===================================
-
-
-/Security/Security_Surveillance/Surveillance_Footage_Archive0096370:
-
-[CLEARANCE REQUIRED]
-
-/Security/Security_Surveillance/Surveillance_Footage_Archive0096371:
-
-[CLEARANCE REQUIRED]
-
-/Security/Security_Surveillance/Surveillance_Footage_Archive0096372:
-
-[CLEARANCE REQUIRED]
-
-/Security/Security_Surveillance/Surveillance_Footage_Archive0096373:
-
-[CLEARANCE REQUIRED]
-
-/Security/Security_Surveillance/Surveillance_Footage_Archive0096374:
-
-[CLEARANCE REQUIRED]
-
-/Security/Security_Surveillance/Surveillance_Footage_Archive0096375:
-
-[CLEARANCE REQUIRED]
-
-/Security/Security_Surveillance/Surveillance_Footage_Archive0096376:
-
-[CLEARANCE REQUIRED]
-
-/Security/Security_Surveillance/Surveillance_Footage_Archive0096377:
-
-[CLEARANCE REQUIRED]
-
-/Security/Security_Surveillance/Surveillance_Footage_Archive0096378:
-
-[CLEARANCE REQUIRED]
-
-/Security/Security_Surveillance/Surveillance_Footage_Archive0096379:
-
-[CLEARANCE REQUIRED]
-
-/Security/Security_Surveillance/Surveillance_Footage_Archive0096380:
-
-[CLEARANCE REQUIRED]
-
-/Security/Security_Surveillance/Surveillance_Footage_Archive0096381:
-
-[CLEARANCE REQUIRED]
-
-/Security/Security_Surveillance/Surveillance_Footage_Archive0096382:
-
-[CLEARANCE REQUIRED]
-
-/Security/Security_Surveillance/Surveillance_Footage_Archive0096383:
-
-[CLEARANCE REQUIRED]
-
-/Security/Security_Surveillance/Surveillance_Footage_Archive0096384:
-
-[CLEARANCE REQUIRED]
-
-/Security/Security_Surveillance/Surveillance_Footage_Archive0096385:
-
-[CLEARANCE REQUIRED]
-
-/Security/Security_Surveillance/Surveillance_Footage_Archive0096386:
-
-[CLEARANCE REQUIRED]
-
-/Security/Security_Surveillance/Surveillance_Footage_Archive0096387:
-
-[CLEARANCE REQUIRED]
-
-/Security/Security_Surveillance/Surveillance_Footage_Archive0096388:
-
-[CLEARANCE REQUIRED]
-
-/Security/Security_Surveillance/Surveillance_Footage_Archive0096389:
-
-[CLEARANCE REQUIRED]
-
-/Security/Security_Surveillance/Surveillance_Footage_Archive0096390:
-
-[CLEARANCE REQUIRED]
-
-/Security/Security_Surveillance/Surveillance_Footage_Archive0096391:
-
-[CLEARANCE REQUIRED]
-
-/Security/Security_Surveillance/Surveillance_Footage_Archive0096392:
-
-[CLEARANCE REQUIRED]
-
-/Security/Security_Surveillance/Surveillance_Footage_Archive0096393:
-
-[CLEARANCE REQUIRED]
-
-/Security/Security_Surveillance/Surveillance_Footage_Archive0096394:
-
-[CLEARANCE REQUIRED]
-
-/Security/Security_Surveillance/Surveillance_Footage_Archive0096395:
-
-[CLEARANCE REQUIRED]
-
-/Security/Security_Surveillance/Surveillance_Footage_Archive0096396:
-
-[CLEARANCE REQUIRED]
-
-/Security/Security_Surveillance/Surveillance_Footage_Archive0096397:
-
-[CLEARANCE REQUIRED]
-
-/Security/Security_Surveillance/Surveillance_Footage_Archive0096398:
-
-[CLEARANCE REQUIRED]
-
-/Security/Security_Surveillance/Surveillance_Footage_Archive0096399:
-
-[CLEARANCE REQUIRED]
-
-/Security/Security_Surveillance/Surveillance_Footage_Archive0096400:
-
-[CLEARANCE REQUIRED]
-
-/Security/Security_Surveillance/Surveillance_Footage_Archive0096401:
-
-[CLEARANCE REQUIRED]
-
-/Security/Security_Surveillance/Surveillance_Footage_Archive0096401:
-
-[CLEARANCE REQUIRED]
-
-/Security/Security_Surveillance/Surveillance_Footage_Archive0096403:
-
-[CLEARANCE REQUIRED]
-
-/Security/Security_Surveillance/Surveillance_Footage_Archive0096404:
-
-[CLEARANCE REQUIRED]
-
-/Security/Security_Surveillance/Surveillance_Footage_Archive0096405:
-
-[CLEARANCE REQUIRED]
-
 /System_Configurations/Network_Settings/Network_Settings.cfg:
 
 Prepared by: IT Infrastructure Team, UESC HQ
@@ -2072,51 +2117,6 @@ Password: Log in with your usual UESC credentials.
 GUEST PASSWORD:  CLEARANCE REQUIRED
 For troubleshooting reach out to local SI assisted Help Desk
 
-
-/Terraforming/IV/Astromining/R&D-Project_NEO/Project_Neo_Titanium.txt:
-
-Executive Summary:
-Project Neo Titanium explores the potential for advanced material synthesis. This document explores the methods of resource collection and refinement, highlights applications in infrastructure development, and presents preliminary test results confirming feasibility for post-industrial use. This study was conducted in partnership with Traxus Mining. Ref. 09544-O. 
-Current status: [Clearance Required]
-
-Title: Project Neo Titanium: Advanced Material Synthesis of Intrasolar Mineral Resources
-Introduction: The goal of Project Titanium is to assess the potential for the molecular recombination of varied mineral resources for use in the development of new-gen, patentable materials. These materials aim to advance the high-performance demands of modern planetary and post-planetary infrastructural design and engineering needs across all known and any new, emerging sectors.
-
-Section 1: Resource Identification and Collection
-Subsection 1.1: Mineral Identification.
-Catalog of key mineral types found in targeted extractions.
-Subsection 1.2: Collection Techniques.
-Description of cutting-edge, eco-friendly mineral gathering methods.
-
-Section 2: Refinement Processes
-Subsection 2.1: Initial Testing
-Detailed examination of initial refinement processes used to isolate and purify mineral elements.
-Subsection 2.2: Process Optimization
-Techniques implemented to improve efficiency and yield in the refinement process.
-
-Section 3: Material Synthesis
-Subsection 3.1: Synthesis Techniques
-Exploration of synthesis methods converting refined materials into high-strength composites.
-Subsection 3.2: Properties and Applications
-Study of mechanical, thermal, and chemical properties of synthesized materials.
-
-Section 4: Preliminary Results and Analysis
-Subsection 4.1: Test Outcomes
-Summary of material performance under stress tests and durability evaluations.
-Subsection 4.2: Feasibility Study
-Assessment of long-term viability and projected supply chain requirements.
-
-Conclusion:
-Preliminary findings demonstrate significant promise in utilizing new sciences and engineering techniques to manipulate mineral deposits in groundbreaking explorations into material synthesis. Further research is recommended to fully realize potential applications and integrate these materials into production pipelines.
-
-
-/Terraforming/IV/Exoatmospherics/Environmental_Data/biodome_soil_analysis.log:
-
-[REDACTED]
-
-/Terraforming/IV/Exoatmospherics/Environmental_Data/habitat_climate_stats.log:
-
-[REDACTED]
 
 /UESC_Departments/Colonial_Affairs.file:
 
@@ -2235,7 +2235,7 @@ Preliminary findings demonstrate significant promise in utilizing new sciences a
 - [CLEARANCE REQUIRED]
 
 
-/User_Notes_Batch/Notes_Batch_01.txt:
+/User_Notes_[Batch]/Notes_Batch_01.txt:
 
 "Check the static in the relay. We've been getting irregularities."
 
@@ -2248,7 +2248,7 @@ Preliminary findings demonstrate significant promise in utilizing new sciences a
 "Supplies running low in the cafeteria, request resupply."
 
 
-/User_Notes_Batch/Notes_Batch_02.txt:
+/User_Notes_[Batch]/Notes_Batch_02.txt:
 
 "Found strange readings near the northeastern ridge."
 
@@ -2269,7 +2269,7 @@ Preliminary findings demonstrate significant promise in utilizing new sciences a
 "Curious symbols found in the data logs. Investigate."
 
 
-/User_Notes_Batch/Notes_Batch_03.txt:
+/User_Notes_[Batch]/Notes_Batch_03.txt:
 
 "Keep a backup copy of all external transmissions."
 
@@ -2292,7 +2292,7 @@ Preliminary findings demonstrate significant promise in utilizing new sciences a
 "Map updates frequently; check for terrain shifts."
 
 
-/User_Notes_Batch/Notes_Batch_04.txt:
+/User_Notes_[Batch]/Notes_Batch_04.txt:
 
 "Found an unauthorized drone in storage chamber B."
 
@@ -2319,7 +2319,7 @@ Preliminary findings demonstrate significant promise in utilizing new sciences a
 "Ensure cartographic overlays are shared with the surveillance units."
 
 
-/User_Notes_Batch/Notes_Batch_05.txt:
+/User_Notes_[Batch]/Notes_Batch_05.txt:
 
 "New guidelines as per protocol dictate updated logs."
 
