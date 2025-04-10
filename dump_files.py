@@ -31,9 +31,8 @@ def traverseFilesystem(data, callback=printFilename, currentName = "", currentPa
     nodes = sorted(nodes, key=lambda file: file['name'])
     for node in nodes:
         newName = f"{currentName}/{node['name']}"
-        print(newName)
-        files = sorted(node['files'], key=lambda file: file['fileName'])
-        for file in files:
+        # print(newName)
+        for file in node['files']:
             callback(newName, file)
         traverseFilesystem(data, callback, newName, node['id'], currentIndent + '-')
 
@@ -56,20 +55,26 @@ def dumpFilesystem(out_dir, data):
     traverseFilesystem(data, writeFile)
 
 def dumpFilesFlat(out_dir, data):
+    files = []
+    def recordFile(path, file):
+        fname = f"{path}/{file['fileName']}"
+        if file['data']:
+            files.append(FileTuple(fname, file['data']))
+        elif file['executableType']:
+            files.append(FileTuple(fname, "<executable>"))
+        else:
+            files.append(FileTuple(fname, "<empty>"))
+
+    traverseFilesystem(data, recordFile)
+
+    files = sorted(files, key=lambda file: file.name.lower())
+
     fname = os.path.join(os.path.normpath(out_dir), "flat.txt")
     print(f"Dumping file contents to {fname}")
     with open(fname, "w") as out_file:
-        def writeFile(path, file):
-            fname = f"{path}/{file['fileName']}"
-            if file['data']:
-                out_file.write(f"{fname}:\n\n{file['data']}\n\n")
-            elif file['executableType']:
-                out_file.write(f"{fname}:\n\n<executable>\n\n")
-            else:
-                out_file.write(f"{fname}:\n\n<empty>\n\n")
+      for file in files:
+            out_file.write(f"{file.name}:\n\n{file.data}\n\n")
 
-        traverseFilesystem(data, writeFile)
-        
 def dumpExecutableFiles(data):
     files = []
     for dir in data:
@@ -85,20 +90,39 @@ def dumpExecutableFiles(data):
     for file in files:
         print(f"{file.name}: {file.data}")
 
-def dumpBrokenFiles(data):
+def findSusFiles(out_dir, data):
     files = []
-    for dir in data:
-        path = dir['breadcrumbs'][-1]['url']
-        for file in dir['files']:
-            fname = os.path.join(path,file['fileName'])
-            if ' ' in fname:
-                files.append(FileTuple(fname, None))
+    def recordFile(path, file):
+        fname = f"{path}/{file['fileName']}"
+        if file['data']:
+            files.append(FileTuple(fname, file['data']))
+        elif file['executableType']:
+            files.append(FileTuple(fname, "<executable>"))
+        else:
+            files.append(FileTuple(fname, "<empty>"))
 
+    traverseFilesystem(data, recordFile)
     files = sorted(files, key=lambda file: file.name)
+    whitespace = [x for x in files if ' ' in x.name]
+    duplicates = []
+    filenames = [x.name for x in files]        
+    duplicates = [x for x in files if filenames.count(x.name) > 1]
+    if len(whitespace) > 0:
+        fname = os.path.join(os.path.normpath(out_dir), "whitespace.txt")
+        print(f"Found files with whitespace:")
+        with open(fname, "w") as out_file:
+            for file in whitespace:
+                print(f"'{file.name}'")
+                out_file.write(f"{file.name}:\n\n{file.data}\n\n")
 
-    print(f"Found files with whitespace:")
-    for file in files:
-        print(f"'{file.name}'")
+    if len(duplicates) > 0:
+        fname = os.path.join(os.path.normpath(out_dir), "collisions.txt")
+        print(f"Found filename collisions:")
+        with open(fname, "w") as out_file:
+            for file in duplicates:
+                print(f"'{file.name}'")
+                out_file.write(f"{file.name}:\n\n{file.data}\n\n")
+
 
 def dumpConfig(out_dir, config):
     odir = os.path.normpath(out_dir)
@@ -133,8 +157,10 @@ data = util.flattenJson(FOLDERS_JSON)
 
 dumpFilesystem(OUT_DIR, data)
 dumpFilesFlat(OUT_DIR, data)
+findSusFiles(OUT_DIR, data)
 dumpExecutableFiles(data)
-dumpBrokenFiles(data)
+
+# traverseFilesystem(data)
 
 config = util.openJson(TERMINAL_JSON)
 dumpConfig(OUT_TERM, config)

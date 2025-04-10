@@ -1,0 +1,19 @@
+/Legislation/Security/Counter-Intelligence/Internal_Affairs/Astralis. N.file:
+
+[CLEARANCE REQUIRED]
+
+/Legislation/Security/Counter-Intelligence/Internal_Affairs/Dubois.V.file :
+
+[CLEARANCE REQUIRED]
+
+/Legislation/Security/Counter-Intelligence/Internal_Affairs/Ibrahim.O.file :
+
+[CLEARANCE REQUIRED]
+
+/UESC_Departments/Human Resources_&_Personnel.file:
+
+- Recruitment and training
+- Psychological support and welfare
+- [CLEARANCE REQUIRED]
+
+
