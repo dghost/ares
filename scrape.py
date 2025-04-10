@@ -13,7 +13,6 @@ API_ENDPOINT = "/api/media/file/"
 TRAXUS_DIR = "./traxus.global/"
 NAV_JSON = "json/traxus-nav.json"
 CONFIG_JSON = "json/traxus-config.json"
-
 GOLIATH_JSON = "json/goliath-media.json"
 GOLIATH_OUT = "./goliath/"
 

@@ -3,6 +3,7 @@
 import os
 import shutil
 import collections
+from collections.abc import MutableMapping,Iterable
 import util
 
 FileTuple = collections.namedtuple('FileTuple', ['name', 'data'])
@@ -10,7 +11,9 @@ FileTuple = collections.namedtuple('FileTuple', ['name', 'data'])
 BASE_URL = "https://uesc.io"
 API_ENDPOINT = "/api/folders"
 OUT_DIR = "./uesc.io/"
+OUT_TERM = "./uesc-terminal/"
 FOLDERS_JSON = "json/uesc-folders.json"
+TERMINAL_JSON = "json/uesc-terminal.json"
 
 def dumpFilesystem(out_dir, data):
     # dump the filesystem path, ish. there's two directories where the breadcrumbs don't match the labels.
@@ -82,6 +85,26 @@ def dumpBrokenFiles(data):
     for file in files:
         print(f"'{file.name}'")
 
+def dumpConfig(out_dir, config):
+    odir = os.path.normpath(out_dir)
+    try:
+        shutil.rmtree(odir)
+    except:
+        pass
+    os.mkdir(odir)
+
+    for key, value in config.items():
+        items = []
+        if isinstance(value, MutableMapping):
+            items.append(value['text'])
+        elif isinstance(value, Iterable):
+            items.extend([x['text'] for x in value if 'text' in x])
+        fname = os.path.join(odir, key)
+        with open(fname, "w") as out_file:
+            for item in items:
+                out_file.write(f"{item}\n")
+
+
 # clean the existing output
 try:
     shutil.rmtree(OUT_DIR)
@@ -90,9 +113,13 @@ except:
 os.mkdir(OUT_DIR)
 
 # util.buildJsonMultipage(FOLDERS_JSON, BASE_URL, API_ENDPOINT)
+# util.buildJson(TERMINAL_JSON, BASE_URL, "/api/terminal-config")
 data = util.flattenJson(FOLDERS_JSON)
 
 dumpFilesystem(OUT_DIR, data)
 dumpFilesFlat(OUT_DIR, data)
 dumpExecutableFiles(data)
 dumpBrokenFiles(data)
+
+config = util.openJson(TERMINAL_JSON)
+dumpConfig(OUT_TERM, config)
