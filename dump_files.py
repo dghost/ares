@@ -160,8 +160,8 @@ except:
     pass
 os.mkdir(OUT_DIR)
 
-# util.buildJsonMultipage(FOLDERS_JSON, BASE_URL, API_ENDPOINT)
-# util.buildJson(TERMINAL_JSON, BASE_URL, "/api/terminal-config")
+util.buildJsonMultipage(FOLDERS_JSON, BASE_URL, API_ENDPOINT)
+util.buildJson(TERMINAL_JSON, BASE_URL, "/api/terminal-config")
 data = util.flattenJson(FOLDERS_JSON)
 
 dumpFilesystem(OUT_DIR, data)

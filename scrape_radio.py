@@ -4,6 +4,7 @@ import urllib.request
 
 import os
 import shutil
+import m3u8
 
 
 def scrapRadio(out_dir):
@@ -19,6 +20,15 @@ def scrapRadio(out_dir):
             pass
         try:
             urllib.request.urlretrieve(url, filename=path)
+            with open(path) as file_name:
+                manifest = m3u8.loads(file_name.read())
+                print(f"Fetching {len(manifest.files)} files")
+                for file in manifest.files:
+                    furl = f"https://goliath-radio-server-700331821540.us-east4.run.app/{i}/{file}"
+                    fout = os.path.join(odir, os.path.normpath(f"{i}/{file}"))
+                    urllib.request.urlretrieve(furl, filename=fout)
+                    print('.', end="")
+                print('')
         except:
             try:
                 shutil.rmtree(os.path.dirname(path))
