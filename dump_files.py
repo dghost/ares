@@ -15,10 +15,11 @@ OUT_TERM = "./uesc-terminal/"
 FOLDERS_JSON = "json/uesc-folders.json"
 TERMINAL_JSON = "json/uesc-terminal.json"
 
-def printFilename(path, node):
+def printFilename(paths, node):
+    path = f"/{'/'.join(paths)}"
     print(f"{path}/{node['fileName']}")
 
-def traverseFilesystem(data, callback=printFilename, currentName = "", currentParent = None, currentIndent = ''):
+def traverseFilesystem(data, callback=printFilename, path = [], currentParent = None):
     nodes = []
     for x in data:
         if currentParent is None:
@@ -30,33 +31,40 @@ def traverseFilesystem(data, callback=printFilename, currentName = "", currentPa
                     nodes.append(x)
     nodes = sorted(nodes, key=lambda file: file['name'])
     for node in nodes:
-        newName = f"{currentName}/{node['name']}"
+        newPath = path + [node['name']]
+        # print(path, newPath)
+        newName = f"/{'/'.join(newPath)}"
         # print(newName)
         for file in node['files']:
-            callback(newName, file)
-        traverseFilesystem(data, callback, newName, node['id'], currentIndent + '-')
+            callback(newPath, file)
+        traverseFilesystem(data, callback, newPath, node['id'])
 
 def dumpFilesystem(out_dir, data):
     # dump the filesystem path, ish. there's two directories where the breadcrumbs don't match the labels.
     print(f"Dumping filesystem to {out_dir}")
-    def writeFile(path, file):
+    def writeFile(paths, file):
+        path = f"/{'/'.join(paths)}"
         ldir = os.path.join(os.path.normpath(out_dir), os.path.normpath(f"./{path}"))
         try:
             os.makedirs(ldir)
         except:
             pass
         fname = os.path.join(ldir, file['fileName'])
-        with open(fname, "w") as out_file:
-            if file['data']:
-                out_file.write(file['data'])
-            elif file['executableType']:
-                out_file.write("<executable>")
+        if not os.path.exists(fname):
+            with open(fname, "w") as out_file:
+                if file['data']:
+                    out_file.write(file['data'])
+                elif file['executableType']:
+                    out_file.write("<executable>")
+        else:
+            print(f"Skipping duplicate file {fname}")
 
     traverseFilesystem(data, writeFile)
 
 def dumpFilesFlat(out_dir, data):
     files = []
-    def recordFile(path, file):
+    def recordFile(paths, file):
+        path = f"/{'/'.join(paths)}"
         fname = f"{path}/{file['fileName']}"
         if file['data']:
             files.append(FileTuple(fname, file['data']))
@@ -77,13 +85,13 @@ def dumpFilesFlat(out_dir, data):
 
 def dumpExecutableFiles(data):
     files = []
-    for dir in data:
-        path = dir['breadcrumbs'][-1]['url']
-        for file in dir['files']:
-            fname = os.path.join(path,file['fileName'])
-            if file['executableType']:
-                files.append(FileTuple(fname, file['executableType']))
+    def findExecutable(paths, file):
+        path = f"/{'/'.join(paths)}"
+        fname = f"{path}/{file['fileName']}"
+        if file['executableType']:
+            files.append(FileTuple(fname, file['executableType']))
 
+    traverseFilesystem(data, findExecutable)
     files = sorted(files, key=lambda file: file.name)
 
     print(f"Found executables:")
@@ -92,7 +100,8 @@ def dumpExecutableFiles(data):
 
 def findSusFiles(out_dir, data):
     files = []
-    def recordFile(path, file):
+    def recordFile(paths, file):
+        path = f"/{'/'.join(paths)}"
         fname = f"{path}/{file['fileName']}"
         if file['data']:
             files.append(FileTuple(fname, file['data']))
