@@ -18,6 +18,7 @@ BASE_URL = "https://unityispower.io"
 OUT_DIR = "./unityispower.io/"
 ROUTES_JSON = "json/unity-routes.json"
 PAYLOADS_JSON = "json/unity-payloads.json"
+ASSETS_JSON = "json/unity-assets.json"
 
 # Initial route table (hardcoded in launcher JS)
 INITIAL_ROUTES = {
@@ -208,14 +209,6 @@ def download(url, path):
         print(f"  Skipping {path} (exists)")
 
 
-def scrape_static_assets(out_dir):
-    """Download all known static /a/ assets."""
-    print("Downloading static assets...")
-    for asset in STATIC_ASSETS:
-        path = os.path.join(os.path.normpath(out_dir), os.path.normpath(asset.lstrip("/")))
-        download(f"{BASE_URL}{asset}", path)
-
-
 def scrape_launcher_assets(out_dir):
     """Download launcher JS/CSS bundles."""
     print("Downloading launcher assets...")
@@ -224,13 +217,58 @@ def scrape_launcher_assets(out_dir):
         download(f"{BASE_URL}{asset}", path)
 
 
+def sync_assets(out_dir, all_asset_urls, downloaded_map):
+    """Download remaining assets not already fetched by structured dumps.
+
+    Args:
+        all_asset_urls: set of all known /a/ asset paths
+        downloaded_map: dict of {asset_path: local_dest} for files already
+                        downloaded by structured dumps (crossword, media)
+
+    Loads the existing manifest, merges in all known URLs with their local
+    destinations, downloads anything not yet on disk to a/, and saves the
+    updated manifest.
+    """
+    # Load existing manifest: {asset_path: local_path}
+    manifest = {}
+    if os.path.exists(ASSETS_JSON):
+        with open(ASSETS_JSON, "r") as f:
+            manifest = json.load(f)
+
+    # Merge in structured downloads
+    manifest.update(downloaded_map)
+
+    # Add any remaining URLs with default a/ destination
+    for url in all_asset_urls:
+        if url not in manifest:
+            manifest[url] = url.lstrip("/")
+
+    # Download anything not yet on disk
+    fetched = 0
+    for asset_path, local_rel in sorted(manifest.items()):
+        local = os.path.join(os.path.normpath(out_dir), os.path.normpath(local_rel))
+        if not os.path.exists(local):
+            download(f"{BASE_URL}{asset_path}", local)
+            fetched += 1
+
+    if fetched:
+        print(f"  Downloaded {fetched} new assets")
+    else:
+        print(f"  All {len(manifest)} assets already on disk")
+
+    # Save updated manifest
+    with open(ASSETS_JSON, "w") as f:
+        json.dump(manifest, f, indent=2, sort_keys=True)
+    print(f"Saved asset manifest to {ASSETS_JSON} ({len(manifest)} assets)")
+
+
 def scrape_and_decrypt(codes, out_dir):
     """Download .bin files, decrypt with known codes, discover new routes recursively."""
     all_routes = dict(INITIAL_ROUTES)
     code_map = {}  # hash -> code
     pending_codes = list(codes)
     processed_codes = set()
-    discovered_assets = set()
+    discovered_asset_urls = set()
     all_texts = {}  # code -> list of decoded text strings
     all_payloads = {}  # code -> raw decrypted payload (for archival)
 
@@ -306,10 +344,7 @@ def scrape_and_decrypt(codes, out_dir):
         # Discover assets and text from decrypted JS
         if payload.get("js"):
             new_assets = extract_assets_from_js(payload["js"])
-            for asset in sorted(new_assets):
-                if asset not in discovered_assets:
-                    print(f"  Discovered asset: {asset}")
-                    discovered_assets.add(asset)
+            discovered_asset_urls |= new_assets
 
             texts = extract_text_from_js(payload["js"])
             if texts:
@@ -338,13 +373,6 @@ def scrape_and_decrypt(codes, out_dir):
         local_bin = os.path.join(os.path.normpath(out_dir), os.path.normpath(bin_path.lstrip("/")))
         download(f"{BASE_URL}{bin_path}", local_bin)
 
-    # Download assets discovered from decrypted payloads
-    if discovered_assets:
-        print("Downloading assets discovered from decrypted payloads...")
-        for asset in sorted(discovered_assets):
-            path = os.path.join(os.path.normpath(out_dir), os.path.normpath(asset.lstrip("/")))
-            download(f"{BASE_URL}{asset}", path)
-
     # Extract text from launcher JS files too
     for asset in LAUNCHER_ASSETS:
         if not asset.endswith(".js"):
@@ -359,7 +387,7 @@ def scrape_and_decrypt(codes, out_dir):
                 all_texts[label] = texts
                 print(f"  Extracted {len(texts)} text strings from {label}")
 
-    return all_routes, code_map, all_texts, all_payloads
+    return all_routes, code_map, all_texts, all_payloads, discovered_asset_urls
 
 
 def dump_extracted_text(out_dir, all_texts):
@@ -1269,20 +1297,21 @@ def dump_terminal_data(out_dir, terminal_data):
     print(f"  Terminal data -> {term_dir}/ ({count} files + terminal.json)")
 
 
-def _copy_asset(out_dir, asset_path, dest_path):
-    """Copy a local asset file to a destination path, downloading first if needed."""
-    local_src = os.path.join(os.path.normpath(out_dir), asset_path.lstrip("/"))
-    if not os.path.exists(local_src):
-        download(f"{BASE_URL}{asset_path}", local_src)
-    if os.path.exists(local_src):
-        os.makedirs(os.path.dirname(dest_path), exist_ok=True)
-        shutil.copy2(local_src, dest_path)
-        return True
-    return False
+def _download_asset(asset_path, dest_path):
+    """Download an asset to a named destination path.
+
+    Returns (asset_path, dest_rel) for the manifest, or None on failure.
+    """
+    url = f"{BASE_URL}{asset_path}"
+    os.makedirs(os.path.dirname(dest_path), exist_ok=True)
+    if not os.path.exists(dest_path):
+        print(f"  Fetching {url}...")
+        urllib.request.urlretrieve(url, filename=dest_path)
+    return os.path.exists(dest_path)
 
 
-def dump_crossword_data(out_dir, xword_data):
-    """Write crossword data as flat files — one per clue with answer and image URL."""
+def dump_crossword_data(out_dir, xword_data, downloaded):
+    """Write crossword data as flat files — one per clue with answer and image."""
     xword_dir = os.path.join(os.path.normpath(out_dir), "crossword")
     clues_dir = os.path.join(xword_dir, "clues")
     os.makedirs(clues_dir, exist_ok=True)
@@ -1304,18 +1333,19 @@ def dump_crossword_data(out_dir, xword_data):
                 f.write(f"position: row {clue['row']}, col {clue['col']}\n")
                 if clue.get("clueUrl"):
                     f.write(f"clue-image: {clue['clueUrl']}\n")
-            # Copy clue image alongside
             if clue.get("clueUrl"):
                 ext = os.path.splitext(clue["clueUrl"])[1]
-                img_dest = os.path.join(clues_dir, f"{num:02d}{tag}-{answer}_clue{ext}")
-                _copy_asset(out_dir, clue["clueUrl"], img_dest)
+                dest_rel = os.path.join("crossword", "clues", f"{num:02d}{tag}-{answer}_clue{ext}")
+                dest = os.path.join(os.path.normpath(out_dir), dest_rel)
+                _download_asset(clue["clueUrl"], dest)
+                downloaded[clue["clueUrl"]] = dest_rel
             total += 1
 
     print(f"  Crossword -> {xword_dir}/ ({total} clue files + crossword.json)")
 
 
-def dump_media_gallery(out_dir, gallery):
-    """Write media gallery as flat files — one per entry mapping title to asset URLs."""
+def dump_media_gallery(out_dir, gallery, downloaded):
+    """Write media gallery as flat files — one per entry with named assets."""
     media_dir = os.path.join(os.path.normpath(out_dir), "media")
     os.makedirs(media_dir, exist_ok=True)
 
@@ -1337,15 +1367,18 @@ def dump_media_gallery(out_dir, gallery):
             if entry.get("full"):
                 f.write(f"full: {entry['full']}\n")
 
-        # Copy thumbnail and full-size assets alongside
         if entry.get("thumb"):
             ext = os.path.splitext(entry["thumb"])[1]
-            _copy_asset(out_dir, entry["thumb"],
-                        os.path.join(media_dir, f"{safe_title}_thumb{ext}"))
+            dest_rel = os.path.join("media", f"{safe_title}_thumb{ext}")
+            dest = os.path.join(os.path.normpath(out_dir), dest_rel)
+            _download_asset(entry["thumb"], dest)
+            downloaded[entry["thumb"]] = dest_rel
         if entry.get("full"):
             ext = os.path.splitext(entry["full"])[1]
-            _copy_asset(out_dir, entry["full"],
-                        os.path.join(media_dir, f"{safe_title}{ext}"))
+            dest_rel = os.path.join("media", f"{safe_title}{ext}")
+            dest = os.path.join(os.path.normpath(out_dir), dest_rel)
+            _download_asset(entry["full"], dest)
+            downloaded[entry["full"]] = dest_rel
 
     print(f"  Media gallery -> {media_dir}/ ({len(gallery)} entries + media-gallery.json)")
 
@@ -1381,8 +1414,14 @@ def dump_fabricate_data(out_dir, fab_data):
 
 
 def extract_module_data(out_dir):
-    """Extract structured data from all decrypted modules and save to folders."""
+    """Extract structured data from all decrypted modules and save to folders.
+
+    Structured dumps (crossword, media) download their assets directly with
+    readable names. Returns a dict mapping asset_path -> local_rel for all
+    assets already downloaded, so sync_assets can skip them.
+    """
     dec_dir = os.path.join(os.path.normpath(out_dir), "decrypted")
+    downloaded = {}  # asset_path -> local_rel_path
 
     # Terminal module (D5GY78C)
     terminal_path = os.path.join(dec_dir, "D5GY78C", "module.js")
@@ -1400,7 +1439,7 @@ def extract_module_data(out_dir):
             js = f.read()
         gallery = extract_media_gallery(js)
         if gallery:
-            dump_media_gallery(out_dir, gallery)
+            dump_media_gallery(out_dir, gallery, downloaded)
 
     # Crossword module (XWORD7K)
     xword_path = os.path.join(dec_dir, "XWORD7K", "module.js")
@@ -1409,7 +1448,7 @@ def extract_module_data(out_dir):
             js = f.read()
         xword = extract_crossword_data(js)
         if xword:
-            dump_crossword_data(out_dir, xword)
+            dump_crossword_data(out_dir, xword, downloaded)
 
     # Fabricate module (MTBFAB7)
     fab_path = os.path.join(dec_dir, "MTBFAB7", "module.js")
@@ -1419,6 +1458,8 @@ def extract_module_data(out_dir):
         fab = extract_fabricate_data(js)
         if fab:
             dump_fabricate_data(out_dir, fab)
+
+    return downloaded
 
 
 def save_route_manifest(all_routes, code_map):
@@ -1456,19 +1497,19 @@ if __name__ == "__main__":
     except:
         pass
 
-    scrape_static_assets(OUT_DIR)
     scrape_launcher_assets(OUT_DIR)
 
     print("Processing codes and encrypted payloads...")
-    all_routes, code_map, all_texts, all_payloads = scrape_and_decrypt(codes, OUT_DIR)
+    all_routes, code_map, all_texts, all_payloads, js_asset_urls = scrape_and_decrypt(codes, OUT_DIR)
     save_route_manifest(all_routes, code_map)
     save_payload_archive(all_payloads)
 
     print("Extracting decoded text content...")
     dump_extracted_text(OUT_DIR, all_texts)
 
+    # Extract structured module data — crossword/media download their own assets
     print("Extracting structured module data...")
-    extract_module_data(OUT_DIR)
+    downloaded = extract_module_data(OUT_DIR)
 
     # Extract terminal filesystem from D5GY78C module
     terminal_js_path = os.path.join(os.path.normpath(OUT_DIR), "decrypted", "D5GY78C", "module.js")
@@ -1484,5 +1525,10 @@ if __name__ == "__main__":
             generate_decoded_files(fs_tree, fs_dir)
         else:
             print("  Could not extract filesystem (structure not found)")
+
+    # Sync all /a/ assets — downloads anything not already fetched by structured dumps
+    all_asset_urls = set(STATIC_ASSETS) | js_asset_urls
+    print("Syncing assets...")
+    sync_assets(OUT_DIR, all_asset_urls, downloaded)
 
     print("Done.")
