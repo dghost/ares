@@ -6,7 +6,7 @@ import urllib.request
 def buildJsonMultipage(filename, base_url, api_endpoint):
     print(f"Fetching API root from: {base_url}{api_endpoint}")
     with urllib.request.urlopen(f"{base_url}{api_endpoint}") as response:
-        html = response.read()
+        html = response.read().decode('utf8')
         root = json.loads(html) 
 
     numDocs = root['totalDocs']
@@ -17,7 +17,7 @@ def buildJsonMultipage(filename, base_url, api_endpoint):
     for i in range (1, totalPages + 1):
         print('.', end='')
         with urllib.request.urlopen(f"{base_url}{api_endpoint}?page={i}") as response:
-            html = response.read()
+            html = response.read().decode('utf8')
             page = json.loads(html)
             pages[i] = page
     print('')
@@ -27,7 +27,7 @@ def buildJsonMultipage(filename, base_url, api_endpoint):
 def buildJson(filename, base_url, api_endpoint):
     print(f"Fetching API root from: {base_url}{api_endpoint}")
     with urllib.request.urlopen(f"{base_url}{api_endpoint}") as response:
-        html = response.read()
+        html = response.read().decode('utf8')
         root = json.loads(html)         
         with open(filename, "w") as out_file:
             out_file.write(json.dumps(root, indent=4))
