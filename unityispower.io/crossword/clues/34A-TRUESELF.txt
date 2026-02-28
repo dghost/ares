@@ -1,0 +1,4 @@
+answer: TRUESELF
+direction: across
+position: row 33, col 5
+clue-image: /a/a6aa78d5.jpg

@@ -1,0 +1,25 @@
+[unlocked by: xword_complete]
+
+From sigint@balam-hub  <timestamp>
+To: operator@balam-hub
+Subject: grid decode confirmed
+
+word grid integrity verified. signal decoded.
+
+[unlocked by: fab_clearance]
+
+From dispatch@balam-hub  <timestamp>
+To: operator@balam-hub
+Subject: re: clearance accepted
+
+fabrication verified. full clearance granted.
+media archive now accessible — type "media" to review.
+
+[unlocked by: full_clearance]
+
+From root@balam-hub  <timestamp>
+To: operator@balam-hub
+Subject: all signals decoded
+
+all intercepts confirmed. clearance level: maximum.
+

@@ -1,0 +1,4 @@
+answer: BRAIN
+direction: down
+position: row 17, col 11
+clue-image: /a/77ad62d7.jpg

@@ -1,0 +1,27 @@
+{
+  "signal_ids": [
+    "SIG-001",
+    "SIG-002",
+    "SIG-003",
+    "SIG-003a",
+    "SIG-004",
+    "SIG-005",
+    "SIG-006",
+    "SIG-007"
+  ],
+  "card_names": [
+    "MARCUS",
+    "TIBERIUS",
+    "BUENDIA"
+  ],
+  "game_state_defaults": {
+    "first_boot": "s0",
+    "irc_discovered": "s1",
+    "xword_complete": "s2",
+    "fab_name_known": "s3a",
+    "fab_clearance": "s3",
+    "slotz_complete": "s4",
+    "burger_found": "s5",
+    "full_clearance": "s6"
+  }
+}

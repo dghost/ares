@@ -1,0 +1,4 @@
+answer: AWAKE
+direction: across
+position: row 17, col 13
+clue-image: /a/5863535e.jpg

@@ -1,0 +1,4 @@
+answer: TRIALS
+direction: down
+position: row 4, col 23
+clue-image: /a/ab200121.jpg

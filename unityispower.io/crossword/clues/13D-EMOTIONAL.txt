@@ -1,0 +1,4 @@
+answer: EMOTIONAL
+direction: down
+position: row 14, col 7
+clue-image: /a/f510cc15.jpg

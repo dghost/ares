@@ -1,0 +1,4 @@
+answer: TRUTH
+direction: across
+position: row 31, col 23
+clue-image: /a/407b6d2e.jpg

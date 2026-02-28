@@ -1,0 +1,4 @@
+answer: DISINFECT
+direction: down
+position: row 21, col 20
+clue-image: /a/34e4cdd3.jpg

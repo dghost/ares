@@ -1,0 +1,4 @@
+answer: COMPLIANCE
+direction: across
+position: row 24, col 9
+clue-image: /a/5af9bd7a.jpg

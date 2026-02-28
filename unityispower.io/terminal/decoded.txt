@@ -1,0 +1,34 @@
+DECODED FILES INDEX
+===================
+
+Each file below has a "decoded." prefixed version alongside the original.
+The original files are preserved exactly as extracted from the terminal module JS.
+
+var/data/recovered/6bccdf29-d678-4ed5-ba92-61cf74c0a374.dat
+  Encoding: ROT-7 Caesar cipher
+  Decoding: Shifted alphabetic chars back by 7
+
+var/data/recovered/756706df-eb6d-4c37-885a-be32ab6287d2.dat
+  Encoding: Reversed text
+  Decoding: Reversed character sequence
+
+var/data/recovered/ca7bf847-4038-471f-9b14-f807cc3e1307.dat
+  Encoding: Corrupted plaintext
+  Decoding: Removed non-printable bytes, added [corrupted] markers
+
+var/data/recovered/a1c605d1-1214-4e87-b934-7f0219153400.dat
+  Encoding: Cleartext
+  Decoding: Added annotation note
+
+var/spool/msg/0801.log
+  Encoding: Corrupted chat log
+  Decoding: Cleaned 6 corruption zones
+
+var/spool/msg/0802.log
+  Encoding: Corrupted chat log
+  Decoding: Cleaned 43 corruption zones
+
+var/spool/msg/0803.log
+  Encoding: Corrupted chat log
+  Decoding: Cleaned 113 corruption zones
+

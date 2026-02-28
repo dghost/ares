@@ -1,0 +1,5 @@
+title: STEALTH EXPLORATION
+type: image
+credit: TK
+thumbnail: /a/f3588254.jpg
+full: /a/42a7023e.jpg

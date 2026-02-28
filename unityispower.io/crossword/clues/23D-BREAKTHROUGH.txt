@@ -1,0 +1,4 @@
+answer: BREAKTHROUGH
+direction: down
+position: row 22, col 18
+clue-image: /a/1903bae8.jpg

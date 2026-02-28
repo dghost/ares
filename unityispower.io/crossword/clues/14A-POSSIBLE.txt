@@ -1,0 +1,4 @@
+answer: POSSIBLE
+direction: across
+position: row 14, col 9
+clue-image: /a/144d9987.jpg

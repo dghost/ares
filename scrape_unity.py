@@ -17,6 +17,7 @@ import util
 BASE_URL = "https://unityispower.io"
 OUT_DIR = "./unityispower.io/"
 ROUTES_JSON = "json/unity-routes.json"
+PAYLOADS_JSON = "json/unity-payloads.json"
 
 # Initial route table (hardcoded in launcher JS)
 INITIAL_ROUTES = {
@@ -231,6 +232,7 @@ def scrape_and_decrypt(codes, out_dir):
     processed_codes = set()
     discovered_assets = set()
     all_texts = {}  # code -> list of decoded text strings
+    all_payloads = {}  # code -> raw decrypted payload (for archival)
 
     # Map provided codes to hashes
     for code in pending_codes:
@@ -287,6 +289,17 @@ def scrape_and_decrypt(codes, out_dir):
         if meta:
             with open(os.path.join(dec_dir, "meta.json"), "w") as f:
                 json.dump(meta, f, indent=4)
+
+        # Archive the raw payload (minus JS/CSS which are saved as files)
+        archived = {}
+        if payload.get("routes"):
+            archived["routes"] = payload["routes"]
+        if payload.get("keys"):
+            archived["keys"] = payload["keys"]
+        archived["bin"] = bin_path
+        archived["has_js"] = bool(payload.get("js"))
+        archived["has_css"] = bool(payload.get("css"))
+        all_payloads[code] = archived
 
         print(f"  Saved decrypted payload to {dec_dir}")
 
@@ -346,7 +359,7 @@ def scrape_and_decrypt(codes, out_dir):
                 all_texts[label] = texts
                 print(f"  Extracted {len(texts)} text strings from {label}")
 
-    return all_routes, code_map, all_texts
+    return all_routes, code_map, all_texts, all_payloads
 
 
 def dump_extracted_text(out_dir, all_texts):
@@ -621,18 +634,15 @@ def dump_terminal_filesystem(out_dir, fs_tree):
         return
 
     # Save JSON manifest
-    text_dir = os.path.join(os.path.normpath(out_dir), "extracted-text")
-    try:
-        os.makedirs(text_dir)
-    except:
-        pass
-    json_path = os.path.join(text_dir, "filesystem.json")
+    term_dir = os.path.join(os.path.normpath(out_dir), "terminal")
+    os.makedirs(term_dir, exist_ok=True)
+    json_path = os.path.join(term_dir, "filesystem.json")
     with open(json_path, "w") as f:
         json.dump(fs_tree, f, indent=2)
     print(f"  Filesystem JSON -> {json_path}")
 
     # Write individual files
-    fs_dir = os.path.join(os.path.normpath(out_dir), "terminal-fs")
+    fs_dir = os.path.join(os.path.normpath(out_dir), "terminal", "fs")
     file_count = 0
 
     def write_node(node, path):
@@ -661,6 +671,756 @@ def dump_terminal_filesystem(out_dir, fs_tree):
     print(f"  Wrote {file_count} files -> {fs_dir}/")
 
 
+def _rot_n(text, n):
+    """Apply ROT-N to alphabetic characters only."""
+    out = []
+    for c in text:
+        if 'A' <= c <= 'Z':
+            out.append(chr((ord(c) - ord('A') - n) % 26 + ord('A')))
+        elif 'a' <= c <= 'z':
+            out.append(chr((ord(c) - ord('a') - n) % 26 + ord('a')))
+        else:
+            out.append(c)
+    return ''.join(out)
+
+
+def _clean_corruption(text):
+    """Replace corrupted ptyz-artifact sections with [corrupted] markers."""
+    def char_score(c):
+        if c in '\n\r':
+            return 1
+        if not c.isprintable() and c != '\t':
+            return -2
+        if c.isalpha() or c.isdigit() or c in ' \t':
+            return 1
+        if c in '.,;:!?\'"-()[]':
+            return 0.5
+        if c in '@#$>─':
+            return 0.3
+        if c in '{}|~`^\\':
+            return -0.5
+        if ord(c) > 127:
+            return -1
+        return 0
+
+    window = 8
+    scores = [char_score(c) for c in text]
+
+    is_corrupt = [False] * len(text)
+    for i in range(len(text)):
+        start = max(0, i - window // 2)
+        end = min(len(text), i + window // 2 + 1)
+        avg = sum(scores[start:end]) / (end - start)
+        if avg < 0.3:
+            is_corrupt[i] = True
+
+    expanded = list(is_corrupt)
+    for i in range(len(text)):
+        if is_corrupt[i]:
+            for j in range(max(0, i - 2), min(len(text), i + 3)):
+                if scores[j] < 0.5:
+                    expanded[j] = True
+
+    out = []
+    i = 0
+    while i < len(text):
+        if not expanded[i]:
+            out.append(text[i])
+            i += 1
+        else:
+            j = i
+            while j < len(text) and expanded[j]:
+                j += 1
+            out.append('[corrupted]')
+            i = j
+
+    result = ''.join(out)
+    result = re.sub(r'\[corrupted\](.{1,3})\[corrupted\]', '[corrupted]', result)
+    while '[corrupted][corrupted]' in result:
+        result = result.replace('[corrupted][corrupted]', '[corrupted]')
+    return result
+
+
+def generate_decoded_files(fs_tree, fs_dir):
+    """Create decoded.* versions of encoded/corrupted filesystem files."""
+    if not fs_tree:
+        return
+
+    def get_node(path):
+        parts = path.strip('/').split('/')
+        node = fs_tree
+        for p in parts:
+            if isinstance(node, dict):
+                if node.get('type') == 'dir':
+                    node = node['children'].get(p)
+                elif p in node:
+                    node = node[p]
+                else:
+                    return None
+            else:
+                return None
+            if node is None:
+                return None
+        return node
+
+    decodings = []
+
+    # 1. ROT-7 cipher
+    node = get_node('var/data/recovered/6bccdf29-d678-4ed5-ba92-61cf74c0a374.dat')
+    if node and node.get('content'):
+        content = node['content']
+        lines = content.split('\n')
+        header, body = [], []
+        in_body = False
+        for line in lines:
+            (body if in_body else header).append(line)
+            if line.startswith('---'):
+                in_body = True
+        decoded_body = _rot_n('\n'.join(body), 7)
+        fixed = '\n'.join(header) + '\n' + decoded_body
+        fixed = fixed.replace('STATUS: encrypted / unresolved', 'STATUS: DECRYPTED (was ROT-7)')
+        path = os.path.join(fs_dir, 'var/data/recovered/decoded.6bccdf29-d678-4ed5-ba92-61cf74c0a374.dat')
+        os.makedirs(os.path.dirname(path), exist_ok=True)
+        with open(path, 'w') as f:
+            f.write(fixed)
+        decodings.append(('var/data/recovered/6bccdf29-d678-4ed5-ba92-61cf74c0a374.dat',
+                         'ROT-7 Caesar cipher', 'Shifted alphabetic chars back by 7'))
+
+    # 2. Reversed text
+    node = get_node('var/data/recovered/756706df-eb6d-4c37-885a-be32ab6287d2.dat')
+    if node and node.get('content'):
+        content = node['content']
+        lines = content.split('\n')
+        header, body = [], []
+        in_body = False
+        for line in lines:
+            (body if in_body else header).append(line)
+            if line.startswith('---'):
+                in_body = True
+        reversed_text = '\n'.join(body).strip()[::-1]
+        fixed_header = '\n'.join(header).replace(
+            'STATUS: encoding anomaly (reversed?)', 'STATUS: DECODED (was reversed text)')
+        fixed = fixed_header + '\n\n' + reversed_text + '\n'
+        path = os.path.join(fs_dir, 'var/data/recovered/decoded.756706df-eb6d-4c37-885a-be32ab6287d2.dat')
+        with open(path, 'w') as f:
+            f.write(fixed)
+        decodings.append(('var/data/recovered/756706df-eb6d-4c37-885a-be32ab6287d2.dat',
+                         'Reversed text', 'Reversed character sequence'))
+
+    # 3. Corrupted Leela text
+    node = get_node('var/data/recovered/ca7bf847-4038-471f-9b14-f807cc3e1307.dat')
+    if node and node.get('content'):
+        cleaned = _clean_corruption(node['content'])
+        cleaned = cleaned.replace('STATUS: partially corrupted',
+            'STATUS: CLEANED (non-printable bytes removed, corruption markers remain)')
+        path = os.path.join(fs_dir, 'var/data/recovered/decoded.ca7bf847-4038-471f-9b14-f807cc3e1307.dat')
+        with open(path, 'w') as f:
+            f.write(cleaned)
+        decodings.append(('var/data/recovered/ca7bf847-4038-471f-9b14-f807cc3e1307.dat',
+                         'Corrupted plaintext', 'Removed non-printable bytes, added [corrupted] markers'))
+
+    # 4. Cleartext with annotation
+    node = get_node('var/data/recovered/a1c605d1-1214-4e87-b934-7f0219153400.dat')
+    if node and node.get('content'):
+        fixed = node['content'].replace('STATUS: cleartext / anomalous origin',
+            'STATUS: cleartext / anomalous origin\n'
+            'NOTE: Bungie developer quote about finishing Marathon map geometry, Dec 14 1996')
+        path = os.path.join(fs_dir, 'var/data/recovered/decoded.a1c605d1-1214-4e87-b934-7f0219153400.dat')
+        with open(path, 'w') as f:
+            f.write(fixed)
+        decodings.append(('var/data/recovered/a1c605d1-1214-4e87-b934-7f0219153400.dat',
+                         'Cleartext', 'Added annotation note'))
+
+    # 5-7. Chat logs
+    for logfile in ['0801.log', '0802.log', '0803.log']:
+        node = get_node(f'var/spool/msg/{logfile}')
+        if node and node.get('content'):
+            cleaned = _clean_corruption(node['content'])
+            markers = cleaned.count('[corrupted]')
+            path = os.path.join(fs_dir, f'var/spool/msg/decoded.{logfile}')
+            with open(path, 'w') as f:
+                f.write(cleaned)
+            decodings.append((f'var/spool/msg/{logfile}',
+                             'Corrupted chat log', f'Cleaned {markers} corruption zones'))
+
+    # Write index file
+    if decodings:
+        index_path = os.path.join(os.path.dirname(fs_dir), 'decoded.txt')
+        with open(index_path, 'w') as f:
+            f.write('DECODED FILES INDEX\n')
+            f.write('===================\n\n')
+            f.write('Each file below has a "decoded." prefixed version alongside the original.\n')
+            f.write('The original files are preserved exactly as extracted from the terminal module JS.\n\n')
+            for orig_path, encoding, method in decodings:
+                f.write(f'{orig_path}\n')
+                f.write(f'  Encoding: {encoding}\n')
+                f.write(f'  Decoding: {method}\n\n')
+        print(f"  Generated {len(decodings)} decoded files + index -> {index_path}")
+
+
+def _find_array(js, var_pattern, search_start=0):
+    """Find a JS array by variable pattern and return its source string."""
+    m = re.search(var_pattern, js[search_start:])
+    if not m:
+        return None
+    abs_pos = search_start + m.start()
+    start = js.index('[', abs_pos)
+    depth = 0
+    in_str = None
+    i = start
+    while i < len(js) and i < start + 50000:
+        ch = js[i]
+        if in_str:
+            if ch == '\\':
+                i += 2
+                continue
+            if ch == in_str:
+                in_str = None
+        else:
+            if ch in ('"', "'"):
+                in_str = ch
+            elif ch == '[':
+                depth += 1
+            elif ch == ']':
+                depth -= 1
+                if depth == 0:
+                    break
+        i += 1
+    return js[start:i + 1]
+
+
+def _split_array_entries(arr_src):
+    """Split a JS array source into top-level entries."""
+    entries = []
+    d = 0
+    current = ''
+    in_s = None
+    for ch in arr_src[1:-1]:
+        if in_s:
+            current += ch
+            if ch == '\\':
+                continue
+            if ch == in_s:
+                in_s = None
+            continue
+        if ch in ('"', "'"):
+            in_s = ch
+            current += ch
+        elif ch in ('(', '[', '{'):
+            d += 1
+            current += ch
+        elif ch in (')', ']', '}'):
+            d -= 1
+            current += ch
+        elif ch == ',' and d == 0:
+            entries.append(current.strip())
+            current = ''
+        else:
+            current += ch
+    if current.strip():
+        entries.append(current.strip())
+    return entries
+
+
+def _decode_ptyz_field(raw_with_quotes):
+    """Decode a ptyz-encoded field value (with surrounding quotes)."""
+    raw = raw_with_quotes[1:-1]
+    return ptyz_decode(_unescape_js_string(raw))
+
+
+def extract_terminal_data(js_source):
+    """Extract structured data from the terminal module (D5GY78C).
+
+    Returns a dict with classified_ads, scan_output, ident_output, dmesg_lines,
+    and mail_messages.
+    """
+    nt = _decode_nt_table(js_source)
+    if not nt:
+        return None
+
+    data = {}
+
+    # Classified ads (dt array) — 16 in-universe black market listings
+    dt_src = _find_array(js_source, r'\bdt=\[', 244000)
+    if dt_src:
+        entries = _split_array_entries(dt_src)
+        data["classified_ads"] = [_resolve_nt_concat(e, nt) or e for e in entries]
+
+    # Scan output (ct) — static string
+    m = re.search(r'\bct=(nt\[\d+\](?:\+nt\[\d+\])*)', js_source[244000:])
+    if m:
+        data["scan_output"] = _resolve_nt_concat(m.group(1), nt)
+
+    # Ident output (ut) — static string
+    m = re.search(r'\but=(nt\[\d+\](?:\+nt\[\d+\])*)', js_source[244000:])
+    if m:
+        data["ident_output"] = _resolve_nt_concat(m.group(1), nt)
+
+    # Boot/dmesg lines (at array)
+    at_src = _find_array(js_source, r'\bat=\[', 244000)
+    if at_src:
+        entries = _split_array_entries(at_src)
+        data["dmesg_lines"] = [_resolve_nt_concat(e, nt) or e for e in entries]
+
+    # Mail messages — conditional o() calls gated by game state flags
+    mail_messages = []
+    mail_m = re.search(r'f\("xword_complete"\)&&\(o\(""\)', js_source)
+    if mail_m:
+        chunk = js_source[mail_m.start():mail_m.start() + 1000]
+        # Extract each conditional block
+        for flag_m in re.finditer(r'f\("(\w+)"\)&&\(', chunk):
+            flag = flag_m.group(1)
+            block_start = flag_m.end()
+            # Collect content until closing ))
+            block = chunk[block_start:]
+            # Find the paired ))
+            paren_depth = 1
+            end = 0
+            in_s = None
+            for ch in block:
+                if in_s:
+                    if ch == '\\':
+                        end += 1
+                        continue
+                    if ch == in_s:
+                        in_s = None
+                elif ch in ('"', "'"):
+                    in_s = ch
+                elif ch == '(':
+                    paren_depth += 1
+                elif ch == ')':
+                    paren_depth -= 1
+                    if paren_depth == 0:
+                        break
+                end += 1
+            block_src = block[:end]
+
+            # Extract the o() call contents in order
+            lines = []
+            o_pos = 0
+            while o_pos < len(block_src):
+                om = re.search(r'o\(', block_src[o_pos:])
+                if not om:
+                    break
+                arg_start = o_pos + om.end()
+                # Find matching ) handling nested parens and template literals
+                pd = 1
+                in_tpl = 0
+                in_s = None
+                j = arg_start
+                while j < len(block_src) and pd > 0:
+                    ch = block_src[j]
+                    if in_s:
+                        if ch == '\\':
+                            j += 1
+                        elif ch == in_s:
+                            in_s = None
+                    elif in_tpl > 0:
+                        if ch == '`':
+                            in_tpl -= 1
+                        elif ch == '\\':
+                            j += 1
+                    else:
+                        if ch == '`':
+                            in_tpl += 1
+                        elif ch in ('"', "'"):
+                            in_s = ch
+                        elif ch == '(':
+                            pd += 1
+                        elif ch == ')':
+                            pd -= 1
+                    j += 1
+                arg = block_src[arg_start:j - 1]
+                o_pos = j
+
+                if arg == '""' or arg == "''":
+                    lines.append('')
+                elif '`' in arg:
+                    tpl = arg[arg.index('`') + 1:]
+                    if tpl.endswith('`'):
+                        tpl = tpl[:-1]
+                    lines.append(re.sub(r'\$\{[^}]+\}', '<timestamp>', tpl))
+                elif arg.startswith(('t(', 'e(')):
+                    pm = re.search(r"""[te]\(("(?:[^"\\]|\\.)*"|'(?:[^'\\]|\\.)*')\)""", arg)
+                    if pm:
+                        try:
+                            lines.append(_decode_ptyz_field(pm.group(1)))
+                        except:
+                            lines.append(arg)
+                elif arg.startswith(('"', "'")):
+                    lines.append(arg[1:-1])
+                else:
+                    lines.append(arg)
+
+            mail_messages.append({
+                "condition": flag,
+                "lines": lines,
+            })
+    if mail_messages:
+        data["mail_messages"] = mail_messages
+
+    return data if data else None
+
+
+def extract_media_gallery(js_source):
+    """Extract the media gallery array from the media module (374468739BD7269A48).
+
+    Returns a list of {thumb, full, title, credit, type} dicts.
+    """
+    m = re.search(r'p=\[\{', js_source)
+    if not m:
+        return None
+
+    arr_src = _find_array(js_source, r'p=\[\{')
+    if not arr_src:
+        return None
+
+    obj_strs = re.split(r'\},\{', arr_src[2:-2])
+    entries = []
+    for obj_src in obj_strs:
+        entry = {}
+        for field in ['thumb', 'full', 'title', 'credit', 'type']:
+            # Encoded: field:e("...")/t("...")
+            pat = field + r""":([et])\(("(?:[^"\\]|\\.)*"|'(?:[^'\\]|\\.)*')\)"""
+            fm = re.search(pat, obj_src)
+            if fm:
+                try:
+                    entry[field] = _decode_ptyz_field(fm.group(2))
+                except:
+                    pass
+            else:
+                # Plaintext: field:"..."
+                fm = re.search(field + r':"([^"]*)"', obj_src)
+                if fm:
+                    entry[field] = fm.group(1)
+        entries.append(entry)
+
+    return entries if entries else None
+
+
+def extract_crossword_data(js_source):
+    """Extract crossword clues and answers from the crossword module (XWORD7K).
+
+    Returns {across: [...], down: [...]} with each entry having
+    num, row, col, answer, clueImage, clueUrl, imageAR.
+    """
+    def decode_clue_array(arr_src):
+        """Parse a crossword clue array and decode ptyz strings."""
+        def decode_inline(match):
+            raw = match.group(1)[1:-1]
+            try:
+                return json.dumps(ptyz_decode(_unescape_js_string(raw)))
+            except:
+                return match.group(0)
+        readable = re.sub(r"""[a-z]\(("(?:[^"\\]|\\.)*"|'(?:[^'\\]|\\.)*')\)""", decode_inline, arr_src)
+        # Parse as JSON (need to add quotes to keys)
+        jsonified = re.sub(r'(?<=[{,])(\w+):', r'"\1":', readable)
+        # Fix JS shorthand floats (.699 -> 0.699)
+        jsonified = re.sub(r':\.(\d)', r':0.\1', jsonified)
+        try:
+            return json.loads(jsonified)
+        except:
+            return None
+
+    # Across clues (C array)
+    c_src = _find_array(js_source, r'C=\[\{')
+    across = decode_clue_array(c_src) if c_src else None
+
+    # Down clues (D array, right after C)
+    if c_src:
+        c_end = js_source.index(c_src) + len(c_src)
+        d_src = _find_array(js_source, r'D=\[\{', c_end)
+        down = decode_clue_array(d_src) if d_src else None
+    else:
+        down = None
+
+    if across or down:
+        result = {}
+        if across:
+            result["across"] = across
+        if down:
+            result["down"] = down
+        return result
+    return None
+
+
+def extract_fabricate_data(js_source):
+    """Extract signal IDs, character names, and game state mappings from the
+    fabricate module (MTBFAB7).
+
+    Returns a dict with signal_ids, character_names, and game_state_defaults.
+    """
+    data = {}
+
+    # Signal IDs
+    sigs = set()
+    for m in re.finditer(r"""([et])\(("(?:[^"\\]|\\.)*"|'(?:[^'\\]|\\.)*')\)""", js_source):
+        raw = m.group(2)[1:-1]
+        try:
+            decoded = ptyz_decode(_unescape_js_string(raw))
+        except:
+            continue
+        if re.match(r'^SIG-\d{3}[a-z]?$', decoded):
+            sigs.add(decoded)
+    if sigs:
+        data["signal_ids"] = sorted(sigs)
+
+    # Character names from card rendering
+    names = []
+    name_m = re.search(r"""\{text:([et])\(("(?:[^"\\]|\\.)*"|'(?:[^'\\]|\\.)*')\)""", js_source[80000:])
+    if name_m:
+        # Look for the array of {text: ..., size: ..., y: ...} objects
+        chunk = js_source[80000 + name_m.start() - 10:80000 + name_m.start() + 500]
+        for nm in re.finditer(r"""text:([et])\(("(?:[^"\\]|\\.)*"|'(?:[^'\\]|\\.)*')\)""", chunk):
+            try:
+                names.append(_decode_ptyz_field(nm.group(2)))
+            except:
+                pass
+    if names:
+        data["card_names"] = names
+
+    # Game state defaults (pe object) — references ve[] indices
+    # First decode ve array
+    ve_decoded = []
+    ve_src = _find_array(js_source, r'\bvar ve=\[')
+    if ve_src:
+        ve_decoded = decode_all_ptyz_strings(ve_src)
+
+    # Find the pe={first_boot:ve[...], ...} object (not the actor pe={self:...})
+    for pe_m in re.finditer(r'pe=\{first_boot:', js_source):
+        brace_start = js_source.index('{', pe_m.start())
+        depth = 0
+        in_str = None
+        i = brace_start
+        while i < len(js_source) and i < brace_start + 500:
+            ch = js_source[i]
+            if in_str:
+                if ch == '\\':
+                    i += 2
+                    continue
+                if ch == in_str:
+                    in_str = None
+            else:
+                if ch in ('"', "'"):
+                    in_str = ch
+                elif ch == '{':
+                    depth += 1
+                elif ch == '}':
+                    depth -= 1
+                    if depth == 0:
+                        break
+            i += 1
+        pe_src = js_source[brace_start:i + 1]
+        defaults = {}
+        for kv in re.finditer(r'(\w+):ve\[(\d+)\]', pe_src):
+            key = kv.group(1)
+            idx = int(kv.group(2))
+            if idx < len(ve_decoded):
+                defaults[key] = ve_decoded[idx]
+        if defaults:
+            data["game_state_defaults"] = defaults
+        break
+
+    return data if data else None
+
+
+def dump_terminal_data(out_dir, terminal_data):
+    """Write terminal module data as flat files alongside the filesystem."""
+    term_dir = os.path.join(os.path.normpath(out_dir), "terminal")
+    os.makedirs(term_dir, exist_ok=True)
+
+    # Full JSON for machine consumption
+    json_path = os.path.join(term_dir, "terminal.json")
+    with open(json_path, "w") as f:
+        json.dump(terminal_data, f, indent=2)
+
+    # Classified ads — one per line
+    if terminal_data.get("classified_ads"):
+        path = os.path.join(term_dir, "classified-ads.txt")
+        with open(path, "w") as f:
+            for ad in terminal_data["classified_ads"]:
+                f.write(ad + "\n")
+
+    # Command outputs
+    for key, filename in [("scan_output", "scan.txt"), ("ident_output", "ident.txt")]:
+        if terminal_data.get(key):
+            with open(os.path.join(term_dir, filename), "w") as f:
+                f.write(terminal_data[key] + "\n")
+
+    # Dmesg lines
+    if terminal_data.get("dmesg_lines"):
+        path = os.path.join(term_dir, "dmesg-boot.txt")
+        with open(path, "w") as f:
+            for line in terminal_data["dmesg_lines"]:
+                f.write(line + "\n")
+
+    # Mail messages
+    if terminal_data.get("mail_messages"):
+        path = os.path.join(term_dir, "mail.txt")
+        with open(path, "w") as f:
+            for msg in terminal_data["mail_messages"]:
+                f.write(f"[unlocked by: {msg['condition']}]\n")
+                for line in msg["lines"]:
+                    f.write(line + "\n")
+                f.write("\n")
+
+    count = sum(1 for k in ("classified_ads", "scan_output", "ident_output",
+                            "dmesg_lines", "mail_messages") if terminal_data.get(k))
+    print(f"  Terminal data -> {term_dir}/ ({count} files + terminal.json)")
+
+
+def _copy_asset(out_dir, asset_path, dest_path):
+    """Copy a local asset file to a destination path, downloading first if needed."""
+    local_src = os.path.join(os.path.normpath(out_dir), asset_path.lstrip("/"))
+    if not os.path.exists(local_src):
+        download(f"{BASE_URL}{asset_path}", local_src)
+    if os.path.exists(local_src):
+        os.makedirs(os.path.dirname(dest_path), exist_ok=True)
+        shutil.copy2(local_src, dest_path)
+        return True
+    return False
+
+
+def dump_crossword_data(out_dir, xword_data):
+    """Write crossword data as flat files — one per clue with answer and image URL."""
+    xword_dir = os.path.join(os.path.normpath(out_dir), "crossword")
+    clues_dir = os.path.join(xword_dir, "clues")
+    os.makedirs(clues_dir, exist_ok=True)
+
+    # Full JSON
+    with open(os.path.join(xword_dir, "crossword.json"), "w") as f:
+        json.dump(xword_data, f, indent=2)
+
+    total = 0
+    for direction in ("across", "down"):
+        tag = "A" if direction == "across" else "D"
+        for clue in xword_data.get(direction, []):
+            num = clue["num"]
+            answer = clue["answer"]
+            fname = f"{num:02d}{tag}-{answer}.txt"
+            with open(os.path.join(clues_dir, fname), "w") as f:
+                f.write(f"answer: {answer}\n")
+                f.write(f"direction: {direction}\n")
+                f.write(f"position: row {clue['row']}, col {clue['col']}\n")
+                if clue.get("clueUrl"):
+                    f.write(f"clue-image: {clue['clueUrl']}\n")
+            # Copy clue image alongside
+            if clue.get("clueUrl"):
+                ext = os.path.splitext(clue["clueUrl"])[1]
+                img_dest = os.path.join(clues_dir, f"{num:02d}{tag}-{answer}_clue{ext}")
+                _copy_asset(out_dir, clue["clueUrl"], img_dest)
+            total += 1
+
+    print(f"  Crossword -> {xword_dir}/ ({total} clue files + crossword.json)")
+
+
+def dump_media_gallery(out_dir, gallery):
+    """Write media gallery as flat files — one per entry mapping title to asset URLs."""
+    media_dir = os.path.join(os.path.normpath(out_dir), "media")
+    os.makedirs(media_dir, exist_ok=True)
+
+    # Full JSON
+    with open(os.path.join(media_dir, "media-gallery.json"), "w") as f:
+        json.dump(gallery, f, indent=2)
+
+    for entry in gallery:
+        title = entry.get("title", "untitled")
+        safe_title = re.sub(r'[^\w\s-]', '', title).strip().replace(' ', '-').lower()
+        with open(os.path.join(media_dir, f"{safe_title}.txt"), "w") as f:
+            f.write(f"title: {title}\n")
+            if entry.get("type"):
+                f.write(f"type: {entry['type']}\n")
+            if entry.get("credit"):
+                f.write(f"credit: {entry['credit']}\n")
+            if entry.get("thumb"):
+                f.write(f"thumbnail: {entry['thumb']}\n")
+            if entry.get("full"):
+                f.write(f"full: {entry['full']}\n")
+
+        # Copy thumbnail and full-size assets alongside
+        if entry.get("thumb"):
+            ext = os.path.splitext(entry["thumb"])[1]
+            _copy_asset(out_dir, entry["thumb"],
+                        os.path.join(media_dir, f"{safe_title}_thumb{ext}"))
+        if entry.get("full"):
+            ext = os.path.splitext(entry["full"])[1]
+            _copy_asset(out_dir, entry["full"],
+                        os.path.join(media_dir, f"{safe_title}{ext}"))
+
+    print(f"  Media gallery -> {media_dir}/ ({len(gallery)} entries + media-gallery.json)")
+
+
+def dump_fabricate_data(out_dir, fab_data):
+    """Write fabricate module data to a folder."""
+    fab_dir = os.path.join(os.path.normpath(out_dir), "fabricate")
+    os.makedirs(fab_dir, exist_ok=True)
+
+    # Full JSON
+    with open(os.path.join(fab_dir, "fabricate.json"), "w") as f:
+        json.dump(fab_data, f, indent=2)
+
+    # Signal IDs
+    if fab_data.get("signal_ids"):
+        with open(os.path.join(fab_dir, "signals.txt"), "w") as f:
+            for sig in fab_data["signal_ids"]:
+                f.write(sig + "\n")
+
+    # Card names
+    if fab_data.get("card_names"):
+        with open(os.path.join(fab_dir, "card-names.txt"), "w") as f:
+            for name in fab_data["card_names"]:
+                f.write(name + "\n")
+
+    # Game state
+    if fab_data.get("game_state_defaults"):
+        with open(os.path.join(fab_dir, "game-state.txt"), "w") as f:
+            for flag, slot in fab_data["game_state_defaults"].items():
+                f.write(f"{flag}: {slot}\n")
+
+    print(f"  Fabricate -> {fab_dir}/ ({', '.join(fab_data.keys())})")
+
+
+def extract_module_data(out_dir):
+    """Extract structured data from all decrypted modules and save to folders."""
+    dec_dir = os.path.join(os.path.normpath(out_dir), "decrypted")
+
+    # Terminal module (D5GY78C)
+    terminal_path = os.path.join(dec_dir, "D5GY78C", "module.js")
+    if os.path.exists(terminal_path):
+        with open(terminal_path, "r") as f:
+            js = f.read()
+        terminal_data = extract_terminal_data(js)
+        if terminal_data:
+            dump_terminal_data(out_dir, terminal_data)
+
+    # Media module (374468739BD7269A48)
+    media_path = os.path.join(dec_dir, "374468739BD7269A48", "module.js")
+    if os.path.exists(media_path):
+        with open(media_path, "r") as f:
+            js = f.read()
+        gallery = extract_media_gallery(js)
+        if gallery:
+            dump_media_gallery(out_dir, gallery)
+
+    # Crossword module (XWORD7K)
+    xword_path = os.path.join(dec_dir, "XWORD7K", "module.js")
+    if os.path.exists(xword_path):
+        with open(xword_path, "r") as f:
+            js = f.read()
+        xword = extract_crossword_data(js)
+        if xword:
+            dump_crossword_data(out_dir, xword)
+
+    # Fabricate module (MTBFAB7)
+    fab_path = os.path.join(dec_dir, "MTBFAB7", "module.js")
+    if os.path.exists(fab_path):
+        with open(fab_path, "r") as f:
+            js = f.read()
+        fab = extract_fabricate_data(js)
+        if fab:
+            dump_fabricate_data(out_dir, fab)
+
+
 def save_route_manifest(all_routes, code_map):
     """Save the route manifest mapping hashes to bin paths and known codes."""
     manifest = {}
@@ -673,6 +1433,13 @@ def save_route_manifest(all_routes, code_map):
     with open(ROUTES_JSON, "w") as f:
         json.dump(manifest, f, indent=4)
     print(f"Saved route manifest to {ROUTES_JSON}")
+
+
+def save_payload_archive(all_payloads):
+    """Archive decrypted payload metadata to JSON for offline processing."""
+    with open(PAYLOADS_JSON, "w") as f:
+        json.dump(all_payloads, f, indent=4)
+    print(f"Saved payload archive to {PAYLOADS_JSON} ({len(all_payloads)} payloads)")
 
 
 if __name__ == "__main__":
@@ -693,11 +1460,15 @@ if __name__ == "__main__":
     scrape_launcher_assets(OUT_DIR)
 
     print("Processing codes and encrypted payloads...")
-    all_routes, code_map, all_texts = scrape_and_decrypt(codes, OUT_DIR)
+    all_routes, code_map, all_texts, all_payloads = scrape_and_decrypt(codes, OUT_DIR)
     save_route_manifest(all_routes, code_map)
+    save_payload_archive(all_payloads)
 
     print("Extracting decoded text content...")
     dump_extracted_text(OUT_DIR, all_texts)
+
+    print("Extracting structured module data...")
+    extract_module_data(OUT_DIR)
 
     # Extract terminal filesystem from D5GY78C module
     terminal_js_path = os.path.join(os.path.normpath(OUT_DIR), "decrypted", "D5GY78C", "module.js")
@@ -708,6 +1479,9 @@ if __name__ == "__main__":
         fs_tree = extract_terminal_filesystem(terminal_js)
         if fs_tree:
             dump_terminal_filesystem(OUT_DIR, fs_tree)
+            fs_dir = os.path.join(os.path.normpath(OUT_DIR), "terminal", "fs")
+            print("Generating decoded files...")
+            generate_decoded_files(fs_tree, fs_dir)
         else:
             print("  Could not extract filesystem (structure not found)")
 

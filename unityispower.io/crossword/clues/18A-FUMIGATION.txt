@@ -1,0 +1,4 @@
+answer: FUMIGATION
+direction: across
+position: row 18, col 0
+clue-image: /a/59097aca.jpg

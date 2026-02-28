@@ -1,0 +1,5 @@
+title: NONA
+type: image
+credit: TK
+thumbnail: /a/069c4464.jpg
+full: /a/a3114e3d.jpg

@@ -1,0 +1,4 @@
+answer: SAFETY
+direction: across
+position: row 7, col 12
+clue-image: /a/aec3c5aa.jpg

@@ -1,0 +1,4 @@
+answer: VISIBLE
+direction: across
+position: row 29, col 2
+clue-image: /a/3a5154b8.jpg

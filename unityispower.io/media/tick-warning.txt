@@ -1,0 +1,4 @@
+title: TICK WARNING
+type: image
+thumbnail: /a/1cff2530.jpg
+full: /a/339aca7a.jpg

@@ -1,0 +1,321 @@
+{
+  "across": [
+    {
+      "num": 2,
+      "row": 1,
+      "col": 19,
+      "answer": "ANANASSA",
+      "clueImage": "02A.jpg",
+      "clueUrl": "/a/69b00814.jpg",
+      "imageAR": 0.699
+    },
+    {
+      "num": 4,
+      "row": 3,
+      "col": 16,
+      "answer": "PRIVACY",
+      "clueImage": "04A.jpg",
+      "clueUrl": "/a/387e053e.jpg",
+      "imageAR": 1.169
+    },
+    {
+      "num": 7,
+      "row": 7,
+      "col": 12,
+      "answer": "SAFETY",
+      "clueImage": "07A.jpg",
+      "clueUrl": "/a/aec3c5aa.jpg",
+      "imageAR": 0.976
+    },
+    {
+      "num": 8,
+      "row": 9,
+      "col": 13,
+      "answer": "CYANOCOCCUS",
+      "clueImage": "08A.jpg",
+      "clueUrl": "/a/4d3db258.jpg",
+      "imageAR": 0.664
+    },
+    {
+      "num": 9,
+      "row": 11,
+      "col": 18,
+      "answer": "MEDICAL",
+      "clueImage": "09A.jpg",
+      "clueUrl": "/a/904f73ef.jpg",
+      "imageAR": 0.741
+    },
+    {
+      "num": 10,
+      "row": 12,
+      "col": 12,
+      "answer": "RELAY",
+      "clueImage": "10A.jpg",
+      "clueUrl": "/a/71187f35.jpg",
+      "imageAR": 1.028
+    },
+    {
+      "num": 14,
+      "row": 14,
+      "col": 9,
+      "answer": "POSSIBLE",
+      "clueImage": "14A.jpg",
+      "clueUrl": "/a/144d9987.jpg",
+      "imageAR": 0.718
+    },
+    {
+      "num": 17,
+      "row": 17,
+      "col": 13,
+      "answer": "AWAKE",
+      "clueImage": "17A.jpg",
+      "clueUrl": "/a/5863535e.jpg",
+      "imageAR": 0.641
+    },
+    {
+      "num": 18,
+      "row": 18,
+      "col": 0,
+      "answer": "FUMIGATION",
+      "clueImage": "18A.jpg",
+      "clueUrl": "/a/59097aca.jpg",
+      "imageAR": 1.162
+    },
+    {
+      "num": 20,
+      "row": 20,
+      "col": 7,
+      "answer": "NOURISHMENT",
+      "clueImage": "20A.jpg",
+      "clueUrl": "/a/129ba861.jpg",
+      "imageAR": 0.702
+    },
+    {
+      "num": 21,
+      "row": 21,
+      "col": 1,
+      "answer": "BIODATA",
+      "clueImage": "21A.jpg",
+      "clueUrl": "/a/05648dd5.jpg",
+      "imageAR": 0.694
+    },
+    {
+      "num": 24,
+      "row": 24,
+      "col": 1,
+      "answer": "DARIUS",
+      "clueImage": "24A.jpg",
+      "clueUrl": "/a/71e30704.jpg",
+      "imageAR": 0.759
+    },
+    {
+      "num": 25,
+      "row": 24,
+      "col": 9,
+      "answer": "COMPLIANCE",
+      "clueImage": "25A.jpg",
+      "clueUrl": "/a/5af9bd7a.jpg",
+      "imageAR": 0.731
+    },
+    {
+      "num": 27,
+      "row": 26,
+      "col": 2,
+      "answer": "MONITOR",
+      "clueImage": "27A.jpg",
+      "clueUrl": "/a/409bf0fd.jpg",
+      "imageAR": 0.897
+    },
+    {
+      "num": 29,
+      "row": 27,
+      "col": 23,
+      "answer": "FOREVER",
+      "clueImage": "29A.jpg",
+      "clueUrl": "/a/e9425640.jpg",
+      "imageAR": 0.718
+    },
+    {
+      "num": 30,
+      "row": 29,
+      "col": 2,
+      "answer": "VISIBLE",
+      "clueImage": "30A.jpg",
+      "clueUrl": "/a/3a5154b8.jpg",
+      "imageAR": 0.72
+    },
+    {
+      "num": 31,
+      "row": 29,
+      "col": 13,
+      "answer": "PREPARATION",
+      "clueImage": "31A.jpg",
+      "clueUrl": "/a/c338ac19.jpg",
+      "imageAR": 0.71
+    },
+    {
+      "num": 32,
+      "row": 31,
+      "col": 12,
+      "answer": "LOSTFOUND",
+      "clueImage": "32A.jpg",
+      "clueUrl": "/a/8af3dc78.jpg",
+      "imageAR": 0.789
+    },
+    {
+      "num": 33,
+      "row": 31,
+      "col": 23,
+      "answer": "TRUTH",
+      "clueImage": "33A.jpg",
+      "clueUrl": "/a/407b6d2e.jpg",
+      "imageAR": 1.109
+    },
+    {
+      "num": 34,
+      "row": 33,
+      "col": 5,
+      "answer": "TRUESELF",
+      "clueImage": "34A.jpg",
+      "clueUrl": "/a/a6aa78d5.jpg",
+      "imageAR": 0.71
+    }
+  ],
+  "down": [
+    {
+      "num": 1,
+      "row": 0,
+      "col": 21,
+      "answer": "WATCHING",
+      "clueImage": "01D.jpg",
+      "clueUrl": "/a/3bc140c5.jpg",
+      "imageAR": 0.655
+    },
+    {
+      "num": 3,
+      "row": 2,
+      "col": 16,
+      "answer": "OPPORTUNITY",
+      "clueImage": "03D.jpg",
+      "clueUrl": "/a/098ab15f.jpg",
+      "imageAR": 0.785
+    },
+    {
+      "num": 5,
+      "row": 4,
+      "col": 23,
+      "answer": "TRIALS",
+      "clueImage": "05D.jpg",
+      "clueUrl": "/a/ab200121.jpg",
+      "imageAR": 0.747
+    },
+    {
+      "num": 6,
+      "row": 5,
+      "col": 19,
+      "answer": "WELCOME",
+      "clueImage": "06D.jpg",
+      "clueUrl": "/a/628f1d05.jpg",
+      "imageAR": 0.759
+    },
+    {
+      "num": 8,
+      "row": 9,
+      "col": 13,
+      "answer": "CORE",
+      "clueImage": "08D.jpg",
+      "clueUrl": "/a/080d1303.jpg",
+      "imageAR": 1.001
+    },
+    {
+      "num": 11,
+      "row": 12,
+      "col": 15,
+      "answer": "ALLOWANCE",
+      "clueImage": "11D.jpg",
+      "clueUrl": "/a/9de9dce7.jpg",
+      "imageAR": 0.698
+    },
+    {
+      "num": 12,
+      "row": 14,
+      "col": 5,
+      "answer": "CASCADIA",
+      "clueImage": "12D.jpg",
+      "clueUrl": "/a/e0b85ed0.jpg",
+      "imageAR": 0.746
+    },
+    {
+      "num": 13,
+      "row": 14,
+      "col": 7,
+      "answer": "EMOTIONAL",
+      "clueImage": "13D.jpg",
+      "clueUrl": "/a/f510cc15.jpg",
+      "imageAR": 0.719
+    },
+    {
+      "num": 15,
+      "row": 17,
+      "col": 9,
+      "answer": "ENDURANCE",
+      "clueImage": "15D.jpg",
+      "clueUrl": "/a/460bf2e4.jpg",
+      "imageAR": 0.689
+    },
+    {
+      "num": 16,
+      "row": 17,
+      "col": 11,
+      "answer": "BRAIN",
+      "clueImage": "16D.jpg",
+      "clueUrl": "/a/77ad62d7.jpg",
+      "imageAR": 0.73
+    },
+    {
+      "num": 19,
+      "row": 20,
+      "col": 3,
+      "answer": "TOMORROW",
+      "clueImage": "19D.jpg",
+      "clueUrl": "/a/b78bacf9.jpg",
+      "imageAR": 0.651
+    },
+    {
+      "num": 22,
+      "row": 21,
+      "col": 20,
+      "answer": "DISINFECT",
+      "clueImage": "22D.jpg",
+      "clueUrl": "/a/34e4cdd3.jpg",
+      "imageAR": 0.707
+    },
+    {
+      "num": 23,
+      "row": 22,
+      "col": 18,
+      "answer": "BREAKTHROUGH",
+      "clueImage": "23D.jpg",
+      "clueUrl": "/a/1903bae8.jpg",
+      "imageAR": 0.679
+    },
+    {
+      "num": 26,
+      "row": 25,
+      "col": 23,
+      "answer": "INFINITE",
+      "clueImage": "26D.jpg",
+      "clueUrl": "/a/42fc45be.jpg",
+      "imageAR": 0.728
+    },
+    {
+      "num": 28,
+      "row": 26,
+      "col": 8,
+      "answer": "REDEFINE",
+      "clueImage": "28D.jpg",
+      "clueUrl": "/a/d56d2138.jpg",
+      "imageAR": 0.759
+    }
+  ]
+}

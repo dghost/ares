@@ -1,0 +1,3 @@
+UESC-UNIX kernel 15.92.0-UESC-secure
+NET: mesh0: link }:23+3LS(>3$
+init: system ready

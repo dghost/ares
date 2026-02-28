@@ -1,0 +1,4 @@
+title: CONCEPT
+type: image
+thumbnail: /a/e595715a.jpg
+full: /a/45e5cf71.jpg

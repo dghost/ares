@@ -1,0 +1,4 @@
+answer: REDEFINE
+direction: down
+position: row 26, col 8
+clue-image: /a/d56d2138.jpg

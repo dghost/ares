@@ -1,0 +1,5 @@
+title: THIEF LINEUP
+type: image
+credit: PB
+thumbnail: /a/9f72e6a1.jpg
+full: /a/09f4e7e7.jpg

@@ -1,0 +1,4 @@
+answer: LOSTFOUND
+direction: across
+position: row 31, col 12
+clue-image: /a/8af3dc78.jpg

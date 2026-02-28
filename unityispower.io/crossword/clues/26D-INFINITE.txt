@@ -1,0 +1,4 @@
+answer: INFINITE
+direction: down
+position: row 25, col 23
+clue-image: /a/42fc45be.jpg

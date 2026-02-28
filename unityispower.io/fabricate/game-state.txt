@@ -1,0 +1,8 @@
+first_boot: s0
+irc_discovered: s1
+xword_complete: s2
+fab_name_known: s3a
+fab_clearance: s3
+slotz_complete: s4
+burger_found: s5
+full_clearance: s6

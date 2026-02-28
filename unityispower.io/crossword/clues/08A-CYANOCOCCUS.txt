@@ -1,0 +1,4 @@
+answer: CYANOCOCCUS
+direction: across
+position: row 9, col 13
+clue-image: /a/4d3db258.jpg

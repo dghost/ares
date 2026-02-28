@@ -1,0 +1,5 @@
+scanning...
+filesystem: ok
+network: mesh0 up (34.782.0.1)
+services: sshd cron syslog
+hosts: 4 reachable

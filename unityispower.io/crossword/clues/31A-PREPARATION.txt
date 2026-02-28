@@ -1,0 +1,4 @@
+answer: PREPARATION
+direction: across
+position: row 29, col 13
+clue-image: /a/c338ac19.jpg

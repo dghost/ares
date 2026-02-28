@@ -1,0 +1,63 @@
+{
+  "classified_ads": [
+    "Colony ship // low hours // serious inquiries only :: 34.782.0.91",
+    "Clearance issues? Fast turnaround / discreet / msg 0xAA0012FF",
+    "Operators wanted // remote relay // good pay // no questions",
+    "Relay node for sale // 19f decomm // best offer // dm 0xCB007109",
+    "Integrity check failed? We fix // no logs // fast service",
+    "Secure channel rental | hourly rates 'sl9ID required",
+    "Gene splice | unlicensed 'ob}6\u007fardened phenotype | no waitlist",
+    "Consciousness backup :: full cortex :: off-ledger :: 0xE4001A77",
+    "Void nav charts | inner ring | updated this cycle | verified routes",
+    "Antimatter cells >> surplus >> sealed >> below-market :: 34.782.0.44",
+    "Transit papers / any sector / clean provenance / 48hr turnaround",
+    "Unregistered AI instance | pre-trained | no UESC watermark | msg only",
+    "Atmospheric processor :: gbktge :: runs at 80% :: you haul",
+    "Skill upload | combat / medical / navigation | one-shot imprint",
+    "Synthetic organs :: full compatibility panel :: no rejection :: fast grow",
+    "Radiation shielding | hull-grade '{jmh7\u0016\u0010ltefw` berth | n~hlk7\u0004\b}r`*2"
+  ],
+  "scan_output": "scanning...\nfilesystem: ok\nnetwork: mesh0 up (34.782.0.1)\nservices: sshd cron syslog\nhosts: 4 reachable",
+  "ident_output": "hostname: balam-hub\nkernel: 15.92.0-UESC-secure\narch: qx456\noperator: active session",
+  "dmesg_lines": [
+    "UESC-UNIX kernel 15.92.0-UESC-secure",
+    "NET: mesh0: link }:23+3LS(>3$",
+    "init: system ready"
+  ],
+  "mail_messages": [
+    {
+      "condition": "xword_complete",
+      "lines": [
+        "",
+        "From sigint@balam-hub  <timestamp>",
+        "To: operator@balam-hub",
+        "Subject: grid decode confirmed",
+        "",
+        "word grid integrity verified. signal decoded."
+      ]
+    },
+    {
+      "condition": "fab_clearance",
+      "lines": [
+        "",
+        "From dispatch@balam-hub  <timestamp>",
+        "To: operator@balam-hub",
+        "Subject: re: clearance accepted",
+        "",
+        "fabrication verified. full clearance granted.",
+        "media archive now accessible \u2014 type \"media\" to review."
+      ]
+    },
+    {
+      "condition": "full_clearance",
+      "lines": [
+        "",
+        "From root@balam-hub  <timestamp>",
+        "To: operator@balam-hub",
+        "Subject: all signals decoded",
+        "",
+        "all intercepts confirmed. clearance level: maximum."
+      ]
+    }
+  ]
+}

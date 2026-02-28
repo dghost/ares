@@ -1,0 +1,4 @@
+answer: OPPORTUNITY
+direction: down
+position: row 2, col 16
+clue-image: /a/098ab15f.jpg

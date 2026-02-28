@@ -1,0 +1,4 @@
+answer: NOURISHMENT
+direction: across
+position: row 20, col 7
+clue-image: /a/129ba861.jpg

@@ -1,0 +1,5 @@
+title: VIK
+type: image
+credit: PB
+thumbnail: /a/329a475e.jpg
+full: /a/86c4c1f6.jpg

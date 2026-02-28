@@ -1,0 +1,4 @@
+answer: TOMORROW
+direction: down
+position: row 20, col 3
+clue-image: /a/b78bacf9.jpg

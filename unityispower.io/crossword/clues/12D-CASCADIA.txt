@@ -1,0 +1,4 @@
+answer: CASCADIA
+direction: down
+position: row 14, col 5
+clue-image: /a/e0b85ed0.jpg

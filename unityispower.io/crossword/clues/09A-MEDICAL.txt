@@ -1,0 +1,4 @@
+answer: MEDICAL
+direction: across
+position: row 11, col 18
+clue-image: /a/904f73ef.jpg

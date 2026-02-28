@@ -1,0 +1,4 @@
+answer: ANANASSA
+direction: across
+position: row 1, col 19
+clue-image: /a/69b00814.jpg

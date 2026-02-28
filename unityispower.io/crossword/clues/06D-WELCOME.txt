@@ -1,0 +1,4 @@
+answer: WELCOME
+direction: down
+position: row 5, col 19
+clue-image: /a/628f1d05.jpg

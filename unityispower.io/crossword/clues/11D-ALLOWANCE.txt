@@ -1,0 +1,4 @@
+answer: ALLOWANCE
+direction: down
+position: row 12, col 15
+clue-image: /a/9de9dce7.jpg

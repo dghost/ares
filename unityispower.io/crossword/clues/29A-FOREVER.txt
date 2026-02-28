@@ -1,0 +1,4 @@
+answer: FOREVER
+direction: across
+position: row 27, col 23
+clue-image: /a/e9425640.jpg

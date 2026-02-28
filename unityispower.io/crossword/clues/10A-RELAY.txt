@@ -1,0 +1,4 @@
+answer: RELAY
+direction: across
+position: row 12, col 12
+clue-image: /a/71187f35.jpg

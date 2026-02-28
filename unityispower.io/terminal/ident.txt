@@ -1,0 +1,4 @@
+hostname: balam-hub
+kernel: 15.92.0-UESC-secure
+arch: qx456
+operator: active session

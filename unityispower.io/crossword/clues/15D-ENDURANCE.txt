@@ -1,0 +1,4 @@
+answer: ENDURANCE
+direction: down
+position: row 17, col 9
+clue-image: /a/460bf2e4.jpg

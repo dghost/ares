@@ -1,0 +1,4 @@
+answer: MONITOR
+direction: across
+position: row 26, col 2
+clue-image: /a/409bf0fd.jpg

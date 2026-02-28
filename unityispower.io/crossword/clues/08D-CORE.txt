@@ -1,0 +1,4 @@
+answer: CORE
+direction: down
+position: row 9, col 13
+clue-image: /a/080d1303.jpg

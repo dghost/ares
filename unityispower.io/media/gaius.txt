@@ -1,0 +1,5 @@
+title: GAIUS
+type: image
+credit: TK
+thumbnail: /a/ff21ac43.jpg
+full: /a/3884afdb.jpg

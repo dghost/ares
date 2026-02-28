@@ -1,0 +1,4 @@
+answer: PRIVACY
+direction: across
+position: row 3, col 16
+clue-image: /a/387e053e.jpg

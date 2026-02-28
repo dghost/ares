@@ -1,0 +1,4 @@
+answer: DARIUS
+direction: across
+position: row 24, col 1
+clue-image: /a/71e30704.jpg

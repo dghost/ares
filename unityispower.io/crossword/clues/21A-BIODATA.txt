@@ -1,0 +1,4 @@
+answer: BIODATA
+direction: across
+position: row 21, col 1
+clue-image: /a/05648dd5.jpg

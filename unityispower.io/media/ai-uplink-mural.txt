@@ -1,0 +1,4 @@
+title: AI UPLINK MURAL
+type: image
+thumbnail: /a/043be3ed.jpg
+full: /a/4365aad6.jpg
