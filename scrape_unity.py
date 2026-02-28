@@ -398,6 +398,269 @@ def dump_extracted_text(out_dir, all_texts):
         print(f"  Narrative fragments: {len(narratives)} -> {fname}")
 
 
+def _decode_nt_table(js_source):
+    """Extract and decode the nt[] string table from terminal module JS."""
+    m = re.search(r'var nt=\[', js_source)
+    if not m:
+        return None
+
+    # Find matching ] with string-aware bracket tracking
+    start = m.start() + len('var nt=')
+    depth = 0
+    in_string = None
+    i = start
+    while i < len(js_source):
+        ch = js_source[i]
+        if in_string:
+            if ch == '\\':
+                i += 2
+                continue
+            if ch == in_string:
+                in_string = None
+        else:
+            if ch in ('"', "'"):
+                in_string = ch
+            elif ch == '[':
+                depth += 1
+            elif ch == ']':
+                depth -= 1
+                if depth == 0:
+                    break
+        i += 1
+
+    nt_source = js_source[start:i + 1]
+
+    # Decode each t('...') / e('...') entry in order
+    entries = []
+    for match in re.finditer(r"""[et]\(('(?:[^'\\]|\\.)*'|"(?:[^"\\]|\\.)*")\)""", nt_source):
+        raw = match.group(1)[1:-1]
+        try:
+            unescaped = _unescape_js_string(raw)
+            decoded = ptyz_decode(unescaped)
+            entries.append(decoded)
+        except:
+            entries.append("")
+    return entries
+
+
+def _resolve_nt_concat(expr, nt):
+    """Resolve an expression like nt[158]+nt[147] to a string."""
+    parts = []
+    for m in re.finditer(r'nt\[(\d+)\]', expr):
+        idx = int(m.group(1))
+        if idx < len(nt):
+            parts.append(nt[idx])
+    return "".join(parts) if parts else None
+
+
+def _find_matching_brace(js, start):
+    """Find the matching closing brace for an opening { at start, handling strings."""
+    depth = 0
+    in_string = None
+    in_template = 0
+    i = start
+    while i < len(js):
+        ch = js[i]
+        if in_string:
+            if ch == '\\':
+                i += 2
+                continue
+            if ch == in_string:
+                in_string = None
+        elif in_template > 0 and ch == '`':
+            in_template -= 1
+        else:
+            if ch in ('"', "'"):
+                in_string = ch
+            elif ch == '`':
+                in_template += 1
+            elif ch == '{' and in_template == 0:
+                depth += 1
+            elif ch == '}' and in_template == 0:
+                depth -= 1
+                if depth == 0:
+                    return i
+        i += 1
+    return -1
+
+
+def _parse_g_children(body, nt):
+    """Parse children inside a G({...}) block, returning a dict of name -> node."""
+    children = {}
+
+    # Match [nt[N]]:B(...) and [nt[N]]:G({...}) and [nt[N]]:P(...)
+    # Also handle compound keys like [nt[59]+nt[72]+nt[56]+nt[174]]
+    pos = 0
+    while pos < len(body):
+        # Find next key: [nt[...]] or [nt[...]+nt[...]+...]
+        key_match = re.search(r'\[(nt\[\d+\](?:\+nt\[\d+\])*)\]\s*:', body[pos:])
+        if not key_match:
+            break
+
+        key_start = pos + key_match.start()
+        key_expr = key_match.group(1)
+        name = _resolve_nt_concat(key_expr, nt)
+        if not name:
+            pos = key_start + len(key_match.group(0))
+            continue
+
+        # What follows the colon?
+        after_colon = body[pos + key_match.end():]
+        after_colon_stripped = after_colon.lstrip()
+
+        if after_colon_stripped.startswith('B('):
+            # File node - extract content from B(...)
+            b_start = after_colon.index('B(')
+            paren_start = pos + key_match.end() + b_start + 2
+            # Check if it's a template literal B(`...`)
+            rest = body[paren_start:].lstrip()
+            if rest.startswith('`'):
+                # Template literal - mark as template
+                children[name] = {"type": "file", "content": "<template>"}
+            else:
+                # nt[] concatenation - find the closing )
+                depth = 1
+                j = paren_start
+                while j < len(body) and depth > 0:
+                    if body[j] == '(': depth += 1
+                    elif body[j] == ')': depth -= 1
+                    j += 1
+                content_expr = body[paren_start:j-1]
+                content = _resolve_nt_concat(content_expr, nt)
+                children[name] = {"type": "file", "content": content or ""}
+            pos = key_start + len(key_match.group(0)) + 1
+
+        elif after_colon_stripped.startswith('G('):
+            # Directory node - find the G({...}) block
+            g_pos = pos + key_match.end() + after_colon.index('G(')
+            brace_pos = body.index('{', g_pos)
+            brace_end = _find_matching_brace(body, brace_pos)
+            if brace_end < 0:
+                pos = key_start + len(key_match.group(0)) + 1
+                continue
+            inner = body[brace_pos + 1:brace_end]
+            sub_children = _parse_g_children(inner, nt)
+            children[name] = {"type": "dir", "children": sub_children}
+            pos = brace_end + 1
+
+        elif after_colon_stripped.startswith('P('):
+            # Dynamic file node
+            children[name] = {"type": "file", "content": "<dynamic>"}
+            pos = key_start + len(key_match.group(0)) + 1
+
+        else:
+            pos = key_start + len(key_match.group(0)) + 1
+
+    return children
+
+
+def extract_terminal_filesystem(js_source):
+    """Extract the simulated UNIX filesystem from the terminal module JS.
+
+    Returns a dict tree: {name: {type: "dir", children: {...}} | {type: "file", content: "..."}}
+    """
+    nt = _decode_nt_table(js_source)
+    if not nt:
+        return None
+
+    # Find the root filesystem: const Z=function(t){...return G(((r={})...r))}
+    m = re.search(r'const Z=function\(t\)\{', js_source)
+    if not m:
+        return None
+
+    # Find the function body
+    func_start = m.start()
+    brace_start = js_source.index('{', func_start)
+    func_end = _find_matching_brace(js_source, brace_start)
+    if func_end < 0:
+        return None
+
+    func_body = js_source[brace_start + 1:func_end]
+
+    # Parse top-level r[nt[N]]=G({...}) and r[nt[N]]=function(...) assignments
+    tree = {}
+    pos = 0
+    while pos < len(func_body):
+        # Match r[nt[N]]= assignments
+        assign_match = re.search(r'r\[(nt\[\d+\])\]\s*=\s*', func_body[pos:])
+        if not assign_match:
+            break
+
+        key_expr = assign_match.group(1)
+        name = _resolve_nt_concat(key_expr, nt)
+        after = func_body[pos + assign_match.end():].lstrip()
+
+        if after.startswith('G('):
+            # Directory
+            brace_pos = func_body.index('{', pos + assign_match.end())
+            brace_end = _find_matching_brace(func_body, brace_pos)
+            if brace_end < 0:
+                break
+            inner = func_body[brace_pos + 1:brace_end]
+            children = _parse_g_children(inner, nt)
+            tree[name] = {"type": "dir", "children": children}
+            pos = brace_end + 1
+        elif after.startswith('function'):
+            # Dynamic directory (like /proc)
+            fn_brace = func_body.index('{', pos + assign_match.end())
+            fn_end = _find_matching_brace(func_body, fn_brace)
+            if fn_end < 0:
+                break
+            tree[name] = {"type": "dir", "children": {"<dynamic>": {"type": "file", "content": "<generated at runtime>"}}}
+            pos = fn_end + 1
+        else:
+            pos += assign_match.end() + 1
+            continue
+
+    return tree if tree else None
+
+
+def dump_terminal_filesystem(out_dir, fs_tree):
+    """Write the extracted filesystem tree to disk as individual files and a JSON manifest."""
+    if not fs_tree:
+        return
+
+    # Save JSON manifest
+    text_dir = os.path.join(os.path.normpath(out_dir), "extracted-text")
+    try:
+        os.makedirs(text_dir)
+    except:
+        pass
+    json_path = os.path.join(text_dir, "filesystem.json")
+    with open(json_path, "w") as f:
+        json.dump(fs_tree, f, indent=2)
+    print(f"  Filesystem JSON -> {json_path}")
+
+    # Write individual files
+    fs_dir = os.path.join(os.path.normpath(out_dir), "terminal-fs")
+    file_count = 0
+
+    def write_node(node, path):
+        nonlocal file_count
+        if node["type"] == "file":
+            content = node.get("content", "")
+            if content in ("<dynamic>", "<template>", "<generated at runtime>"):
+                return
+            local_path = os.path.join(fs_dir, path.lstrip("/"))
+            try:
+                os.makedirs(os.path.dirname(local_path))
+            except:
+                pass
+            with open(local_path, "w") as f:
+                f.write(content)
+            file_count += 1
+        elif node["type"] == "dir":
+            for name, child in node.get("children", {}).items():
+                if name.startswith("<"):
+                    continue
+                write_node(child, os.path.join(path, name))
+
+    for name, node in fs_tree.items():
+        write_node(node, "/" + name)
+
+    print(f"  Wrote {file_count} files -> {fs_dir}/")
+
+
 def save_route_manifest(all_routes, code_map):
     """Save the route manifest mapping hashes to bin paths and known codes."""
     manifest = {}
@@ -435,5 +698,17 @@ if __name__ == "__main__":
 
     print("Extracting decoded text content...")
     dump_extracted_text(OUT_DIR, all_texts)
+
+    # Extract terminal filesystem from D5GY78C module
+    terminal_js_path = os.path.join(os.path.normpath(OUT_DIR), "decrypted", "D5GY78C", "module.js")
+    if os.path.exists(terminal_js_path):
+        print("Extracting terminal filesystem...")
+        with open(terminal_js_path, "r") as f:
+            terminal_js = f.read()
+        fs_tree = extract_terminal_filesystem(terminal_js)
+        if fs_tree:
+            dump_terminal_filesystem(OUT_DIR, fs_tree)
+        else:
+            print("  Could not extract filesystem (structure not found)")
 
     print("Done.")

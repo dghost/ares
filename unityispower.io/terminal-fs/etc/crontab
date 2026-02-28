@@ -1,0 +1,4 @@
+# m h dom mon dow  command
+0 */6 * * *  /usr/sbin/logrotate /etc/logrotate.conf
+15 3  * * *  /usr/bin/sync-upstream --quiet
+0 0   * * 0  /usr/bin/integrity-check /var/data

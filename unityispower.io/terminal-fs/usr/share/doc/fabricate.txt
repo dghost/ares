@@ -1,0 +1,15 @@
+FABRICATE(1)            User Commands            FABRICATE(1)
+
+NAME
+    fabricate - security clearance fabrication utility
+
+SYNOPSIS
+    fabricate
+
+DESCRIPTION
+    Interactive two-phase authorization process.
+    Phase 1: enter authorization name.
+    Phase 2: enter 18-digit hex fabrication sequence.
+
+SEE ALSO
+    clearance(5), auth(7)

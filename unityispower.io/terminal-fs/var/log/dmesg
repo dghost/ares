@@ -1,0 +1,7 @@
+[    0.000000] UESC-UNIX kernel 15.92.0-UESC-secure booting
+[    0.004102] CPU: Quantum-Core QX-2100 @ 1420.405 MHz
+[    0.010841] Memory: 196883 kB available
+[    0.052003] NET: mesh0: link up 34.782.0.1
+[    0.071940] NET: mesh0: route 2209.11.15.19.34 unreachable
+[    0.089217] VFS: mounted rootfs readonly
+[    0.102443] init: system ready
