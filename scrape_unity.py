@@ -125,20 +125,50 @@ def _unescape_js_string(s):
             i += 1
     return "".join(out)
 
-def extract_assets_from_js(js_source):
-    """Extract /a/ asset paths by decoding obfuscated strings in JS source."""
-    assets = set()
-    # Match e("...") and t("...") decoder calls
+def decode_all_ptyz_strings(js_source):
+    """Decode all ptyz-obfuscated strings from e("...") and t("...") calls in JS source."""
+    decoded_strings = []
     for match in re.finditer(r'[et]\(("(?:[^"\\]|\\.)*"|\'(?:[^\'\\]|\\.)*\')\)', js_source):
         raw = match.group(1)[1:-1]  # strip quotes
         try:
             unescaped = _unescape_js_string(raw)
             decoded = ptyz_decode(unescaped)
-            if re.match(r'^/a/[a-f0-9]+\.\w+$', decoded):
-                assets.add(decoded)
+            decoded_strings.append(decoded)
         except:
             pass
+    return decoded_strings
+
+
+def extract_assets_from_js(js_source):
+    """Extract /a/ asset paths by decoding obfuscated strings in JS source."""
+    assets = set()
+    for decoded in decode_all_ptyz_strings(js_source):
+        if re.match(r'^/a/[a-f0-9]+\.\w+$', decoded):
+            assets.add(decoded)
     return assets
+
+
+def extract_text_from_js(js_source):
+    """Extract human-readable text content from decoded ptyz strings."""
+    texts = []
+    seen = set()
+    for decoded in decode_all_ptyz_strings(js_source):
+        # Skip asset paths
+        if re.match(r'^/a/[a-f0-9]+\.\w+$', decoded):
+            continue
+        # Skip strings that are mostly non-printable or garbage
+        printable = sum(1 for c in decoded if c.isprintable() or c in '\n\r\t')
+        if len(decoded) < 2 or printable / len(decoded) < 0.6:
+            continue
+        # Skip sfx_ event names (noise)
+        if decoded.startswith("sfx_"):
+            continue
+        # Deduplicate
+        if decoded in seen:
+            continue
+        seen.add(decoded)
+        texts.append(decoded)
+    return texts
 
 
 def sha256(text):
@@ -200,6 +230,7 @@ def scrape_and_decrypt(codes, out_dir):
     pending_codes = list(codes)
     processed_codes = set()
     discovered_assets = set()
+    all_texts = {}  # code -> list of decoded text strings
 
     # Map provided codes to hashes
     for code in pending_codes:
@@ -259,13 +290,18 @@ def scrape_and_decrypt(codes, out_dir):
 
         print(f"  Saved decrypted payload to {dec_dir}")
 
-        # Discover assets from decrypted JS
+        # Discover assets and text from decrypted JS
         if payload.get("js"):
             new_assets = extract_assets_from_js(payload["js"])
             for asset in sorted(new_assets):
                 if asset not in discovered_assets:
                     print(f"  Discovered asset: {asset}")
                     discovered_assets.add(asset)
+
+            texts = extract_text_from_js(payload["js"])
+            if texts:
+                all_texts[code] = texts
+                print(f"  Extracted {len(texts)} text strings")
 
         # Discover new routes
         if payload.get("routes"):
@@ -296,7 +332,70 @@ def scrape_and_decrypt(codes, out_dir):
             path = os.path.join(os.path.normpath(out_dir), os.path.normpath(asset.lstrip("/")))
             download(f"{BASE_URL}{asset}", path)
 
-    return all_routes, code_map
+    # Extract text from launcher JS files too
+    for asset in LAUNCHER_ASSETS:
+        if not asset.endswith(".js"):
+            continue
+        local_path = os.path.join(os.path.normpath(out_dir), os.path.normpath(asset.lstrip("/")))
+        if os.path.exists(local_path):
+            with open(local_path, "r") as f:
+                js_source = f.read()
+            texts = extract_text_from_js(js_source)
+            if texts:
+                label = os.path.basename(asset)
+                all_texts[label] = texts
+                print(f"  Extracted {len(texts)} text strings from {label}")
+
+    return all_routes, code_map, all_texts
+
+
+def dump_extracted_text(out_dir, all_texts):
+    """Dump all decoded text content to files, organized by source module."""
+    text_dir = os.path.join(os.path.normpath(out_dir), "extracted-text")
+    try:
+        os.makedirs(text_dir)
+    except:
+        pass
+
+    # Per-module files
+    for source, texts in sorted(all_texts.items()):
+        fname = os.path.join(text_dir, f"{source}.txt")
+        with open(fname, "w") as f:
+            for text in sorted(texts, key=lambda s: s.lower()):
+                if '\n' in text:
+                    f.write(f"--- [{len(text)} chars] ---\n{text}\n\n")
+                else:
+                    f.write(f"{text}\n")
+        print(f"  {source}: {len(texts)} strings -> {fname}")
+
+    # Combined flat dump
+    all_unique = set()
+    for texts in all_texts.values():
+        all_unique.update(texts)
+
+    fname = os.path.join(text_dir, "all-text.txt")
+    with open(fname, "w") as f:
+        for text in sorted(all_unique, key=lambda s: s.lower()):
+            if '\n' in text:
+                f.write(f"--- [{len(text)} chars] ---\n{text}\n\n")
+            else:
+                f.write(f"{text}\n")
+    print(f"  Combined: {len(all_unique)} unique strings -> {fname}")
+
+    # Separate file for long narrative content (likely ARG content)
+    narratives = []
+    for texts in all_texts.values():
+        for text in texts:
+            if len(text) >= 80 and '\n' in text:
+                narratives.append(text)
+
+    if narratives:
+        fname = os.path.join(text_dir, "narrative.txt")
+        narratives.sort(key=lambda s: s[:60].lower())
+        with open(fname, "w") as f:
+            for i, text in enumerate(narratives):
+                f.write(f"{'='*60}\n[Fragment {i+1}, {len(text)} chars]\n{'='*60}\n{text}\n\n")
+        print(f"  Narrative fragments: {len(narratives)} -> {fname}")
 
 
 def save_route_manifest(all_routes, code_map):
@@ -331,7 +430,10 @@ if __name__ == "__main__":
     scrape_launcher_assets(OUT_DIR)
 
     print("Processing codes and encrypted payloads...")
-    all_routes, code_map = scrape_and_decrypt(codes, OUT_DIR)
+    all_routes, code_map, all_texts = scrape_and_decrypt(codes, OUT_DIR)
     save_route_manifest(all_routes, code_map)
+
+    print("Extracting decoded text content...")
+    dump_extracted_text(OUT_DIR, all_texts)
 
     print("Done.")
