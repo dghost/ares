@@ -1,0 +1,563 @@
+{
+  "name": "V00 Zeus RG",
+  "sliding_puzzle": null,
+  "cctv": {
+    "cctvItems": [
+      {
+        "id": "698dd459a14d91b852004e1b",
+        "name": "XQ8P5L9R_A72F_GRID.bin",
+        "location": "wpn_id_V00_Zeus_RG",
+        "file": {
+          "url": "https://assets.thecdn.io/b6ac70a6-f11d-47b1-ac7d-da1219542056.mp4",
+          "filename": "b6ac70a6-f11d-47b1-ac7d-da1219542056.mp4",
+          "alt_filename": "XQ8P5L9R_A72F_GRID.mp4",
+          "alt": "Zeus Content",
+          "width": null,
+          "height": null,
+          "mimeType": "video/mp4"
+        }
+      },
+      {
+        "id": "698e2de83bf196077cb1cc7a",
+        "name": "XK2ZP8Q7_M94A_UNIT.dat",
+        "location": "wpn_id_V00_Zeus_RG",
+        "file": {
+          "url": "https://assets.thecdn.io/77afc4bc-466a-4625-9645-190afa748ded.wav",
+          "filename": "77afc4bc-466a-4625-9645-190afa748ded.wav",
+          "alt_filename": "XK2ZP8Q7_M94A_UNIT.wav",
+          "alt": "Zeus Content",
+          "width": null,
+          "height": null,
+          "mimeType": "audio/x-wav"
+        }
+      },
+      {
+        "id": "698e2dea3bf196077cb1cc7b",
+        "name": "M4ZP9XK2_Q7A8_FEED.png",
+        "location": "wpn_id_V00_Zeus_RG",
+        "file": {
+          "url": "https://assets.thecdn.io/7d4ff7e8-360a-444b-8c3f-ac7fd8ed2235.wav",
+          "filename": "7d4ff7e8-360a-444b-8c3f-ac7fd8ed2235.wav",
+          "alt_filename": "M4ZP9XK2_Q7A8_FEED.wav",
+          "alt": "Zeus Content",
+          "width": null,
+          "height": null,
+          "mimeType": "audio/x-wav"
+        }
+      },
+      {
+        "id": "698e2df03bf196077cb1cc7c",
+        "name": "Z9A8XKQ7_P2M4_LOG.dat",
+        "location": "wpn_id_V00_Zeus_RG",
+        "file": {
+          "url": "https://assets.thecdn.io/f555316f-5b94-46e0-a4ee-d5bb7508f25d.wav",
+          "filename": "f555316f-5b94-46e0-a4ee-d5bb7508f25d.wav",
+          "alt_filename": "Z9A8XKQ7_P2M4_LOG.wav",
+          "alt": "Zeus Content",
+          "width": null,
+          "height": null,
+          "mimeType": "audio/x-wav"
+        }
+      },
+      {
+        "id": "698e2e543bf196077cb1cc7d",
+        "name": "KQX2Z8P7_M94A_CORE.tx",
+        "location": "wpn_id_V00_Zeus_RG",
+        "file": {
+          "url": "https://assets.thecdn.io/3c32889a-1344-4d45-8361-d7cd7291ce13.wav",
+          "filename": "3c32889a-1344-4d45-8361-d7cd7291ce13.wav",
+          "alt_filename": "KQX2Z8P7_M94A_CORE.wav",
+          "alt": "Zeus Content",
+          "width": null,
+          "height": null,
+          "mimeType": "audio/x-wav"
+        }
+      }
+    ],
+    "cctvLockedFiles": 6
+  },
+  "base_url": "https://goliath-tau-ceti-stage.b-cdn.net/weapons/V00%20Zeus%20RG-2026-02-16_09%3A00",
+  "id": "28",
+  "weapon_name": "V00 Zeus RG",
+  "model_path": "models/v002_Railgun_default.glb",
+  "materials": [
+    "railgun_fusion_01_default_variantMaterial",
+    "railgun_fusion_01_default_frameMaterial"
+  ],
+  "sticker_material_name": "Material",
+  "charm_pivot_name": "Charm_pivot",
+  "skins": [
+    {
+      "name": "TAC Standard Calm",
+      "is_default": true,
+      "is_model_changed": false,
+      "model_path": null,
+      "textures": [
+        {
+          "name": "railgun_fusion_01_default_variantMaterial_map",
+          "material_name": "railgun_fusion_01_default_variantMaterial",
+          "type": "map",
+          "image": "textures/TAC Standard Calm/railgun_fusion_01_default_variantMaterial_map.webp"
+        },
+        {
+          "name": "railgun_fusion_01_default_variantMaterial_normalMap",
+          "material_name": "railgun_fusion_01_default_variantMaterial",
+          "type": "normalMap",
+          "image": "textures/TAC Standard Calm/railgun_fusion_01_default_variantMaterial_normalMap.webp"
+        },
+        {
+          "name": "railgun_fusion_01_default_variantMaterial_roughnessMap",
+          "material_name": "railgun_fusion_01_default_variantMaterial",
+          "type": "roughnessMap",
+          "image": "textures/TAC Standard Calm/railgun_fusion_01_default_variantMaterial_roughnessMap.webp"
+        },
+        {
+          "name": "railgun_fusion_01_default_variantMaterial_metalnessMap",
+          "material_name": "railgun_fusion_01_default_variantMaterial",
+          "type": "metalnessMap",
+          "image": "textures/TAC Standard Calm/railgun_fusion_01_default_variantMaterial_metalnessMap.webp"
+        },
+        {
+          "name": "railgun_fusion_01_default_variantMaterial_map",
+          "material_name": "railgun_fusion_01_default_variantMaterial",
+          "type": "map",
+          "image": "textures/TAC Standard Calm/railgun_fusion_01_default_variantMaterial_map.webp"
+        },
+        {
+          "name": "railgun_fusion_01_default_variantMaterial_normalMap",
+          "material_name": "railgun_fusion_01_default_variantMaterial",
+          "type": "normalMap",
+          "image": "textures/TAC Standard Calm/railgun_fusion_01_default_variantMaterial_normalMap.webp"
+        },
+        {
+          "name": "railgun_fusion_01_default_variantMaterial_roughnessMap",
+          "material_name": "railgun_fusion_01_default_variantMaterial",
+          "type": "roughnessMap",
+          "image": "textures/TAC Standard Calm/railgun_fusion_01_default_variantMaterial_roughnessMap.webp"
+        },
+        {
+          "name": "railgun_fusion_01_default_variantMaterial_metalnessMap",
+          "material_name": "railgun_fusion_01_default_variantMaterial",
+          "type": "metalnessMap",
+          "image": "textures/TAC Standard Calm/railgun_fusion_01_default_variantMaterial_metalnessMap.webp"
+        },
+        {
+          "name": "railgun_fusion_01_default_variantMaterial_map",
+          "material_name": "railgun_fusion_01_default_variantMaterial",
+          "type": "map",
+          "image": "textures/TAC Standard Calm/railgun_fusion_01_default_variantMaterial_map.webp"
+        },
+        {
+          "name": "railgun_fusion_01_default_variantMaterial_normalMap",
+          "material_name": "railgun_fusion_01_default_variantMaterial",
+          "type": "normalMap",
+          "image": "textures/TAC Standard Calm/railgun_fusion_01_default_variantMaterial_normalMap.webp"
+        },
+        {
+          "name": "railgun_fusion_01_default_variantMaterial_roughnessMap",
+          "material_name": "railgun_fusion_01_default_variantMaterial",
+          "type": "roughnessMap",
+          "image": "textures/TAC Standard Calm/railgun_fusion_01_default_variantMaterial_roughnessMap.webp"
+        },
+        {
+          "name": "railgun_fusion_01_default_variantMaterial_metalnessMap",
+          "material_name": "railgun_fusion_01_default_variantMaterial",
+          "type": "metalnessMap",
+          "image": "textures/TAC Standard Calm/railgun_fusion_01_default_variantMaterial_metalnessMap.webp"
+        },
+        {
+          "name": "railgun_fusion_01_default_variantMaterial_map",
+          "material_name": "railgun_fusion_01_default_variantMaterial",
+          "type": "map",
+          "image": "textures/TAC Standard Calm/railgun_fusion_01_default_variantMaterial_map.webp"
+        },
+        {
+          "name": "railgun_fusion_01_default_variantMaterial_normalMap",
+          "material_name": "railgun_fusion_01_default_variantMaterial",
+          "type": "normalMap",
+          "image": "textures/TAC Standard Calm/railgun_fusion_01_default_variantMaterial_normalMap.webp"
+        },
+        {
+          "name": "railgun_fusion_01_default_variantMaterial_roughnessMap",
+          "material_name": "railgun_fusion_01_default_variantMaterial",
+          "type": "roughnessMap",
+          "image": "textures/TAC Standard Calm/railgun_fusion_01_default_variantMaterial_roughnessMap.webp"
+        },
+        {
+          "name": "railgun_fusion_01_default_variantMaterial_metalnessMap",
+          "material_name": "railgun_fusion_01_default_variantMaterial",
+          "type": "metalnessMap",
+          "image": "textures/TAC Standard Calm/railgun_fusion_01_default_variantMaterial_metalnessMap.webp"
+        },
+        {
+          "name": "railgun_fusion_01_default_variantMaterial_map",
+          "material_name": "railgun_fusion_01_default_variantMaterial",
+          "type": "map",
+          "image": "textures/TAC Standard Calm/railgun_fusion_01_default_variantMaterial_map.webp"
+        },
+        {
+          "name": "railgun_fusion_01_default_variantMaterial_normalMap",
+          "material_name": "railgun_fusion_01_default_variantMaterial",
+          "type": "normalMap",
+          "image": "textures/TAC Standard Calm/railgun_fusion_01_default_variantMaterial_normalMap.webp"
+        },
+        {
+          "name": "railgun_fusion_01_default_variantMaterial_roughnessMap",
+          "material_name": "railgun_fusion_01_default_variantMaterial",
+          "type": "roughnessMap",
+          "image": "textures/TAC Standard Calm/railgun_fusion_01_default_variantMaterial_roughnessMap.webp"
+        },
+        {
+          "name": "railgun_fusion_01_default_variantMaterial_metalnessMap",
+          "material_name": "railgun_fusion_01_default_variantMaterial",
+          "type": "metalnessMap",
+          "image": "textures/TAC Standard Calm/railgun_fusion_01_default_variantMaterial_metalnessMap.webp"
+        },
+        {
+          "name": "railgun_fusion_01_default_variantMaterial_map",
+          "material_name": "railgun_fusion_01_default_variantMaterial",
+          "type": "map",
+          "image": "textures/TAC Standard Calm/railgun_fusion_01_default_variantMaterial_map.webp"
+        },
+        {
+          "name": "railgun_fusion_01_default_variantMaterial_normalMap",
+          "material_name": "railgun_fusion_01_default_variantMaterial",
+          "type": "normalMap",
+          "image": "textures/TAC Standard Calm/railgun_fusion_01_default_variantMaterial_normalMap.webp"
+        },
+        {
+          "name": "railgun_fusion_01_default_variantMaterial_roughnessMap",
+          "material_name": "railgun_fusion_01_default_variantMaterial",
+          "type": "roughnessMap",
+          "image": "textures/TAC Standard Calm/railgun_fusion_01_default_variantMaterial_roughnessMap.webp"
+        },
+        {
+          "name": "railgun_fusion_01_default_variantMaterial_metalnessMap",
+          "material_name": "railgun_fusion_01_default_variantMaterial",
+          "type": "metalnessMap",
+          "image": "textures/TAC Standard Calm/railgun_fusion_01_default_variantMaterial_metalnessMap.webp"
+        },
+        {
+          "name": "railgun_fusion_01_default_frameMaterial_map",
+          "material_name": "railgun_fusion_01_default_frameMaterial",
+          "type": "map",
+          "image": "textures/TAC Standard Calm/railgun_fusion_01_default_frameMaterial_map.webp"
+        },
+        {
+          "name": "railgun_fusion_01_default_frameMaterial_normalMap",
+          "material_name": "railgun_fusion_01_default_frameMaterial",
+          "type": "normalMap",
+          "image": "textures/TAC Standard Calm/railgun_fusion_01_default_frameMaterial_normalMap.webp"
+        },
+        {
+          "name": "railgun_fusion_01_default_frameMaterial_roughnessMap",
+          "material_name": "railgun_fusion_01_default_frameMaterial",
+          "type": "roughnessMap",
+          "image": "textures/TAC Standard Calm/railgun_fusion_01_default_frameMaterial_roughnessMap.webp"
+        },
+        {
+          "name": "railgun_fusion_01_default_frameMaterial_metalnessMap",
+          "material_name": "railgun_fusion_01_default_frameMaterial",
+          "type": "metalnessMap",
+          "image": "textures/TAC Standard Calm/railgun_fusion_01_default_frameMaterial_metalnessMap.webp"
+        },
+        {
+          "name": "railgun_fusion_01_default_variantMaterial_map",
+          "material_name": "railgun_fusion_01_default_variantMaterial",
+          "type": "map",
+          "image": "textures/TAC Standard Calm/railgun_fusion_01_default_variantMaterial_map.webp"
+        },
+        {
+          "name": "railgun_fusion_01_default_variantMaterial_normalMap",
+          "material_name": "railgun_fusion_01_default_variantMaterial",
+          "type": "normalMap",
+          "image": "textures/TAC Standard Calm/railgun_fusion_01_default_variantMaterial_normalMap.webp"
+        },
+        {
+          "name": "railgun_fusion_01_default_variantMaterial_roughnessMap",
+          "material_name": "railgun_fusion_01_default_variantMaterial",
+          "type": "roughnessMap",
+          "image": "textures/TAC Standard Calm/railgun_fusion_01_default_variantMaterial_roughnessMap.webp"
+        },
+        {
+          "name": "railgun_fusion_01_default_variantMaterial_metalnessMap",
+          "material_name": "railgun_fusion_01_default_variantMaterial",
+          "type": "metalnessMap",
+          "image": "textures/TAC Standard Calm/railgun_fusion_01_default_variantMaterial_metalnessMap.webp"
+        },
+        {
+          "name": "railgun_fusion_01_default_variantMaterial_map",
+          "material_name": "railgun_fusion_01_default_variantMaterial",
+          "type": "map",
+          "image": "textures/TAC Standard Calm/railgun_fusion_01_default_variantMaterial_map.webp"
+        },
+        {
+          "name": "railgun_fusion_01_default_variantMaterial_normalMap",
+          "material_name": "railgun_fusion_01_default_variantMaterial",
+          "type": "normalMap",
+          "image": "textures/TAC Standard Calm/railgun_fusion_01_default_variantMaterial_normalMap.webp"
+        },
+        {
+          "name": "railgun_fusion_01_default_variantMaterial_roughnessMap",
+          "material_name": "railgun_fusion_01_default_variantMaterial",
+          "type": "roughnessMap",
+          "image": "textures/TAC Standard Calm/railgun_fusion_01_default_variantMaterial_roughnessMap.webp"
+        },
+        {
+          "name": "railgun_fusion_01_default_variantMaterial_metalnessMap",
+          "material_name": "railgun_fusion_01_default_variantMaterial",
+          "type": "metalnessMap",
+          "image": "textures/TAC Standard Calm/railgun_fusion_01_default_variantMaterial_metalnessMap.webp"
+        },
+        {
+          "name": "railgun_fusion_01_default_variantMaterial_map",
+          "material_name": "railgun_fusion_01_default_variantMaterial",
+          "type": "map",
+          "image": "textures/TAC Standard Calm/railgun_fusion_01_default_variantMaterial_map.webp"
+        },
+        {
+          "name": "railgun_fusion_01_default_variantMaterial_normalMap",
+          "material_name": "railgun_fusion_01_default_variantMaterial",
+          "type": "normalMap",
+          "image": "textures/TAC Standard Calm/railgun_fusion_01_default_variantMaterial_normalMap.webp"
+        },
+        {
+          "name": "railgun_fusion_01_default_variantMaterial_roughnessMap",
+          "material_name": "railgun_fusion_01_default_variantMaterial",
+          "type": "roughnessMap",
+          "image": "textures/TAC Standard Calm/railgun_fusion_01_default_variantMaterial_roughnessMap.webp"
+        },
+        {
+          "name": "railgun_fusion_01_default_variantMaterial_metalnessMap",
+          "material_name": "railgun_fusion_01_default_variantMaterial",
+          "type": "metalnessMap",
+          "image": "textures/TAC Standard Calm/railgun_fusion_01_default_variantMaterial_metalnessMap.webp"
+        },
+        {
+          "name": "railgun_fusion_01_default_variantMaterial_map",
+          "material_name": "railgun_fusion_01_default_variantMaterial",
+          "type": "map",
+          "image": "textures/TAC Standard Calm/railgun_fusion_01_default_variantMaterial_map.webp"
+        },
+        {
+          "name": "railgun_fusion_01_default_variantMaterial_normalMap",
+          "material_name": "railgun_fusion_01_default_variantMaterial",
+          "type": "normalMap",
+          "image": "textures/TAC Standard Calm/railgun_fusion_01_default_variantMaterial_normalMap.webp"
+        },
+        {
+          "name": "railgun_fusion_01_default_variantMaterial_roughnessMap",
+          "material_name": "railgun_fusion_01_default_variantMaterial",
+          "type": "roughnessMap",
+          "image": "textures/TAC Standard Calm/railgun_fusion_01_default_variantMaterial_roughnessMap.webp"
+        },
+        {
+          "name": "railgun_fusion_01_default_variantMaterial_metalnessMap",
+          "material_name": "railgun_fusion_01_default_variantMaterial",
+          "type": "metalnessMap",
+          "image": "textures/TAC Standard Calm/railgun_fusion_01_default_variantMaterial_metalnessMap.webp"
+        },
+        {
+          "name": "railgun_fusion_01_default_variantMaterial_map",
+          "material_name": "railgun_fusion_01_default_variantMaterial",
+          "type": "map",
+          "image": "textures/TAC Standard Calm/railgun_fusion_01_default_variantMaterial_map.webp"
+        },
+        {
+          "name": "railgun_fusion_01_default_variantMaterial_normalMap",
+          "material_name": "railgun_fusion_01_default_variantMaterial",
+          "type": "normalMap",
+          "image": "textures/TAC Standard Calm/railgun_fusion_01_default_variantMaterial_normalMap.webp"
+        },
+        {
+          "name": "railgun_fusion_01_default_variantMaterial_roughnessMap",
+          "material_name": "railgun_fusion_01_default_variantMaterial",
+          "type": "roughnessMap",
+          "image": "textures/TAC Standard Calm/railgun_fusion_01_default_variantMaterial_roughnessMap.webp"
+        },
+        {
+          "name": "railgun_fusion_01_default_variantMaterial_metalnessMap",
+          "material_name": "railgun_fusion_01_default_variantMaterial",
+          "type": "metalnessMap",
+          "image": "textures/TAC Standard Calm/railgun_fusion_01_default_variantMaterial_metalnessMap.webp"
+        }
+      ]
+    }
+  ],
+  "mods": {
+    "precision_optic": [
+      {
+        "id": "019c2dd6-6a0a-7171-8303-1727dc81c389",
+        "name": "mod_sight_default",
+        "is_default": true,
+        "materials": [
+          "sight_railgun_fusion_01_defaultMaterial",
+          "scope",
+          "postprocess_maskMaterial",
+          "sight_railgun_fusion_01_holo_uiMaterial",
+          "hs_decal_solidMaterial",
+          "sight_railgun_fusion_01_chargeMaterial",
+          "hs_transparent_shaderMaterial"
+        ],
+        "thumbnail": "thumbnails/mods/mod_sight_default.webp",
+        "image": "images/mods/mod_sight_default.webp",
+        "specs": "Default",
+        "type": "Optic",
+        "model_path": "models/precision_optic/mod_sight_default.glb",
+        "textures": [
+          {
+            "skin": "TAC Standard Calm",
+            "name": "sight_railgun_fusion_01_defaultMaterial_map",
+            "material_name": "sight_railgun_fusion_01_defaultMaterial",
+            "type": "map",
+            "image": "textures/mods/mod_sight_default/TAC Standard Calm/sight_railgun_fusion_01_defaultMaterial_map.webp"
+          },
+          {
+            "skin": "TAC Standard Calm",
+            "name": "sight_railgun_fusion_01_defaultMaterial_normalMap",
+            "material_name": "sight_railgun_fusion_01_defaultMaterial",
+            "type": "normalMap",
+            "image": "textures/mods/mod_sight_default/TAC Standard Calm/sight_railgun_fusion_01_defaultMaterial_normalMap.webp"
+          },
+          {
+            "skin": "TAC Standard Calm",
+            "name": "sight_railgun_fusion_01_defaultMaterial_roughnessMap",
+            "material_name": "sight_railgun_fusion_01_defaultMaterial",
+            "type": "roughnessMap",
+            "image": "textures/mods/mod_sight_default/TAC Standard Calm/sight_railgun_fusion_01_defaultMaterial_roughnessMap.webp"
+          },
+          {
+            "skin": "TAC Standard Calm",
+            "name": "sight_railgun_fusion_01_defaultMaterial_metalnessMap",
+            "material_name": "sight_railgun_fusion_01_defaultMaterial",
+            "type": "metalnessMap",
+            "image": "textures/mods/mod_sight_default/TAC Standard Calm/sight_railgun_fusion_01_defaultMaterial_metalnessMap.webp"
+          }
+        ]
+      }
+    ],
+    "magazine": [
+      {
+        "id": "019c2dd6-86c8-74b8-a937-99bbd4f58390",
+        "name": "mod_cell_default",
+        "is_default": true,
+        "materials": [
+          "t_vfx_sniper_battery_magazine_corrosion_02Material",
+          "cell_railgun_fusion_01_default_shaderMaterial"
+        ],
+        "thumbnail": "thumbnails/mods/mod_cell_default.webp",
+        "image": "images/mods/mod_cell_default.webp",
+        "specs": "Default",
+        "type": "Cell",
+        "model_path": "models/magazine/mod_cell_default.glb",
+        "textures": [
+          {
+            "skin": "TAC Standard Calm",
+            "name": "t_vfx_sniper_battery_magazine_corrosion_02Material_map",
+            "material_name": "t_vfx_sniper_battery_magazine_corrosion_02Material",
+            "type": "map",
+            "image": "textures/mods/mod_cell_default/TAC Standard Calm/t_vfx_sniper_battery_magazine_corrosion_02Material_map.webp"
+          },
+          {
+            "skin": "TAC Standard Calm",
+            "name": "t_vfx_sniper_battery_magazine_corrosion_02Material_normalMap",
+            "material_name": "t_vfx_sniper_battery_magazine_corrosion_02Material",
+            "type": "normalMap",
+            "image": "textures/mods/mod_cell_default/TAC Standard Calm/t_vfx_sniper_battery_magazine_corrosion_02Material_normalMap.webp"
+          },
+          {
+            "skin": "TAC Standard Calm",
+            "name": "t_vfx_sniper_battery_magazine_corrosion_02Material_roughnessMap",
+            "material_name": "t_vfx_sniper_battery_magazine_corrosion_02Material",
+            "type": "roughnessMap",
+            "image": "textures/mods/mod_cell_default/TAC Standard Calm/t_vfx_sniper_battery_magazine_corrosion_02Material_roughnessMap.webp"
+          },
+          {
+            "skin": "TAC Standard Calm",
+            "name": "t_vfx_sniper_battery_magazine_corrosion_02Material_metalnessMap",
+            "material_name": "t_vfx_sniper_battery_magazine_corrosion_02Material",
+            "type": "metalnessMap",
+            "image": "textures/mods/mod_cell_default/TAC Standard Calm/t_vfx_sniper_battery_magazine_corrosion_02Material_metalnessMap.webp"
+          },
+          {
+            "skin": "TAC Standard Calm",
+            "name": "cell_railgun_fusion_01_default_shaderMaterial_map",
+            "material_name": "cell_railgun_fusion_01_default_shaderMaterial",
+            "type": "map",
+            "image": "textures/mods/mod_cell_default/TAC Standard Calm/cell_railgun_fusion_01_default_shaderMaterial_map.webp"
+          },
+          {
+            "skin": "TAC Standard Calm",
+            "name": "cell_railgun_fusion_01_default_shaderMaterial_normalMap",
+            "material_name": "cell_railgun_fusion_01_default_shaderMaterial",
+            "type": "normalMap",
+            "image": "textures/mods/mod_cell_default/TAC Standard Calm/cell_railgun_fusion_01_default_shaderMaterial_normalMap.webp"
+          },
+          {
+            "skin": "TAC Standard Calm",
+            "name": "cell_railgun_fusion_01_default_shaderMaterial_roughnessMap",
+            "material_name": "cell_railgun_fusion_01_default_shaderMaterial",
+            "type": "roughnessMap",
+            "image": "textures/mods/mod_cell_default/TAC Standard Calm/cell_railgun_fusion_01_default_shaderMaterial_roughnessMap.webp"
+          },
+          {
+            "skin": "TAC Standard Calm",
+            "name": "cell_railgun_fusion_01_default_shaderMaterial_metalnessMap",
+            "material_name": "cell_railgun_fusion_01_default_shaderMaterial",
+            "type": "metalnessMap",
+            "image": "textures/mods/mod_cell_default/TAC Standard Calm/cell_railgun_fusion_01_default_shaderMaterial_metalnessMap.webp"
+          }
+        ]
+      }
+    ],
+    "generator": [
+      {
+        "id": "019c2dd6-aa4f-7529-bdb3-b8362fccfbb8",
+        "name": "mod_generator_default",
+        "is_default": true,
+        "materials": [
+          "generator_railgun_fusion_01_default_shaderMaterial"
+        ],
+        "thumbnail": "thumbnails/mods/mod_generator_default.webp",
+        "image": "images/mods/mod_generator_default.webp",
+        "specs": "Default",
+        "type": "Generator",
+        "model_path": "models/generator/mod_generator_default.glb",
+        "textures": [
+          {
+            "skin": "TAC Standard Calm",
+            "name": "generator_railgun_fusion_01_default_shaderMaterial_map",
+            "material_name": "generator_railgun_fusion_01_default_shaderMaterial",
+            "type": "map",
+            "image": "textures/mods/mod_generator_default/TAC Standard Calm/generator_railgun_fusion_01_default_shaderMaterial_map.webp"
+          },
+          {
+            "skin": "TAC Standard Calm",
+            "name": "generator_railgun_fusion_01_default_shaderMaterial_normalMap",
+            "material_name": "generator_railgun_fusion_01_default_shaderMaterial",
+            "type": "normalMap",
+            "image": "textures/mods/mod_generator_default/TAC Standard Calm/generator_railgun_fusion_01_default_shaderMaterial_normalMap.webp"
+          },
+          {
+            "skin": "TAC Standard Calm",
+            "name": "generator_railgun_fusion_01_default_shaderMaterial_roughnessMap",
+            "material_name": "generator_railgun_fusion_01_default_shaderMaterial",
+            "type": "roughnessMap",
+            "image": "textures/mods/mod_generator_default/TAC Standard Calm/generator_railgun_fusion_01_default_shaderMaterial_roughnessMap.webp"
+          },
+          {
+            "skin": "TAC Standard Calm",
+            "name": "generator_railgun_fusion_01_default_shaderMaterial_metalnessMap",
+            "material_name": "generator_railgun_fusion_01_default_shaderMaterial",
+            "type": "metalnessMap",
+            "image": "textures/mods/mod_generator_default/TAC Standard Calm/generator_railgun_fusion_01_default_shaderMaterial_metalnessMap.webp"
+          }
+        ]
+      }
+    ]
+  },
+  "stickers": [],
+  "charms": [],
+  "slug": "v00-zeus-rg",
+  "redacted": false
+}

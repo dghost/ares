@@ -1,0 +1,58 @@
+TAU CETI IV — EXPLORER
+========================================
+
+Colony marker: lat 30, lon -18
+
+## Perimeter
+Max crew: 5
+
+Perimeter appears to be part of colony expansion and terraplatforming efforts.
+
+Its data Wall, Hauler, and Twin Relays suggest heavy data collection and transmission, though the purpose and outcome remain unclear. 
+
+Most systems read as dormant.
+
+Regions (5): HAULER, OVERFLOW, SOUTH RELAY, STATION, NORTH RELAY
+Landmarks (5): DATA WALL, EAST WALL, TUNNELS, RAVINE, COLUMNS
+Lore points (7): X-RAY DISPLAY, CRYPTIC GRAFFITI, TICK NEST, GEOMETRIC GRAFFITI, Tunnel Root, PLANNING DISPLAY, SAR STATION
+UESC troop spawns: 12 (types: Recruit,Assault,Grenadier,Ghost,Scout)
+Exfils: 9
+Runner spawn points: 18
+
+----------------------------------------
+
+## Dire Marsh
+Max crew: 6
+
+Located in the colonyâs former farming sector. 
+
+The zone contains research, cultivation, and processing facilities tied to food sustainability efforts. Environmental conditions are marshland with limited visibility and broad sightlines. Automated systems show signs of partial operation.
+
+A quarantine operation was initiated here prior to abandonment. The presence of an unidentified anomaly intersects multiple regions of the zone.
+
+Regions (7): BIO RESEARCH, ALGAE PONDS, QUARANTINE, MAINTENANCE, AI UPLINK, GREENHOUSE, COMPLEX
+Landmarks (5): CANAL, INTERSECTION, ANOMALY, EAST GATE, WEST GATE
+Lore points (6): CLEAN BAY, Speaknoseenohearno, Garage, PROTEIN STATIONS, SUSPENDED BIO-MASS, DE-CHEM STALL
+UESC troop spawns: 16 (types: Recruit,Assault,Grenadier,Ghost,Scout)
+Exfils: 13
+Runner spawn points: 28
+
+----------------------------------------
+
+## Outpost
+Max crew: 4
+
+Outposts were the tip-of-the-spear for Tau Ceti colonization efforts. 
+
+This zoneâs layout points to staging and logistics for planetary expeditions: launch, intake, processing, housing. 
+
+Everything that followed started here.
+
+Regions (6): PROCESSING, PINWHEEL BASE, DORMITORIES, ORIENTATION, FLIGHT CONTROL, AIRFIELD
+Landmarks (3): Command Wing, Drone Wing, Destroyed Wing
+Lore points (6): Green Screen, Vending Machines, Marathon, Departure Board, Pinwheel Whiteboard, Graffiti Stickers
+UESC troop spawns: 7 (types: Recruit,Assault,Ghost,Grenadier,Scout)
+Exfils: 13
+Runner spawn points: 19
+
+----------------------------------------

@@ -1,0 +1,293 @@
+{
+  "name": "Thief",
+  "abilities": [
+    {
+      "name": "ROLE: Covert acquisitions ",
+      "type": "TECH: Advanced heist mechanics",
+      "icon": {
+        "url": "https://assets.thecdn.io/4e4c0a33-852a-49d9-8b50-3df26c2abb3b.png",
+        "filename": "4e4c0a33-852a-49d9-8b50-3df26c2abb3b.png",
+        "alt_filename": "4e4c0a33-852a-49d9-8b50-3df26c2abb3b.png",
+        "alt": "Theif Icon",
+        "width": 108,
+        "height": 108,
+        "mimeType": "image/png"
+      },
+      "heading": "A Thief always keeps their eyes  on the prize",
+      "description": "Use enhanced visors and piloted drones to remotely locate and acquire valuable loot. Steal from a zone or rival Runners. Then make an escape or push the advantage with the Thief's deployable grapple device. \n[excerpt, UESC threat eval: rnnr.thf.fileID70064c_p223] \n"
+    },
+    {
+      "name": "PICKPOCKET DRONE",
+      "type": "Prime Ability",
+      "icon": {
+        "url": "https://assets.thecdn.io/d1ca8018-4099-440d-b024-f131522cf5c6.png",
+        "filename": "d1ca8018-4099-440d-b024-f131522cf5c6.png",
+        "alt_filename": "Pickpocket_drone.png",
+        "alt": "Pickpocket_drone",
+        "width": 108,
+        "height": 108,
+        "mimeType": "image/png"
+      },
+      "heading": "",
+      "description": "Deploy a remotely piloted flying drone with a limited lifespan.\n\nWhile piloting the drone: \n\nFire a hooked tether that can eject the highest-value item from target inventories, collect and store loose loot and open doors.\n\nExit the drone and return to your shell.\n\nAt any point while the drone is still active, activate the ability again to continue piloting the drone."
+    },
+    {
+      "name": "GRAPPLE DEVICE",
+      "type": "Tactical Ability",
+      "icon": {
+        "url": "https://assets.thecdn.io/c8b0564c-9d53-4ab0-aee3-f0d61f974ed5.png",
+        "filename": "c8b0564c-9d53-4ab0-aee3-f0d61f974ed5.png",
+        "alt_filename": "Grapple_device.png",
+        "alt": "Grapple_device",
+        "width": 108,
+        "height": 108,
+        "mimeType": "image/png"
+      },
+      "heading": "",
+      "description": "Launch a grapple device in your aim direction, propelling yourself toward it."
+    },
+    {
+      "name": "X-RAY VISOR",
+      "type": "Trait 1",
+      "icon": {
+        "url": "https://assets.thecdn.io/9c97d56c-7dd1-4cf1-89c3-2c61a3858e57.png",
+        "filename": "9c97d56c-7dd1-4cf1-89c3-2c61a3858e57.png",
+        "alt_filename": "X-ray_visor.png",
+        "alt": "X-ray_visor",
+        "width": 108,
+        "height": 108,
+        "mimeType": "image/png"
+      },
+      "heading": "",
+      "description": "Activate your visor, highlighting hostiles and containers in the color of the most valuable item they're storing. Containers are revealed through walls, while hostiles require line of sight. \n\nWhile active, aiming at a hostile for a short time Hacks their optics, disrupting their vision until you look away."
+    },
+    {
+      "name": "THE FINER THINGS",
+      "type": "Trait 2",
+      "icon": {
+        "url": "https://assets.thecdn.io/4d118070-5497-4392-95a5-59dc25cbc369.png",
+        "filename": "4d118070-5497-4392-95a5-59dc25cbc369.png",
+        "alt_filename": "The_finer_things.png",
+        "alt": "The_finer_things",
+        "width": 108,
+        "height": 108,
+        "mimeType": "image/png"
+      },
+      "heading": "",
+      "description": "Gain increased weapon handling and accelerated Grapple Device recharge rate based on the number of items in your Backpack."
+    }
+  ],
+  "cctvItems": {
+    "foot_left": {
+      "enabled": false,
+      "name": null,
+      "file": null
+    },
+    "foot_right": {
+      "enabled": false,
+      "name": null,
+      "file": null
+    },
+    "knee_left": {
+      "enabled": false,
+      "name": null,
+      "file": null
+    },
+    "knee_right": {
+      "enabled": false,
+      "name": null,
+      "file": null
+    },
+    "hip_left": {
+      "enabled": true,
+      "name": "ZP9K6A7R_X4M2_STACK.bin",
+      "file": {
+        "url": "https://assets.thecdn.io/9d152fa3-9cf6-4cc5-abfa-bff864c80ffc.mp4",
+        "filename": "9d152fa3-9cf6-4cc5-abfa-bff864c80ffc.mp4",
+        "alt_filename": "ZP9K6A7R_X4M2_STACK.mp4",
+        "alt": "Drone",
+        "width": null,
+        "height": null,
+        "mimeType": "video/mp4"
+      }
+    },
+    "hip_right": {
+      "enabled": false,
+      "name": null,
+      "file": null
+    },
+    "chest": {
+      "enabled": false,
+      "name": null,
+      "file": null
+    },
+    "head": {
+      "enabled": true,
+      "name": "M8X2A7ZP_QR94_CORE.tx",
+      "file": {
+        "url": "https://assets.thecdn.io/bddee725-5b3d-4f6b-ae79-a2dfe9baddd6.mp4",
+        "filename": "bddee725-5b3d-4f6b-ae79-a2dfe9baddd6.mp4",
+        "alt_filename": "M8X2A7ZP_QR94_CORE.mp4",
+        "alt": "Visior",
+        "width": null,
+        "height": null,
+        "mimeType": "video/mp4"
+      }
+    },
+    "shoulder_left": {
+      "enabled": true,
+      "name": "C2X9KZ7P_QM4A_IOCTL.tx",
+      "file": {
+        "url": "https://assets.thecdn.io/8417586d-6856-4660-87e3-cf49b53fb669.wav",
+        "filename": "8417586d-6856-4660-87e3-cf49b53fb669.wav",
+        "alt_filename": "8417586d-6856-4660-87e3-cf49b53fb669.wav",
+        "alt": "finders keepers",
+        "width": null,
+        "height": null,
+        "mimeType": "audio/wav"
+      }
+    },
+    "shoulder_right": {
+      "enabled": true,
+      "name": "L8P7ZX9Q_4AMK_THRD.log",
+      "file": {
+        "url": "https://assets.thecdn.io/2a46597b-8e1e-400b-821b-71228809be60.wav",
+        "filename": "2a46597b-8e1e-400b-821b-71228809be60.wav",
+        "alt_filename": "2a46597b-8e1e-400b-821b-71228809be60.wav",
+        "alt": "any pocket picked",
+        "width": null,
+        "height": null,
+        "mimeType": "audio/wav"
+      }
+    },
+    "elbow_left": {
+      "enabled": false,
+      "name": null,
+      "file": null
+    },
+    "elbow_right": {
+      "enabled": false,
+      "name": null,
+      "file": null
+    },
+    "hand_left": {
+      "enabled": true,
+      "name": "FQ6ZKX7R_A94P_FEED.log",
+      "file": {
+        "url": "https://assets.thecdn.io/66796e15-df6a-4bab-bb6c-696c07dd42cb.mp4",
+        "filename": "66796e15-df6a-4bab-bb6c-696c07dd42cb.mp4",
+        "alt_filename": "FQ6ZKX7R_A94P_FEED.mp4",
+        "alt": "Grappling Hook",
+        "width": null,
+        "height": null,
+        "mimeType": "video/mp4"
+      }
+    },
+    "hand_right": {
+      "enabled": false,
+      "name": null,
+      "file": null
+    }
+  },
+  "base_url": "https://goliath-tau-ceti-stage.b-cdn.net/runners/Thief-2026-02-25_14%3A25",
+  "id": "5",
+  "runner_name": "Thief",
+  "model_path": "models/Thief.glb",
+  "skins": [
+    {
+      "name": "Core",
+      "is_default": true,
+      "is_model_changed": false,
+      "model_path": null,
+      "image": {
+        "path": "images/skins/Core.png",
+        "name": "captured-skin.png",
+        "type": "image/png"
+      }
+    },
+    {
+      "name": "Shadow Index",
+      "is_default": false,
+      "is_model_changed": true,
+      "model_path": "models/skins/Shadow Index.glb",
+      "image": {
+        "path": "images/skins/Shadow Index.png",
+        "name": "captured-skin.png",
+        "type": "image/png"
+      }
+    }
+  ],
+  "interactive_points": {
+    "foot_left": {
+      "x": 0.27,
+      "y": 0.09,
+      "z": -0.03
+    },
+    "foot_right": {
+      "x": -0.2,
+      "y": 0.05,
+      "z": -0.23
+    },
+    "knee_left": {
+      "x": 0.15,
+      "y": 0.54,
+      "z": 0.05
+    },
+    "knee_right": {
+      "x": -0.16,
+      "y": 0.52,
+      "z": -0.12
+    },
+    "hip_left": {
+      "x": 0.06,
+      "y": 1.01,
+      "z": 0.05
+    },
+    "hip_right": {
+      "x": -0.11,
+      "y": 1.02,
+      "z": -0.01
+    },
+    "chest": {
+      "x": -0.01,
+      "y": 1.42,
+      "z": 0.01
+    },
+    "head": {
+      "x": 0.02,
+      "y": 1.68,
+      "z": 0.06
+    },
+    "shoulder_left": {
+      "x": 0.17,
+      "y": 1.48,
+      "z": 0
+    },
+    "shoulder_right": {
+      "x": -0.18,
+      "y": 1.45,
+      "z": -0.08
+    },
+    "elbow_left": {
+      "x": 0.34,
+      "y": 1.21,
+      "z": -0.02
+    },
+    "elbow_right": {
+      "x": -0.23,
+      "y": 1.21,
+      "z": -0.17
+    },
+    "hand_left": {
+      "x": 0.08,
+      "y": 1.07,
+      "z": -0.14
+    },
+    "hand_right": {
+      "x": -0.28,
+      "y": 0.87,
+      "z": -0.03
+    }
+  },
+  "slug": "thief"
+}

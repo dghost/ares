@@ -1,0 +1,291 @@
+{
+  "name": "Magnum MC",
+  "sliding_puzzle": null,
+  "cctv": {
+    "cctvItems": [
+      {
+        "id": "698dd4a4a14d91b852004e1c",
+        "name": "FZ3N8X6P_LR72_EDGE.log",
+        "location": "wpn_id_Magnum_MC",
+        "file": {
+          "url": "https://assets.thecdn.io/7c5d9c07-fc8e-45a6-aa38-5de78a13381f.mp4",
+          "filename": "7c5d9c07-fc8e-45a6-aa38-5de78a13381f.mp4",
+          "alt_filename": "FZ3N8X6P_LR72_EDGE.mp4",
+          "alt": "Magnum Content",
+          "width": null,
+          "height": null,
+          "mimeType": "video/mp4"
+        }
+      },
+      {
+        "id": "698dd4a5a14d91b852004e1d",
+        "name": "V4A7K2R_Q9M6_PIPE.tx",
+        "location": "wpn_id_Magnum_MC",
+        "file": {
+          "url": "https://assets.thecdn.io/55231f11-5827-45a5-a5bc-5116fba5ce79.mp4",
+          "filename": "55231f11-5827-45a5-a5bc-5116fba5ce79.mp4",
+          "alt_filename": "V4A7K2R_Q9M6_PIPE.mp4",
+          "alt": "Magnum Content",
+          "width": null,
+          "height": null,
+          "mimeType": "video/mp4"
+        }
+      },
+      {
+        "id": "698e2c4a3bf196077cb1cc78",
+        "name": "R6XQZ9P4_7AMK_PROC.bin",
+        "location": "wpn_id_Magnum_MC",
+        "file": {
+          "url": "https://assets.thecdn.io/c4cce5a1-a520-4fbc-a7c0-b26239dd9b76.wav",
+          "filename": "c4cce5a1-a520-4fbc-a7c0-b26239dd9b76.wav",
+          "alt_filename": "R6XQZ9P4_7AMK_PROC.wav",
+          "alt": "Magnum Content",
+          "width": null,
+          "height": null,
+          "mimeType": "audio/x-wav"
+        }
+      }
+    ],
+    "cctvLockedFiles": 4
+  },
+  "base_url": "https://goliath-tau-ceti-stage.b-cdn.net/weapons/Magnuc%20MC-2026-02-05_12%3A29",
+  "id": "29",
+  "weapon_name": "Magnuc MC",
+  "model_path": "models/v002_Pistol_heavy_01_default.glb",
+  "materials": [
+    "pistol_heavy_01_defaultMaterial"
+  ],
+  "sticker_material_name": "Material",
+  "charm_pivot_name": "Charm_pivot",
+  "skins": [
+    {
+      "name": "TAC Combat",
+      "is_default": true,
+      "is_model_changed": false,
+      "model_path": null,
+      "textures": [
+        {
+          "name": "pistol_heavy_01_defaultMaterial_map",
+          "material_name": "pistol_heavy_01_defaultMaterial",
+          "type": "map",
+          "image": "textures/TAC Combat/pistol_heavy_01_defaultMaterial_map.webp"
+        },
+        {
+          "name": "pistol_heavy_01_defaultMaterial_normalMap",
+          "material_name": "pistol_heavy_01_defaultMaterial",
+          "type": "normalMap",
+          "image": "textures/TAC Combat/pistol_heavy_01_defaultMaterial_normalMap.webp"
+        },
+        {
+          "name": "pistol_heavy_01_defaultMaterial_roughnessMap",
+          "material_name": "pistol_heavy_01_defaultMaterial",
+          "type": "roughnessMap",
+          "image": "textures/TAC Combat/pistol_heavy_01_defaultMaterial_roughnessMap.webp"
+        },
+        {
+          "name": "pistol_heavy_01_defaultMaterial_metalnessMap",
+          "material_name": "pistol_heavy_01_defaultMaterial",
+          "type": "metalnessMap",
+          "image": "textures/TAC Combat/pistol_heavy_01_defaultMaterial_metalnessMap.webp"
+        }
+      ]
+    },
+    {
+      "name": "Achromatic Rush",
+      "is_default": false,
+      "is_model_changed": false,
+      "model_path": null,
+      "textures": [
+        {
+          "name": "uv_checker_material_uv_grid_2048x2048_map.webp",
+          "material_name": "pistol_heavy_01_defaultMaterial",
+          "type": "map",
+          "image": "textures/Achromatic Rush/uv_checker_material_uv_grid_2048x2048_map.webp.webp"
+        },
+        {
+          "name": "uv_checker_material_uv_grid_2048x2048_normalMap.webp",
+          "material_name": "pistol_heavy_01_defaultMaterial",
+          "type": "normalMap",
+          "image": "textures/Achromatic Rush/uv_checker_material_uv_grid_2048x2048_normalMap.webp.webp"
+        },
+        {
+          "name": "uv_checker_material_uv_grid_2048x2048_roughnessMap.webp",
+          "material_name": "pistol_heavy_01_defaultMaterial",
+          "type": "roughnessMap",
+          "image": "textures/Achromatic Rush/uv_checker_material_uv_grid_2048x2048_roughnessMap.webp.webp"
+        },
+        {
+          "name": "uv_checker_material_uv_grid_2048x2048_metalnessMap.webp",
+          "material_name": "pistol_heavy_01_defaultMaterial",
+          "type": "metalnessMap",
+          "image": "textures/Achromatic Rush/uv_checker_material_uv_grid_2048x2048_metalnessMap.webp.webp"
+        }
+      ]
+    }
+  ],
+  "mods": {
+    "precision_optic": [
+      {
+        "id": "019c2dc1-a525-72ca-b452-6c37bb8aee03",
+        "name": "mod_sight_default",
+        "is_default": true,
+        "materials": [
+          "sight_pistol_heavy_01_defaultMaterial",
+          "sight_pistol_heavy_01_glow_dotsMaterial",
+          "sight_pistol_heavy_01_holo_uiMaterial"
+        ],
+        "thumbnail": "thumbnails/mods/mod_sight_default.webp",
+        "image": "images/mods/mod_sight_default.webp",
+        "specs": "Default",
+        "type": "Optic",
+        "model_path": "models/precision_optic/mod_sight_default.glb",
+        "textures": [
+          {
+            "skin": "Achromatic Rush",
+            "name": "sight_pistol_heavy_01_defaultMaterial.001_map.webp",
+            "material_name": "sight_pistol_heavy_01_defaultMaterial",
+            "type": "map",
+            "image": "textures/mods/mod_sight_default/Achromatic Rush/sight_pistol_heavy_01_defaultMaterial.001_map.webp.webp"
+          },
+          {
+            "skin": "Achromatic Rush",
+            "name": "sight_pistol_heavy_01_holo_uiMaterial.001_normalMap.webp",
+            "material_name": "sight_pistol_heavy_01_defaultMaterial",
+            "type": "normalMap",
+            "image": "textures/mods/mod_sight_default/Achromatic Rush/sight_pistol_heavy_01_holo_uiMaterial.001_normalMap.webp.webp"
+          },
+          {
+            "skin": "Achromatic Rush",
+            "name": "sight_pistol_heavy_01_holo_uiMaterial.001_roughnessMap.webp",
+            "material_name": "sight_pistol_heavy_01_defaultMaterial",
+            "type": "roughnessMap",
+            "image": "textures/mods/mod_sight_default/Achromatic Rush/sight_pistol_heavy_01_holo_uiMaterial.001_roughnessMap.webp.webp"
+          },
+          {
+            "skin": "Achromatic Rush",
+            "name": "sight_pistol_heavy_01_holo_uiMaterial.001_roughnessMap.webp",
+            "material_name": "sight_pistol_heavy_01_defaultMaterial",
+            "type": "metalnessMap",
+            "image": "textures/mods/mod_sight_default/Achromatic Rush/sight_pistol_heavy_01_holo_uiMaterial.001_roughnessMap.webp.webp"
+          },
+          {
+            "skin": "Achromatic Rush",
+            "name": "sight_pistol_heavy_01_holo_uiMaterial.001_normalMap.webp",
+            "material_name": "sight_pistol_heavy_01_glow_dotsMaterial",
+            "type": "normalMap",
+            "image": "textures/mods/mod_sight_default/Achromatic Rush/sight_pistol_heavy_01_holo_uiMaterial.001_normalMap.webp.webp"
+          },
+          {
+            "skin": "Achromatic Rush",
+            "name": "sight_pistol_heavy_01_holo_uiMaterial.001_roughnessMap.webp",
+            "material_name": "sight_pistol_heavy_01_glow_dotsMaterial",
+            "type": "roughnessMap",
+            "image": "textures/mods/mod_sight_default/Achromatic Rush/sight_pistol_heavy_01_holo_uiMaterial.001_roughnessMap.webp.webp"
+          },
+          {
+            "skin": "Achromatic Rush",
+            "name": "sight_pistol_heavy_01_holo_uiMaterial.001_metalnessMap.webp",
+            "material_name": "sight_pistol_heavy_01_glow_dotsMaterial",
+            "type": "metalnessMap",
+            "image": "textures/mods/mod_sight_default/Achromatic Rush/sight_pistol_heavy_01_holo_uiMaterial.001_metalnessMap.webp.webp"
+          },
+          {
+            "skin": "Achromatic Rush",
+            "name": "sight_pistol_heavy_01_holo_uiMaterial.001_normalMap.webp",
+            "material_name": "sight_pistol_heavy_01_holo_uiMaterial",
+            "type": "normalMap",
+            "image": "textures/mods/mod_sight_default/Achromatic Rush/sight_pistol_heavy_01_holo_uiMaterial.001_normalMap.webp.webp"
+          },
+          {
+            "skin": "Achromatic Rush",
+            "name": "sight_pistol_heavy_01_holo_uiMaterial.001_roughnessMap.webp",
+            "material_name": "sight_pistol_heavy_01_holo_uiMaterial",
+            "type": "roughnessMap",
+            "image": "textures/mods/mod_sight_default/Achromatic Rush/sight_pistol_heavy_01_holo_uiMaterial.001_roughnessMap.webp.webp"
+          },
+          {
+            "skin": "Achromatic Rush",
+            "name": "sight_pistol_heavy_01_holo_uiMaterial.001_metalnessMap.webp",
+            "material_name": "sight_pistol_heavy_01_holo_uiMaterial",
+            "type": "metalnessMap",
+            "image": "textures/mods/mod_sight_default/Achromatic Rush/sight_pistol_heavy_01_holo_uiMaterial.001_metalnessMap.webp.webp"
+          },
+          {
+            "skin": "TAC Combat",
+            "name": "sight_pistol_heavy_01_defaultMaterial_map",
+            "material_name": "sight_pistol_heavy_01_defaultMaterial",
+            "type": "map",
+            "image": "textures/mods/mod_sight_default/TAC Combat/sight_pistol_heavy_01_defaultMaterial_map.webp"
+          },
+          {
+            "skin": "TAC Combat",
+            "name": "sight_pistol_heavy_01_defaultMaterial_normalMap",
+            "material_name": "sight_pistol_heavy_01_defaultMaterial",
+            "type": "normalMap",
+            "image": "textures/mods/mod_sight_default/TAC Combat/sight_pistol_heavy_01_defaultMaterial_normalMap.webp"
+          },
+          {
+            "skin": "TAC Combat",
+            "name": "sight_pistol_heavy_01_defaultMaterial_roughnessMap",
+            "material_name": "sight_pistol_heavy_01_defaultMaterial",
+            "type": "roughnessMap",
+            "image": "textures/mods/mod_sight_default/TAC Combat/sight_pistol_heavy_01_defaultMaterial_roughnessMap.webp"
+          },
+          {
+            "skin": "TAC Combat",
+            "name": "sight_pistol_heavy_01_defaultMaterial_metalnessMap",
+            "material_name": "sight_pistol_heavy_01_defaultMaterial",
+            "type": "metalnessMap",
+            "image": "textures/mods/mod_sight_default/TAC Combat/sight_pistol_heavy_01_defaultMaterial_metalnessMap.webp"
+          },
+          {
+            "skin": "TAC Combat",
+            "name": "sight_pistol_heavy_01_glow_dotsMaterial_normalMap",
+            "material_name": "sight_pistol_heavy_01_glow_dotsMaterial",
+            "type": "normalMap",
+            "image": "textures/mods/mod_sight_default/TAC Combat/sight_pistol_heavy_01_glow_dotsMaterial_normalMap.webp"
+          },
+          {
+            "skin": "TAC Combat",
+            "name": "sight_pistol_heavy_01_glow_dotsMaterial_roughnessMap",
+            "material_name": "sight_pistol_heavy_01_glow_dotsMaterial",
+            "type": "roughnessMap",
+            "image": "textures/mods/mod_sight_default/TAC Combat/sight_pistol_heavy_01_glow_dotsMaterial_roughnessMap.webp"
+          },
+          {
+            "skin": "TAC Combat",
+            "name": "sight_pistol_heavy_01_glow_dotsMaterial_metalnessMap",
+            "material_name": "sight_pistol_heavy_01_glow_dotsMaterial",
+            "type": "metalnessMap",
+            "image": "textures/mods/mod_sight_default/TAC Combat/sight_pistol_heavy_01_glow_dotsMaterial_metalnessMap.webp"
+          },
+          {
+            "skin": "TAC Combat",
+            "name": "sight_pistol_heavy_01_holo_uiMaterial_normalMap",
+            "material_name": "sight_pistol_heavy_01_holo_uiMaterial",
+            "type": "normalMap",
+            "image": "textures/mods/mod_sight_default/TAC Combat/sight_pistol_heavy_01_holo_uiMaterial_normalMap.webp"
+          },
+          {
+            "skin": "TAC Combat",
+            "name": "sight_pistol_heavy_01_holo_uiMaterial_roughnessMap",
+            "material_name": "sight_pistol_heavy_01_holo_uiMaterial",
+            "type": "roughnessMap",
+            "image": "textures/mods/mod_sight_default/TAC Combat/sight_pistol_heavy_01_holo_uiMaterial_roughnessMap.webp"
+          },
+          {
+            "skin": "TAC Combat",
+            "name": "sight_pistol_heavy_01_holo_uiMaterial_metalnessMap",
+            "material_name": "sight_pistol_heavy_01_holo_uiMaterial",
+            "type": "metalnessMap",
+            "image": "textures/mods/mod_sight_default/TAC Combat/sight_pistol_heavy_01_holo_uiMaterial_metalnessMap.webp"
+          }
+        ]
+      }
+    ]
+  },
+  "stickers": [],
+  "charms": [],
+  "slug": "magnum-mc",
+  "redacted": false
+}

@@ -1,0 +1,106 @@
+TAU CETI IV — WEAPONS
+========================================
+
+Total weapons: 11
+Redacted: 3 (wpn_id_redacted262, wpn_id_redacted0825, wpn_id_redacted0128)
+
+## M77 Assault Rifle
+  CCTV: 4 unlocked, 5 locked
+    Q9F7xA2_LG09T_MTRX.log @ wpn_id_M77_AssaultRifle_3e643933 "M77 Content"
+    A3K8V9Q_R41D_CY.tx @ wpn_id_M77_AssaultRifle "M77 Content"
+    N7X4M2P_Z81Q_CORE.bin @ wpn_id_M77_AssaultRifle "M77 Content"
+    J2R9F6W_KX88_SEC.dat @ wpn_id_M77_AssaultRifle_-4ded "M77 Content"
+  Sliding puzzle: null
+  Mods:
+    precision_optic: mod_sight_default (Optic) — Default
+    magazine: mod_mag_default (Magazine) — Default
+    barrel: mod_barrel_default (Barrel) — Default
+  Skins: TAC Combat
+
+----------------------------------------
+
+## Magnum MC
+  CCTV: 3 unlocked, 4 locked
+    FZ3N8X6P_LR72_EDGE.log @ wpn_id_Magnum_MC "Magnum Content"
+    V4A7K2R_Q9M6_PIPE.tx @ wpn_id_Magnum_MC "Magnum Content"
+    R6XQZ9P4_7AMK_PROC.bin @ wpn_id_Magnum_MC "Magnum Content"
+  Sliding puzzle: null
+  Mods:
+    precision_optic: mod_sight_default (Optic) — Default
+  Skins: TAC Combat, Achromatic Rush
+
+----------------------------------------
+
+## Twin Tap HBR
+  CCTV: 1 unlocked, 9 locked
+    N4A7QX9Z_5P6T_NODE.log @ wpn_id_TwinTap_HBR_-44ba- "Twin Tap Content"
+  Sliding puzzle: null
+  Mods:
+    precision_optic: mod_sight_default (Optic) — Default
+    magazine: mod_magazine_default (Magazine) — Default
+    barrel: mod_barrel_default (Barrel) — Default
+  Skins: Utilitarian Basic
+
+----------------------------------------
+
+## Longshot
+  CCTV: 3 unlocked, 5 locked
+    Z6M8QX2R_49PA_PROC.tx @ wpn_id_Longshot_9743- "Longshot Content"
+    N7ZQ4XK2_M89A_NODE.log @ wpn_id_Longshot "Longshot Content"
+    P8MZ7QX2_KA94_SYNC.tx @ wpn_id_Longshot "Longshot Reload"
+  Sliding puzzle: null
+  Mods:
+    precision_optic: v002_mod_sight (Optic) — Default
+    magazine: mod_mag_default (Barrel) — Default
+    barrel: mod_barrel_default (Barrel) — Default
+  Skins: TAC Standard Lush
+
+----------------------------------------
+
+## WSTR Combat Shotgun
+  CCTV: 1 unlocked, 3 locked
+    M0X7A9Z_RQ2F_ARCH.tx @ wpn_id_WSTR_CombatShotgun "M0X7A9Z_RQ2F_ARCH"
+  Sliding puzzle: null
+  Skins: TAC Combat, Simple Black
+
+----------------------------------------
+
+## Bully SMG
+  CCTV: 2 unlocked, 8 locked
+    7C2M9ZP_KL84_UNIT.dat @ wpn_id_Bully_SMG_8bdc780b3fd9 "Bully Content"
+    QX2M7Z8A_R94P_DATA.dat @ wpn_id_Bully_SMG "Bully SMG Content"
+  Sliding puzzle: null
+  Mods:
+    magazine: mod_mag_default (Magazine) — Default
+  Skins: TAC Standard
+
+----------------------------------------
+
+## V00 Zeus RG
+  CCTV: 5 unlocked, 6 locked
+    XQ8P5L9R_A72F_GRID.bin @ wpn_id_V00_Zeus_RG "Zeus Content"
+    XK2ZP8Q7_M94A_UNIT.dat @ wpn_id_V00_Zeus_RG "Zeus Content"
+    M4ZP9XK2_Q7A8_FEED.png @ wpn_id_V00_Zeus_RG "Zeus Content"
+    Z9A8XKQ7_P2M4_LOG.dat @ wpn_id_V00_Zeus_RG "Zeus Content"
+    KQX2Z8P7_M94A_CORE.tx @ wpn_id_V00_Zeus_RG "Zeus Content"
+  Sliding puzzle: null
+  Mods:
+    precision_optic: mod_sight_default (Optic) — Default
+    magazine: mod_cell_default (Cell) — Default
+    generator: mod_generator_default (Generator) — Default
+  Skins: TAC Standard Calm
+
+----------------------------------------
+
+## BR33 Volley Rifle
+  CCTV: 2 unlocked, 7 locked
+    ZP9K6A7R_X4M2_STACK.bin @ wpn_id_BR33_VolleyRifle "B33 Content"
+    R2Q9C7A_X5M8_SYS.dat @ wpn_id_BR33_VolleyRifle "Volley Content"
+  Sliding puzzle: null
+  Mods:
+    precision_optic: mod_sight_default (Optic) — Default
+    magazine: mod_mag_default (Magazine) — Default
+    barrel: mod_barrel_default (Barrel) — Default
+  Skins: TAC Standard, Vibrant Sport
+
+----------------------------------------

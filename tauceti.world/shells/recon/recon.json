@@ -1,0 +1,301 @@
+{
+  "name": "Recon",
+  "abilities": [
+    {
+      "name": "ROLE: Intel specialist",
+      "type": "TECH: Threat detection ",
+      "icon": {
+        "url": "https://assets.thecdn.io/93776c54-11f7-498c-b3f3-f6baa0ccb756.png",
+        "filename": "93776c54-11f7-498c-b3f3-f6baa0ccb756.png",
+        "alt_filename": "93776c54-11f7-498c-b3f3-f6baa0ccb756.png",
+        "alt": "Recon Icon",
+        "width": 108,
+        "height": 108,
+        "mimeType": "image/png"
+      },
+      "heading": "Recons use intel as a weapon. ",
+      "description": "Everything about Recon shells  is geared toward identifying threats and providing insight  into enemy locations and movements: Mark hostiles. Track wounded targets. Deploy a tracker drone to engage threats in unexpected ways. \n[excerpt, UESC threat eval: rnnr.rcn.fileID38406c_p471] \n"
+    },
+    {
+      "name": "ECHO PULSE",
+      "type": "Prime Ability",
+      "icon": {
+        "url": "https://assets.thecdn.io/8425dd84-9c15-4ecd-b76d-a471956d56f9.png",
+        "filename": "8425dd84-9c15-4ecd-b76d-a471956d56f9.png",
+        "alt_filename": "Echo_pulse.png",
+        "alt": "Echo_pulse",
+        "width": 108,
+        "height": 108,
+        "mimeType": "image/png"
+      },
+      "heading": "",
+      "description": "Activate your shell's advanced detection systems, releasing a series of sonar pulses that reveal the location of nearby hostiles."
+    },
+    {
+      "name": "TRACKER DRONE",
+      "type": "Tactical Ability",
+      "icon": {
+        "url": "https://assets.thecdn.io/116de45f-38ab-4c15-b4cd-fe03cf68a94a.png",
+        "filename": "116de45f-38ab-4c15-b4cd-fe03cf68a94a.png",
+        "alt_filename": "Tracker_drone.png",
+        "alt": "Tracker_drone",
+        "width": 108,
+        "height": 108,
+        "mimeType": "image/png"
+      },
+      "heading": "",
+      "description": "Deploy a mechanized microbot that tracks down nearby hostiles and explodes, Overheating any targets caught in the blast."
+    },
+    {
+      "name": "INTERROGATION",
+      "type": "Trait 1",
+      "icon": {
+        "url": "https://assets.thecdn.io/984a0726-c3bd-4dcd-b993-6e13fa308ab0.png",
+        "filename": "984a0726-c3bd-4dcd-b993-6e13fa308ab0.png",
+        "alt_filename": "Interrogation.png",
+        "alt": "Interrogation",
+        "width": 108,
+        "height": 108,
+        "mimeType": "image/png"
+      },
+      "heading": "",
+      "description": "When pinged by a hostile Runner, you automatically receive a warning your shell's HUD.\n\nPerforming a finish on a runner pings their crew."
+    },
+    {
+      "name": "STALKER PROTOCOL",
+      "type": "Trait 2",
+      "icon": {
+        "url": "https://assets.thecdn.io/7da0fae3-12e9-45fc-8787-3ad969aa4565.png",
+        "filename": "7da0fae3-12e9-45fc-8787-3ad969aa4565.png",
+        "alt_filename": "Stalker protocol.png",
+        "alt": "Stalker protocol",
+        "width": 108,
+        "height": 108,
+        "mimeType": "image/png"
+      },
+      "heading": "",
+      "description": "After breaking a target's shields, they leave behind a lingering holographic trail for a short time."
+    }
+  ],
+  "cctvItems": {
+    "foot_left": {
+      "enabled": false,
+      "name": "",
+      "file": null
+    },
+    "foot_right": {
+      "enabled": false,
+      "name": "",
+      "file": null
+    },
+    "knee_left": {
+      "enabled": false,
+      "name": null,
+      "file": null
+    },
+    "knee_right": {
+      "enabled": false,
+      "name": null,
+      "file": null
+    },
+    "hip_left": {
+      "enabled": false,
+      "name": null,
+      "file": null
+    },
+    "hip_right": {
+      "enabled": true,
+      "name": "X9P7Q8Z2_A4MK_CORE.tx",
+      "file": {
+        "url": "https://assets.thecdn.io/8f83216c-fb88-4222-b3e7-0c8b03742259.mp4",
+        "filename": "8f83216c-fb88-4222-b3e7-0c8b03742259.mp4",
+        "alt_filename": "8f83216c-fb88-4222-b3e7-0c8b03742259.mp4",
+        "alt": "Recon 1P Reconspiderdrone",
+        "width": null,
+        "height": null,
+        "mimeType": "video/mp4"
+      }
+    },
+    "chest": {
+      "enabled": true,
+      "name": "H4QZ7X9P_M2AK_DIAG.dat",
+      "file": {
+        "url": "https://assets.thecdn.io/4354033e-64fb-4384-8358-11ce4b352ad6.wav",
+        "filename": "4354033e-64fb-4384-8358-11ce4b352ad6.wav",
+        "alt_filename": "4354033e-64fb-4384-8358-11ce4b352ad6.wav",
+        "alt": "must be honed ",
+        "width": null,
+        "height": null,
+        "mimeType": "audio/wav"
+      }
+    },
+    "head": {
+      "enabled": true,
+      "name": "Z7Q8X9P2_M4AK_LOG.log",
+      "file": {
+        "url": "https://assets.thecdn.io/001ad867-68a2-4e24-87d0-135eb75df88a.mp4",
+        "filename": "001ad867-68a2-4e24-87d0-135eb75df88a.mp4",
+        "alt_filename": "001ad867-68a2-4e24-87d0-135eb75df88a.mp4",
+        "alt": "Recon Ultyscan Hudon",
+        "width": null,
+        "height": null,
+        "mimeType": "video/mp4"
+      }
+    },
+    "shoulder_left": {
+      "enabled": true,
+      "name": "F7X9QZ2P_8KMA_PKTQ.bin",
+      "file": {
+        "url": "https://assets.thecdn.io/3b7317a6-c306-482d-8008-bb969cbb2cf7.wav",
+        "filename": "3b7317a6-c306-482d-8008-bb969cbb2cf7.wav",
+        "alt_filename": "3b7317a6-c306-482d-8008-bb969cbb2cf7.wav",
+        "alt": "siffering will be their reward",
+        "width": null,
+        "height": null,
+        "mimeType": "audio/wav"
+      }
+    },
+    "shoulder_right": {
+      "enabled": true,
+      "name": "T4X9KZ7P_Q2M8_DSYS.log",
+      "file": {
+        "url": "https://assets.thecdn.io/45aa5f92-d17b-4aa2-bbcf-e53d478893d5.mp4",
+        "filename": "45aa5f92-d17b-4aa2-bbcf-e53d478893d5.mp4",
+        "alt_filename": "45aa5f92-d17b-4aa2-bbcf-e53d478893d5.mp4",
+        "alt": "Recon",
+        "width": null,
+        "height": null,
+        "mimeType": "video/mp4"
+      }
+    },
+    "elbow_left": {
+      "enabled": false,
+      "name": null,
+      "file": null
+    },
+    "elbow_right": {
+      "enabled": true,
+      "name": "R8QZ4X7M_P9A2_XFER.tx",
+      "file": {
+        "url": "https://assets.thecdn.io/cefce33c-c624-4f89-831b-dfc3da8efccf.mp4",
+        "filename": "cefce33c-c624-4f89-831b-dfc3da8efccf.mp4",
+        "alt_filename": "cefce33c-c624-4f89-831b-dfc3da8efccf.mp4",
+        "alt": "recon_interrogation_HUDon",
+        "width": null,
+        "height": null,
+        "mimeType": "video/mp4"
+      }
+    },
+    "hand_left": {
+      "enabled": false,
+      "name": "",
+      "file": null
+    },
+    "hand_right": {
+      "enabled": false,
+      "name": "",
+      "file": null
+    }
+  },
+  "base_url": "https://goliath-tau-ceti-stage.b-cdn.net/runners/Recon-2026-02-25_14%3A12",
+  "id": "2",
+  "runner_name": "Recon",
+  "model_path": "models/Recon.glb",
+  "skins": [
+    {
+      "name": "Core",
+      "is_default": true,
+      "is_model_changed": false,
+      "model_path": null,
+      "image": {
+        "path": "images/skins/Core.png",
+        "name": "captured-skin.png",
+        "type": "image/png"
+      }
+    },
+    {
+      "name": "Shadow Index",
+      "is_default": false,
+      "is_model_changed": true,
+      "model_path": "models/skins/Shadow Index.glb",
+      "image": {
+        "path": "images/skins/Shadow Index.png",
+        "name": "captured-skin.png",
+        "type": "image/png"
+      }
+    }
+  ],
+  "interactive_points": {
+    "foot_left": {
+      "x": -0.17,
+      "y": 0.06,
+      "z": -0.23
+    },
+    "foot_right": {
+      "x": 0.13,
+      "y": 0.08,
+      "z": 0.17
+    },
+    "knee_left": {
+      "x": -0.06,
+      "y": 0.56,
+      "z": -0.16
+    },
+    "knee_right": {
+      "x": 0.03,
+      "y": 0.57,
+      "z": 0.15
+    },
+    "hip_left": {
+      "x": 0.028,
+      "y": 1.08,
+      "z": -0.07
+    },
+    "hip_right": {
+      "x": -0.08,
+      "y": 1.05,
+      "z": 0.02
+    },
+    "chest": {
+      "x": 0.02,
+      "y": 1.42,
+      "z": 0.04
+    },
+    "head": {
+      "x": -0.03,
+      "y": 1.71,
+      "z": 0.11
+    },
+    "shoulder_left": {
+      "x": 0.13,
+      "y": 1.45,
+      "z": -0.13
+    },
+    "shoulder_right": {
+      "x": -0.21,
+      "y": 1.45,
+      "z": 0.08
+    },
+    "elbow_left": {
+      "x": 0.21,
+      "y": 1.18,
+      "z": -0.2
+    },
+    "elbow_right": {
+      "x": -0.31,
+      "y": 1.19,
+      "z": 0.12
+    },
+    "hand_left": {
+      "x": 0.28,
+      "y": 0.95,
+      "z": 0
+    },
+    "hand_right": {
+      "x": -0.31,
+      "y": 0.88,
+      "z": 0.13
+    }
+  },
+  "slug": "recon"
+}

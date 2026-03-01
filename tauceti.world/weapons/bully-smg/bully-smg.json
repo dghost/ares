@@ -1,0 +1,649 @@
+{
+  "name": "Bully SMG",
+  "sliding_puzzle": null,
+  "cctv": {
+    "cctvItems": [
+      {
+        "id": "698dd3e5a14d91b852004e1a",
+        "name": "7C2M9ZP_KL84_UNIT.dat",
+        "location": "wpn_id_Bully_SMG_8bdc780b3fd9",
+        "file": {
+          "url": "https://assets.thecdn.io/b9ece841-019e-42c4-90f1-f11a62d982a6.mp4",
+          "filename": "b9ece841-019e-42c4-90f1-f11a62d982a6.mp4",
+          "alt_filename": "7C2M9ZP_KL84_UNIT.dat",
+          "alt": "Bully Content",
+          "width": null,
+          "height": null,
+          "mimeType": "video/mp4"
+        }
+      },
+      {
+        "id": "698e29203bf196077cb1cc73",
+        "name": "QX2M7Z8A_R94P_DATA.dat",
+        "location": "wpn_id_Bully_SMG",
+        "file": {
+          "url": "https://assets.thecdn.io/a595d430-20aa-4a5d-8b40-7fd0d376ee65.wav",
+          "filename": "a595d430-20aa-4a5d-8b40-7fd0d376ee65.wav",
+          "alt_filename": "Bully SMG Fires Singles.wav",
+          "alt": "Bully SMG Content",
+          "width": null,
+          "height": null,
+          "mimeType": "audio/x-wav"
+        }
+      }
+    ],
+    "cctvLockedFiles": 8
+  },
+  "base_url": "https://goliath-tau-ceti-stage.b-cdn.net/weapons/Bully%20SMG-2026-02-16_09%3A18",
+  "id": "27",
+  "weapon_name": "Bully SMG",
+  "model_path": "models/v002_SMG_heavy_default.glb",
+  "materials": [
+    "smg_heavy_01_default_frame",
+    "smg_heavy_01_default_variant"
+  ],
+  "sticker_material_name": "Material",
+  "charm_pivot_name": "Charm_pivot",
+  "skins": [
+    {
+      "name": "TAC Standard",
+      "is_default": true,
+      "is_model_changed": false,
+      "model_path": null,
+      "textures": [
+        {
+          "name": "smg_heavy_01_default_frame_map",
+          "material_name": "smg_heavy_01_default_frame",
+          "type": "map",
+          "image": "textures/TAC Standard/smg_heavy_01_default_frame_map.webp"
+        },
+        {
+          "name": "smg_heavy_01_default_frame_normalMap",
+          "material_name": "smg_heavy_01_default_frame",
+          "type": "normalMap",
+          "image": "textures/TAC Standard/smg_heavy_01_default_frame_normalMap.webp"
+        },
+        {
+          "name": "smg_heavy_01_default_frame_roughnessMap",
+          "material_name": "smg_heavy_01_default_frame",
+          "type": "roughnessMap",
+          "image": "textures/TAC Standard/smg_heavy_01_default_frame_roughnessMap.webp"
+        },
+        {
+          "name": "smg_heavy_01_default_frame_metalnessMap",
+          "material_name": "smg_heavy_01_default_frame",
+          "type": "metalnessMap",
+          "image": "textures/TAC Standard/smg_heavy_01_default_frame_metalnessMap.webp"
+        },
+        {
+          "name": "smg_heavy_01_default_variant_map",
+          "material_name": "smg_heavy_01_default_variant",
+          "type": "map",
+          "image": "textures/TAC Standard/smg_heavy_01_default_variant_map.webp"
+        },
+        {
+          "name": "smg_heavy_01_default_variant_normalMap",
+          "material_name": "smg_heavy_01_default_variant",
+          "type": "normalMap",
+          "image": "textures/TAC Standard/smg_heavy_01_default_variant_normalMap.webp"
+        },
+        {
+          "name": "smg_heavy_01_default_variant_roughnessMap",
+          "material_name": "smg_heavy_01_default_variant",
+          "type": "roughnessMap",
+          "image": "textures/TAC Standard/smg_heavy_01_default_variant_roughnessMap.webp"
+        },
+        {
+          "name": "smg_heavy_01_default_variant_metalnessMap",
+          "material_name": "smg_heavy_01_default_variant",
+          "type": "metalnessMap",
+          "image": "textures/TAC Standard/smg_heavy_01_default_variant_metalnessMap.webp"
+        },
+        {
+          "name": "smg_heavy_01_default_variant_map",
+          "material_name": "smg_heavy_01_default_variant",
+          "type": "map",
+          "image": "textures/TAC Standard/smg_heavy_01_default_variant_map.webp"
+        },
+        {
+          "name": "smg_heavy_01_default_variant_normalMap",
+          "material_name": "smg_heavy_01_default_variant",
+          "type": "normalMap",
+          "image": "textures/TAC Standard/smg_heavy_01_default_variant_normalMap.webp"
+        },
+        {
+          "name": "smg_heavy_01_default_variant_roughnessMap",
+          "material_name": "smg_heavy_01_default_variant",
+          "type": "roughnessMap",
+          "image": "textures/TAC Standard/smg_heavy_01_default_variant_roughnessMap.webp"
+        },
+        {
+          "name": "smg_heavy_01_default_variant_metalnessMap",
+          "material_name": "smg_heavy_01_default_variant",
+          "type": "metalnessMap",
+          "image": "textures/TAC Standard/smg_heavy_01_default_variant_metalnessMap.webp"
+        },
+        {
+          "name": "smg_heavy_01_default_variant_map",
+          "material_name": "smg_heavy_01_default_variant",
+          "type": "map",
+          "image": "textures/TAC Standard/smg_heavy_01_default_variant_map.webp"
+        },
+        {
+          "name": "smg_heavy_01_default_variant_normalMap",
+          "material_name": "smg_heavy_01_default_variant",
+          "type": "normalMap",
+          "image": "textures/TAC Standard/smg_heavy_01_default_variant_normalMap.webp"
+        },
+        {
+          "name": "smg_heavy_01_default_variant_roughnessMap",
+          "material_name": "smg_heavy_01_default_variant",
+          "type": "roughnessMap",
+          "image": "textures/TAC Standard/smg_heavy_01_default_variant_roughnessMap.webp"
+        },
+        {
+          "name": "smg_heavy_01_default_variant_metalnessMap",
+          "material_name": "smg_heavy_01_default_variant",
+          "type": "metalnessMap",
+          "image": "textures/TAC Standard/smg_heavy_01_default_variant_metalnessMap.webp"
+        },
+        {
+          "name": "smg_heavy_01_default_variant_map",
+          "material_name": "smg_heavy_01_default_variant",
+          "type": "map",
+          "image": "textures/TAC Standard/smg_heavy_01_default_variant_map.webp"
+        },
+        {
+          "name": "smg_heavy_01_default_variant_normalMap",
+          "material_name": "smg_heavy_01_default_variant",
+          "type": "normalMap",
+          "image": "textures/TAC Standard/smg_heavy_01_default_variant_normalMap.webp"
+        },
+        {
+          "name": "smg_heavy_01_default_variant_roughnessMap",
+          "material_name": "smg_heavy_01_default_variant",
+          "type": "roughnessMap",
+          "image": "textures/TAC Standard/smg_heavy_01_default_variant_roughnessMap.webp"
+        },
+        {
+          "name": "smg_heavy_01_default_variant_metalnessMap",
+          "material_name": "smg_heavy_01_default_variant",
+          "type": "metalnessMap",
+          "image": "textures/TAC Standard/smg_heavy_01_default_variant_metalnessMap.webp"
+        },
+        {
+          "name": "smg_heavy_01_default_frame_map",
+          "material_name": "smg_heavy_01_default_frame",
+          "type": "map",
+          "image": "textures/TAC Standard/smg_heavy_01_default_frame_map.webp"
+        },
+        {
+          "name": "smg_heavy_01_default_frame_normalMap",
+          "material_name": "smg_heavy_01_default_frame",
+          "type": "normalMap",
+          "image": "textures/TAC Standard/smg_heavy_01_default_frame_normalMap.webp"
+        },
+        {
+          "name": "smg_heavy_01_default_frame_roughnessMap",
+          "material_name": "smg_heavy_01_default_frame",
+          "type": "roughnessMap",
+          "image": "textures/TAC Standard/smg_heavy_01_default_frame_roughnessMap.webp"
+        },
+        {
+          "name": "smg_heavy_01_default_frame_metalnessMap",
+          "material_name": "smg_heavy_01_default_frame",
+          "type": "metalnessMap",
+          "image": "textures/TAC Standard/smg_heavy_01_default_frame_metalnessMap.webp"
+        },
+        {
+          "name": "smg_heavy_01_default_variant_map",
+          "material_name": "smg_heavy_01_default_variant",
+          "type": "map",
+          "image": "textures/TAC Standard/smg_heavy_01_default_variant_map.webp"
+        },
+        {
+          "name": "smg_heavy_01_default_variant_normalMap",
+          "material_name": "smg_heavy_01_default_variant",
+          "type": "normalMap",
+          "image": "textures/TAC Standard/smg_heavy_01_default_variant_normalMap.webp"
+        },
+        {
+          "name": "smg_heavy_01_default_variant_roughnessMap",
+          "material_name": "smg_heavy_01_default_variant",
+          "type": "roughnessMap",
+          "image": "textures/TAC Standard/smg_heavy_01_default_variant_roughnessMap.webp"
+        },
+        {
+          "name": "smg_heavy_01_default_variant_metalnessMap",
+          "material_name": "smg_heavy_01_default_variant",
+          "type": "metalnessMap",
+          "image": "textures/TAC Standard/smg_heavy_01_default_variant_metalnessMap.webp"
+        },
+        {
+          "name": "smg_heavy_01_default_variant_map",
+          "material_name": "smg_heavy_01_default_variant",
+          "type": "map",
+          "image": "textures/TAC Standard/smg_heavy_01_default_variant_map.webp"
+        },
+        {
+          "name": "smg_heavy_01_default_variant_normalMap",
+          "material_name": "smg_heavy_01_default_variant",
+          "type": "normalMap",
+          "image": "textures/TAC Standard/smg_heavy_01_default_variant_normalMap.webp"
+        },
+        {
+          "name": "smg_heavy_01_default_variant_roughnessMap",
+          "material_name": "smg_heavy_01_default_variant",
+          "type": "roughnessMap",
+          "image": "textures/TAC Standard/smg_heavy_01_default_variant_roughnessMap.webp"
+        },
+        {
+          "name": "smg_heavy_01_default_variant_metalnessMap",
+          "material_name": "smg_heavy_01_default_variant",
+          "type": "metalnessMap",
+          "image": "textures/TAC Standard/smg_heavy_01_default_variant_metalnessMap.webp"
+        },
+        {
+          "name": "smg_heavy_01_default_variant_map",
+          "material_name": "smg_heavy_01_default_variant",
+          "type": "map",
+          "image": "textures/TAC Standard/smg_heavy_01_default_variant_map.webp"
+        },
+        {
+          "name": "smg_heavy_01_default_variant_normalMap",
+          "material_name": "smg_heavy_01_default_variant",
+          "type": "normalMap",
+          "image": "textures/TAC Standard/smg_heavy_01_default_variant_normalMap.webp"
+        },
+        {
+          "name": "smg_heavy_01_default_variant_roughnessMap",
+          "material_name": "smg_heavy_01_default_variant",
+          "type": "roughnessMap",
+          "image": "textures/TAC Standard/smg_heavy_01_default_variant_roughnessMap.webp"
+        },
+        {
+          "name": "smg_heavy_01_default_variant_metalnessMap",
+          "material_name": "smg_heavy_01_default_variant",
+          "type": "metalnessMap",
+          "image": "textures/TAC Standard/smg_heavy_01_default_variant_metalnessMap.webp"
+        },
+        {
+          "name": "smg_heavy_01_default_variant_map",
+          "material_name": "smg_heavy_01_default_variant",
+          "type": "map",
+          "image": "textures/TAC Standard/smg_heavy_01_default_variant_map.webp"
+        },
+        {
+          "name": "smg_heavy_01_default_variant_normalMap",
+          "material_name": "smg_heavy_01_default_variant",
+          "type": "normalMap",
+          "image": "textures/TAC Standard/smg_heavy_01_default_variant_normalMap.webp"
+        },
+        {
+          "name": "smg_heavy_01_default_variant_roughnessMap",
+          "material_name": "smg_heavy_01_default_variant",
+          "type": "roughnessMap",
+          "image": "textures/TAC Standard/smg_heavy_01_default_variant_roughnessMap.webp"
+        },
+        {
+          "name": "smg_heavy_01_default_variant_metalnessMap",
+          "material_name": "smg_heavy_01_default_variant",
+          "type": "metalnessMap",
+          "image": "textures/TAC Standard/smg_heavy_01_default_variant_metalnessMap.webp"
+        },
+        {
+          "name": "smg_heavy_01_default_variant_map",
+          "material_name": "smg_heavy_01_default_variant",
+          "type": "map",
+          "image": "textures/TAC Standard/smg_heavy_01_default_variant_map.webp"
+        },
+        {
+          "name": "smg_heavy_01_default_variant_normalMap",
+          "material_name": "smg_heavy_01_default_variant",
+          "type": "normalMap",
+          "image": "textures/TAC Standard/smg_heavy_01_default_variant_normalMap.webp"
+        },
+        {
+          "name": "smg_heavy_01_default_variant_roughnessMap",
+          "material_name": "smg_heavy_01_default_variant",
+          "type": "roughnessMap",
+          "image": "textures/TAC Standard/smg_heavy_01_default_variant_roughnessMap.webp"
+        },
+        {
+          "name": "smg_heavy_01_default_variant_metalnessMap",
+          "material_name": "smg_heavy_01_default_variant",
+          "type": "metalnessMap",
+          "image": "textures/TAC Standard/smg_heavy_01_default_variant_metalnessMap.webp"
+        },
+        {
+          "name": "smg_heavy_01_default_variant_map",
+          "material_name": "smg_heavy_01_default_variant",
+          "type": "map",
+          "image": "textures/TAC Standard/smg_heavy_01_default_variant_map.webp"
+        },
+        {
+          "name": "smg_heavy_01_default_variant_normalMap",
+          "material_name": "smg_heavy_01_default_variant",
+          "type": "normalMap",
+          "image": "textures/TAC Standard/smg_heavy_01_default_variant_normalMap.webp"
+        },
+        {
+          "name": "smg_heavy_01_default_variant_roughnessMap",
+          "material_name": "smg_heavy_01_default_variant",
+          "type": "roughnessMap",
+          "image": "textures/TAC Standard/smg_heavy_01_default_variant_roughnessMap.webp"
+        },
+        {
+          "name": "smg_heavy_01_default_variant_metalnessMap",
+          "material_name": "smg_heavy_01_default_variant",
+          "type": "metalnessMap",
+          "image": "textures/TAC Standard/smg_heavy_01_default_variant_metalnessMap.webp"
+        },
+        {
+          "name": "smg_heavy_01_default_variant_map",
+          "material_name": "smg_heavy_01_default_variant",
+          "type": "map",
+          "image": "textures/TAC Standard/smg_heavy_01_default_variant_map.webp"
+        },
+        {
+          "name": "smg_heavy_01_default_variant_normalMap",
+          "material_name": "smg_heavy_01_default_variant",
+          "type": "normalMap",
+          "image": "textures/TAC Standard/smg_heavy_01_default_variant_normalMap.webp"
+        },
+        {
+          "name": "smg_heavy_01_default_variant_roughnessMap",
+          "material_name": "smg_heavy_01_default_variant",
+          "type": "roughnessMap",
+          "image": "textures/TAC Standard/smg_heavy_01_default_variant_roughnessMap.webp"
+        },
+        {
+          "name": "smg_heavy_01_default_variant_metalnessMap",
+          "material_name": "smg_heavy_01_default_variant",
+          "type": "metalnessMap",
+          "image": "textures/TAC Standard/smg_heavy_01_default_variant_metalnessMap.webp"
+        },
+        {
+          "name": "smg_heavy_01_default_frame_map",
+          "material_name": "smg_heavy_01_default_frame",
+          "type": "map",
+          "image": "textures/TAC Standard/smg_heavy_01_default_frame_map.webp"
+        },
+        {
+          "name": "smg_heavy_01_default_frame_normalMap",
+          "material_name": "smg_heavy_01_default_frame",
+          "type": "normalMap",
+          "image": "textures/TAC Standard/smg_heavy_01_default_frame_normalMap.webp"
+        },
+        {
+          "name": "smg_heavy_01_default_frame_roughnessMap",
+          "material_name": "smg_heavy_01_default_frame",
+          "type": "roughnessMap",
+          "image": "textures/TAC Standard/smg_heavy_01_default_frame_roughnessMap.webp"
+        },
+        {
+          "name": "smg_heavy_01_default_frame_metalnessMap",
+          "material_name": "smg_heavy_01_default_frame",
+          "type": "metalnessMap",
+          "image": "textures/TAC Standard/smg_heavy_01_default_frame_metalnessMap.webp"
+        },
+        {
+          "name": "smg_heavy_01_default_variant_map",
+          "material_name": "smg_heavy_01_default_variant",
+          "type": "map",
+          "image": "textures/TAC Standard/smg_heavy_01_default_variant_map.webp"
+        },
+        {
+          "name": "smg_heavy_01_default_variant_normalMap",
+          "material_name": "smg_heavy_01_default_variant",
+          "type": "normalMap",
+          "image": "textures/TAC Standard/smg_heavy_01_default_variant_normalMap.webp"
+        },
+        {
+          "name": "smg_heavy_01_default_variant_roughnessMap",
+          "material_name": "smg_heavy_01_default_variant",
+          "type": "roughnessMap",
+          "image": "textures/TAC Standard/smg_heavy_01_default_variant_roughnessMap.webp"
+        },
+        {
+          "name": "smg_heavy_01_default_variant_metalnessMap",
+          "material_name": "smg_heavy_01_default_variant",
+          "type": "metalnessMap",
+          "image": "textures/TAC Standard/smg_heavy_01_default_variant_metalnessMap.webp"
+        },
+        {
+          "name": "smg_heavy_01_default_variant_map",
+          "material_name": "smg_heavy_01_default_variant",
+          "type": "map",
+          "image": "textures/TAC Standard/smg_heavy_01_default_variant_map.webp"
+        },
+        {
+          "name": "smg_heavy_01_default_variant_normalMap",
+          "material_name": "smg_heavy_01_default_variant",
+          "type": "normalMap",
+          "image": "textures/TAC Standard/smg_heavy_01_default_variant_normalMap.webp"
+        },
+        {
+          "name": "smg_heavy_01_default_variant_roughnessMap",
+          "material_name": "smg_heavy_01_default_variant",
+          "type": "roughnessMap",
+          "image": "textures/TAC Standard/smg_heavy_01_default_variant_roughnessMap.webp"
+        },
+        {
+          "name": "smg_heavy_01_default_variant_metalnessMap",
+          "material_name": "smg_heavy_01_default_variant",
+          "type": "metalnessMap",
+          "image": "textures/TAC Standard/smg_heavy_01_default_variant_metalnessMap.webp"
+        },
+        {
+          "name": "smg_heavy_01_default_frame_map",
+          "material_name": "smg_heavy_01_default_frame",
+          "type": "map",
+          "image": "textures/TAC Standard/smg_heavy_01_default_frame_map.webp"
+        },
+        {
+          "name": "smg_heavy_01_default_frame_normalMap",
+          "material_name": "smg_heavy_01_default_frame",
+          "type": "normalMap",
+          "image": "textures/TAC Standard/smg_heavy_01_default_frame_normalMap.webp"
+        },
+        {
+          "name": "smg_heavy_01_default_frame_roughnessMap",
+          "material_name": "smg_heavy_01_default_frame",
+          "type": "roughnessMap",
+          "image": "textures/TAC Standard/smg_heavy_01_default_frame_roughnessMap.webp"
+        },
+        {
+          "name": "smg_heavy_01_default_frame_metalnessMap",
+          "material_name": "smg_heavy_01_default_frame",
+          "type": "metalnessMap",
+          "image": "textures/TAC Standard/smg_heavy_01_default_frame_metalnessMap.webp"
+        },
+        {
+          "name": "smg_heavy_01_default_variant_map",
+          "material_name": "smg_heavy_01_default_variant",
+          "type": "map",
+          "image": "textures/TAC Standard/smg_heavy_01_default_variant_map.webp"
+        },
+        {
+          "name": "smg_heavy_01_default_variant_normalMap",
+          "material_name": "smg_heavy_01_default_variant",
+          "type": "normalMap",
+          "image": "textures/TAC Standard/smg_heavy_01_default_variant_normalMap.webp"
+        },
+        {
+          "name": "smg_heavy_01_default_variant_roughnessMap",
+          "material_name": "smg_heavy_01_default_variant",
+          "type": "roughnessMap",
+          "image": "textures/TAC Standard/smg_heavy_01_default_variant_roughnessMap.webp"
+        },
+        {
+          "name": "smg_heavy_01_default_variant_metalnessMap",
+          "material_name": "smg_heavy_01_default_variant",
+          "type": "metalnessMap",
+          "image": "textures/TAC Standard/smg_heavy_01_default_variant_metalnessMap.webp"
+        },
+        {
+          "name": "smg_heavy_01_default_variant_map",
+          "material_name": "smg_heavy_01_default_variant",
+          "type": "map",
+          "image": "textures/TAC Standard/smg_heavy_01_default_variant_map.webp"
+        },
+        {
+          "name": "smg_heavy_01_default_variant_normalMap",
+          "material_name": "smg_heavy_01_default_variant",
+          "type": "normalMap",
+          "image": "textures/TAC Standard/smg_heavy_01_default_variant_normalMap.webp"
+        },
+        {
+          "name": "smg_heavy_01_default_variant_roughnessMap",
+          "material_name": "smg_heavy_01_default_variant",
+          "type": "roughnessMap",
+          "image": "textures/TAC Standard/smg_heavy_01_default_variant_roughnessMap.webp"
+        },
+        {
+          "name": "smg_heavy_01_default_variant_metalnessMap",
+          "material_name": "smg_heavy_01_default_variant",
+          "type": "metalnessMap",
+          "image": "textures/TAC Standard/smg_heavy_01_default_variant_metalnessMap.webp"
+        }
+      ]
+    }
+  ],
+  "mods": {
+    "magazine": [
+      {
+        "id": "019c2de8-2b8a-741c-9f2b-da23baf15004",
+        "name": "mod_mag_default",
+        "is_default": true,
+        "materials": [
+          "magazine_smg_light_03_default_shader",
+          "magazine_smg_light_03_default_shader.001"
+        ],
+        "thumbnail": "thumbnails/mods/mod_mag_default.webp",
+        "image": "images/mods/mod_mag_default.webp",
+        "specs": "Default",
+        "type": "Magazine",
+        "model_path": "models/magazine/mod_mag_default.glb",
+        "textures": [
+          {
+            "skin": "TAC Standard",
+            "name": "magazine_smg_light_03_default_shader_map",
+            "material_name": "magazine_smg_light_03_default_shader",
+            "type": "map",
+            "image": "textures/mods/mod_mag_default/TAC Standard/magazine_smg_light_03_default_shader_map.webp"
+          },
+          {
+            "skin": "TAC Standard",
+            "name": "magazine_smg_light_03_default_shader_normalMap",
+            "material_name": "magazine_smg_light_03_default_shader",
+            "type": "normalMap",
+            "image": "textures/mods/mod_mag_default/TAC Standard/magazine_smg_light_03_default_shader_normalMap.webp"
+          },
+          {
+            "skin": "TAC Standard",
+            "name": "magazine_smg_light_03_default_shader_roughnessMap",
+            "material_name": "magazine_smg_light_03_default_shader",
+            "type": "roughnessMap",
+            "image": "textures/mods/mod_mag_default/TAC Standard/magazine_smg_light_03_default_shader_roughnessMap.webp"
+          },
+          {
+            "skin": "TAC Standard",
+            "name": "magazine_smg_light_03_default_shader_metalnessMap",
+            "material_name": "magazine_smg_light_03_default_shader",
+            "type": "metalnessMap",
+            "image": "textures/mods/mod_mag_default/TAC Standard/magazine_smg_light_03_default_shader_metalnessMap.webp"
+          },
+          {
+            "skin": "TAC Standard",
+            "name": "magazine_smg_light_03_default_shader.001_map",
+            "material_name": "magazine_smg_light_03_default_shader.001",
+            "type": "map",
+            "image": "textures/mods/mod_mag_default/TAC Standard/magazine_smg_light_03_default_shader.001_map.webp"
+          },
+          {
+            "skin": "TAC Standard",
+            "name": "magazine_smg_light_03_default_shader.001_normalMap",
+            "material_name": "magazine_smg_light_03_default_shader.001",
+            "type": "normalMap",
+            "image": "textures/mods/mod_mag_default/TAC Standard/magazine_smg_light_03_default_shader.001_normalMap.webp"
+          },
+          {
+            "skin": "TAC Standard",
+            "name": "magazine_smg_light_03_default_shader.001_roughnessMap",
+            "material_name": "magazine_smg_light_03_default_shader.001",
+            "type": "roughnessMap",
+            "image": "textures/mods/mod_mag_default/TAC Standard/magazine_smg_light_03_default_shader.001_roughnessMap.webp"
+          },
+          {
+            "skin": "TAC Standard",
+            "name": "magazine_smg_light_03_default_shader.001_metalnessMap",
+            "material_name": "magazine_smg_light_03_default_shader.001",
+            "type": "metalnessMap",
+            "image": "textures/mods/mod_mag_default/TAC Standard/magazine_smg_light_03_default_shader.001_metalnessMap.webp"
+          },
+          {
+            "skin": "TAC Standard",
+            "name": "magazine_smg_light_03_default_shader.001_map",
+            "material_name": "magazine_smg_light_03_default_shader.001",
+            "type": "map",
+            "image": "textures/mods/mod_mag_default/TAC Standard/magazine_smg_light_03_default_shader.001_map.webp"
+          },
+          {
+            "skin": "TAC Standard",
+            "name": "magazine_smg_light_03_default_shader.001_normalMap",
+            "material_name": "magazine_smg_light_03_default_shader.001",
+            "type": "normalMap",
+            "image": "textures/mods/mod_mag_default/TAC Standard/magazine_smg_light_03_default_shader.001_normalMap.webp"
+          },
+          {
+            "skin": "TAC Standard",
+            "name": "magazine_smg_light_03_default_shader.001_roughnessMap",
+            "material_name": "magazine_smg_light_03_default_shader.001",
+            "type": "roughnessMap",
+            "image": "textures/mods/mod_mag_default/TAC Standard/magazine_smg_light_03_default_shader.001_roughnessMap.webp"
+          },
+          {
+            "skin": "TAC Standard",
+            "name": "magazine_smg_light_03_default_shader.001_metalnessMap",
+            "material_name": "magazine_smg_light_03_default_shader.001",
+            "type": "metalnessMap",
+            "image": "textures/mods/mod_mag_default/TAC Standard/magazine_smg_light_03_default_shader.001_metalnessMap.webp"
+          },
+          {
+            "skin": "TAC Standard",
+            "name": "magazine_smg_light_03_default_shader_map",
+            "material_name": "magazine_smg_light_03_default_shader",
+            "type": "map",
+            "image": "textures/mods/mod_mag_default/TAC Standard/magazine_smg_light_03_default_shader_map.webp"
+          },
+          {
+            "skin": "TAC Standard",
+            "name": "magazine_smg_light_03_default_shader_normalMap",
+            "material_name": "magazine_smg_light_03_default_shader",
+            "type": "normalMap",
+            "image": "textures/mods/mod_mag_default/TAC Standard/magazine_smg_light_03_default_shader_normalMap.webp"
+          },
+          {
+            "skin": "TAC Standard",
+            "name": "magazine_smg_light_03_default_shader_roughnessMap",
+            "material_name": "magazine_smg_light_03_default_shader",
+            "type": "roughnessMap",
+            "image": "textures/mods/mod_mag_default/TAC Standard/magazine_smg_light_03_default_shader_roughnessMap.webp"
+          },
+          {
+            "skin": "TAC Standard",
+            "name": "magazine_smg_light_03_default_shader_metalnessMap",
+            "material_name": "magazine_smg_light_03_default_shader",
+            "type": "metalnessMap",
+            "image": "textures/mods/mod_mag_default/TAC Standard/magazine_smg_light_03_default_shader_metalnessMap.webp"
+          }
+        ]
+      }
+    ]
+  },
+  "stickers": [],
+  "charms": [],
+  "slug": "bully-smg",
+  "redacted": false
+}

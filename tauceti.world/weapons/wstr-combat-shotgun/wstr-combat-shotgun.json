@@ -1,0 +1,152 @@
+{
+  "name": "WSTR Combat Shotgun",
+  "sliding_puzzle": null,
+  "cctv": {
+    "cctvItems": [
+      {
+        "id": "698dd587a14d91b852004e21",
+        "name": "M0X7A9Z_RQ2F_ARCH.tx",
+        "location": "wpn_id_WSTR_CombatShotgun",
+        "file": {
+          "url": "https://assets.thecdn.io/53584079-750e-4abb-b453-cb9e73a4d7c9.mp4",
+          "filename": "53584079-750e-4abb-b453-cb9e73a4d7c9.mp4",
+          "alt_filename": "M0X7A9Z_RQ2F_ARCH.mp4",
+          "alt": "M0X7A9Z_RQ2F_ARCH",
+          "width": null,
+          "height": null,
+          "mimeType": "video/mp4"
+        }
+      }
+    ],
+    "cctvLockedFiles": 3
+  },
+  "base_url": "https://goliath-tau-ceti-stage.b-cdn.net/weapons/WSTR%20Combat%20Shotgun-2026-02-04_16%3A33",
+  "id": "31",
+  "weapon_name": "WSTR Combat Shotgun",
+  "model_path": "models/v002_Shotgun_default.glb",
+  "materials": [
+    "brksg_default.001",
+    "brksg_default_2.001"
+  ],
+  "sticker_material_name": "Material",
+  "charm_pivot_name": "Charm_pivot",
+  "skins": [
+    {
+      "name": "TAC Combat",
+      "is_default": true,
+      "is_model_changed": false,
+      "model_path": null,
+      "textures": [
+        {
+          "name": "brksg_default.001_map",
+          "material_name": "brksg_default.001",
+          "type": "map",
+          "image": "textures/TAC Combat/brksg_default.001_map.webp"
+        },
+        {
+          "name": "brksg_default.001_normalMap",
+          "material_name": "brksg_default.001",
+          "type": "normalMap",
+          "image": "textures/TAC Combat/brksg_default.001_normalMap.webp"
+        },
+        {
+          "name": "brksg_default.001_roughnessMap",
+          "material_name": "brksg_default.001",
+          "type": "roughnessMap",
+          "image": "textures/TAC Combat/brksg_default.001_roughnessMap.webp"
+        },
+        {
+          "name": "brksg_default.001_metalnessMap",
+          "material_name": "brksg_default.001",
+          "type": "metalnessMap",
+          "image": "textures/TAC Combat/brksg_default.001_metalnessMap.webp"
+        },
+        {
+          "name": "brksg_default_2.001_map",
+          "material_name": "brksg_default_2.001",
+          "type": "map",
+          "image": "textures/TAC Combat/brksg_default_2.001_map.webp"
+        },
+        {
+          "name": "brksg_default_2.001_normalMap",
+          "material_name": "brksg_default_2.001",
+          "type": "normalMap",
+          "image": "textures/TAC Combat/brksg_default_2.001_normalMap.webp"
+        },
+        {
+          "name": "brksg_default_2.001_roughnessMap",
+          "material_name": "brksg_default_2.001",
+          "type": "roughnessMap",
+          "image": "textures/TAC Combat/brksg_default_2.001_roughnessMap.webp"
+        },
+        {
+          "name": "brksg_default_2.001_metalnessMap",
+          "material_name": "brksg_default_2.001",
+          "type": "metalnessMap",
+          "image": "textures/TAC Combat/brksg_default_2.001_metalnessMap.webp"
+        }
+      ]
+    },
+    {
+      "name": "Simple Black",
+      "is_default": false,
+      "is_model_changed": false,
+      "model_path": null,
+      "textures": [
+        {
+          "name": "BreakShotgun_Substance_3_shotgun_mips_01_s01_02_frame_BaseColor.png",
+          "material_name": "brksg_default.001",
+          "type": "map",
+          "image": "textures/Simple Black/BreakShotgun_Substance_3_shotgun_mips_01_s01_02_frame_BaseColor.png.webp"
+        },
+        {
+          "name": "BreakShotgun_Substance_3_shotgun_mips_01_s01_02_frame_Normal.png",
+          "material_name": "brksg_default.001",
+          "type": "normalMap",
+          "image": "textures/Simple Black/BreakShotgun_Substance_3_shotgun_mips_01_s01_02_frame_Normal.png.webp"
+        },
+        {
+          "name": "BreakShotgun_Substance_3_shotgun_mips_01_s01_02_frame_Roughness.png",
+          "material_name": "brksg_default.001",
+          "type": "roughnessMap",
+          "image": "textures/Simple Black/BreakShotgun_Substance_3_shotgun_mips_01_s01_02_frame_Roughness.png.webp"
+        },
+        {
+          "name": "BreakShotgun_Substance_3_shotgun_mips_01_s01_02_frame_Metallic.png",
+          "material_name": "brksg_default.001",
+          "type": "metalnessMap",
+          "image": "textures/Simple Black/BreakShotgun_Substance_3_shotgun_mips_01_s01_02_frame_Metallic.png.webp"
+        },
+        {
+          "name": "BreakShotgun_Substance_3_shotgun_mips_01_s01_02_variant_BaseColor.png",
+          "material_name": "brksg_default_2.001",
+          "type": "map",
+          "image": "textures/Simple Black/BreakShotgun_Substance_3_shotgun_mips_01_s01_02_variant_BaseColor.png.webp"
+        },
+        {
+          "name": "BreakShotgun_Substance_3_shotgun_mips_01_s01_02_variant_Normal.png",
+          "material_name": "brksg_default_2.001",
+          "type": "normalMap",
+          "image": "textures/Simple Black/BreakShotgun_Substance_3_shotgun_mips_01_s01_02_variant_Normal.png.webp"
+        },
+        {
+          "name": "BreakShotgun_Substance_3_shotgun_mips_01_s01_02_variant_Roughness.png",
+          "material_name": "brksg_default_2.001",
+          "type": "roughnessMap",
+          "image": "textures/Simple Black/BreakShotgun_Substance_3_shotgun_mips_01_s01_02_variant_Roughness.png.webp"
+        },
+        {
+          "name": "BreakShotgun_Substance_3_shotgun_mips_01_s01_02_variant_Metallic.png",
+          "material_name": "brksg_default_2.001",
+          "type": "metalnessMap",
+          "image": "textures/Simple Black/BreakShotgun_Substance_3_shotgun_mips_01_s01_02_variant_Metallic.png.webp"
+        }
+      ]
+    }
+  ],
+  "mods": {},
+  "stickers": [],
+  "charms": [],
+  "slug": "wstr-combat-shotgun",
+  "redacted": false
+}

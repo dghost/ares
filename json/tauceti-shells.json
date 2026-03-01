@@ -1,0 +1,1803 @@
+{
+  "runners": [],
+  "shells": {
+    "destroyer": {
+      "name": "Destroyer",
+      "abilities": [
+        {
+          "name": "ROLE: Combat specialist",
+          "type": "TECH: Offense / Defense",
+          "icon": {
+            "url": "https://assets.thecdn.io/02645362-f6ed-4c6b-95bc-acd38d11877e.png",
+            "filename": "02645362-f6ed-4c6b-95bc-acd38d11877e.png",
+            "alt_filename": "02645362-f6ed-4c6b-95bc-acd38d11877e.png",
+            "alt": "Destroyer Icon",
+            "width": 108,
+            "height": 108,
+            "mimeType": "image/png"
+          },
+          "heading": "Destroyers seek conflict.",
+          "description": "Advanced weapons systems, a personal defense barricade, and increased movement abilities allow. Destroyers to take the fight to any threat or rival they encounter during a run. \n[excerpt, UESC threat eval: rnnr.dstryr.fileID55430c_p496]"
+        },
+        {
+          "name": "SEARCH AND DESTROY",
+          "type": "Prime Ability",
+          "icon": {
+            "url": "https://assets.thecdn.io/5d344607-194c-4698-a6ee-ccbce0c785c0.png",
+            "filename": "5d344607-194c-4698-a6ee-ccbce0c785c0.png",
+            "alt_filename": "Search_and_destroy.png",
+            "alt": "Search_and_destroy",
+            "width": 108,
+            "height": 108,
+            "mimeType": "image/png"
+          },
+          "heading": "",
+          "description": "Activate your shoulder-mounted missile pods.\n\nDealing sustained damage to targets launches homing missiles, Immobilizing and dealing damage upon impact."
+        },
+        {
+          "name": "RIOT BARRICADE",
+          "type": "Tactial Ability",
+          "icon": {
+            "url": "https://assets.thecdn.io/a499ba61-1595-447a-9e99-fa22e9508110.png",
+            "filename": "a499ba61-1595-447a-9e99-fa22e9508110.png",
+            "alt_filename": "Riot_barricade.png",
+            "alt": "Riot_barricade",
+            "width": 108,
+            "height": 108,
+            "mimeType": "image/png"
+          },
+          "heading": "",
+          "description": "Toggle an energy barricade that blocks incoming damage, draining tactical ability energy over time.\n\nTaking damage drains additional energy."
+        },
+        {
+          "name": "THRUSTER",
+          "type": "Trait 1",
+          "icon": {
+            "url": "https://assets.thecdn.io/7be0410d-bcdd-4011-b7c4-81d692c0d459.png",
+            "filename": "7be0410d-bcdd-4011-b7c4-81d692c0d459.png",
+            "alt_filename": "Thruster.png",
+            "alt": "Thruster",
+            "width": 108,
+            "height": 108,
+            "mimeType": "image/png"
+          },
+          "heading": "",
+          "description": "Activate while airborne to fire boosters that thrust you in the direction you are moving."
+        },
+        {
+          "name": "TACTICAL SPRINT",
+          "type": "Trait 2",
+          "icon": {
+            "url": "https://assets.thecdn.io/d28bd903-bc90-4aed-a8cf-ba2a6fedbe1b.png",
+            "filename": "d28bd903-bc90-4aed-a8cf-ba2a6fedbe1b.png",
+            "alt_filename": "Tactical_sprint.png",
+            "alt": "Tactical_sprint",
+            "width": 108,
+            "height": 108,
+            "mimeType": "image/png"
+          },
+          "heading": "",
+          "description": "Double-press sprint to move faster at the cost of generating additional heat."
+        }
+      ],
+      "cctvItems": {
+        "foot_left": {
+          "enabled": true,
+          "name": "P8Z7XQ9K_2A4M_IMG.log",
+          "file": {
+            "url": "https://assets.thecdn.io/36ace6a4-215e-41c9-9610-ed19ecc8f948.mp4",
+            "filename": "36ace6a4-215e-41c9-9610-ed19ecc8f948.mp4",
+            "alt_filename": "36ace6a4-215e-41c9-9610-ed19ecc8f948.mp4",
+            "alt": "Destroyer Thruster Freecam 01 ",
+            "width": null,
+            "height": null,
+            "mimeType": "video/mp4"
+          }
+        },
+        "foot_right": {
+          "enabled": false,
+          "name": null,
+          "file": null
+        },
+        "knee_left": {
+          "enabled": false,
+          "name": null,
+          "file": null
+        },
+        "knee_right": {
+          "enabled": true,
+          "name": "X2QZ7P9M_84AK_UNIT.dat",
+          "file": {
+            "url": "https://assets.thecdn.io/5bdd7ae7-70f8-4e18-beb2-0b93c38e9b32.mp4",
+            "filename": "5bdd7ae7-70f8-4e18-beb2-0b93c38e9b32.mp4",
+            "alt_filename": "5bdd7ae7-70f8-4e18-beb2-0b93c38e9b32.mp4",
+            "alt": "Destroyer Tacticalsprint Freecam",
+            "width": null,
+            "height": null,
+            "mimeType": "video/mp4"
+          }
+        },
+        "hip_left": {
+          "enabled": false,
+          "name": "",
+          "file": null
+        },
+        "hip_right": {
+          "enabled": false,
+          "name": null,
+          "file": null
+        },
+        "chest": {
+          "enabled": true,
+          "name": "Z9X7P8Q2_K4MA_CORE.tx",
+          "file": {
+            "url": "https://assets.thecdn.io/298c90a3-3a44-47b0-845e-06cc3e72347a.wav",
+            "filename": "298c90a3-3a44-47b0-845e-06cc3e72347a.wav",
+            "alt_filename": "298c90a3-3a44-47b0-845e-06cc3e72347a.wav",
+            "alt": "kit prepped lets go",
+            "width": null,
+            "height": null,
+            "mimeType": "audio/wav"
+          }
+        },
+        "head": {
+          "enabled": true,
+          "name": "Q4ZK8P9X_2A7M_DATA.log",
+          "file": {
+            "url": "https://assets.thecdn.io/948303b5-2f66-48e7-ad94-7101b60d2815.wav",
+            "filename": "948303b5-2f66-48e7-ad94-7101b60d2815.wav",
+            "alt_filename": "948303b5-2f66-48e7-ad94-7101b60d2815.wav",
+            "alt": "the only rule is to survive",
+            "width": null,
+            "height": null,
+            "mimeType": "audio/wav"
+          }
+        },
+        "shoulder_left": {
+          "enabled": false,
+          "name": "",
+          "file": null
+        },
+        "shoulder_right": {
+          "enabled": true,
+          "name": "X7P9Z2QK_4A8M_FEED.tx",
+          "file": {
+            "url": "https://assets.thecdn.io/a22190c8-2dc7-4da8-b229-171258bcb420.mp4",
+            "filename": "a22190c8-2dc7-4da8-b229-171258bcb420.mp4",
+            "alt_filename": "a22190c8-2dc7-4da8-b229-171258bcb420.mp4",
+            "alt": "Destroyer Ult Freecam",
+            "width": null,
+            "height": null,
+            "mimeType": "video/mp4"
+          }
+        },
+        "elbow_left": {
+          "enabled": false,
+          "name": null,
+          "file": null
+        },
+        "elbow_right": {
+          "enabled": false,
+          "name": null,
+          "file": null
+        },
+        "hand_left": {
+          "enabled": true,
+          "name": "M8QZ9X7P_2A4K_PROC.bin",
+          "file": {
+            "url": "https://assets.thecdn.io/a47aecb0-dcfa-4fc1-8d59-75ebf3891b55.mp4",
+            "filename": "a47aecb0-dcfa-4fc1-8d59-75ebf3891b55.mp4",
+            "alt_filename": "a47aecb0-dcfa-4fc1-8d59-75ebf3891b55.mp4",
+            "alt": "Riotbarricade Freecam",
+            "width": null,
+            "height": null,
+            "mimeType": "video/mp4"
+          }
+        },
+        "hand_right": {
+          "enabled": false,
+          "name": null,
+          "file": null
+        }
+      },
+      "base_url": "https://goliath-tau-ceti-stage.b-cdn.net/runners/Destroyer-2026-02-25_10%3A40",
+      "id": "1",
+      "runner_name": "Destroyer",
+      "model_path": "models/Destroyer.glb",
+      "skins": [
+        {
+          "name": "Core",
+          "is_default": true,
+          "is_model_changed": false,
+          "model_path": null,
+          "image": {
+            "path": "images/skins/Core.png",
+            "name": "captured-skin.png",
+            "type": "image/png"
+          }
+        },
+        {
+          "name": "Shadow Index",
+          "is_default": false,
+          "is_model_changed": true,
+          "model_path": "models/skins/Shadow Index.glb",
+          "image": {
+            "path": "images/skins/Shadow Index.png",
+            "name": "captured-skin.png",
+            "type": "image/png"
+          }
+        }
+      ],
+      "interactive_points": {
+        "foot_left": {
+          "x": 0.26,
+          "y": 0.068,
+          "z": 0.12
+        },
+        "foot_right": {
+          "x": -0.23,
+          "y": 0.07,
+          "z": -0.21
+        },
+        "knee_left": {
+          "x": 0.18,
+          "y": 0.53,
+          "z": 0.13
+        },
+        "knee_right": {
+          "x": -0.19,
+          "y": 0.53,
+          "z": -0.09
+        },
+        "hip_left": {
+          "x": 0.09,
+          "y": 0.98,
+          "z": 0.05
+        },
+        "hip_right": {
+          "x": -0.12,
+          "y": 0.98,
+          "z": -0.04
+        },
+        "chest": {
+          "x": -0.03,
+          "y": 1.421,
+          "z": 0.04
+        },
+        "head": {
+          "x": 0.03,
+          "y": 1.7,
+          "z": 0.07
+        },
+        "shoulder_left": {
+          "x": 0.22,
+          "y": 1.43,
+          "z": 0.05
+        },
+        "shoulder_right": {
+          "x": -0.2,
+          "y": 1.46,
+          "z": -0.15
+        },
+        "elbow_left": {
+          "x": 0.32,
+          "y": 1.16,
+          "z": 0.04
+        },
+        "elbow_right": {
+          "x": -0.22,
+          "y": 1.22,
+          "z": -0.25
+        },
+        "hand_left": {
+          "x": 0.3,
+          "y": 0.86,
+          "z": 0.18
+        },
+        "hand_right": {
+          "x": -0.31,
+          "y": 0.87,
+          "z": -0.15
+        }
+      },
+      "slug": "destroyer"
+    },
+    "vandal": {
+      "name": "Vandal",
+      "abilities": [
+        {
+          "name": "ROLE: Combat anarchist ",
+          "type": "TECH: Enhanced movement ",
+          "icon": {
+            "url": "https://assets.thecdn.io/c0c35a2d-9bf6-4bb2-944d-c7e23257976b.png",
+            "filename": "c0c35a2d-9bf6-4bb2-944d-c7e23257976b.png",
+            "alt_filename": "c0c35a2d-9bf6-4bb2-944d-c7e23257976b.png",
+            "alt": "Vandal Icon",
+            "width": 108,
+            "height": 108,
+            "mimeType": "image/png"
+          },
+          "heading": "Vandals are troublemakers. ",
+          "description": "Amplified movement abilities help cover ground at incredible speeds, changing any encounter in their favor. Microjets allow a secondary jump to reach higher ground. And a built-in Disrupt Cannon provides instant offense or defense when it is charged and ready to fire. \n[excerpt, UESC threat eval: rnnr.vndl.fileID63112c_p324] \n"
+        },
+        {
+          "name": "AMPLIFY",
+          "type": "Prime Ability",
+          "icon": {
+            "url": "https://assets.thecdn.io/c59df6b5-11ef-4d9a-85dc-abc9d6b8942e.png",
+            "filename": "c59df6b5-11ef-4d9a-85dc-abc9d6b8942e.png",
+            "alt_filename": "Amplify.png",
+            "alt": "Amplify",
+            "width": 108,
+            "height": 108,
+            "mimeType": "image/png"
+          },
+          "heading": "",
+          "description": "Overcharge your movement systems, reducing the heat generated from your movement abilities while increasing your movement speed and weapon dexterity. "
+        },
+        {
+          "name": "DISRUPT CANNON",
+          "type": "Tactical Ability",
+          "icon": {
+            "url": "https://assets.thecdn.io/875c504b-c546-4070-b753-716a773b1b58.png",
+            "filename": "875c504b-c546-4070-b753-716a773b1b58.png",
+            "alt_filename": "Disrupt_cannon.png",
+            "alt": "Disrupt_cannon",
+            "width": 108,
+            "height": 108,
+            "mimeType": "image/png"
+          },
+          "heading": "",
+          "description": "Transform your arm into a cannon and fire a high-powered energy projectile that deals damage and pushes targets away.\n\nOvercharge your arm cannon greatly increasing. the size and damage of the blast."
+        },
+        {
+          "name": "MICROJETS",
+          "type": "Trait 1",
+          "icon": {
+            "url": "https://assets.thecdn.io/ba4955bc-9fc0-4da2-adc3-cb074c4c1def.png",
+            "filename": "ba4955bc-9fc0-4da2-adc3-cb074c4c1def.png",
+            "alt_filename": "Microjets.png",
+            "alt": "Microjets",
+            "width": 108,
+            "height": 108,
+            "mimeType": "image/png"
+          },
+          "heading": "",
+          "description": "Activate while airborne to perform another jump at the cost of generating additional heat."
+        },
+        {
+          "name": "POWER SLIDE",
+          "type": "Trait 2",
+          "icon": {
+            "url": "https://assets.thecdn.io/09317870-efe7-4363-938f-190c31fff66b.png",
+            "filename": "09317870-efe7-4363-938f-190c31fff66b.png",
+            "alt_filename": "Power_slide.png",
+            "alt": "Power_slide",
+            "width": 108,
+            "height": 108,
+            "mimeType": "image/png"
+          },
+          "heading": "",
+          "description": "Grants a supercharged slide that generates additional heat."
+        }
+      ],
+      "cctvItems": {
+        "foot_left": {
+          "enabled": false,
+          "name": null,
+          "file": null
+        },
+        "foot_right": {
+          "enabled": true,
+          "name": "W3M7PZ9X_K4QA_REGN.bin",
+          "file": {
+            "url": "https://assets.thecdn.io/3d3790b3-f823-45a0-8788-f37b970b0b6f.mp4",
+            "filename": "3d3790b3-f823-45a0-8788-f37b970b0b6f.mp4",
+            "alt_filename": "3d3790b3-f823-45a0-8788-f37b970b0b6f.mp4",
+            "alt": "Vandal1p Microjets",
+            "width": null,
+            "height": null,
+            "mimeType": "video/mp4"
+          }
+        },
+        "knee_left": {
+          "enabled": false,
+          "name": null,
+          "file": null
+        },
+        "knee_right": {
+          "enabled": false,
+          "name": null,
+          "file": null
+        },
+        "hip_left": {
+          "enabled": true,
+          "name": "V2K8ZP7X_Q4M9_DREF.tx",
+          "file": {
+            "url": "https://assets.thecdn.io/b0bf1c81-42d6-4f17-b5c0-a45013a6297a.mp4",
+            "filename": "b0bf1c81-42d6-4f17-b5c0-a45013a6297a.mp4",
+            "alt_filename": "b0bf1c81-42d6-4f17-b5c0-a45013a6297a.mp4",
+            "alt": "Vandal1p Powerslide",
+            "width": null,
+            "height": null,
+            "mimeType": "video/mp4"
+          }
+        },
+        "hip_right": {
+          "enabled": true,
+          "name": "K7R9A6X_MQ3F_LOG.bin",
+          "file": {
+            "url": "https://assets.thecdn.io/d63fb021-cc23-4a25-bc46-41a7dcdbe881.mp4",
+            "filename": "d63fb021-cc23-4a25-bc46-41a7dcdbe881.mp4",
+            "alt_filename": "K7R9A6X_MQ3F_LOG.mp4",
+            "alt": "Power Slide",
+            "width": null,
+            "height": null,
+            "mimeType": "video/mp4"
+          }
+        },
+        "chest": {
+          "enabled": false,
+          "name": null,
+          "file": null
+        },
+        "head": {
+          "enabled": true,
+          "name": "J9Z7XQ4P_2MA8_ALLOC.log",
+          "file": {
+            "url": "https://assets.thecdn.io/a63b335d-6d38-492b-9bea-b333ac8e3668.wav",
+            "filename": "a63b335d-6d38-492b-9bea-b333ac8e3668.wav",
+            "alt_filename": "a63b335d-6d38-492b-9bea-b333ac8e3668.wav",
+            "alt": "ready to run",
+            "width": null,
+            "height": null,
+            "mimeType": "audio/wav"
+          }
+        },
+        "shoulder_left": {
+          "enabled": true,
+          "name": "X6P2QK8Z_M7A9_TELEM.dat",
+          "file": {
+            "url": "https://assets.thecdn.io/34724c9d-6fe5-4d73-a6be-ea876a512c59.wav",
+            "filename": "34724c9d-6fe5-4d73-a6be-ea876a512c59.wav",
+            "alt_filename": "34724c9d-6fe5-4d73-a6be-ea876a512c59.wav",
+            "alt": "outrun anything",
+            "width": null,
+            "height": null,
+            "mimeType": "audio/wav"
+          }
+        },
+        "shoulder_right": {
+          "enabled": false,
+          "name": "",
+          "file": null
+        },
+        "elbow_left": {
+          "enabled": false,
+          "name": null,
+          "file": null
+        },
+        "elbow_right": {
+          "enabled": false,
+          "name": null,
+          "file": null
+        },
+        "hand_left": {
+          "enabled": true,
+          "name": "T4X9KZ7P_Q2M8_DSYS.log",
+          "file": {
+            "url": "https://assets.thecdn.io/dee58ec9-7b39-405e-a2c0-f8c7225f3e92.mp4",
+            "filename": "dee58ec9-7b39-405e-a2c0-f8c7225f3e92.mp4",
+            "alt_filename": "dee58ec9-7b39-405e-a2c0-f8c7225f3e92.mp4",
+            "alt": "Vandal 1P Vandalult ",
+            "width": null,
+            "height": null,
+            "mimeType": "video/mp4"
+          }
+        },
+        "hand_right": {
+          "enabled": true,
+          "name": "R8QZ4X7M_P9A2_XFER.tx",
+          "file": {
+            "url": "https://assets.thecdn.io/d2b6069b-376c-4702-a178-e177d7890bca.mp4",
+            "filename": "d2b6069b-376c-4702-a178-e177d7890bca.mp4",
+            "alt_filename": "d2b6069b-376c-4702-a178-e177d7890bca.mp4",
+            "alt": "Vandal1p Disruptcannon",
+            "width": null,
+            "height": null,
+            "mimeType": "video/mp4"
+          }
+        }
+      },
+      "base_url": "https://goliath-tau-ceti-stage.b-cdn.net/runners/Vandal-2026-02-26_14%3A20",
+      "id": "4",
+      "runner_name": "Vandal",
+      "model_path": "models/Vandal.glb",
+      "skins": [
+        {
+          "name": "Core",
+          "is_default": true,
+          "is_model_changed": false,
+          "model_path": null,
+          "image": {
+            "path": "images/skins/Core.png",
+            "name": "captured-skin.png",
+            "type": "image/png"
+          }
+        },
+        {
+          "name": "Shadow Index",
+          "is_default": false,
+          "is_model_changed": true,
+          "model_path": "models/skins/Shadow Index.glb",
+          "image": {
+            "path": "images/skins/Shadow Index.png",
+            "name": "captured-skin.png",
+            "type": "image/png"
+          }
+        }
+      ],
+      "interactive_points": {
+        "foot_left": {
+          "x": 0.19,
+          "y": 0.08,
+          "z": 0
+        },
+        "foot_right": {
+          "x": -0.26,
+          "y": 0.12,
+          "z": -0.03
+        },
+        "knee_left": {
+          "x": 0.12,
+          "y": 0.57,
+          "z": -0.06
+        },
+        "knee_right": {
+          "x": -0.02,
+          "y": 0.56,
+          "z": 0.06
+        },
+        "hip_left": {
+          "x": 0.09,
+          "y": 1.07,
+          "z": -0.08
+        },
+        "hip_right": {
+          "x": 0.027,
+          "y": 1.07,
+          "z": 0.09
+        },
+        "chest": {
+          "x": 0.018,
+          "y": 1.42,
+          "z": -0.04
+        },
+        "head": {
+          "x": 0.05,
+          "y": 1.66,
+          "z": -0.01
+        },
+        "shoulder_left": {
+          "x": -0.07,
+          "y": 1.46,
+          "z": -0.18
+        },
+        "shoulder_right": {
+          "x": 0,
+          "y": 1.5,
+          "z": 0.11
+        },
+        "elbow_left": {
+          "x": -0.11,
+          "y": 1.17,
+          "z": -0.25
+        },
+        "elbow_right": {
+          "x": 0.19,
+          "y": 1.34,
+          "z": 0.29
+        },
+        "hand_left": {
+          "x": -0.04,
+          "y": 0.86,
+          "z": -0.29
+        },
+        "hand_right": {
+          "x": 0.43,
+          "y": 1.2,
+          "z": 0.4
+        }
+      },
+      "slug": "vandal"
+    },
+    "recon": {
+      "name": "Recon",
+      "abilities": [
+        {
+          "name": "ROLE: Intel specialist",
+          "type": "TECH: Threat detection ",
+          "icon": {
+            "url": "https://assets.thecdn.io/93776c54-11f7-498c-b3f3-f6baa0ccb756.png",
+            "filename": "93776c54-11f7-498c-b3f3-f6baa0ccb756.png",
+            "alt_filename": "93776c54-11f7-498c-b3f3-f6baa0ccb756.png",
+            "alt": "Recon Icon",
+            "width": 108,
+            "height": 108,
+            "mimeType": "image/png"
+          },
+          "heading": "Recons use intel as a weapon. ",
+          "description": "Everything about Recon shells  is geared toward identifying threats and providing insight  into enemy locations and movements: Mark hostiles. Track wounded targets. Deploy a tracker drone to engage threats in unexpected ways. \n[excerpt, UESC threat eval: rnnr.rcn.fileID38406c_p471] \n"
+        },
+        {
+          "name": "ECHO PULSE",
+          "type": "Prime Ability",
+          "icon": {
+            "url": "https://assets.thecdn.io/8425dd84-9c15-4ecd-b76d-a471956d56f9.png",
+            "filename": "8425dd84-9c15-4ecd-b76d-a471956d56f9.png",
+            "alt_filename": "Echo_pulse.png",
+            "alt": "Echo_pulse",
+            "width": 108,
+            "height": 108,
+            "mimeType": "image/png"
+          },
+          "heading": "",
+          "description": "Activate your shell's advanced detection systems, releasing a series of sonar pulses that reveal the location of nearby hostiles."
+        },
+        {
+          "name": "TRACKER DRONE",
+          "type": "Tactical Ability",
+          "icon": {
+            "url": "https://assets.thecdn.io/116de45f-38ab-4c15-b4cd-fe03cf68a94a.png",
+            "filename": "116de45f-38ab-4c15-b4cd-fe03cf68a94a.png",
+            "alt_filename": "Tracker_drone.png",
+            "alt": "Tracker_drone",
+            "width": 108,
+            "height": 108,
+            "mimeType": "image/png"
+          },
+          "heading": "",
+          "description": "Deploy a mechanized microbot that tracks down nearby hostiles and explodes, Overheating any targets caught in the blast."
+        },
+        {
+          "name": "INTERROGATION",
+          "type": "Trait 1",
+          "icon": {
+            "url": "https://assets.thecdn.io/984a0726-c3bd-4dcd-b993-6e13fa308ab0.png",
+            "filename": "984a0726-c3bd-4dcd-b993-6e13fa308ab0.png",
+            "alt_filename": "Interrogation.png",
+            "alt": "Interrogation",
+            "width": 108,
+            "height": 108,
+            "mimeType": "image/png"
+          },
+          "heading": "",
+          "description": "When pinged by a hostile Runner, you automatically receive a warning your shell's HUD.\n\nPerforming a finish on a runner pings their crew."
+        },
+        {
+          "name": "STALKER PROTOCOL",
+          "type": "Trait 2",
+          "icon": {
+            "url": "https://assets.thecdn.io/7da0fae3-12e9-45fc-8787-3ad969aa4565.png",
+            "filename": "7da0fae3-12e9-45fc-8787-3ad969aa4565.png",
+            "alt_filename": "Stalker protocol.png",
+            "alt": "Stalker protocol",
+            "width": 108,
+            "height": 108,
+            "mimeType": "image/png"
+          },
+          "heading": "",
+          "description": "After breaking a target's shields, they leave behind a lingering holographic trail for a short time."
+        }
+      ],
+      "cctvItems": {
+        "foot_left": {
+          "enabled": false,
+          "name": "",
+          "file": null
+        },
+        "foot_right": {
+          "enabled": false,
+          "name": "",
+          "file": null
+        },
+        "knee_left": {
+          "enabled": false,
+          "name": null,
+          "file": null
+        },
+        "knee_right": {
+          "enabled": false,
+          "name": null,
+          "file": null
+        },
+        "hip_left": {
+          "enabled": false,
+          "name": null,
+          "file": null
+        },
+        "hip_right": {
+          "enabled": true,
+          "name": "X9P7Q8Z2_A4MK_CORE.tx",
+          "file": {
+            "url": "https://assets.thecdn.io/8f83216c-fb88-4222-b3e7-0c8b03742259.mp4",
+            "filename": "8f83216c-fb88-4222-b3e7-0c8b03742259.mp4",
+            "alt_filename": "8f83216c-fb88-4222-b3e7-0c8b03742259.mp4",
+            "alt": "Recon 1P Reconspiderdrone",
+            "width": null,
+            "height": null,
+            "mimeType": "video/mp4"
+          }
+        },
+        "chest": {
+          "enabled": true,
+          "name": "H4QZ7X9P_M2AK_DIAG.dat",
+          "file": {
+            "url": "https://assets.thecdn.io/4354033e-64fb-4384-8358-11ce4b352ad6.wav",
+            "filename": "4354033e-64fb-4384-8358-11ce4b352ad6.wav",
+            "alt_filename": "4354033e-64fb-4384-8358-11ce4b352ad6.wav",
+            "alt": "must be honed ",
+            "width": null,
+            "height": null,
+            "mimeType": "audio/wav"
+          }
+        },
+        "head": {
+          "enabled": true,
+          "name": "Z7Q8X9P2_M4AK_LOG.log",
+          "file": {
+            "url": "https://assets.thecdn.io/001ad867-68a2-4e24-87d0-135eb75df88a.mp4",
+            "filename": "001ad867-68a2-4e24-87d0-135eb75df88a.mp4",
+            "alt_filename": "001ad867-68a2-4e24-87d0-135eb75df88a.mp4",
+            "alt": "Recon Ultyscan Hudon",
+            "width": null,
+            "height": null,
+            "mimeType": "video/mp4"
+          }
+        },
+        "shoulder_left": {
+          "enabled": true,
+          "name": "F7X9QZ2P_8KMA_PKTQ.bin",
+          "file": {
+            "url": "https://assets.thecdn.io/3b7317a6-c306-482d-8008-bb969cbb2cf7.wav",
+            "filename": "3b7317a6-c306-482d-8008-bb969cbb2cf7.wav",
+            "alt_filename": "3b7317a6-c306-482d-8008-bb969cbb2cf7.wav",
+            "alt": "siffering will be their reward",
+            "width": null,
+            "height": null,
+            "mimeType": "audio/wav"
+          }
+        },
+        "shoulder_right": {
+          "enabled": true,
+          "name": "T4X9KZ7P_Q2M8_DSYS.log",
+          "file": {
+            "url": "https://assets.thecdn.io/45aa5f92-d17b-4aa2-bbcf-e53d478893d5.mp4",
+            "filename": "45aa5f92-d17b-4aa2-bbcf-e53d478893d5.mp4",
+            "alt_filename": "45aa5f92-d17b-4aa2-bbcf-e53d478893d5.mp4",
+            "alt": "Recon",
+            "width": null,
+            "height": null,
+            "mimeType": "video/mp4"
+          }
+        },
+        "elbow_left": {
+          "enabled": false,
+          "name": null,
+          "file": null
+        },
+        "elbow_right": {
+          "enabled": true,
+          "name": "R8QZ4X7M_P9A2_XFER.tx",
+          "file": {
+            "url": "https://assets.thecdn.io/cefce33c-c624-4f89-831b-dfc3da8efccf.mp4",
+            "filename": "cefce33c-c624-4f89-831b-dfc3da8efccf.mp4",
+            "alt_filename": "cefce33c-c624-4f89-831b-dfc3da8efccf.mp4",
+            "alt": "recon_interrogation_HUDon",
+            "width": null,
+            "height": null,
+            "mimeType": "video/mp4"
+          }
+        },
+        "hand_left": {
+          "enabled": false,
+          "name": "",
+          "file": null
+        },
+        "hand_right": {
+          "enabled": false,
+          "name": "",
+          "file": null
+        }
+      },
+      "base_url": "https://goliath-tau-ceti-stage.b-cdn.net/runners/Recon-2026-02-25_14%3A12",
+      "id": "2",
+      "runner_name": "Recon",
+      "model_path": "models/Recon.glb",
+      "skins": [
+        {
+          "name": "Core",
+          "is_default": true,
+          "is_model_changed": false,
+          "model_path": null,
+          "image": {
+            "path": "images/skins/Core.png",
+            "name": "captured-skin.png",
+            "type": "image/png"
+          }
+        },
+        {
+          "name": "Shadow Index",
+          "is_default": false,
+          "is_model_changed": true,
+          "model_path": "models/skins/Shadow Index.glb",
+          "image": {
+            "path": "images/skins/Shadow Index.png",
+            "name": "captured-skin.png",
+            "type": "image/png"
+          }
+        }
+      ],
+      "interactive_points": {
+        "foot_left": {
+          "x": -0.17,
+          "y": 0.06,
+          "z": -0.23
+        },
+        "foot_right": {
+          "x": 0.13,
+          "y": 0.08,
+          "z": 0.17
+        },
+        "knee_left": {
+          "x": -0.06,
+          "y": 0.56,
+          "z": -0.16
+        },
+        "knee_right": {
+          "x": 0.03,
+          "y": 0.57,
+          "z": 0.15
+        },
+        "hip_left": {
+          "x": 0.028,
+          "y": 1.08,
+          "z": -0.07
+        },
+        "hip_right": {
+          "x": -0.08,
+          "y": 1.05,
+          "z": 0.02
+        },
+        "chest": {
+          "x": 0.02,
+          "y": 1.42,
+          "z": 0.04
+        },
+        "head": {
+          "x": -0.03,
+          "y": 1.71,
+          "z": 0.11
+        },
+        "shoulder_left": {
+          "x": 0.13,
+          "y": 1.45,
+          "z": -0.13
+        },
+        "shoulder_right": {
+          "x": -0.21,
+          "y": 1.45,
+          "z": 0.08
+        },
+        "elbow_left": {
+          "x": 0.21,
+          "y": 1.18,
+          "z": -0.2
+        },
+        "elbow_right": {
+          "x": -0.31,
+          "y": 1.19,
+          "z": 0.12
+        },
+        "hand_left": {
+          "x": 0.28,
+          "y": 0.95,
+          "z": 0
+        },
+        "hand_right": {
+          "x": -0.31,
+          "y": 0.88,
+          "z": 0.13
+        }
+      },
+      "slug": "recon"
+    },
+    "assassin": {
+      "name": "Assassin",
+      "abilities": [
+        {
+          "name": "ROLE: Shadow agent",
+          "type": "TECH: Invisibility systems ",
+          "icon": {
+            "url": "https://assets.thecdn.io/16e37775-25cf-43ef-8854-791616b32629.png",
+            "filename": "16e37775-25cf-43ef-8854-791616b32629.png",
+            "alt_filename": "16e37775-25cf-43ef-8854-791616b32629.png",
+            "alt": "Assassin Icon",
+            "width": 108,
+            "height": 108,
+            "mimeType": "image/png"
+          },
+          "heading": "Assassins are lethal shadows. ",
+          "description": "Active Camo and synthetic smoke deployment allows for unseen strikes or the perfect cover during hostile engagements.  The ability to move undetected makes Assassins valued allies and lethal enemies. \n[excerpt, UESC threat eval: rnnr.assn.fileID70064c_p223] \n"
+        },
+        {
+          "name": "SMOKE SCREEN",
+          "type": "Prime Ability",
+          "icon": {
+            "url": "https://assets.thecdn.io/f0626ffb-e748-4270-af7b-17c09a16f3f5.png",
+            "filename": "f0626ffb-e748-4270-af7b-17c09a16f3f5.png",
+            "alt_filename": "Smoke_screen.png",
+            "alt": "Smoke_screen",
+            "width": 108,
+            "height": 108,
+            "mimeType": "image/png"
+          },
+          "heading": "",
+          "description": "Throw a smoke disc that emits a line of smoke fields in front of you, disrupting the optics of those who step inside."
+        },
+        {
+          "name": "ACTIVE CAMO",
+          "type": "Tactical Ability",
+          "icon": {
+            "url": "https://assets.thecdn.io/db549798-8de6-49ca-9719-2b59eb1b43e0.png",
+            "filename": "db549798-8de6-49ca-9719-2b59eb1b43e0.png",
+            "alt_filename": "Active_camo.png",
+            "alt": "Active_camo",
+            "width": 108,
+            "height": 108,
+            "mimeType": "image/png"
+          },
+          "heading": "",
+          "description": "Activate your shell's camouflage systems, pulling a shroud of invisibility over yourself.\n\nPerforming offensive actions, taking damage, and using abilities or consumables briefly disrupts your invisibility. "
+        },
+        {
+          "name": "SHADOW DIVE",
+          "type": "Trait 1",
+          "icon": {
+            "url": "https://assets.thecdn.io/a5a4db57-9031-4daf-a12d-dd2bff916022.png",
+            "filename": "a5a4db57-9031-4daf-a12d-dd2bff916022.png",
+            "alt_filename": "Shadow_dive.png",
+            "alt": "Shadow_dive",
+            "width": 108,
+            "height": 108,
+            "mimeType": "image/png"
+          },
+          "heading": "",
+          "description": "Activate while airborne to slam a smoke disc into the ground, deploy a smoke field."
+        },
+        {
+          "name": "SHROUD",
+          "type": "Trait 2",
+          "icon": {
+            "url": "https://assets.thecdn.io/68c7b4a1-f569-471b-abe5-45e188773286.png",
+            "filename": "68c7b4a1-f569-471b-abe5-45e188773286.png",
+            "alt_filename": "Shroud.png",
+            "alt": "Shroud",
+            "width": 108,
+            "height": 108,
+            "mimeType": "image/png"
+          },
+          "heading": "",
+          "description": "Your shell automatically activates its camouflage systems when entering any smoke field, making you invisible.\n\nInvisibility persists for a short time after leaving the smoke field."
+        }
+      ],
+      "cctvItems": {
+        "foot_left": {
+          "enabled": false,
+          "name": null,
+          "file": null
+        },
+        "foot_right": {
+          "enabled": false,
+          "name": null,
+          "file": null
+        },
+        "knee_left": {
+          "enabled": false,
+          "name": null,
+          "file": null
+        },
+        "knee_right": {
+          "enabled": true,
+          "name": "QZ8P2KX7_9M4A_ARCH.log",
+          "file": {
+            "url": "https://assets.thecdn.io/8e5d3faf-e134-4f24-8692-3fcd9427c3d3.mp4",
+            "filename": "8e5d3faf-e134-4f24-8692-3fcd9427c3d3.mp4",
+            "alt_filename": "8e5d3faf-e134-4f24-8692-3fcd9427c3d3.mp4",
+            "alt": "Assin Shadowdive",
+            "width": null,
+            "height": null,
+            "mimeType": "video/mp4"
+          }
+        },
+        "hip_left": {
+          "enabled": true,
+          "name": "K2QZ7X9P_8A4M_SEC.bin",
+          "file": {
+            "url": "https://assets.thecdn.io/be725a08-2d70-426c-8498-d015f6f1f477.mp4",
+            "filename": "be725a08-2d70-426c-8498-d015f6f1f477.mp4",
+            "alt_filename": "be725a08-2d70-426c-8498-d015f6f1f477.mp4",
+            "alt": "Assassin Smokescreen",
+            "width": null,
+            "height": null,
+            "mimeType": "video/mp4"
+          }
+        },
+        "hip_right": {
+          "enabled": false,
+          "name": "",
+          "file": null
+        },
+        "chest": {
+          "enabled": true,
+          "name": "M9ZKX2P8_Q7A4_NODE.tx",
+          "file": {
+            "url": "https://assets.thecdn.io/d1449e64-752c-441f-b352-4314f447a32e.mp4",
+            "filename": "d1449e64-752c-441f-b352-4314f447a32e.mp4",
+            "alt_filename": "d1449e64-752c-441f-b352-4314f447a32e.mp4",
+            "alt": "Assassin Shroud",
+            "width": null,
+            "height": null,
+            "mimeType": "video/mp4"
+          }
+        },
+        "head": {
+          "enabled": true,
+          "name": "Z2X9P7K8_QM4A_PIPE.dat",
+          "file": {
+            "url": "https://assets.thecdn.io/0003a839-a564-4ce2-abd2-9be1d852d70d.wav",
+            "filename": "0003a839-a564-4ce2-abd2-9be1d852d70d.wav",
+            "alt_filename": "0003a839-a564-4ce2-abd2-9be1d852d70d.wav",
+            "alt": "memories are pleasant lies",
+            "width": null,
+            "height": null,
+            "mimeType": "audio/wav"
+          }
+        },
+        "shoulder_left": {
+          "enabled": true,
+          "name": "P7Q9KZ8X_2A4M_MEM.bin",
+          "file": {
+            "url": "https://assets.thecdn.io/00a89562-de3c-4c3e-ad04-4661a05ce1ac.wav",
+            "filename": "00a89562-de3c-4c3e-ad04-4661a05ce1ac.wav",
+            "alt_filename": "00a89562-de3c-4c3e-ad04-4661a05ce1ac.wav",
+            "alt": "what they cannot define",
+            "width": null,
+            "height": null,
+            "mimeType": "audio/wav"
+          }
+        },
+        "shoulder_right": {
+          "enabled": false,
+          "name": null,
+          "file": null
+        },
+        "elbow_left": {
+          "enabled": false,
+          "name": null,
+          "file": null
+        },
+        "elbow_right": {
+          "enabled": false,
+          "name": null,
+          "file": null
+        },
+        "hand_left": {
+          "enabled": true,
+          "name": "KQX2Z8P7_M94A_CORE.tx",
+          "file": {
+            "url": "https://assets.thecdn.io/e1260477-2082-4fc0-af0b-a44679444f15.mp4",
+            "filename": "e1260477-2082-4fc0-af0b-a44679444f15.mp4",
+            "alt_filename": "e1260477-2082-4fc0-af0b-a44679444f15.mp4",
+            "alt": "Assin Activecamo",
+            "width": null,
+            "height": null,
+            "mimeType": "video/mp4"
+          }
+        },
+        "hand_right": {
+          "enabled": false,
+          "name": "",
+          "file": null
+        }
+      },
+      "base_url": "https://goliath-tau-ceti-stage.b-cdn.net/runners/Assassin-2026-02-25_14%3A22",
+      "id": "3",
+      "runner_name": "Assassin",
+      "model_path": "models/Assassin.glb",
+      "skins": [
+        {
+          "name": "Core",
+          "is_default": true,
+          "is_model_changed": false,
+          "model_path": null,
+          "image": {
+            "path": "images/skins/Core.png",
+            "name": "captured-skin.png",
+            "type": "image/png"
+          }
+        },
+        {
+          "name": "Shadow Index",
+          "is_default": false,
+          "is_model_changed": true,
+          "model_path": "models/skins/Shadow Index.glb",
+          "image": {
+            "path": "images/skins/Shadow Index.png",
+            "name": "captured-skin.png",
+            "type": "image/png"
+          }
+        }
+      ],
+      "interactive_points": {
+        "foot_left": {
+          "x": 0.03,
+          "y": 0.045,
+          "z": -0.11
+        },
+        "foot_right": {
+          "x": -0.08,
+          "y": 0.077,
+          "z": -0.34
+        },
+        "knee_left": {
+          "x": 0.05,
+          "y": 0.54,
+          "z": -0.05
+        },
+        "knee_right": {
+          "x": -0.21,
+          "y": 0.52,
+          "z": -0.11
+        },
+        "hip_left": {
+          "x": 0.06,
+          "y": 1,
+          "z": -0.01
+        },
+        "hip_right": {
+          "x": -0.09,
+          "y": 0.98,
+          "z": -0.11
+        },
+        "chest": {
+          "x": 0,
+          "y": 1.38,
+          "z": -0.05
+        },
+        "head": {
+          "x": 0.03,
+          "y": 1.64,
+          "z": 0.07
+        },
+        "shoulder_left": {
+          "x": 0.16,
+          "y": 1.4,
+          "z": 0.04
+        },
+        "shoulder_right": {
+          "x": -0.15,
+          "y": 1.49,
+          "z": -0.15
+        },
+        "elbow_left": {
+          "x": 0.02,
+          "y": 1.21,
+          "z": 0.18
+        },
+        "elbow_right": {
+          "x": -0.27,
+          "y": 1.22,
+          "z": -0.2
+        },
+        "hand_left": {
+          "x": -0.2,
+          "y": 1.41,
+          "z": 0.15
+        },
+        "hand_right": {
+          "x": -0.25,
+          "y": 1.33,
+          "z": 0.08
+        }
+      },
+      "slug": "assassin"
+    },
+    "triage": {
+      "name": "Triage",
+      "abilities": [
+        {
+          "name": "ROLE: Field medic ",
+          "type": "TECH: Damage mitigation ",
+          "icon": {
+            "url": "https://assets.thecdn.io/290eabc0-3aa2-4f24-8611-111b06cd6b86.png",
+            "filename": "290eabc0-3aa2-4f24-8611-111b06cd6b86.png",
+            "alt_filename": "290eabc0-3aa2-4f24-8611-111b06cd6b86.png",
+            "alt": "Triage Icon",
+            "width": 108,
+            "height": 108,
+            "mimeType": "image/png"
+          },
+          "heading": "Triage saves lives. ",
+          "description": "Deployable healing drones and onboard reboot abilities allow Triage Runners and their crews  to keep running after taking damage. Mend health and shields and even reboot crewmates at a distance to survive and fight again and again. \n[excerpt, UESC threat eval: rnnr.trge.fileID70064c_p392] \n"
+        },
+        {
+          "name": "REBOOT+",
+          "type": "Prime Ability",
+          "icon": {
+            "url": "https://assets.thecdn.io/cdb1cbec-86b4-4015-ac70-ec845e7598e5.png",
+            "filename": "cdb1cbec-86b4-4015-ac70-ec845e7598e5.png",
+            "alt_filename": "Reboot.png",
+            "alt": "Reboot",
+            "width": 108,
+            "height": 108,
+            "mimeType": "image/png"
+          },
+          "heading": "",
+          "description": "Ready your shell's emergency defibrillator systems.\n\nLock on to downed crew members or hostile targets and fire your Reboot+ device at them, which revives crew members and EMPs hostiles."
+        },
+        {
+          "name": "MED-DRONE",
+          "type": "Tactical Ability",
+          "icon": {
+            "url": "https://assets.thecdn.io/7def7591-0dd0-4749-a5db-efe35fa3f44e.png",
+            "filename": "7def7591-0dd0-4749-a5db-efe35fa3f44e.png",
+            "alt_filename": "Med-drone.png",
+            "alt": "Med-drone",
+            "width": 108,
+            "height": 108,
+            "mimeType": "image/png"
+          },
+          "heading": "",
+          "description": "Deploy a floating medical drone that attaches to crew members and restores health or recharges shields, and prevents them from bleeding out while downed."
+        },
+        {
+          "name": "SHAREWARE.EXE",
+          "type": "Trait 1",
+          "icon": {
+            "url": "https://assets.thecdn.io/b7284fb8-6490-4ed6-8588-914891ca2243.png",
+            "filename": "b7284fb8-6490-4ed6-8588-914891ca2243.png",
+            "alt_filename": " Shareware.png",
+            "alt": "Shareware",
+            "width": 108,
+            "height": 108,
+            "mimeType": "image/png"
+          },
+          "heading": "",
+          "description": "Benefits from medical consumables are shared between crew members with Med-Drone attached to them."
+        },
+        {
+          "name": "BATTERY OVERCHARGE",
+          "type": "Trait 2",
+          "icon": {
+            "url": "https://assets.thecdn.io/7a84a39f-fc55-4d60-8284-4969665374ff.png",
+            "filename": "7a84a39f-fc55-4d60-8284-4969665374ff.png",
+            "alt_filename": "Battery_overcharge.png",
+            "alt": "Battery_overcharge",
+            "width": 108,
+            "height": 108,
+            "mimeType": "image/png"
+          },
+          "heading": "",
+          "description": "Divert energy from your cooling systems to boost the performance of your weapons at the cost of generating additional heat.\n\nWhile active, breaking a target's shield with a volt weapon EMPs them."
+        }
+      ],
+      "cctvItems": {
+        "foot_left": {
+          "enabled": false,
+          "name": null,
+          "file": null
+        },
+        "foot_right": {
+          "enabled": false,
+          "name": null,
+          "file": null
+        },
+        "knee_left": {
+          "enabled": false,
+          "name": null,
+          "file": null
+        },
+        "knee_right": {
+          "enabled": false,
+          "name": null,
+          "file": null
+        },
+        "hip_left": {
+          "enabled": false,
+          "name": null,
+          "file": null
+        },
+        "hip_right": {
+          "enabled": true,
+          "name": "M7Z2Q9X8_P4AK_DATA.bin",
+          "file": {
+            "url": "https://assets.thecdn.io/39b6fda7-b9ed-4365-aaaa-ac2788c25048.mp4",
+            "filename": "39b6fda7-b9ed-4365-aaaa-ac2788c25048.mp4",
+            "alt_filename": "39b6fda7-b9ed-4365-aaaa-ac2788c25048.mp4",
+            "alt": "Triage 1P Medicmedbotwithvandal",
+            "width": null,
+            "height": null,
+            "mimeType": "video/mp4"
+          }
+        },
+        "chest": {
+          "enabled": false,
+          "name": null,
+          "file": null
+        },
+        "head": {
+          "enabled": true,
+          "name": "Y9P2QZ7X_4MAK_FCTL.dat",
+          "file": {
+            "url": "https://assets.thecdn.io/ae1b992e-e84b-47fe-b4cb-b47d2ced6485.wav",
+            "filename": "ae1b992e-e84b-47fe-b4cb-b47d2ced6485.wav",
+            "alt_filename": "ae1b992e-e84b-47fe-b4cb-b47d2ced6485.wav",
+            "alt": "survival is violence",
+            "width": null,
+            "height": null,
+            "mimeType": "audio/wav"
+          }
+        },
+        "shoulder_left": {
+          "enabled": true,
+          "name": "G7ZQ4XP9_K8MA_SBLK.bin",
+          "file": {
+            "url": "https://assets.thecdn.io/9ae3a439-59dc-433c-a987-8b5578a8a142.wav",
+            "filename": "9ae3a439-59dc-433c-a987-8b5578a8a142.wav",
+            "alt_filename": "9ae3a439-59dc-433c-a987-8b5578a8a142.wav",
+            "alt": "your crew is a weapon",
+            "width": null,
+            "height": null,
+            "mimeType": "audio/wav"
+          }
+        },
+        "shoulder_right": {
+          "enabled": false,
+          "name": null,
+          "file": null
+        },
+        "elbow_left": {
+          "enabled": true,
+          "name": "Q8ZP9X2M_7AK4_PROC.dat",
+          "file": {
+            "url": "https://assets.thecdn.io/fc17ce41-4cca-4b7a-be7f-4c66a6f58a03.mp4",
+            "filename": "fc17ce41-4cca-4b7a-be7f-4c66a6f58a03.mp4",
+            "alt_filename": "fc17ce41-4cca-4b7a-be7f-4c66a6f58a03.mp4",
+            "alt": "Triage 1P Overcharge 01",
+            "width": null,
+            "height": null,
+            "mimeType": "video/mp4"
+          }
+        },
+        "elbow_right": {
+          "enabled": true,
+          "name": "X9C8QZ4P_7M2R_MAP.map",
+          "file": {
+            "url": "https://assets.thecdn.io/78389f81-00a1-4813-a6f3-9d257669aa2c.mp4",
+            "filename": "78389f81-00a1-4813-a6f3-9d257669aa2c.mp4",
+            "alt_filename": "X9C8QZ4P_7M2R_MAP.mp4",
+            "alt": "Triage Ult",
+            "width": null,
+            "height": null,
+            "mimeType": "video/mp4"
+          }
+        },
+        "hand_left": {
+          "enabled": false,
+          "name": "",
+          "file": null
+        },
+        "hand_right": {
+          "enabled": false,
+          "name": "",
+          "file": null
+        }
+      },
+      "base_url": "https://goliath-tau-ceti-stage.b-cdn.net/runners/Triage-2026-02-25_14%3A28",
+      "id": "6",
+      "runner_name": "Triage",
+      "model_path": "models/Triage.glb",
+      "skins": [
+        {
+          "name": "Core",
+          "is_default": true,
+          "is_model_changed": false,
+          "model_path": null,
+          "image": {
+            "path": "images/skins/Core.png",
+            "name": "captured-skin.png",
+            "type": "image/png"
+          }
+        },
+        {
+          "name": "Shadow Index",
+          "is_default": false,
+          "is_model_changed": true,
+          "model_path": "models/skins/Shadow Index.glb",
+          "image": {
+            "path": "images/skins/Shadow Index.png",
+            "name": "captured-skin.png",
+            "type": "image/png"
+          }
+        }
+      ],
+      "interactive_points": {
+        "foot_left": {
+          "x": -0.01,
+          "y": 0.07,
+          "z": -0.23
+        },
+        "foot_right": {
+          "x": -0.19,
+          "y": 0.09,
+          "z": 0.02
+        },
+        "knee_left": {
+          "x": 0.08,
+          "y": 0.56,
+          "z": -0.15
+        },
+        "knee_right": {
+          "x": -0.09,
+          "y": 0.56,
+          "z": 0.09
+        },
+        "hip_left": {
+          "x": 0.06,
+          "y": 0.97,
+          "z": -0.1
+        },
+        "hip_right": {
+          "x": -0.06,
+          "y": 0.98,
+          "z": 0.03
+        },
+        "chest": {
+          "x": 0.03,
+          "y": 1.41,
+          "z": -0.01
+        },
+        "head": {
+          "x": 0.017,
+          "y": 1.67,
+          "z": 0.05
+        },
+        "shoulder_left": {
+          "x": 0.05,
+          "y": 1.45,
+          "z": -0.22
+        },
+        "shoulder_right": {
+          "x": -0.17,
+          "y": 1.43,
+          "z": 0.09
+        },
+        "elbow_left": {
+          "x": 0.09,
+          "y": 1.17,
+          "z": -0.33
+        },
+        "elbow_right": {
+          "x": -0.26,
+          "y": 1.17,
+          "z": 0.18
+        },
+        "hand_left": {
+          "x": 0.19,
+          "y": 0.9,
+          "z": -0.31
+        },
+        "hand_right": {
+          "x": -0.2,
+          "y": 0.9,
+          "z": 0.28
+        }
+      },
+      "slug": "triage"
+    },
+    "thief": {
+      "name": "Thief",
+      "abilities": [
+        {
+          "name": "ROLE: Covert acquisitions ",
+          "type": "TECH: Advanced heist mechanics",
+          "icon": {
+            "url": "https://assets.thecdn.io/4e4c0a33-852a-49d9-8b50-3df26c2abb3b.png",
+            "filename": "4e4c0a33-852a-49d9-8b50-3df26c2abb3b.png",
+            "alt_filename": "4e4c0a33-852a-49d9-8b50-3df26c2abb3b.png",
+            "alt": "Theif Icon",
+            "width": 108,
+            "height": 108,
+            "mimeType": "image/png"
+          },
+          "heading": "A Thief always keeps their eyes  on the prize",
+          "description": "Use enhanced visors and piloted drones to remotely locate and acquire valuable loot. Steal from a zone or rival Runners. Then make an escape or push the advantage with the Thief's deployable grapple device. \n[excerpt, UESC threat eval: rnnr.thf.fileID70064c_p223] \n"
+        },
+        {
+          "name": "PICKPOCKET DRONE",
+          "type": "Prime Ability",
+          "icon": {
+            "url": "https://assets.thecdn.io/d1ca8018-4099-440d-b024-f131522cf5c6.png",
+            "filename": "d1ca8018-4099-440d-b024-f131522cf5c6.png",
+            "alt_filename": "Pickpocket_drone.png",
+            "alt": "Pickpocket_drone",
+            "width": 108,
+            "height": 108,
+            "mimeType": "image/png"
+          },
+          "heading": "",
+          "description": "Deploy a remotely piloted flying drone with a limited lifespan.\n\nWhile piloting the drone: \n\nFire a hooked tether that can eject the highest-value item from target inventories, collect and store loose loot and open doors.\n\nExit the drone and return to your shell.\n\nAt any point while the drone is still active, activate the ability again to continue piloting the drone."
+        },
+        {
+          "name": "GRAPPLE DEVICE",
+          "type": "Tactical Ability",
+          "icon": {
+            "url": "https://assets.thecdn.io/c8b0564c-9d53-4ab0-aee3-f0d61f974ed5.png",
+            "filename": "c8b0564c-9d53-4ab0-aee3-f0d61f974ed5.png",
+            "alt_filename": "Grapple_device.png",
+            "alt": "Grapple_device",
+            "width": 108,
+            "height": 108,
+            "mimeType": "image/png"
+          },
+          "heading": "",
+          "description": "Launch a grapple device in your aim direction, propelling yourself toward it."
+        },
+        {
+          "name": "X-RAY VISOR",
+          "type": "Trait 1",
+          "icon": {
+            "url": "https://assets.thecdn.io/9c97d56c-7dd1-4cf1-89c3-2c61a3858e57.png",
+            "filename": "9c97d56c-7dd1-4cf1-89c3-2c61a3858e57.png",
+            "alt_filename": "X-ray_visor.png",
+            "alt": "X-ray_visor",
+            "width": 108,
+            "height": 108,
+            "mimeType": "image/png"
+          },
+          "heading": "",
+          "description": "Activate your visor, highlighting hostiles and containers in the color of the most valuable item they're storing. Containers are revealed through walls, while hostiles require line of sight. \n\nWhile active, aiming at a hostile for a short time Hacks their optics, disrupting their vision until you look away."
+        },
+        {
+          "name": "THE FINER THINGS",
+          "type": "Trait 2",
+          "icon": {
+            "url": "https://assets.thecdn.io/4d118070-5497-4392-95a5-59dc25cbc369.png",
+            "filename": "4d118070-5497-4392-95a5-59dc25cbc369.png",
+            "alt_filename": "The_finer_things.png",
+            "alt": "The_finer_things",
+            "width": 108,
+            "height": 108,
+            "mimeType": "image/png"
+          },
+          "heading": "",
+          "description": "Gain increased weapon handling and accelerated Grapple Device recharge rate based on the number of items in your Backpack."
+        }
+      ],
+      "cctvItems": {
+        "foot_left": {
+          "enabled": false,
+          "name": null,
+          "file": null
+        },
+        "foot_right": {
+          "enabled": false,
+          "name": null,
+          "file": null
+        },
+        "knee_left": {
+          "enabled": false,
+          "name": null,
+          "file": null
+        },
+        "knee_right": {
+          "enabled": false,
+          "name": null,
+          "file": null
+        },
+        "hip_left": {
+          "enabled": true,
+          "name": "ZP9K6A7R_X4M2_STACK.bin",
+          "file": {
+            "url": "https://assets.thecdn.io/9d152fa3-9cf6-4cc5-abfa-bff864c80ffc.mp4",
+            "filename": "9d152fa3-9cf6-4cc5-abfa-bff864c80ffc.mp4",
+            "alt_filename": "ZP9K6A7R_X4M2_STACK.mp4",
+            "alt": "Drone",
+            "width": null,
+            "height": null,
+            "mimeType": "video/mp4"
+          }
+        },
+        "hip_right": {
+          "enabled": false,
+          "name": null,
+          "file": null
+        },
+        "chest": {
+          "enabled": false,
+          "name": null,
+          "file": null
+        },
+        "head": {
+          "enabled": true,
+          "name": "M8X2A7ZP_QR94_CORE.tx",
+          "file": {
+            "url": "https://assets.thecdn.io/bddee725-5b3d-4f6b-ae79-a2dfe9baddd6.mp4",
+            "filename": "bddee725-5b3d-4f6b-ae79-a2dfe9baddd6.mp4",
+            "alt_filename": "M8X2A7ZP_QR94_CORE.mp4",
+            "alt": "Visior",
+            "width": null,
+            "height": null,
+            "mimeType": "video/mp4"
+          }
+        },
+        "shoulder_left": {
+          "enabled": true,
+          "name": "C2X9KZ7P_QM4A_IOCTL.tx",
+          "file": {
+            "url": "https://assets.thecdn.io/8417586d-6856-4660-87e3-cf49b53fb669.wav",
+            "filename": "8417586d-6856-4660-87e3-cf49b53fb669.wav",
+            "alt_filename": "8417586d-6856-4660-87e3-cf49b53fb669.wav",
+            "alt": "finders keepers",
+            "width": null,
+            "height": null,
+            "mimeType": "audio/wav"
+          }
+        },
+        "shoulder_right": {
+          "enabled": true,
+          "name": "L8P7ZX9Q_4AMK_THRD.log",
+          "file": {
+            "url": "https://assets.thecdn.io/2a46597b-8e1e-400b-821b-71228809be60.wav",
+            "filename": "2a46597b-8e1e-400b-821b-71228809be60.wav",
+            "alt_filename": "2a46597b-8e1e-400b-821b-71228809be60.wav",
+            "alt": "any pocket picked",
+            "width": null,
+            "height": null,
+            "mimeType": "audio/wav"
+          }
+        },
+        "elbow_left": {
+          "enabled": false,
+          "name": null,
+          "file": null
+        },
+        "elbow_right": {
+          "enabled": false,
+          "name": null,
+          "file": null
+        },
+        "hand_left": {
+          "enabled": true,
+          "name": "FQ6ZKX7R_A94P_FEED.log",
+          "file": {
+            "url": "https://assets.thecdn.io/66796e15-df6a-4bab-bb6c-696c07dd42cb.mp4",
+            "filename": "66796e15-df6a-4bab-bb6c-696c07dd42cb.mp4",
+            "alt_filename": "FQ6ZKX7R_A94P_FEED.mp4",
+            "alt": "Grappling Hook",
+            "width": null,
+            "height": null,
+            "mimeType": "video/mp4"
+          }
+        },
+        "hand_right": {
+          "enabled": false,
+          "name": null,
+          "file": null
+        }
+      },
+      "base_url": "https://goliath-tau-ceti-stage.b-cdn.net/runners/Thief-2026-02-25_14%3A25",
+      "id": "5",
+      "runner_name": "Thief",
+      "model_path": "models/Thief.glb",
+      "skins": [
+        {
+          "name": "Core",
+          "is_default": true,
+          "is_model_changed": false,
+          "model_path": null,
+          "image": {
+            "path": "images/skins/Core.png",
+            "name": "captured-skin.png",
+            "type": "image/png"
+          }
+        },
+        {
+          "name": "Shadow Index",
+          "is_default": false,
+          "is_model_changed": true,
+          "model_path": "models/skins/Shadow Index.glb",
+          "image": {
+            "path": "images/skins/Shadow Index.png",
+            "name": "captured-skin.png",
+            "type": "image/png"
+          }
+        }
+      ],
+      "interactive_points": {
+        "foot_left": {
+          "x": 0.27,
+          "y": 0.09,
+          "z": -0.03
+        },
+        "foot_right": {
+          "x": -0.2,
+          "y": 0.05,
+          "z": -0.23
+        },
+        "knee_left": {
+          "x": 0.15,
+          "y": 0.54,
+          "z": 0.05
+        },
+        "knee_right": {
+          "x": -0.16,
+          "y": 0.52,
+          "z": -0.12
+        },
+        "hip_left": {
+          "x": 0.06,
+          "y": 1.01,
+          "z": 0.05
+        },
+        "hip_right": {
+          "x": -0.11,
+          "y": 1.02,
+          "z": -0.01
+        },
+        "chest": {
+          "x": -0.01,
+          "y": 1.42,
+          "z": 0.01
+        },
+        "head": {
+          "x": 0.02,
+          "y": 1.68,
+          "z": 0.06
+        },
+        "shoulder_left": {
+          "x": 0.17,
+          "y": 1.48,
+          "z": 0
+        },
+        "shoulder_right": {
+          "x": -0.18,
+          "y": 1.45,
+          "z": -0.08
+        },
+        "elbow_left": {
+          "x": 0.34,
+          "y": 1.21,
+          "z": -0.02
+        },
+        "elbow_right": {
+          "x": -0.23,
+          "y": 1.21,
+          "z": -0.17
+        },
+        "hand_left": {
+          "x": 0.08,
+          "y": 1.07,
+          "z": -0.14
+        },
+        "hand_right": {
+          "x": -0.28,
+          "y": 0.87,
+          "z": -0.03
+        }
+      },
+      "slug": "thief"
+    }
+  }
+}

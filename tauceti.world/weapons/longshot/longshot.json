@@ -1,0 +1,978 @@
+{
+  "name": "Longshot",
+  "sliding_puzzle": null,
+  "cctv": {
+    "cctvItems": [
+      {
+        "id": "698dd318a14d91b852004e14",
+        "name": "Z6M8QX2R_49PA_PROC.tx",
+        "location": "wpn_id_Longshot_9743-",
+        "file": {
+          "url": "https://assets.thecdn.io/e63ac83b-1335-4774-a4d9-7d4b87df969e.mp4",
+          "filename": "e63ac83b-1335-4774-a4d9-7d4b87df969e.mp4",
+          "alt_filename": "Z6M8QX2R_49PA_PROC.mp4",
+          "alt": "Longshot Content",
+          "width": null,
+          "height": null,
+          "mimeType": "video/mp4"
+        }
+      },
+      {
+        "id": "698e2a763bf196077cb1cc76",
+        "name": "N7ZQ4XK2_M89A_NODE.log",
+        "location": "wpn_id_Longshot",
+        "file": {
+          "url": "https://assets.thecdn.io/6a20617f-24f8-4894-8fad-b64540291a60.wav",
+          "filename": "6a20617f-24f8-4894-8fad-b64540291a60.wav",
+          "alt_filename": "N7ZQ4XK2_M89A_NODE.wav",
+          "alt": "Longshot Content",
+          "width": null,
+          "height": null,
+          "mimeType": "audio/x-wav"
+        }
+      },
+      {
+        "id": "698e2aa23bf196077cb1cc77",
+        "name": "P8MZ7QX2_KA94_SYNC.tx",
+        "location": "wpn_id_Longshot",
+        "file": {
+          "url": "https://assets.thecdn.io/df18b283-4b78-49ff-b783-9b4566378626.wav",
+          "filename": "df18b283-4b78-49ff-b783-9b4566378626.wav",
+          "alt_filename": "P8MZ7QX2_KA94_SYNC.wav",
+          "alt": "Longshot Reload",
+          "width": null,
+          "height": null,
+          "mimeType": "audio/x-wav"
+        }
+      }
+    ],
+    "cctvLockedFiles": 5
+  },
+  "base_url": "https://goliath-tau-ceti-stage.b-cdn.net/weapons/Longshot-2026-02-16_09%3A14",
+  "id": "25",
+  "weapon_name": "Longshot",
+  "model_path": "models/v002_Sniper_mips_default.glb",
+  "materials": [
+    "sniper_mips_01_default_variant",
+    "sniper_mips_01_default_frame",
+    "sniper_mips_01_default_variant.001"
+  ],
+  "sticker_material_name": "Material",
+  "charm_pivot_name": "Charm_pivot",
+  "skins": [
+    {
+      "name": "TAC Standard Lush",
+      "is_default": true,
+      "is_model_changed": false,
+      "model_path": null,
+      "textures": [
+        {
+          "name": "sniper_mips_01_default_variant_map",
+          "material_name": "sniper_mips_01_default_variant",
+          "type": "map",
+          "image": "textures/TAC Standard Lush/sniper_mips_01_default_variant_map.webp"
+        },
+        {
+          "name": "sniper_mips_01_default_variant_normalMap",
+          "material_name": "sniper_mips_01_default_variant",
+          "type": "normalMap",
+          "image": "textures/TAC Standard Lush/sniper_mips_01_default_variant_normalMap.webp"
+        },
+        {
+          "name": "sniper_mips_01_default_variant_roughnessMap",
+          "material_name": "sniper_mips_01_default_variant",
+          "type": "roughnessMap",
+          "image": "textures/TAC Standard Lush/sniper_mips_01_default_variant_roughnessMap.webp"
+        },
+        {
+          "name": "sniper_mips_01_default_variant_metalnessMap",
+          "material_name": "sniper_mips_01_default_variant",
+          "type": "metalnessMap",
+          "image": "textures/TAC Standard Lush/sniper_mips_01_default_variant_metalnessMap.webp"
+        },
+        {
+          "name": "sniper_mips_01_default_frame_map",
+          "material_name": "sniper_mips_01_default_frame",
+          "type": "map",
+          "image": "textures/TAC Standard Lush/sniper_mips_01_default_frame_map.webp"
+        },
+        {
+          "name": "sniper_mips_01_default_frame_normalMap",
+          "material_name": "sniper_mips_01_default_frame",
+          "type": "normalMap",
+          "image": "textures/TAC Standard Lush/sniper_mips_01_default_frame_normalMap.webp"
+        },
+        {
+          "name": "sniper_mips_01_default_frame_roughnessMap",
+          "material_name": "sniper_mips_01_default_frame",
+          "type": "roughnessMap",
+          "image": "textures/TAC Standard Lush/sniper_mips_01_default_frame_roughnessMap.webp"
+        },
+        {
+          "name": "sniper_mips_01_default_frame_metalnessMap",
+          "material_name": "sniper_mips_01_default_frame",
+          "type": "metalnessMap",
+          "image": "textures/TAC Standard Lush/sniper_mips_01_default_frame_metalnessMap.webp"
+        },
+        {
+          "name": "sniper_mips_01_default_frame_map",
+          "material_name": "sniper_mips_01_default_frame",
+          "type": "map",
+          "image": "textures/TAC Standard Lush/sniper_mips_01_default_frame_map.webp"
+        },
+        {
+          "name": "sniper_mips_01_default_frame_normalMap",
+          "material_name": "sniper_mips_01_default_frame",
+          "type": "normalMap",
+          "image": "textures/TAC Standard Lush/sniper_mips_01_default_frame_normalMap.webp"
+        },
+        {
+          "name": "sniper_mips_01_default_frame_roughnessMap",
+          "material_name": "sniper_mips_01_default_frame",
+          "type": "roughnessMap",
+          "image": "textures/TAC Standard Lush/sniper_mips_01_default_frame_roughnessMap.webp"
+        },
+        {
+          "name": "sniper_mips_01_default_frame_metalnessMap",
+          "material_name": "sniper_mips_01_default_frame",
+          "type": "metalnessMap",
+          "image": "textures/TAC Standard Lush/sniper_mips_01_default_frame_metalnessMap.webp"
+        },
+        {
+          "name": "sniper_mips_01_default_variant.001_map",
+          "material_name": "sniper_mips_01_default_variant.001",
+          "type": "map",
+          "image": "textures/TAC Standard Lush/sniper_mips_01_default_variant.001_map.webp"
+        },
+        {
+          "name": "sniper_mips_01_default_variant.001_normalMap",
+          "material_name": "sniper_mips_01_default_variant.001",
+          "type": "normalMap",
+          "image": "textures/TAC Standard Lush/sniper_mips_01_default_variant.001_normalMap.webp"
+        },
+        {
+          "name": "sniper_mips_01_default_variant.001_roughnessMap",
+          "material_name": "sniper_mips_01_default_variant.001",
+          "type": "roughnessMap",
+          "image": "textures/TAC Standard Lush/sniper_mips_01_default_variant.001_roughnessMap.webp"
+        },
+        {
+          "name": "sniper_mips_01_default_variant.001_metalnessMap",
+          "material_name": "sniper_mips_01_default_variant.001",
+          "type": "metalnessMap",
+          "image": "textures/TAC Standard Lush/sniper_mips_01_default_variant.001_metalnessMap.webp"
+        },
+        {
+          "name": "sniper_mips_01_default_frame_map",
+          "material_name": "sniper_mips_01_default_frame",
+          "type": "map",
+          "image": "textures/TAC Standard Lush/sniper_mips_01_default_frame_map.webp"
+        },
+        {
+          "name": "sniper_mips_01_default_frame_normalMap",
+          "material_name": "sniper_mips_01_default_frame",
+          "type": "normalMap",
+          "image": "textures/TAC Standard Lush/sniper_mips_01_default_frame_normalMap.webp"
+        },
+        {
+          "name": "sniper_mips_01_default_frame_roughnessMap",
+          "material_name": "sniper_mips_01_default_frame",
+          "type": "roughnessMap",
+          "image": "textures/TAC Standard Lush/sniper_mips_01_default_frame_roughnessMap.webp"
+        },
+        {
+          "name": "sniper_mips_01_default_frame_metalnessMap",
+          "material_name": "sniper_mips_01_default_frame",
+          "type": "metalnessMap",
+          "image": "textures/TAC Standard Lush/sniper_mips_01_default_frame_metalnessMap.webp"
+        }
+      ]
+    }
+  ],
+  "mods": {
+    "precision_optic": [
+      {
+        "id": "019c47cb-3ade-750a-a711-7805790b8498",
+        "name": "v002_mod_sight",
+        "is_default": true,
+        "materials": [
+          "sight_sniper_mips_01_default"
+        ],
+        "thumbnail": "thumbnails/mods/v002_mod_sight.webp",
+        "image": "images/mods/v002_mod_sight.webp",
+        "specs": "Default",
+        "type": "Optic",
+        "model_path": "models/precision_optic/v002_mod_sight.glb",
+        "textures": [
+          {
+            "skin": "TAC Standard Lush",
+            "name": "sight_sniper_mips_01_default_map",
+            "material_name": "sight_sniper_mips_01_default",
+            "type": "map",
+            "image": "textures/mods/v002_mod_sight/TAC Standard Lush/sight_sniper_mips_01_default_map.webp"
+          },
+          {
+            "skin": "TAC Standard Lush",
+            "name": "sight_sniper_mips_01_default_normalMap",
+            "material_name": "sight_sniper_mips_01_default",
+            "type": "normalMap",
+            "image": "textures/mods/v002_mod_sight/TAC Standard Lush/sight_sniper_mips_01_default_normalMap.webp"
+          },
+          {
+            "skin": "TAC Standard Lush",
+            "name": "sight_sniper_mips_01_default_roughnessMap",
+            "material_name": "sight_sniper_mips_01_default",
+            "type": "roughnessMap",
+            "image": "textures/mods/v002_mod_sight/TAC Standard Lush/sight_sniper_mips_01_default_roughnessMap.webp"
+          },
+          {
+            "skin": "TAC Standard Lush",
+            "name": "sight_sniper_mips_01_default_metalnessMap",
+            "material_name": "sight_sniper_mips_01_default",
+            "type": "metalnessMap",
+            "image": "textures/mods/v002_mod_sight/TAC Standard Lush/sight_sniper_mips_01_default_metalnessMap.webp"
+          },
+          {
+            "skin": "TAC Standard Lush",
+            "name": "sight_sniper_mips_01_default_map",
+            "material_name": "sight_sniper_mips_01_default",
+            "type": "map",
+            "image": "textures/mods/v002_mod_sight/TAC Standard Lush/sight_sniper_mips_01_default_map.webp"
+          },
+          {
+            "skin": "TAC Standard Lush",
+            "name": "sight_sniper_mips_01_default_normalMap",
+            "material_name": "sight_sniper_mips_01_default",
+            "type": "normalMap",
+            "image": "textures/mods/v002_mod_sight/TAC Standard Lush/sight_sniper_mips_01_default_normalMap.webp"
+          },
+          {
+            "skin": "TAC Standard Lush",
+            "name": "sight_sniper_mips_01_default_roughnessMap",
+            "material_name": "sight_sniper_mips_01_default",
+            "type": "roughnessMap",
+            "image": "textures/mods/v002_mod_sight/TAC Standard Lush/sight_sniper_mips_01_default_roughnessMap.webp"
+          },
+          {
+            "skin": "TAC Standard Lush",
+            "name": "sight_sniper_mips_01_default_metalnessMap",
+            "material_name": "sight_sniper_mips_01_default",
+            "type": "metalnessMap",
+            "image": "textures/mods/v002_mod_sight/TAC Standard Lush/sight_sniper_mips_01_default_metalnessMap.webp"
+          },
+          {
+            "skin": "TAC Standard Lush",
+            "name": "sight_sniper_mips_01_default_map",
+            "material_name": "sight_sniper_mips_01_default",
+            "type": "map",
+            "image": "textures/mods/v002_mod_sight/TAC Standard Lush/sight_sniper_mips_01_default_map.webp"
+          },
+          {
+            "skin": "TAC Standard Lush",
+            "name": "sight_sniper_mips_01_default_normalMap",
+            "material_name": "sight_sniper_mips_01_default",
+            "type": "normalMap",
+            "image": "textures/mods/v002_mod_sight/TAC Standard Lush/sight_sniper_mips_01_default_normalMap.webp"
+          },
+          {
+            "skin": "TAC Standard Lush",
+            "name": "sight_sniper_mips_01_default_roughnessMap",
+            "material_name": "sight_sniper_mips_01_default",
+            "type": "roughnessMap",
+            "image": "textures/mods/v002_mod_sight/TAC Standard Lush/sight_sniper_mips_01_default_roughnessMap.webp"
+          },
+          {
+            "skin": "TAC Standard Lush",
+            "name": "sight_sniper_mips_01_default_metalnessMap",
+            "material_name": "sight_sniper_mips_01_default",
+            "type": "metalnessMap",
+            "image": "textures/mods/v002_mod_sight/TAC Standard Lush/sight_sniper_mips_01_default_metalnessMap.webp"
+          },
+          {
+            "skin": "TAC Standard Lush",
+            "name": "sight_sniper_mips_01_default_map",
+            "material_name": "sight_sniper_mips_01_default",
+            "type": "map",
+            "image": "textures/mods/v002_mod_sight/TAC Standard Lush/sight_sniper_mips_01_default_map.webp"
+          },
+          {
+            "skin": "TAC Standard Lush",
+            "name": "sight_sniper_mips_01_default_normalMap",
+            "material_name": "sight_sniper_mips_01_default",
+            "type": "normalMap",
+            "image": "textures/mods/v002_mod_sight/TAC Standard Lush/sight_sniper_mips_01_default_normalMap.webp"
+          },
+          {
+            "skin": "TAC Standard Lush",
+            "name": "sight_sniper_mips_01_default_roughnessMap",
+            "material_name": "sight_sniper_mips_01_default",
+            "type": "roughnessMap",
+            "image": "textures/mods/v002_mod_sight/TAC Standard Lush/sight_sniper_mips_01_default_roughnessMap.webp"
+          },
+          {
+            "skin": "TAC Standard Lush",
+            "name": "sight_sniper_mips_01_default_metalnessMap",
+            "material_name": "sight_sniper_mips_01_default",
+            "type": "metalnessMap",
+            "image": "textures/mods/v002_mod_sight/TAC Standard Lush/sight_sniper_mips_01_default_metalnessMap.webp"
+          },
+          {
+            "skin": "TAC Standard Lush",
+            "name": "sight_sniper_mips_01_default_map",
+            "material_name": "sight_sniper_mips_01_default",
+            "type": "map",
+            "image": "textures/mods/v002_mod_sight/TAC Standard Lush/sight_sniper_mips_01_default_map.webp"
+          },
+          {
+            "skin": "TAC Standard Lush",
+            "name": "sight_sniper_mips_01_default_normalMap",
+            "material_name": "sight_sniper_mips_01_default",
+            "type": "normalMap",
+            "image": "textures/mods/v002_mod_sight/TAC Standard Lush/sight_sniper_mips_01_default_normalMap.webp"
+          },
+          {
+            "skin": "TAC Standard Lush",
+            "name": "sight_sniper_mips_01_default_roughnessMap",
+            "material_name": "sight_sniper_mips_01_default",
+            "type": "roughnessMap",
+            "image": "textures/mods/v002_mod_sight/TAC Standard Lush/sight_sniper_mips_01_default_roughnessMap.webp"
+          },
+          {
+            "skin": "TAC Standard Lush",
+            "name": "sight_sniper_mips_01_default_metalnessMap",
+            "material_name": "sight_sniper_mips_01_default",
+            "type": "metalnessMap",
+            "image": "textures/mods/v002_mod_sight/TAC Standard Lush/sight_sniper_mips_01_default_metalnessMap.webp"
+          },
+          {
+            "skin": "TAC Standard Lush",
+            "name": "sight_sniper_mips_01_default_map",
+            "material_name": "sight_sniper_mips_01_default",
+            "type": "map",
+            "image": "textures/mods/v002_mod_sight/TAC Standard Lush/sight_sniper_mips_01_default_map.webp"
+          },
+          {
+            "skin": "TAC Standard Lush",
+            "name": "sight_sniper_mips_01_default_normalMap",
+            "material_name": "sight_sniper_mips_01_default",
+            "type": "normalMap",
+            "image": "textures/mods/v002_mod_sight/TAC Standard Lush/sight_sniper_mips_01_default_normalMap.webp"
+          },
+          {
+            "skin": "TAC Standard Lush",
+            "name": "sight_sniper_mips_01_default_roughnessMap",
+            "material_name": "sight_sniper_mips_01_default",
+            "type": "roughnessMap",
+            "image": "textures/mods/v002_mod_sight/TAC Standard Lush/sight_sniper_mips_01_default_roughnessMap.webp"
+          },
+          {
+            "skin": "TAC Standard Lush",
+            "name": "sight_sniper_mips_01_default_metalnessMap",
+            "material_name": "sight_sniper_mips_01_default",
+            "type": "metalnessMap",
+            "image": "textures/mods/v002_mod_sight/TAC Standard Lush/sight_sniper_mips_01_default_metalnessMap.webp"
+          },
+          {
+            "skin": "TAC Standard Lush",
+            "name": "sight_sniper_mips_01_default_map",
+            "material_name": "sight_sniper_mips_01_default",
+            "type": "map",
+            "image": "textures/mods/v002_mod_sight/TAC Standard Lush/sight_sniper_mips_01_default_map.webp"
+          },
+          {
+            "skin": "TAC Standard Lush",
+            "name": "sight_sniper_mips_01_default_normalMap",
+            "material_name": "sight_sniper_mips_01_default",
+            "type": "normalMap",
+            "image": "textures/mods/v002_mod_sight/TAC Standard Lush/sight_sniper_mips_01_default_normalMap.webp"
+          },
+          {
+            "skin": "TAC Standard Lush",
+            "name": "sight_sniper_mips_01_default_roughnessMap",
+            "material_name": "sight_sniper_mips_01_default",
+            "type": "roughnessMap",
+            "image": "textures/mods/v002_mod_sight/TAC Standard Lush/sight_sniper_mips_01_default_roughnessMap.webp"
+          },
+          {
+            "skin": "TAC Standard Lush",
+            "name": "sight_sniper_mips_01_default_metalnessMap",
+            "material_name": "sight_sniper_mips_01_default",
+            "type": "metalnessMap",
+            "image": "textures/mods/v002_mod_sight/TAC Standard Lush/sight_sniper_mips_01_default_metalnessMap.webp"
+          },
+          {
+            "skin": "TAC Standard Lush",
+            "name": "sight_sniper_mips_01_default_map",
+            "material_name": "sight_sniper_mips_01_default",
+            "type": "map",
+            "image": "textures/mods/v002_mod_sight/TAC Standard Lush/sight_sniper_mips_01_default_map.webp"
+          },
+          {
+            "skin": "TAC Standard Lush",
+            "name": "sight_sniper_mips_01_default_normalMap",
+            "material_name": "sight_sniper_mips_01_default",
+            "type": "normalMap",
+            "image": "textures/mods/v002_mod_sight/TAC Standard Lush/sight_sniper_mips_01_default_normalMap.webp"
+          },
+          {
+            "skin": "TAC Standard Lush",
+            "name": "sight_sniper_mips_01_default_roughnessMap",
+            "material_name": "sight_sniper_mips_01_default",
+            "type": "roughnessMap",
+            "image": "textures/mods/v002_mod_sight/TAC Standard Lush/sight_sniper_mips_01_default_roughnessMap.webp"
+          },
+          {
+            "skin": "TAC Standard Lush",
+            "name": "sight_sniper_mips_01_default_metalnessMap",
+            "material_name": "sight_sniper_mips_01_default",
+            "type": "metalnessMap",
+            "image": "textures/mods/v002_mod_sight/TAC Standard Lush/sight_sniper_mips_01_default_metalnessMap.webp"
+          },
+          {
+            "skin": "TAC Standard Lush",
+            "name": "sight_sniper_mips_01_default_map",
+            "material_name": "sight_sniper_mips_01_default",
+            "type": "map",
+            "image": "textures/mods/v002_mod_sight/TAC Standard Lush/sight_sniper_mips_01_default_map.webp"
+          },
+          {
+            "skin": "TAC Standard Lush",
+            "name": "sight_sniper_mips_01_default_normalMap",
+            "material_name": "sight_sniper_mips_01_default",
+            "type": "normalMap",
+            "image": "textures/mods/v002_mod_sight/TAC Standard Lush/sight_sniper_mips_01_default_normalMap.webp"
+          },
+          {
+            "skin": "TAC Standard Lush",
+            "name": "sight_sniper_mips_01_default_roughnessMap",
+            "material_name": "sight_sniper_mips_01_default",
+            "type": "roughnessMap",
+            "image": "textures/mods/v002_mod_sight/TAC Standard Lush/sight_sniper_mips_01_default_roughnessMap.webp"
+          },
+          {
+            "skin": "TAC Standard Lush",
+            "name": "sight_sniper_mips_01_default_metalnessMap",
+            "material_name": "sight_sniper_mips_01_default",
+            "type": "metalnessMap",
+            "image": "textures/mods/v002_mod_sight/TAC Standard Lush/sight_sniper_mips_01_default_metalnessMap.webp"
+          },
+          {
+            "skin": "TAC Standard Lush",
+            "name": "sight_sniper_mips_01_default_map",
+            "material_name": "sight_sniper_mips_01_default",
+            "type": "map",
+            "image": "textures/mods/v002_mod_sight/TAC Standard Lush/sight_sniper_mips_01_default_map.webp"
+          },
+          {
+            "skin": "TAC Standard Lush",
+            "name": "sight_sniper_mips_01_default_normalMap",
+            "material_name": "sight_sniper_mips_01_default",
+            "type": "normalMap",
+            "image": "textures/mods/v002_mod_sight/TAC Standard Lush/sight_sniper_mips_01_default_normalMap.webp"
+          },
+          {
+            "skin": "TAC Standard Lush",
+            "name": "sight_sniper_mips_01_default_roughnessMap",
+            "material_name": "sight_sniper_mips_01_default",
+            "type": "roughnessMap",
+            "image": "textures/mods/v002_mod_sight/TAC Standard Lush/sight_sniper_mips_01_default_roughnessMap.webp"
+          },
+          {
+            "skin": "TAC Standard Lush",
+            "name": "sight_sniper_mips_01_default_metalnessMap",
+            "material_name": "sight_sniper_mips_01_default",
+            "type": "metalnessMap",
+            "image": "textures/mods/v002_mod_sight/TAC Standard Lush/sight_sniper_mips_01_default_metalnessMap.webp"
+          },
+          {
+            "skin": "TAC Standard Lush",
+            "name": "sight_sniper_mips_01_default_map",
+            "material_name": "sight_sniper_mips_01_default",
+            "type": "map",
+            "image": "textures/mods/v002_mod_sight/TAC Standard Lush/sight_sniper_mips_01_default_map.webp"
+          },
+          {
+            "skin": "TAC Standard Lush",
+            "name": "sight_sniper_mips_01_default_normalMap",
+            "material_name": "sight_sniper_mips_01_default",
+            "type": "normalMap",
+            "image": "textures/mods/v002_mod_sight/TAC Standard Lush/sight_sniper_mips_01_default_normalMap.webp"
+          },
+          {
+            "skin": "TAC Standard Lush",
+            "name": "sight_sniper_mips_01_default_roughnessMap",
+            "material_name": "sight_sniper_mips_01_default",
+            "type": "roughnessMap",
+            "image": "textures/mods/v002_mod_sight/TAC Standard Lush/sight_sniper_mips_01_default_roughnessMap.webp"
+          },
+          {
+            "skin": "TAC Standard Lush",
+            "name": "sight_sniper_mips_01_default_metalnessMap",
+            "material_name": "sight_sniper_mips_01_default",
+            "type": "metalnessMap",
+            "image": "textures/mods/v002_mod_sight/TAC Standard Lush/sight_sniper_mips_01_default_metalnessMap.webp"
+          },
+          {
+            "skin": "TAC Standard Lush",
+            "name": "sight_sniper_mips_01_default_map",
+            "material_name": "sight_sniper_mips_01_default",
+            "type": "map",
+            "image": "textures/mods/v002_mod_sight/TAC Standard Lush/sight_sniper_mips_01_default_map.webp"
+          },
+          {
+            "skin": "TAC Standard Lush",
+            "name": "sight_sniper_mips_01_default_normalMap",
+            "material_name": "sight_sniper_mips_01_default",
+            "type": "normalMap",
+            "image": "textures/mods/v002_mod_sight/TAC Standard Lush/sight_sniper_mips_01_default_normalMap.webp"
+          },
+          {
+            "skin": "TAC Standard Lush",
+            "name": "sight_sniper_mips_01_default_roughnessMap",
+            "material_name": "sight_sniper_mips_01_default",
+            "type": "roughnessMap",
+            "image": "textures/mods/v002_mod_sight/TAC Standard Lush/sight_sniper_mips_01_default_roughnessMap.webp"
+          },
+          {
+            "skin": "TAC Standard Lush",
+            "name": "sight_sniper_mips_01_default_metalnessMap",
+            "material_name": "sight_sniper_mips_01_default",
+            "type": "metalnessMap",
+            "image": "textures/mods/v002_mod_sight/TAC Standard Lush/sight_sniper_mips_01_default_metalnessMap.webp"
+          },
+          {
+            "skin": "TAC Standard Lush",
+            "name": "sight_sniper_mips_01_default_map",
+            "material_name": "sight_sniper_mips_01_default",
+            "type": "map",
+            "image": "textures/mods/v002_mod_sight/TAC Standard Lush/sight_sniper_mips_01_default_map.webp"
+          },
+          {
+            "skin": "TAC Standard Lush",
+            "name": "sight_sniper_mips_01_default_normalMap",
+            "material_name": "sight_sniper_mips_01_default",
+            "type": "normalMap",
+            "image": "textures/mods/v002_mod_sight/TAC Standard Lush/sight_sniper_mips_01_default_normalMap.webp"
+          },
+          {
+            "skin": "TAC Standard Lush",
+            "name": "sight_sniper_mips_01_default_roughnessMap",
+            "material_name": "sight_sniper_mips_01_default",
+            "type": "roughnessMap",
+            "image": "textures/mods/v002_mod_sight/TAC Standard Lush/sight_sniper_mips_01_default_roughnessMap.webp"
+          },
+          {
+            "skin": "TAC Standard Lush",
+            "name": "sight_sniper_mips_01_default_metalnessMap",
+            "material_name": "sight_sniper_mips_01_default",
+            "type": "metalnessMap",
+            "image": "textures/mods/v002_mod_sight/TAC Standard Lush/sight_sniper_mips_01_default_metalnessMap.webp"
+          },
+          {
+            "skin": "TAC Standard Lush",
+            "name": "sight_sniper_mips_01_default_map",
+            "material_name": "sight_sniper_mips_01_default",
+            "type": "map",
+            "image": "textures/mods/v002_mod_sight/TAC Standard Lush/sight_sniper_mips_01_default_map.webp"
+          },
+          {
+            "skin": "TAC Standard Lush",
+            "name": "sight_sniper_mips_01_default_normalMap",
+            "material_name": "sight_sniper_mips_01_default",
+            "type": "normalMap",
+            "image": "textures/mods/v002_mod_sight/TAC Standard Lush/sight_sniper_mips_01_default_normalMap.webp"
+          },
+          {
+            "skin": "TAC Standard Lush",
+            "name": "sight_sniper_mips_01_default_roughnessMap",
+            "material_name": "sight_sniper_mips_01_default",
+            "type": "roughnessMap",
+            "image": "textures/mods/v002_mod_sight/TAC Standard Lush/sight_sniper_mips_01_default_roughnessMap.webp"
+          },
+          {
+            "skin": "TAC Standard Lush",
+            "name": "sight_sniper_mips_01_default_metalnessMap",
+            "material_name": "sight_sniper_mips_01_default",
+            "type": "metalnessMap",
+            "image": "textures/mods/v002_mod_sight/TAC Standard Lush/sight_sniper_mips_01_default_metalnessMap.webp"
+          },
+          {
+            "skin": "TAC Standard Lush",
+            "name": "sight_sniper_mips_01_default_map",
+            "material_name": "sight_sniper_mips_01_default",
+            "type": "map",
+            "image": "textures/mods/v002_mod_sight/TAC Standard Lush/sight_sniper_mips_01_default_map.webp"
+          },
+          {
+            "skin": "TAC Standard Lush",
+            "name": "sight_sniper_mips_01_default_normalMap",
+            "material_name": "sight_sniper_mips_01_default",
+            "type": "normalMap",
+            "image": "textures/mods/v002_mod_sight/TAC Standard Lush/sight_sniper_mips_01_default_normalMap.webp"
+          },
+          {
+            "skin": "TAC Standard Lush",
+            "name": "sight_sniper_mips_01_default_roughnessMap",
+            "material_name": "sight_sniper_mips_01_default",
+            "type": "roughnessMap",
+            "image": "textures/mods/v002_mod_sight/TAC Standard Lush/sight_sniper_mips_01_default_roughnessMap.webp"
+          },
+          {
+            "skin": "TAC Standard Lush",
+            "name": "sight_sniper_mips_01_default_metalnessMap",
+            "material_name": "sight_sniper_mips_01_default",
+            "type": "metalnessMap",
+            "image": "textures/mods/v002_mod_sight/TAC Standard Lush/sight_sniper_mips_01_default_metalnessMap.webp"
+          },
+          {
+            "skin": "TAC Standard Lush",
+            "name": "sight_sniper_mips_01_default_map",
+            "material_name": "sight_sniper_mips_01_default",
+            "type": "map",
+            "image": "textures/mods/v002_mod_sight/TAC Standard Lush/sight_sniper_mips_01_default_map.webp"
+          },
+          {
+            "skin": "TAC Standard Lush",
+            "name": "sight_sniper_mips_01_default_normalMap",
+            "material_name": "sight_sniper_mips_01_default",
+            "type": "normalMap",
+            "image": "textures/mods/v002_mod_sight/TAC Standard Lush/sight_sniper_mips_01_default_normalMap.webp"
+          },
+          {
+            "skin": "TAC Standard Lush",
+            "name": "sight_sniper_mips_01_default_roughnessMap",
+            "material_name": "sight_sniper_mips_01_default",
+            "type": "roughnessMap",
+            "image": "textures/mods/v002_mod_sight/TAC Standard Lush/sight_sniper_mips_01_default_roughnessMap.webp"
+          },
+          {
+            "skin": "TAC Standard Lush",
+            "name": "sight_sniper_mips_01_default_metalnessMap",
+            "material_name": "sight_sniper_mips_01_default",
+            "type": "metalnessMap",
+            "image": "textures/mods/v002_mod_sight/TAC Standard Lush/sight_sniper_mips_01_default_metalnessMap.webp"
+          },
+          {
+            "skin": "TAC Standard Lush",
+            "name": "sight_sniper_mips_01_default_map",
+            "material_name": "sight_sniper_mips_01_default",
+            "type": "map",
+            "image": "textures/mods/v002_mod_sight/TAC Standard Lush/sight_sniper_mips_01_default_map.webp"
+          },
+          {
+            "skin": "TAC Standard Lush",
+            "name": "sight_sniper_mips_01_default_normalMap",
+            "material_name": "sight_sniper_mips_01_default",
+            "type": "normalMap",
+            "image": "textures/mods/v002_mod_sight/TAC Standard Lush/sight_sniper_mips_01_default_normalMap.webp"
+          },
+          {
+            "skin": "TAC Standard Lush",
+            "name": "sight_sniper_mips_01_default_roughnessMap",
+            "material_name": "sight_sniper_mips_01_default",
+            "type": "roughnessMap",
+            "image": "textures/mods/v002_mod_sight/TAC Standard Lush/sight_sniper_mips_01_default_roughnessMap.webp"
+          },
+          {
+            "skin": "TAC Standard Lush",
+            "name": "sight_sniper_mips_01_default_metalnessMap",
+            "material_name": "sight_sniper_mips_01_default",
+            "type": "metalnessMap",
+            "image": "textures/mods/v002_mod_sight/TAC Standard Lush/sight_sniper_mips_01_default_metalnessMap.webp"
+          },
+          {
+            "skin": "TAC Standard Lush",
+            "name": "sight_sniper_mips_01_default_map",
+            "material_name": "sight_sniper_mips_01_default",
+            "type": "map",
+            "image": "textures/mods/v002_mod_sight/TAC Standard Lush/sight_sniper_mips_01_default_map.webp"
+          },
+          {
+            "skin": "TAC Standard Lush",
+            "name": "sight_sniper_mips_01_default_normalMap",
+            "material_name": "sight_sniper_mips_01_default",
+            "type": "normalMap",
+            "image": "textures/mods/v002_mod_sight/TAC Standard Lush/sight_sniper_mips_01_default_normalMap.webp"
+          },
+          {
+            "skin": "TAC Standard Lush",
+            "name": "sight_sniper_mips_01_default_roughnessMap",
+            "material_name": "sight_sniper_mips_01_default",
+            "type": "roughnessMap",
+            "image": "textures/mods/v002_mod_sight/TAC Standard Lush/sight_sniper_mips_01_default_roughnessMap.webp"
+          },
+          {
+            "skin": "TAC Standard Lush",
+            "name": "sight_sniper_mips_01_default_metalnessMap",
+            "material_name": "sight_sniper_mips_01_default",
+            "type": "metalnessMap",
+            "image": "textures/mods/v002_mod_sight/TAC Standard Lush/sight_sniper_mips_01_default_metalnessMap.webp"
+          },
+          {
+            "skin": "TAC Standard Lush",
+            "name": "sight_sniper_mips_01_default_map",
+            "material_name": "sight_sniper_mips_01_default",
+            "type": "map",
+            "image": "textures/mods/v002_mod_sight/TAC Standard Lush/sight_sniper_mips_01_default_map.webp"
+          },
+          {
+            "skin": "TAC Standard Lush",
+            "name": "sight_sniper_mips_01_default_normalMap",
+            "material_name": "sight_sniper_mips_01_default",
+            "type": "normalMap",
+            "image": "textures/mods/v002_mod_sight/TAC Standard Lush/sight_sniper_mips_01_default_normalMap.webp"
+          },
+          {
+            "skin": "TAC Standard Lush",
+            "name": "sight_sniper_mips_01_default_roughnessMap",
+            "material_name": "sight_sniper_mips_01_default",
+            "type": "roughnessMap",
+            "image": "textures/mods/v002_mod_sight/TAC Standard Lush/sight_sniper_mips_01_default_roughnessMap.webp"
+          },
+          {
+            "skin": "TAC Standard Lush",
+            "name": "sight_sniper_mips_01_default_metalnessMap",
+            "material_name": "sight_sniper_mips_01_default",
+            "type": "metalnessMap",
+            "image": "textures/mods/v002_mod_sight/TAC Standard Lush/sight_sniper_mips_01_default_metalnessMap.webp"
+          },
+          {
+            "skin": "TAC Standard Lush",
+            "name": "sight_sniper_mips_01_default_map",
+            "material_name": "sight_sniper_mips_01_default",
+            "type": "map",
+            "image": "textures/mods/v002_mod_sight/TAC Standard Lush/sight_sniper_mips_01_default_map.webp"
+          },
+          {
+            "skin": "TAC Standard Lush",
+            "name": "sight_sniper_mips_01_default_normalMap",
+            "material_name": "sight_sniper_mips_01_default",
+            "type": "normalMap",
+            "image": "textures/mods/v002_mod_sight/TAC Standard Lush/sight_sniper_mips_01_default_normalMap.webp"
+          },
+          {
+            "skin": "TAC Standard Lush",
+            "name": "sight_sniper_mips_01_default_roughnessMap",
+            "material_name": "sight_sniper_mips_01_default",
+            "type": "roughnessMap",
+            "image": "textures/mods/v002_mod_sight/TAC Standard Lush/sight_sniper_mips_01_default_roughnessMap.webp"
+          },
+          {
+            "skin": "TAC Standard Lush",
+            "name": "sight_sniper_mips_01_default_metalnessMap",
+            "material_name": "sight_sniper_mips_01_default",
+            "type": "metalnessMap",
+            "image": "textures/mods/v002_mod_sight/TAC Standard Lush/sight_sniper_mips_01_default_metalnessMap.webp"
+          }
+        ]
+      }
+    ],
+    "magazine": [
+      {
+        "id": "019c47cb-5eae-7146-8b42-f2946b344568",
+        "name": "mod_mag_default",
+        "is_default": true,
+        "materials": [
+          "mag_hakke_sniper_default",
+          "mag_hakke_sniper_default.001"
+        ],
+        "thumbnail": "thumbnails/mods/mod_mag_default.webp",
+        "image": "images/mods/mod_mag_default.webp",
+        "specs": "Default",
+        "type": "Barrel",
+        "model_path": "models/magazine/mod_mag_default.glb",
+        "textures": [
+          {
+            "skin": "TAC Standard Lush",
+            "name": "mag_hakke_sniper_default_map",
+            "material_name": "mag_hakke_sniper_default",
+            "type": "map",
+            "image": "textures/mods/mod_mag_default/TAC Standard Lush/mag_hakke_sniper_default_map.webp"
+          },
+          {
+            "skin": "TAC Standard Lush",
+            "name": "mag_hakke_sniper_default_normalMap",
+            "material_name": "mag_hakke_sniper_default",
+            "type": "normalMap",
+            "image": "textures/mods/mod_mag_default/TAC Standard Lush/mag_hakke_sniper_default_normalMap.webp"
+          },
+          {
+            "skin": "TAC Standard Lush",
+            "name": "mag_hakke_sniper_default_roughnessMap",
+            "material_name": "mag_hakke_sniper_default",
+            "type": "roughnessMap",
+            "image": "textures/mods/mod_mag_default/TAC Standard Lush/mag_hakke_sniper_default_roughnessMap.webp"
+          },
+          {
+            "skin": "TAC Standard Lush",
+            "name": "mag_hakke_sniper_default_metalnessMap",
+            "material_name": "mag_hakke_sniper_default",
+            "type": "metalnessMap",
+            "image": "textures/mods/mod_mag_default/TAC Standard Lush/mag_hakke_sniper_default_metalnessMap.webp"
+          },
+          {
+            "skin": "TAC Standard Lush",
+            "name": "mag_hakke_sniper_default.001_map",
+            "material_name": "mag_hakke_sniper_default.001",
+            "type": "map",
+            "image": "textures/mods/mod_mag_default/TAC Standard Lush/mag_hakke_sniper_default.001_map.webp"
+          },
+          {
+            "skin": "TAC Standard Lush",
+            "name": "mag_hakke_sniper_default.001_normalMap",
+            "material_name": "mag_hakke_sniper_default.001",
+            "type": "normalMap",
+            "image": "textures/mods/mod_mag_default/TAC Standard Lush/mag_hakke_sniper_default.001_normalMap.webp"
+          },
+          {
+            "skin": "TAC Standard Lush",
+            "name": "mag_hakke_sniper_default.001_roughnessMap",
+            "material_name": "mag_hakke_sniper_default.001",
+            "type": "roughnessMap",
+            "image": "textures/mods/mod_mag_default/TAC Standard Lush/mag_hakke_sniper_default.001_roughnessMap.webp"
+          },
+          {
+            "skin": "TAC Standard Lush",
+            "name": "mag_hakke_sniper_default.001_metalnessMap",
+            "material_name": "mag_hakke_sniper_default.001",
+            "type": "metalnessMap",
+            "image": "textures/mods/mod_mag_default/TAC Standard Lush/mag_hakke_sniper_default.001_metalnessMap.webp"
+          }
+        ]
+      }
+    ],
+    "barrel": [
+      {
+        "id": "019c47cb-4ae6-71ad-b673-041eedbc9ea3",
+        "name": "mod_barrel_default",
+        "is_default": true,
+        "materials": [
+          "barrel_sniper_mips_01_default"
+        ],
+        "thumbnail": "thumbnails/mods/mod_barrel_default.webp",
+        "image": "images/mods/mod_barrel_default.webp",
+        "specs": "Default",
+        "type": "Barrel",
+        "model_path": "models/barrel/mod_barrel_default.glb",
+        "textures": [
+          {
+            "skin": "TAC Standard Lush",
+            "name": "barrel_sniper_mips_01_default_map",
+            "material_name": "barrel_sniper_mips_01_default",
+            "type": "map",
+            "image": "textures/mods/mod_barrel_default/TAC Standard Lush/barrel_sniper_mips_01_default_map.webp"
+          },
+          {
+            "skin": "TAC Standard Lush",
+            "name": "barrel_sniper_mips_01_default_normalMap",
+            "material_name": "barrel_sniper_mips_01_default",
+            "type": "normalMap",
+            "image": "textures/mods/mod_barrel_default/TAC Standard Lush/barrel_sniper_mips_01_default_normalMap.webp"
+          },
+          {
+            "skin": "TAC Standard Lush",
+            "name": "barrel_sniper_mips_01_default_roughnessMap",
+            "material_name": "barrel_sniper_mips_01_default",
+            "type": "roughnessMap",
+            "image": "textures/mods/mod_barrel_default/TAC Standard Lush/barrel_sniper_mips_01_default_roughnessMap.webp"
+          },
+          {
+            "skin": "TAC Standard Lush",
+            "name": "barrel_sniper_mips_01_default_metalnessMap",
+            "material_name": "barrel_sniper_mips_01_default",
+            "type": "metalnessMap",
+            "image": "textures/mods/mod_barrel_default/TAC Standard Lush/barrel_sniper_mips_01_default_metalnessMap.webp"
+          },
+          {
+            "skin": "TAC Standard Lush",
+            "name": "barrel_sniper_mips_01_default_map",
+            "material_name": "barrel_sniper_mips_01_default",
+            "type": "map",
+            "image": "textures/mods/mod_barrel_default/TAC Standard Lush/barrel_sniper_mips_01_default_map.webp"
+          },
+          {
+            "skin": "TAC Standard Lush",
+            "name": "barrel_sniper_mips_01_default_normalMap",
+            "material_name": "barrel_sniper_mips_01_default",
+            "type": "normalMap",
+            "image": "textures/mods/mod_barrel_default/TAC Standard Lush/barrel_sniper_mips_01_default_normalMap.webp"
+          },
+          {
+            "skin": "TAC Standard Lush",
+            "name": "barrel_sniper_mips_01_default_roughnessMap",
+            "material_name": "barrel_sniper_mips_01_default",
+            "type": "roughnessMap",
+            "image": "textures/mods/mod_barrel_default/TAC Standard Lush/barrel_sniper_mips_01_default_roughnessMap.webp"
+          },
+          {
+            "skin": "TAC Standard Lush",
+            "name": "barrel_sniper_mips_01_default_metalnessMap",
+            "material_name": "barrel_sniper_mips_01_default",
+            "type": "metalnessMap",
+            "image": "textures/mods/mod_barrel_default/TAC Standard Lush/barrel_sniper_mips_01_default_metalnessMap.webp"
+          },
+          {
+            "skin": "TAC Standard Lush",
+            "name": "barrel_sniper_mips_01_default_map",
+            "material_name": "barrel_sniper_mips_01_default",
+            "type": "map",
+            "image": "textures/mods/mod_barrel_default/TAC Standard Lush/barrel_sniper_mips_01_default_map.webp"
+          },
+          {
+            "skin": "TAC Standard Lush",
+            "name": "barrel_sniper_mips_01_default_normalMap",
+            "material_name": "barrel_sniper_mips_01_default",
+            "type": "normalMap",
+            "image": "textures/mods/mod_barrel_default/TAC Standard Lush/barrel_sniper_mips_01_default_normalMap.webp"
+          },
+          {
+            "skin": "TAC Standard Lush",
+            "name": "barrel_sniper_mips_01_default_roughnessMap",
+            "material_name": "barrel_sniper_mips_01_default",
+            "type": "roughnessMap",
+            "image": "textures/mods/mod_barrel_default/TAC Standard Lush/barrel_sniper_mips_01_default_roughnessMap.webp"
+          },
+          {
+            "skin": "TAC Standard Lush",
+            "name": "barrel_sniper_mips_01_default_metalnessMap",
+            "material_name": "barrel_sniper_mips_01_default",
+            "type": "metalnessMap",
+            "image": "textures/mods/mod_barrel_default/TAC Standard Lush/barrel_sniper_mips_01_default_metalnessMap.webp"
+          },
+          {
+            "skin": "TAC Standard Lush",
+            "name": "barrel_sniper_mips_01_default_map",
+            "material_name": "barrel_sniper_mips_01_default",
+            "type": "map",
+            "image": "textures/mods/mod_barrel_default/TAC Standard Lush/barrel_sniper_mips_01_default_map.webp"
+          },
+          {
+            "skin": "TAC Standard Lush",
+            "name": "barrel_sniper_mips_01_default_normalMap",
+            "material_name": "barrel_sniper_mips_01_default",
+            "type": "normalMap",
+            "image": "textures/mods/mod_barrel_default/TAC Standard Lush/barrel_sniper_mips_01_default_normalMap.webp"
+          },
+          {
+            "skin": "TAC Standard Lush",
+            "name": "barrel_sniper_mips_01_default_roughnessMap",
+            "material_name": "barrel_sniper_mips_01_default",
+            "type": "roughnessMap",
+            "image": "textures/mods/mod_barrel_default/TAC Standard Lush/barrel_sniper_mips_01_default_roughnessMap.webp"
+          },
+          {
+            "skin": "TAC Standard Lush",
+            "name": "barrel_sniper_mips_01_default_metalnessMap",
+            "material_name": "barrel_sniper_mips_01_default",
+            "type": "metalnessMap",
+            "image": "textures/mods/mod_barrel_default/TAC Standard Lush/barrel_sniper_mips_01_default_metalnessMap.webp"
+          }
+        ]
+      }
+    ]
+  },
+  "stickers": [],
+  "charms": [],
+  "slug": "longshot",
+  "redacted": false
+}

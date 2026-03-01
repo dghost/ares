@@ -1,0 +1,309 @@
+{
+  "name": "Vandal",
+  "abilities": [
+    {
+      "name": "ROLE: Combat anarchist ",
+      "type": "TECH: Enhanced movement ",
+      "icon": {
+        "url": "https://assets.thecdn.io/c0c35a2d-9bf6-4bb2-944d-c7e23257976b.png",
+        "filename": "c0c35a2d-9bf6-4bb2-944d-c7e23257976b.png",
+        "alt_filename": "c0c35a2d-9bf6-4bb2-944d-c7e23257976b.png",
+        "alt": "Vandal Icon",
+        "width": 108,
+        "height": 108,
+        "mimeType": "image/png"
+      },
+      "heading": "Vandals are troublemakers. ",
+      "description": "Amplified movement abilities help cover ground at incredible speeds, changing any encounter in their favor. Microjets allow a secondary jump to reach higher ground. And a built-in Disrupt Cannon provides instant offense or defense when it is charged and ready to fire. \n[excerpt, UESC threat eval: rnnr.vndl.fileID63112c_p324] \n"
+    },
+    {
+      "name": "AMPLIFY",
+      "type": "Prime Ability",
+      "icon": {
+        "url": "https://assets.thecdn.io/c59df6b5-11ef-4d9a-85dc-abc9d6b8942e.png",
+        "filename": "c59df6b5-11ef-4d9a-85dc-abc9d6b8942e.png",
+        "alt_filename": "Amplify.png",
+        "alt": "Amplify",
+        "width": 108,
+        "height": 108,
+        "mimeType": "image/png"
+      },
+      "heading": "",
+      "description": "Overcharge your movement systems, reducing the heat generated from your movement abilities while increasing your movement speed and weapon dexterity. "
+    },
+    {
+      "name": "DISRUPT CANNON",
+      "type": "Tactical Ability",
+      "icon": {
+        "url": "https://assets.thecdn.io/875c504b-c546-4070-b753-716a773b1b58.png",
+        "filename": "875c504b-c546-4070-b753-716a773b1b58.png",
+        "alt_filename": "Disrupt_cannon.png",
+        "alt": "Disrupt_cannon",
+        "width": 108,
+        "height": 108,
+        "mimeType": "image/png"
+      },
+      "heading": "",
+      "description": "Transform your arm into a cannon and fire a high-powered energy projectile that deals damage and pushes targets away.\n\nOvercharge your arm cannon greatly increasing. the size and damage of the blast."
+    },
+    {
+      "name": "MICROJETS",
+      "type": "Trait 1",
+      "icon": {
+        "url": "https://assets.thecdn.io/ba4955bc-9fc0-4da2-adc3-cb074c4c1def.png",
+        "filename": "ba4955bc-9fc0-4da2-adc3-cb074c4c1def.png",
+        "alt_filename": "Microjets.png",
+        "alt": "Microjets",
+        "width": 108,
+        "height": 108,
+        "mimeType": "image/png"
+      },
+      "heading": "",
+      "description": "Activate while airborne to perform another jump at the cost of generating additional heat."
+    },
+    {
+      "name": "POWER SLIDE",
+      "type": "Trait 2",
+      "icon": {
+        "url": "https://assets.thecdn.io/09317870-efe7-4363-938f-190c31fff66b.png",
+        "filename": "09317870-efe7-4363-938f-190c31fff66b.png",
+        "alt_filename": "Power_slide.png",
+        "alt": "Power_slide",
+        "width": 108,
+        "height": 108,
+        "mimeType": "image/png"
+      },
+      "heading": "",
+      "description": "Grants a supercharged slide that generates additional heat."
+    }
+  ],
+  "cctvItems": {
+    "foot_left": {
+      "enabled": false,
+      "name": null,
+      "file": null
+    },
+    "foot_right": {
+      "enabled": true,
+      "name": "W3M7PZ9X_K4QA_REGN.bin",
+      "file": {
+        "url": "https://assets.thecdn.io/3d3790b3-f823-45a0-8788-f37b970b0b6f.mp4",
+        "filename": "3d3790b3-f823-45a0-8788-f37b970b0b6f.mp4",
+        "alt_filename": "3d3790b3-f823-45a0-8788-f37b970b0b6f.mp4",
+        "alt": "Vandal1p Microjets",
+        "width": null,
+        "height": null,
+        "mimeType": "video/mp4"
+      }
+    },
+    "knee_left": {
+      "enabled": false,
+      "name": null,
+      "file": null
+    },
+    "knee_right": {
+      "enabled": false,
+      "name": null,
+      "file": null
+    },
+    "hip_left": {
+      "enabled": true,
+      "name": "V2K8ZP7X_Q4M9_DREF.tx",
+      "file": {
+        "url": "https://assets.thecdn.io/b0bf1c81-42d6-4f17-b5c0-a45013a6297a.mp4",
+        "filename": "b0bf1c81-42d6-4f17-b5c0-a45013a6297a.mp4",
+        "alt_filename": "b0bf1c81-42d6-4f17-b5c0-a45013a6297a.mp4",
+        "alt": "Vandal1p Powerslide",
+        "width": null,
+        "height": null,
+        "mimeType": "video/mp4"
+      }
+    },
+    "hip_right": {
+      "enabled": true,
+      "name": "K7R9A6X_MQ3F_LOG.bin",
+      "file": {
+        "url": "https://assets.thecdn.io/d63fb021-cc23-4a25-bc46-41a7dcdbe881.mp4",
+        "filename": "d63fb021-cc23-4a25-bc46-41a7dcdbe881.mp4",
+        "alt_filename": "K7R9A6X_MQ3F_LOG.mp4",
+        "alt": "Power Slide",
+        "width": null,
+        "height": null,
+        "mimeType": "video/mp4"
+      }
+    },
+    "chest": {
+      "enabled": false,
+      "name": null,
+      "file": null
+    },
+    "head": {
+      "enabled": true,
+      "name": "J9Z7XQ4P_2MA8_ALLOC.log",
+      "file": {
+        "url": "https://assets.thecdn.io/a63b335d-6d38-492b-9bea-b333ac8e3668.wav",
+        "filename": "a63b335d-6d38-492b-9bea-b333ac8e3668.wav",
+        "alt_filename": "a63b335d-6d38-492b-9bea-b333ac8e3668.wav",
+        "alt": "ready to run",
+        "width": null,
+        "height": null,
+        "mimeType": "audio/wav"
+      }
+    },
+    "shoulder_left": {
+      "enabled": true,
+      "name": "X6P2QK8Z_M7A9_TELEM.dat",
+      "file": {
+        "url": "https://assets.thecdn.io/34724c9d-6fe5-4d73-a6be-ea876a512c59.wav",
+        "filename": "34724c9d-6fe5-4d73-a6be-ea876a512c59.wav",
+        "alt_filename": "34724c9d-6fe5-4d73-a6be-ea876a512c59.wav",
+        "alt": "outrun anything",
+        "width": null,
+        "height": null,
+        "mimeType": "audio/wav"
+      }
+    },
+    "shoulder_right": {
+      "enabled": false,
+      "name": "",
+      "file": null
+    },
+    "elbow_left": {
+      "enabled": false,
+      "name": null,
+      "file": null
+    },
+    "elbow_right": {
+      "enabled": false,
+      "name": null,
+      "file": null
+    },
+    "hand_left": {
+      "enabled": true,
+      "name": "T4X9KZ7P_Q2M8_DSYS.log",
+      "file": {
+        "url": "https://assets.thecdn.io/dee58ec9-7b39-405e-a2c0-f8c7225f3e92.mp4",
+        "filename": "dee58ec9-7b39-405e-a2c0-f8c7225f3e92.mp4",
+        "alt_filename": "dee58ec9-7b39-405e-a2c0-f8c7225f3e92.mp4",
+        "alt": "Vandal 1P Vandalult ",
+        "width": null,
+        "height": null,
+        "mimeType": "video/mp4"
+      }
+    },
+    "hand_right": {
+      "enabled": true,
+      "name": "R8QZ4X7M_P9A2_XFER.tx",
+      "file": {
+        "url": "https://assets.thecdn.io/d2b6069b-376c-4702-a178-e177d7890bca.mp4",
+        "filename": "d2b6069b-376c-4702-a178-e177d7890bca.mp4",
+        "alt_filename": "d2b6069b-376c-4702-a178-e177d7890bca.mp4",
+        "alt": "Vandal1p Disruptcannon",
+        "width": null,
+        "height": null,
+        "mimeType": "video/mp4"
+      }
+    }
+  },
+  "base_url": "https://goliath-tau-ceti-stage.b-cdn.net/runners/Vandal-2026-02-26_14%3A20",
+  "id": "4",
+  "runner_name": "Vandal",
+  "model_path": "models/Vandal.glb",
+  "skins": [
+    {
+      "name": "Core",
+      "is_default": true,
+      "is_model_changed": false,
+      "model_path": null,
+      "image": {
+        "path": "images/skins/Core.png",
+        "name": "captured-skin.png",
+        "type": "image/png"
+      }
+    },
+    {
+      "name": "Shadow Index",
+      "is_default": false,
+      "is_model_changed": true,
+      "model_path": "models/skins/Shadow Index.glb",
+      "image": {
+        "path": "images/skins/Shadow Index.png",
+        "name": "captured-skin.png",
+        "type": "image/png"
+      }
+    }
+  ],
+  "interactive_points": {
+    "foot_left": {
+      "x": 0.19,
+      "y": 0.08,
+      "z": 0
+    },
+    "foot_right": {
+      "x": -0.26,
+      "y": 0.12,
+      "z": -0.03
+    },
+    "knee_left": {
+      "x": 0.12,
+      "y": 0.57,
+      "z": -0.06
+    },
+    "knee_right": {
+      "x": -0.02,
+      "y": 0.56,
+      "z": 0.06
+    },
+    "hip_left": {
+      "x": 0.09,
+      "y": 1.07,
+      "z": -0.08
+    },
+    "hip_right": {
+      "x": 0.027,
+      "y": 1.07,
+      "z": 0.09
+    },
+    "chest": {
+      "x": 0.018,
+      "y": 1.42,
+      "z": -0.04
+    },
+    "head": {
+      "x": 0.05,
+      "y": 1.66,
+      "z": -0.01
+    },
+    "shoulder_left": {
+      "x": -0.07,
+      "y": 1.46,
+      "z": -0.18
+    },
+    "shoulder_right": {
+      "x": 0,
+      "y": 1.5,
+      "z": 0.11
+    },
+    "elbow_left": {
+      "x": -0.11,
+      "y": 1.17,
+      "z": -0.25
+    },
+    "elbow_right": {
+      "x": 0.19,
+      "y": 1.34,
+      "z": 0.29
+    },
+    "hand_left": {
+      "x": -0.04,
+      "y": 0.86,
+      "z": -0.29
+    },
+    "hand_right": {
+      "x": 0.43,
+      "y": 1.2,
+      "z": 0.4
+    }
+  },
+  "slug": "vandal"
+}

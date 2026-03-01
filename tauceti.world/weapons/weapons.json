@@ -1,0 +1,90 @@
+[
+  {
+    "id": "32",
+    "name": "M77 Assault Rifle",
+    "slug": "m77-assault-rifle",
+    "menuOrder": 1,
+    "visible": true,
+    "redacted": false
+  },
+  {
+    "id": "29",
+    "name": "Magnum MC",
+    "slug": "magnum-mc",
+    "menuOrder": 2,
+    "visible": true,
+    "redacted": false
+  },
+  {
+    "id": "3",
+    "name": "wpn_id_<>q2)(#\"\"==",
+    "slug": "wpn_id_redacted262",
+    "menuOrder": 3,
+    "visible": true,
+    "redacted": true
+  },
+  {
+    "id": "26",
+    "name": "Twin Tap HBR",
+    "slug": "twin-tap-hbr",
+    "menuOrder": 4,
+    "visible": true,
+    "redacted": false
+  },
+  {
+    "id": "25",
+    "name": "Longshot",
+    "slug": "longshot",
+    "menuOrder": 5,
+    "visible": true,
+    "redacted": false
+  },
+  {
+    "id": "2",
+    "name": "wpn_id_<>)(q\"\"#(",
+    "slug": "wpn_id_redacted0825",
+    "menuOrder": 6,
+    "visible": true,
+    "redacted": true
+  },
+  {
+    "id": "31",
+    "name": "WSTR Combat Shotgun",
+    "slug": "wstr-combat-shotgun",
+    "menuOrder": 7,
+    "visible": true,
+    "redacted": false
+  },
+  {
+    "id": "27",
+    "name": "Bully SMG",
+    "slug": "bully-smg",
+    "menuOrder": 8,
+    "visible": true,
+    "redacted": false
+  },
+  {
+    "id": "1",
+    "name": "wpn_id_@)\"\"~#][",
+    "slug": "wpn_id_redacted0128",
+    "menuOrder": 9,
+    "visible": true,
+    "redacted": true
+  },
+  {
+    "id": "28",
+    "name": "V00 Zeus RG",
+    "slug": "v00-zeus-rg",
+    "menuOrder": 10,
+    "visible": true,
+    "redacted": false
+  },
+  {
+    "id": "30",
+    "name": "BR33 Volley Rifle",
+    "slug": "br33-volley-rifle",
+    "menuOrder": 11,
+    "visible": true,
+    "redacted": false
+  }
+]

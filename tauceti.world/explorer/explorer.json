@@ -1,0 +1,2063 @@
+{
+  "planet": {
+    "line_geometry": {
+      "url": "https://assets.thecdn.io/3fdfae69-bf8b-4f7a-a2a2-d331afedae3a.chunks",
+      "filename": "3fdfae69-bf8b-4f7a-a2a2-d331afedae3a.chunks",
+      "alt_filename": "tciv_planet_lines.chunks",
+      "alt": "TCIV Explorer planet model",
+      "width": null,
+      "height": null,
+      "mimeType": "application/octet-stream"
+    },
+    "mesh": {
+      "url": "https://assets.thecdn.io/97b89f04-db5e-42a4-a987-38ad5b197649.fbx",
+      "filename": "97b89f04-db5e-42a4-a987-38ad5b197649.fbx",
+      "alt_filename": "tciv_planet_mesh.chunks",
+      "alt": "TCIV Planet mesh",
+      "width": null,
+      "height": null,
+      "mimeType": "application/octet-stream"
+    }
+  },
+  "colony_marker": {
+    "latitude": 30,
+    "longitude": -18
+  },
+  "marathon_ship": {
+    "line_geometry": {
+      "url": "https://assets.thecdn.io/caa68a98-44e9-44d8-8869-94f29da79dd9.chunks",
+      "filename": "caa68a98-44e9-44d8-8869-94f29da79dd9.chunks",
+      "alt_filename": "tciv_marathon_ship.chunks",
+      "alt": "TCIV Marathon Ship",
+      "width": null,
+      "height": null,
+      "mimeType": "application/octet-stream"
+    }
+  },
+  "locations": [
+    {
+      "id": 1,
+      "name": "Perimeter",
+      "description": "Perimeter appears to be part of colony expansion and terraplatforming efforts.\n\nIts data Wall, Hauler, and Twin Relays suggest heavy data collection and transmission, though the purpose and outcome remain unclear. \n\nMost systems read as dormant.",
+      "max_crew_count": 5,
+      "thumbnail": {
+        "url": "https://assets.thecdn.io/a3f6447c-6187-41cb-8f1a-1cc70b64aaed.png",
+        "filename": "a3f6447c-6187-41cb-8f1a-1cc70b64aaed.png",
+        "alt_filename": ".",
+        "alt": ".",
+        "width": 398,
+        "height": 296,
+        "mimeType": "image/png"
+      },
+      "loading_screen_landscape": {
+        "url": "https://assets.thecdn.io/53fb3948-b3b2-488f-bdea-f70d43b6683c.webm",
+        "filename": "53fb3948-b3b2-488f-bdea-f70d43b6683c.webm",
+        "alt_filename": "tciv_loading_landscape.webm",
+        "alt": "tciv_loading_landscape.webm",
+        "width": null,
+        "height": null,
+        "mimeType": "video/webm"
+      },
+      "loading_screen_portrait": {
+        "url": "https://assets.thecdn.io/2d35de1b-66bd-4458-b9fb-3c4fe5460a28.webm",
+        "filename": "2d35de1b-66bd-4458-b9fb-3c4fe5460a28.webm",
+        "alt_filename": "tciv_loading_portrait.webm",
+        "alt": "tciv_loading_portrait.webm",
+        "width": null,
+        "height": null,
+        "mimeType": "video/webm"
+      },
+      "environment": {
+        "line_geometry": {
+          "url": "https://assets.thecdn.io/9fdba452-9beb-41a4-9100-19a6948e3587.chunks",
+          "filename": "9fdba452-9beb-41a4-9100-19a6948e3587.chunks",
+          "alt_filename": "Perimeter_prod_v001_Perimeter_map.chunks",
+          "alt": "Perimeter_prod_v001_Perimeter_map.chunks",
+          "width": null,
+          "height": null,
+          "mimeType": "application/octet-stream"
+        },
+        "floor_texture": {
+          "url": "https://assets.thecdn.io/2e3c1753-fa36-4cd5-a860-5bb14a3fa3e8.png",
+          "filename": "2e3c1753-fa36-4cd5-a860-5bb14a3fa3e8.png",
+          "alt_filename": "tciv_floor.png",
+          "alt": "Tau Ceti Explorer floor texture",
+          "width": 1024,
+          "height": 1025,
+          "mimeType": "image/png"
+        },
+        "hotzones": {
+          "url": "https://assets.thecdn.io/734b66cd-4c33-4cb2-b458-3d3e1691c3d2.chunks",
+          "filename": "734b66cd-4c33-4cb2-b458-3d3e1691c3d2.chunks",
+          "alt_filename": "Perimeter_prod_v001_hotzones.chunks",
+          "alt": "Perimeter_prod_v001_hotzones.chunks",
+          "width": null,
+          "height": null,
+          "mimeType": "application/octet-stream"
+        }
+      },
+      "runner_paths": {
+        "url": "https://assets.thecdn.io/50f772e8-d7db-4d21-98f2-0b3d823e0ef5.json",
+        "filename": "50f772e8-d7db-4d21-98f2-0b3d823e0ef5.json",
+        "alt_filename": "Perimeter_prod_v001_RNR_paths.json",
+        "alt": "Perimeter_prod_v001_RNR_paths.json",
+        "width": null,
+        "height": null,
+        "mimeType": "application/json"
+      },
+      "uesc_troop_paths": {
+        "url": "https://assets.thecdn.io/6d42c717-eaaf-462f-9ebe-02fbd131169e.json",
+        "filename": "6d42c717-eaaf-462f-9ebe-02fbd131169e.json",
+        "alt_filename": "Perimeter_prod_v001_UESC_paths.json",
+        "alt": "Perimeter_prod_v001_UESC_paths.json",
+        "width": null,
+        "height": null,
+        "mimeType": "application/json"
+      },
+      "exfils": [
+        {
+          "x": -20.73596954345703,
+          "y": -0.05023549497127533,
+          "z": 14.88381576538086
+        },
+        {
+          "x": 14.949029922485352,
+          "y": -0.05023549497127533,
+          "z": 4.802318572998047
+        },
+        {
+          "x": 14.949029922485352,
+          "y": -0.05023549497127533,
+          "z": -12.257333755493164
+        },
+        {
+          "x": -1.996469497680664,
+          "y": -0.05023549497127533,
+          "z": -33.008182525634766
+        },
+        {
+          "x": -15.626968383789062,
+          "y": -0.05023549497127533,
+          "z": -31.214181900024414
+        },
+        {
+          "x": -17.42096710205078,
+          "y": -0.05023549497127533,
+          "z": -16.27718162536621
+        },
+        {
+          "x": -3.2970199584960938,
+          "y": -0.05023549497127533,
+          "z": -18.675682067871094
+        },
+        {
+          "x": -25.259967803955078,
+          "y": -0.05023549497127533,
+          "z": -2.256683349609375
+        },
+        {
+          "x": -4.2584686279296875,
+          "y": -0.05023549497127533,
+          "z": -3.6411819458007812
+        }
+      ],
+      "runner_spawn_points": [
+        {
+          "x": 6.047952651977539,
+          "y": -0.05023549497127533,
+          "z": 32.95808792114258
+        },
+        {
+          "x": -32.250003814697266,
+          "y": -0.05023549497127533,
+          "z": 27.10808563232422
+        },
+        {
+          "x": -34.43400573730469,
+          "y": -0.05023549497127533,
+          "z": -12.359991073608398
+        },
+        {
+          "x": -35.058006286621094,
+          "y": -0.05023549497127533,
+          "z": 5.4240875244140625
+        },
+        {
+          "x": -16.416011810302734,
+          "y": -0.05023549497127533,
+          "z": -4.910913467407227
+        },
+        {
+          "x": -18.873008728027344,
+          "y": -0.05023549497127533,
+          "z": -11.891992568969727
+        },
+        {
+          "x": -8.265010833740234,
+          "y": -0.05023549497127533,
+          "z": -9.473991394042969
+        },
+        {
+          "x": 0.5489902496337891,
+          "y": -0.05023549497127533,
+          "z": -8.264989852905273
+        },
+        {
+          "x": 5.423952102661133,
+          "y": -0.05023549497127533,
+          "z": -2.3369102478027344
+        },
+        {
+          "x": 24.61195182800293,
+          "y": -0.05023549497127533,
+          "z": 11.35208511352539
+        },
+        {
+          "x": 26.71795082092285,
+          "y": -0.05023549497127533,
+          "z": 7.296085357666016
+        },
+        {
+          "x": 29.915952682495117,
+          "y": -0.05023549497127533,
+          "z": -16.649991989135742
+        },
+        {
+          "x": 26.71795082092285,
+          "y": -0.05023549497127533,
+          "z": -27.1409912109375
+        },
+        {
+          "x": 9.011953353881836,
+          "y": -0.05023549497127533,
+          "z": -38.21699142456055
+        },
+        {
+          "x": -3.1170101165771484,
+          "y": -0.05023549497127533,
+          "z": -45.626983642578125
+        },
+        {
+          "x": 4.175954818725586,
+          "y": -0.05023549497127533,
+          "z": 16.188091278076172
+        },
+        {
+          "x": -10.332010269165039,
+          "y": -0.05023549497127533,
+          "z": 21.336090087890625
+        },
+        {
+          "x": -25.81501007080078,
+          "y": -0.05023549497127533,
+          "z": -37.04698944091797
+        }
+      ],
+      "regions": [
+        {
+          "x": -26.815933227539062,
+          "y": 1.1259393692016602,
+          "z": -5.079013824462891,
+          "name": "HAULER",
+          "content": {
+            "title": "",
+            "description": "A mobile control unit supporting DATA WALL operations and local monitoring, used in planetary exploration and viable colony zone identification.",
+            "media": {
+              "url": "https://assets.thecdn.io/d91a1761-9729-4da8-88df-9e00a2854de4.mp4",
+              "filename": "d91a1761-9729-4da8-88df-9e00a2854de4.mp4",
+              "alt_filename": "Hauler (1).mp4",
+              "alt": "Hauler (1).mp4",
+              "width": null,
+              "height": null,
+              "mimeType": "video/mp4"
+            }
+          },
+          "materials": []
+        },
+        {
+          "x": -22.586366653442383,
+          "y": -2.2787885665893555,
+          "z": 18.962078094482422,
+          "name": "OVERFLOW",
+          "content": {
+            "title": "",
+            "description": "A runoff and filtration site in support of the zone\u00e2\u0080\u0099s initial excavation and terraplatforming. ",
+            "media": {
+              "url": "https://assets.thecdn.io/9069623b-1daa-4bb4-891d-4e6b142dca59.mp4",
+              "filename": "9069623b-1daa-4bb4-891d-4e6b142dca59.mp4",
+              "alt_filename": "Overflow (1).mp4",
+              "alt": "Overflow (1).mp4",
+              "width": null,
+              "height": null,
+              "mimeType": "video/mp4"
+            }
+          },
+          "materials": []
+        },
+        {
+          "x": 7.649580001831055,
+          "y": 2.82804799079895,
+          "z": 12.21768569946289,
+          "name": "SOUTH RELAY",
+          "content": {
+            "title": "",
+            "description": "A secondary relay built to expand data volume; its derelict status suggests disrepair and accelerated entropy.",
+            "media": {
+              "url": "https://assets.thecdn.io/846bf6a8-7869-426f-8be2-10ffa9b3a049.mp4",
+              "filename": "846bf6a8-7869-426f-8be2-10ffa9b3a049.mp4",
+              "alt_filename": "South relay (1).mp4",
+              "alt": "South relay (1).mp4",
+              "width": null,
+              "height": null,
+              "mimeType": "video/mp4"
+            }
+          },
+          "materials": []
+        },
+        {
+          "x": 18.359304428100586,
+          "y": 0.12069320678710938,
+          "z": -13.747740745544434,
+          "name": "STATION",
+          "content": {
+            "title": "",
+            "description": "An operational hub that coordinated the zone\u00e2\u0080\u0099s geological monitoring and resource collection efforts.",
+            "media": {
+              "url": "https://assets.thecdn.io/7ca34317-15bc-4b5e-9266-ed66c0ec8807.mp4",
+              "filename": "7ca34317-15bc-4b5e-9266-ed66c0ec8807.mp4",
+              "alt_filename": "Station (1).mp4",
+              "alt": "Station (1).mp4",
+              "width": null,
+              "height": null,
+              "mimeType": "video/mp4"
+            }
+          },
+          "materials": []
+        },
+        {
+          "x": -2.687997817993164,
+          "y": 1.292342185974121,
+          "z": -27.963520050048828,
+          "name": "NORTH RELAY",
+          "content": {
+            "title": "",
+            "description": "A massive communication and data relay that appears to be engineered to collate, condense, and transfer information collected by the zone\u00e2\u0080\u0099s central data wall.",
+            "media": {
+              "url": "https://assets.thecdn.io/6599074b-5225-4ee8-9b63-a6e46a47ae64.mp4",
+              "filename": "6599074b-5225-4ee8-9b63-a6e46a47ae64.mp4",
+              "alt_filename": "North relay (1).mp4",
+              "alt": "North relay (1).mp4",
+              "width": null,
+              "height": null,
+              "mimeType": "video/mp4"
+            }
+          },
+          "materials": []
+        }
+      ],
+      "uesc_troops": [
+        {
+          "x": -25.662216186523438,
+          "y": -0.05023549497127533,
+          "z": 14.404308319091797,
+          "name": "Recruit,Assault,Grenadier,Ghost,Scout",
+          "count": 4,
+          "health": 1
+        },
+        {
+          "x": -15.483232498168945,
+          "y": -0.05023549497127533,
+          "z": 16.58831024169922,
+          "name": "Recruit,Assault,Grenadier,Ghost,Scout",
+          "count": 4,
+          "health": 1
+        },
+        {
+          "x": 13.961709976196289,
+          "y": -0.05023549497127533,
+          "z": 16.861309051513672,
+          "name": "Recruit,Assault,Grenadier,Ghost,Scout",
+          "count": 4,
+          "health": 1
+        },
+        {
+          "x": 14.039712905883789,
+          "y": -0.05023549497127533,
+          "z": 8.866313934326172,
+          "name": "Recruit,Assault,Grenadier,Ghost,Scout",
+          "count": 4,
+          "health": 1
+        },
+        {
+          "x": 19.34370994567871,
+          "y": -0.05023549497127533,
+          "z": -16.288789749145508,
+          "name": "Recruit,Assault,Grenadier,Ghost,Scout",
+          "count": 4,
+          "health": 1
+        },
+        {
+          "x": 9.320768356323242,
+          "y": -0.05023549497127533,
+          "z": -13.675790786743164,
+          "name": "Recruit,Assault,Grenadier,Ghost,Scout",
+          "count": 4,
+          "health": 1
+        },
+        {
+          "x": -16.614233016967773,
+          "y": -0.05023549497127533,
+          "z": -25.2587890625,
+          "name": "Recruit,Assault,Grenadier,Ghost,Scout",
+          "count": 4,
+          "health": 1
+        },
+        {
+          "x": -8.073234558105469,
+          "y": -0.05023549497127533,
+          "z": -31.81077766418457,
+          "name": "Recruit,Assault,Grenadier,Ghost,Scout",
+          "count": 4,
+          "health": 1
+        },
+        {
+          "x": -28.27521514892578,
+          "y": -0.05023549497127533,
+          "z": -4.978790283203125,
+          "name": "Recruit,Assault,Grenadier,Ghost,Scout",
+          "count": 4,
+          "health": 1
+        },
+        {
+          "x": -23.127233505249023,
+          "y": -0.05023549497127533,
+          "z": 0.13021087646484375,
+          "name": "Recruit,Assault,Grenadier,Ghost,Scout",
+          "count": 4,
+          "health": 1
+        },
+        {
+          "x": -26.247215270996094,
+          "y": -0.05023549497127533,
+          "z": -13.675790786743164,
+          "name": "Recruit,Assault,Grenadier,Ghost,Scout",
+          "count": 4,
+          "health": 1
+        },
+        {
+          "x": -23.961763381958008,
+          "y": 0,
+          "z": 21.765962600708008,
+          "name": "Wraith Warden",
+          "count": 1,
+          "health": 1
+        }
+      ],
+      "landmarks": [
+        {
+          "x": -9.351190567016602,
+          "y": 1.3759554624557495,
+          "z": -7.224102020263672,
+          "name": "DATA WALL",
+          "content": {
+            "title": "",
+            "description": "A mobile survey structure placed along a deliberate path to collect subsurface planetary readings and feed them into nearby systems when active.",
+            "media": {
+              "url": "https://assets.thecdn.io/74b528be-647b-418a-95c7-03d1f21a50b4.mp4",
+              "filename": "74b528be-647b-418a-95c7-03d1f21a50b4.mp4",
+              "alt_filename": "Perimeter_region_data-wall (1).mp4",
+              "alt": "Perimeter_region_data-wall (1).mp4",
+              "width": null,
+              "height": null,
+              "mimeType": "video/mp4"
+            }
+          }
+        },
+        {
+          "x": 20.39303970336914,
+          "y": 3.5403029918670654,
+          "z": 2.8883931636810303,
+          "name": "EAST WALL",
+          "content": {
+            "title": "",
+            "description": "The eastern section of the Data Wall is heavily damaged and no longer appears operational. Despite this, Runners frequently use the structure to move between Station and South Relay.",
+            "media": {
+              "url": "https://assets.thecdn.io/47a359b9-23dd-44f5-92c5-c1f3a87438a7.mp4",
+              "filename": "47a359b9-23dd-44f5-92c5-c1f3a87438a7.mp4",
+              "alt_filename": "Perimeter_subregion_east-wall (1).mp4",
+              "alt": "Perimeter_subregion_east-wall (1).mp4",
+              "width": null,
+              "height": null,
+              "mimeType": "video/mp4"
+            }
+          }
+        },
+        {
+          "x": 6.013117790222168,
+          "y": -0.5,
+          "z": -0.1798166036605835,
+          "name": "TUNNELS",
+          "content": {
+            "title": "",
+            "description": "A network of maintenance tunnels appears to connect Station and the Data Wall, with additional outlets near Ravine and South Relay. Their full extent is unclear, but they are commonly used to move between regions out of sight.",
+            "media": {
+              "url": "https://assets.thecdn.io/1d4069ff-cef1-4ba1-bb0c-d90141fa72a1.mp4",
+              "filename": "1d4069ff-cef1-4ba1-bb0c-d90141fa72a1.mp4",
+              "alt_filename": "Perimeter_subregion_tunnels (1).mp4",
+              "alt": "Perimeter_subregion_tunnels (1).mp4",
+              "width": null,
+              "height": null,
+              "mimeType": "video/mp4"
+            }
+          }
+        },
+        {
+          "x": -1.4469801187515259,
+          "y": -0.5,
+          "z": 8.230380058288574,
+          "name": "RAVINE",
+          "content": {
+            "title": "",
+            "description": "The terrain suggests this area once served as a natural runoff path for wastewater from Station and the Data Wall toward Overflow. A small monitoring structure provides limited cover when crossing the open space between regions.",
+            "media": {
+              "url": "https://assets.thecdn.io/1b1e7cd5-005e-433c-8d9f-e3bc70889d61.mp4",
+              "filename": "1b1e7cd5-005e-433c-8d9f-e3bc70889d61.mp4",
+              "alt_filename": "Perimeter_subregion_ravine (1).mp4",
+              "alt": "Perimeter_subregion_ravine (1).mp4",
+              "width": null,
+              "height": null,
+              "mimeType": "video/mp4"
+            }
+          }
+        },
+        {
+          "x": -3.5688107013702393,
+          "y": -0.5,
+          "z": 18.672388076782227,
+          "name": "COLUMNS",
+          "content": {
+            "title": "",
+            "description": "This area is defined by a dense cluster of tall rock formations. The narrow sightlines and uneven terrain make it difficult to read movement, and threats often emerge with little warning.",
+            "media": {
+              "url": "https://assets.thecdn.io/d25d63b6-09df-4b56-b49d-1579b132eca3.mp4",
+              "filename": "d25d63b6-09df-4b56-b49d-1579b132eca3.mp4",
+              "alt_filename": "Perimeter_subregion_collumns (1).mp4",
+              "alt": "Perimeter_subregion_collumns (1).mp4",
+              "width": null,
+              "height": null,
+              "mimeType": "video/mp4"
+            }
+          }
+        }
+      ],
+      "lore_points": [
+        {
+          "x": -30.55632972717285,
+          "y": 2.929170626142154e-17,
+          "z": 21.36782455444336,
+          "name": "X-RAY DISPLAY",
+          "content": {
+            "title": "",
+            "description": "READ~~~~^%$#~~ FAIL",
+            "media": {
+              "url": "https://assets.thecdn.io/6b31d9a5-fb8c-4111-aef9-0fc094ef1698.mp4",
+              "filename": "6b31d9a5-fb8c-4111-aef9-0fc094ef1698.mp4",
+              "alt_filename": "Perimeter_5 (1).mp4",
+              "alt": "Perimeter_5 (1).mp4",
+              "width": null,
+              "height": null,
+              "mimeType": "video/mp4"
+            }
+          }
+        },
+        {
+          "x": -14.44437026977539,
+          "y": 2.929170295269909e-17,
+          "z": -6.680737495422363,
+          "name": "CRYPTIC GRAFFITI",
+          "content": {
+            "title": "",
+            "description": "INDEX~~~~<>[]~~ LOST",
+            "media": {
+              "url": "https://assets.thecdn.io/6881ddf0-cd77-4be5-b25a-2a91ba0937e3.mp4",
+              "filename": "6881ddf0-cd77-4be5-b25a-2a91ba0937e3.mp4",
+              "alt_filename": "Perimeter_2 (1).mp4",
+              "alt": "Perimeter_2 (1).mp4",
+              "width": null,
+              "height": null,
+              "mimeType": "video/mp4"
+            }
+          }
+        },
+        {
+          "x": -1.0832353830337524,
+          "y": 2.929170295269909e-17,
+          "z": -9.719503402709961,
+          "name": "TICK NEST",
+          "content": {
+            "title": "",
+            "description": "DATA~~~~%$#@~~ BAD",
+            "media": {
+              "url": "https://assets.thecdn.io/8f8abadf-82cf-4c8e-8246-23c54d00b1e7.mp4",
+              "filename": "8f8abadf-82cf-4c8e-8246-23c54d00b1e7.mp4",
+              "alt_filename": "Perimeter_1 (1).mp4",
+              "alt": "Perimeter_1 (1).mp4",
+              "width": null,
+              "height": null,
+              "mimeType": "video/mp4"
+            }
+          }
+        },
+        {
+          "x": 9.287708282470703,
+          "y": -2.929170957014399e-17,
+          "z": 9.327131271362305,
+          "name": "GEOMETRIC GRAFFITI",
+          "content": {
+            "title": "",
+            "description": "SYNC~~~~}{][~~ FAIL",
+            "media": {
+              "url": "https://assets.thecdn.io/7ccc88ab-1609-46fe-bd70-706d0aff0bce.mp4",
+              "filename": "7ccc88ab-1609-46fe-bd70-706d0aff0bce.mp4",
+              "alt_filename": "Perimeter_7 (1).mp4",
+              "alt": "Perimeter_7 (1).mp4",
+              "width": null,
+              "height": null,
+              "mimeType": "video/mp4"
+            }
+          }
+        },
+        {
+          "x": 10.883237838745117,
+          "y": 0,
+          "z": 0.27436578273773193,
+          "name": "Tunnel Root",
+          "content": {
+            "title": "",
+            "description": "HASH~~~~^&*~~ ERR",
+            "media": {
+              "url": "https://assets.thecdn.io/1d25fe60-187a-4fd1-af27-0581c04bf310.mp4",
+              "filename": "1d25fe60-187a-4fd1-af27-0581c04bf310.mp4",
+              "alt_filename": "Perimeter_3 (1).mp4",
+              "alt": "Perimeter_3 (1).mp4",
+              "width": null,
+              "height": null,
+              "mimeType": "video/mp4"
+            }
+          }
+        },
+        {
+          "x": 9.785768508911133,
+          "y": 2.929170626142154e-17,
+          "z": -10.974693298339844,
+          "name": "PLANNING DISPLAY",
+          "content": {
+            "title": "",
+            "description": "-acfd-ef87920a6774",
+            "media": {
+              "url": "https://assets.thecdn.io/c0f91a5e-d767-4a17-a358-8d76ea0a4e28.mp4",
+              "filename": "c0f91a5e-d767-4a17-a358-8d76ea0a4e28.mp4",
+              "alt_filename": "Perimeter_4 (1).mp4",
+              "alt": "Perimeter_4 (1).mp4",
+              "width": null,
+              "height": null,
+              "mimeType": "video/mp4"
+            }
+          }
+        },
+        {
+          "x": -8.322476387023926,
+          "y": 0,
+          "z": -32.28388977050781,
+          "name": "SAR STATION",
+          "content": {
+            "title": "",
+            "description": "MAP~~~~<>[]~~ NULL",
+            "media": {
+              "url": "https://assets.thecdn.io/249fafc7-8f49-48d8-91f2-58130d99ad88.mp4",
+              "filename": "249fafc7-8f49-48d8-91f2-58130d99ad88.mp4",
+              "alt_filename": "Perimeter_6 (1).mp4",
+              "alt": "Perimeter_6 (1).mp4",
+              "width": null,
+              "height": null,
+              "mimeType": "video/mp4"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Dire Marsh",
+      "description": "Located in the colony\u00e2\u0080\u0099s former farming sector. \n\nThe zone contains research, cultivation, and processing facilities tied to food sustainability efforts. Environmental conditions are marshland with limited visibility and broad sightlines. Automated systems show signs of partial operation.\n\nA quarantine operation was initiated here prior to abandonment. The presence of an unidentified anomaly intersects multiple regions of the zone.",
+      "max_crew_count": 6,
+      "thumbnail": {
+        "url": "https://assets.thecdn.io/1c95dea4-7a4e-4d4f-84f7-dc327eba1182.png",
+        "filename": "1c95dea4-7a4e-4d4f-84f7-dc327eba1182.png",
+        "alt_filename": ".",
+        "alt": ".",
+        "width": 398,
+        "height": 296,
+        "mimeType": "image/png"
+      },
+      "loading_screen_landscape": {
+        "url": "https://assets.thecdn.io/25a742a8-36e7-46f2-9065-fc0d4d05e109.webm",
+        "filename": "25a742a8-36e7-46f2-9065-fc0d4d05e109.webm",
+        "alt_filename": ".",
+        "alt": ".",
+        "width": null,
+        "height": null,
+        "mimeType": "video/webm"
+      },
+      "loading_screen_portrait": {
+        "url": "https://assets.thecdn.io/6e2be7a8-2d9e-477b-af37-a3ef800b756c.webm",
+        "filename": "6e2be7a8-2d9e-477b-af37-a3ef800b756c.webm",
+        "alt_filename": ".",
+        "alt": ".",
+        "width": null,
+        "height": null,
+        "mimeType": "video/webm"
+      },
+      "environment": {
+        "line_geometry": {
+          "url": "https://assets.thecdn.io/8a7afd32-1c1e-4e9e-8649-80a1415d08ba.chunks",
+          "filename": "8a7afd32-1c1e-4e9e-8649-80a1415d08ba.chunks",
+          "alt_filename": "direMarsh_prod_v001_direMarsh_sliced.chunks",
+          "alt": "direMarsh_prod_v001_direMarsh_sliced.chunks",
+          "width": null,
+          "height": null,
+          "mimeType": "application/octet-stream"
+        },
+        "floor_texture": {
+          "url": "https://assets.thecdn.io/2e3c1753-fa36-4cd5-a860-5bb14a3fa3e8.png",
+          "filename": "2e3c1753-fa36-4cd5-a860-5bb14a3fa3e8.png",
+          "alt_filename": "tciv_floor.png",
+          "alt": "Tau Ceti Explorer floor texture",
+          "width": 1024,
+          "height": 1025,
+          "mimeType": "image/png"
+        },
+        "hotzones": {
+          "url": "https://assets.thecdn.io/0d31d6e9-bd87-4ef0-a29d-6c81e375a2f4.chunks",
+          "filename": "0d31d6e9-bd87-4ef0-a29d-6c81e375a2f4.chunks",
+          "alt_filename": "direMarsh_prod_v001_hotzones.chunks",
+          "alt": "direMarsh_prod_v001_hotzones.chunks",
+          "width": null,
+          "height": null,
+          "mimeType": "application/octet-stream"
+        }
+      },
+      "runner_paths": {
+        "url": "https://assets.thecdn.io/a35b1412-621f-432e-a103-c32a7ad5ceaa.json",
+        "filename": "a35b1412-621f-432e-a103-c32a7ad5ceaa.json",
+        "alt_filename": "direMarsh_prod_v001_RNR_paths.json",
+        "alt": "direMarsh_prod_v001_RNR_paths.json",
+        "width": null,
+        "height": null,
+        "mimeType": "application/json"
+      },
+      "uesc_troop_paths": {
+        "url": "https://assets.thecdn.io/034dfe95-a822-45de-a847-dd36500cee3c.json",
+        "filename": "034dfe95-a822-45de-a847-dd36500cee3c.json",
+        "alt_filename": "direMarsh_prod_v001_UESC_paths.json",
+        "alt": "direMarsh_prod_v001_UESC_paths.json",
+        "width": null,
+        "height": null,
+        "mimeType": "application/json"
+      },
+      "exfils": [
+        {
+          "x": -34.3995361328125,
+          "y": -0.05023549497127533,
+          "z": 10.86752700805664
+        },
+        {
+          "x": -20.109729766845703,
+          "y": -0.05023549497127533,
+          "z": -7.956722259521484
+        },
+        {
+          "x": -13.370361328125,
+          "y": -0.05023549497127533,
+          "z": -10.057802200317383
+        },
+        {
+          "x": 2.571369171142578,
+          "y": -0.05023549497127533,
+          "z": -18.934904098510742
+        },
+        {
+          "x": 17.4375,
+          "y": -0.05023549497127533,
+          "z": -7.12129020690918
+        },
+        {
+          "x": 9.905181884765625,
+          "y": -0.05023549497127533,
+          "z": -2.5623464584350586
+        },
+        {
+          "x": 11.29718017578125,
+          "y": -0.05023549497127533,
+          "z": 9.330524444580078
+        },
+        {
+          "x": 10.187355041503906,
+          "y": -0.05023549497127533,
+          "z": 18.204524993896484
+        },
+        {
+          "x": -1.7848587036132812,
+          "y": -0.05023549497127533,
+          "z": 20.87252426147461
+        },
+        {
+          "x": -8.778358459472656,
+          "y": -0.05023549497127533,
+          "z": 18.204524993896484
+        },
+        {
+          "x": -18.21340560913086,
+          "y": -0.05023549497127533,
+          "z": 10.66452407836914
+        },
+        {
+          "x": -31.236448287963867,
+          "y": -0.05023549497127533,
+          "z": 21.4632568359375
+        },
+        {
+          "x": -43.01039123535156,
+          "y": -0.05023549497127533,
+          "z": 4.7340240478515625
+        }
+      ],
+      "runner_spawn_points": [
+        {
+          "x": 28.650222778320312,
+          "y": -0.05023549497127533,
+          "z": -17.7637939453125
+        },
+        {
+          "x": 13.5885009765625,
+          "y": -0.05023549497127533,
+          "z": -29.45461654663086
+        },
+        {
+          "x": 7.732963562011719,
+          "y": -0.05023549497127533,
+          "z": -12.359498977661133
+        },
+        {
+          "x": 10.519134521484375,
+          "y": -0.05023549497127533,
+          "z": -18.111793518066406
+        },
+        {
+          "x": -2.5133132934570312,
+          "y": -0.05023549497127533,
+          "z": -20.905363082885742
+        },
+        {
+          "x": -9.74881362915039,
+          "y": -0.05023549497127533,
+          "z": -15.621737480163574
+        },
+        {
+          "x": -41.10238265991211,
+          "y": -0.05023549497127533,
+          "z": 25.41546630859375
+        },
+        {
+          "x": -47.67904281616211,
+          "y": -0.05023549497127533,
+          "z": 10.973466873168945
+        },
+        {
+          "x": -39.597110748291016,
+          "y": -0.05023549497127533,
+          "z": 14.192462921142578
+        },
+        {
+          "x": -29.222867965698242,
+          "y": -0.05023549497127533,
+          "z": 14.859468460083008
+        },
+        {
+          "x": -32.736507415771484,
+          "y": -0.05023549497127533,
+          "z": 24.311870574951172
+        },
+        {
+          "x": -20.841867446899414,
+          "y": -0.05023549497127533,
+          "z": 30.145076751708984
+        },
+        {
+          "x": -26.25081443786621,
+          "y": -0.05023549497127533,
+          "z": 32.58759307861328
+        },
+        {
+          "x": -15.881736755371094,
+          "y": -0.05023549497127533,
+          "z": 25.444461822509766
+        },
+        {
+          "x": -7.600639343261719,
+          "y": -0.05023549497127533,
+          "z": 17.51296615600586
+        },
+        {
+          "x": 16.358428955078125,
+          "y": -0.05023549497127533,
+          "z": 17.8609619140625
+        },
+        {
+          "x": 8.196964263916016,
+          "y": -0.05023549497127533,
+          "z": 17.324462890625
+        },
+        {
+          "x": 0.4649810791015625,
+          "y": -0.05023549497127533,
+          "z": 23.166370391845703
+        },
+        {
+          "x": 17.285995483398438,
+          "y": -0.05023549497127533,
+          "z": -2.0420522689819336
+        },
+        {
+          "x": 24.39331817626953,
+          "y": -0.05023549497127533,
+          "z": -4.371549606323242
+        },
+        {
+          "x": 20.949569702148438,
+          "y": -0.05023549497127533,
+          "z": 9.009439468383789
+        },
+        {
+          "x": 12.038299560546875,
+          "y": -0.05023549497127533,
+          "z": 7.240440368652344
+        },
+        {
+          "x": -4.5595550537109375,
+          "y": -0.05023549497127533,
+          "z": 10.16146469116211
+        },
+        {
+          "x": -3.1808929443359375,
+          "y": -0.05023549497127533,
+          "z": 5.819440841674805
+        },
+        {
+          "x": -7.137218475341797,
+          "y": -0.05023549497127533,
+          "z": -0.11990165710449219
+        },
+        {
+          "x": -10.212818145751953,
+          "y": -0.05023549497127533,
+          "z": -7.862004280090332
+        },
+        {
+          "x": -15.881736755371094,
+          "y": -0.05023549497127533,
+          "z": -6.09300422668457
+        },
+        {
+          "x": -19.469280242919922,
+          "y": -0.05023549497127533,
+          "z": 2.7664661407470703
+        }
+      ],
+      "regions": [
+        {
+          "x": 11.824483871459961,
+          "y": 1.1457953453063965,
+          "z": -16.151859283447266,
+          "name": "BIO RESEARCH",
+          "content": {
+            "title": "",
+            "description": "Equipment and lab layouts indicate active study of Tau Ceti IV plant life for pharmaceutical applications. Safety infrastructure suggests high\u00e2\u0080\u0091risk experimentation.",
+            "media": {
+              "url": "https://assets.thecdn.io/ec71c1e1-a8de-4c9e-a82f-1b3076f7c656.mp4",
+              "filename": "ec71c1e1-a8de-4c9e-a82f-1b3076f7c656.mp4",
+              "alt_filename": "Bio-research (1).mp4",
+              "alt": "Bio-research (1).mp4",
+              "width": null,
+              "height": null,
+              "mimeType": "video/mp4"
+            }
+          },
+          "materials": []
+        },
+        {
+          "x": -17.414329528808594,
+          "y": 1.1457958221435547,
+          "z": 6.349887371063232,
+          "name": "ALGAE PONDS",
+          "content": {
+            "title": "",
+            "description": "The region features shallow growth pools and research stations that focus on protein alternatives using native organisms. Elevated structures provide clear views across adjacent areas.",
+            "media": {
+              "url": "https://assets.thecdn.io/23a0560e-6d14-4cda-bde8-51c803dda263.mp4",
+              "filename": "23a0560e-6d14-4cda-bde8-51c803dda263.mp4",
+              "alt_filename": "Algae pond (1).mp4",
+              "alt": "Algae pond (1).mp4",
+              "width": null,
+              "height": null,
+              "mimeType": "video/mp4"
+            }
+          },
+          "materials": []
+        },
+        {
+          "x": -48.850685119628906,
+          "y": 0.3666095733642578,
+          "z": 18.16494369506836,
+          "name": "QUARANTINE",
+          "content": {
+            "title": "",
+            "description": "An emergency contagion control site deployed to the zone\u00e2\u0080\u0099s western edge to contain some level of unidentified threat using isolation units and outbreak protocols. ",
+            "media": {
+              "url": "https://assets.thecdn.io/208fb731-e487-4dad-9e71-18c1b8f00100.mp4",
+              "filename": "208fb731-e487-4dad-9e71-18c1b8f00100.mp4",
+              "alt_filename": "Quarantine (1).mp4",
+              "alt": "Quarantine (1).mp4",
+              "width": null,
+              "height": null,
+              "mimeType": "video/mp4"
+            }
+          },
+          "materials": []
+        },
+        {
+          "x": -32.295570373535156,
+          "y": 0.3666095733642578,
+          "z": 20.839475631713867,
+          "name": "MAINTENANCE",
+          "content": {
+            "title": "",
+            "description": "This maintenance facility supported the heavy equipment used to seed and harvest the growfields beyond the zone. Its structures appear intact but inactive.",
+            "media": {
+              "url": "https://assets.thecdn.io/846d5eb2-488f-4b7e-8e7a-60a823d77aba.mp4",
+              "filename": "846d5eb2-488f-4b7e-8e7a-60a823d77aba.mp4",
+              "alt_filename": "Field Maintenance (1).mp4",
+              "alt": "Field Maintenance (1).mp4",
+              "width": null,
+              "height": null,
+              "mimeType": "video/mp4"
+            }
+          },
+          "materials": []
+        },
+        {
+          "x": -2.8327674865722656,
+          "y": 0.20801973342895508,
+          "z": 26.02719497680664,
+          "name": "AI UPLINK",
+          "content": {
+            "title": "",
+            "description": "When its systems were functional, AI UPLINK connected the local support intelligence to the wider colony network and the Marathon ship. ",
+            "media": {
+              "url": "https://assets.thecdn.io/8ebb7a05-702b-4e2f-bb05-337004567bd5.mp4",
+              "filename": "8ebb7a05-702b-4e2f-bb05-337004567bd5.mp4",
+              "alt_filename": "AI uplink (1).mp4",
+              "alt": "AI uplink (1).mp4",
+              "width": null,
+              "height": null,
+              "mimeType": "video/mp4"
+            }
+          },
+          "materials": []
+        },
+        {
+          "x": -9.484853744506836,
+          "y": 1.2150883674621582,
+          "z": -8.220332145690918,
+          "name": "GREENHOUSE",
+          "content": {
+            "title": "",
+            "description": "The region appears dedicated to seed development, controlled plant growth, and bio-manipulated produce. Systems are automated and remain partially active.",
+            "media": {
+              "url": "https://assets.thecdn.io/b470838e-3aab-48fa-8397-5283542afbc4.mp4",
+              "filename": "b470838e-3aab-48fa-8397-5283542afbc4.mp4",
+              "alt_filename": "Greenhouse storm (1).mp4",
+              "alt": "Greenhouse storm (1).mp4",
+              "width": null,
+              "height": null,
+              "mimeType": "video/mp4"
+            }
+          },
+          "materials": []
+        },
+        {
+          "x": 20.33428192138672,
+          "y": 0.09999942779541016,
+          "z": 3.6539602279663086,
+          "name": "COMPLEX",
+          "content": {
+            "title": "",
+            "description": "Appears to have served as the central command structure for this zone\u00e2\u0080\u0099s agricultural operations. Upper levels are sealed. Ground\u00e2\u0080\u0091level access points and a landing pad indicate outbound transport activity at some point.",
+            "media": {
+              "url": "https://assets.thecdn.io/61d899c4-3fd2-467f-b70d-3748c2280bd6.mp4",
+              "filename": "61d899c4-3fd2-467f-b70d-3748c2280bd6.mp4",
+              "alt_filename": "Complex (1).mp4",
+              "alt": "Complex (1).mp4",
+              "width": null,
+              "height": null,
+              "mimeType": "video/mp4"
+            }
+          },
+          "materials": []
+        }
+      ],
+      "uesc_troops": [
+        {
+          "x": -27.37748146057129,
+          "y": -0.05023549497127533,
+          "z": 28.146652221679688,
+          "name": "Recruit,Assault,Grenadier,Ghost,Scout",
+          "count": 4,
+          "health": 1
+        },
+        {
+          "x": -23.781482696533203,
+          "y": -0.05023549497127533,
+          "z": 21.621654510498047,
+          "name": "Recruit,Assault,Grenadier,Ghost,Scout",
+          "count": 4,
+          "health": 1
+        },
+        {
+          "x": -6.816524505615234,
+          "y": -0.05023549497127533,
+          "z": 20.28765106201172,
+          "name": "Recruit,Assault,Grenadier,Ghost,Scout",
+          "count": 4,
+          "health": 1
+        },
+        {
+          "x": 5.3924713134765625,
+          "y": -0.05023549497127533,
+          "z": 19.765655517578125,
+          "name": "Recruit,Assault,Grenadier,Ghost,Scout",
+          "count": 4,
+          "health": 1
+        },
+        {
+          "x": 21.71947479248047,
+          "y": -0.05023549497127533,
+          "z": 12.167581558227539,
+          "name": "Recruit,Assault,Grenadier,Ghost,Scout",
+          "count": 4,
+          "health": 1
+        },
+        {
+          "x": 10.728473663330078,
+          "y": -0.05023549497127533,
+          "z": 1.8145790100097656,
+          "name": "Recruit,Assault,Grenadier,Ghost,Scout",
+          "count": 4,
+          "health": 1
+        },
+        {
+          "x": 19.341476440429688,
+          "y": -0.05023549497127533,
+          "z": -3.6084213256835938,
+          "name": "Recruit,Assault,Grenadier,Ghost,Scout",
+          "count": 4,
+          "health": 1
+        },
+        {
+          "x": 10.699478149414062,
+          "y": -0.05023549497127533,
+          "z": -14.715413093566895,
+          "name": "Recruit,Assault,Grenadier,Ghost,Scout",
+          "count": 4,
+          "health": 1
+        },
+        {
+          "x": 5.508476257324219,
+          "y": -0.05023549497127533,
+          "z": -11.380420684814453,
+          "name": "Recruit,Assault,Grenadier,Ghost,Scout",
+          "count": 4,
+          "health": 1
+        },
+        {
+          "x": -15.284481048583984,
+          "y": -0.05023549497127533,
+          "z": -9.930420875549316,
+          "name": "Recruit,Assault,Grenadier,Ghost,Scout",
+          "count": 4,
+          "health": 1
+        },
+        {
+          "x": -4.438526153564453,
+          "y": -0.05023549497127533,
+          "z": -5.406421661376953,
+          "name": "Recruit,Assault,Grenadier,Ghost,Scout",
+          "count": 4,
+          "health": 1
+        },
+        {
+          "x": -13.341480255126953,
+          "y": -0.05023549497127533,
+          "z": 7.121578216552734,
+          "name": "Recruit,Assault,Grenadier,Ghost,Scout",
+          "count": 4,
+          "health": 1
+        },
+        {
+          "x": -20.12748146057129,
+          "y": -0.05023549497127533,
+          "z": 4.917577743530273,
+          "name": "Recruit,Assault,Grenadier,Ghost,Scout",
+          "count": 4,
+          "health": 1
+        },
+        {
+          "x": -39.354469299316406,
+          "y": -0.05023549497127533,
+          "z": 20.519649505615234,
+          "name": "Recruit,Assault,Grenadier,Ghost,Scout",
+          "count": 4,
+          "health": 1
+        },
+        {
+          "x": -39.325469970703125,
+          "y": -0.05023549497127533,
+          "z": 8.223579406738281,
+          "name": "Recruit,Assault,Grenadier,Ghost,Scout",
+          "count": 4,
+          "health": 1
+        },
+        {
+          "x": -23.559175491333008,
+          "y": 0,
+          "z": 11.970258712768555,
+          "name": "Scorch Warden",
+          "count": 1,
+          "health": 1
+        }
+      ],
+      "landmarks": [
+        {
+          "x": -14.676803588867188,
+          "y": 0.3799999952316284,
+          "z": 20.678712844848633,
+          "name": "CANAL",
+          "content": {
+            "title": "",
+            "description": "This monitoring station appears to have regulated water flow when Dire Marsh was active. Its placement suggests it played a role in maintaining reserves for seeding and harvesting operations.",
+            "media": {
+              "url": "https://assets.thecdn.io/361941e9-9a09-440f-888d-e17265fb55c7.mp4",
+              "filename": "361941e9-9a09-440f-888d-e17265fb55c7.mp4",
+              "alt_filename": "DM_subregion_canal (1).mp4",
+              "alt": "DM_subregion_canal (1).mp4",
+              "width": null,
+              "height": null,
+              "mimeType": "video/mp4"
+            }
+          }
+        },
+        {
+          "x": -22.177337646484375,
+          "y": 0.3799999952316284,
+          "z": 0.39536380767822266,
+          "name": "INTERSECTION",
+          "content": {
+            "title": "",
+            "description": "This checkpoint was likely used to control all traffic entering and leaving Dire Marsh\u00e2\u0080\u0099s core facilities. Structural differences suggest it may have been added later, possibly in response to security concerns.",
+            "media": {
+              "url": "https://assets.thecdn.io/e594a8d3-723b-4bc2-bee4-28d7280d338a.mp4",
+              "filename": "e594a8d3-723b-4bc2-bee4-28d7280d338a.mp4",
+              "alt_filename": "DM_subregion_intersection (1).mp4",
+              "alt": "DM_subregion_intersection (1).mp4",
+              "width": null,
+              "height": null,
+              "mimeType": "video/mp4"
+            }
+          }
+        },
+        {
+          "x": 5.898865699768066,
+          "y": 0.3799999952316284,
+          "z": 11.750190734863281,
+          "name": "ANOMALY",
+          "content": {
+            "title": "",
+            "description": "An unidentified energy pattern has cut through Dire Marsh, leaving a visible distortion across the terrain. Its origin and behavior remain unknown, and its presence has drawn increasing attention from both Runners and the UESC.",
+            "media": {
+              "url": "https://assets.thecdn.io/b15c4391-cc98-4692-b49d-3327eb18b5b9.mp4",
+              "filename": "b15c4391-cc98-4692-b49d-3327eb18b5b9.mp4",
+              "alt_filename": "DM_subregion_anomaly (1).mp4",
+              "alt": "DM_subregion_anomaly (1).mp4",
+              "width": null,
+              "height": null,
+              "mimeType": "video/mp4"
+            }
+          }
+        },
+        {
+          "x": 33.60608673095703,
+          "y": 0.3799999952316284,
+          "z": 0.17615652084350586,
+          "name": "EAST GATE",
+          "content": {
+            "title": "",
+            "description": "This checkpoint is severely damaged and completely offline. When functional, it likely served as the primary exit for shipments moving out to other colony locations.",
+            "media": {
+              "url": "https://assets.thecdn.io/fbb36ee9-b2d3-40e9-bc16-3d7db9a763e3.mp4",
+              "filename": "fbb36ee9-b2d3-40e9-bc16-3d7db9a763e3.mp4",
+              "alt_filename": "DM_subregion_east-gate (1).mp4",
+              "alt": "DM_subregion_east-gate (1).mp4",
+              "width": null,
+              "height": null,
+              "mimeType": "video/mp4"
+            }
+          }
+        },
+        {
+          "x": -50.68501281738281,
+          "y": 0.3799999952316284,
+          "z": 1.84645414352417,
+          "name": "WEST GATE",
+          "content": {
+            "title": "",
+            "description": "The West Gate appears to have functioned as the zone\u00e2\u0080\u0099s primary entry checkpoint. Its layout suggests early screening and resource monitoring before materials were routed deeper into the zone.",
+            "media": {
+              "url": "https://assets.thecdn.io/b6487cae-6b6c-49be-ab36-29026f95e225.mp4",
+              "filename": "b6487cae-6b6c-49be-ab36-29026f95e225.mp4",
+              "alt_filename": "DM_subregion_west-gate (1).mp4",
+              "alt": "DM_subregion_west-gate (1).mp4",
+              "width": null,
+              "height": null,
+              "mimeType": "video/mp4"
+            }
+          }
+        }
+      ],
+      "lore_points": [
+        {
+          "x": -20.018604278564453,
+          "y": 1.0637173652648926,
+          "z": 17.611474990844727,
+          "name": "CLEAN BAY",
+          "content": {
+            "title": "",
+            "description": "3821b9d5-8912-4892",
+            "media": {
+              "url": "https://assets.thecdn.io/04b30538-f1c0-4304-bf2c-ab670a3f63ad.mp4",
+              "filename": "04b30538-f1c0-4304-bf2c-ab670a3f63ad.mp4",
+              "alt_filename": "DM_2 (1).mp4",
+              "alt": "DM_2 (1).mp4",
+              "width": null,
+              "height": null,
+              "mimeType": "video/mp4"
+            }
+          }
+        },
+        {
+          "x": 20.955480575561523,
+          "y": 1.337611198425293,
+          "z": 4.915639400482178,
+          "name": "Speaknoseenohearno",
+          "content": {
+            "title": "",
+            "description": "KEY~~~~%$#@~~ INV",
+            "media": {
+              "url": "https://assets.thecdn.io/fdcb587f-6b47-4940-aea4-20ee00c4a63a.mp4",
+              "filename": "fdcb587f-6b47-4940-aea4-20ee00c4a63a.mp4",
+              "alt_filename": "DM_7 (1).mp4",
+              "alt": "DM_7 (1).mp4",
+              "width": null,
+              "height": null,
+              "mimeType": "video/mp4"
+            }
+          }
+        },
+        {
+          "x": -43.11433792114258,
+          "y": 0.4332771301269531,
+          "z": 21.937393188476562,
+          "name": "Garage",
+          "content": {
+            "title": "",
+            "description": "DATA~~~~%$#@~~ BAD",
+            "media": {
+              "url": "https://assets.thecdn.io/105fa5dc-d426-41f5-95a1-3f3cb4869045.mp4",
+              "filename": "105fa5dc-d426-41f5-95a1-3f3cb4869045.mp4",
+              "alt_filename": "DM_1 (1).mp4",
+              "alt": "DM_1 (1).mp4",
+              "width": null,
+              "height": null,
+              "mimeType": "video/mp4"
+            }
+          }
+        },
+        {
+          "x": -10.771458625793457,
+          "y": 1.452749252319336,
+          "z": -15.803354263305664,
+          "name": "PROTEIN STATIONS",
+          "content": {
+            "title": "",
+            "description": "MAP~~~~<>[]~~ NULL",
+            "media": {
+              "url": "https://assets.thecdn.io/c163a187-66d8-4360-8913-37253a9ada94.mp4",
+              "filename": "c163a187-66d8-4360-8913-37253a9ada94.mp4",
+              "alt_filename": "DM_6 (1).mp4",
+              "alt": "DM_6 (1).mp4",
+              "width": null,
+              "height": null,
+              "mimeType": "video/mp4"
+            }
+          }
+        },
+        {
+          "x": -0.6483595371246338,
+          "y": 0.22023236751556396,
+          "z": 6.153219223022461,
+          "name": "SUSPENDED BIO-MASS",
+          "content": {
+            "title": "",
+            "description": "PTR~~~~}{][~~ BROKE",
+            "media": {
+              "url": "https://assets.thecdn.io/79c67eaa-13f2-4b8f-98a3-fc9af0847549.mp4",
+              "filename": "79c67eaa-13f2-4b8f-98a3-fc9af0847549.mp4",
+              "alt_filename": "DM_4 (1).mp4",
+              "alt": "DM_4 (1).mp4",
+              "width": null,
+              "height": null,
+              "mimeType": "video/mp4"
+            }
+          }
+        },
+        {
+          "x": 11.372086524963379,
+          "y": 0.6478173732757568,
+          "z": -21.021373748779297,
+          "name": "DE-CHEM STALL",
+          "content": {
+            "title": "",
+            "description": "DATA~~~~%$#@~~ BAD",
+            "media": {
+              "url": "https://assets.thecdn.io/b535f0f1-e747-47b8-9b4e-ebb66664d5a9.mp4",
+              "filename": "b535f0f1-e747-47b8-9b4e-ebb66664d5a9.mp4",
+              "alt_filename": "DM_5 (1).mp4",
+              "alt": "DM_5 (1).mp4",
+              "width": null,
+              "height": null,
+              "mimeType": "video/mp4"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Outpost",
+      "description": "Outposts were the tip-of-the-spear for Tau Ceti colonization efforts. \n\nThis zone\u00e2\u0080\u0099s layout points to staging and logistics for planetary expeditions: launch, intake, processing, housing. \n\nEverything that followed started here.",
+      "max_crew_count": 4,
+      "thumbnail": {
+        "url": "https://assets.thecdn.io/6ea27fee-ad22-4880-ab3d-9b26c999de1f.png",
+        "filename": "6ea27fee-ad22-4880-ab3d-9b26c999de1f.png",
+        "alt_filename": "thumbnail_outpost.png",
+        "alt": "thumbnail_outpost.png",
+        "width": 398,
+        "height": 296,
+        "mimeType": "image/png"
+      },
+      "loading_screen_landscape": {
+        "url": "https://assets.thecdn.io/53fb3948-b3b2-488f-bdea-f70d43b6683c.webm",
+        "filename": "53fb3948-b3b2-488f-bdea-f70d43b6683c.webm",
+        "alt_filename": "tciv_loading_landscape.webm",
+        "alt": "tciv_loading_landscape.webm",
+        "width": null,
+        "height": null,
+        "mimeType": "video/webm"
+      },
+      "loading_screen_portrait": {
+        "url": "https://assets.thecdn.io/2d35de1b-66bd-4458-b9fb-3c4fe5460a28.webm",
+        "filename": "2d35de1b-66bd-4458-b9fb-3c4fe5460a28.webm",
+        "alt_filename": "tciv_loading_portrait.webm",
+        "alt": "tciv_loading_portrait.webm",
+        "width": null,
+        "height": null,
+        "mimeType": "video/webm"
+      },
+      "environment": {
+        "line_geometry": {
+          "url": "https://assets.thecdn.io/4a5b068f-2bcc-4c19-ac2c-33f4fadba063.chunks",
+          "filename": "4a5b068f-2bcc-4c19-ac2c-33f4fadba063.chunks",
+          "alt_filename": "Outpost_prod_v002_map.chunks",
+          "alt": "Outpost_prod_v002_map.chunks",
+          "width": null,
+          "height": null,
+          "mimeType": "application/octet-stream"
+        },
+        "floor_texture": {
+          "url": "https://assets.thecdn.io/2e3c1753-fa36-4cd5-a860-5bb14a3fa3e8.png",
+          "filename": "2e3c1753-fa36-4cd5-a860-5bb14a3fa3e8.png",
+          "alt_filename": "tciv_floor.png",
+          "alt": "Tau Ceti Explorer floor texture",
+          "width": 1024,
+          "height": 1025,
+          "mimeType": "image/png"
+        },
+        "hotzones": {
+          "url": "https://assets.thecdn.io/2ff06804-e4d9-44d1-a56d-d68890fa09f0.chunks",
+          "filename": "2ff06804-e4d9-44d1-a56d-d68890fa09f0.chunks",
+          "alt_filename": "Outpost_prod_v002_hotzones.chunks",
+          "alt": "Outpost_prod_v002_hotzones.chunks",
+          "width": null,
+          "height": null,
+          "mimeType": "application/octet-stream"
+        }
+      },
+      "runner_paths": {
+        "url": "https://assets.thecdn.io/b6781a0e-b441-4098-bcf1-de44ebfd5d6a.json",
+        "filename": "b6781a0e-b441-4098-bcf1-de44ebfd5d6a.json",
+        "alt_filename": "Outpost_prod_v002_RNR_paths.json",
+        "alt": "Outpost_prod_v002_RNR_paths.json",
+        "width": null,
+        "height": null,
+        "mimeType": "application/json"
+      },
+      "uesc_troop_paths": {
+        "url": "https://assets.thecdn.io/4464168b-dc3b-411c-8276-fe487c28484d.json",
+        "filename": "4464168b-dc3b-411c-8276-fe487c28484d.json",
+        "alt_filename": "Outpost_prod_v002_UESC_paths.json",
+        "alt": "Outpost_prod_v002_UESC_paths.json",
+        "width": null,
+        "height": null,
+        "mimeType": "application/json"
+      },
+      "exfils": [
+        {
+          "x": -7.719453811645508,
+          "y": -2.477099895477295,
+          "z": -9.454753875732422
+        },
+        {
+          "x": 0.6445236206054688,
+          "y": -2.477099895477295,
+          "z": -5.77425479888916
+        },
+        {
+          "x": 1.9365196228027344,
+          "y": -2.477099895477295,
+          "z": 7.222246170043945
+        },
+        {
+          "x": -11.170480728149414,
+          "y": -2.477099895477295,
+          "z": 16.538246154785156
+        },
+        {
+          "x": -12.34347915649414,
+          "y": -2.477099895477295,
+          "z": 2.1222457885742188
+        },
+        {
+          "x": -6.6824798583984375,
+          "y": -2.477099895477295,
+          "z": -2.994753837585449
+        },
+        {
+          "x": -21.47247886657715,
+          "y": -2.477099895477295,
+          "z": -3.1817541122436523
+        },
+        {
+          "x": -24.294479370117188,
+          "y": -2.477099895477295,
+          "z": 6.202245712280273
+        },
+        {
+          "x": -21.47247886657715,
+          "y": -2.477099895477295,
+          "z": 11.540245056152344
+        },
+        {
+          "x": -14.68947982788086,
+          "y": -2.477099895477295,
+          "z": 7.222246170043945
+        },
+        {
+          "x": -3.7584800720214844,
+          "y": -2.477099895477295,
+          "z": 4.315244674682617
+        },
+        {
+          "x": -14.68947982788086,
+          "y": -2.477099895477295,
+          "z": -4.286754608154297
+        },
+        {
+          "x": -16.763479232788086,
+          "y": -2.477099895477295,
+          "z": -15.931754112243652
+        }
+      ],
+      "runner_spawn_points": [
+        {
+          "x": -20.9145565032959,
+          "y": -2.477099895477295,
+          "z": -10.791146278381348
+        },
+        {
+          "x": -21.186555862426758,
+          "y": -2.477099895477295,
+          "z": 1.499887466430664
+        },
+        {
+          "x": -23.22655487060547,
+          "y": -2.477099895477295,
+          "z": 13.501888275146484
+        },
+        {
+          "x": -29.65255355834961,
+          "y": -2.477099895477295,
+          "z": 3.2848873138427734
+        },
+        {
+          "x": -10.37457275390625,
+          "y": -2.477099895477295,
+          "z": 7.585887908935547
+        },
+        {
+          "x": 1.4404296875,
+          "y": -2.477099895477295,
+          "z": 7.891887664794922
+        },
+        {
+          "x": 3.004425048828125,
+          "y": -2.477099895477295,
+          "z": 0.9728889465332031
+        },
+        {
+          "x": -16.17155647277832,
+          "y": -2.477099895477295,
+          "z": -3.906147003173828
+        },
+        {
+          "x": -10.918571472167969,
+          "y": -2.477099895477295,
+          "z": -0.9141473770141602
+        },
+        {
+          "x": -20.676555633544922,
+          "y": -2.477099895477295,
+          "z": -3.600147247314453
+        },
+        {
+          "x": -18.602554321289062,
+          "y": -2.477099895477295,
+          "z": -16.860143661499023
+        },
+        {
+          "x": -13.621556282043457,
+          "y": -2.477099895477295,
+          "z": -14.99014663696289
+        },
+        {
+          "x": -4.798572540283203,
+          "y": -2.477099895477295,
+          "z": -5.215147018432617
+        },
+        {
+          "x": -6.923572540283203,
+          "y": -2.477099895477295,
+          "z": -10.587146759033203
+        },
+        {
+          "x": 1.4404296875,
+          "y": -2.477099895477295,
+          "z": -5.215147018432617
+        },
+        {
+          "x": -1.177572250366211,
+          "y": -2.477099895477295,
+          "z": -1.1691465377807617
+        },
+        {
+          "x": -5.257572174072266,
+          "y": -2.477099895477295,
+          "z": 8.095888137817383
+        },
+        {
+          "x": -19.809555053710938,
+          "y": -2.477099895477295,
+          "z": 7.381889343261719
+        },
+        {
+          "x": -11.156574249267578,
+          "y": -2.477099895477295,
+          "z": 17.479888916015625
+        }
+      ],
+      "regions": [
+        {
+          "x": -18.25735092163086,
+          "y": -3.0561423301696777,
+          "z": 8.978214263916016,
+          "name": "PROCESSING",
+          "content": {
+            "title": "",
+            "description": "Sample intake and resourcing from planetary expeditions. Returning drones, rovers, and dropcraft passed through this region.",
+            "media": {
+              "url": "https://assets.thecdn.io/a99ce11c-525a-423c-9f11-894d8dbb04de.mp4",
+              "filename": "a99ce11c-525a-423c-9f11-894d8dbb04de.mp4",
+              "alt_filename": "processing.mp4",
+              "alt": "Processing Content",
+              "width": null,
+              "height": null,
+              "mimeType": "video/mp4"
+            }
+          },
+          "materials": []
+        },
+        {
+          "x": -10.927913665771484,
+          "y": -3.0561420917510986,
+          "z": 3.6120190620422363,
+          "name": "PINWHEEL BASE",
+          "content": {
+            "title": "",
+            "description": "The pinwheel is Outpost\u00e2\u0080\u0099s central structure. Its three distinct wings are command, drone control, and fabrication, which has suffered significant damage.",
+            "media": {
+              "url": "https://assets.thecdn.io/a4daaec3-69db-4d5d-b84f-59bbbe267ae6.mp4",
+              "filename": "a4daaec3-69db-4d5d-b84f-59bbbe267ae6.mp4",
+              "alt_filename": "outpost-pinwheel-exterior.mp4",
+              "alt": "Pinwheel",
+              "width": null,
+              "height": null,
+              "mimeType": "video/mp4"
+            }
+          },
+          "materials": []
+        },
+        {
+          "x": 1.463663101196289,
+          "y": -3.0561418533325195,
+          "z": 1.3433842658996582,
+          "name": "DORMITORIES",
+          "content": {
+            "title": "",
+            "description": "Tight living blocks and interior corridors with limited exits. Reports of UESC activity here are frequent enough to take seriously.",
+            "media": {
+              "url": "https://assets.thecdn.io/0040a906-9de8-44d5-90f0-678264f65620.mp4",
+              "filename": "0040a906-9de8-44d5-90f0-678264f65620.mp4",
+              "alt_filename": "outpost-dormitories.mp4",
+              "alt": "Dormitories",
+              "width": null,
+              "height": null,
+              "mimeType": "video/mp4"
+            }
+          },
+          "materials": []
+        },
+        {
+          "x": -7.043718338012695,
+          "y": -3.0561418533325195,
+          "z": -6.106958389282227,
+          "name": "ORIENTATION",
+          "content": {
+            "title": "",
+            "description": "This is where early colonists were welcomed to Tau Ceti IV. Its spaces were designed to brief and condition new arrivals, preparing them for life in an alien solar system.",
+            "media": {
+              "url": "https://assets.thecdn.io/3b18f74c-1f9c-4373-a86f-3e22236243bb.mp4",
+              "filename": "3b18f74c-1f9c-4373-a86f-3e22236243bb.mp4",
+              "alt_filename": "Orientation.mp4",
+              "alt": "Orientation Content",
+              "width": null,
+              "height": null,
+              "mimeType": "video/mp4"
+            }
+          },
+          "materials": []
+        },
+        {
+          "x": -16.360593795776367,
+          "y": -3.0561418533325195,
+          "z": -3.182234764099121,
+          "name": "FLIGHT CONTROL",
+          "content": {
+            "title": "",
+            "description": "Flight Control appears to have managed inbound and outbound traffic for Outpost operations. Records and layout suggest coordination of exploration flights and early planetary surveillance missions.",
+            "media": {
+              "url": "https://assets.thecdn.io/0acdcbc2-c47f-4eb8-847e-68eb2661ef9c.mp4",
+              "filename": "0acdcbc2-c47f-4eb8-847e-68eb2661ef9c.mp4",
+              "alt_filename": "Outpost_subregion_flight_control.mp4",
+              "alt": "Flight Control",
+              "width": null,
+              "height": null,
+              "mimeType": "video/mp4"
+            }
+          },
+          "materials": []
+        },
+        {
+          "x": -16.692686080932617,
+          "y": -3.0561423301696777,
+          "z": -10.7421236038208,
+          "name": "AIRFIELD",
+          "content": {
+            "title": "",
+            "description": "Landing and service for dropcraft and support vehicles. Facilities include loading deck, maintenance bay, and vertical landing slots for rapid deployment.",
+            "media": {
+              "url": "https://assets.thecdn.io/f2e9fd0a-5cd6-4085-be8b-fba02588a2ab.mp4",
+              "filename": "f2e9fd0a-5cd6-4085-be8b-fba02588a2ab.mp4",
+              "alt_filename": "outpost-airfield-exterior.mp4",
+              "alt": "Airfield Content",
+              "width": null,
+              "height": null,
+              "mimeType": "video/mp4"
+            }
+          },
+          "materials": []
+        }
+      ],
+      "uesc_troops": [
+        {
+          "x": -5.153307914733887,
+          "y": -2.47982120513916,
+          "z": 12.573585510253906,
+          "name": "Recruit,Assault,Ghost,Grenadier,Scout",
+          "count": 4,
+          "health": 1
+        },
+        {
+          "x": -16.016300201416016,
+          "y": -2.47982120513916,
+          "z": 7.760683059692383,
+          "name": "Recruit,Assault,Ghost,Grenadier,Scout",
+          "count": 4,
+          "health": 1
+        },
+        {
+          "x": 0.031668663024902344,
+          "y": -2.47982120513916,
+          "z": 3.3576745986938477,
+          "name": "Recruit,Assault,Ghost,Grenadier,Scout",
+          "count": 4,
+          "health": 1
+        },
+        {
+          "x": -6.56430721282959,
+          "y": -2.47982120513916,
+          "z": -5.584325790405273,
+          "name": "Recruit,Assault,Ghost,Grenadier,Scout",
+          "count": 4,
+          "health": 1
+        },
+        {
+          "x": -16.951297760009766,
+          "y": -2.47982120513916,
+          "z": -8.91632080078125,
+          "name": "Recruit,Assault,Ghost,Grenadier,Scout",
+          "count": 4,
+          "health": 1
+        },
+        {
+          "x": -16.32229995727539,
+          "y": -2.47982120513916,
+          "z": -1.793325424194336,
+          "name": "Recruit,Assault,Ghost,Grenadier,Scout",
+          "count": 4,
+          "health": 1
+        },
+        {
+          "x": 2.36995267868042,
+          "y": -2.4768295288085938,
+          "z": 0.3188619613647461,
+          "name": "Tox Warden",
+          "count": 1,
+          "health": 1
+        }
+      ],
+      "landmarks": [
+        {
+          "x": -6.316125869750977,
+          "y": 0,
+          "z": 10.7427978515625,
+          "name": "Command Wing",
+          "content": {
+            "title": "",
+            "description": "The Command Wing likely served as the operational center for Outpost leadership. Its proximity to other core facilities suggests coordination with both surface teams and command aboard the Marathon.",
+            "media": {
+              "url": "https://assets.thecdn.io/fb4610ef-b9f5-4a2d-a2ac-04f652db3e26.mp4",
+              "filename": "fb4610ef-b9f5-4a2d-a2ac-04f652db3e26.mp4",
+              "alt_filename": "Outpost_subregion_command-wing.mp4",
+              "alt": "Command Wing",
+              "width": null,
+              "height": null,
+              "mimeType": "video/mp4"
+            }
+          }
+        },
+        {
+          "x": -20.52991485595703,
+          "y": 0,
+          "z": 3.488607406616211,
+          "name": "Drone Wing",
+          "content": {
+            "title": "",
+            "description": "The Drone Wing was used to service and deploy planetary surveillance drones. Equipment placement indicates preparation, programming, and launch were all handled from this location.",
+            "media": {
+              "url": "https://assets.thecdn.io/142f441f-bce5-460c-9144-f51401c2a097.mp4",
+              "filename": "142f441f-bce5-460c-9144-f51401c2a097.mp4",
+              "alt_filename": "Outpost_subregion_drone-assembly.mp4",
+              "alt": "Drone Wing",
+              "width": null,
+              "height": null,
+              "mimeType": "video/mp4"
+            }
+          }
+        },
+        {
+          "x": -7.88111686706543,
+          "y": 0,
+          "z": -1.2816110849380493,
+          "name": "Destroyed Wing",
+          "content": {
+            "title": "",
+            "description": "This area is notable for its extensive damage. It is believed to have been the Outpost\u00e2\u0080\u0099s fabrication and maintenance facility, though the cause and timing of its destruction remain unclear.",
+            "media": {
+              "url": "https://assets.thecdn.io/6485254c-2608-44b9-a944-9f0d2627b075.mp4",
+              "filename": "6485254c-2608-44b9-a944-9f0d2627b075.mp4",
+              "alt_filename": "Outpost_subregion_destroyed-wing.mp4",
+              "alt": "Destroyed Wing",
+              "width": null,
+              "height": null,
+              "mimeType": "video/mp4"
+            }
+          }
+        }
+      ],
+      "lore_points": [
+        {
+          "x": -5.567288875579834,
+          "y": -0.2754948139190674,
+          "z": 13.140690803527832,
+          "name": "Green Screen",
+          "content": {
+            "title": "",
+            "description": "MAP~~~~<>[]~~ NULL",
+            "media": {
+              "url": "https://assets.thecdn.io/34a3008e-5fa4-4776-9185-0b7e20829221.mp4",
+              "filename": "34a3008e-5fa4-4776-9185-0b7e20829221.mp4",
+              "alt_filename": "Outpost_5-b.mp4",
+              "alt": "Command Wing",
+              "width": null,
+              "height": null,
+              "mimeType": "video/mp4"
+            }
+          }
+        },
+        {
+          "x": 1.4189670085906982,
+          "y": -1.4113705158233643,
+          "z": 2.658149003982544,
+          "name": "Vending Machines",
+          "content": {
+            "title": "",
+            "description": "PTR~~~~}{][~~ BROKE",
+            "media": {
+              "url": "https://assets.thecdn.io/d56ade3e-ba59-4f2e-86c0-ce041807fb41.mp4",
+              "filename": "d56ade3e-ba59-4f2e-86c0-ce041807fb41.mp4",
+              "alt_filename": "Outpost_7.mp4",
+              "alt": "Dormitories",
+              "width": null,
+              "height": null,
+              "mimeType": "video/mp4"
+            }
+          }
+        },
+        {
+          "x": -5.222733497619629,
+          "y": -1.56681227684021,
+          "z": -5.057255268096924,
+          "name": "Marathon",
+          "content": {
+            "title": "",
+            "description": "READ~~~~^%$#~~ FAIL\n",
+            "media": {
+              "url": "https://assets.thecdn.io/7da47cb2-4b6e-4c34-92d0-8401e5e6f968.mp4",
+              "filename": "7da47cb2-4b6e-4c34-92d0-8401e5e6f968.mp4",
+              "alt_filename": "Outpost_4.mp4",
+              "alt": "Orientation",
+              "width": null,
+              "height": null,
+              "mimeType": "video/mp4"
+            }
+          }
+        },
+        {
+          "x": -19.988239288330078,
+          "y": -2.4269890785217285,
+          "z": -11.481560707092285,
+          "name": "Departure Board",
+          "content": {
+            "title": "",
+            "description": "INDEX~~~~<>[]~~ LOST",
+            "media": {
+              "url": "https://assets.thecdn.io/adbfb9e7-4d4c-42cf-91a6-2bf95d72c917.mp4",
+              "filename": "adbfb9e7-4d4c-42cf-91a6-2bf95d72c917.mp4",
+              "alt_filename": "Outpost_6.mp4",
+              "alt": "Airfield",
+              "width": null,
+              "height": null,
+              "mimeType": "video/mp4"
+            }
+          }
+        },
+        {
+          "x": -21.183887481689453,
+          "y": -0.13790559768676758,
+          "z": 2.9108386039733887,
+          "name": "Pinwheel Whiteboard",
+          "content": {
+            "title": "",
+            "description": "LOG~~~~^%$~~ TRUNC",
+            "media": {
+              "url": "https://assets.thecdn.io/48365a44-1090-4029-b858-f68ae386ddd6.mp4",
+              "filename": "48365a44-1090-4029-b858-f68ae386ddd6.mp4",
+              "alt_filename": "Outpost_2.mp4",
+              "alt": "Drone Wing",
+              "width": null,
+              "height": null,
+              "mimeType": "video/mp4"
+            }
+          }
+        },
+        {
+          "x": -20.579795837402344,
+          "y": -3.200000047683716,
+          "z": 12.399795532226562,
+          "name": "Graffiti Stickers",
+          "content": {
+            "title": "",
+            "description": "REF~~~~^&*~~ LOST",
+            "media": {
+              "url": "https://assets.thecdn.io/87a12fd6-4250-4489-8204-4d91830e91b2.mp4",
+              "filename": "87a12fd6-4250-4489-8204-4d91830e91b2.mp4",
+              "alt_filename": "Outpost_POI_graffiti_stickers.mp4",
+              "alt": "Graffiti Stickers",
+              "width": null,
+              "height": null,
+              "mimeType": "video/mp4"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

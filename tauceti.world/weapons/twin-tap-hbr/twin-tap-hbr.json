@@ -1,0 +1,332 @@
+{
+  "name": "Twin Tap HBR",
+  "sliding_puzzle": null,
+  "cctv": {
+    "cctvItems": [
+      {
+        "id": "698dd371a14d91b852004e19",
+        "name": "N4A7QX9Z_5P6T_NODE.log",
+        "location": "wpn_id_TwinTap_HBR_-44ba-",
+        "file": {
+          "url": "https://assets.thecdn.io/8ca30194-00d8-4cbe-a6c9-1d858e2a0d99.mp4",
+          "filename": "8ca30194-00d8-4cbe-a6c9-1d858e2a0d99.mp4",
+          "alt_filename": "N4A7QX9Z_5P6T_NODE.mp4",
+          "alt": "Twin Tap Content",
+          "width": null,
+          "height": null,
+          "mimeType": "video/mp4"
+        }
+      }
+    ],
+    "cctvLockedFiles": 9
+  },
+  "base_url": "https://goliath-tau-ceti-stage.b-cdn.net/weapons/Twin%20Tap%20HBR-2026-02-16_10%3A18",
+  "id": "26",
+  "weapon_name": "Twin Tap HBR",
+  "model_path": "models/v004_Burst_heavy_01_default.glb",
+  "materials": [
+    "hs_decal_solidMaterial",
+    "a_frame_shader.001",
+    "doubleshot_default_shader"
+  ],
+  "sticker_material_name": "Material",
+  "charm_pivot_name": "Charm_pivot",
+  "skins": [
+    {
+      "name": "Utilitarian Basic",
+      "is_default": true,
+      "is_model_changed": false,
+      "model_path": null,
+      "textures": [
+        {
+          "name": "a_frame_shader.001_map",
+          "material_name": "a_frame_shader.001",
+          "type": "map",
+          "image": "textures/Utilitarian Basic/a_frame_shader.001_map.webp"
+        },
+        {
+          "name": "a_frame_shader.001_normalMap",
+          "material_name": "a_frame_shader.001",
+          "type": "normalMap",
+          "image": "textures/Utilitarian Basic/a_frame_shader.001_normalMap.webp"
+        },
+        {
+          "name": "a_frame_shader.001_roughnessMap",
+          "material_name": "a_frame_shader.001",
+          "type": "roughnessMap",
+          "image": "textures/Utilitarian Basic/a_frame_shader.001_roughnessMap.webp"
+        },
+        {
+          "name": "a_frame_shader.001_metalnessMap",
+          "material_name": "a_frame_shader.001",
+          "type": "metalnessMap",
+          "image": "textures/Utilitarian Basic/a_frame_shader.001_metalnessMap.webp"
+        },
+        {
+          "name": "doubleshot_default_shader_map",
+          "material_name": "doubleshot_default_shader",
+          "type": "map",
+          "image": "textures/Utilitarian Basic/doubleshot_default_shader_map.webp"
+        },
+        {
+          "name": "doubleshot_default_shader_normalMap",
+          "material_name": "doubleshot_default_shader",
+          "type": "normalMap",
+          "image": "textures/Utilitarian Basic/doubleshot_default_shader_normalMap.webp"
+        },
+        {
+          "name": "doubleshot_default_shader_roughnessMap",
+          "material_name": "doubleshot_default_shader",
+          "type": "roughnessMap",
+          "image": "textures/Utilitarian Basic/doubleshot_default_shader_roughnessMap.webp"
+        },
+        {
+          "name": "doubleshot_default_shader_metalnessMap",
+          "material_name": "doubleshot_default_shader",
+          "type": "metalnessMap",
+          "image": "textures/Utilitarian Basic/doubleshot_default_shader_metalnessMap.webp"
+        },
+        {
+          "name": "a_frame_shader.001_map",
+          "material_name": "a_frame_shader.001",
+          "type": "map",
+          "image": "textures/Utilitarian Basic/a_frame_shader.001_map.webp"
+        },
+        {
+          "name": "a_frame_shader.001_normalMap",
+          "material_name": "a_frame_shader.001",
+          "type": "normalMap",
+          "image": "textures/Utilitarian Basic/a_frame_shader.001_normalMap.webp"
+        },
+        {
+          "name": "a_frame_shader.001_roughnessMap",
+          "material_name": "a_frame_shader.001",
+          "type": "roughnessMap",
+          "image": "textures/Utilitarian Basic/a_frame_shader.001_roughnessMap.webp"
+        },
+        {
+          "name": "a_frame_shader.001_metalnessMap",
+          "material_name": "a_frame_shader.001",
+          "type": "metalnessMap",
+          "image": "textures/Utilitarian Basic/a_frame_shader.001_metalnessMap.webp"
+        },
+        {
+          "name": "doubleshot_default_shader_map",
+          "material_name": "doubleshot_default_shader",
+          "type": "map",
+          "image": "textures/Utilitarian Basic/doubleshot_default_shader_map.webp"
+        },
+        {
+          "name": "doubleshot_default_shader_normalMap",
+          "material_name": "doubleshot_default_shader",
+          "type": "normalMap",
+          "image": "textures/Utilitarian Basic/doubleshot_default_shader_normalMap.webp"
+        },
+        {
+          "name": "doubleshot_default_shader_roughnessMap",
+          "material_name": "doubleshot_default_shader",
+          "type": "roughnessMap",
+          "image": "textures/Utilitarian Basic/doubleshot_default_shader_roughnessMap.webp"
+        },
+        {
+          "name": "doubleshot_default_shader_metalnessMap",
+          "material_name": "doubleshot_default_shader",
+          "type": "metalnessMap",
+          "image": "textures/Utilitarian Basic/doubleshot_default_shader_metalnessMap.webp"
+        },
+        {
+          "name": "a_frame_shader.001_map",
+          "material_name": "a_frame_shader.001",
+          "type": "map",
+          "image": "textures/Utilitarian Basic/a_frame_shader.001_map.webp"
+        },
+        {
+          "name": "a_frame_shader.001_normalMap",
+          "material_name": "a_frame_shader.001",
+          "type": "normalMap",
+          "image": "textures/Utilitarian Basic/a_frame_shader.001_normalMap.webp"
+        },
+        {
+          "name": "a_frame_shader.001_roughnessMap",
+          "material_name": "a_frame_shader.001",
+          "type": "roughnessMap",
+          "image": "textures/Utilitarian Basic/a_frame_shader.001_roughnessMap.webp"
+        },
+        {
+          "name": "a_frame_shader.001_metalnessMap",
+          "material_name": "a_frame_shader.001",
+          "type": "metalnessMap",
+          "image": "textures/Utilitarian Basic/a_frame_shader.001_metalnessMap.webp"
+        },
+        {
+          "name": "doubleshot_default_shader_map",
+          "material_name": "doubleshot_default_shader",
+          "type": "map",
+          "image": "textures/Utilitarian Basic/doubleshot_default_shader_map.webp"
+        },
+        {
+          "name": "doubleshot_default_shader_normalMap",
+          "material_name": "doubleshot_default_shader",
+          "type": "normalMap",
+          "image": "textures/Utilitarian Basic/doubleshot_default_shader_normalMap.webp"
+        },
+        {
+          "name": "doubleshot_default_shader_roughnessMap",
+          "material_name": "doubleshot_default_shader",
+          "type": "roughnessMap",
+          "image": "textures/Utilitarian Basic/doubleshot_default_shader_roughnessMap.webp"
+        },
+        {
+          "name": "doubleshot_default_shader_metalnessMap",
+          "material_name": "doubleshot_default_shader",
+          "type": "metalnessMap",
+          "image": "textures/Utilitarian Basic/doubleshot_default_shader_metalnessMap.webp"
+        }
+      ]
+    }
+  ],
+  "mods": {
+    "precision_optic": [
+      {
+        "id": "019c65e8-14cd-76aa-a527-c3ff7c67ca62",
+        "name": "mod_sight_default",
+        "is_default": true,
+        "materials": [
+          "sight_dmr_heavy_01_defaultMaterial.002",
+          "hs_emissive_shaderMaterial.002",
+          "yellow"
+        ],
+        "thumbnail": "thumbnails/mods/mod_sight_default.webp",
+        "image": "images/mods/mod_sight_default.webp",
+        "specs": "Default",
+        "type": "Optic",
+        "model_path": "models/precision_optic/mod_sight_default.glb",
+        "textures": [
+          {
+            "skin": "Utilitarian Basic",
+            "name": "sight_dmr_heavy_01_defaultMaterial.002_map",
+            "material_name": "sight_dmr_heavy_01_defaultMaterial.002",
+            "type": "map",
+            "image": "textures/mods/mod_sight_default/Utilitarian Basic/sight_dmr_heavy_01_defaultMaterial.002_map.webp"
+          },
+          {
+            "skin": "Utilitarian Basic",
+            "name": "sight_dmr_heavy_01_defaultMaterial.002_normalMap",
+            "material_name": "sight_dmr_heavy_01_defaultMaterial.002",
+            "type": "normalMap",
+            "image": "textures/mods/mod_sight_default/Utilitarian Basic/sight_dmr_heavy_01_defaultMaterial.002_normalMap.webp"
+          },
+          {
+            "skin": "Utilitarian Basic",
+            "name": "sight_dmr_heavy_01_defaultMaterial.002_map",
+            "material_name": "sight_dmr_heavy_01_defaultMaterial.002",
+            "type": "map",
+            "image": "textures/mods/mod_sight_default/Utilitarian Basic/sight_dmr_heavy_01_defaultMaterial.002_map.webp"
+          },
+          {
+            "skin": "Utilitarian Basic",
+            "name": "sight_dmr_heavy_01_defaultMaterial.002_normalMap",
+            "material_name": "sight_dmr_heavy_01_defaultMaterial.002",
+            "type": "normalMap",
+            "image": "textures/mods/mod_sight_default/Utilitarian Basic/sight_dmr_heavy_01_defaultMaterial.002_normalMap.webp"
+          }
+        ]
+      }
+    ],
+    "magazine": [
+      {
+        "id": "019c65e8-3cda-7479-8696-64d5324f5699",
+        "name": "mod_magazine_default",
+        "is_default": true,
+        "materials": [
+          "ammo_cartridgeMaterial.002",
+          "mag_doubleshot_default_shader.001"
+        ],
+        "thumbnail": "thumbnails/mods/mod_magazine_default.webp",
+        "image": "images/mods/mod_magazine_default.webp",
+        "specs": "Default",
+        "type": "Magazine",
+        "model_path": "models/magazine/mod_magazine_default.glb",
+        "textures": [
+          {
+            "skin": "Utilitarian Basic",
+            "name": "mag_doubleshot_default_shader.001_map",
+            "material_name": "mag_doubleshot_default_shader.001",
+            "type": "map",
+            "image": "textures/mods/mod_magazine_default/Utilitarian Basic/mag_doubleshot_default_shader.001_map.webp"
+          },
+          {
+            "skin": "Utilitarian Basic",
+            "name": "mag_doubleshot_default_shader.001_normalMap",
+            "material_name": "mag_doubleshot_default_shader.001",
+            "type": "normalMap",
+            "image": "textures/mods/mod_magazine_default/Utilitarian Basic/mag_doubleshot_default_shader.001_normalMap.webp"
+          },
+          {
+            "skin": "Utilitarian Basic",
+            "name": "mag_doubleshot_default_shader.001_roughnessMap",
+            "material_name": "mag_doubleshot_default_shader.001",
+            "type": "roughnessMap",
+            "image": "textures/mods/mod_magazine_default/Utilitarian Basic/mag_doubleshot_default_shader.001_roughnessMap.webp"
+          },
+          {
+            "skin": "Utilitarian Basic",
+            "name": "mag_doubleshot_default_shader.001_metalnessMap",
+            "material_name": "mag_doubleshot_default_shader.001",
+            "type": "metalnessMap",
+            "image": "textures/mods/mod_magazine_default/Utilitarian Basic/mag_doubleshot_default_shader.001_metalnessMap.webp"
+          }
+        ]
+      }
+    ],
+    "barrel": [
+      {
+        "id": "019c65f2-6ba8-77ea-99ab-80681f3fc4af",
+        "name": "mod_barrel_default",
+        "is_default": true,
+        "materials": [
+          "bar_pr_doubleshot_default_shader"
+        ],
+        "thumbnail": "thumbnails/mods/mod_barrel_default.webp",
+        "image": "images/mods/mod_barrel_default.webp",
+        "specs": "Default",
+        "type": "Barrel",
+        "model_path": "models/barrel/mod_barrel_default.glb",
+        "textures": [
+          {
+            "skin": "Utilitarian Basic",
+            "name": "bar_pr_doubleshot_default_shader_map",
+            "material_name": "bar_pr_doubleshot_default_shader",
+            "type": "map",
+            "image": "textures/mods/mod_barrel_default/Utilitarian Basic/bar_pr_doubleshot_default_shader_map.webp"
+          },
+          {
+            "skin": "Utilitarian Basic",
+            "name": "bar_pr_doubleshot_default_shader_normalMap",
+            "material_name": "bar_pr_doubleshot_default_shader",
+            "type": "normalMap",
+            "image": "textures/mods/mod_barrel_default/Utilitarian Basic/bar_pr_doubleshot_default_shader_normalMap.webp"
+          },
+          {
+            "skin": "Utilitarian Basic",
+            "name": "bar_pr_doubleshot_default_shader_roughnessMap",
+            "material_name": "bar_pr_doubleshot_default_shader",
+            "type": "roughnessMap",
+            "image": "textures/mods/mod_barrel_default/Utilitarian Basic/bar_pr_doubleshot_default_shader_roughnessMap.webp"
+          },
+          {
+            "skin": "Utilitarian Basic",
+            "name": "bar_pr_doubleshot_default_shader_metalnessMap",
+            "material_name": "bar_pr_doubleshot_default_shader",
+            "type": "metalnessMap",
+            "image": "textures/mods/mod_barrel_default/Utilitarian Basic/bar_pr_doubleshot_default_shader_metalnessMap.webp"
+          }
+        ]
+      }
+    ]
+  },
+  "stickers": [],
+  "charms": [],
+  "slug": "twin-tap-hbr",
+  "redacted": false
+}

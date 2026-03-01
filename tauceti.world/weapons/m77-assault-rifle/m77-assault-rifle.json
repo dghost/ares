@@ -1,0 +1,891 @@
+{
+  "name": "M77 Assault Rifle",
+  "sliding_puzzle": null,
+  "cctv": {
+    "cctvItems": [
+      {
+        "id": "698dd611a14d91b852004e23",
+        "name": "Q9F7xA2_LG09T_MTRX.log",
+        "location": "wpn_id_M77_AssaultRifle_3e643933",
+        "file": {
+          "url": "https://assets.thecdn.io/4e404efa-cff9-4098-be43-d8e099fe1599.mp4",
+          "filename": "4e404efa-cff9-4098-be43-d8e099fe1599.mp4",
+          "alt_filename": "Q9F7xA2_LG09T_MTRX.mp4",
+          "alt": "M77 Content",
+          "width": null,
+          "height": null,
+          "mimeType": "video/mp4"
+        }
+      },
+      {
+        "id": "698dd612a14d91b852004e24",
+        "name": "A3K8V9Q_R41D_CY.tx",
+        "location": "wpn_id_M77_AssaultRifle",
+        "file": {
+          "url": "https://assets.thecdn.io/7cca56e2-9248-47b2-b1f6-289c87bbb5ba.mp4",
+          "filename": "7cca56e2-9248-47b2-b1f6-289c87bbb5ba.mp4",
+          "alt_filename": "A3K8V9Q_R41D_CY.mp4",
+          "alt": "M77 Content",
+          "width": null,
+          "height": null,
+          "mimeType": "video/mp4"
+        }
+      },
+      {
+        "id": "698dd613a14d91b852004e25",
+        "name": "N7X4M2P_Z81Q_CORE.bin",
+        "location": "wpn_id_M77_AssaultRifle",
+        "file": {
+          "url": "https://assets.thecdn.io/f823f04b-e8fe-4ba5-8871-7c75a66df8bc.mp4",
+          "filename": "f823f04b-e8fe-4ba5-8871-7c75a66df8bc.mp4",
+          "alt_filename": "N7X4M2P_Z81Q_CORE.mp4",
+          "alt": "M77 Content",
+          "width": null,
+          "height": null,
+          "mimeType": "video/mp4"
+        }
+      },
+      {
+        "id": "698dd614a14d91b852004e26",
+        "name": "J2R9F6W_KX88_SEC.dat",
+        "location": "wpn_id_M77_AssaultRifle_-4ded",
+        "file": {
+          "url": "https://assets.thecdn.io/35e2e6ca-093c-4f15-bded-8d067ef5a735.mp4",
+          "filename": "35e2e6ca-093c-4f15-bded-8d067ef5a735.mp4",
+          "alt_filename": "J2R9F6W_KX88_SEC.mp4",
+          "alt": "M77 Content",
+          "width": null,
+          "height": null,
+          "mimeType": "video/mp4"
+        }
+      }
+    ],
+    "cctvLockedFiles": 5
+  },
+  "base_url": "https://goliath-tau-ceti-stage.b-cdn.net/weapons/M77%20Assault%20Rifle-2026-02-16_08%3A49",
+  "id": "32",
+  "weapon_name": "M77 Assault Rifle",
+  "model_path": "models/v002_Auto_light_01_default.glb",
+  "materials": [
+    "autor_default_frame.001",
+    "autor_default_variant",
+    "autor_default_frame.002",
+    "autor_default_variant.001"
+  ],
+  "sticker_material_name": "Material",
+  "charm_pivot_name": "Charm_pivot",
+  "skins": [
+    {
+      "name": "TAC Combat",
+      "is_default": true,
+      "is_model_changed": false,
+      "model_path": null,
+      "textures": [
+        {
+          "name": "autor_default_frame.001_map",
+          "material_name": "autor_default_frame.001",
+          "type": "map",
+          "image": "textures/TAC Combat/autor_default_frame.001_map.webp"
+        },
+        {
+          "name": "autor_default_frame.001_normalMap",
+          "material_name": "autor_default_frame.001",
+          "type": "normalMap",
+          "image": "textures/TAC Combat/autor_default_frame.001_normalMap.webp"
+        },
+        {
+          "name": "autor_default_frame.001_roughnessMap",
+          "material_name": "autor_default_frame.001",
+          "type": "roughnessMap",
+          "image": "textures/TAC Combat/autor_default_frame.001_roughnessMap.webp"
+        },
+        {
+          "name": "autor_default_frame.001_metalnessMap",
+          "material_name": "autor_default_frame.001",
+          "type": "metalnessMap",
+          "image": "textures/TAC Combat/autor_default_frame.001_metalnessMap.webp"
+        },
+        {
+          "name": "autor_default_variant_map",
+          "material_name": "autor_default_variant",
+          "type": "map",
+          "image": "textures/TAC Combat/autor_default_variant_map.webp"
+        },
+        {
+          "name": "autor_default_variant_normalMap",
+          "material_name": "autor_default_variant",
+          "type": "normalMap",
+          "image": "textures/TAC Combat/autor_default_variant_normalMap.webp"
+        },
+        {
+          "name": "autor_default_variant_roughnessMap",
+          "material_name": "autor_default_variant",
+          "type": "roughnessMap",
+          "image": "textures/TAC Combat/autor_default_variant_roughnessMap.webp"
+        },
+        {
+          "name": "autor_default_variant_metalnessMap",
+          "material_name": "autor_default_variant",
+          "type": "metalnessMap",
+          "image": "textures/TAC Combat/autor_default_variant_metalnessMap.webp"
+        },
+        {
+          "name": "autor_default_variant_map",
+          "material_name": "autor_default_variant",
+          "type": "map",
+          "image": "textures/TAC Combat/autor_default_variant_map.webp"
+        },
+        {
+          "name": "autor_default_variant_normalMap",
+          "material_name": "autor_default_variant",
+          "type": "normalMap",
+          "image": "textures/TAC Combat/autor_default_variant_normalMap.webp"
+        },
+        {
+          "name": "autor_default_variant_roughnessMap",
+          "material_name": "autor_default_variant",
+          "type": "roughnessMap",
+          "image": "textures/TAC Combat/autor_default_variant_roughnessMap.webp"
+        },
+        {
+          "name": "autor_default_variant_metalnessMap",
+          "material_name": "autor_default_variant",
+          "type": "metalnessMap",
+          "image": "textures/TAC Combat/autor_default_variant_metalnessMap.webp"
+        },
+        {
+          "name": "autor_default_frame.001_map",
+          "material_name": "autor_default_frame.001",
+          "type": "map",
+          "image": "textures/TAC Combat/autor_default_frame.001_map.webp"
+        },
+        {
+          "name": "autor_default_frame.001_normalMap",
+          "material_name": "autor_default_frame.001",
+          "type": "normalMap",
+          "image": "textures/TAC Combat/autor_default_frame.001_normalMap.webp"
+        },
+        {
+          "name": "autor_default_frame.001_roughnessMap",
+          "material_name": "autor_default_frame.001",
+          "type": "roughnessMap",
+          "image": "textures/TAC Combat/autor_default_frame.001_roughnessMap.webp"
+        },
+        {
+          "name": "autor_default_frame.001_metalnessMap",
+          "material_name": "autor_default_frame.001",
+          "type": "metalnessMap",
+          "image": "textures/TAC Combat/autor_default_frame.001_metalnessMap.webp"
+        },
+        {
+          "name": "autor_default_variant_map",
+          "material_name": "autor_default_variant",
+          "type": "map",
+          "image": "textures/TAC Combat/autor_default_variant_map.webp"
+        },
+        {
+          "name": "autor_default_variant_normalMap",
+          "material_name": "autor_default_variant",
+          "type": "normalMap",
+          "image": "textures/TAC Combat/autor_default_variant_normalMap.webp"
+        },
+        {
+          "name": "autor_default_variant_roughnessMap",
+          "material_name": "autor_default_variant",
+          "type": "roughnessMap",
+          "image": "textures/TAC Combat/autor_default_variant_roughnessMap.webp"
+        },
+        {
+          "name": "autor_default_variant_metalnessMap",
+          "material_name": "autor_default_variant",
+          "type": "metalnessMap",
+          "image": "textures/TAC Combat/autor_default_variant_metalnessMap.webp"
+        },
+        {
+          "name": "autor_default_frame.001_map",
+          "material_name": "autor_default_frame.001",
+          "type": "map",
+          "image": "textures/TAC Combat/autor_default_frame.001_map.webp"
+        },
+        {
+          "name": "autor_default_frame.001_normalMap",
+          "material_name": "autor_default_frame.001",
+          "type": "normalMap",
+          "image": "textures/TAC Combat/autor_default_frame.001_normalMap.webp"
+        },
+        {
+          "name": "autor_default_frame.001_roughnessMap",
+          "material_name": "autor_default_frame.001",
+          "type": "roughnessMap",
+          "image": "textures/TAC Combat/autor_default_frame.001_roughnessMap.webp"
+        },
+        {
+          "name": "autor_default_frame.001_metalnessMap",
+          "material_name": "autor_default_frame.001",
+          "type": "metalnessMap",
+          "image": "textures/TAC Combat/autor_default_frame.001_metalnessMap.webp"
+        },
+        {
+          "name": "autor_default_frame.001_map",
+          "material_name": "autor_default_frame.001",
+          "type": "map",
+          "image": "textures/TAC Combat/autor_default_frame.001_map.webp"
+        },
+        {
+          "name": "autor_default_frame.001_normalMap",
+          "material_name": "autor_default_frame.001",
+          "type": "normalMap",
+          "image": "textures/TAC Combat/autor_default_frame.001_normalMap.webp"
+        },
+        {
+          "name": "autor_default_frame.001_roughnessMap",
+          "material_name": "autor_default_frame.001",
+          "type": "roughnessMap",
+          "image": "textures/TAC Combat/autor_default_frame.001_roughnessMap.webp"
+        },
+        {
+          "name": "autor_default_frame.001_metalnessMap",
+          "material_name": "autor_default_frame.001",
+          "type": "metalnessMap",
+          "image": "textures/TAC Combat/autor_default_frame.001_metalnessMap.webp"
+        },
+        {
+          "name": "autor_default_frame.001_map",
+          "material_name": "autor_default_frame.001",
+          "type": "map",
+          "image": "textures/TAC Combat/autor_default_frame.001_map.webp"
+        },
+        {
+          "name": "autor_default_frame.001_normalMap",
+          "material_name": "autor_default_frame.001",
+          "type": "normalMap",
+          "image": "textures/TAC Combat/autor_default_frame.001_normalMap.webp"
+        },
+        {
+          "name": "autor_default_frame.001_roughnessMap",
+          "material_name": "autor_default_frame.001",
+          "type": "roughnessMap",
+          "image": "textures/TAC Combat/autor_default_frame.001_roughnessMap.webp"
+        },
+        {
+          "name": "autor_default_frame.001_metalnessMap",
+          "material_name": "autor_default_frame.001",
+          "type": "metalnessMap",
+          "image": "textures/TAC Combat/autor_default_frame.001_metalnessMap.webp"
+        },
+        {
+          "name": "autor_default_frame.002_map",
+          "material_name": "autor_default_frame.002",
+          "type": "map",
+          "image": "textures/TAC Combat/autor_default_frame.002_map.webp"
+        },
+        {
+          "name": "autor_default_frame.002_normalMap",
+          "material_name": "autor_default_frame.002",
+          "type": "normalMap",
+          "image": "textures/TAC Combat/autor_default_frame.002_normalMap.webp"
+        },
+        {
+          "name": "autor_default_frame.002_roughnessMap",
+          "material_name": "autor_default_frame.002",
+          "type": "roughnessMap",
+          "image": "textures/TAC Combat/autor_default_frame.002_roughnessMap.webp"
+        },
+        {
+          "name": "autor_default_frame.002_metalnessMap",
+          "material_name": "autor_default_frame.002",
+          "type": "metalnessMap",
+          "image": "textures/TAC Combat/autor_default_frame.002_metalnessMap.webp"
+        },
+        {
+          "name": "autor_default_frame.002_map",
+          "material_name": "autor_default_frame.002",
+          "type": "map",
+          "image": "textures/TAC Combat/autor_default_frame.002_map.webp"
+        },
+        {
+          "name": "autor_default_frame.002_normalMap",
+          "material_name": "autor_default_frame.002",
+          "type": "normalMap",
+          "image": "textures/TAC Combat/autor_default_frame.002_normalMap.webp"
+        },
+        {
+          "name": "autor_default_frame.002_roughnessMap",
+          "material_name": "autor_default_frame.002",
+          "type": "roughnessMap",
+          "image": "textures/TAC Combat/autor_default_frame.002_roughnessMap.webp"
+        },
+        {
+          "name": "autor_default_frame.002_metalnessMap",
+          "material_name": "autor_default_frame.002",
+          "type": "metalnessMap",
+          "image": "textures/TAC Combat/autor_default_frame.002_metalnessMap.webp"
+        },
+        {
+          "name": "autor_default_frame.001_map",
+          "material_name": "autor_default_frame.001",
+          "type": "map",
+          "image": "textures/TAC Combat/autor_default_frame.001_map.webp"
+        },
+        {
+          "name": "autor_default_frame.001_normalMap",
+          "material_name": "autor_default_frame.001",
+          "type": "normalMap",
+          "image": "textures/TAC Combat/autor_default_frame.001_normalMap.webp"
+        },
+        {
+          "name": "autor_default_frame.001_roughnessMap",
+          "material_name": "autor_default_frame.001",
+          "type": "roughnessMap",
+          "image": "textures/TAC Combat/autor_default_frame.001_roughnessMap.webp"
+        },
+        {
+          "name": "autor_default_frame.001_metalnessMap",
+          "material_name": "autor_default_frame.001",
+          "type": "metalnessMap",
+          "image": "textures/TAC Combat/autor_default_frame.001_metalnessMap.webp"
+        },
+        {
+          "name": "autor_default_frame.001_map",
+          "material_name": "autor_default_frame.001",
+          "type": "map",
+          "image": "textures/TAC Combat/autor_default_frame.001_map.webp"
+        },
+        {
+          "name": "autor_default_frame.001_normalMap",
+          "material_name": "autor_default_frame.001",
+          "type": "normalMap",
+          "image": "textures/TAC Combat/autor_default_frame.001_normalMap.webp"
+        },
+        {
+          "name": "autor_default_frame.001_roughnessMap",
+          "material_name": "autor_default_frame.001",
+          "type": "roughnessMap",
+          "image": "textures/TAC Combat/autor_default_frame.001_roughnessMap.webp"
+        },
+        {
+          "name": "autor_default_frame.001_metalnessMap",
+          "material_name": "autor_default_frame.001",
+          "type": "metalnessMap",
+          "image": "textures/TAC Combat/autor_default_frame.001_metalnessMap.webp"
+        },
+        {
+          "name": "autor_default_variant_map",
+          "material_name": "autor_default_variant",
+          "type": "map",
+          "image": "textures/TAC Combat/autor_default_variant_map.webp"
+        },
+        {
+          "name": "autor_default_variant_normalMap",
+          "material_name": "autor_default_variant",
+          "type": "normalMap",
+          "image": "textures/TAC Combat/autor_default_variant_normalMap.webp"
+        },
+        {
+          "name": "autor_default_variant_roughnessMap",
+          "material_name": "autor_default_variant",
+          "type": "roughnessMap",
+          "image": "textures/TAC Combat/autor_default_variant_roughnessMap.webp"
+        },
+        {
+          "name": "autor_default_variant_metalnessMap",
+          "material_name": "autor_default_variant",
+          "type": "metalnessMap",
+          "image": "textures/TAC Combat/autor_default_variant_metalnessMap.webp"
+        },
+        {
+          "name": "autor_default_frame.001_map",
+          "material_name": "autor_default_frame.001",
+          "type": "map",
+          "image": "textures/TAC Combat/autor_default_frame.001_map.webp"
+        },
+        {
+          "name": "autor_default_frame.001_normalMap",
+          "material_name": "autor_default_frame.001",
+          "type": "normalMap",
+          "image": "textures/TAC Combat/autor_default_frame.001_normalMap.webp"
+        },
+        {
+          "name": "autor_default_frame.001_roughnessMap",
+          "material_name": "autor_default_frame.001",
+          "type": "roughnessMap",
+          "image": "textures/TAC Combat/autor_default_frame.001_roughnessMap.webp"
+        },
+        {
+          "name": "autor_default_frame.001_metalnessMap",
+          "material_name": "autor_default_frame.001",
+          "type": "metalnessMap",
+          "image": "textures/TAC Combat/autor_default_frame.001_metalnessMap.webp"
+        },
+        {
+          "name": "autor_default_variant_map",
+          "material_name": "autor_default_variant",
+          "type": "map",
+          "image": "textures/TAC Combat/autor_default_variant_map.webp"
+        },
+        {
+          "name": "autor_default_variant_normalMap",
+          "material_name": "autor_default_variant",
+          "type": "normalMap",
+          "image": "textures/TAC Combat/autor_default_variant_normalMap.webp"
+        },
+        {
+          "name": "autor_default_variant_roughnessMap",
+          "material_name": "autor_default_variant",
+          "type": "roughnessMap",
+          "image": "textures/TAC Combat/autor_default_variant_roughnessMap.webp"
+        },
+        {
+          "name": "autor_default_variant_metalnessMap",
+          "material_name": "autor_default_variant",
+          "type": "metalnessMap",
+          "image": "textures/TAC Combat/autor_default_variant_metalnessMap.webp"
+        },
+        {
+          "name": "autor_default_variant_map",
+          "material_name": "autor_default_variant",
+          "type": "map",
+          "image": "textures/TAC Combat/autor_default_variant_map.webp"
+        },
+        {
+          "name": "autor_default_variant_normalMap",
+          "material_name": "autor_default_variant",
+          "type": "normalMap",
+          "image": "textures/TAC Combat/autor_default_variant_normalMap.webp"
+        },
+        {
+          "name": "autor_default_variant_roughnessMap",
+          "material_name": "autor_default_variant",
+          "type": "roughnessMap",
+          "image": "textures/TAC Combat/autor_default_variant_roughnessMap.webp"
+        },
+        {
+          "name": "autor_default_variant_metalnessMap",
+          "material_name": "autor_default_variant",
+          "type": "metalnessMap",
+          "image": "textures/TAC Combat/autor_default_variant_metalnessMap.webp"
+        },
+        {
+          "name": "autor_default_variant.001_map",
+          "material_name": "autor_default_variant.001",
+          "type": "map",
+          "image": "textures/TAC Combat/autor_default_variant.001_map.webp"
+        },
+        {
+          "name": "autor_default_variant.001_normalMap",
+          "material_name": "autor_default_variant.001",
+          "type": "normalMap",
+          "image": "textures/TAC Combat/autor_default_variant.001_normalMap.webp"
+        },
+        {
+          "name": "autor_default_variant.001_roughnessMap",
+          "material_name": "autor_default_variant.001",
+          "type": "roughnessMap",
+          "image": "textures/TAC Combat/autor_default_variant.001_roughnessMap.webp"
+        },
+        {
+          "name": "autor_default_variant.001_metalnessMap",
+          "material_name": "autor_default_variant.001",
+          "type": "metalnessMap",
+          "image": "textures/TAC Combat/autor_default_variant.001_metalnessMap.webp"
+        },
+        {
+          "name": "autor_default_variant_map",
+          "material_name": "autor_default_variant",
+          "type": "map",
+          "image": "textures/TAC Combat/autor_default_variant_map.webp"
+        },
+        {
+          "name": "autor_default_variant_normalMap",
+          "material_name": "autor_default_variant",
+          "type": "normalMap",
+          "image": "textures/TAC Combat/autor_default_variant_normalMap.webp"
+        },
+        {
+          "name": "autor_default_variant_roughnessMap",
+          "material_name": "autor_default_variant",
+          "type": "roughnessMap",
+          "image": "textures/TAC Combat/autor_default_variant_roughnessMap.webp"
+        },
+        {
+          "name": "autor_default_variant_metalnessMap",
+          "material_name": "autor_default_variant",
+          "type": "metalnessMap",
+          "image": "textures/TAC Combat/autor_default_variant_metalnessMap.webp"
+        },
+        {
+          "name": "autor_default_frame.001_map",
+          "material_name": "autor_default_frame.001",
+          "type": "map",
+          "image": "textures/TAC Combat/autor_default_frame.001_map.webp"
+        },
+        {
+          "name": "autor_default_frame.001_normalMap",
+          "material_name": "autor_default_frame.001",
+          "type": "normalMap",
+          "image": "textures/TAC Combat/autor_default_frame.001_normalMap.webp"
+        },
+        {
+          "name": "autor_default_frame.001_roughnessMap",
+          "material_name": "autor_default_frame.001",
+          "type": "roughnessMap",
+          "image": "textures/TAC Combat/autor_default_frame.001_roughnessMap.webp"
+        },
+        {
+          "name": "autor_default_frame.001_metalnessMap",
+          "material_name": "autor_default_frame.001",
+          "type": "metalnessMap",
+          "image": "textures/TAC Combat/autor_default_frame.001_metalnessMap.webp"
+        },
+        {
+          "name": "autor_default_variant_map",
+          "material_name": "autor_default_variant",
+          "type": "map",
+          "image": "textures/TAC Combat/autor_default_variant_map.webp"
+        },
+        {
+          "name": "autor_default_variant_normalMap",
+          "material_name": "autor_default_variant",
+          "type": "normalMap",
+          "image": "textures/TAC Combat/autor_default_variant_normalMap.webp"
+        },
+        {
+          "name": "autor_default_variant_roughnessMap",
+          "material_name": "autor_default_variant",
+          "type": "roughnessMap",
+          "image": "textures/TAC Combat/autor_default_variant_roughnessMap.webp"
+        },
+        {
+          "name": "autor_default_variant_metalnessMap",
+          "material_name": "autor_default_variant",
+          "type": "metalnessMap",
+          "image": "textures/TAC Combat/autor_default_variant_metalnessMap.webp"
+        },
+        {
+          "name": "autor_default_frame.002_map",
+          "material_name": "autor_default_frame.002",
+          "type": "map",
+          "image": "textures/TAC Combat/autor_default_frame.002_map.webp"
+        },
+        {
+          "name": "autor_default_frame.002_normalMap",
+          "material_name": "autor_default_frame.002",
+          "type": "normalMap",
+          "image": "textures/TAC Combat/autor_default_frame.002_normalMap.webp"
+        },
+        {
+          "name": "autor_default_frame.002_roughnessMap",
+          "material_name": "autor_default_frame.002",
+          "type": "roughnessMap",
+          "image": "textures/TAC Combat/autor_default_frame.002_roughnessMap.webp"
+        },
+        {
+          "name": "autor_default_frame.002_metalnessMap",
+          "material_name": "autor_default_frame.002",
+          "type": "metalnessMap",
+          "image": "textures/TAC Combat/autor_default_frame.002_metalnessMap.webp"
+        },
+        {
+          "name": "autor_default_variant_map",
+          "material_name": "autor_default_variant",
+          "type": "map",
+          "image": "textures/TAC Combat/autor_default_variant_map.webp"
+        },
+        {
+          "name": "autor_default_variant_normalMap",
+          "material_name": "autor_default_variant",
+          "type": "normalMap",
+          "image": "textures/TAC Combat/autor_default_variant_normalMap.webp"
+        },
+        {
+          "name": "autor_default_variant_roughnessMap",
+          "material_name": "autor_default_variant",
+          "type": "roughnessMap",
+          "image": "textures/TAC Combat/autor_default_variant_roughnessMap.webp"
+        },
+        {
+          "name": "autor_default_variant_metalnessMap",
+          "material_name": "autor_default_variant",
+          "type": "metalnessMap",
+          "image": "textures/TAC Combat/autor_default_variant_metalnessMap.webp"
+        },
+        {
+          "name": "autor_default_variant_map",
+          "material_name": "autor_default_variant",
+          "type": "map",
+          "image": "textures/TAC Combat/autor_default_variant_map.webp"
+        },
+        {
+          "name": "autor_default_variant_normalMap",
+          "material_name": "autor_default_variant",
+          "type": "normalMap",
+          "image": "textures/TAC Combat/autor_default_variant_normalMap.webp"
+        },
+        {
+          "name": "autor_default_variant_roughnessMap",
+          "material_name": "autor_default_variant",
+          "type": "roughnessMap",
+          "image": "textures/TAC Combat/autor_default_variant_roughnessMap.webp"
+        },
+        {
+          "name": "autor_default_variant_metalnessMap",
+          "material_name": "autor_default_variant",
+          "type": "metalnessMap",
+          "image": "textures/TAC Combat/autor_default_variant_metalnessMap.webp"
+        },
+        {
+          "name": "autor_default_variant_map",
+          "material_name": "autor_default_variant",
+          "type": "map",
+          "image": "textures/TAC Combat/autor_default_variant_map.webp"
+        },
+        {
+          "name": "autor_default_variant_normalMap",
+          "material_name": "autor_default_variant",
+          "type": "normalMap",
+          "image": "textures/TAC Combat/autor_default_variant_normalMap.webp"
+        },
+        {
+          "name": "autor_default_variant_roughnessMap",
+          "material_name": "autor_default_variant",
+          "type": "roughnessMap",
+          "image": "textures/TAC Combat/autor_default_variant_roughnessMap.webp"
+        },
+        {
+          "name": "autor_default_variant_metalnessMap",
+          "material_name": "autor_default_variant",
+          "type": "metalnessMap",
+          "image": "textures/TAC Combat/autor_default_variant_metalnessMap.webp"
+        },
+        {
+          "name": "autor_default_frame.001_map",
+          "material_name": "autor_default_frame.001",
+          "type": "map",
+          "image": "textures/TAC Combat/autor_default_frame.001_map.webp"
+        },
+        {
+          "name": "autor_default_frame.001_normalMap",
+          "material_name": "autor_default_frame.001",
+          "type": "normalMap",
+          "image": "textures/TAC Combat/autor_default_frame.001_normalMap.webp"
+        },
+        {
+          "name": "autor_default_frame.001_roughnessMap",
+          "material_name": "autor_default_frame.001",
+          "type": "roughnessMap",
+          "image": "textures/TAC Combat/autor_default_frame.001_roughnessMap.webp"
+        },
+        {
+          "name": "autor_default_frame.001_metalnessMap",
+          "material_name": "autor_default_frame.001",
+          "type": "metalnessMap",
+          "image": "textures/TAC Combat/autor_default_frame.001_metalnessMap.webp"
+        }
+      ]
+    }
+  ],
+  "mods": {
+    "precision_optic": [
+      {
+        "id": "019c41ef-7c0d-70ff-a279-5c0ed12d8b8e",
+        "name": "mod_sight_default",
+        "is_default": true,
+        "materials": [
+          "hs_transparent_shaderMaterial",
+          "sight_einkMaterial",
+          "sight_auto_light_01_defaultMaterial",
+          "sight_auto_light_01_holo_uiMaterial",
+          "postprocess_maskMaterial",
+          "hs_decal_shaderMaterial",
+          "scope_transparentvignetteMaterial",
+          "sight_auto_light_01_emissiveMaterial"
+        ],
+        "thumbnail": "thumbnails/mods/mod_sight_default.webp",
+        "image": "images/mods/mod_sight_default.webp",
+        "specs": "Default",
+        "type": "Optic",
+        "model_path": "models/precision_optic/mod_sight_default.glb",
+        "textures": [
+          {
+            "skin": "TAC Combat",
+            "name": "sight_auto_light_01_defaultMaterial_map",
+            "material_name": "sight_auto_light_01_defaultMaterial",
+            "type": "map",
+            "image": "textures/mods/mod_sight_default/TAC Combat/sight_auto_light_01_defaultMaterial_map.webp"
+          },
+          {
+            "skin": "TAC Combat",
+            "name": "sight_auto_light_01_defaultMaterial_normalMap",
+            "material_name": "sight_auto_light_01_defaultMaterial",
+            "type": "normalMap",
+            "image": "textures/mods/mod_sight_default/TAC Combat/sight_auto_light_01_defaultMaterial_normalMap.webp"
+          },
+          {
+            "skin": "TAC Combat",
+            "name": "sight_auto_light_01_defaultMaterial_map",
+            "material_name": "sight_auto_light_01_defaultMaterial",
+            "type": "map",
+            "image": "textures/mods/mod_sight_default/TAC Combat/sight_auto_light_01_defaultMaterial_map.webp"
+          },
+          {
+            "skin": "TAC Combat",
+            "name": "sight_auto_light_01_defaultMaterial_normalMap",
+            "material_name": "sight_auto_light_01_defaultMaterial",
+            "type": "normalMap",
+            "image": "textures/mods/mod_sight_default/TAC Combat/sight_auto_light_01_defaultMaterial_normalMap.webp"
+          },
+          {
+            "skin": "TAC Combat",
+            "name": "sight_auto_light_01_defaultMaterial_map",
+            "material_name": "sight_auto_light_01_defaultMaterial",
+            "type": "map",
+            "image": "textures/mods/mod_sight_default/TAC Combat/sight_auto_light_01_defaultMaterial_map.webp"
+          },
+          {
+            "skin": "TAC Combat",
+            "name": "sight_auto_light_01_defaultMaterial_normalMap",
+            "material_name": "sight_auto_light_01_defaultMaterial",
+            "type": "normalMap",
+            "image": "textures/mods/mod_sight_default/TAC Combat/sight_auto_light_01_defaultMaterial_normalMap.webp"
+          },
+          {
+            "skin": "TAC Combat",
+            "name": "sight_auto_light_01_defaultMaterial_map",
+            "material_name": "sight_auto_light_01_defaultMaterial",
+            "type": "map",
+            "image": "textures/mods/mod_sight_default/TAC Combat/sight_auto_light_01_defaultMaterial_map.webp"
+          },
+          {
+            "skin": "TAC Combat",
+            "name": "sight_auto_light_01_defaultMaterial_normalMap",
+            "material_name": "sight_auto_light_01_defaultMaterial",
+            "type": "normalMap",
+            "image": "textures/mods/mod_sight_default/TAC Combat/sight_auto_light_01_defaultMaterial_normalMap.webp"
+          },
+          {
+            "skin": "TAC Combat",
+            "name": "sight_auto_light_01_defaultMaterial_map",
+            "material_name": "sight_auto_light_01_defaultMaterial",
+            "type": "map",
+            "image": "textures/mods/mod_sight_default/TAC Combat/sight_auto_light_01_defaultMaterial_map.webp"
+          },
+          {
+            "skin": "TAC Combat",
+            "name": "sight_auto_light_01_defaultMaterial_normalMap",
+            "material_name": "sight_auto_light_01_defaultMaterial",
+            "type": "normalMap",
+            "image": "textures/mods/mod_sight_default/TAC Combat/sight_auto_light_01_defaultMaterial_normalMap.webp"
+          },
+          {
+            "skin": "TAC Combat",
+            "name": "sight_auto_light_01_defaultMaterial_map",
+            "material_name": "sight_auto_light_01_defaultMaterial",
+            "type": "map",
+            "image": "textures/mods/mod_sight_default/TAC Combat/sight_auto_light_01_defaultMaterial_map.webp"
+          },
+          {
+            "skin": "TAC Combat",
+            "name": "sight_auto_light_01_defaultMaterial_normalMap",
+            "material_name": "sight_auto_light_01_defaultMaterial",
+            "type": "normalMap",
+            "image": "textures/mods/mod_sight_default/TAC Combat/sight_auto_light_01_defaultMaterial_normalMap.webp"
+          }
+        ]
+      }
+    ],
+    "magazine": [
+      {
+        "id": "019c41ef-a159-7279-a38d-751ce2373d83",
+        "name": "mod_mag_default",
+        "is_default": true,
+        "materials": [
+          "autor_default.001"
+        ],
+        "thumbnail": "thumbnails/mods/mod_mag_default.webp",
+        "image": "images/mods/mod_mag_default.webp",
+        "specs": "Default",
+        "type": "Magazine",
+        "model_path": "models/magazine/mod_mag_default.glb",
+        "textures": [
+          {
+            "skin": "TAC Combat",
+            "name": "autor_default.001_map",
+            "material_name": "autor_default.001",
+            "type": "map",
+            "image": "textures/mods/mod_mag_default/TAC Combat/autor_default.001_map.webp"
+          },
+          {
+            "skin": "TAC Combat",
+            "name": "autor_default.001_normalMap",
+            "material_name": "autor_default.001",
+            "type": "normalMap",
+            "image": "textures/mods/mod_mag_default/TAC Combat/autor_default.001_normalMap.webp"
+          },
+          {
+            "skin": "TAC Combat",
+            "name": "autor_default.001_roughnessMap",
+            "material_name": "autor_default.001",
+            "type": "roughnessMap",
+            "image": "textures/mods/mod_mag_default/TAC Combat/autor_default.001_roughnessMap.webp"
+          },
+          {
+            "skin": "TAC Combat",
+            "name": "autor_default.001_metalnessMap",
+            "material_name": "autor_default.001",
+            "type": "metalnessMap",
+            "image": "textures/mods/mod_mag_default/TAC Combat/autor_default.001_metalnessMap.webp"
+          }
+        ]
+      }
+    ],
+    "barrel": [
+      {
+        "id": "019c41ef-9139-7698-8d06-d06244787d0c",
+        "name": "mod_barrel_default",
+        "is_default": true,
+        "materials": [
+          "autor_default"
+        ],
+        "thumbnail": "thumbnails/mods/mod_barrel_default.webp",
+        "image": "images/mods/mod_barrel_default.webp",
+        "specs": "Default",
+        "type": "Barrel",
+        "model_path": "models/barrel/mod_barrel_default.glb",
+        "textures": [
+          {
+            "skin": "TAC Combat",
+            "name": "autor_default_map",
+            "material_name": "autor_default",
+            "type": "map",
+            "image": "textures/mods/mod_barrel_default/TAC Combat/autor_default_map.webp"
+          },
+          {
+            "skin": "TAC Combat",
+            "name": "autor_default_normalMap",
+            "material_name": "autor_default",
+            "type": "normalMap",
+            "image": "textures/mods/mod_barrel_default/TAC Combat/autor_default_normalMap.webp"
+          },
+          {
+            "skin": "TAC Combat",
+            "name": "autor_default_roughnessMap",
+            "material_name": "autor_default",
+            "type": "roughnessMap",
+            "image": "textures/mods/mod_barrel_default/TAC Combat/autor_default_roughnessMap.webp"
+          },
+          {
+            "skin": "TAC Combat",
+            "name": "autor_default_metalnessMap",
+            "material_name": "autor_default",
+            "type": "metalnessMap",
+            "image": "textures/mods/mod_barrel_default/TAC Combat/autor_default_metalnessMap.webp"
+          }
+        ]
+      }
+    ]
+  },
+  "stickers": [],
+  "charms": [],
+  "slug": "m77-assault-rifle",
+  "redacted": false
+}

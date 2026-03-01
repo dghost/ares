@@ -1,0 +1,301 @@
+{
+  "name": "Assassin",
+  "abilities": [
+    {
+      "name": "ROLE: Shadow agent",
+      "type": "TECH: Invisibility systems ",
+      "icon": {
+        "url": "https://assets.thecdn.io/16e37775-25cf-43ef-8854-791616b32629.png",
+        "filename": "16e37775-25cf-43ef-8854-791616b32629.png",
+        "alt_filename": "16e37775-25cf-43ef-8854-791616b32629.png",
+        "alt": "Assassin Icon",
+        "width": 108,
+        "height": 108,
+        "mimeType": "image/png"
+      },
+      "heading": "Assassins are lethal shadows. ",
+      "description": "Active Camo and synthetic smoke deployment allows for unseen strikes or the perfect cover during hostile engagements.  The ability to move undetected makes Assassins valued allies and lethal enemies. \n[excerpt, UESC threat eval: rnnr.assn.fileID70064c_p223] \n"
+    },
+    {
+      "name": "SMOKE SCREEN",
+      "type": "Prime Ability",
+      "icon": {
+        "url": "https://assets.thecdn.io/f0626ffb-e748-4270-af7b-17c09a16f3f5.png",
+        "filename": "f0626ffb-e748-4270-af7b-17c09a16f3f5.png",
+        "alt_filename": "Smoke_screen.png",
+        "alt": "Smoke_screen",
+        "width": 108,
+        "height": 108,
+        "mimeType": "image/png"
+      },
+      "heading": "",
+      "description": "Throw a smoke disc that emits a line of smoke fields in front of you, disrupting the optics of those who step inside."
+    },
+    {
+      "name": "ACTIVE CAMO",
+      "type": "Tactical Ability",
+      "icon": {
+        "url": "https://assets.thecdn.io/db549798-8de6-49ca-9719-2b59eb1b43e0.png",
+        "filename": "db549798-8de6-49ca-9719-2b59eb1b43e0.png",
+        "alt_filename": "Active_camo.png",
+        "alt": "Active_camo",
+        "width": 108,
+        "height": 108,
+        "mimeType": "image/png"
+      },
+      "heading": "",
+      "description": "Activate your shell's camouflage systems, pulling a shroud of invisibility over yourself.\n\nPerforming offensive actions, taking damage, and using abilities or consumables briefly disrupts your invisibility. "
+    },
+    {
+      "name": "SHADOW DIVE",
+      "type": "Trait 1",
+      "icon": {
+        "url": "https://assets.thecdn.io/a5a4db57-9031-4daf-a12d-dd2bff916022.png",
+        "filename": "a5a4db57-9031-4daf-a12d-dd2bff916022.png",
+        "alt_filename": "Shadow_dive.png",
+        "alt": "Shadow_dive",
+        "width": 108,
+        "height": 108,
+        "mimeType": "image/png"
+      },
+      "heading": "",
+      "description": "Activate while airborne to slam a smoke disc into the ground, deploy a smoke field."
+    },
+    {
+      "name": "SHROUD",
+      "type": "Trait 2",
+      "icon": {
+        "url": "https://assets.thecdn.io/68c7b4a1-f569-471b-abe5-45e188773286.png",
+        "filename": "68c7b4a1-f569-471b-abe5-45e188773286.png",
+        "alt_filename": "Shroud.png",
+        "alt": "Shroud",
+        "width": 108,
+        "height": 108,
+        "mimeType": "image/png"
+      },
+      "heading": "",
+      "description": "Your shell automatically activates its camouflage systems when entering any smoke field, making you invisible.\n\nInvisibility persists for a short time after leaving the smoke field."
+    }
+  ],
+  "cctvItems": {
+    "foot_left": {
+      "enabled": false,
+      "name": null,
+      "file": null
+    },
+    "foot_right": {
+      "enabled": false,
+      "name": null,
+      "file": null
+    },
+    "knee_left": {
+      "enabled": false,
+      "name": null,
+      "file": null
+    },
+    "knee_right": {
+      "enabled": true,
+      "name": "QZ8P2KX7_9M4A_ARCH.log",
+      "file": {
+        "url": "https://assets.thecdn.io/8e5d3faf-e134-4f24-8692-3fcd9427c3d3.mp4",
+        "filename": "8e5d3faf-e134-4f24-8692-3fcd9427c3d3.mp4",
+        "alt_filename": "8e5d3faf-e134-4f24-8692-3fcd9427c3d3.mp4",
+        "alt": "Assin Shadowdive",
+        "width": null,
+        "height": null,
+        "mimeType": "video/mp4"
+      }
+    },
+    "hip_left": {
+      "enabled": true,
+      "name": "K2QZ7X9P_8A4M_SEC.bin",
+      "file": {
+        "url": "https://assets.thecdn.io/be725a08-2d70-426c-8498-d015f6f1f477.mp4",
+        "filename": "be725a08-2d70-426c-8498-d015f6f1f477.mp4",
+        "alt_filename": "be725a08-2d70-426c-8498-d015f6f1f477.mp4",
+        "alt": "Assassin Smokescreen",
+        "width": null,
+        "height": null,
+        "mimeType": "video/mp4"
+      }
+    },
+    "hip_right": {
+      "enabled": false,
+      "name": "",
+      "file": null
+    },
+    "chest": {
+      "enabled": true,
+      "name": "M9ZKX2P8_Q7A4_NODE.tx",
+      "file": {
+        "url": "https://assets.thecdn.io/d1449e64-752c-441f-b352-4314f447a32e.mp4",
+        "filename": "d1449e64-752c-441f-b352-4314f447a32e.mp4",
+        "alt_filename": "d1449e64-752c-441f-b352-4314f447a32e.mp4",
+        "alt": "Assassin Shroud",
+        "width": null,
+        "height": null,
+        "mimeType": "video/mp4"
+      }
+    },
+    "head": {
+      "enabled": true,
+      "name": "Z2X9P7K8_QM4A_PIPE.dat",
+      "file": {
+        "url": "https://assets.thecdn.io/0003a839-a564-4ce2-abd2-9be1d852d70d.wav",
+        "filename": "0003a839-a564-4ce2-abd2-9be1d852d70d.wav",
+        "alt_filename": "0003a839-a564-4ce2-abd2-9be1d852d70d.wav",
+        "alt": "memories are pleasant lies",
+        "width": null,
+        "height": null,
+        "mimeType": "audio/wav"
+      }
+    },
+    "shoulder_left": {
+      "enabled": true,
+      "name": "P7Q9KZ8X_2A4M_MEM.bin",
+      "file": {
+        "url": "https://assets.thecdn.io/00a89562-de3c-4c3e-ad04-4661a05ce1ac.wav",
+        "filename": "00a89562-de3c-4c3e-ad04-4661a05ce1ac.wav",
+        "alt_filename": "00a89562-de3c-4c3e-ad04-4661a05ce1ac.wav",
+        "alt": "what they cannot define",
+        "width": null,
+        "height": null,
+        "mimeType": "audio/wav"
+      }
+    },
+    "shoulder_right": {
+      "enabled": false,
+      "name": null,
+      "file": null
+    },
+    "elbow_left": {
+      "enabled": false,
+      "name": null,
+      "file": null
+    },
+    "elbow_right": {
+      "enabled": false,
+      "name": null,
+      "file": null
+    },
+    "hand_left": {
+      "enabled": true,
+      "name": "KQX2Z8P7_M94A_CORE.tx",
+      "file": {
+        "url": "https://assets.thecdn.io/e1260477-2082-4fc0-af0b-a44679444f15.mp4",
+        "filename": "e1260477-2082-4fc0-af0b-a44679444f15.mp4",
+        "alt_filename": "e1260477-2082-4fc0-af0b-a44679444f15.mp4",
+        "alt": "Assin Activecamo",
+        "width": null,
+        "height": null,
+        "mimeType": "video/mp4"
+      }
+    },
+    "hand_right": {
+      "enabled": false,
+      "name": "",
+      "file": null
+    }
+  },
+  "base_url": "https://goliath-tau-ceti-stage.b-cdn.net/runners/Assassin-2026-02-25_14%3A22",
+  "id": "3",
+  "runner_name": "Assassin",
+  "model_path": "models/Assassin.glb",
+  "skins": [
+    {
+      "name": "Core",
+      "is_default": true,
+      "is_model_changed": false,
+      "model_path": null,
+      "image": {
+        "path": "images/skins/Core.png",
+        "name": "captured-skin.png",
+        "type": "image/png"
+      }
+    },
+    {
+      "name": "Shadow Index",
+      "is_default": false,
+      "is_model_changed": true,
+      "model_path": "models/skins/Shadow Index.glb",
+      "image": {
+        "path": "images/skins/Shadow Index.png",
+        "name": "captured-skin.png",
+        "type": "image/png"
+      }
+    }
+  ],
+  "interactive_points": {
+    "foot_left": {
+      "x": 0.03,
+      "y": 0.045,
+      "z": -0.11
+    },
+    "foot_right": {
+      "x": -0.08,
+      "y": 0.077,
+      "z": -0.34
+    },
+    "knee_left": {
+      "x": 0.05,
+      "y": 0.54,
+      "z": -0.05
+    },
+    "knee_right": {
+      "x": -0.21,
+      "y": 0.52,
+      "z": -0.11
+    },
+    "hip_left": {
+      "x": 0.06,
+      "y": 1,
+      "z": -0.01
+    },
+    "hip_right": {
+      "x": -0.09,
+      "y": 0.98,
+      "z": -0.11
+    },
+    "chest": {
+      "x": 0,
+      "y": 1.38,
+      "z": -0.05
+    },
+    "head": {
+      "x": 0.03,
+      "y": 1.64,
+      "z": 0.07
+    },
+    "shoulder_left": {
+      "x": 0.16,
+      "y": 1.4,
+      "z": 0.04
+    },
+    "shoulder_right": {
+      "x": -0.15,
+      "y": 1.49,
+      "z": -0.15
+    },
+    "elbow_left": {
+      "x": 0.02,
+      "y": 1.21,
+      "z": 0.18
+    },
+    "elbow_right": {
+      "x": -0.27,
+      "y": 1.22,
+      "z": -0.2
+    },
+    "hand_left": {
+      "x": -0.2,
+      "y": 1.41,
+      "z": 0.15
+    },
+    "hand_right": {
+      "x": -0.25,
+      "y": 1.33,
+      "z": 0.08
+    }
+  },
+  "slug": "assassin"
+}

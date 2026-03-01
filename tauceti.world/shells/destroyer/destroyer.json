@@ -1,0 +1,301 @@
+{
+  "name": "Destroyer",
+  "abilities": [
+    {
+      "name": "ROLE: Combat specialist",
+      "type": "TECH: Offense / Defense",
+      "icon": {
+        "url": "https://assets.thecdn.io/02645362-f6ed-4c6b-95bc-acd38d11877e.png",
+        "filename": "02645362-f6ed-4c6b-95bc-acd38d11877e.png",
+        "alt_filename": "02645362-f6ed-4c6b-95bc-acd38d11877e.png",
+        "alt": "Destroyer Icon",
+        "width": 108,
+        "height": 108,
+        "mimeType": "image/png"
+      },
+      "heading": "Destroyers seek conflict.",
+      "description": "Advanced weapons systems, a personal defense barricade, and increased movement abilities allow. Destroyers to take the fight to any threat or rival they encounter during a run. \n[excerpt, UESC threat eval: rnnr.dstryr.fileID55430c_p496]"
+    },
+    {
+      "name": "SEARCH AND DESTROY",
+      "type": "Prime Ability",
+      "icon": {
+        "url": "https://assets.thecdn.io/5d344607-194c-4698-a6ee-ccbce0c785c0.png",
+        "filename": "5d344607-194c-4698-a6ee-ccbce0c785c0.png",
+        "alt_filename": "Search_and_destroy.png",
+        "alt": "Search_and_destroy",
+        "width": 108,
+        "height": 108,
+        "mimeType": "image/png"
+      },
+      "heading": "",
+      "description": "Activate your shoulder-mounted missile pods.\n\nDealing sustained damage to targets launches homing missiles, Immobilizing and dealing damage upon impact."
+    },
+    {
+      "name": "RIOT BARRICADE",
+      "type": "Tactial Ability",
+      "icon": {
+        "url": "https://assets.thecdn.io/a499ba61-1595-447a-9e99-fa22e9508110.png",
+        "filename": "a499ba61-1595-447a-9e99-fa22e9508110.png",
+        "alt_filename": "Riot_barricade.png",
+        "alt": "Riot_barricade",
+        "width": 108,
+        "height": 108,
+        "mimeType": "image/png"
+      },
+      "heading": "",
+      "description": "Toggle an energy barricade that blocks incoming damage, draining tactical ability energy over time.\n\nTaking damage drains additional energy."
+    },
+    {
+      "name": "THRUSTER",
+      "type": "Trait 1",
+      "icon": {
+        "url": "https://assets.thecdn.io/7be0410d-bcdd-4011-b7c4-81d692c0d459.png",
+        "filename": "7be0410d-bcdd-4011-b7c4-81d692c0d459.png",
+        "alt_filename": "Thruster.png",
+        "alt": "Thruster",
+        "width": 108,
+        "height": 108,
+        "mimeType": "image/png"
+      },
+      "heading": "",
+      "description": "Activate while airborne to fire boosters that thrust you in the direction you are moving."
+    },
+    {
+      "name": "TACTICAL SPRINT",
+      "type": "Trait 2",
+      "icon": {
+        "url": "https://assets.thecdn.io/d28bd903-bc90-4aed-a8cf-ba2a6fedbe1b.png",
+        "filename": "d28bd903-bc90-4aed-a8cf-ba2a6fedbe1b.png",
+        "alt_filename": "Tactical_sprint.png",
+        "alt": "Tactical_sprint",
+        "width": 108,
+        "height": 108,
+        "mimeType": "image/png"
+      },
+      "heading": "",
+      "description": "Double-press sprint to move faster at the cost of generating additional heat."
+    }
+  ],
+  "cctvItems": {
+    "foot_left": {
+      "enabled": true,
+      "name": "P8Z7XQ9K_2A4M_IMG.log",
+      "file": {
+        "url": "https://assets.thecdn.io/36ace6a4-215e-41c9-9610-ed19ecc8f948.mp4",
+        "filename": "36ace6a4-215e-41c9-9610-ed19ecc8f948.mp4",
+        "alt_filename": "36ace6a4-215e-41c9-9610-ed19ecc8f948.mp4",
+        "alt": "Destroyer Thruster Freecam 01 ",
+        "width": null,
+        "height": null,
+        "mimeType": "video/mp4"
+      }
+    },
+    "foot_right": {
+      "enabled": false,
+      "name": null,
+      "file": null
+    },
+    "knee_left": {
+      "enabled": false,
+      "name": null,
+      "file": null
+    },
+    "knee_right": {
+      "enabled": true,
+      "name": "X2QZ7P9M_84AK_UNIT.dat",
+      "file": {
+        "url": "https://assets.thecdn.io/5bdd7ae7-70f8-4e18-beb2-0b93c38e9b32.mp4",
+        "filename": "5bdd7ae7-70f8-4e18-beb2-0b93c38e9b32.mp4",
+        "alt_filename": "5bdd7ae7-70f8-4e18-beb2-0b93c38e9b32.mp4",
+        "alt": "Destroyer Tacticalsprint Freecam",
+        "width": null,
+        "height": null,
+        "mimeType": "video/mp4"
+      }
+    },
+    "hip_left": {
+      "enabled": false,
+      "name": "",
+      "file": null
+    },
+    "hip_right": {
+      "enabled": false,
+      "name": null,
+      "file": null
+    },
+    "chest": {
+      "enabled": true,
+      "name": "Z9X7P8Q2_K4MA_CORE.tx",
+      "file": {
+        "url": "https://assets.thecdn.io/298c90a3-3a44-47b0-845e-06cc3e72347a.wav",
+        "filename": "298c90a3-3a44-47b0-845e-06cc3e72347a.wav",
+        "alt_filename": "298c90a3-3a44-47b0-845e-06cc3e72347a.wav",
+        "alt": "kit prepped lets go",
+        "width": null,
+        "height": null,
+        "mimeType": "audio/wav"
+      }
+    },
+    "head": {
+      "enabled": true,
+      "name": "Q4ZK8P9X_2A7M_DATA.log",
+      "file": {
+        "url": "https://assets.thecdn.io/948303b5-2f66-48e7-ad94-7101b60d2815.wav",
+        "filename": "948303b5-2f66-48e7-ad94-7101b60d2815.wav",
+        "alt_filename": "948303b5-2f66-48e7-ad94-7101b60d2815.wav",
+        "alt": "the only rule is to survive",
+        "width": null,
+        "height": null,
+        "mimeType": "audio/wav"
+      }
+    },
+    "shoulder_left": {
+      "enabled": false,
+      "name": "",
+      "file": null
+    },
+    "shoulder_right": {
+      "enabled": true,
+      "name": "X7P9Z2QK_4A8M_FEED.tx",
+      "file": {
+        "url": "https://assets.thecdn.io/a22190c8-2dc7-4da8-b229-171258bcb420.mp4",
+        "filename": "a22190c8-2dc7-4da8-b229-171258bcb420.mp4",
+        "alt_filename": "a22190c8-2dc7-4da8-b229-171258bcb420.mp4",
+        "alt": "Destroyer Ult Freecam",
+        "width": null,
+        "height": null,
+        "mimeType": "video/mp4"
+      }
+    },
+    "elbow_left": {
+      "enabled": false,
+      "name": null,
+      "file": null
+    },
+    "elbow_right": {
+      "enabled": false,
+      "name": null,
+      "file": null
+    },
+    "hand_left": {
+      "enabled": true,
+      "name": "M8QZ9X7P_2A4K_PROC.bin",
+      "file": {
+        "url": "https://assets.thecdn.io/a47aecb0-dcfa-4fc1-8d59-75ebf3891b55.mp4",
+        "filename": "a47aecb0-dcfa-4fc1-8d59-75ebf3891b55.mp4",
+        "alt_filename": "a47aecb0-dcfa-4fc1-8d59-75ebf3891b55.mp4",
+        "alt": "Riotbarricade Freecam",
+        "width": null,
+        "height": null,
+        "mimeType": "video/mp4"
+      }
+    },
+    "hand_right": {
+      "enabled": false,
+      "name": null,
+      "file": null
+    }
+  },
+  "base_url": "https://goliath-tau-ceti-stage.b-cdn.net/runners/Destroyer-2026-02-25_10%3A40",
+  "id": "1",
+  "runner_name": "Destroyer",
+  "model_path": "models/Destroyer.glb",
+  "skins": [
+    {
+      "name": "Core",
+      "is_default": true,
+      "is_model_changed": false,
+      "model_path": null,
+      "image": {
+        "path": "images/skins/Core.png",
+        "name": "captured-skin.png",
+        "type": "image/png"
+      }
+    },
+    {
+      "name": "Shadow Index",
+      "is_default": false,
+      "is_model_changed": true,
+      "model_path": "models/skins/Shadow Index.glb",
+      "image": {
+        "path": "images/skins/Shadow Index.png",
+        "name": "captured-skin.png",
+        "type": "image/png"
+      }
+    }
+  ],
+  "interactive_points": {
+    "foot_left": {
+      "x": 0.26,
+      "y": 0.068,
+      "z": 0.12
+    },
+    "foot_right": {
+      "x": -0.23,
+      "y": 0.07,
+      "z": -0.21
+    },
+    "knee_left": {
+      "x": 0.18,
+      "y": 0.53,
+      "z": 0.13
+    },
+    "knee_right": {
+      "x": -0.19,
+      "y": 0.53,
+      "z": -0.09
+    },
+    "hip_left": {
+      "x": 0.09,
+      "y": 0.98,
+      "z": 0.05
+    },
+    "hip_right": {
+      "x": -0.12,
+      "y": 0.98,
+      "z": -0.04
+    },
+    "chest": {
+      "x": -0.03,
+      "y": 1.421,
+      "z": 0.04
+    },
+    "head": {
+      "x": 0.03,
+      "y": 1.7,
+      "z": 0.07
+    },
+    "shoulder_left": {
+      "x": 0.22,
+      "y": 1.43,
+      "z": 0.05
+    },
+    "shoulder_right": {
+      "x": -0.2,
+      "y": 1.46,
+      "z": -0.15
+    },
+    "elbow_left": {
+      "x": 0.32,
+      "y": 1.16,
+      "z": 0.04
+    },
+    "elbow_right": {
+      "x": -0.22,
+      "y": 1.22,
+      "z": -0.25
+    },
+    "hand_left": {
+      "x": 0.3,
+      "y": 0.86,
+      "z": 0.18
+    },
+    "hand_right": {
+      "x": -0.31,
+      "y": 0.87,
+      "z": -0.15
+    }
+  },
+  "slug": "destroyer"
+}

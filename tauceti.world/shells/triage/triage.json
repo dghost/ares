@@ -1,0 +1,293 @@
+{
+  "name": "Triage",
+  "abilities": [
+    {
+      "name": "ROLE: Field medic ",
+      "type": "TECH: Damage mitigation ",
+      "icon": {
+        "url": "https://assets.thecdn.io/290eabc0-3aa2-4f24-8611-111b06cd6b86.png",
+        "filename": "290eabc0-3aa2-4f24-8611-111b06cd6b86.png",
+        "alt_filename": "290eabc0-3aa2-4f24-8611-111b06cd6b86.png",
+        "alt": "Triage Icon",
+        "width": 108,
+        "height": 108,
+        "mimeType": "image/png"
+      },
+      "heading": "Triage saves lives. ",
+      "description": "Deployable healing drones and onboard reboot abilities allow Triage Runners and their crews  to keep running after taking damage. Mend health and shields and even reboot crewmates at a distance to survive and fight again and again. \n[excerpt, UESC threat eval: rnnr.trge.fileID70064c_p392] \n"
+    },
+    {
+      "name": "REBOOT+",
+      "type": "Prime Ability",
+      "icon": {
+        "url": "https://assets.thecdn.io/cdb1cbec-86b4-4015-ac70-ec845e7598e5.png",
+        "filename": "cdb1cbec-86b4-4015-ac70-ec845e7598e5.png",
+        "alt_filename": "Reboot.png",
+        "alt": "Reboot",
+        "width": 108,
+        "height": 108,
+        "mimeType": "image/png"
+      },
+      "heading": "",
+      "description": "Ready your shell's emergency defibrillator systems.\n\nLock on to downed crew members or hostile targets and fire your Reboot+ device at them, which revives crew members and EMPs hostiles."
+    },
+    {
+      "name": "MED-DRONE",
+      "type": "Tactical Ability",
+      "icon": {
+        "url": "https://assets.thecdn.io/7def7591-0dd0-4749-a5db-efe35fa3f44e.png",
+        "filename": "7def7591-0dd0-4749-a5db-efe35fa3f44e.png",
+        "alt_filename": "Med-drone.png",
+        "alt": "Med-drone",
+        "width": 108,
+        "height": 108,
+        "mimeType": "image/png"
+      },
+      "heading": "",
+      "description": "Deploy a floating medical drone that attaches to crew members and restores health or recharges shields, and prevents them from bleeding out while downed."
+    },
+    {
+      "name": "SHAREWARE.EXE",
+      "type": "Trait 1",
+      "icon": {
+        "url": "https://assets.thecdn.io/b7284fb8-6490-4ed6-8588-914891ca2243.png",
+        "filename": "b7284fb8-6490-4ed6-8588-914891ca2243.png",
+        "alt_filename": " Shareware.png",
+        "alt": "Shareware",
+        "width": 108,
+        "height": 108,
+        "mimeType": "image/png"
+      },
+      "heading": "",
+      "description": "Benefits from medical consumables are shared between crew members with Med-Drone attached to them."
+    },
+    {
+      "name": "BATTERY OVERCHARGE",
+      "type": "Trait 2",
+      "icon": {
+        "url": "https://assets.thecdn.io/7a84a39f-fc55-4d60-8284-4969665374ff.png",
+        "filename": "7a84a39f-fc55-4d60-8284-4969665374ff.png",
+        "alt_filename": "Battery_overcharge.png",
+        "alt": "Battery_overcharge",
+        "width": 108,
+        "height": 108,
+        "mimeType": "image/png"
+      },
+      "heading": "",
+      "description": "Divert energy from your cooling systems to boost the performance of your weapons at the cost of generating additional heat.\n\nWhile active, breaking a target's shield with a volt weapon EMPs them."
+    }
+  ],
+  "cctvItems": {
+    "foot_left": {
+      "enabled": false,
+      "name": null,
+      "file": null
+    },
+    "foot_right": {
+      "enabled": false,
+      "name": null,
+      "file": null
+    },
+    "knee_left": {
+      "enabled": false,
+      "name": null,
+      "file": null
+    },
+    "knee_right": {
+      "enabled": false,
+      "name": null,
+      "file": null
+    },
+    "hip_left": {
+      "enabled": false,
+      "name": null,
+      "file": null
+    },
+    "hip_right": {
+      "enabled": true,
+      "name": "M7Z2Q9X8_P4AK_DATA.bin",
+      "file": {
+        "url": "https://assets.thecdn.io/39b6fda7-b9ed-4365-aaaa-ac2788c25048.mp4",
+        "filename": "39b6fda7-b9ed-4365-aaaa-ac2788c25048.mp4",
+        "alt_filename": "39b6fda7-b9ed-4365-aaaa-ac2788c25048.mp4",
+        "alt": "Triage 1P Medicmedbotwithvandal",
+        "width": null,
+        "height": null,
+        "mimeType": "video/mp4"
+      }
+    },
+    "chest": {
+      "enabled": false,
+      "name": null,
+      "file": null
+    },
+    "head": {
+      "enabled": true,
+      "name": "Y9P2QZ7X_4MAK_FCTL.dat",
+      "file": {
+        "url": "https://assets.thecdn.io/ae1b992e-e84b-47fe-b4cb-b47d2ced6485.wav",
+        "filename": "ae1b992e-e84b-47fe-b4cb-b47d2ced6485.wav",
+        "alt_filename": "ae1b992e-e84b-47fe-b4cb-b47d2ced6485.wav",
+        "alt": "survival is violence",
+        "width": null,
+        "height": null,
+        "mimeType": "audio/wav"
+      }
+    },
+    "shoulder_left": {
+      "enabled": true,
+      "name": "G7ZQ4XP9_K8MA_SBLK.bin",
+      "file": {
+        "url": "https://assets.thecdn.io/9ae3a439-59dc-433c-a987-8b5578a8a142.wav",
+        "filename": "9ae3a439-59dc-433c-a987-8b5578a8a142.wav",
+        "alt_filename": "9ae3a439-59dc-433c-a987-8b5578a8a142.wav",
+        "alt": "your crew is a weapon",
+        "width": null,
+        "height": null,
+        "mimeType": "audio/wav"
+      }
+    },
+    "shoulder_right": {
+      "enabled": false,
+      "name": null,
+      "file": null
+    },
+    "elbow_left": {
+      "enabled": true,
+      "name": "Q8ZP9X2M_7AK4_PROC.dat",
+      "file": {
+        "url": "https://assets.thecdn.io/fc17ce41-4cca-4b7a-be7f-4c66a6f58a03.mp4",
+        "filename": "fc17ce41-4cca-4b7a-be7f-4c66a6f58a03.mp4",
+        "alt_filename": "fc17ce41-4cca-4b7a-be7f-4c66a6f58a03.mp4",
+        "alt": "Triage 1P Overcharge 01",
+        "width": null,
+        "height": null,
+        "mimeType": "video/mp4"
+      }
+    },
+    "elbow_right": {
+      "enabled": true,
+      "name": "X9C8QZ4P_7M2R_MAP.map",
+      "file": {
+        "url": "https://assets.thecdn.io/78389f81-00a1-4813-a6f3-9d257669aa2c.mp4",
+        "filename": "78389f81-00a1-4813-a6f3-9d257669aa2c.mp4",
+        "alt_filename": "X9C8QZ4P_7M2R_MAP.mp4",
+        "alt": "Triage Ult",
+        "width": null,
+        "height": null,
+        "mimeType": "video/mp4"
+      }
+    },
+    "hand_left": {
+      "enabled": false,
+      "name": "",
+      "file": null
+    },
+    "hand_right": {
+      "enabled": false,
+      "name": "",
+      "file": null
+    }
+  },
+  "base_url": "https://goliath-tau-ceti-stage.b-cdn.net/runners/Triage-2026-02-25_14%3A28",
+  "id": "6",
+  "runner_name": "Triage",
+  "model_path": "models/Triage.glb",
+  "skins": [
+    {
+      "name": "Core",
+      "is_default": true,
+      "is_model_changed": false,
+      "model_path": null,
+      "image": {
+        "path": "images/skins/Core.png",
+        "name": "captured-skin.png",
+        "type": "image/png"
+      }
+    },
+    {
+      "name": "Shadow Index",
+      "is_default": false,
+      "is_model_changed": true,
+      "model_path": "models/skins/Shadow Index.glb",
+      "image": {
+        "path": "images/skins/Shadow Index.png",
+        "name": "captured-skin.png",
+        "type": "image/png"
+      }
+    }
+  ],
+  "interactive_points": {
+    "foot_left": {
+      "x": -0.01,
+      "y": 0.07,
+      "z": -0.23
+    },
+    "foot_right": {
+      "x": -0.19,
+      "y": 0.09,
+      "z": 0.02
+    },
+    "knee_left": {
+      "x": 0.08,
+      "y": 0.56,
+      "z": -0.15
+    },
+    "knee_right": {
+      "x": -0.09,
+      "y": 0.56,
+      "z": 0.09
+    },
+    "hip_left": {
+      "x": 0.06,
+      "y": 0.97,
+      "z": -0.1
+    },
+    "hip_right": {
+      "x": -0.06,
+      "y": 0.98,
+      "z": 0.03
+    },
+    "chest": {
+      "x": 0.03,
+      "y": 1.41,
+      "z": -0.01
+    },
+    "head": {
+      "x": 0.017,
+      "y": 1.67,
+      "z": 0.05
+    },
+    "shoulder_left": {
+      "x": 0.05,
+      "y": 1.45,
+      "z": -0.22
+    },
+    "shoulder_right": {
+      "x": -0.17,
+      "y": 1.43,
+      "z": 0.09
+    },
+    "elbow_left": {
+      "x": 0.09,
+      "y": 1.17,
+      "z": -0.33
+    },
+    "elbow_right": {
+      "x": -0.26,
+      "y": 1.17,
+      "z": 0.18
+    },
+    "hand_left": {
+      "x": 0.19,
+      "y": 0.9,
+      "z": -0.31
+    },
+    "hand_right": {
+      "x": -0.2,
+      "y": 0.9,
+      "z": 0.28
+    }
+  },
+  "slug": "triage"
+}

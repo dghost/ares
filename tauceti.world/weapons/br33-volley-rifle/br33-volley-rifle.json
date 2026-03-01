@@ -1,0 +1,387 @@
+{
+  "name": "BR33 Volley Rifle",
+  "sliding_puzzle": null,
+  "cctv": {
+    "cctvItems": [
+      {
+        "id": "698dd526a14d91b852004e1e",
+        "name": "ZP9K6A7R_X4M2_STACK.bin",
+        "location": "wpn_id_BR33_VolleyRifle",
+        "file": {
+          "url": "https://assets.thecdn.io/c77b5a27-1a6b-4338-ac71-c34ef6235b24.mp4",
+          "filename": "c77b5a27-1a6b-4338-ac71-c34ef6235b24.mp4",
+          "alt_filename": "ZP9K6A7R_X4M2_STACK.mp4",
+          "alt": "B33 Content",
+          "width": null,
+          "height": null,
+          "mimeType": "video/mp4"
+        }
+      },
+      {
+        "id": "698dd527a14d91b852004e1f",
+        "name": "R2Q9C7A_X5M8_SYS.dat",
+        "location": "wpn_id_BR33_VolleyRifle",
+        "file": {
+          "url": "https://assets.thecdn.io/7c8a5924-5ce6-4247-ad63-f40b9e9d9931.mp4",
+          "filename": "7c8a5924-5ce6-4247-ad63-f40b9e9d9931.mp4",
+          "alt_filename": "R2Q9C7A_X5M8_SYS.mp4",
+          "alt": "Volley Content",
+          "width": null,
+          "height": null,
+          "mimeType": "video/mp4"
+        }
+      }
+    ],
+    "cctvLockedFiles": 7
+  },
+  "base_url": "https://goliath-tau-ceti-stage.b-cdn.net/weapons/B33%20Volley%20Rifle-2026-02-05_10%3A08",
+  "id": "30",
+  "weapon_name": "B33 Volley Rifle",
+  "model_path": "models/v001_Volley_rifle_default.glb",
+  "materials": [
+    "Low",
+    "Low.001",
+    "mag_doubleshot_default_shader"
+  ],
+  "sticker_material_name": "Material",
+  "charm_pivot_name": "Charm_pivot",
+  "skins": [
+    {
+      "name": "TAC Standard",
+      "is_default": true,
+      "is_model_changed": false,
+      "model_path": null,
+      "textures": [
+        {
+          "name": "Low_map",
+          "material_name": "Low",
+          "type": "map",
+          "image": "textures/TAC Standard/Low_map.webp"
+        },
+        {
+          "name": "Low_normalMap",
+          "material_name": "Low",
+          "type": "normalMap",
+          "image": "textures/TAC Standard/Low_normalMap.webp"
+        },
+        {
+          "name": "Low_roughnessMap",
+          "material_name": "Low",
+          "type": "roughnessMap",
+          "image": "textures/TAC Standard/Low_roughnessMap.webp"
+        },
+        {
+          "name": "Low_metalnessMap",
+          "material_name": "Low",
+          "type": "metalnessMap",
+          "image": "textures/TAC Standard/Low_metalnessMap.webp"
+        },
+        {
+          "name": "Low_map",
+          "material_name": "Low",
+          "type": "map",
+          "image": "textures/TAC Standard/Low_map.webp"
+        },
+        {
+          "name": "Low_normalMap",
+          "material_name": "Low",
+          "type": "normalMap",
+          "image": "textures/TAC Standard/Low_normalMap.webp"
+        },
+        {
+          "name": "Low_roughnessMap",
+          "material_name": "Low",
+          "type": "roughnessMap",
+          "image": "textures/TAC Standard/Low_roughnessMap.webp"
+        },
+        {
+          "name": "Low_metalnessMap",
+          "material_name": "Low",
+          "type": "metalnessMap",
+          "image": "textures/TAC Standard/Low_metalnessMap.webp"
+        },
+        {
+          "name": "Low.001_map",
+          "material_name": "Low.001",
+          "type": "map",
+          "image": "textures/TAC Standard/Low.001_map.webp"
+        },
+        {
+          "name": "Low.001_normalMap",
+          "material_name": "Low.001",
+          "type": "normalMap",
+          "image": "textures/TAC Standard/Low.001_normalMap.webp"
+        },
+        {
+          "name": "Low.001_roughnessMap",
+          "material_name": "Low.001",
+          "type": "roughnessMap",
+          "image": "textures/TAC Standard/Low.001_roughnessMap.webp"
+        },
+        {
+          "name": "Low.001_metalnessMap",
+          "material_name": "Low.001",
+          "type": "metalnessMap",
+          "image": "textures/TAC Standard/Low.001_metalnessMap.webp"
+        },
+        {
+          "name": "Low.001_map",
+          "material_name": "Low.001",
+          "type": "map",
+          "image": "textures/TAC Standard/Low.001_map.webp"
+        },
+        {
+          "name": "Low.001_normalMap",
+          "material_name": "Low.001",
+          "type": "normalMap",
+          "image": "textures/TAC Standard/Low.001_normalMap.webp"
+        },
+        {
+          "name": "Low.001_roughnessMap",
+          "material_name": "Low.001",
+          "type": "roughnessMap",
+          "image": "textures/TAC Standard/Low.001_roughnessMap.webp"
+        },
+        {
+          "name": "Low.001_metalnessMap",
+          "material_name": "Low.001",
+          "type": "metalnessMap",
+          "image": "textures/TAC Standard/Low.001_metalnessMap.webp"
+        },
+        {
+          "name": "mag_doubleshot_default_shader_map",
+          "material_name": "mag_doubleshot_default_shader",
+          "type": "map",
+          "image": "textures/TAC Standard/mag_doubleshot_default_shader_map.webp"
+        },
+        {
+          "name": "mag_doubleshot_default_shader_normalMap",
+          "material_name": "mag_doubleshot_default_shader",
+          "type": "normalMap",
+          "image": "textures/TAC Standard/mag_doubleshot_default_shader_normalMap.webp"
+        },
+        {
+          "name": "mag_doubleshot_default_shader_roughnessMap",
+          "material_name": "mag_doubleshot_default_shader",
+          "type": "roughnessMap",
+          "image": "textures/TAC Standard/mag_doubleshot_default_shader_roughnessMap.webp"
+        },
+        {
+          "name": "mag_doubleshot_default_shader_metalnessMap",
+          "material_name": "mag_doubleshot_default_shader",
+          "type": "metalnessMap",
+          "image": "textures/TAC Standard/mag_doubleshot_default_shader_metalnessMap.webp"
+        }
+      ]
+    },
+    {
+      "name": "Vibrant Sport",
+      "is_default": false,
+      "is_model_changed": true,
+      "model_path": "models/skins/Vibrant Sport.glb",
+      "textures": []
+    }
+  ],
+  "mods": {
+    "precision_optic": [
+      {
+        "id": "019c2d32-883b-725e-97b3-60f8f36b1591",
+        "name": "mod_sight_default",
+        "is_default": true,
+        "materials": [
+          "sight_auto_heavy_01_default_shaderMaterial_V3",
+          "sight_auto_heavy_01_default_shaderMaterial",
+          "sight_auto_heavy_01_default_shaderMaterial_V2",
+          "Material"
+        ],
+        "thumbnail": "thumbnails/mods/mod_sight_default.webp",
+        "image": "images/mods/mod_sight_default.webp",
+        "specs": "Default",
+        "type": "Optic",
+        "model_path": "models/precision_optic/mod_sight_default.glb",
+        "textures": [
+          {
+            "skin": "Vibrant Sport",
+            "name": "sight_auto_heavy_01_default_shaderMaterial_V3_map.webp",
+            "material_name": "sight_auto_heavy_01_default_shaderMaterial_V3",
+            "type": "map",
+            "image": "textures/mods/mod_sight_default/Vibrant Sport/sight_auto_heavy_01_default_shaderMaterial_V3_map.webp.webp"
+          },
+          {
+            "skin": "Vibrant Sport",
+            "name": "sight_auto_heavy_01_default_shaderMaterial_V3_normalMap.webp",
+            "material_name": "sight_auto_heavy_01_default_shaderMaterial_V3",
+            "type": "normalMap",
+            "image": "textures/mods/mod_sight_default/Vibrant Sport/sight_auto_heavy_01_default_shaderMaterial_V3_normalMap.webp.webp"
+          },
+          {
+            "skin": "Vibrant Sport",
+            "name": "sight_auto_heavy_01_default_shaderMaterial_map.webp",
+            "material_name": "sight_auto_heavy_01_default_shaderMaterial",
+            "type": "map",
+            "image": "textures/mods/mod_sight_default/Vibrant Sport/sight_auto_heavy_01_default_shaderMaterial_map.webp.webp"
+          },
+          {
+            "skin": "Vibrant Sport",
+            "name": "sight_auto_heavy_01_default_shaderMaterial_normalMap.webp",
+            "material_name": "sight_auto_heavy_01_default_shaderMaterial",
+            "type": "normalMap",
+            "image": "textures/mods/mod_sight_default/Vibrant Sport/sight_auto_heavy_01_default_shaderMaterial_normalMap.webp.webp"
+          },
+          {
+            "skin": "Vibrant Sport",
+            "name": "sight_auto_heavy_01_default_shaderMaterial_V2_map.webp",
+            "material_name": "sight_auto_heavy_01_default_shaderMaterial_V2",
+            "type": "map",
+            "image": "textures/mods/mod_sight_default/Vibrant Sport/sight_auto_heavy_01_default_shaderMaterial_V2_map.webp.webp"
+          },
+          {
+            "skin": "Vibrant Sport",
+            "name": "sight_auto_heavy_01_default_shaderMaterial_V2_normalMap.webp",
+            "material_name": "sight_auto_heavy_01_default_shaderMaterial_V2",
+            "type": "normalMap",
+            "image": "textures/mods/mod_sight_default/Vibrant Sport/sight_auto_heavy_01_default_shaderMaterial_V2_normalMap.webp.webp"
+          },
+          {
+            "skin": "TAC Standard",
+            "name": "sight_auto_heavy_01_default_shaderMaterial_V3_map",
+            "material_name": "sight_auto_heavy_01_default_shaderMaterial_V3",
+            "type": "map",
+            "image": "textures/mods/mod_sight_default/TAC Standard/sight_auto_heavy_01_default_shaderMaterial_V3_map.webp"
+          },
+          {
+            "skin": "TAC Standard",
+            "name": "sight_auto_heavy_01_default_shaderMaterial_V3_normalMap",
+            "material_name": "sight_auto_heavy_01_default_shaderMaterial_V3",
+            "type": "normalMap",
+            "image": "textures/mods/mod_sight_default/TAC Standard/sight_auto_heavy_01_default_shaderMaterial_V3_normalMap.webp"
+          },
+          {
+            "skin": "TAC Standard",
+            "name": "sight_auto_heavy_01_default_shaderMaterial_map",
+            "material_name": "sight_auto_heavy_01_default_shaderMaterial",
+            "type": "map",
+            "image": "textures/mods/mod_sight_default/TAC Standard/sight_auto_heavy_01_default_shaderMaterial_map.webp"
+          },
+          {
+            "skin": "TAC Standard",
+            "name": "sight_auto_heavy_01_default_shaderMaterial_normalMap",
+            "material_name": "sight_auto_heavy_01_default_shaderMaterial",
+            "type": "normalMap",
+            "image": "textures/mods/mod_sight_default/TAC Standard/sight_auto_heavy_01_default_shaderMaterial_normalMap.webp"
+          },
+          {
+            "skin": "TAC Standard",
+            "name": "sight_auto_heavy_01_default_shaderMaterial_V2_map",
+            "material_name": "sight_auto_heavy_01_default_shaderMaterial_V2",
+            "type": "map",
+            "image": "textures/mods/mod_sight_default/TAC Standard/sight_auto_heavy_01_default_shaderMaterial_V2_map.webp"
+          },
+          {
+            "skin": "TAC Standard",
+            "name": "sight_auto_heavy_01_default_shaderMaterial_V2_normalMap",
+            "material_name": "sight_auto_heavy_01_default_shaderMaterial_V2",
+            "type": "normalMap",
+            "image": "textures/mods/mod_sight_default/TAC Standard/sight_auto_heavy_01_default_shaderMaterial_V2_normalMap.webp"
+          }
+        ]
+      }
+    ],
+    "magazine": [
+      {
+        "id": "019c2d32-b78d-7250-909b-8b0d1a9f593e",
+        "name": "mod_mag_default",
+        "is_default": true,
+        "materials": [
+          "magazine_burst_light_01_default_shaderMaterial",
+          "ammo_cartridgeMaterial"
+        ],
+        "thumbnail": "thumbnails/mods/mod_mag_default.webp",
+        "image": "images/mods/mod_mag_default.webp",
+        "specs": "Default",
+        "type": "Magazine",
+        "model_path": "models/magazine/mod_mag_default.glb",
+        "textures": [
+          {
+            "skin": "Vibrant Sport",
+            "name": "magazine_burst_light_01_default_shaderMaterial_map.webp",
+            "material_name": "magazine_burst_light_01_default_shaderMaterial",
+            "type": "map",
+            "image": "textures/mods/mod_mag_default/Vibrant Sport/magazine_burst_light_01_default_shaderMaterial_map.webp.webp"
+          },
+          {
+            "skin": "Vibrant Sport",
+            "name": "magazine_burst_light_01_default_shaderMaterial_normalMap.webp",
+            "material_name": "magazine_burst_light_01_default_shaderMaterial",
+            "type": "normalMap",
+            "image": "textures/mods/mod_mag_default/Vibrant Sport/magazine_burst_light_01_default_shaderMaterial_normalMap.webp.webp"
+          },
+          {
+            "skin": "TAC Standard",
+            "name": "magazine_burst_light_01_default_shaderMaterial_map",
+            "material_name": "magazine_burst_light_01_default_shaderMaterial",
+            "type": "map",
+            "image": "textures/mods/mod_mag_default/TAC Standard/magazine_burst_light_01_default_shaderMaterial_map.webp"
+          },
+          {
+            "skin": "TAC Standard",
+            "name": "magazine_burst_light_01_default_shaderMaterial_normalMap",
+            "material_name": "magazine_burst_light_01_default_shaderMaterial",
+            "type": "normalMap",
+            "image": "textures/mods/mod_mag_default/TAC Standard/magazine_burst_light_01_default_shaderMaterial_normalMap.webp"
+          }
+        ]
+      }
+    ],
+    "barrel": [
+      {
+        "id": "019c2d32-a64d-743b-b871-29fd9c66c976",
+        "name": "mod_barrel_default",
+        "is_default": true,
+        "materials": [
+          "barrel_burst_light_01_default_shaderMaterial",
+          "barrel_white_top"
+        ],
+        "thumbnail": "thumbnails/mods/mod_barrel_default.webp",
+        "image": "images/mods/mod_barrel_default.webp",
+        "specs": "Default",
+        "type": "Barrel",
+        "model_path": "models/barrel/mod_barrel_default.glb",
+        "textures": [
+          {
+            "skin": "Vibrant Sport",
+            "name": "barrel_burst_light_01_default_shaderMaterial_map.webp",
+            "material_name": "barrel_burst_light_01_default_shaderMaterial",
+            "type": "map",
+            "image": "textures/mods/mod_barrel_default/Vibrant Sport/barrel_burst_light_01_default_shaderMaterial_map.webp.webp"
+          },
+          {
+            "skin": "Vibrant Sport",
+            "name": "barrel_burst_light_01_default_shaderMaterial_normalMap.webp",
+            "material_name": "barrel_burst_light_01_default_shaderMaterial",
+            "type": "normalMap",
+            "image": "textures/mods/mod_barrel_default/Vibrant Sport/barrel_burst_light_01_default_shaderMaterial_normalMap.webp.webp"
+          },
+          {
+            "skin": "TAC Standard",
+            "name": "barrel_burst_light_01_default_shaderMaterial_map",
+            "material_name": "barrel_burst_light_01_default_shaderMaterial",
+            "type": "map",
+            "image": "textures/mods/mod_barrel_default/TAC Standard/barrel_burst_light_01_default_shaderMaterial_map.webp"
+          },
+          {
+            "skin": "TAC Standard",
+            "name": "barrel_burst_light_01_default_shaderMaterial_normalMap",
+            "material_name": "barrel_burst_light_01_default_shaderMaterial",
+            "type": "normalMap",
+            "image": "textures/mods/mod_barrel_default/TAC Standard/barrel_burst_light_01_default_shaderMaterial_normalMap.webp"
+          }
+        ]
+      }
+    ]
+  },
+  "stickers": [],
+  "charms": [],
+  "slug": "br33-volley-rifle",
+  "redacted": false
+}
