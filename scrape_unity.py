@@ -22,51 +22,113 @@ ASSETS_JSON = "json/unity-assets.json"
 
 # Initial route table (hardcoded in launcher JS)
 INITIAL_ROUTES = {
-    "8ad81bb4a6b0e7288a92c89478dc8a3a5bd7004d91cf301568665d2b9ac614d7": "/assets/b514e4e7.bin",
-    "3820cfe44fcc288861e192ba8552f333ab5dacaf6a09ae77d27f0c8fe1294088": "/assets/7111c8d1.bin",
+    "8ad81bb4a6b0e7288a92c89478dc8a3a5bd7004d91cf301568665d2b9ac614d7": "/assets/0cf37de9.bin",
+    "3820cfe44fcc288861e192ba8552f333ab5dacaf6a09ae77d27f0c8fe1294088": "/assets/e96ba0cb.bin",
+    "23ce6f9b2eef26c1d8390110847dbb6b0d8e0ec6c51d8f70d69ee93005463c09": "/assets/6a8488f4.bin",
+    "73164f73658fb413f373dc8c3f197b2b660bccbc8971b88bc00e76de21876b84": "/assets/6e8779d2.bin",
 }
 
-# Static assets discovered by deobfuscating launcher/sfx/fabricate JS
+# Static assets discovered by deobfuscating launcher/sfx-registry/slotz JS
 STATIC_ASSETS = [
     "/a/0af60c37.ogg",
+    "/a/0eaaa0ce.ogg",
     "/a/0f354c2d.ogg",
+    "/a/0f79c27b.ogg",
+    "/a/109d2680.ogg",
+    "/a/15a582bc.ogg",
     "/a/1f935aa0.ogg",
+    "/a/201d86e1.ogg",
+    "/a/20d54349.ogg",
+    "/a/2214f9f0.ogg",
     "/a/258c9b5c.ogg",
     "/a/2691fe25.ogg",
+    "/a/2a299639.jpg",
     "/a/2a7a5ea4.ogg",
+    "/a/2ab8367e.ogg",
+    "/a/2b59ab5e.jpg",
+    "/a/312e774a.ogg",
+    "/a/3a50915c.ogg",
+    "/a/4165b618.jpg",
+    "/a/4299b5ce.ogg",
     "/a/42ae4c8a.png",
+    "/a/42c74cc0.ogg",
     "/a/43a79fc6.ogg",
+    "/a/46ceea35.ogg",
+    "/a/4785d6b9.ogg",
     "/a/4ee22e62.ogg",
     "/a/4f452c55.ogg",
     "/a/52bffdc2.ogg",
+    "/a/5b45d86e.ogg",
+    "/a/6141198a.ogg",
+    "/a/6153517f.ogg",
+    "/a/6745850c.ogg",
+    "/a/68d5a130.ogg",
+    "/a/6bcc82fc.ogg",
+    "/a/6e1a8126.ogg",
     "/a/76399edd.ogg",
     "/a/795dddf8.ogg",
+    "/a/7bf80748.ogg",
+    "/a/7c60a2a3.ogg",
+    "/a/7d9c596b.ogg",
     "/a/7ff31d61.ogg",
+    "/a/810893fa.png",
+    "/a/82b10904.ogg",
     "/a/85a70a95.ogg",
+    "/a/860959ed.ogg",
+    "/a/86b649e4.ogg",
     "/a/8915bdd9.ogg",
-    "/a/8c395b8a.png",
+    "/a/93a4ba35.jpg",
+    "/a/9344e5e3.ogg",
     "/a/9794be3e.ogg",
+    "/a/a3bef8dc.ogg",
     "/a/a5103f5e.ogg",
-    "/a/ae519fac.png",
+    "/a/a58cc91e.ogg",
+    "/a/a5fcc5c0.ogg",
+    "/a/a8f2308d.ogg",
+    "/a/a9be40b1.ogg",
+    "/a/b42f816a.ogg",
+    "/a/bc5de18f.ogg",
+    "/a/c616b30d.ogg",
+    "/a/c69182a7.ogg",
+    "/a/c6ccae33.jpg",
+    "/a/cb116574.ogg",
+    "/a/cd32c318.ogg",
+    "/a/ce48620a.ogg",
     "/a/ceda2dfb.ogg",
+    "/a/cfa3257f.ogg",
+    "/a/d161e1fd.ogg",
     "/a/d45e6b5d.ogg",
+    "/a/d7bf0037.ogg",
+    "/a/e005a437.ogg",
+    "/a/e447a895.ogg",
     "/a/e5da4c95.ogg",
-    "/a/e97d5ebc.png",
+    "/a/e772f7bb.ogg",
+    "/a/eff8e9f8.ogg",
+    "/a/f590a571.ogg",
+    "/a/f5e9c222.ogg",
+    "/a/f9fe662f.ogg",
     "/a/fc8feff4.ogg",
+    "/a/ffa9849e.ogg",
+    "/a/fff55584.ogg",
 ]
 
 # Launcher JS/CSS bundles
 LAUNCHER_ASSETS = [
-    "/assets/launcher-04b14837.js",
+    "/assets/launcher-68fe888d.js",
     "/assets/_ptyz-C-eQwEZn.js",
-    "/assets/sfx-registry-BrqjwdWT.js",
-    "/assets/crypto-CNrN-MH3.js",
+    "/assets/sfx-registry-BL_rOsPO.js",
+    "/assets/xstate.esm-D0AYT22i.js",
+    "/assets/crypto-D_6ab-Yc.js",
+    "/assets/shell-mode-CVC9sCCW.js",
     "/assets/shader-utils-iius7U5f.js",
     "/assets/crypto-CT9NFM2O.css",
-    "/assets/launcher-DiBPDwMH.css",
-    "/assets/card-viewer-standalone-r1rwLUzQ.js",
-    "/assets/fabricate-card-viewer-CReE24rc.js",
-    "/assets/card-viewer-standalone-3jPVkXr1.css",
+    "/assets/launcher-lDaBIExo.css",
+]
+
+# SL0TZ puzzle app assets
+SLOTZ_ASSETS = [
+    "/assets/slotz-BJncgyv7.js",
+    "/assets/slotz-KcMJ2FGP.css",
 ]
 
 
@@ -128,9 +190,9 @@ def _unescape_js_string(s):
     return "".join(out)
 
 def decode_all_ptyz_strings(js_source):
-    """Decode all ptyz-obfuscated strings from e("...") and t("...") calls in JS source."""
+    """Decode all ptyz-obfuscated strings from e/t/n("...") calls in JS source."""
     decoded_strings = []
-    for match in re.finditer(r'[et]\(("(?:[^"\\]|\\.)*"|\'(?:[^\'\\]|\\.)*\')\)', js_source):
+    for match in re.finditer(r'[etn]\(("(?:[^"\\]|\\.)*"|\'(?:[^\'\\]|\\.)*\')\)', js_source):
         raw = match.group(1)[1:-1]  # strip quotes
         try:
             unescaped = _unescape_js_string(raw)
@@ -210,9 +272,13 @@ def download(url, path):
 
 
 def scrape_launcher_assets(out_dir):
-    """Download launcher JS/CSS bundles."""
+    """Download launcher and SL0TZ JS/CSS bundles."""
     print("Downloading launcher assets...")
     for asset in LAUNCHER_ASSETS:
+        path = os.path.join(os.path.normpath(out_dir), os.path.normpath(asset.lstrip("/")))
+        download(f"{BASE_URL}{asset}", path)
+    print("Downloading SL0TZ assets...")
+    for asset in SLOTZ_ASSETS:
         path = os.path.join(os.path.normpath(out_dir), os.path.normpath(asset.lstrip("/")))
         download(f"{BASE_URL}{asset}", path)
 
@@ -305,6 +371,33 @@ def scrape_and_decrypt(codes, out_dir):
             print(f"  Decryption failed: {e}")
             continue
 
+        # Handle alias payloads — follow the target code instead of saving JS/CSS
+        if payload.get("type") == "alias":
+            target = payload.get("target", "")
+            auto_launch = payload.get("autoLaunch", "")
+            print(f"  Alias payload: {code} -> {target} (autoLaunch={auto_launch})")
+
+            dec_dir = os.path.join(os.path.normpath(out_dir), "decrypted", code)
+            os.makedirs(dec_dir, exist_ok=True)
+            meta = {"type": "alias", "target": target}
+            if auto_launch:
+                meta["autoLaunch"] = auto_launch
+            with open(os.path.join(dec_dir, "meta.json"), "w") as f:
+                json.dump(meta, f, indent=4)
+
+            archived = {"bin": bin_path, "type": "alias", "target": target}
+            if auto_launch:
+                archived["autoLaunch"] = auto_launch
+            all_payloads[code] = archived
+
+            # Queue the target as a new code to process
+            if target.upper() not in processed_codes:
+                target_hash = sha256(target.upper())
+                code_map[target_hash] = target.upper()
+                pending_codes.append(target)
+                print(f"  Queued alias target: {target}")
+            continue
+
         # Save decrypted content
         dec_dir = os.path.join(os.path.normpath(out_dir), "decrypted", code)
         try:
@@ -373,8 +466,8 @@ def scrape_and_decrypt(codes, out_dir):
         local_bin = os.path.join(os.path.normpath(out_dir), os.path.normpath(bin_path.lstrip("/")))
         download(f"{BASE_URL}{bin_path}", local_bin)
 
-    # Extract text from launcher JS files too
-    for asset in LAUNCHER_ASSETS:
+    # Extract text from launcher and SL0TZ JS files too
+    for asset in LAUNCHER_ASSETS + SLOTZ_ASSETS:
         if not asset.endswith(".js"):
             continue
         local_path = os.path.join(os.path.normpath(out_dir), os.path.normpath(asset.lstrip("/")))
@@ -1173,16 +1266,18 @@ def extract_crossword_data(js_source):
 
 
 def extract_fabricate_data(js_source):
-    """Extract signal IDs, character names, and game state mappings from the
-    fabricate module (MTBFAB7).
+    """Extract corporate branding, character names, card sequence, API endpoint,
+    terminal messages, and logo image URLs from the fabricate module.
 
-    Returns a dict with signal_ids, character_names, and game_state_defaults.
+    Returns a dict with corporate_themes, card_names, card_sequence,
+    logo_images, api_endpoint, terminal_messages, named_entities, and
+    legacy fields (signal_ids, game_state_defaults) if present.
     """
     data = {}
 
-    # Signal IDs
+    # Signal IDs (legacy — present in old MTBFAB7, may be absent in F4BR1C8)
     sigs = set()
-    for m in re.finditer(r"""([et])\(("(?:[^"\\]|\\.)*"|'(?:[^'\\]|\\.)*')\)""", js_source):
+    for m in re.finditer(r"""([etn])\(("(?:[^"\\]|\\.)*"|'(?:[^'\\]|\\.)*')\)""", js_source):
         raw = m.group(2)[1:-1]
         try:
             decoded = ptyz_decode(_unescape_js_string(raw))
@@ -1193,28 +1288,106 @@ def extract_fabricate_data(js_source):
     if sigs:
         data["signal_ids"] = sorted(sigs)
 
-    # Character names from card rendering
+    # Character names from card rendering — {text:e("..."), ...}
     names = []
-    name_m = re.search(r"""\{text:([et])\(("(?:[^"\\]|\\.)*"|'(?:[^'\\]|\\.)*')\)""", js_source[80000:])
-    if name_m:
-        # Look for the array of {text: ..., size: ..., y: ...} objects
-        chunk = js_source[80000 + name_m.start() - 10:80000 + name_m.start() + 500]
-        for nm in re.finditer(r"""text:([et])\(("(?:[^"\\]|\\.)*"|'(?:[^'\\]|\\.)*')\)""", chunk):
-            try:
-                names.append(_decode_ptyz_field(nm.group(2)))
-            except:
-                pass
+    for search_start in range(0, len(js_source), 40000):
+        name_m = re.search(r"""\{text:([etn])\(("(?:[^"\\]|\\.)*"|'(?:[^'\\]|\\.)*')\)""",
+                           js_source[search_start:])
+        if name_m:
+            chunk = js_source[search_start + name_m.start() - 10:
+                              search_start + name_m.start() + 500]
+            for nm in re.finditer(r"""text:([etn])\(("(?:[^"\\]|\\.)*"|'(?:[^'\\]|\\.)*')\)""", chunk):
+                try:
+                    name = _decode_ptyz_field(nm.group(2))
+                    if name and name not in names:
+                        names.append(name)
+                except:
+                    pass
+            if names:
+                break
     if names:
         data["card_names"] = names
 
-    # Game state defaults (pe object) — references ve[] indices
-    # First decode ve array
+    # Corporate branding themes — const k={traxus:{...}, uesc:{...}, ...}
+    theme_m = re.search(r'const \w+=\{traxus:\{', js_source)
+    if theme_m:
+        brace_start = js_source.index('{', theme_m.start())
+        brace_end = _find_matching_brace(js_source, brace_start)
+        if brace_end > 0:
+            theme_src = js_source[brace_start:brace_end + 1]
+            # Parse each corp: {logo:..., primary:..., secondary:..., ...}
+            themes = {}
+            for corp_m in re.finditer(r'(\w+):\{logo:"(\w+)"', theme_src):
+                corp_name = corp_m.group(1)
+                corp_block_start = theme_src.index('{', corp_m.start())
+                corp_block_end = theme_src.index('}', corp_block_start)
+                block = theme_src[corp_block_start:corp_block_end + 1]
+                theme = {"logo": corp_m.group(2)}
+                for field in ('primary', 'secondary', 'logoColor', 'topStrip'):
+                    fm = re.search(field + r':"([^"]*)"', block)
+                    if fm:
+                        theme[field] = fm.group(1)
+                themes[corp_name] = theme
+            if themes:
+                data["corporate_themes"] = themes
+
+    # Card sequence order — array of corp names
+    seq_m = re.search(r'=\["nu","traxus"', js_source)
+    if seq_m:
+        arr_start = js_source.rindex('[', 0, seq_m.end())
+        arr_end = js_source.index(']', arr_start)
+        seq_src = js_source[arr_start:arr_end + 1]
+        try:
+            sequence = json.loads(seq_src)
+            data["card_sequence"] = sequence
+        except:
+            pass
+
+    # Logo image URLs (decoded ptyz strings that are /a/*.png)
+    logo_images = []
+    for d in decode_all_ptyz_strings(js_source):
+        if re.match(r'^/a/[a-f0-9]+\.png$', d) and d not in logo_images:
+            logo_images.append(d)
+    if logo_images:
+        data["logo_images"] = logo_images
+
+    # Named entities (decoded ptyz strings that look like character/org names)
+    _ENTITY_NOISE = {
+        'Boolean', 'String', 'Number', 'Object', 'Array', 'Error',
+        'RESTORE', 'SUBMIT', 'COMPLETE', 'BACKSPACE', 'DELETE',
+        'ArrowRight', 'ArrowLeft', 'ArrowUp', 'ArrowDown', 'Enter',
+        'Unidentified', 'MonoSpec',
+    }
+    entities = []
+    for d in decode_all_ptyz_strings(js_source):
+        if re.match(r'^[A-Z][a-zA-Z]+$', d) and len(d) >= 4 and d not in entities:
+            if d not in _ENTITY_NOISE:
+                entities.append(d)
+    if entities:
+        data["named_entities"] = entities
+
+    # API endpoint
+    for d in decode_all_ptyz_strings(js_source):
+        if d.startswith('/f/'):
+            data["api_endpoint"] = d
+            break
+
+    # Terminal messages (CREDENTIALS ALIGNED, MEDIA ARCHIVE UNLOCKED, etc.)
+    messages = []
+    for d in decode_all_ptyz_strings(js_source):
+        if any(phrase in d for phrase in ('CREDENTIALS', 'ARCHIVE', 'UNLOCKED',
+                                          'DISPLAY TOO SMALL')):
+            if d not in messages:
+                messages.append(d)
+    if messages:
+        data["terminal_messages"] = messages
+
+    # Game state defaults (legacy — pe object referencing ve[] indices)
     ve_decoded = []
     ve_src = _find_array(js_source, r'\bvar ve=\[')
     if ve_src:
         ve_decoded = decode_all_ptyz_strings(ve_src)
 
-    # Find the pe={first_boot:ve[...], ...} object (not the actor pe={self:...})
     for pe_m in re.finditer(r'pe=\{first_boot:', js_source):
         brace_start = js_source.index('{', pe_m.start())
         depth = 0
@@ -1410,6 +1583,26 @@ def dump_fabricate_data(out_dir, fab_data):
             for flag, slot in fab_data["game_state_defaults"].items():
                 f.write(f"{flag}: {slot}\n")
 
+    # Corporate themes
+    if fab_data.get("corporate_themes"):
+        with open(os.path.join(fab_dir, "corporate-themes.txt"), "w") as f:
+            for corp, theme in sorted(fab_data["corporate_themes"].items()):
+                f.write(f"{corp}:\n")
+                for k, v in sorted(theme.items()):
+                    f.write(f"  {k}: {v}\n")
+
+    # Card sequence
+    if fab_data.get("card_sequence"):
+        with open(os.path.join(fab_dir, "card-sequence.txt"), "w") as f:
+            for i, corp in enumerate(fab_data["card_sequence"]):
+                f.write(f"{i+1}. {corp}\n")
+
+    # Terminal messages
+    if fab_data.get("terminal_messages"):
+        with open(os.path.join(fab_dir, "terminal-messages.txt"), "w") as f:
+            for msg in fab_data["terminal_messages"]:
+                f.write(msg + "\n")
+
     print(f"  Fabricate -> {fab_dir}/ ({', '.join(fab_data.keys())})")
 
 
@@ -1450,8 +1643,10 @@ def extract_module_data(out_dir):
         if xword:
             dump_crossword_data(out_dir, xword, downloaded)
 
-    # Fabricate module (MTBFAB7)
-    fab_path = os.path.join(dec_dir, "MTBFAB7", "module.js")
+    # Fabricate module (F4BR1C8, with MTBFAB7 as legacy fallback)
+    fab_path = os.path.join(dec_dir, "F4BR1C8", "module.js")
+    if not os.path.exists(fab_path):
+        fab_path = os.path.join(dec_dir, "MTBFAB7", "module.js")
     if os.path.exists(fab_path):
         with open(fab_path, "r") as f:
             js = f.read()
@@ -1460,6 +1655,67 @@ def extract_module_data(out_dir):
             dump_fabricate_data(out_dir, fab)
 
     return downloaded
+
+
+def scrape_index_html(out_dir):
+    """Fetch and save the main index.html (contains HTML comment easter egg)."""
+    url = f"{BASE_URL}/"
+    path = os.path.join(os.path.normpath(out_dir), "index.html")
+    print("Downloading index.html...")
+    try:
+        req = urllib.request.Request(url)
+        with urllib.request.urlopen(req) as resp:
+            html = resp.read().decode("utf-8")
+        with open(path, "w") as f:
+            f.write(html)
+        print(f"  Saved index.html ({len(html)} bytes)")
+    except Exception as e:
+        print(f"  Failed to fetch index.html: {e}")
+
+
+def scrape_slotz(out_dir):
+    """Fetch SL0TZ index.html and extract text from slotz JS.
+
+    Returns a dict of {source: [texts]} for the text extraction pipeline.
+    """
+    texts = {}
+
+    # Download SL0TZ index.html
+    url = f"{BASE_URL}/SL0TZ/"
+    path = os.path.join(os.path.normpath(out_dir), "slotz", "index.html")
+    os.makedirs(os.path.dirname(path), exist_ok=True)
+    print("Downloading SL0TZ page...")
+    try:
+        req = urllib.request.Request(url)
+        with urllib.request.urlopen(req) as resp:
+            html = resp.read().decode("utf-8")
+        with open(path, "w") as f:
+            f.write(html)
+        print(f"  Saved SL0TZ index.html ({len(html)} bytes)")
+    except Exception as e:
+        print(f"  Failed to fetch SL0TZ page: {e}")
+
+    # Extract text from slotz JS
+    for asset in SLOTZ_ASSETS:
+        if not asset.endswith(".js"):
+            continue
+        local_path = os.path.join(os.path.normpath(out_dir), os.path.normpath(asset.lstrip("/")))
+        if os.path.exists(local_path):
+            with open(local_path, "r") as f:
+                js_source = f.read()
+            js_texts = extract_text_from_js(js_source)
+
+            # Also extract plaintext puzzle words
+            for word in re.findall(r'"(pathways|into|darkness)"', js_source):
+                if word not in js_texts:
+                    js_texts.append(word)
+
+            if js_texts:
+                label = os.path.basename(asset)
+                texts[label] = js_texts
+                print(f"  Extracted {len(js_texts)} text strings from {label}")
+
+    return texts
 
 
 def save_route_manifest(all_routes, code_map):
@@ -1497,12 +1753,17 @@ if __name__ == "__main__":
     except:
         pass
 
+    scrape_index_html(OUT_DIR)
     scrape_launcher_assets(OUT_DIR)
 
     print("Processing codes and encrypted payloads...")
     all_routes, code_map, all_texts, all_payloads, js_asset_urls = scrape_and_decrypt(codes, OUT_DIR)
     save_route_manifest(all_routes, code_map)
     save_payload_archive(all_payloads)
+
+    # Extract SL0TZ content and merge into text pipeline
+    slotz_texts = scrape_slotz(OUT_DIR)
+    all_texts.update(slotz_texts)
 
     print("Extracting decoded text content...")
     dump_extracted_text(OUT_DIR, all_texts)
