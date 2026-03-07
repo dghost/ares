@@ -65,7 +65,7 @@ Unlocks archive entries: text, PDFs, images, video, audio.
 Timed trivia with tiers (one question per tier). Each question has a 5-second reveal countdown before you can answer. Answers typed in CodeLanguage glyphs. Wrong answer or timeout resets all tiers. Plays video on completion.
 
 ### [5] Biostock — Direction Sequence
-Gaussian splat point cloud scene. Not a spatial maze — it's a sequence puzzle. Choose a direction (arrow keys or clickable buttons), the camera flies toward that door and re-enters from a random one (purely visual). The server validates each move via `POST /api/point-cloud/move`. Find the correct sequence of directions to complete. Path displayed as arrow trail. **R** to reset. Plays video on completion.
+Gaussian splat point cloud scene. Choose a direction (arrow keys or clickable buttons), the camera flies toward that door and re-enters from a random one. Find the correct sequence of directions to complete. Path displayed as arrow trail. **R** to reset. Plays video on completion.
 
 ### [6] Preservation — Decryptor
 Eight timed lock puzzles on a single scrollable page. Each has a serial number. Any timer expiry resets all.
