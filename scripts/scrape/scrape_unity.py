@@ -12,6 +12,7 @@ from cryptography.hazmat.primitives.ciphers.aead import AESGCM
 from cryptography.hazmat.primitives.kdf.pbkdf2 import PBKDF2HMAC
 from cryptography.hazmat.primitives import hashes
 
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import util
 
 BASE_URL = "https://unityispower.io"

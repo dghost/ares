@@ -1,9 +1,11 @@
 #!/usr/bin/env python3
 
 import os
+import sys
 import shutil
 import collections
 from collections.abc import MutableMapping,Iterable
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import util
 
 FileTuple = collections.namedtuple('FileTuple', ['name', 'data'])
