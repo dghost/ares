@@ -11,8 +11,22 @@ Landing page is a CCTV grid with 9 cameras. Each camera tile shows its status an
 **Camera capture** (all 9 cameras):
 
 1. **Unstable** → starting state. Grayscale feed, progress bar, countdown.
-2. **Stable** → clear feed. Click to fullscreen (plays detail video). **Shift+S** to capture.
-3. **Captured** → server validates. Camera 06 and Camera 09 stop here (no rooms).
+2. **Stable** → clear feed. Click to fullscreen (plays 15-second detail video on loop). **Shift+S** to capture.
+3. **Captured** → server validates the timestamp. Camera 06 and Camera 09 stop here (no rooms).
+
+**Capture timing:** The client sends the video's current playback time to the server. Each detail video contains a brief glitch burst; the capture likely needs to occur during or near that window. The video loops, but a failed capture closes the fullscreen player — you have to re-enter to try again.
+
+| Camera | Glitch at | Duration |
+|--------|-----------|----------|
+| Steerage | ~1.0s | 0.23s |
+| Camera 09 | ~2.0s | 0.07s |
+| Index | ~4.0s | 0.23s |
+| Control | ~6.0s | 0.23s |
+| Revival | ~8.0s | 0.23s |
+| Cargo | ~9.0s | 0.23s |
+| Biostock | ~10.0s | 0.10s |
+| Preservation | ~13.0s | 0.23s |
+| Camera 06 | ~14.0s | 0.10s |
 
 **Room challenges** (7 cameras have rooms, unlocked by capture):
 
@@ -89,7 +103,8 @@ Eighth navbar slot. Returns error.
 
 ## Open Questions
 
-- **Camera 06 and Camera 09** — feeds with no rooms - seem to allow capturing, unclear if necessary or not
-- **4 phantom videos** — alternate video UUIDs that 404 - completion videos?
-- **Decryptor serial numbers** — each lock has a unique serial - unclear if meaningful
-- **memoryUnlocked** — trigger unknown
+- **Camera 06 and Camera 09** — feeds with no rooms — seem to allow capturing, unclear if necessary
+- **Capture timing** — does the server require the timestamp to fall exactly within the glitch burst, or is there a tolerance window? Unconfirmed.
+- **4 phantom videos** — alternate video UUIDs that 404 — likely completion/reward videos
+- **Decryptor serial numbers** — each lock has a unique serial — unclear if meaningful
+- **memoryUnlocked** — trigger unknown (kill count milestone? external ARG event?)

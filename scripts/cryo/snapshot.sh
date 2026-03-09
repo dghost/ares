@@ -81,8 +81,11 @@ now = datetime.now(timezone.utc)
 for cam in ('cargo','index','steerage','revival','biostock','preservation','cryoHub','camera06','camera09'):
     if cam in stab:
         level = stab[cam]['stabilizationLevel']
-        next_at = stab[cam]['nextStabilizationAt']
+        next_at = stab[cam].get('nextStabilizationAt')
         bar = '#' * level + '.' * (100 - level)
+        if next_at is None:
+            print(f'  {cam:15s} [{bar}] {level:3d}/100  (stabilized)')
+            continue
         dt = datetime.fromisoformat(next_at.replace('Z','+00:00'))
         delta = dt - now
         mins = int(delta.total_seconds() / 60)
