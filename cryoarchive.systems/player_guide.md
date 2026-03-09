@@ -14,7 +14,7 @@ Landing page is a CCTV grid with 9 cameras. Each camera tile shows its status an
 2. **Stable** → clear feed. Click to fullscreen (plays 15-second detail video on loop). **Shift+S** to capture.
 3. **Captured** → server validates the timestamp. Camera 06 and Camera 09 stop here (no rooms).
 
-**Capture timing:** The client sends the video's current playback time to the server. Each detail video contains a brief glitch burst; the capture likely needs to occur during or near that window. The video loops, but a failed capture closes the fullscreen player — you have to re-enter to try again.
+**Capture timing:** The client sends the video's current playback time to the server. Each detail video contains a brief glitch burst; the capture likely needs to occur during or near that window. The video loops, but a failed capture closes the fullscreen player — you have to re-enter to try again. Once captured, the fullscreen view is no longer accessible.
 
 | Camera | Glitch at | Duration |
 |--------|-----------|----------|
@@ -68,15 +68,15 @@ Main CCTV grid. Explicitly excluded from challenge mechanics. Server sets comple
 ### [2] Index — Dual Authentication
 Two sequential gates:
 1. **DAC file upload** — click to upload credential file (establishes session)
-2. **Password** — typed as CodeLanguage glyphs, **E** to focus, **Enter** to submit (unlocks the page)
+2. **Password** — **E** to focus, **Enter** to submit. Display shows randomized CodeLanguage glyphs that change every keystroke — your actual input is obscured.
 
-Unlocks archive entries: text, PDFs, images, video, audio.
+Unlocks archive entries: text, PDFs, images, video, audio. Current layout seems to be three columns, with each column scrollable. There are 1200 total slots however not all are guaranteed to be populated. Content definitions are dynamically fetched from server after authentication. Non-text entries should have an "EXTRACT FILE" button that downloads the file.
 
 ### [3] Steerage — Fog of War
 60x40 grid over hidden image. Click-drag rectangles to reveal. Server returns image fragments per rectangle. Plays video on completion.
 
 ### [4] Revival — Diagnostic Quiz
-Timed trivia with tiers (one question per tier). Each question has a 5-second reveal countdown before you can answer. Answers typed in CodeLanguage glyphs. Wrong answer or timeout resets all tiers. Plays video on completion.
+Timed trivia on a 4×4 grid. Only one question is available at a time; answering correctly reveals the next. Positioning appears random. Each question has a 5-second reveal countdown before you can answer, plus a time limit. Answers typed blind — display shows randomized CodeLanguage glyphs (same obscuration as Index password). Wrong answer or timeout resets all progress. Plays video on completion.
 
 ### [5] Biostock — Direction Sequence
 Gaussian splat point cloud scene. Choose a direction (arrow keys or clickable buttons), the camera flies toward that door and re-enters from a random one. Find the correct sequence of directions to complete. Path displayed as arrow trail. **R** to reset. Plays video on completion.
@@ -91,9 +91,9 @@ Eight timed lock puzzles on a single scrollable page. Each has a serial number. 
 - **Pattern** — toggle cells in a grid to match a pattern, then submit
 - **Combination** — scroll horizontally to set each number, reversing direction between digits
 - **Password** — view an image and type the correct password
-- **Hold** — hold anywhere on the page while a video plays, release at the right moment
+- **Hold** — hold anywhere on the page while a video plays, release at the right moment (uses the same video-timestamp mechanic as camera capture)
 
-Plays video on completion.
+The puzzle UI logic is fetched from the server, so it's hard to be more precise. Plays video on completion.
 
 ### [7] Control (Cryo Hub)
 No puzzle. Shows "Unauthorized Access" until `memoryUnlocked` fires — then the red filter clears, a video (the "memory") becomes available, and watching it completes the room. A kill counter component exists in the code (progress bar + "X / Y uesc killed" + reconnection countdown) but is not yet wired into the page.
