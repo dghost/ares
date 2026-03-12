@@ -330,23 +330,28 @@ def derive_phantom_uuids(cameras):
 def scrape_room_slots(room_id, payloads):
     """Scrape slot-based content from a room's RSC payloads.
 
-    Downloads media assets (file + thumbnail) and saves text excerpts.
+    Each slot has an entry name (ENTRY_NNNN, zero-padded from slotId) and typed
+    content: media (PNG with thumbnail), text (excerpt), or youtubeVideo.
+
+    Downloads assets and builds a manifest mapping entry names to content.
     """
     assets = extract_slot_assets(payloads)
     if not assets:
         return 0
 
     room_dir = f"{OUT_DIR}assets/{room_id}/"
-    media_count = 0
-    text_count = 0
+    counts = {"media": 0, "text": 0, "youtubeVideo": 0}
+    entries = []  # manifest entries
 
     for asset in sorted(assets, key=lambda x: x["slotId"]):
         content = asset["content"]
+        entry_name = f"ENTRY_{asset['slotId']:04d}"
+        entry = {"entry": entry_name, "slotId": asset["slotId"], "type": content["type"]}
 
         if content["type"] == "media":
             file_info = content["file"]
-            alt = file_info.get("alt_filename", file_info["filename"])
-            safe_name = alt.replace(" ", "_")
+            alt_filename = file_info.get("alt_filename", file_info["filename"])
+            safe_name = alt_filename.replace(" ", "_")
             ext = file_info.get("mimeType", "image/png").split("/")[-1]
             if ext == "jpeg":
                 ext = "jpg"
@@ -357,21 +362,42 @@ def scrape_room_slots(room_id, payloads):
             if content.get("thumbnail"):
                 thumb = content["thumbnail"]
                 download(thumb["url"], f"{room_dir}{safe_name}_thumb.{ext}")
-            media_count += 1
+
+            entry["file"] = f"{safe_name}.{ext}"
+            entry["alt_filename"] = alt_filename
+            entry["alt"] = file_info.get("alt", "")
+            entry["url"] = file_info["url"]
+            entry["thumbnail_url"] = content["thumbnail"]["url"] if content.get("thumbnail") else None
+            entry["dimensions"] = f"{file_info.get('width', '?')}x{file_info.get('height', '?')}"
+            counts["media"] += 1
 
         elif content["type"] == "text":
             text = content["text"]
-            # Derive name from excerpt header
             m = re.search(r"excerpt(\d+(?:-\d+)?)", text)
             name = m.group(0) if m else f"slot_{asset['slotId']}"
             excerpt_dir = f"{room_dir}excerpts/"
             os.makedirs(excerpt_dir, exist_ok=True)
             with open(f"{excerpt_dir}{name}.txt", "w") as f:
                 f.write(text)
-            text_count += 1
+            entry["excerpt"] = name
+            entry["file"] = f"excerpts/{name}.txt"
+            counts["text"] += 1
 
-    print(f"  {room_id}: {media_count} media, {text_count} text excerpts")
+        elif content["type"] == "youtubeVideo":
+            video_id = content.get("youtubeVideoId", "")
+            entry["youtubeVideoId"] = video_id
+            entry["url"] = f"https://www.youtube.com/watch?v={video_id}"
+            counts["youtubeVideo"] += 1
+
+        entries.append(entry)
+
+    parts = [f"{v} {k}" for k, v in counts.items() if v > 0]
+    print(f"  {room_id}: {', '.join(parts)}")
+
+    # Save raw asset data
     save_json(assets, f"{RAW_DIR}json/{room_id}-assets.json")
+    # Save entry manifest (human-readable mapping)
+    save_json(entries, f"{OUT_DIR}assets/{room_id}/entries.json")
     return len(assets)
 
 

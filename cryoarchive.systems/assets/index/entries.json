@@ -1,0 +1,204 @@
+[
+  {
+    "entry": "ENTRY_0012",
+    "slotId": 12,
+    "type": "media",
+    "file": "BSTX_TRAINING_DATA_01.png",
+    "alt_filename": "BSTX_TRAINING DATA_01",
+    "alt": "unfbo-4gd2n-uyjn5-wjv2d-ary",
+    "url": "https://assets.thecdn.io/0f7e6382-f72f-415c-ac9c-82d694e7f4bb.png",
+    "thumbnail_url": "https://assets.thecdn.io/874f6740-bfad-4b4c-bd1e-39658cb0c425.png",
+    "dimensions": "2160x2160"
+  },
+  {
+    "entry": "ENTRY_0018",
+    "slotId": 18,
+    "type": "media",
+    "file": "wmprp-diy2m-4rwry-66luq.png",
+    "alt_filename": "wmprp-diy2m-4rwry-66luq",
+    "alt": "wmprp-diy2m-4rwry-66luq",
+    "url": "https://assets.thecdn.io/e1b6e445-7e6b-4215-a26d-2c6280271109.png",
+    "thumbnail_url": "https://assets.thecdn.io/9415b6be-7739-45a4-b02b-98b7beeb26cb.png",
+    "dimensions": "2160x2160"
+  },
+  {
+    "entry": "ENTRY_0067",
+    "slotId": 67,
+    "type": "text",
+    "excerpt": "excerpt106-107",
+    "file": "excerpts/excerpt106-107.txt"
+  },
+  {
+    "entry": "ENTRY_0068",
+    "slotId": 68,
+    "type": "media",
+    "file": "wmprp-dns2m-4bwrq-56lmq.png",
+    "alt_filename": "wmprp-dns2m-4bwrq-56lmq",
+    "alt": "wmprp-dns2m-4bwrq-56lmq",
+    "url": "https://assets.thecdn.io/c1bd2610-7f09-47db-89bb-012d67188dd7.png",
+    "thumbnail_url": "https://assets.thecdn.io/09d5dbaf-ba33-4462-8151-3e9782a0bed9.png",
+    "dimensions": "2160x2160"
+  },
+  {
+    "entry": "ENTRY_0088",
+    "slotId": 88,
+    "type": "text",
+    "excerpt": "excerpt101",
+    "file": "excerpts/excerpt101.txt"
+  },
+  {
+    "entry": "ENTRY_0096",
+    "slotId": 96,
+    "type": "media",
+    "file": "wm5bo-uft2m-4ryry-66ieq.png",
+    "alt_filename": "wm5bo-uft2m-4ryry-66ieq",
+    "alt": "wm5bo-uft2m-4ryry-66ieq",
+    "url": "https://assets.thecdn.io/bda810fa-7fac-4e80-aa78-b0f8bb183cf5.png",
+    "thumbnail_url": "https://assets.thecdn.io/470e44fb-c08e-4cd0-b827-b29b1d46714f.png",
+    "dimensions": "2160x2160"
+  },
+  {
+    "entry": "ENTRY_0205",
+    "slotId": 205,
+    "type": "media",
+    "file": "BSTX_TRAINING_DATA_02.png",
+    "alt_filename": "BSTX_TRAINING DATA_02",
+    "alt": "unfbo-4by2n-uyjn5-w3j2d-apy",
+    "url": "https://assets.thecdn.io/9696e0a6-a87b-4413-b0a0-37d839c7a8c5.png",
+    "thumbnail_url": "https://assets.thecdn.io/48452870-e352-49de-84eb-38fa124a8ec9.png",
+    "dimensions": "2160x2160"
+  },
+  {
+    "entry": "ENTRY_0233",
+    "slotId": 233,
+    "type": "youtubeVideo",
+    "youtubeVideoId": "3oOnwnvCmi4",
+    "url": "https://www.youtube.com/watch?v=3oOnwnvCmi4"
+  },
+  {
+    "entry": "ENTRY_0288",
+    "slotId": 288,
+    "type": "text",
+    "excerpt": "excerpt103",
+    "file": "excerpts/excerpt103.txt"
+  },
+  {
+    "entry": "ENTRY_0382",
+    "slotId": 382,
+    "type": "text",
+    "excerpt": "excerpt113",
+    "file": "excerpts/excerpt113.txt"
+  },
+  {
+    "entry": "ENTRY_0468",
+    "slotId": 468,
+    "type": "media",
+    "file": "wmprp-diy2m-4ryrq-56jeq.png",
+    "alt_filename": "wmprp-diy2m-4ryrq-56jeq",
+    "alt": "wmprp-diy2m-4ryrq-56jeq",
+    "url": "https://assets.thecdn.io/659d64da-8a30-4930-a69c-45c29070667c.png",
+    "thumbnail_url": "https://assets.thecdn.io/62fa7d61-5e86-4839-a743-dda60372499f.png",
+    "dimensions": "2160x2160"
+  },
+  {
+    "entry": "ENTRY_0501",
+    "slotId": 501,
+    "type": "media",
+    "file": "wm5bp-diy2m-4ryry-66l4q.png",
+    "alt_filename": "wm5bp-diy2m-4ryry-66l4q",
+    "alt": "wm5bp-diy2m-4ryry-66l4q",
+    "url": "https://assets.thecdn.io/f051adf6-cfa5-4d28-b0c9-c43dbfea305a.png",
+    "thumbnail_url": "https://assets.thecdn.io/d90fc994-3f83-49ea-956b-385bd25362ef.png",
+    "dimensions": "2160x2160"
+  },
+  {
+    "entry": "ENTRY_0505",
+    "slotId": 505,
+    "type": "text",
+    "excerpt": "excerpt102",
+    "file": "excerpts/excerpt102.txt"
+  },
+  {
+    "entry": "ENTRY_0666",
+    "slotId": 666,
+    "type": "youtubeVideo",
+    "youtubeVideoId": "yYJAQkzSCvA",
+    "url": "https://www.youtube.com/watch?v=yYJAQkzSCvA"
+  },
+  {
+    "entry": "ENTRY_0721",
+    "slotId": 721,
+    "type": "media",
+    "file": "wmprp-diy2m-4rwrq-56lqq.png",
+    "alt_filename": "wmprp-diy2m-4rwrq-56lqq",
+    "alt": "wmprp-diy2m-4rwrq-56lqq",
+    "url": "https://assets.thecdn.io/60407952-8c82-4a13-bc82-b5ec543d82c4.png",
+    "thumbnail_url": "https://assets.thecdn.io/88770cf4-2075-45cc-a8ea-1c858cb4d1b2.png",
+    "dimensions": "2160x2160"
+  },
+  {
+    "entry": "ENTRY_0745",
+    "slotId": 745,
+    "type": "media",
+    "file": "wmprp-dnt2m-4byrq-56jiq.png",
+    "alt_filename": "wmprp-dnt2m-4byrq-56jiq",
+    "alt": "wmprp-dnt2m-4byrq-56jiq",
+    "url": "https://assets.thecdn.io/00794bc8-178a-4e78-bd9c-eaac160e6579.png",
+    "thumbnail_url": "https://assets.thecdn.io/95094f8f-f112-4151-8c5f-cd7445246495.png",
+    "dimensions": "2160x2160"
+  },
+  {
+    "entry": "ENTRY_0848",
+    "slotId": 848,
+    "type": "text",
+    "excerpt": "excerpt110",
+    "file": "excerpts/excerpt110.txt"
+  },
+  {
+    "entry": "ENTRY_0892",
+    "slotId": 892,
+    "type": "media",
+    "file": "wm5bp-dnt2m-4ryry-66lyq.png",
+    "alt_filename": "wm5bp-dnt2m-4ryry-66lyq",
+    "alt": "wm5bp-dnt2m-4ryry-66lyq",
+    "url": "https://assets.thecdn.io/6b3b376f-5691-4e34-bfc4-1511adfe3aaf.png",
+    "thumbnail_url": "https://assets.thecdn.io/1ab4ac59-0b37-47d0-a216-02478c602c22.png",
+    "dimensions": "2160x2160"
+  },
+  {
+    "entry": "ENTRY_0900",
+    "slotId": 900,
+    "type": "media",
+    "file": "wm5bo-uft2m-4ryry-66iaq.png",
+    "alt_filename": "wm5bo-uft2m-4ryry-66iaq",
+    "alt": "wm5bo-uft2m-4ryry-66iaq",
+    "url": "https://assets.thecdn.io/63447897-8583-418b-a758-f5dc0c770b10.png",
+    "thumbnail_url": "https://assets.thecdn.io/143e6b60-5d2a-4ef2-b043-75ce7c9c420c.png",
+    "dimensions": "2160x2160"
+  },
+  {
+    "entry": "ENTRY_0947",
+    "slotId": 947,
+    "type": "text",
+    "excerpt": "excerpt105",
+    "file": "excerpts/excerpt105.txt"
+  },
+  {
+    "entry": "ENTRY_0982",
+    "slotId": 982,
+    "type": "media",
+    "file": "BSTX_TRAINING_DATA_03.png",
+    "alt_filename": "BSTX_TRAINING DATA_03",
+    "alt": "unfbo-4by2n-uyjn5-wjv2d-any",
+    "url": "https://assets.thecdn.io/f9ed128e-55d4-4b90-bedc-9f049285ae59.png",
+    "thumbnail_url": "https://assets.thecdn.io/13872936-3afe-43ff-903f-884aeeb6731b.png",
+    "dimensions": "2160x2160"
+  },
+  {
+    "entry": "ENTRY_1123",
+    "slotId": 1123,
+    "type": "text",
+    "excerpt": "excerpt115",
+    "file": "excerpts/excerpt115.txt"
+  }
+]
