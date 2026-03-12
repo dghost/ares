@@ -1,109 +1,66 @@
 #!/usr/bin/env python3
 """Scrape cryoarchive.systems — Marathon ARG CCTV surveillance site.
 
-Downloads all publicly accessible content and organizes it:
-- assets/     — per-room directories: {room}/{state}.mp4, {room}/background.png, plus error/ and artifacts.png
-- fonts/      — CodeLanguage pictographic font, PPFraktionMono
-- splats/     — Biostock 3D Gaussian splat scene
-- cursors/    — In-world cursor SVGs
-- .raw/       — disposable scrape artifacts (HTML, JSON, CSS, UUID originals)
+Discovers all content dynamically from APIs and RSC payloads:
+- Room list derived from /api/public/state
+- Camera videos derived from /cargo RSC initialConfig
+- Background images derived from per-page HTML preloads
+- Static assets discovered from HTML/CSS pattern matching
+- Phantom UUIDs derived from alt_filename analysis
+- Authenticated room content (slot-based assets + text excerpts)
 
-No dependencies beyond stdlib.
+No hardcoded asset lists. Everything from first principles.
+
+Usage:
+    # Public-only scrape (no auth)
+    python3 scripts/scrape/scrape_cryoarchive.py
+
+    # Authenticated scrape (DAC + password unlocks gated rooms like /indx)
+    python3 scripts/scrape/scrape_cryoarchive.py --dac path/to/dac.png --password 'THE PASSWORD'
+
+Downloads and organizes:
+- assets/     — per-room: {room}/{state}.mp4, background.png, plus error/ and artifacts.png
+- fonts/      — discovered from HTML preloads + CSS @font-face
+- splats/     — 3D Gaussian splat scenes
+- cursors/    — in-world cursor SVGs
+- .raw/       — disposable scrape artifacts (HTML, JSON, CSS, UUID originals)
 """
 
+import argparse
+import http.cookiejar
 import json
 import os
 import re
-import shutil
-import urllib.request
+import time
+import uuid as uuid_mod
+import urllib.error
 import urllib.parse
-
+import urllib.request
 
 BASE_URL = "https://cryoarchive.systems"
 CDN_URL = "https://assets.thecdn.io"
 OUT_DIR = "./cryoarchive.systems/"
 RAW_DIR = "./cryoarchive.systems/.raw/"
 
-# All known routes (pages that return 200)
-ROUTES = [
-    "/cargo",
-    "/indx",
-    "/steerage",
-    "/revival",
-    "/biostock",
-    "/preservation",
-    "/cryohub",
-    "/example",
-]
+UUID_RE = re.compile(
+    r"^[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}$"
+)
 
-# Camera IDs and their video UUIDs
-CAMERAS = {
-    "cargo": {
-        "unstable": "158967d7-59ac-4871-b8e0-7fc683e982ca",
-        "stable": "6a5235a5-0e07-469d-8e0f-c664c154c1ba",
-        "glitch": "a2e4633e-47e8-48e5-9393-60668f7780a1",
-    },
-    "index": {
-        "unstable": "b45b183e-b255-48cf-b888-257a62fb46bd",
-        "stable": "02d34536-1155-41d2-9f05-9e7087a0fc7f",
-        "glitch": "da9fb869-e197-4c88-a1f9-b9c85d27ec51",
-    },
-    "revival": {
-        "unstable": "217f7544-4806-4441-8f7a-8e3db39a5266",
-        "stable": "a633f52e-c79c-4320-b2d5-16ded608143b",
-        "glitch": "f128c76c-dafb-4a93-ae3a-85882540eeab",
-    },
-    "biostock": {
-        "unstable": "5a55954c-e776-4bc4-a6ca-edf18666071d",
-        "stable": "a0f9fc28-dc29-46c3-94c2-641003fd99e4",
-        "glitch": "10701f62-d7ab-4e4a-b4c3-7e50269a1727",
-    },
-    "steerage": {
-        "unstable": "855ab978-dd9f-4bfd-a6e1-3f16c9357384",
-        "stable": "d63c42ce-f626-4c49-84e5-e9724bfb3e6d",
-        "glitch": "883646ff-fbe4-4e9b-8759-818bf80220eb",
-    },
-    "preservation": {
-        "unstable": "7aebbab5-cb5a-46c6-babb-3ff7505fbcdd",
-        "stable": "32a8fe9e-00a2-4dbf-a19e-38c51b3dd8df",
-        "glitch": "cc7bc850-ee98-4883-b3a4-f0a877b5492a",
-    },
-    "cryoHub": {
-        "unstable": "f86f4c9a-6818-4d56-8a3e-cf95038ef7d2",
-        "stable": "3032d56e-75dd-4974-b634-20e3478d343c",
-        "glitch": "04869cfd-65c7-403f-9f6f-5cfd9ded85fe",
-    },
-    "camera06": {
-        "unstable": "a9b3e8f3-5867-4cb4-a1b2-531765cc71d8",
-        "stable": "61306bbd-6339-4d8f-ab99-330210d7c006",
-        "glitch": "ce430770-9cdc-4adf-a3c4-f09512d06abc",
-    },
-    "camera09": {
-        "unstable": "30e998c5-c0b6-4b28-b58b-da9bfac15692",
-        "stable": "8c466925-d96e-4d6f-8e81-3d32b970f83d",
-        "glitch": "03741510-1c4e-4160-b56d-027f5ca2843a",
-    },
+# Known room auth endpoints: room_id -> (auth_path, page_path)
+# Discovered from deploy module analysis. New rooms can be added here as they
+# become known; the scraper will attempt auth for any room in this map when
+# credentials are provided.
+ROOM_AUTH = {
+    "index": ("/api/indx/auth", "/indx"),
 }
 
-# Per-page background images
-BG_IMAGES = {
-    "cargo": "ce621aa9-d63b-4432-9411-c45a880c3288",
-    "index": "5742b3a1-ff6b-4bc6-93df-70b990bfc0d4",
-    "revival": "1532f938-a803-497f-81ae-fe1f29e6c757",
-    "biostock": "89f9849a-3684-4dc7-beba-709b83d40e84",
-    "steerage": "098e5a48-2cc6-44bb-a601-d0b569032ea1",
-    "preservation": "a9c41cc3-8185-43f6-b827-34af221eff20",
-    "cryoHub": "e16a58b3-a50f-4556-b1f4-124d916eeac9",
-}
+# Global opener — set up in main(), used by fetch helpers
+opener = None
 
-BG_VIDEO = "f5d8b1e5-d89a-4fb8-b1cd-2681c4d81a23"
 
-PHANTOM_UUIDS = [
-    "a6ce4d77-f881-49fe-b06d-9bf82392f64f",  # biostock glitch alt
-    "6487caee-379c-43b8-8822-96af959f6d0a",  # camera06 glitch alt
-    "18589bde-2597-4159-8fa8-d6b2a2a31161",  # camera09 unstable alt
-    "803426eb-2c62-4f4d-a259-11e44869688d",  # camera09 glitch alt
-]
+# =========================================================
+# Network helpers
+# =========================================================
 
 
 def download(url, path):
@@ -118,25 +75,45 @@ def download(url, path):
     safe_url = parsed._replace(path=encoded_path).geturl()
     print(f"  GET {safe_url}")
     try:
-        urllib.request.urlretrieve(safe_url, filename=path)
+        # Use opener for authenticated downloads from our domain
+        if opener and "cryoarchive.systems" in safe_url:
+            resp = opener.open(safe_url, timeout=30)
+            os.makedirs(os.path.dirname(path), exist_ok=True)
+            with open(path, "wb") as f:
+                f.write(resp.read())
+        else:
+            urllib.request.urlretrieve(safe_url, filename=path)
     except urllib.error.HTTPError as e:
         print(f"  {e.code}: {safe_url}")
         return False
     return True
 
 
+def _fetch(url, parse_json=False, retries=3):
+    """Fetch URL via authenticated opener with retry on transient errors."""
+    for attempt in range(retries):
+        try:
+            req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
+            with opener.open(req, timeout=30) as resp:
+                data = resp.read().decode("utf-8")
+                return json.loads(data) if parse_json else data
+        except (urllib.error.URLError, ConnectionResetError, OSError) as e:
+            if attempt < retries - 1:
+                wait = 2 ** attempt
+                print(f"  Retry {attempt + 1}/{retries} after {e} (wait {wait}s)")
+                time.sleep(wait)
+            else:
+                raise
+
+
 def fetch_text(url):
-    """Fetch URL, return text."""
-    req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
-    with urllib.request.urlopen(req, timeout=30) as resp:
-        return resp.read().decode("utf-8")
+    """Fetch URL via authenticated opener, return text."""
+    return _fetch(url)
 
 
 def fetch_json(url):
-    """Fetch URL, return parsed JSON."""
-    req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
-    with urllib.request.urlopen(req, timeout=30) as resp:
-        return json.loads(resp.read().decode("utf-8"))
+    """Fetch URL via authenticated opener, return parsed JSON."""
+    return _fetch(url, parse_json=True)
 
 
 def save_json(data, path):
@@ -144,6 +121,102 @@ def save_json(data, path):
     os.makedirs(os.path.dirname(path), exist_ok=True)
     with open(path, "w") as f:
         json.dump(data, f, indent=2, ensure_ascii=False)
+
+
+# =========================================================
+# Authentication
+# =========================================================
+
+
+def create_session():
+    """Create a new session. Returns session ID."""
+    req = urllib.request.Request(
+        f"{BASE_URL}/api/session/create",
+        method="POST",
+        headers={"User-Agent": "Mozilla/5.0", "Content-Type": "application/json"},
+        data=b"{}",
+    )
+    resp = opener.open(req, timeout=30)
+    data = json.loads(resp.read().decode())
+    return data.get("sessionId")
+
+
+def upload_dac(dac_path):
+    """Upload DAC file via multipart FormData. Returns (ok, user_data)."""
+    with open(dac_path, "rb") as f:
+        dac_data = f.read()
+
+    boundary = uuid_mod.uuid4().hex
+    filename = os.path.basename(dac_path)
+    body = (
+        f"--{boundary}\r\n"
+        f'Content-Disposition: form-data; name="data"; filename="{filename}"\r\n'
+        f"Content-Type: image/png\r\n"
+        f"\r\n"
+    ).encode() + dac_data + f"\r\n--{boundary}--\r\n".encode()
+
+    req = urllib.request.Request(
+        f"{BASE_URL}/api/auth/login",
+        method="POST",
+        headers={
+            "User-Agent": "Mozilla/5.0",
+            "Content-Type": f"multipart/form-data; boundary={boundary}",
+        },
+        data=body,
+    )
+    resp = opener.open(req, timeout=30)
+    data = json.loads(resp.read().decode())
+    return data.get("ok", False), data.get("data", {})
+
+
+def auth_room(room_id, password):
+    """Authenticate with a room-specific password. Returns True on success."""
+    if room_id not in ROOM_AUTH:
+        return False
+    auth_path, _ = ROOM_AUTH[room_id]
+    payload = json.dumps({"password": password}).encode()
+    req = urllib.request.Request(
+        f"{BASE_URL}{auth_path}",
+        method="POST",
+        headers={
+            "User-Agent": "Mozilla/5.0",
+            "Content-Type": "application/json",
+        },
+        data=payload,
+    )
+    resp = opener.open(req, timeout=30)
+    data = json.loads(resp.read().decode())
+    return data.get("ok", False)
+
+
+def authenticate(dac_path, password):
+    """Full auth flow: session -> DAC upload -> room auth for all known rooms."""
+    print("\n[auth] Creating session...")
+    session_id = create_session()
+    print(f"  Session: {session_id}")
+
+    print("[auth] Uploading DAC...")
+    ok, user_data = upload_dac(dac_path)
+    if not ok:
+        print("  ERROR: DAC upload failed")
+        return False
+    print(f"  User: {user_data.get('username')} ({user_data.get('userId')})")
+
+    # Authenticate with each known room
+    for room_id in ROOM_AUTH:
+        print(f"[auth] Authenticating room: {room_id}...")
+        try:
+            ok = auth_room(room_id, password)
+            print(f"  {'OK' if ok else 'FAILED'}")
+        except urllib.error.HTTPError as e:
+            print(f"  {e.code}: auth failed")
+
+    return True
+
+
+# =========================================================
+# RSC / content extraction
+# =========================================================
 
 
 def extract_rsc_payloads(html):
@@ -157,108 +230,474 @@ def extract_rsc_payloads(html):
     return payloads
 
 
+def extract_balanced_json(text, start_idx):
+    """Extract a balanced JSON object starting at start_idx in text."""
+    depth = 0
+    for i in range(start_idx, len(text)):
+        if text[i] == "{":
+            depth += 1
+        elif text[i] == "}":
+            depth -= 1
+        if depth == 0:
+            return text[start_idx : i + 1]
+    return None
+
+
+def extract_initial_config(payloads):
+    """Extract initialConfig.cameras from RSC payloads (found on /cargo page)."""
+    for p in payloads:
+        idx = p.find('"initialConfig":')
+        if idx == -1:
+            continue
+        brace = p.index("{", idx + len('"initialConfig":'))
+        raw = extract_balanced_json(p, brace)
+        if raw:
+            return json.loads(raw)
+    return None
+
+
 def extract_alt_filenames(payloads):
     """Extract filename -> alt_filename mappings from RSC payloads."""
     names = {}
     for p in payloads:
-        for m in re.finditer(r'"filename"\s*:\s*"([^"]+)"[^}]*"alt_filename"\s*:\s*"([^"]+)"', p):
+        for m in re.finditer(
+            r'"filename"\s*:\s*"([^"]+)"[^}]*"alt_filename"\s*:\s*"([^"]+)"', p
+        ):
             names[m.group(1)] = m.group(2)
-        for m in re.finditer(r'"alt_filename"\s*:\s*"([^"]+)"[^}]*"filename"\s*:\s*"([^"]+)"', p):
+        for m in re.finditer(
+            r'"alt_filename"\s*:\s*"([^"]+)"[^}]*"filename"\s*:\s*"([^"]+)"', p
+        ):
             names[m.group(2)] = m.group(1)
     return names
 
 
+def extract_slot_assets(payloads):
+    """Extract slot-based assets from RSC payloads (used by gated rooms like /indx).
+
+    Returns list of dicts with slotId + content (type: media or text).
+    """
+    assets = []
+    all_text = "\n".join(payloads)
+    for m in re.finditer(r'\{"slotId":(\d+),"content":\{', all_text):
+        start = m.start()
+        depth = 0
+        for i in range(start, len(all_text)):
+            if all_text[i] == "{":
+                depth += 1
+            elif all_text[i] == "}":
+                depth -= 1
+            if depth == 0:
+                raw = all_text[start : i + 1]
+                try:
+                    obj = json.loads(raw)
+                    assets.append(obj)
+                except (json.JSONDecodeError, ValueError):
+                    pass
+                break
+    return assets
+
+
+def derive_phantom_uuids(cameras):
+    """Derive phantom UUIDs from camera alt_filename fields.
+
+    A phantom UUID is when alt_filename is itself a UUID (not a human-readable name),
+    indicating an alternate asset on the CDN.
+    """
+    phantoms = []
+    video_keys = ["videoPreviewUnstable", "videoPreview", "videoFull"]
+    for cam in cameras:
+        for vk in video_keys:
+            video = cam.get(vk, {})
+            if not video:
+                continue
+            filename = video.get("filename", "")
+            alt_filename = video.get("alt_filename", "")
+            if not alt_filename or alt_filename == filename:
+                continue
+            alt_stem = (
+                alt_filename.rsplit(".", 1)[0] if "." in alt_filename else alt_filename
+            )
+            if UUID_RE.match(alt_stem):
+                phantoms.append(alt_stem)
+    return phantoms
+
+
+# =========================================================
+# Room content scraping
+# =========================================================
+
+
+def scrape_room_slots(room_id, payloads):
+    """Scrape slot-based content from a room's RSC payloads.
+
+    Downloads media assets (file + thumbnail) and saves text excerpts.
+    """
+    assets = extract_slot_assets(payloads)
+    if not assets:
+        return 0
+
+    room_dir = f"{OUT_DIR}assets/{room_id}/"
+    media_count = 0
+    text_count = 0
+
+    for asset in sorted(assets, key=lambda x: x["slotId"]):
+        content = asset["content"]
+
+        if content["type"] == "media":
+            file_info = content["file"]
+            alt = file_info.get("alt_filename", file_info["filename"])
+            safe_name = alt.replace(" ", "_")
+            ext = file_info.get("mimeType", "image/png").split("/")[-1]
+            if ext == "jpeg":
+                ext = "jpg"
+
+            # Full image
+            download(file_info["url"], f"{room_dir}{safe_name}.{ext}")
+            # Thumbnail
+            if content.get("thumbnail"):
+                thumb = content["thumbnail"]
+                download(thumb["url"], f"{room_dir}{safe_name}_thumb.{ext}")
+            media_count += 1
+
+        elif content["type"] == "text":
+            text = content["text"]
+            # Derive name from excerpt header
+            m = re.search(r"excerpt(\d+(?:-\d+)?)", text)
+            name = m.group(0) if m else f"slot_{asset['slotId']}"
+            excerpt_dir = f"{room_dir}excerpts/"
+            os.makedirs(excerpt_dir, exist_ok=True)
+            with open(f"{excerpt_dir}{name}.txt", "w") as f:
+                f.write(text)
+            text_count += 1
+
+    print(f"  {room_id}: {media_count} media, {text_count} text excerpts")
+    save_json(assets, f"{RAW_DIR}json/{room_id}-assets.json")
+    return len(assets)
+
+
 def main():
+    global opener
+
+    parser = argparse.ArgumentParser(description="Scrape cryoarchive.systems")
+    parser.add_argument("--dac", help="Path to DAC PNG file for authentication")
+    parser.add_argument("--password", help="Password for room authentication")
+    args = parser.parse_args()
+
+    # Set up cookie-based session for all requests
+    cookie_jar = http.cookiejar.CookieJar()
+    opener = urllib.request.build_opener(
+        urllib.request.HTTPCookieProcessor(cookie_jar)
+    )
+
     print("=" * 60)
-    print("cryoarchive.systems scraper")
+    print("cryoarchive.systems scraper (dynamic discovery)")
     print("=" * 60)
 
-    # --- 1. Public API snapshots -> .raw/ ---
-    print("\n[1/7] Public API state...")
+    # =========================================================
+    # 0. Authenticate (if credentials provided)
+    # =========================================================
+    authenticated = False
+    if args.dac and args.password:
+        if not os.path.exists(args.dac):
+            print(f"ERROR: DAC file not found: {args.dac}")
+            return
+        try:
+            authenticated = authenticate(args.dac, args.password)
+        except urllib.error.HTTPError as e:
+            print(f"  Auth error: {e.code}")
+            print("  Continuing with public-only scrape...")
+    elif args.dac or args.password:
+        print("WARNING: Both --dac and --password required for auth, skipping")
+
+    # =========================================================
+    # 1. Fetch APIs — derive room list
+    # =========================================================
+    print("\n[1/9] Public API state...")
     state = fetch_json(f"{BASE_URL}/api/public/state")
     save_json(state, f"{RAW_DIR}json/state.json")
     stabilization = fetch_json(f"{BASE_URL}/api/public/cctv-cameras/stabilization")
     save_json(stabilization, f"{RAW_DIR}json/stabilization.json")
 
-    # --- 2. HTML pages -> .raw/ ---
-    print("\n[2/7] HTML pages...")
+    rooms = list(state["state"]["pages"].keys())
+    camera_ids = list(stabilization["stabilization"].keys())
+    print(f"  Rooms from API: {rooms}")
+    print(f"  Camera IDs: {camera_ids}")
+
+    # =========================================================
+    # 2. Fetch /cargo page — extract initialConfig (cameras, routes)
+    # =========================================================
+    print("\n[2/9] Camera config from /cargo RSC...")
+    all_html = {}
     all_payloads = []
-    root_html = fetch_text(BASE_URL)
+    room_payloads = {}  # room_id -> [payloads] for per-room content extraction
+
+    cargo_html = fetch_text(f"{BASE_URL}/cargo")
     os.makedirs(f"{RAW_DIR}html/", exist_ok=True)
+    with open(f"{RAW_DIR}html/cargo.html", "w") as f:
+        f.write(cargo_html)
+    all_html["cargo"] = cargo_html
+
+    cargo_payloads = extract_rsc_payloads(cargo_html)
+    all_payloads.extend(cargo_payloads)
+    room_payloads["cargo"] = cargo_payloads
+
+    config = extract_initial_config(cargo_payloads)
+    if not config or "cameras" not in config:
+        print("  ERROR: Could not extract initialConfig from /cargo")
+        return
+
+    cameras = config["cameras"]
+    print(f"  Found {len(cameras)} cameras")
+
+    # Build route map from cameras
+    routes = {}  # room_id -> route_path
+    for cam in cameras:
+        if cam.get("page"):
+            routes[cam["id"]] = cam["page"]
+    print(f"  Routes: {routes}")
+
+    # =========================================================
+    # 3. Fetch all room pages — collect RSC payloads
+    # =========================================================
+    print("\n[3/9] Fetching room pages...")
+
+    # Root page
+    root_html = fetch_text(BASE_URL)
     with open(f"{RAW_DIR}html/root.html", "w") as f:
         f.write(root_html)
-    all_payloads.extend(extract_rsc_payloads(root_html))
+    all_html["root"] = root_html
+    root_payloads = extract_rsc_payloads(root_html)
+    all_payloads.extend(root_payloads)
 
-    for route in ROUTES:
+    # Room pages from camera routes (skip /cargo, already fetched)
+    for room_id, route in routes.items():
+        if room_id == "cargo":
+            continue
         slug = route.strip("/")
         try:
+            time.sleep(0.5)
             html = fetch_text(f"{BASE_URL}{route}")
             with open(f"{RAW_DIR}html/{slug}.html", "w") as f:
                 f.write(html)
-            all_payloads.extend(extract_rsc_payloads(html))
+            all_html[room_id] = html
+            payloads = extract_rsc_payloads(html)
+            all_payloads.extend(payloads)
+            room_payloads[room_id] = payloads
+            print(f"  OK: {route}")
         except urllib.error.HTTPError as e:
             print(f"  {e.code}: {route}")
 
-    # Build asset manifest from RSC payloads
-    alt_names = extract_alt_filenames(all_payloads)
-    manifest = {"alt_filenames": alt_names, "phantom_uuids": PHANTOM_UUIDS}
-    save_json(manifest, f"{RAW_DIR}json/asset-manifest.json")
+    # Authenticated room pages (not already fetched via camera routes)
+    if authenticated:
+        for room_id, (_, page_path) in ROOM_AUTH.items():
+            if room_id in all_html:
+                continue
+            try:
+                time.sleep(0.5)
+                html = fetch_text(f"{BASE_URL}{page_path}")
+                slug = page_path.strip("/")
+                with open(f"{RAW_DIR}html/{slug}.html", "w") as f:
+                    f.write(html)
+                all_html[room_id] = html
+                payloads = extract_rsc_payloads(html)
+                all_payloads.extend(payloads)
+                room_payloads[room_id] = payloads
+                print(f"  OK: {page_path} (authenticated)")
+            except urllib.error.HTTPError as e:
+                print(f"  {e.code}: {page_path}")
 
-    # --- 3. Camera videos -> assets/{room}/{state}.mp4 ---
-    print("\n[3/7] Camera videos...")
-    for cam_id, videos in CAMERAS.items():
-        name = cam_id.lower()
-        for vid_type, uuid in videos.items():
-            dst = f"{OUT_DIR}assets/{name}/{vid_type}.mp4"
+    # =========================================================
+    # 4. Download camera videos (derived from initialConfig)
+    # =========================================================
+    print("\n[4/9] Camera videos...")
+    video_map = {
+        "videoPreviewUnstable": "unstable",
+        "videoPreview": "stable",
+        "videoFull": "glitch",
+    }
+    for cam in cameras:
+        cam_name = cam["id"].lower()
+        for video_key, file_label in video_map.items():
+            video = cam.get(video_key)
+            if not video or not video.get("url"):
+                continue
+            dst = f"{OUT_DIR}assets/{cam_name}/{file_label}.mp4"
             if not os.path.exists(dst):
-                download(f"{CDN_URL}/{uuid}.mp4", dst)
+                download(video["url"], dst)
 
-    # --- 4. Background assets -> assets/{room}/background.png ---
-    print("\n[4/7] Background assets...")
-    download(f"{CDN_URL}/{BG_VIDEO}.mp4", f"{OUT_DIR}assets/landing/background.mp4")
-    for page, uuid in BG_IMAGES.items():
-        name = page.lower()
-        download(f"{CDN_URL}/{uuid}.png", f"{OUT_DIR}assets/{name}/background.png")
+    # =========================================================
+    # 5. Download background assets (derived from HTML preloads + RSC)
+    # =========================================================
+    print("\n[5/9] Background assets...")
 
-    # --- 5. Static assets ---
-    print("\n[5/7] Static assets...")
+    # Landing page background video — from root RSC payload
+    for p in root_payloads:
+        m = re.search(
+            r'"background":\{"url":"(https://assets\.thecdn\.io/[^"]+\.mp4)"', p
+        )
+        if m:
+            download(m.group(1), f"{OUT_DIR}assets/landing/background.mp4")
+            break
+
+    # Per-room background PNGs — from HTML <link rel="preload" as="image">
+    for room_id, html in all_html.items():
+        if room_id == "root":
+            continue
+        m = re.search(
+            r'<link[^>]*rel="preload"[^>]*href="(https://assets\.thecdn\.io/[^"]+\.png)"[^>]*as="image"',
+            html,
+        )
+        if m:
+            room_name = room_id.lower()
+            download(m.group(1), f"{OUT_DIR}assets/{room_name}/background.png")
+
+    # Background images also appear in RSC as src props on background divs
+    for room_id, payloads in room_payloads.items():
+        for p in payloads:
+            m = re.search(
+                r'"src":"(https://assets\.thecdn\.io/[^"]+\.png)","alt":"[^"]*Background"',
+                p,
+            )
+            if m:
+                room_name = room_id.lower()
+                download(m.group(1), f"{OUT_DIR}assets/{room_name}/background.png")
+
+    # =========================================================
+    # 6. Static assets (discovered from HTML/CSS)
+    # =========================================================
+    print("\n[6/9] Static assets...")
+
     download(f"{BASE_URL}/artifacts.png", f"{OUT_DIR}assets/artifacts.png")
-    download(f"{BASE_URL}/error/error-fallback.png", f"{OUT_DIR}assets/error/error-fallback.png")
-    download(f"{BASE_URL}/error/unknown.png", f"{OUT_DIR}assets/error/unknown.png")
-    download(f"{BASE_URL}/icon.svg", f"{OUT_DIR}icon.svg")
-    download(f"{BASE_URL}/cursors/decryptor-cable-cursor.svg", f"{OUT_DIR}cursors/decryptor-cable-cursor.svg")
+
+    # Icon from <link rel="icon">
+    for html in all_html.values():
+        m = re.search(r'<link[^>]*rel="icon"[^>]*href="(/icon\.svg[^"]*)"', html)
+        if m:
+            download(f"{BASE_URL}/icon.svg", f"{OUT_DIR}icon.svg")
+            break
+
+    # Error images from RSC payloads
+    all_text = "\n".join(all_payloads) + "\n".join(all_html.values())
+    error_images = set()
+    for m in re.finditer(r'"/error/([^"]+\.png)"', all_text):
+        error_images.add(m.group(1))
+    for img in sorted(error_images):
+        download(f"{BASE_URL}/error/{img}", f"{OUT_DIR}assets/error/{img}")
+
+    # Cursors
+    cursor_paths = set()
+    for m in re.finditer(r'"/cursors/([^"]+)"', all_text):
+        cursor_paths.add(m.group(1))
+    for cursor in sorted(cursor_paths):
+        download(f"{BASE_URL}/cursors/{cursor}", f"{OUT_DIR}cursors/{cursor}")
+
+    # Splats
+    splat_paths = set()
+    for m in re.finditer(r'"/splats/([^"]+)"', all_text):
+        splat_paths.add(m.group(1))
+    for m in re.finditer(r'"(/splats/[^"]+\.spz)"', all_text):
+        splat_paths.add(m.group(1).lstrip("/splats/"))
+    for splat in sorted(splat_paths):
+        download(f"{BASE_URL}/splats/{splat}", f"{OUT_DIR}splats/{splat}")
 
     # Fonts
+    print("\n  Fonts...")
     os.makedirs(f"{OUT_DIR}fonts/", exist_ok=True)
-    all_text = root_html + "\n".join(all_payloads)
+    font_files = set()
     for m in re.finditer(r'/_next/static/media/([^"\']+\.(woff2|otf|ttf))', all_text):
-        font_file = m.group(1)
-        ext = m.group(2)
-        clean = font_file.split("-s.p.")[0] if "-s.p." in font_file else font_file.split(".")[0]
-        download(f"{BASE_URL}/_next/static/media/{font_file}", f"{OUT_DIR}fonts/{clean}.{ext}")
+        font_files.add((m.group(1), m.group(2)))
 
-    # --- 6. Gaussian splat ---
-    print("\n[6/7] Gaussian splat data...")
-    download(f"{BASE_URL}/splats/012226_biostock_splats.spz", f"{OUT_DIR}splats/012226_biostock_splats.spz")
+    for html in all_html.values():
+        for m in re.finditer(r'/_next/static/chunks/([0-9a-f]+\.css)', html):
+            css_file = m.group(1)
+            css_path = f"{RAW_DIR}css/{css_file}"
+            if not os.path.exists(css_path):
+                download(f"{BASE_URL}/_next/static/chunks/{css_file}", css_path)
+            if os.path.exists(css_path):
+                with open(css_path) as f:
+                    css_text = f.read()
+                for fm in re.finditer(
+                    r"url\([./]*media/([^)]+\.(woff2|otf|ttf))\)", css_text
+                ):
+                    font_files.add((fm.group(1), fm.group(2)))
 
-    # --- 7. CSS -> .raw/ ---
-    print("\n[7/7] CSS...")
-    for m in re.finditer(r'/_next/static/chunks/([0-9a-f]+\.css)', root_html):
-        css_file = m.group(1)
-        download(f"{BASE_URL}/_next/static/chunks/{css_file}", f"{RAW_DIR}css/{css_file}")
+    for font_file, ext in sorted(font_files):
+        clean = (
+            font_file.split("-s.p.")[0]
+            if "-s.p." in font_file
+            else font_file.split(".")[0]
+        )
+        download(
+            f"{BASE_URL}/_next/static/media/{font_file}",
+            f"{OUT_DIR}fonts/{clean}.{ext}",
+        )
 
-    # --- Phantom UUID check ---
-    print("\nChecking phantom UUIDs...")
-    for uuid in PHANTOM_UUIDS:
+    # =========================================================
+    # 7. CSS chunks
+    # =========================================================
+    print("\n[7/9] CSS...")
+    for html in all_html.values():
+        for m in re.finditer(r'/_next/static/chunks/([0-9a-f]+\.css)', html):
+            css_file = m.group(1)
+            download(
+                f"{BASE_URL}/_next/static/chunks/{css_file}",
+                f"{RAW_DIR}css/{css_file}",
+            )
+
+    # =========================================================
+    # 8. Room slot content (authenticated rooms)
+    # =========================================================
+    print("\n[8/9] Room content...")
+    for room_id, payloads in room_payloads.items():
+        slot_count = scrape_room_slots(room_id, payloads)
+        if slot_count == 0 and room_id not in ("cargo", "root"):
+            # No slot content — that's normal for camera-only rooms
+            pass
+
+    # =========================================================
+    # 9. Phantom UUID check (derived from alt_filename analysis)
+    # =========================================================
+    print("\n[9/9] Phantom UUIDs...")
+    phantoms = derive_phantom_uuids(cameras)
+    if phantoms:
+        print(f"  Derived {len(phantoms)} phantom UUIDs from camera alt_filenames")
+    else:
+        print("  No phantom UUIDs found")
+
+    for uuid in phantoms:
         try:
             req = urllib.request.Request(f"{CDN_URL}/{uuid}.mp4", method="HEAD")
             with urllib.request.urlopen(req, timeout=10):
                 print(f"  LIVE: {uuid}")
-                download(f"{CDN_URL}/{uuid}.mp4", f"{OUT_DIR}assets/phantom/{uuid}.mp4")
+                download(
+                    f"{CDN_URL}/{uuid}.mp4", f"{OUT_DIR}assets/phantom/{uuid}.mp4"
+                )
         except urllib.error.HTTPError as e:
             print(f"  {e.code}: {uuid}")
 
-    # --- Summary ---
+    # =========================================================
+    # Build manifest from discovered data
+    # =========================================================
+    alt_names = extract_alt_filenames(all_payloads)
+    manifest = {
+        "alt_filenames": alt_names,
+        "phantom_uuids": phantoms,
+        "cameras": {
+            cam["id"]: {
+                "displayName": cam["displayName"],
+                "page": cam.get("page"),
+                "uiSlot": cam.get("uiSlot"),
+            }
+            for cam in cameras
+        },
+        "routes": routes,
+        "authenticated": authenticated,
+    }
+    save_json(manifest, f"{RAW_DIR}json/asset-manifest.json")
+
+    # =========================================================
+    # Summary
+    # =========================================================
     print("\n" + "=" * 60)
     kc = state["state"]["uescKillCount"]
     mem = state["state"]["memoryUnlocked"]
@@ -266,7 +705,13 @@ def main():
     unlocked = [k for k, v in pages.items() if v["unlocked"]]
     completed = [k for k, v in pages.items() if v["completed"]]
     print(f"Kill count: {kc:,}  |  Memory: {mem}")
-    print(f"Unlocked: {', '.join(unlocked) or 'none'}  |  Completed: {', '.join(completed) or 'none'}")
+    print(
+        f"Unlocked: {', '.join(unlocked) or 'none'}  |  Completed: {', '.join(completed) or 'none'}"
+    )
+    if authenticated:
+        print("Auth: YES (DAC + room passwords)")
+    else:
+        print("Auth: public only")
     total = sum(len(files) for _, _, files in os.walk(OUT_DIR) if ".raw" not in _)
     raw_total = sum(len(files) for _, _, files in os.walk(RAW_DIR))
     print(f"World content: {total} files  |  Raw scrape data: {raw_total} files")
