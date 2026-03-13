@@ -1,0 +1,37 @@
+arachne:
+  logo: arachne
+  logoColor: #FF0100
+  primary: #121212
+  secondary: #FF0100
+  topStrip: #FF0100
+cyac:
+  logo: cyac
+  logoColor: #00FF00
+  primary: #101920
+  secondary: #FF00FF
+mida:
+  logo: mida
+  logoColor: #92E1E6
+  primary: #694B87
+  secondary: #C8A0DC
+nu:
+  logo: nu
+  primary: #FF0A60
+  secondary: color-mix(in oklch, #FF0A60 40%, white)
+sekiguchi:
+  logo: sekiguchi
+  logoColor: #9C84F5
+  primary: #9C84F5
+  secondary: #95F6C2
+  topStrip: #353535
+traxus:
+  logo: traxus
+  logoColor: #FF4B00
+  primary: #353535
+  secondary: #F8ED34
+  topStrip: #FF4B00
+uesc:
+  logo: uesc
+  logoColor: #1E69F6
+  primary: #011949
+  secondary: #D7E0FF

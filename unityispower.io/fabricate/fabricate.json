@@ -14,14 +14,85 @@
     "TIBERIUS",
     "BUENDIA"
   ],
-  "game_state_defaults": {
-    "first_boot": "s0",
-    "irc_discovered": "s1",
-    "xword_complete": "s2",
-    "fab_name_known": "s3a",
-    "fab_clearance": "s3",
-    "slotz_complete": "s4",
-    "burger_found": "s5",
-    "full_clearance": "s6"
-  }
+  "corporate_themes": {
+    "traxus": {
+      "logo": "traxus",
+      "primary": "#353535",
+      "secondary": "#F8ED34",
+      "logoColor": "#FF4B00",
+      "topStrip": "#FF4B00"
+    },
+    "uesc": {
+      "logo": "uesc",
+      "primary": "#011949",
+      "secondary": "#D7E0FF",
+      "logoColor": "#1E69F6"
+    },
+    "cyac": {
+      "logo": "cyac",
+      "primary": "#101920",
+      "secondary": "#FF00FF",
+      "logoColor": "#00FF00"
+    },
+    "sekiguchi": {
+      "logo": "sekiguchi",
+      "primary": "#9C84F5",
+      "secondary": "#95F6C2",
+      "logoColor": "#9C84F5",
+      "topStrip": "#353535"
+    },
+    "nu": {
+      "logo": "nu",
+      "primary": "#FF0A60",
+      "secondary": "color-mix(in oklch, #FF0A60 40%, white)"
+    },
+    "mida": {
+      "logo": "mida",
+      "primary": "#694B87",
+      "secondary": "#C8A0DC",
+      "logoColor": "#92E1E6"
+    },
+    "arachne": {
+      "logo": "arachne",
+      "primary": "#121212",
+      "secondary": "#FF0100",
+      "logoColor": "#FF0100",
+      "topStrip": "#FF0100"
+    }
+  },
+  "card_sequence": [
+    "nu",
+    "traxus",
+    "uesc",
+    "cyac",
+    "mida",
+    "arachne",
+    "uesc",
+    "traxus",
+    "sekiguchi"
+  ],
+  "logo_images": [
+    "/a/0d7c2342.png",
+    "/a/8c395b8a.png",
+    "/a/06ae415b.png",
+    "/a/e64fd0c7.png",
+    "/a/e97d5ebc.png",
+    "/a/e4e71867.png",
+    "/a/ae519fac.png",
+    "/a/eb96e53a.png",
+    "/a/42ae4c8a.png"
+  ],
+  "named_entities": [
+    "MarathonShapiro",
+    "MARCUS",
+    "TIBERIUS",
+    "BUENDIA"
+  ],
+  "api_endpoint": "/f/fab",
+  "terminal_messages": [
+    "DISPLAY TOO SMALL<br>USE A WIDER SCREEN<br>TO ACCESS FABRICATE",
+    "CREDENTIALS ALIGNED.",
+    "MEDIA ARCHIVE UNLOCKED.",
+    "CREDENTIALS ALIGNED"
+  ]
 }
