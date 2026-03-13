@@ -376,12 +376,10 @@ def scrape_room_slots(room_id, payloads):
             text = content["text"]
             m = re.search(r"excerpt(\d+(?:-\d+)?)", text)
             name = m.group(0) if m else f"slot_{asset['slotId']}"
-            excerpt_dir = f"{entries_dir}excerpts/"
-            os.makedirs(excerpt_dir, exist_ok=True)
-            with open(f"{excerpt_dir}{name}.txt", "w") as f:
+            with open(f"{entries_dir}{name}.txt", "w") as f:
                 f.write(text)
             entry["excerpt"] = name
-            entry["file"] = f"entries/excerpts/{name}.txt"
+            entry["file"] = f"entries/{name}.txt"
             counts["text"] += 1
 
         elif content["type"] == "youtubeVideo":

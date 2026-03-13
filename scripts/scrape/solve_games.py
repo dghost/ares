@@ -486,9 +486,9 @@ def download_win_video(win_video, game_name):
     video_url = win_video.get("video_url", "")
     poster_url = win_video.get("poster_url", "")
 
-    win_dir = f"{OUT_DIR}{game_name}/win/"
-    mp4_path = os.path.join(win_dir, f"{game_name}_win.mp4")
-    thumb_path = os.path.join(win_dir, "thumbnail.jpg")
+    room_dir = f"{OUT_DIR}{game_name}/"
+    mp4_path = os.path.join(room_dir, "win_video.mp4")
+    thumb_path = os.path.join(room_dir, "win_poster.jpg")
 
     print(f"\n[{game_name}] Downloading win video")
     print(f"  HLS base: {video_url}")
