@@ -1,0 +1,152 @@
+[
+  {
+    "area": [
+      1,
+      1,
+      20,
+      15
+    ],
+    "url": "https://assets.thecdn.io/5e150410-8881-4bba-9de1-f5cd490cd815.png",
+    "file": "tile_01_1_1_20x15.webp"
+  },
+  {
+    "area": [
+      21,
+      1,
+      13,
+      8
+    ],
+    "url": "https://assets.thecdn.io/2c82784e-06b0-4abb-ac12-439357bf43fa.png",
+    "file": "tile_02_21_1_13x8.webp"
+  },
+  {
+    "area": [
+      34,
+      1,
+      16,
+      10
+    ],
+    "url": "https://assets.thecdn.io/ede99e4f-49c4-4df4-bf38-10b9a338b978.png",
+    "file": "tile_03_34_1_16x10.webp"
+  },
+  {
+    "area": [
+      50,
+      1,
+      10,
+      6
+    ],
+    "url": "https://assets.thecdn.io/d48549ac-c342-4511-80ba-c257a23887e8.png",
+    "file": "tile_04_50_1_10x6.webp"
+  },
+  {
+    "area": [
+      1,
+      14,
+      21,
+      16
+    ],
+    "url": "https://assets.thecdn.io/089527a4-684c-4c3b-baa4-e1d8bdab8ded.png",
+    "file": "tile_05_1_14_21x16.webp"
+  },
+  {
+    "area": [
+      21,
+      9,
+      13,
+      11
+    ],
+    "url": "https://assets.thecdn.io/001b81fc-89ec-4af5-8883-283033b61436.png",
+    "file": "tile_06_21_9_13x11.webp"
+  },
+  {
+    "area": [
+      34,
+      11,
+      16,
+      9
+    ],
+    "url": "https://assets.thecdn.io/3c5f7674-4828-44b6-9458-2411bfd94433.png",
+    "file": "tile_07_34_11_16x9.webp"
+  },
+  {
+    "area": [
+      49,
+      6,
+      11,
+      15
+    ],
+    "url": "https://assets.thecdn.io/9ef9693d-ba93-43f4-951f-08dedc6a0205.png",
+    "file": "tile_08_49_6_11x15.webp"
+  },
+  {
+    "area": [
+      20,
+      19,
+      12,
+      10
+    ],
+    "url": "https://assets.thecdn.io/d7a46157-959a-48dd-9897-a9379f0d1232.png",
+    "file": "tile_09_20_19_12x10.webp"
+  },
+  {
+    "area": [
+      31,
+      19,
+      11,
+      7
+    ],
+    "url": "https://assets.thecdn.io/9770af8d-962b-44ac-a02c-d77ba1d9b1e2.png",
+    "file": "tile_10_31_19_11x7.webp"
+  },
+  {
+    "area": [
+      41,
+      20,
+      19,
+      10
+    ],
+    "url": "https://assets.thecdn.io/c65f6bbf-20db-4b0f-84c6-be9e32f213f2.png",
+    "file": "tile_11_41_20_19x10.webp"
+  },
+  {
+    "area": [
+      1,
+      29,
+      20,
+      11
+    ],
+    "url": "https://assets.thecdn.io/1a003f55-8fa9-47d4-8862-dfbceaafce33.png",
+    "file": "tile_12_1_29_20x11.webp"
+  },
+  {
+    "area": [
+      21,
+      28,
+      10,
+      12
+    ],
+    "url": "https://assets.thecdn.io/a4ed3c24-6607-42bb-9f69-bcbfacf3c485.png",
+    "file": "tile_13_21_28_10x12.webp"
+  },
+  {
+    "area": [
+      31,
+      25,
+      10,
+      15
+    ],
+    "url": "https://assets.thecdn.io/0ae0278f-c448-4a3b-9b15-41afa2da57f4.png",
+    "file": "tile_14_31_25_10x15.webp"
+  },
+  {
+    "area": [
+      41,
+      30,
+      19,
+      10
+    ],
+    "url": "https://assets.thecdn.io/4b76192b-9f4b-4e7e-ba3f-3bc461d70e27.png",
+    "file": "tile_15_41_30_19x10.webp"
+  }
+]

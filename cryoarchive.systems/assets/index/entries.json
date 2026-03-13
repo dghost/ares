@@ -3,7 +3,7 @@
     "entry": "ENTRY_0012",
     "slotId": 12,
     "type": "media",
-    "file": "BSTX_TRAINING_DATA_01.png",
+    "file": "entries/BSTX_TRAINING_DATA_01.png",
     "alt_filename": "BSTX_TRAINING DATA_01",
     "alt": "unfbo-4gd2n-uyjn5-wjv2d-ary",
     "url": "https://assets.thecdn.io/0f7e6382-f72f-415c-ac9c-82d694e7f4bb.png",
@@ -14,7 +14,7 @@
     "entry": "ENTRY_0018",
     "slotId": 18,
     "type": "media",
-    "file": "wmprp-diy2m-4rwry-66luq.png",
+    "file": "entries/wmprp-diy2m-4rwry-66luq.png",
     "alt_filename": "wmprp-diy2m-4rwry-66luq",
     "alt": "wmprp-diy2m-4rwry-66luq",
     "url": "https://assets.thecdn.io/e1b6e445-7e6b-4215-a26d-2c6280271109.png",
@@ -26,13 +26,13 @@
     "slotId": 67,
     "type": "text",
     "excerpt": "excerpt106-107",
-    "file": "excerpts/excerpt106-107.txt"
+    "file": "entries/excerpts/excerpt106-107.txt"
   },
   {
     "entry": "ENTRY_0068",
     "slotId": 68,
     "type": "media",
-    "file": "wmprp-dns2m-4bwrq-56lmq.png",
+    "file": "entries/wmprp-dns2m-4bwrq-56lmq.png",
     "alt_filename": "wmprp-dns2m-4bwrq-56lmq",
     "alt": "wmprp-dns2m-4bwrq-56lmq",
     "url": "https://assets.thecdn.io/c1bd2610-7f09-47db-89bb-012d67188dd7.png",
@@ -44,13 +44,13 @@
     "slotId": 88,
     "type": "text",
     "excerpt": "excerpt101",
-    "file": "excerpts/excerpt101.txt"
+    "file": "entries/excerpts/excerpt101.txt"
   },
   {
     "entry": "ENTRY_0096",
     "slotId": 96,
     "type": "media",
-    "file": "wm5bo-uft2m-4ryry-66ieq.png",
+    "file": "entries/wm5bo-uft2m-4ryry-66ieq.png",
     "alt_filename": "wm5bo-uft2m-4ryry-66ieq",
     "alt": "wm5bo-uft2m-4ryry-66ieq",
     "url": "https://assets.thecdn.io/bda810fa-7fac-4e80-aa78-b0f8bb183cf5.png",
@@ -61,7 +61,7 @@
     "entry": "ENTRY_0205",
     "slotId": 205,
     "type": "media",
-    "file": "BSTX_TRAINING_DATA_02.png",
+    "file": "entries/BSTX_TRAINING_DATA_02.png",
     "alt_filename": "BSTX_TRAINING DATA_02",
     "alt": "unfbo-4by2n-uyjn5-w3j2d-apy",
     "url": "https://assets.thecdn.io/9696e0a6-a87b-4413-b0a0-37d839c7a8c5.png",
@@ -80,20 +80,27 @@
     "slotId": 288,
     "type": "text",
     "excerpt": "excerpt103",
-    "file": "excerpts/excerpt103.txt"
+    "file": "entries/excerpts/excerpt103.txt"
+  },
+  {
+    "entry": "ENTRY_0321",
+    "slotId": 321,
+    "type": "text",
+    "excerpt": "slot_321",
+    "file": "entries/excerpts/slot_321.txt"
   },
   {
     "entry": "ENTRY_0382",
     "slotId": 382,
     "type": "text",
     "excerpt": "excerpt113",
-    "file": "excerpts/excerpt113.txt"
+    "file": "entries/excerpts/excerpt113.txt"
   },
   {
     "entry": "ENTRY_0468",
     "slotId": 468,
     "type": "media",
-    "file": "wmprp-diy2m-4ryrq-56jeq.png",
+    "file": "entries/wmprp-diy2m-4ryrq-56jeq.png",
     "alt_filename": "wmprp-diy2m-4ryrq-56jeq",
     "alt": "wmprp-diy2m-4ryrq-56jeq",
     "url": "https://assets.thecdn.io/659d64da-8a30-4930-a69c-45c29070667c.png",
@@ -104,7 +111,7 @@
     "entry": "ENTRY_0501",
     "slotId": 501,
     "type": "media",
-    "file": "wm5bp-diy2m-4ryry-66l4q.png",
+    "file": "entries/wm5bp-diy2m-4ryry-66l4q.png",
     "alt_filename": "wm5bp-diy2m-4ryry-66l4q",
     "alt": "wm5bp-diy2m-4ryry-66l4q",
     "url": "https://assets.thecdn.io/f051adf6-cfa5-4d28-b0c9-c43dbfea305a.png",
@@ -116,7 +123,21 @@
     "slotId": 505,
     "type": "text",
     "excerpt": "excerpt102",
-    "file": "excerpts/excerpt102.txt"
+    "file": "entries/excerpts/excerpt102.txt"
+  },
+  {
+    "entry": "ENTRY_0560",
+    "slotId": 560,
+    "type": "text",
+    "excerpt": "excerpt116",
+    "file": "entries/excerpts/excerpt116.txt"
+  },
+  {
+    "entry": "ENTRY_0566",
+    "slotId": 566,
+    "type": "youtubeVideo",
+    "youtubeVideoId": "v8sunqi-voc",
+    "url": "https://www.youtube.com/watch?v=v8sunqi-voc"
   },
   {
     "entry": "ENTRY_0666",
@@ -129,7 +150,7 @@
     "entry": "ENTRY_0721",
     "slotId": 721,
     "type": "media",
-    "file": "wmprp-diy2m-4rwrq-56lqq.png",
+    "file": "entries/wmprp-diy2m-4rwrq-56lqq.png",
     "alt_filename": "wmprp-diy2m-4rwrq-56lqq",
     "alt": "wmprp-diy2m-4rwrq-56lqq",
     "url": "https://assets.thecdn.io/60407952-8c82-4a13-bc82-b5ec543d82c4.png",
@@ -140,7 +161,7 @@
     "entry": "ENTRY_0745",
     "slotId": 745,
     "type": "media",
-    "file": "wmprp-dnt2m-4byrq-56jiq.png",
+    "file": "entries/wmprp-dnt2m-4byrq-56jiq.png",
     "alt_filename": "wmprp-dnt2m-4byrq-56jiq",
     "alt": "wmprp-dnt2m-4byrq-56jiq",
     "url": "https://assets.thecdn.io/00794bc8-178a-4e78-bd9c-eaac160e6579.png",
@@ -148,17 +169,24 @@
     "dimensions": "2160x2160"
   },
   {
+    "entry": "ENTRY_0751",
+    "slotId": 751,
+    "type": "text",
+    "excerpt": "excerpt109",
+    "file": "entries/excerpts/excerpt109.txt"
+  },
+  {
     "entry": "ENTRY_0848",
     "slotId": 848,
     "type": "text",
     "excerpt": "excerpt110",
-    "file": "excerpts/excerpt110.txt"
+    "file": "entries/excerpts/excerpt110.txt"
   },
   {
     "entry": "ENTRY_0892",
     "slotId": 892,
     "type": "media",
-    "file": "wm5bp-dnt2m-4ryry-66lyq.png",
+    "file": "entries/wm5bp-dnt2m-4ryry-66lyq.png",
     "alt_filename": "wm5bp-dnt2m-4ryry-66lyq",
     "alt": "wm5bp-dnt2m-4ryry-66lyq",
     "url": "https://assets.thecdn.io/6b3b376f-5691-4e34-bfc4-1511adfe3aaf.png",
@@ -169,7 +197,7 @@
     "entry": "ENTRY_0900",
     "slotId": 900,
     "type": "media",
-    "file": "wm5bo-uft2m-4ryry-66iaq.png",
+    "file": "entries/wm5bo-uft2m-4ryry-66iaq.png",
     "alt_filename": "wm5bo-uft2m-4ryry-66iaq",
     "alt": "wm5bo-uft2m-4ryry-66iaq",
     "url": "https://assets.thecdn.io/63447897-8583-418b-a758-f5dc0c770b10.png",
@@ -181,13 +209,13 @@
     "slotId": 947,
     "type": "text",
     "excerpt": "excerpt105",
-    "file": "excerpts/excerpt105.txt"
+    "file": "entries/excerpts/excerpt105.txt"
   },
   {
     "entry": "ENTRY_0982",
     "slotId": 982,
     "type": "media",
-    "file": "BSTX_TRAINING_DATA_03.png",
+    "file": "entries/BSTX_TRAINING_DATA_03.png",
     "alt_filename": "BSTX_TRAINING DATA_03",
     "alt": "unfbo-4by2n-uyjn5-wjv2d-any",
     "url": "https://assets.thecdn.io/f9ed128e-55d4-4b90-bedc-9f049285ae59.png",
@@ -195,10 +223,17 @@
     "dimensions": "2160x2160"
   },
   {
+    "entry": "ENTRY_1119",
+    "slotId": 1119,
+    "type": "text",
+    "excerpt": "slot_1119",
+    "file": "entries/excerpts/slot_1119.txt"
+  },
+  {
     "entry": "ENTRY_1123",
     "slotId": 1123,
     "type": "text",
     "excerpt": "excerpt115",
-    "file": "excerpts/excerpt115.txt"
+    "file": "entries/excerpts/excerpt115.txt"
   }
 ]

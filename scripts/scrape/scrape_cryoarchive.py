@@ -339,7 +339,8 @@ def scrape_room_slots(room_id, payloads):
     if not assets:
         return 0
 
-    room_dir = f"{OUT_DIR}assets/{room_id}/"
+    entries_dir = f"{OUT_DIR}assets/{room_id}/entries/"
+    os.makedirs(entries_dir, exist_ok=True)
     counts = {"media": 0, "text": 0, "youtubeVideo": 0}
     entries = []  # manifest entries
 
@@ -357,13 +358,13 @@ def scrape_room_slots(room_id, payloads):
                 ext = "jpg"
 
             # Full image
-            download(file_info["url"], f"{room_dir}{safe_name}.{ext}")
+            download(file_info["url"], f"{entries_dir}{safe_name}.{ext}")
             # Thumbnail
             if content.get("thumbnail"):
                 thumb = content["thumbnail"]
-                download(thumb["url"], f"{room_dir}{safe_name}_thumb.{ext}")
+                download(thumb["url"], f"{entries_dir}{safe_name}_thumb.{ext}")
 
-            entry["file"] = f"{safe_name}.{ext}"
+            entry["file"] = f"entries/{safe_name}.{ext}"
             entry["alt_filename"] = alt_filename
             entry["alt"] = file_info.get("alt", "")
             entry["url"] = file_info["url"]
@@ -375,12 +376,12 @@ def scrape_room_slots(room_id, payloads):
             text = content["text"]
             m = re.search(r"excerpt(\d+(?:-\d+)?)", text)
             name = m.group(0) if m else f"slot_{asset['slotId']}"
-            excerpt_dir = f"{room_dir}excerpts/"
+            excerpt_dir = f"{entries_dir}excerpts/"
             os.makedirs(excerpt_dir, exist_ok=True)
             with open(f"{excerpt_dir}{name}.txt", "w") as f:
                 f.write(text)
             entry["excerpt"] = name
-            entry["file"] = f"excerpts/{name}.txt"
+            entry["file"] = f"entries/excerpts/{name}.txt"
             counts["text"] += 1
 
         elif content["type"] == "youtubeVideo":
@@ -396,7 +397,7 @@ def scrape_room_slots(room_id, payloads):
 
     # Save raw asset data
     save_json(assets, f"{RAW_DIR}json/{room_id}-assets.json")
-    # Save entry manifest (human-readable mapping)
+    # Save entry manifest
     save_json(entries, f"{OUT_DIR}assets/{room_id}/entries.json")
     return len(assets)
 
