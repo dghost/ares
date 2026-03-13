@@ -26,7 +26,7 @@
     "slotId": 67,
     "type": "text",
     "excerpt": "excerpt106-107",
-    "file": "entries/excerpts/excerpt106-107.txt"
+    "file": "entries/excerpt106-107.txt"
   },
   {
     "entry": "ENTRY_0068",
@@ -44,7 +44,7 @@
     "slotId": 88,
     "type": "text",
     "excerpt": "excerpt101",
-    "file": "entries/excerpts/excerpt101.txt"
+    "file": "entries/excerpt101.txt"
   },
   {
     "entry": "ENTRY_0096",
@@ -80,21 +80,22 @@
     "slotId": 288,
     "type": "text",
     "excerpt": "excerpt103",
-    "file": "entries/excerpts/excerpt103.txt"
+    "file": "entries/excerpt103.txt"
   },
   {
     "entry": "ENTRY_0321",
     "slotId": 321,
     "type": "text",
-    "excerpt": "slot_321",
-    "file": "entries/excerpts/slot_321.txt"
+    "cipher": "1fbe8bc6-",
+    "excerpt": "excerpt104",
+    "file": "entries/excerpt104.txt"
   },
   {
     "entry": "ENTRY_0382",
     "slotId": 382,
     "type": "text",
     "excerpt": "excerpt113",
-    "file": "entries/excerpts/excerpt113.txt"
+    "file": "entries/excerpt113.txt"
   },
   {
     "entry": "ENTRY_0468",
@@ -123,14 +124,15 @@
     "slotId": 505,
     "type": "text",
     "excerpt": "excerpt102",
-    "file": "entries/excerpts/excerpt102.txt"
+    "file": "entries/excerpt102.txt"
   },
   {
     "entry": "ENTRY_0560",
     "slotId": 560,
     "type": "text",
+    "cipher": "9c44-",
     "excerpt": "excerpt116",
-    "file": "entries/excerpts/excerpt116.txt"
+    "file": "entries/excerpt116.txt"
   },
   {
     "entry": "ENTRY_0566",
@@ -172,15 +174,16 @@
     "entry": "ENTRY_0751",
     "slotId": 751,
     "type": "text",
+    "cipher": "3d4a-44bf-",
     "excerpt": "excerpt109",
-    "file": "entries/excerpts/excerpt109.txt"
+    "file": "entries/excerpt109.txt"
   },
   {
     "entry": "ENTRY_0848",
     "slotId": 848,
     "type": "text",
     "excerpt": "excerpt110",
-    "file": "entries/excerpts/excerpt110.txt"
+    "file": "entries/excerpt110.txt"
   },
   {
     "entry": "ENTRY_0892",
@@ -209,7 +212,7 @@
     "slotId": 947,
     "type": "text",
     "excerpt": "excerpt105",
-    "file": "entries/excerpts/excerpt105.txt"
+    "file": "entries/excerpt105.txt"
   },
   {
     "entry": "ENTRY_0982",
@@ -226,14 +229,15 @@
     "entry": "ENTRY_1119",
     "slotId": 1119,
     "type": "text",
-    "excerpt": "slot_1119",
-    "file": "entries/excerpts/slot_1119.txt"
+    "cipher": "e73a8ee93fde",
+    "excerpt": "excerpt118",
+    "file": "entries/excerpt118.txt"
   },
   {
     "entry": "ENTRY_1123",
     "slotId": 1123,
     "type": "text",
     "excerpt": "excerpt115",
-    "file": "entries/excerpts/excerpt115.txt"
+    "file": "entries/excerpt115.txt"
   }
 ]

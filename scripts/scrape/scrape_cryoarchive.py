@@ -374,8 +374,15 @@ def scrape_room_slots(room_id, payloads):
 
         elif content["type"] == "text":
             text = content["text"]
-            m = re.search(r"excerpt(\d+(?:-\d+)?)", text)
-            name = m.group(0) if m else f"slot_{asset['slotId']}"
+            # Extract cipher chars (parenthesized single chars throughout text)
+            cipher_chars = re.findall(r"\(([^)]+)\)", text)
+            if cipher_chars:
+                entry["cipher"] = "".join(cipher_chars)
+            # First line is ">> excerptNNN" — cipher chars may replace letters in "excerpt"
+            # "excerpt" is always 7 chars (with cipher substitutions); number follows
+            first_line = re.sub(r"[()]", "", text.split("\n")[0]).strip().lstrip("> ").strip()
+            num = first_line[7:].strip()
+            name = f"excerpt{num}" if num else f"slot_{asset['slotId']}"
             with open(f"{entries_dir}{name}.txt", "w") as f:
                 f.write(text)
             entry["excerpt"] = name
