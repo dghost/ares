@@ -215,6 +215,17 @@
     "file": "entries/excerpt105.txt"
   },
   {
+    "entry": "ENTRY_0965",
+    "slotId": 965,
+    "type": "media",
+    "file": "entries/UQkAXhJUW1hCEQdaUUJHBQ1VQhJaXwVCQAVdWVpLAl8CXxBa.wav",
+    "alt_filename": "UQkAXhJUW1hCEQdaUUJHBQ1VQhJaXwVCQAVdWVpLAl8CXxBa.wav",
+    "alt": "UQkAXhJUW1hCEQdaUUJHBQ1VQhJaXwVCQAVdWVpLAl8CXxBa",
+    "url": "https://assets.thecdn.io/21bd4508-5286-4c26-9f00-2eaa6ec46735.wav",
+    "thumbnail_url": "https://assets.thecdn.io/21bd4508-5286-4c26-9f00-2eaa6ec46735.wav",
+    "dimensions": "NonexNone"
+  },
+  {
     "entry": "ENTRY_0982",
     "slotId": 982,
     "type": "media",
