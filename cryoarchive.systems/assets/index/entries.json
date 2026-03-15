@@ -1,5 +1,115 @@
 [
   {
+    "entry": "ENTRY_0001",
+    "slotId": 1,
+    "type": "media",
+    "file": "entries/ZONE-COMPASS-FOOTAGE-00001.png",
+    "alt_filename": "ZONE-COMPASS-FOOTAGE-00001.png",
+    "alt": "ZONE-COMPASS-FOOTAGE-00001",
+    "url": "https://assets.thecdn.io/3bf8c1e2-c1ce-4bac-b380-6693e352da64.png",
+    "thumbnail_url": "https://assets.thecdn.io/e275b836-f392-420f-a9bf-c2ae3efc37c4.png",
+    "dimensions": "3842x2160"
+  },
+  {
+    "entry": "ENTRY_0002",
+    "slotId": 2,
+    "type": "media",
+    "file": "entries/ZONE-COMPASS-FOOTAGE-00010.png",
+    "alt_filename": "ZONE-COMPASS-FOOTAGE-00010.png",
+    "alt": "ZONE-COMPASS-FOOTAGE-00010",
+    "url": "https://assets.thecdn.io/d5c43729-7dcf-4d9b-a875-b9cb8e5d48db.png",
+    "thumbnail_url": "https://assets.thecdn.io/57039e20-9bf3-4f25-8b72-37eb7a000e22.png",
+    "dimensions": "3842x2160"
+  },
+  {
+    "entry": "ENTRY_0003",
+    "slotId": 3,
+    "type": "media",
+    "file": "entries/ZONE-COMPASS-FOOTAGE-00011.png",
+    "alt_filename": "ZONE-COMPASS-FOOTAGE-00011.png",
+    "alt": "ZONE-COMPASS-FOOTAGE-00011",
+    "url": "https://assets.thecdn.io/58a674b1-4308-4e5b-9c8c-28268a3c5ece.png",
+    "thumbnail_url": "https://assets.thecdn.io/8dc867be-a92a-44cf-8c9f-9945985d9233.png",
+    "dimensions": "3842x2160"
+  },
+  {
+    "entry": "ENTRY_0004",
+    "slotId": 4,
+    "type": "media",
+    "file": "entries/ZONE-COMPASS-FOOTAGE-00100.png",
+    "alt_filename": "ZONE-COMPASS-FOOTAGE-00100.png",
+    "alt": "ZONE-COMPASS-FOOTAGE-00100",
+    "url": "https://assets.thecdn.io/ebaa17be-3ccc-4e1f-a2fd-6eb985118070.png",
+    "thumbnail_url": "https://assets.thecdn.io/555f97c2-c5a0-4ef3-9871-51cd80f43718.png",
+    "dimensions": "3842x2160"
+  },
+  {
+    "entry": "ENTRY_0005",
+    "slotId": 5,
+    "type": "media",
+    "file": "entries/ZONE-COMPASS-FOOTAGE-00101.png",
+    "alt_filename": "ZONE-COMPASS-FOOTAGE-00101.png",
+    "alt": "ZONE-COMPASS-FOOTAGE-00101",
+    "url": "https://assets.thecdn.io/2c52d85f-cecb-424c-aa7b-3704e8255bac.png",
+    "thumbnail_url": "https://assets.thecdn.io/5d03f3d3-5736-4c9f-96cd-8e1a7ae4c240.png",
+    "dimensions": "3842x2160"
+  },
+  {
+    "entry": "ENTRY_0006",
+    "slotId": 6,
+    "type": "media",
+    "file": "entries/ZONE-COMPASS-FOOTAGE-00110.png",
+    "alt_filename": "ZONE-COMPASS-FOOTAGE-00110.png",
+    "alt": "ZONE-COMPASS-FOOTAGE-00110",
+    "url": "https://assets.thecdn.io/c868ce50-c918-4e52-b6c6-9d09a3f6ddf0.png",
+    "thumbnail_url": "https://assets.thecdn.io/d7930a3b-0f9b-4744-82dc-4d31cba67e4d.png",
+    "dimensions": "3842x2160"
+  },
+  {
+    "entry": "ENTRY_0007",
+    "slotId": 7,
+    "type": "media",
+    "file": "entries/ZONE-COMPASS-FOOTAGE-00111.png",
+    "alt_filename": "ZONE-COMPASS-FOOTAGE-00111.png",
+    "alt": "ZONE-COMPASS-FOOTAGE-00111",
+    "url": "https://assets.thecdn.io/aff70d2f-98d6-4aff-8209-a4aad4044376.png",
+    "thumbnail_url": "https://assets.thecdn.io/24b69ca0-edf7-4bf1-a204-1f31084f6e02.png",
+    "dimensions": "3840x2160"
+  },
+  {
+    "entry": "ENTRY_0008",
+    "slotId": 8,
+    "type": "media",
+    "file": "entries/ZONE-COMPASS-FOOTAGE-01000.png",
+    "alt_filename": "ZONE-COMPASS-FOOTAGE-01000.png",
+    "alt": "ZONE-COMPASS-FOOTAGE-01000",
+    "url": "https://assets.thecdn.io/8bed1a90-ec2c-4841-9ca0-743020d6a437.png",
+    "thumbnail_url": "https://assets.thecdn.io/26195ada-4a65-49cf-a960-6500dee568ea.png",
+    "dimensions": "3842x2160"
+  },
+  {
+    "entry": "ENTRY_0009",
+    "slotId": 9,
+    "type": "media",
+    "file": "entries/ZONE-COMPASS-FOOTAGE-01001.png",
+    "alt_filename": "ZONE-COMPASS-FOOTAGE-01001.png",
+    "alt": "ZONE-COMPASS-FOOTAGE-01001",
+    "url": "https://assets.thecdn.io/46c7ada1-f8db-4ed7-be1d-4cfd86cf6ef1.png",
+    "thumbnail_url": "https://assets.thecdn.io/b800f71f-f099-47e8-a4c7-79e62b48a3e8.png",
+    "dimensions": "3842x2160"
+  },
+  {
+    "entry": "ENTRY_0010",
+    "slotId": 10,
+    "type": "media",
+    "file": "entries/ZONE-COMPASS-FOOTAGE-01010.png",
+    "alt_filename": "ZONE-COMPASS-FOOTAGE-01010.png",
+    "alt": "ZONE-COMPASS-FOOTAGE-01010",
+    "url": "https://assets.thecdn.io/d0cae52b-9a01-4e84-845e-94f7e4d6f3f0.png",
+    "thumbnail_url": "https://assets.thecdn.io/212b8dc1-7acf-4036-b14c-bf75ec3ecf90.png",
+    "dimensions": "3842x2160"
+  },
+  {
     "entry": "ENTRY_0012",
     "slotId": 12,
     "type": "media",
@@ -62,8 +172,8 @@
     "slotId": 102,
     "type": "media",
     "file": "entries/17b7a611-65b6-4cfc-aa28-412be1e48d85.mp4",
-    "alt_filename": "17b7a611-65b6-4cfc-aa28-412be1e48d85",
-    "alt": "Vault",
+    "alt_filename": "17b7a611-65b6-4cfc-aa28-412be1e48d85.mp4",
+    "alt": " ",
     "url": "https://assets.thecdn.io/17b7a611-65b6-4cfc-aa28-412be1e48d85.mp4",
     "thumbnail_url": "https://assets.thecdn.io/49730ef1-7ba6-49fc-bc18-c7d402de86af.webm",
     "dimensions": "NonexNone"
@@ -113,7 +223,7 @@
     "slotId": 365,
     "type": "media",
     "file": "entries/ed19e41a-afff-428f-987b-0d583ed8d255.mp4",
-    "alt_filename": "ed19e41a-afff-428f-987b-0d583ed8d255",
+    "alt_filename": "ed19e41a-afff-428f-987b-0d583ed8d255.mp4",
     "alt": "Image",
     "url": "https://assets.thecdn.io/ed19e41a-afff-428f-987b-0d583ed8d255.mp4",
     "thumbnail_url": "https://assets.thecdn.io/b4df1ea0-944c-45ab-a8fa-f6c42307067e.webm",
@@ -218,8 +328,19 @@
     "entry": "ENTRY_0788",
     "slotId": 788,
     "type": "text",
-    "excerpt": "excerptO ARCHIVE STATUS: AVAILABLE",
-    "file": "entries/excerptO ARCHIVE STATUS: AVAILABLE.txt"
+    "excerpt": "excerptO ARCHIVE STATUS: PENDING",
+    "file": "entries/excerptO ARCHIVE STATUS: PENDING.txt"
+  },
+  {
+    "entry": "ENTRY_0837",
+    "slotId": 837,
+    "type": "media",
+    "file": "entries/UESC_MARATHON_Preservation_Sector_Manual.pdf",
+    "alt_filename": "UESC MARATHON Preservation Sector Manual.pdf",
+    "alt": "UESC MARATHON Preservation Sector Manual",
+    "url": "https://assets.thecdn.io/3c06cc4e-afa4-4418-b0cc-6031cc226c59.pdf",
+    "thumbnail_url": "https://assets.thecdn.io/c3639777-2fd0-45ad-b57e-a891ea6d27e1.png",
+    "dimensions": "NonexNone"
   },
   {
     "entry": "ENTRY_0848",
