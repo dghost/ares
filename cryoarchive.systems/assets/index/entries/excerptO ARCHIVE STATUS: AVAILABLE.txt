@@ -1,0 +1,6 @@
+//: CRYO ARCHIVE STATUS: AVAILABLE
+//: ACCESS PROTOCOL: ACTIVE
+>> REQUIREMENT_01: establish connection to all factions
+>> REQUIREMENT_02: reach level 25
+>> eligibility contingent on both parameters
+>> incomplete status will deny entry

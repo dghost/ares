@@ -58,6 +58,24 @@
     "dimensions": "2160x2160"
   },
   {
+    "entry": "ENTRY_0102",
+    "slotId": 102,
+    "type": "media",
+    "file": "entries/17b7a611-65b6-4cfc-aa28-412be1e48d85.mp4",
+    "alt_filename": "17b7a611-65b6-4cfc-aa28-412be1e48d85",
+    "alt": "Vault",
+    "url": "https://assets.thecdn.io/17b7a611-65b6-4cfc-aa28-412be1e48d85.mp4",
+    "thumbnail_url": "https://assets.thecdn.io/49730ef1-7ba6-49fc-bc18-c7d402de86af.webm",
+    "dimensions": "NonexNone"
+  },
+  {
+    "entry": "ENTRY_0202",
+    "slotId": 202,
+    "type": "text",
+    "excerpt": "excerpt117",
+    "file": "entries/excerpt117.txt"
+  },
+  {
     "entry": "ENTRY_0205",
     "slotId": 205,
     "type": "media",
@@ -91,11 +109,29 @@
     "file": "entries/excerpt104.txt"
   },
   {
+    "entry": "ENTRY_0365",
+    "slotId": 365,
+    "type": "media",
+    "file": "entries/ed19e41a-afff-428f-987b-0d583ed8d255.mp4",
+    "alt_filename": "ed19e41a-afff-428f-987b-0d583ed8d255",
+    "alt": "Image",
+    "url": "https://assets.thecdn.io/ed19e41a-afff-428f-987b-0d583ed8d255.mp4",
+    "thumbnail_url": "https://assets.thecdn.io/b4df1ea0-944c-45ab-a8fa-f6c42307067e.webm",
+    "dimensions": "NonexNone"
+  },
+  {
     "entry": "ENTRY_0382",
     "slotId": 382,
     "type": "text",
     "excerpt": "excerpt113",
     "file": "entries/excerpt113.txt"
+  },
+  {
+    "entry": "ENTRY_0432",
+    "slotId": 432,
+    "type": "text",
+    "excerpt": "excerpt108",
+    "file": "entries/excerpt108.txt"
   },
   {
     "entry": "ENTRY_0468",
@@ -179,11 +215,43 @@
     "file": "entries/excerpt109.txt"
   },
   {
+    "entry": "ENTRY_0788",
+    "slotId": 788,
+    "type": "text",
+    "excerpt": "excerptO ARCHIVE STATUS: AVAILABLE",
+    "file": "entries/excerptO ARCHIVE STATUS: AVAILABLE.txt"
+  },
+  {
     "entry": "ENTRY_0848",
     "slotId": 848,
     "type": "text",
     "excerpt": "excerpt110",
     "file": "entries/excerpt110.txt"
+  },
+  {
+    "entry": "ENTRY_0856",
+    "slotId": 856,
+    "type": "text",
+    "excerpt": "excerpt119",
+    "file": "entries/excerpt119.txt"
+  },
+  {
+    "entry": "ENTRY_0857",
+    "slotId": 857,
+    "type": "media",
+    "file": "entries/050e4327-daa0-4f7a-a260-0fa3b450045e.mp4",
+    "alt_filename": "050e4327-daa0-4f7a-a260-0fa3b450045e.mp4",
+    "alt": "Image",
+    "url": "https://assets.thecdn.io/050e4327-daa0-4f7a-a260-0fa3b450045e.mp4",
+    "thumbnail_url": "https://assets.thecdn.io/f540bff0-ae9c-4c19-be18-e2589a7808fd.webm",
+    "dimensions": "NonexNone"
+  },
+  {
+    "entry": "ENTRY_0867",
+    "slotId": 867,
+    "type": "text",
+    "excerpt": "excerpt112",
+    "file": "entries/excerpt112.txt"
   },
   {
     "entry": "ENTRY_0892",
@@ -235,6 +303,13 @@
     "url": "https://assets.thecdn.io/f9ed128e-55d4-4b90-bedc-9f049285ae59.png",
     "thumbnail_url": "https://assets.thecdn.io/13872936-3afe-43ff-903f-884aeeb6731b.png",
     "dimensions": "2160x2160"
+  },
+  {
+    "entry": "ENTRY_1000",
+    "slotId": 1000,
+    "type": "youtubeVideo",
+    "youtubeVideoId": "y-BU_bs3qeE",
+    "url": "https://www.youtube.com/watch?v=y-BU_bs3qeE"
   },
   {
     "entry": "ENTRY_1119",
