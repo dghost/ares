@@ -343,6 +343,17 @@
     "dimensions": "NonexNone"
   },
   {
+    "entry": "ENTRY_0838",
+    "slotId": 838,
+    "type": "media",
+    "file": "entries/UESC_MARATHON_Preservation_Sector_Manual_1.1.2472-R3KL.pdf",
+    "alt_filename": "UESC MARATHON Preservation Sector Manual_1.1.2472-R3KL.pdf",
+    "alt": "UESC MARATHON Preservation Sector Manual_1.1.2472-R3KL",
+    "url": "https://assets.thecdn.io/f013f942-835c-45b7-b573-ab430f35d7c3.pdf",
+    "thumbnail_url": "https://assets.thecdn.io/e12de7d9-2060-45f4-b7f0-a32a4659b401.png",
+    "dimensions": "NonexNone"
+  },
+  {
     "entry": "ENTRY_0848",
     "slotId": 848,
     "type": "text",
