@@ -1,0 +1,6 @@
+>> excerpt114
+>> 00:00:00:45-00:00:00:47
+>> system: tau ceti
+>> loc: uesc marathon
+>> view: data monitor [2893]
+>> hello

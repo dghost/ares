@@ -132,6 +132,17 @@
     "dimensions": "2160x2160"
   },
   {
+    "entry": "ENTRY_0054",
+    "slotId": 54,
+    "type": "media",
+    "file": "entries/6fcaffc2-cdee-42ab-b64f-7855a1d22a8f.mp4",
+    "alt_filename": "6fcaffc2-cdee-42ab-b64f-7855a1d22a8f.mp4",
+    "alt": "6fcaffc2-cdee-42ab-b64f-7855a1d22a8f",
+    "url": "https://assets.thecdn.io/9c6ccbae-3cce-46de-9375-da0de2666023.mp4",
+    "thumbnail_url": "https://assets.thecdn.io/6fcaffc2-cdee-42ab-b64f-7855a1d22a8f.mp4",
+    "dimensions": "NonexNone"
+  },
+  {
     "entry": "ENTRY_0067",
     "slotId": 67,
     "type": "text",
@@ -148,6 +159,17 @@
     "url": "https://assets.thecdn.io/c1bd2610-7f09-47db-89bb-012d67188dd7.png",
     "thumbnail_url": "https://assets.thecdn.io/09d5dbaf-ba33-4462-8151-3e9782a0bed9.png",
     "dimensions": "2160x2160"
+  },
+  {
+    "entry": "ENTRY_0071",
+    "slotId": 71,
+    "type": "media",
+    "file": "entries/4da38f99-b355-4d7f-90fe-8393d90df6c7.mp4",
+    "alt_filename": "4da38f99-b355-4d7f-90fe-8393d90df6c7.mp4",
+    "alt": "Image",
+    "url": "https://assets.thecdn.io/4da38f99-b355-4d7f-90fe-8393d90df6c7.mp4",
+    "thumbnail_url": "https://assets.thecdn.io/cbc0cff1-651c-4d7f-bfec-3d53099f4974.webm",
+    "dimensions": "NonexNone"
   },
   {
     "entry": "ENTRY_0088",
@@ -204,6 +226,13 @@
     "url": "https://www.youtube.com/watch?v=3oOnwnvCmi4"
   },
   {
+    "entry": "ENTRY_0239",
+    "slotId": 239,
+    "type": "text",
+    "excerpt": "excerpt114",
+    "file": "entries/excerpt114.txt"
+  },
+  {
     "entry": "ENTRY_0288",
     "slotId": 288,
     "type": "text",
@@ -217,6 +246,28 @@
     "cipher": "1fbe8bc6-",
     "excerpt": "excerpt104",
     "file": "entries/excerpt104.txt"
+  },
+  {
+    "entry": "ENTRY_0341",
+    "slotId": 341,
+    "type": "media",
+    "file": "entries/b9b4ad1f-14db-4d6b-bc62-4277511e20f0.wav",
+    "alt_filename": "b9b4ad1f-14db-4d6b-bc62-4277511e20f0.wav",
+    "alt": "Coleridge",
+    "url": "https://assets.thecdn.io/b9b4ad1f-14db-4d6b-bc62-4277511e20f0.wav",
+    "thumbnail_url": "https://assets.thecdn.io/4e098991-7411-4c92-9245-20f6af76babf.m4a",
+    "dimensions": "NonexNone"
+  },
+  {
+    "entry": "ENTRY_0342",
+    "slotId": 342,
+    "type": "media",
+    "file": "entries/b409c0bb-b049-4006-b838-3c9a5d4a8365.mp4",
+    "alt_filename": "b409c0bb-b049-4006-b838-3c9a5d4a8365.mp4",
+    "alt": " ",
+    "url": "https://assets.thecdn.io/b409c0bb-b049-4006-b838-3c9a5d4a8365.mp4",
+    "thumbnail_url": "https://assets.thecdn.io/46b88252-11b2-4f5f-b519-10f1797a3a3c.webm",
+    "dimensions": "NonexNone"
   },
   {
     "entry": "ENTRY_0365",
@@ -273,6 +324,17 @@
     "file": "entries/excerpt102.txt"
   },
   {
+    "entry": "ENTRY_0555",
+    "slotId": 555,
+    "type": "media",
+    "file": "entries/2bb36fcf-ae94-4994-ba6b-83228bd86108.wav",
+    "alt_filename": "2bb36fcf-ae94-4994-ba6b-83228bd86108.wav",
+    "alt": "Byron_W",
+    "url": "https://assets.thecdn.io/2bb36fcf-ae94-4994-ba6b-83228bd86108.wav",
+    "thumbnail_url": "https://assets.thecdn.io/0b6d299f-691b-4ec4-8574-dc96917cb7cd.wav",
+    "dimensions": "NonexNone"
+  },
+  {
     "entry": "ENTRY_0560",
     "slotId": 560,
     "type": "text",
@@ -293,6 +355,17 @@
     "type": "youtubeVideo",
     "youtubeVideoId": "yYJAQkzSCvA",
     "url": "https://www.youtube.com/watch?v=yYJAQkzSCvA"
+  },
+  {
+    "entry": "ENTRY_0674",
+    "slotId": 674,
+    "type": "media",
+    "file": "entries/45fd1749-606b-46c4-b41a-44a2ae24c2a4.mp4",
+    "alt_filename": "45fd1749-606b-46c4-b41a-44a2ae24c2a4.mp4",
+    "alt": "Image",
+    "url": "https://assets.thecdn.io/45fd1749-606b-46c4-b41a-44a2ae24c2a4.mp4",
+    "thumbnail_url": "https://assets.thecdn.io/e7a9f21e-8045-4dca-8438-14d80dd780c7.webm",
+    "dimensions": "NonexNone"
   },
   {
     "entry": "ENTRY_0721",
@@ -352,6 +425,13 @@
     "url": "https://assets.thecdn.io/f013f942-835c-45b7-b573-ab430f35d7c3.pdf",
     "thumbnail_url": "https://assets.thecdn.io/e12de7d9-2060-45f4-b7f0-a32a4659b401.png",
     "dimensions": "NonexNone"
+  },
+  {
+    "entry": "ENTRY_0842",
+    "slotId": 842,
+    "type": "text",
+    "excerpt": "excerpt111",
+    "file": "entries/excerpt111.txt"
   },
   {
     "entry": "ENTRY_0848",
@@ -437,11 +517,33 @@
     "dimensions": "2160x2160"
   },
   {
+    "entry": "ENTRY_0994",
+    "slotId": 994,
+    "type": "media",
+    "file": "entries/1d82d72d-f7c9-4d14-b839-bd4e3430b580.wav",
+    "alt_filename": "1d82d72d-f7c9-4d14-b839-bd4e3430b580.wav",
+    "alt": "Ode_to_a_Grecian_urn_W",
+    "url": "https://assets.thecdn.io/1d82d72d-f7c9-4d14-b839-bd4e3430b580.wav",
+    "thumbnail_url": "https://assets.thecdn.io/00cc51db-79d4-4a22-860e-814e12cc9935.m4a",
+    "dimensions": "NonexNone"
+  },
+  {
     "entry": "ENTRY_1000",
     "slotId": 1000,
     "type": "youtubeVideo",
     "youtubeVideoId": "y-BU_bs3qeE",
     "url": "https://www.youtube.com/watch?v=y-BU_bs3qeE"
+  },
+  {
+    "entry": "ENTRY_1008",
+    "slotId": 1008,
+    "type": "media",
+    "file": "entries/eb8be833-9579-4e94-a33f-b81c3d5459c8.wav",
+    "alt_filename": "eb8be833-9579-4e94-a33f-b81c3d5459c8.wav",
+    "alt": "Image",
+    "url": "https://assets.thecdn.io/eb8be833-9579-4e94-a33f-b81c3d5459c8.wav",
+    "thumbnail_url": "https://assets.thecdn.io/944ce9c8-f12a-459a-9960-fe036a8cea24.m4a",
+    "dimensions": "NonexNone"
   },
   {
     "entry": "ENTRY_1119",
@@ -457,5 +559,16 @@
     "type": "text",
     "excerpt": "excerpt115",
     "file": "entries/excerpt115.txt"
+  },
+  {
+    "entry": "ENTRY_1138",
+    "slotId": 1138,
+    "type": "media",
+    "file": "entries/f62ddfc2-3f15-478f-a156-d3cf67f13b1f.mp4",
+    "alt_filename": "f62ddfc2-3f15-478f-a156-d3cf67f13b1f.mp4",
+    "alt": "Image",
+    "url": "https://assets.thecdn.io/f62ddfc2-3f15-478f-a156-d3cf67f13b1f.mp4",
+    "thumbnail_url": "https://assets.thecdn.io/40df22fb-925c-4337-ad04-54196a2b2ed4.webm",
+    "dimensions": "NonexNone"
   }
 ]
