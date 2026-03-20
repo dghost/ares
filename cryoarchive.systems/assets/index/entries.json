@@ -331,7 +331,7 @@
     "alt_filename": "2bb36fcf-ae94-4994-ba6b-83228bd86108.wav",
     "alt": "Byron_W",
     "url": "https://assets.thecdn.io/2bb36fcf-ae94-4994-ba6b-83228bd86108.wav",
-    "thumbnail_url": "https://assets.thecdn.io/0b6d299f-691b-4ec4-8574-dc96917cb7cd.wav",
+    "thumbnail_url": "https://assets.thecdn.io/6480e97f-8ca1-494f-895b-9a9700f950ce.m4a",
     "dimensions": "NonexNone"
   },
   {
@@ -396,6 +396,17 @@
     "cipher": "3d4a-44bf-",
     "excerpt": "excerpt109",
     "file": "entries/excerpt109.txt"
+  },
+  {
+    "entry": "ENTRY_0777",
+    "slotId": 777,
+    "type": "media",
+    "file": "entries/Strauss_Full_wav.wav",
+    "alt_filename": "Strauss_Full_wav",
+    "alt": "Strauss_Full_wav",
+    "url": "https://assets.thecdn.io/0df134a9-87d8-4bc3-bb43-5724f1512ccb.wav",
+    "thumbnail_url": "https://assets.thecdn.io/0f688145-a64c-4797-aa0c-5c8d69fbd15d.m4a",
+    "dimensions": "NonexNone"
   },
   {
     "entry": "ENTRY_0788",
